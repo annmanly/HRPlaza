@@ -1,0 +1,37 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<UXML
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns="UnityEngine.UIElements"
+    xmlns:editor="UnityEditor.UIElements"
+    xmlns:hr="Highrise.UI"
+    xsi:noNamespaceSchemaLocation="../../../../../UIElementsSchema/UIElements.xsd"
+>
+
+    <VisualElement class="inventory-viewer-edit-item">
+        <VisualElement name="_add">
+            <Label text="Holder Id" />
+            <TextField name="_holderId"/>
+            
+            <Label text="Item ID" />
+            <TextField name="_itemId"/>
+        </VisualElement>
+        
+        <VisualElement name="_edit">
+            <Label text="Action" />
+            <DropdownField name="_action"/>
+        </VisualElement>
+
+        <Label text="Amount" />
+        <IntegerField name="_amountField"/>
+        
+        <VisualElement name="_buttons">
+            <Button name="_saveButton">
+                <Label name="_saveButtonText" />
+            </Button>
+            <Button name="_cancelButton">
+                <Label text="Cancel"/>
+            </Button>
+        </VisualElement>
+        
+    </VisualElement>
+</UXML>

@@ -1,0 +1,66 @@
+
+.leaderboard-viewer {
+    flex-grow: 1;
+}
+
+.leaderboard-viewer #_refreshButton {
+    flex-direction: row;
+    margin-right: auto;
+}
+
+.leaderboard-viewer #_refreshIcon {
+    width: 15px;
+    height: 15px;
+    --unity-image: url("project://database/Packages/com.pz.studio/Editor/UI/Icons/icon_swap_small.png");
+}
+
+.leaderboard-viewer #_top {
+    flex-direction: row;
+    border-color: var(--unity-colors-toolbar-border);
+    border-bottom-width: 1px;
+    padding-top: 4px;
+    padding-bottom: 4px;
+    flex-shrink: 0;
+}
+
+.leaderboard-viewer #_leaderboardId {
+    margin-right: auto;
+    margin-left: auto;
+    width: 200px;
+}
+
+.leaderboard-viewer #_leaderboardEntries {
+    flex-grow: 1;
+}
+
+.leaderboard-viewer .unity-multi-column-header {
+    height: 29px;
+}
+
+.leaderboard-viewer .unity-multi-column-view__row-container:hover {
+    color: var(--unity-colors-default-text-hover);
+    background-color: var(--unity-colors-highlight-background-hover);
+}
+
+.leaderboard-viewer .unity-multi-column-view__row-container:checked {
+    background-color: var(--unity-colors-highlight-background);
+    color: white;
+}
+
+.leaderboard-viewer .unity-multi-column-view__cell {
+    padding-left: 6px;
+    justify-content: center;
+}
+
+.leaderboard-viewer .unity-list-view__empty-label {
+    display: none;
+}
+
+.leaderboard-viewer #_bottom {
+    flex-shrink: 0;
+}
+
+.leaderboard-viewer .unity-toolbar-search-field {
+    width: auto;
+    margin: 4px;
+}

@@ -1,0 +1,90 @@
+.color-cell {
+    width: 80px;
+    height: 80px;
+    overflow: hidden;
+}
+
+.color-cell__gradient {
+    flex-grow: 1;
+    display: none;
+    -unity-background-image-tint-color: #E9C16F;
+    background-image: var(--image-vgradient);
+}
+
+.color-cell--premium {
+    background-color: #FDF5C5;
+}
+
+.color-cell--premium .color-cell__gradient {
+    display: initial;
+}
+
+.color-cell--premium.PremiumColorPosition-Start {
+    width: 72px;
+}
+
+.color-cell--premium.PremiumColorPosition-Start {
+    border-radius: 12px 0 0 12px;
+}
+
+.rtl .color-cell--premium.PremiumColorPosition-Start {
+    border-radius: 0 12px 12px 0;
+}
+
+.color-cell--premium.PremiumColorPosition-End {
+    border-radius: 0 12px 12px 0;
+}
+
+.rtl .color-cell--premium.PremiumColorPosition-End {
+    border-radius: 12px 0 0 12px;
+}
+
+.color-cell--premium.PremiumColorPosition-StartAndEnd {
+    width: 72px;
+    border-radius: 12px;
+}
+
+.color-cell.color-cell--small {
+    width: 32px;
+    height: 32px;
+}
+
+.color-cell #_hrPlusGlyph {
+    display: none;
+    width: 28px;
+    height: 28px;
+    margin: 4px;
+}
+
+.color-cell--premium.PremiumColorPosition-Start #_hrPlusGlyph,
+.color-cell--premium.PremiumColorPosition-StartAndEnd #_hrPlusGlyph {
+    display: initial;
+}
+
+.color-cell #_colorRect {
+    flex-grow: 1;
+    border-width: 2px;
+    border-radius: 8px;
+    margin: 4px;
+    background-color: var(--color-fishbase-whitefish-50);
+}
+
+.color-cell:checked #_colorRect {
+    border-color: var(--color-accents-primary);   
+}
+
+.color-cell--premium #_colorRect {
+    border-color: #674006;
+}
+
+.color-cell #_selectedBadge {
+    display: none;
+    width: 22px;
+    height: 22px;
+    border-radius: 8px;
+    top: 5px;
+    right: 5px;
+    padding: 3px;
+    background-color: var(--color-accents-primary);
+    --unity-image-tint-color: var(--color-fishbase-eel);
+}

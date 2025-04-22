@@ -1,0 +1,18 @@
+.action-sheet {
+    flex-grow: 1;
+}
+
+.landscape .action-sheet {
+    width: 100%;
+}
+
+.portrait .action-sheet-container {
+    padding-bottom: var(--safe-area-bottom);
+}
+
+.action-sheet-separator {
+    margin: 4px 0;
+    background-color: var(--color-fishbase-catfish);
+    height: 1px;
+    width: 100%;
+}

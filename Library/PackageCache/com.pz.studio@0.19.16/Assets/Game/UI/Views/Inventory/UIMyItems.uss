@@ -1,0 +1,97 @@
+.my-items {
+    flex-grow: 1;
+}
+
+.landscape .my-items {
+    padding: 0 5%;
+}
+
+.MyItemsMode-TradePicker {
+    margin-bottom: 0;
+}
+
+.my-items__pages {
+    flex-grow: 1;
+}
+
+.my-items #_pageView {
+    flex-grow: 1;
+}
+
+.my-items .pageView > .page-view {
+    margin-top: var(--safe-area-top);
+    margin-bottom: var(--safe-area-bottom);
+}
+
+.my-items__bottom-bar {
+    flex-grow: 0;
+    background-color: var(--color-fishbase-eel);
+    padding-bottom: var(--safe-area-bottom);
+    border-top-color: #1B191F;
+    border-top-width: 1px;
+}
+
+.my-items__bottom-bar-cell {
+    width: 68px;
+    height: 48px;
+    align-items: center;
+    justify-content: center;
+}
+
+.my-items__bottom-bar-cell UIImage {
+    --unity-image-tint-color: var(--color-fishbase-salmon);
+    width: 32px;
+    height: 32px;
+}
+
+.my-items__bottom-bar-cell:checked UIImage {
+    --unity-image-tint-color: var(--color-accents-secondary);
+}
+
+.my-items__bottom-bar-cell UILabel {
+    font-size: 9px;
+    color: var(--color-fishbase-salmon);
+    -unity-text-align: middle-center;
+    -unity-font-definition: var(--font-bold);
+    text-overflow: ellipsis;
+    overflow: hidden;
+    padding: 0 2px;
+}
+
+.my-items__bottom-bar-cell:checked UILabel {
+    color: var(--color-accents-secondary);
+}
+
+.my-items__bottom-bar-cell-new-badge {
+    display: none;
+    width: 12px;
+    height: 12px;
+    margin-top: -2px;
+    margin-right: -2px;
+    background-color: var(--color-basic-destructive);
+    border-color: var(--color-fishbase-eel);
+    border-width: 2px;
+    border-radius: 5px;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.my-items__bottom-bar-cell.has-new-items .my-items__bottom-bar-cell-new-badge {
+    display: flex;
+}
+
+.my-items #_nftButton {
+    display: none;
+}
+
+.my-items #_addToGrabButton {
+    margin: 16px;
+    margin-bottom: 16px;
+    display: none;
+}
+
+.my-items UIItemCard {
+    min-width: var(--4-column-item-min-width);
+    max-width: var(--4-column-item-max-width);
+}

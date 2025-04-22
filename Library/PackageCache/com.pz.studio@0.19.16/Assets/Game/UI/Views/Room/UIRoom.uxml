@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<UXML
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns="UnityEngine.UIElements"
+    xmlns:editor="UnityEditor.UIElements"
+    xmlns:hrui="Highrise.UI"
+    xmlns:hr="Highrise"
+    xsi:noNamespaceSchemaLocation="../../../../../UIElementsSchema/UIElements.xsd"
+>
+
+  <hrui:UIRoom class="room overlay">
+    <VisualElement name="_controller" class="overlay"/>
+    <hrui:UIWorld name="_world" class="overlay" picking-mode="Ignore"/>
+    <VisualElement name="_indicators" class="overlay" picking-mode="Ignore"/>
+  </hrui:UIRoom>
+</UXML>

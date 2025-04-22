@@ -1,0 +1,500 @@
+/***** UIButton *****/
+
+.button {
+    -unity-font-definition: var(--font-bold);
+    font-size: var(--font-size-l);
+    background-color: var(--color-fishbase-blackfish-40);
+    color: var(--color-fishbase-bonito);
+    border-radius: 12px;
+    border-width: 0px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    padding-left: 8px;
+    padding-right: 8px;
+    height: 44px;
+    flex-shrink: 0;
+}
+
+.button__content {
+    margin: auto;
+    flex-direction: row;
+    max-width: 100%;
+}
+
+.button .label,
+.button .unity-label {
+    padding: 0;
+    margin-top: auto;
+    margin-bottom: auto;
+    -unity-text-align: middle-left;
+}
+
+.button .label.auto-sizing-label {
+    flex: initial;
+}
+
+.button Image,
+.button UIImage {
+    padding: 0;
+    width: 24px;
+    height: 24px;
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-left: 0px;
+    margin-right: 0px;
+    --unity-image-tint-color: var(--color-fishbase-whitefish);
+}
+
+.button-small {
+    height: 36px;
+    padding: 6px;
+
+}
+
+.button-small Image {
+    margin: auto 2px;
+    width: 20px;
+    height: 20px;
+}
+
+.button-small .label,
+.button-small .unity-label {
+    margin: 0;
+}
+
+.button-timed-fill-element {
+   background-color: var(--color-basic-destructive);
+   width: 0%;
+   border-radius: 12px;
+   border-width: 0px;
+   height: 44px;
+   flex-shrink: 0;
+   position:absolute;
+   top:0;
+   left:0;
+}
+
+/***** Disabled button *****/
+
+.button:disabled,
+.button:disabled:hover {
+    opacity: 1;
+    background-color: var(--color-fishbase-catfish);
+    color: var(--color-fishbase-tuna);
+}
+
+.button:disabled Image,
+.button:disabled:hover Image {
+    --unity-image-tint-color: var(--color-fishbase-tuna);
+}
+
+
+/***** UICurrency *****/
+
+.button UICurrency Image,
+.button:disabled UICurrency Image,
+.button:disabled:hover UICurrency Image {
+    --unity-image-tint-color: rgb(255,255,255);
+}
+
+.button:disabled UICurrency .label,
+.button:disabled:hover UICurrency .label {
+    color: var(--color-fishbase-tuna);
+}
+
+.button:disabled UICurrency Image {
+    opacity: 0.5;
+}
+
+.button UICurrency .currency_container {
+    background-color: transparent;
+}
+
+/***** Primary button *****/
+
+.button-primary,
+.button-primary:active,
+.button-primary:hover,
+.button-primary:hover:focus,
+.button-primary:focus {
+    border-radius: 12px;
+    background-color: var(--color-accents-primary);
+    border-color: var(--color-accents-primary);
+    color: var(--color-fishbase-blackfish);
+}
+
+.button-primary Image 
+{
+    --unity-image-tint-color: var(--color-fishbase-blackfish);
+}
+
+.button-primary UICurrency .label {
+    color: var(--color-fishbase-blackfish);
+}
+
+/***** Primary button Text No Outline *****/
+
+.button-primary-text-no-outline,
+.button-primary-text-no-outline:active,
+.button-primary-text-no-outline:hover,
+.button-primary-text-no-outline:hover:focus,
+.button-primary-text-no-outline:focus {
+    border-radius: 12px;
+    background-color: var(--color-transparent);
+    border-color: var(--color-transparent);
+    color: var(--color-fishbase-mackerel);
+}
+
+.button-primary-text-no-outline Image {
+    --unity-image-tint-color: var(--color-fishbase-mackerel);
+}
+
+/***** Button Primary 25% *****/
+
+.button-primary-25,
+.button-primary-25:active,
+.button-primary-25:hover,
+.button-primary-25:hover:focus,
+.button-primary-25:focus {
+    background-color: var(--color-accents-primary-25);
+    color: var(--color-accents-primary);
+}
+
+.button UICurrency  {
+    margin-left: 4px;
+}
+
+.button UICurrency .label {
+    color: var(--color-fishbase-eel);
+}
+
+.button-secondary-25 UICurrency .label {
+    color: var(--color-accents-secondary);
+}
+
+.button-primary-25 Image {
+    --unity-image-tint-color: var(--color-accents-primary);
+}
+
+/***** Button Secondary *****/
+
+.button-secondary,
+.button-secondary:active,
+.button-secondary:hover,
+.button-secondary:hover:focus,
+.button-secondary:focus {
+    background-color: var(--color-accents-secondary);
+    color: var(--color-fishbase-eel);
+}
+
+.button-secondary Image {
+    --unity-image-tint-color: var(--color-fishbase-eel);
+}
+
+.button-secondary UIImage {
+    --unity-image-tint-color: var(--color-fishbase-eel);
+}
+
+/***** Button Secondary 25% *****/
+
+.button-secondary-25,
+.button-secondary-25:active,
+.button-secondary-25:hover,
+.button-secondary-25:hover:focus,
+.button-secondary-25:focus {
+    background-color: var(--color-accents-secondary-25);
+    color: var(--color-accents-secondary);
+}
+
+.button-secondary-25 Image {
+    --unity-image-tint-color: var(--color-accents-secondary);
+}
+
+.button-secondary-25 UIImage {
+    --unity-image-tint-color: var(--color-accents-secondary);
+}
+
+/***** Button Destructive *****/
+
+.button-destructive,
+.button-destructive:active,
+.button-destructive:hover,
+.button-destructive:hover:focus,
+.button-destructive:focus {
+    background-color: var(--color-basic-destructive-25);
+    color: var(--color-basic-destructive);
+}
+
+.button-destructive Image {
+    --unity-image-tint-color: var(--color-basic-destructive);
+    position: absolute;
+}
+
+/***** Button Floating *****/
+
+.button-floating-wrapper {
+
+    width: 100%;
+    height: 100%;
+    background-color: var(--color-fishbase-blackfish-40);
+    border-radius: 12px;
+    position: absolute;
+}
+
+/***** Button Icon ******/
+
+.button-icon {
+    background-color: transparent;
+    --unity-image-tint-color: var(--color-fishbase-mackerel);
+}
+
+.button-icon:disabled,
+.button-icon:disabled:hover {
+    opacity: 1;
+    background-color: transparent;
+    color: var(--color-fishbase-tuna);
+}
+
+/***** Button Secondary Transparent *****/
+
+.button-secondary-transparent,
+.button-secondary-transparent:active,
+.button-secondary-transparent:hover,
+.button-secondary-transparent:hover:focus,
+.button-secondary-transparent:focus {
+    background-color: rgba(0,0,0,0);
+    color: var(--color-accents-secondary);
+}
+
+.button-secondary-transparent Image {
+    --unity-image-tint-color: var(--color-accents-secondary);
+}
+
+/***** Tertiary Buttons *****/
+.button-tertiary-strawberry,
+.button-tertiary-strawberry:active,
+.button-tertiary-strawberry:hover,
+.button-tertiary-strawberry:hover:focus,
+.button-tertiary-strawberry:focus {
+    border-radius: 12px;
+    background-color: var(--color-tertiary-strawberry);
+    color: var(--color-fishbase-eel);
+}
+
+.button-tertiary-banana,
+.button-tertiary-banana:active,
+.button-tertiary-banana:hover,
+.button-tertiary-banana:hover:focus,
+.button-tertiary-banana:focus {
+    border-radius: 12px;
+    background-color: var(--color-tertiary-banana);
+    color: var(--color-fishbase-eel);
+}
+
+.button-tertiary-banana-25,
+.button-tertiary-banana-25:active,
+.button-tertiary-banana-25:hover,
+.button-tertiary-banana-25:hover:focus,
+.button-tertiary-banana-25:focus {
+    border-radius: 12px;
+    background-color: var(--color-tertiary-banana-25);
+    color: var(--color-fishbase-eel);
+}
+
+.button-tertiary-banana-25 UILabel {
+    color: var(--color-tertiary-banana);
+}
+
+/***** Button Whitefish *****/
+
+.button-whitefish,
+.button-whitefish:active,
+.button-whitefish:hover,
+.button-whitefish:hover:focus,
+.button-whitefish:focus {
+    background-color: var(--color-fishbase-whitefish);
+    color: var(--color-fishbase-eel);
+}
+
+.button-whitefish Image {
+    --unity-image-tint-color: var(--color-fishbase-eel);
+}
+
+/**
+
+    Button Default Transparent
+
+*/
+
+.button-default-transparent,
+.button-default-transparent:active,
+.button-default-transparent:hover,
+.button-default-transparent:hover:focus,
+.button-default-transparent:focus {
+    background-color: rgba(0,0,0,0);
+}
+
+
+/*
+
+    Unity Button
+
+*/
+
+.unity-button {
+    -unity-font-style: bold;
+    font-size: var(--font-size-l);
+    background-color: var(--color-fishbase-blackfish-40);
+    color: var(--color-fishbase-bonito);
+    border-radius: 12px;
+    border-width: 0px;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    height: 44px;
+}
+
+.unity-button:focus {
+    color:  var(--color-fishbase-mackerel);
+    background-color: var(--color-fishbase-blackfish-40);
+}
+
+.unity-button:hover {
+    color:  var(--color-fishbase-mackerel);
+    background-color: var(--color-fishbase-blackfish-40);
+}
+
+.unity-button:disabled,
+.unity-button:disabled:hover {
+    opacity: 1.0;
+    background-color: var(--color-fishbase-catfish);
+    color: var(--color-fishbase-tuna);
+}
+
+.button-no-outline-s {
+    font-size: var(--font-size-s);
+    background-color: var(--color-transparent);
+    border-color: var(--color-transparent);
+    padding: 0px;
+}
+
+
+/***** Button Catfish *****/
+
+.button-catfish,
+.button-catfish:active,
+.button-catfish:hover,
+.button-catfish:hover:focus,
+.button-catfish:focus {
+    background-color: var(--color-fishbase-catfish);
+    color: var(--color-fishbase-whitefish);
+}
+
+.button-catfish UIImage {
+    --unity-image-tint-color: var(--color-fishbase-whitefish);
+}
+
+
+
+/** Navigation Back Button **/
+
+.button-back {
+    flex-shrink: 0;
+    flex-grow: 0;
+    padding: 4px;
+}
+
+.button-back Image {
+    --unity-image-tint-color: var(--color-fishbase-mackerel);
+    --unity-image: var(--image-icon-back);
+    width: 24px;
+    height: 24px;
+}
+
+
+/** Search Button **/
+
+.button-search {
+    flex-shrink: 0;
+    flex-grow: 0;
+    padding: 4px;
+}
+
+.button-search Image {
+    --unity-image-tint-color: var(--color-fishbase-mackerel);
+    --unity-image: var(--image-icon-search);
+    width: 24px;
+    height: 24px;
+}
+
+/** Settings Button **/
+
+.button-settings {
+    padding-left: 12px;
+    padding-right: 12px;
+    padding-top: 0px;
+    padding-bottom: 0px;
+    border-radius: 0px;
+    height: 44px;
+}
+
+.button-settings .settings-arrow {
+    margin-left: auto;
+    width: 16px;
+    height: 16px;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    padding-left: 5px;
+    padding-right: 3px;
+    --unity-image-tint-color : var(--color-fishbase-anchovy);
+}
+
+.button-settings UILabel {
+    color: var(--color-fishbase-mackerel);
+    -unity-text-align: middle-left;
+    font-size: var(--font-size-m);
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.button-settings .button__content  {
+    margin: 0;
+    flex-direction: row;
+    flex-grow: 1;
+}
+
+.button-settings__content {
+    flex-grow: 1;
+    flex-direction: row;
+}
+
+.button-settings--start {
+    justify-content: flex-start;
+}
+
+.button-settings--end {
+    justify-content: flex-end;
+}
+
+/** Button with UIImage fill **/
+
+.button-image {
+    padding: 0px;
+    overflow: hidden;
+}
+
+.button-image .button-image-bg {
+    flex-grow: 1;
+    width: initial;
+    height: initial;
+    --unity-image-size: scale-and-crop;
+}
+
+.button-image .button-image-content {
+    flex-grow: 1;
+    -unity-text-align: middle-center;
+    position: absolute;
+    left: 0px;
+    right: 0px;
+    top: 0px;
+    bottom: 0px;
+}

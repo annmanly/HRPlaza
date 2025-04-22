@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<UXML
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns="UnityEngine.UIElements"
+    xmlns:hr="Highrise.UI"
+    xmlns:editor="UnityEditor.UIElements"
+    xsi:noNamespaceSchemaLocation="../../../../../../UIElementsSchema/UIElements.xsd"
+>
+
+  <hr:UIMyItemsFilters class="my-items-filters">
+<!--    <hr:UITextField name="_search" placeholder="search" clear="true" search="true" class="my-items-filters-search"/>-->
+    <hr:UIScrollView class="my-items-filters" mode="Horizontal" name="_filtersScrollView">
+      <VisualElement class="my-items-filters-container" name="_filtersContainer">
+        <hr:UISearchControl class="my-items-filters-search-control" name="_searchControl"/>
+        <hr:UIButton name="_favoritesButton" class="my-items-filters-favorites">
+          <Image class="icon-star-unfilled"/>
+        </hr:UIButton>
+        <hr:UIButton name="_accountBoundButton" class="my-items-filters-account-bound">
+          <Image class="icon-non-tradable"/>
+        </hr:UIButton>
+        <hr:UIPopupPicker name="_sortPicker" grid="false"/>
+        <hr:UIPopupPicker name="_rarityPicker"/>
+        <hr:UIMultiColorPicker name="_multiColorPicker"/>
+        <hr:UIPopupPicker name="_genderPicker" grid="false"/>
+        <hr:UIPopupPicker name="_clothingGroupTypePicker"/>
+        <hr:UIPopupPicker name="_clothingTypePicker"/>
+        <hr:UIPopupPicker name="_furnitureTypePicker"/>
+        <hr:UIPopupPicker name="_consumableTypePicker"/>
+        <hr:UIButton class="button-secondary-25" name="_clearAllButton">
+          <hr:UILabel key="clear_all"/>
+        </hr:UIButton>
+      </VisualElement>
+    </hr:UIScrollView>
+  </hr:UIMyItemsFilters>
+
+</UXML>

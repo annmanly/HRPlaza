@@ -1,0 +1,34 @@
+/*
+
+    Character Slot Inspector
+  
+*/
+
+.character-renderer-inspector {
+    margin-top: 8px;
+}
+
+.character-renderer-inspector TabbedView {
+    margin-left: -10px;
+}
+
+.character-renderer-inspector MultiColumnListView UIImage,
+.character-renderer-inspector .slots UIImage {
+    width: 32px;
+    height: 32px;
+    margin: 4px;
+}
+
+.character-renderer-inspector MultiColumnListView {
+    -unity-text-align: middle-left;
+}
+
+.character-renderer-inspector .slots #vertexCount,
+.character-renderer-inspector .slots #indexCount {
+    -unity-text-align: middle-center;
+}
+
+.character-renderer-inspector MultiColumnListView {
+    margin-top: 4px;
+    margin-bottom: 4px;
+}

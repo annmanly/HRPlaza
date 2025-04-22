@@ -1,0 +1,21 @@
+.voice-indicator {
+    width: 24px;
+    height: 24px;
+}
+
+.voice-indicator__container {
+    flex-grow: 1;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.voice-indicator__bar {
+    flex-shrink: 0;
+    width: 3px;
+    height: 3px;
+    margin: 1px;
+    border-radius: 1.25px;
+    overflow: hidden;
+    background-color: var(--color-accents-secondary);
+}

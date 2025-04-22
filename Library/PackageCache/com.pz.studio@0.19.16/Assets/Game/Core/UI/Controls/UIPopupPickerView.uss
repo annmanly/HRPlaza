@@ -1,0 +1,57 @@
+.popup-picker-view {
+    border-radius: var(--border-radius-xl);
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+
+    margin-left: 0;
+    margin-right: 0;
+    padding-bottom: var(--safe-area-bottom);
+
+    margin-top: auto;
+}
+
+.popup-picker-view #_pickerChoices {
+    margin-bottom: 0;
+    padding-left: 12px;
+    padding-right: 12px;
+}
+
+.popup-picker-view__title {
+    font-size: 17px;
+    height: 18px;
+    -unity-font-style: bold;
+    white-space: normal;
+    align-self: center;
+    padding: 0;
+    -unity-text-align: middle-center;
+    margin-left: 16px;
+    margin-right: 16px;
+    margin-top: 12px;
+    margin-bottom: 14px;
+    color: var(--color-fishbase-whitefish);
+}
+
+.popup-picker-view__subtitle {
+    white-space: normal;
+    font-size: 15px;
+    align-self: center;
+    padding: 0;
+    -unity-text-align: middle-center;
+    margin-left: 16px;
+    margin-right: 16px;
+    margin-bottom: 14px;
+    color: var(--color-fishbase-whitefish);
+}
+
+
+.popup-picker-view #_applyButton {
+    margin: 16px;
+}
+
+.landscape .scroll-view--vertical .scroll-bar {
+    width: 4px;
+}
+
+.portrait .popup-picker-view {
+    background-color: var(--color-fishbase-catfish);
+}

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<UXML
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns="UnityEngine.UIElements"
+    xmlns:hr="Highrise.UI"
+    xmlns:editor="UnityEditor.UIElements"
+    xsi:noNamespaceSchemaLocation="../../../../../UIElementsSchema/UIElements.xsd"
+>
+
+  <hr:UIEventProgressReward class="event-progress-reward">
+    <VisualElement name="_rewardImageBackground">
+      <hr:UIImage name="_effectsIcon" class="icon-outfit-auras" />
+      <hr:UIImage name="_rewardImage"/>
+      <hr:UILabel name="_amountLabel" class="overlay-top-right"/>
+    </VisualElement>
+    <VisualElement class="event-progress-reward__middle-content">
+      <hr:UILabel key="next_progress_reward" name="_title" uppercase="true"/>
+      
+      <VisualElement class="event-progress-reward__progress-container">
+        <hr:UIImage class="event-tickets-icon" name="_ticketsIcon"/>
+        <hr:UILabel name="_progressLabel"/>
+        <hr:UIProgressBar name="_progressBar"/>
+      </VisualElement>
+    </VisualElement>
+
+    <hr:UIButton class="button-icon" name="_seeMoreButton">
+      <hr:UIImage class="icon-back"/>
+    </hr:UIButton>
+    
+  </hr:UIEventProgressReward>
+
+</UXML>

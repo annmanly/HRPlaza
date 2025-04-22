@@ -1,0 +1,33 @@
+.text-commands-autocomplete {
+}
+
+.text-commands-autocomplete #_topContainer {
+    flex-grow: 0;
+    flex-shrink: 0;
+    align-items: center;
+    border-bottom-width: 1px;
+    border-bottom-color: var(--color-fishbase-tuna);
+    height: 30px;
+}
+
+.text-commands-autocomplete #_topContainer #_commandName {
+    -unity-font-definition: var(--font-bold);
+    font-size: 15px;
+    color: var(--color-fishbase-whitefish);
+    margin: 0 10px 0 12px;
+}
+
+.text-commands-autocomplete #_topContainer #_commandDescription {
+    font-size: 13px;
+    color: var(--color-fishbase-whitefish);
+    margin-right: 12px;
+}
+
+.rtl .text-commands-autocomplete #_topContainer #_commandDescription {
+    margin-left: 12px;
+    margin-right: 0;
+}
+
+.text-commands-autocomplete #_container {
+    margin: 4px 0;
+}

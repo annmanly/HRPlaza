@@ -1,0 +1,21 @@
+.energy-refill-content {
+}
+
+.energy-refill-content #_itemsContainer {
+    flex-direction: row;
+    margin-top: 20px;
+    margin-left: -4px;
+    margin-right: -4px;
+}
+
+.energy-refill-content__small-energy-refill {
+    -unity-font-definition: var(--font-bold-italic);
+    font-size: 13px;
+    color: var(--color-fishbase-anchovy);
+}
+
+.energy-refill-content__max-energy-refill {
+    -unity-font-definition: var(--font-bold-italic);
+    font-size: 13px;
+    color: var(--color-accents-secondary);
+}

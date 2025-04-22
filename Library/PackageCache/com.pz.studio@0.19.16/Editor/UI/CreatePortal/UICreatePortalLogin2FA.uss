@@ -1,0 +1,75 @@
+.create-portal-login-2fa {
+    align-items: center;
+    margin: auto;
+    flex-direction: column;
+}
+
+.create-portal-login-2fa #_header {
+    background-color: var(--color-fishbase-tuna);
+    width: 100%;
+    padding: 32px 32px 6px 32px;
+}
+
+.create-portal-login-2fa #_titleLabel {
+    color: var(--color-fishbase-whitefish);
+    margin-top: auto;
+    margin-bottom: auto;
+    font-size: 22px;
+    -unity-font-style: bold;
+}
+
+.create-portal-login-2fa #_descriptionLabel {
+    color: var(--color-fishbase-whitefish);
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-size: 12px;
+    white-space: normal;
+}
+
+.create-portal-login-2fa #_controls {
+    background-color: var(--color-fishbase-tuna);
+    width: 100%;
+    padding: 0 32px 0 32px;
+    flex-direction: column;
+}
+
+.create-portal-login-2fa #_2faCodeField {
+    height: 32px;
+    margin-top: 12px;
+    background-color: transparent;
+}
+
+.create-portal-login-2fa #_2faCodeField Label {
+    min-width: 70px;
+    font-size: 12px;
+    align-self: center;
+    background-color: transparent;
+}
+
+.create-portal-login-2fa #_2faCodeField TextElement {
+    min-width: 70px;
+    font-size: 20px;
+    background-color: var(--color-fishbase-blackfish);
+    padding: 4px;
+}
+
+.create-portal-login-2fa #_errorMessageLabel {
+    font-size: 12px;
+    color: var(--color-basic-alert);
+    margin-top: 12px;
+    margin-bottom: 12px;
+}
+
+.create-portal-login-2fa #_buttons {
+    background-color: var(--color-fishbase-eel);
+    width: 100%;
+    padding: 16px 32px 16px 32px;
+}
+
+.create-portal-login-2fa #_verifyButton {
+    border-radius: 4px;
+    height: 28px;
+    align-items: center;
+    justify-content: center;
+    -unity-font-style: bold;
+}

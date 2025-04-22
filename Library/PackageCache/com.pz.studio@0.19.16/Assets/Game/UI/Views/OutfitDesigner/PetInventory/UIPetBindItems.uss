@@ -1,0 +1,103 @@
+.bind-items {
+    margin-left: auto;
+    margin-right: auto;
+    overflow: hidden;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: var(--color-fishbase-eel);
+    padding-left: 16px;
+    padding-right: 16px;
+}
+
+.bind-items UIItemCell {
+    width: var(--4-column-item-min-width);
+    height: var(--4-column-item-min-width);
+    max-width: var(--4-column-item-max-width);
+    max-height: var(--4-column-item-max-width);
+}
+
+.bind-items UIKeyboardContainer {
+    min-height: var(--safe-area-bottom);
+    background-color: var(--color-fishbase-blackfish);
+    flex-shrink: 0;
+    display: flex;
+}
+
+.bind-items-border-container {
+    display: none;
+    border-width: 3px;
+    border-color: var(--color-accents-primary);
+    border-radius: 8px;
+}
+
+.bind-items__save-button {
+    margin-top: 0px;
+    margin-bottom: auto;
+    padding: 13px 26px;
+    background-color: var(--color-basic-destructive);
+    color: var(--color-fishbase-blackfish);
+}
+
+.bind-items__section-title {
+    color: var(--color-fishbase-bonito);
+    font-size: var(--font-size-l);
+    -unity-text-align: middle-center;
+    -unity-font-definition: var(--font-bold);
+    width:auto;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    align-self: flex-start;
+    padding-bottom: 15px;
+    padding-top: 10px;
+}
+
+.bind-item-label-collection .label {
+}
+
+.bind-item-collection-container {
+    min-height: 100px;
+}
+
+.bind-items #_hint {
+    margin-top: 0px;
+    width: 100%;
+    padding-bottom: 16px;
+}
+
+.bind-item-add-container {
+    padding-left: 16px;
+    padding-right: 16px;
+    padding-bottom: 32px;
+    position: absolute;
+    bottom: var(--safe-area-bottom);
+    left:0;
+    right:0;
+}
+
+#_leftButtons #_cancelButton{
+    font-size: 15px;
+}
+
+#_leftButtons UIButton {
+    margin-left: 8px;
+    height: 36px;
+    width: auto;
+    padding: 0px 8px;
+}
+
+.bind-items-gradient {
+    background-image: var(--image-vgradient-180);
+    -unity-background-image-tint-color: var(--color-fishbase-eel);
+    height: 117px;
+    position: absolute;
+    padding-bottom: var(--safe-area-bottom);
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+}
+
+.bind-items #_emptyStateSection {
+    display: none;
+}

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<UXML
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns="UnityEngine.UIElements"
+    xmlns:hr="Highrise.UI"
+    xmlns:hrui="Highrise.UI"
+    xmlns:editor="UnityEditor.UIElements"
+    xsi:noNamespaceSchemaLocation="../../../../../UIElementsSchema/UIElements.xsd"
+>
+
+  <hr:UIPetCellList class="pet-cell-list">
+    <hrui:UICollection class="flex-grow">
+        <hrui:UICollectionSection>
+          <hrui:UICollectionCells name="_petGrid" layout="grid" layout-spacing="2"/>
+        </hrui:UICollectionSection>
+    </hrui:UICollection>
+    <VisualElement class="pet-cell-list-button-container overlay-bottom">
+        <VisualElement class="pet-cell-list-gradient" name="_gradient" picking-mode="Ignore"/>
+        <hr:UIButton name="_editPetLookButton" class="button-primary pet-cell-list__save-button">
+            <hr:UILabel key="edit_pet_look"/>  
+        </hr:UIButton>
+    </VisualElement>
+  </hr:UIPetCellList>
+
+</UXML>

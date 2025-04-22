@@ -1,0 +1,23 @@
+.saved-outfit-add-cell
+{
+    width: 80px;
+    height: 140px;
+}
+
+.saved-outfit-add-cell #_addButton {
+    flex-grow: 1;
+    width: auto;
+    height: auto;
+}
+
+.saved-outfit-add-cell .saved-outfit-add-cell__button-container {
+    width: 100%;
+    height: 100%;
+    background-color: var(--color-accents-secondary-25);
+}
+.saved-outfit-add-cell .icon-add {
+    width: 24px;
+    height: 24px;
+    margin: auto;
+    --unity-image-tint-color: var(--color-accents-secondary);
+}

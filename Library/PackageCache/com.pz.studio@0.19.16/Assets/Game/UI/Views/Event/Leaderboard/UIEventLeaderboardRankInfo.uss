@@ -1,0 +1,92 @@
+.event-leaderboard-rank-info {
+}
+
+.event-leaderboard-rank-info__card {
+    margin-top: 8px;
+    background-color: var(--color-fishbase-catfish);
+    border-radius: 12px;
+}
+
+.event-leaderboard-rank-info__overview {
+    height: 68px;
+    flex-direction: row;
+    padding: 8px;
+}
+
+.event-leaderboard-rank-info .user-thumbnail-user {
+    width: 52px;
+    height: 52px;
+}
+
+.event-leaderboard-rank-info .user-thumbnail-user .user-thumbnail__image-container {
+    background-color: var(--color-fishbase-eel);
+}
+
+.event-leaderboard-rank-info__content {
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 8px;
+}
+
+.event-leaderboard-rank-info__rank-container {
+    flex-direction: row;
+}
+
+.event-leaderboard-rank-info__rank-icon {
+    --unity-image-tint-color: white;
+    width: 18px;
+    height: 18px;
+}
+
+.event-leaderboard-rank-info__rank-label {
+    color: var(--color-fishbase-bonito);
+    font-size: 15px;
+    margin-left: 4px;
+}
+
+.event-leaderboard-rank-info__tickets-container {
+    flex-direction: row;
+    margin-top: 8px;
+}
+
+.event-leaderboard-rank-info__tickets-icon {
+    width: 18px;
+    height: 18px;
+}
+
+.event-leaderboard-rank-info__tickets-label {
+    color: var(--color-fishbase-bonito);
+    font-size: 15px;
+    margin-left: 4px;
+}
+
+.event-leaderboard-rank-info__next-tier-container {
+    display: none;
+}
+
+.event-leaderboard-rank-info__divider {
+    position: absolute;
+    height: 1px;
+    left: 0;
+    right: 0;
+    top: 0;
+    background-color: var(--color-fishbase-tuna);
+}
+
+.event-leaderboard-rank-info__next-tier-info-container {
+    flex-direction: row;
+    justify-content: center;
+    padding: 8px;
+}
+
+.event-leaderboard-rank-info__next-tier-icon {
+    width: 18px;
+    height: 18px;
+}
+
+.event-leaderboard-rank-info__next-tier-label {
+    color: var(--color-fishbase-anchovy);
+    font-size: 15px;
+    -unity-font-definition: var(--font-regular-italic);
+    margin-left: 4px;
+}

@@ -1,0 +1,33 @@
+.name-clothing-view {
+    flex-grow: 1;
+}
+
+.input-container {
+    flex-grow: 1;
+    flex-direction: row;
+    margin: 16px;
+}
+
+#_textContainer {
+    flex-grow: 1;
+}
+
+.input-field {
+    height: 24px;
+    flex-grow: 1;
+    margin: 0;
+}
+
+.disabled-label {
+    height: 24px;
+    color: var(--unity-colors-label-text-disabled);
+    margin-right: 0;
+    -unity-text-align: middle-left;
+}
+
+.error-label {
+    color: var(--unity-colors-error-text);
+    -unity-font-style: bold-and-italic;
+    font-size: 110%;
+    margin-top: 8px;
+}

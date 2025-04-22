@@ -1,0 +1,62 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -1656581281, guid: 30a4c7dce0b6891478396efa6bd2a6d0, type: 3 }
+  m_Name: IndicatorManager
+  m_EditorClassIdentifier: 
+  _actionBounceHeight: 0.25
+  _actionBounceDuration: 1
+  _actionYoffset: 0
+  _actionAvatarDistance: 0.5
+  _actionFurnitureDistance: 2
+  _tapIndicatorPrefab: {fileID: 4727836628150960555, guid: a88febfe60e3c844ca6e0b3af87773ff,
+    type: 3}
+  _tapIndicatorPrefab3D: {fileID: 7025435918243807456, guid: 5dfae8e2eae84f140b64b0e4cfcbcfe8,
+    type: 3}
+  _grabIndicator: {fileID: 11400000, guid: 1ecc17fe6068e8c47a8991d12368a4e2, type: 2}
+  _tipJarIndicator: {fileID: 11400000, guid: 95a2eaa02e3ecd44a97ab76dc861756b, type: 2}
+  _genericIndicator: {fileID: 11400000, guid: 817737e070c5ce943abf7ab571aa728c, type: 2}
+  _claimIndicator: {fileID: 11400000, guid: a54c2203dda5aae429d17ada6a3b66ca, type: 2}
+  _npcIndicator: {fileID: 11400000, guid: 57e851fec09f2824193fbac487a9b074, type: 2}
+  _upgradeIndicator: {fileID: 11400000, guid: 33d588ad74ca88f45a48a42554044085, type: 2}
+  _sellIndicator: {fileID: 11400000, guid: f9c04e6d3d8063941b6140792f276270, type: 2}
+  _shopIndicator: {fileID: 11400000, guid: 77ea036521448924ba8e51f9aacb4421, type: 2}
+  _designContestIndicator: {fileID: 11400000, guid: 65ab8b3f4d3244bb2b4464f42546bd67,
+    type: 2}
+  _starterRoomInboxIndicator: {fileID: 11400000, guid: 9efa6794f3e5e4c329c2aa168b071fa3,
+    type: 2}
+  _starterRoomInboxIndicatorSmall: {fileID: 11400000, guid: acb7a53a5bde249ab97e46dccf840dd2,
+    type: 2}
+  _starterRoomGiftsIndicator: {fileID: 11400000, guid: e3beffdcd672a48b7af1395be4f4db89,
+    type: 2}
+  _starterRoomGiftsIndicatorSmall: {fileID: 11400000, guid: baff3b0e440104d318e57dfba65563e8,
+    type: 2}
+  _starterRoomEditAvatarIndicator: {fileID: 11400000, guid: cd2b461b6537b4e41ba3d5d254bcf873,
+    type: 2}
+  _starterRoomEditAvatarIndicatorSmall: {fileID: 11400000, guid: 5dc849dcec4d94547856d630f9641d05,
+    type: 2}
+  _starterRoomTravelIndicator: {fileID: 11400000, guid: 445730702fd8740498b828a148bfa7cf,
+    type: 2}
+  _starterRoomTravelIndicatorSmall: {fileID: 11400000, guid: 8880f328d1d0a45e8b1794d2f8fa64d4,
+    type: 2}
+  _typingIndicator: {fileID: 11400000, guid: c4ffd993167e2e2499a57961bcf3e606, type: 2}
+  _voiceIndicator: {fileID: 11400000, guid: 6f8b32dcfc0eca2498ad9190cd91c89c, type: 2}
+  _idleIndicator: {fileID: 11400000, guid: 3a67aecd9493d2741a586a2af43a4d51, type: 2}
+  _setupIndicator: {fileID: 11400000, guid: 944b2f15015f142cf8f789d8e0a7c791, type: 2}
+  _userGrabIndicator: {fileID: 11400000, guid: 7f0e938ad8e6b47fa9587365dbac5fad, type: 2}
+  _userGrabClaimIndicator: {fileID: 11400000, guid: 3100b83b1074f424697124adbead374d,
+    type: 2}
+  _styleChallengeIndicator: {fileID: 11400000, guid: c7fff8a6bdd9f40b1b0298f606c901e5,
+    type: 2}
+  _donateIndicator: {fileID: 11400000, guid: 4ad318e89ad3d4f0db33c41fb1bc224d, type: 2}
+  _prankIndicator: {fileID: 11400000, guid: e8c2a8d8b42174069a71c71ce54dcdaa, type: 2}
+  _scavengeIndicator: {fileID: 11400000, guid: 67cb03fc7f83846ba8fbd63fe9e5e409, type: 2}
+  _leaveIndicator: {fileID: 11400000, guid: e94d34e2768cf4f5c9120712d4adc00b, type: 2}

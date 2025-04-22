@@ -1,0 +1,59 @@
+.action-sheet-button {
+    height: 44px;
+    padding: 8px 16px;
+    flex-direction: row;
+    align-items: center;
+}
+
+.action-sheet-button-image {
+    height: 24px;
+    width: 24px;
+    margin-right: 12px;
+}
+
+.action-sheet-button-middle {
+    flex-grow: 1;
+    align-items: center;
+}
+
+.action-sheet-button-title {
+    font-size: 15px;
+    -unity-font-style: bold;
+}
+
+.action-sheet-button-middle > #_currenciesContainer > UICurrency {
+    margin-left: 5px;
+    margin-right: 0px;
+}
+
+.rtl .action-sheet-button-middle > #_currenciesContainer > UICurrency {
+    margin-left: 0px;
+    margin-right: 5px;
+}
+
+.action-sheet-button-arrow {
+    height: 16px;
+    width: 16px;
+    --unity-image-tint-color: var(--color-fishbase-anchovy);
+}
+
+.action-sheet-button-regular .action-sheet-button-image {
+    --unity-image-tint-color: var(--color-fishbase-bonito);
+}
+
+.action-sheet-button-regular .action-sheet-button-title {
+    color: var(--color-fishbase-bonito);
+}
+
+.action-sheet-button-destructive .action-sheet-button-image {
+    --unity-image-tint-color: var(--color-basic-destructive);
+}
+
+.action-sheet-button-destructive .action-sheet-button-title {
+    color: var(--color-basic-destructive);
+}
+
+.action-sheet-button #_currenciesContainer {
+    flex-grow: 0;
+    flex-shrink: 0;
+}

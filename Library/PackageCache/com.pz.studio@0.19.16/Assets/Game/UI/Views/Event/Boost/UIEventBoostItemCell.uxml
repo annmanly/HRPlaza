@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<UXML
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns="UnityEngine.UIElements"
+    xmlns:hr="Highrise.UI"
+    xmlns:editor="UnityEditor.UIElements"
+    xsi:noNamespaceSchemaLocation="../../../../../../UIElementsSchema/UIElements.xsd"
+>
+
+  <hr:UIEventBoostItemCell class="event-boost-item-cell">
+    <VisualElement name="_card" class="event-boost-item-cell__card rarity-bg">
+      <hr:UIMythicalBackground class="overlay"/>
+      <hr:UIImage name="_effectsIcon" class="icon-outfit-auras" />
+      <hr:UIImage name="_image" class="event-boost-item-cell__image" />
+    </VisualElement>
+    <VisualElement class="event-boost-item-cell__boost-badge overlay-bottom-right">
+      <Image class="icon-event-boost" />
+      <hr:UILabel name="_boostLabel" />
+    </VisualElement>
+  </hr:UIEventBoostItemCell>
+
+</UXML>

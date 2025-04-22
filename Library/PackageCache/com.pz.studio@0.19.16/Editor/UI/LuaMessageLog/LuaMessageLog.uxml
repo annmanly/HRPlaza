@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<UXML
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns="UnityEngine.UIElements"
+    xmlns:editor="UnityEditor.UIElements"
+    xsi:noNamespaceSchemaLocation="../../../../UIElementsSchema/UIElements.xsd"
+>
+  <VisualElement class="message-log">
+    <VisualElement name="_toolbar">
+      <Button name="_clearButton" text="Clear"/>
+      <Button name="_autoScrollButton" text="Auto Scroll"/>
+    </VisualElement>
+    <TwoPaneSplitView name="_splitter" orientation="Vertical" fixedPaneIndex="1" fixedPaneInitialDimension="200">
+      <ListView name="_messagesView"/>
+      <VisualElement name="_details">
+        <VisualElement class="message-log__details">
+          <Image name="_messageIcon"/>
+          <VisualElement>
+            <VisualElement class="_messageName">
+              <Label name="_messageType"/>
+            </VisualElement>
+            <Label name="_messageId"/>
+          </VisualElement>
+        </VisualElement>
+        <ScrollView name="_messageContent"/>
+      </VisualElement>
+    </TwoPaneSplitView>
+  </VisualElement>
+</UXML>

@@ -1,0 +1,17 @@
+.wishlist-cell-list {
+    flex-grow: 1;
+    padding: 8px;
+}
+
+.wishlist-cell-list UIItemCardRecyclable {
+    min-width: var(--4-column-item-min-width);
+    max-width: var(--4-column-item-max-width);
+}
+
+.wishlist-cell-list UIItemCardRecyclable > UIItemCard .currency__disabled > UILabel {
+    color: var(--color-fishbase-bonito);
+}
+
+.wishlist-cell-list #_wishlistSection {
+    padding-bottom: 48px;
+}

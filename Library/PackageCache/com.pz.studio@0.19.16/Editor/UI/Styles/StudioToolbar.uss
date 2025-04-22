@@ -1,0 +1,91 @@
+.hr-studio-toolbar__logo,
+.hr-studio-toolbar__user {
+    width: 14px;
+    height: 14px;
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-left: 4px;
+    margin-right: 4px;
+}
+
+.hr-studio-toolbar__logo {
+    --unity-image: url("project://database/Packages/com.pz.studio/Editor/UI/Icons/Logo.png");
+}
+
+.NetworkTraffic-Light {
+    border-color: var(--color-fishbase-mackerel-20);
+    background-color: rgba(0, 250, 90, 0.8);
+    
+}
+
+.NetworkTraffic-Light:hover {
+    background-color: rgba(0, 220, 90, 0.8);
+}
+
+.hr-studio-toolbar__yellow,
+.BuildState-Pending,
+.BuildState-Processing {
+    border-color: var(--color-fishbase-mackerel-20);
+}
+
+.NetworkTraffic-Medium {
+    border-color: var(--color-fishbase-mackerel-20);
+    background-color: rgba(255, 200, 15, 0.8);
+    color: var(--color-fishbase-tuna);
+}
+
+.hr-studio-toolbar__yellow:hover,
+.BuildState-Pending:hover,
+.BuildState-Processing:hover,
+.NetworkTraffic-Medium:hover {
+    background-color: rgba(255, 193, 7, 0.8);
+}
+
+.BuildState-Failed,
+.NetworkTraffic-Heavy {
+    border-color: var(--color-fishbase-mackerel-20);
+    background-color: rgba(251, 100, 100, 1);
+    color: var(--color-fishbase-tuna);
+}
+
+.BuildState-Failed:hover,
+.NetworkTraffic-Heavy:hover {
+    background-color: rgba(251, 80, 80, 1);
+}
+
+.BuildState-Succeeded {
+    border-color: var(--color-fishbase-mackerel-20);
+    background-color: rgba(10, 125, 0, 0.8);
+}
+
+.BuildState-Succeeded:hover {
+    background-color: rgba(10, 125, 0, 0.6);
+}
+
+.BuildState-Idle {
+    border-color: var(--color-fishbase-mackerel-20);
+    background-color: rgba(0, 90, 250, 0.8);
+}
+
+.BuildState-Idle:hover {
+    background-color: rgba(10, 90, 255, 0.6);
+}
+
+.hr-studio-toolbar__purple {
+    border-color: var(--color-fishbase-mackerel-20);
+    background-color: var(--color-accents-primary);
+}
+
+.hr-studio-toolbar__purple:hover {
+    background-color: var(--color-accents-primary-selected);
+}
+
+.hr-studio-toolbar-image {
+    width: 14px;
+    height: 14px;
+    opacity: 0.75;
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-right: auto;
+    margin-left: auto;
+}

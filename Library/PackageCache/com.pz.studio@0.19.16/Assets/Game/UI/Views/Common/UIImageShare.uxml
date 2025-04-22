@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<UXML
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns="UnityEngine.UIElements"
+    xmlns:hr="Highrise.UI"
+    xmlns:editor="UnityEditor.UIElements"
+    xsi:noNamespaceSchemaLocation="../../../../../UIElementsSchema/UIElements.xsd"
+>
+
+  <hr:UIImageShare class="image-share">
+    <hr:UIImage name="_image" />
+    <VisualElement class="image-share__safe-area">
+      <VisualElement class="image-share__top-buttons">
+        <hr:UIButton name="_closeButton" class="image-share__button">
+          <VisualElement class="image-share__button-shadow">
+            <hr:UIImage class="icon-close" />
+          </VisualElement>
+        </hr:UIButton>
+        <hr:UIButton name="_roomThumbnailButton" class="image-share__button">
+          <VisualElement class="image-share__button-shadow">
+            <hr:UIImage class="icon-background" />
+          </VisualElement>
+        </hr:UIButton>
+        <hr:UIButton name="_chatButton" class="image-share__button">
+          <VisualElement class="image-share__button-shadow">
+            <hr:UIImage class="icon-chat-history" />
+          </VisualElement>
+        </hr:UIButton>
+      </VisualElement>
+      <VisualElement class="image-share__bottom-buttons">
+        <hr:UIButton name="_postButton" class="image-share__bottom-button-long">
+          <hr:UIImage class="icon-post" />
+          <hr:UILabel key="post" />
+        </hr:UIButton>
+        <hr:UIButton name="_saveButton" class="image-share__bottom-button-long">
+          <hr:UIImage class="icon-save" />
+          <hr:UILabel key="save" />
+        </hr:UIButton>
+        <hr:UIButton name="_shareButton" class="image-share__bottom-button">
+          <hr:UIImage class="icon-share" />
+        </hr:UIButton>
+      </VisualElement>
+    </VisualElement>
+  </hr:UIImageShare>
+
+</UXML>

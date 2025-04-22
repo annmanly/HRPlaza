@@ -1,0 +1,95 @@
+/*
+
+    Character Slot Inspector
+  
+*/
+
+.character-slot-inspector {
+    margin-top: 8px;
+}
+
+.character-slot-inspector .icon {
+    width: 22px;
+    height: 22px;
+    opacity: 0.3;
+    margin-top: auto;
+    margin-bottom: auto;
+    flex-shrink: 0;
+}
+
+.character-slot-inspector #_clothingLabel {
+    margin-top: 16px;
+}
+
+.character-slot-inspector #_clothing {
+    -unity-text-align: middle-left;
+    margin-top: 8px;
+}
+
+.character-slot-inspector .clothing {
+    flex-direction: row;
+    height: 48px;
+}
+
+.character-slot-inspector .clothing UIImage {
+    background-color: var(--unity-colors-box-background);
+    border-radius: 4px;
+    width: 46px;
+    height: 46px;
+    padding: 2px;
+    margin-top: 1px;
+    margin-left: 4px;
+    flex-shrink: 0;
+}
+
+.character-slot-inspector .clothing Label {
+    height: 100%;
+    margin-left: 8px;
+    opacity: 0.5;
+}
+
+.character-slot-inspector .copy {
+    --unity-image: url("project://database/Packages/com.pz.studio/Assets/Sprites/Icons/icon_copy.png");
+    width: 16px;
+    height: 16px;
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-left: 8px;
+    opacity: 0.5;
+    display: none;
+}
+
+.character-slot-inspector .clothing:hover .copy {
+    display: flex;
+}
+
+.character-slot-inspector #_skeleton {
+    margin-top: 8px;
+}
+
+.character-slot-inspector HelpBox {
+    margin-bottom: 8px;
+}
+
+.character-slot-inspector .states {
+    margin-left: -8px;
+}
+
+.character-slot-inspector .states UIImage {
+    width: 40px;
+    height: 40px;
+    flex-shrink: 0;
+    margin: 4px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.character-slot-inspector .states Label {
+    -unity-text-align: middle-left;
+    height: 100%;
+}
+
+.character-slot-inspector #_statesLabel {
+    margin-top: 4px;
+    margin-bottom: 8px;
+}

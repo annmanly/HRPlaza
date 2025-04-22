@@ -1,0 +1,23 @@
+.popup-picker-item
+{
+    width: 50%;
+    padding: 4px;
+}
+
+.popup-picker-item-whole-width {
+    width: 100%;
+}
+
+.popup-picker-item #_button 
+{
+    padding: 0px;
+    height: 36px;
+    background-color: var(--color-fishbase-tuna);
+    color: var(--color-fishbase-mackerel);
+}
+
+.popup-picker-item:checked #_button 
+{
+    background-color: var(--color-accents-secondary-25);
+    color: var(--color-accents-secondary);
+}

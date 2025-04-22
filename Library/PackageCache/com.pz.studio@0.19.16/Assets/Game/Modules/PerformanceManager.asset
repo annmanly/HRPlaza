@@ -1,0 +1,21 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -224059734, guid: 30a4c7dce0b6891478396efa6bd2a6d0, type: 3 }
+  m_Name: PerformanceManager
+  m_EditorClassIdentifier: 
+  _renderScaleLow: 0.25
+  _renderScaleMedium: 0.5
+  _renderScaleHigh: 1
+  _runInEditor: 0
+  _renderPipelineDefault: {fileID: 11400000, guid: 7b7fd9122c28c4d15b667c7040e3b3fd,
+    type: 2}
+  _renderPipelineLow: {fileID: 11400000, guid: c5ca88e9b17b24976bac59625274883c, type: 2}

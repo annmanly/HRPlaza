@@ -1,0 +1,22 @@
+.progress-bar {
+    flex-direction: row;
+    align-items: center;
+    width: 100%;
+}
+
+.progress-bar__background {
+    background-color: var(--color-fishbase-eel);
+    height: 8px;
+    width: 100%;
+    border-radius: 2px;
+}
+
+.progress-bar__progress {
+    position: absolute;
+    background-color: var(--color-accents-primary);
+    left: 0;
+    top: 0;
+    bottom: 0;
+    margin: 0;
+    border-radius: 2px;
+}

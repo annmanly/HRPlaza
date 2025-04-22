@@ -1,0 +1,34 @@
+.item-info-text-label {
+    align-items: center;
+    padding: 2px 0;
+}
+
+.item-info-text-label UIImage {
+    margin-right: 3px;
+    width: 16px;
+    height: 16px;
+    --unity-image-tint-color: var(--color-fishbase-anchovy)
+}
+
+.item-info-text-label.ItemInfoTextLabel-Nft UIImage {
+    margin-right: 4px;
+    border-radius: 4px;
+    background-color: var(--color-tertiary-blueberry);
+    --unity-image-tint-color: var(--color-fishbase-catfish);
+}
+
+.item-info-text-label.ItemInfoTextLabel-Pet UIImage {
+    --unity-image-tint-color: null;
+}
+
+.item-info-text-label UILabel {
+    font-size: 15px;
+    margin: 0;
+    margin-right: 8px;
+    color: var(--color-fishbase-mackerel);
+}
+
+.rtl .item-info-text-label UILabel {
+    margin-right: 0;
+    margin-left: 8px;
+}

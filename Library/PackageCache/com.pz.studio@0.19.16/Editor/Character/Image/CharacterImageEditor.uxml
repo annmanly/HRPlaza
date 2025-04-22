@@ -1,0 +1,105 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<UXML
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns="UnityEngine.UIElements"
+    xmlns:editor="UnityEditor.UIElements"
+>
+    <VisualElement class="character-image-editor">
+        
+        <editor:Toolbar>
+            <editor:ToolbarMenu name="_imageMode"/>
+            <editor:ToolbarButton name="_saveButton" text="Save As..." />
+            <editor:ToolbarButton name="_cancelSaveButton" text="Cancel" />
+            <ProgressBar name="_saveProgressBar" />
+        </editor:Toolbar>
+        
+
+        <TwoPaneSplitView fixed-pane-index="1" fixed-pane-initial-dimension="480">
+            <VisualElement name="_left">
+                <VisualElement class="row">
+                    <Label text="Resolution" class="field-label" />
+                    <IntegerField name="_resolutionWidth" />
+                    <Label text="x" />
+                    <IntegerField name="_resolutionHeight" />
+                </VisualElement>
+                <VisualElement class="row">
+                    <Label text="Outfit" class="field-label" />
+                    <editor:ObjectField name="_outfitPicker" />
+                </VisualElement>
+                <VisualElement class="row">
+                    <Label text="Shadow" class="field-label" />
+                    <Toggle name="_shadowToggle" />
+                </VisualElement>
+
+                <VisualElement class="row">
+                    <Label text="Camera" class="field-label" />
+                    <editor:EnumField name="_cameraMode" />
+                </VisualElement>
+                <VisualElement name="_customCameraSection">
+                    <VisualElement class="row">
+                        <Label text="Camera Zoom" class="field-label" />
+                        <Slider name="_cameraZoomSlider" low-value="0" high-value="1" />
+                        <FloatField name="_cameraZoom" class="small-field" />
+                    </VisualElement>
+                    <VisualElement class="row">
+                        <Label text="Camera X" class="field-label" />
+                        <Slider name="_cameraXSlider" low-value="-1" high-value="1" />
+                        <FloatField name="_cameraX" class="small-field" />
+                    </VisualElement>
+                    <VisualElement class="row">
+                        <Label text="Camera Y" class="field-label" />
+                        <Slider name="_cameraYSlider" low-value="-1" high-value="1" />
+                        <FloatField name="_cameraY" class="small-field" />
+                    </VisualElement>
+                    <VisualElement class="row">
+                        <Label text="Camera Rotation" class="field-label" />
+                        <Slider name="_cameraRotationSlider" low-value="-180" high-value="180" />
+                        <FloatField name="_cameraRotation" class="small-field" />
+                    </VisualElement>
+                </VisualElement>
+
+                <VisualElement class="row">
+                    <Label text="Animation" class="field-label" />
+                    <editor:EnumField name="_animationType" />
+                    <VisualElement name="_emotePickSection">
+                        <TextField name="_emoteField" />
+                        <Button name="_emoteButton" class="unity-object-field__selector" />
+                    </VisualElement>
+                    <VisualElement name="_clipPickSection">
+                        <editor:ObjectField name="_clipPicker" />
+                    </VisualElement>
+                </VisualElement>
+
+                
+                <VisualElement name="_imageSection">
+                    <VisualElement class="row">
+                        <Label text="Time" class="field-label" />
+                        <Slider name="_imageTimeSlider" low-value="0" high-value="1" />
+                        <FloatField name="_imageTime" class="small-field" />
+                    </VisualElement>
+                </VisualElement>
+
+                <VisualElement name="_animationSection">
+                    <VisualElement class="row">
+                        <Label text="Time" class="field-label" />
+                        <FloatField name="_animationStartTime" class="small-field" />
+                        <MinMaxSlider name="_animationTimeSlider" low-limit="0" high-limit="1" />
+                        <FloatField name="_animationEndTime" class="small-field" />
+                    </VisualElement>
+
+                    <VisualElement class="row">
+                        <Label text="Frame Rate" class="field-label" />
+                        <IntegerField name="_frameRate" class="small-field" />
+                    </VisualElement>
+                </VisualElement>
+
+            </VisualElement>
+            <VisualElement name="_right">
+                <VisualElement name="_preview">
+                    <Image name="_previewImage" scale-mode="scaleToFit"/>
+                </VisualElement>
+            </VisualElement>
+        </TwoPaneSplitView>
+    </VisualElement>
+  
+</UXML>

@@ -1,0 +1,51 @@
+.color-display-list {
+    flex-grow: 1;
+    min-width: 50px;
+    border-right-width: 1px;
+    border-right-color: var(--unity-colors-toolbar-border);
+}
+
+.color-display-list UICollection {
+    flex-grow: 1;
+    background-color: var(--unity-colors-window-background);
+}
+
+.color-display-list UICollectionSection {
+    padding: 8px;
+    padding-right: 4px;
+}
+
+.color-display-list UICollection .unity-scroll-view {
+    flex-grow: 1;
+}
+
+.color-display-item {
+    height: 18px;
+    border-color: var(--unity-colors-window-background);
+    border-width: 2px;
+}
+
+.color-display-item:hover {
+    border-color: var(--unity-colors-highlight-background-hover);
+}
+
+.color-display-item:checked {
+    border-color: var(--unity-colors-highlight-background);
+}
+
+.color-display-item .color-image {
+    border-radius: 8px;
+    overflow: hidden;
+    width: 40px;
+    height: 40px;
+    margin-left: 8px;
+}
+
+.color-disabled {
+    color: var(--unity-colors-toggle-text-disabled);
+}
+
+.color-toggle-disabled{
+    background-color: var(--unity-colors-toggle_checkmark-background-disabled);
+}
+

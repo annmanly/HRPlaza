@@ -1,0 +1,16 @@
+.text-commands-search-cell {
+}
+
+.text-commands-search-cell #_commandName {
+    -unity-font-definition: var(--font-bold);
+    font-size: 16px;
+    color: var(--color-fishbase-whitefish);
+    margin: 8px 12px 0;
+}
+
+.text-commands-search-cell #_commandDescription {
+    font-size: 11px;
+    color: var(--color-fishbase-mackerel);
+    margin: 0 12px 6px;
+    white-space: normal;
+}

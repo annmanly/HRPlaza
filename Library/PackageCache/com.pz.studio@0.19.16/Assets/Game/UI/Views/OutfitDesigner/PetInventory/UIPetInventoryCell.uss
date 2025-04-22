@@ -1,0 +1,108 @@
+.pet-inventory-cell {
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 2px;
+    overflow: hidden;
+}
+
+.pet-inventory-cell #_clothingImage {
+    overflow: hidden;
+    border-radius: 8px;
+}
+
+.pet-inventory-cell-on-head-item #_clothingImage {
+    right: -1px;
+}
+
+.pet-inventory-cell #_nonTradableOverlay {
+    position: relative;
+    width: 18px;
+    height: 18px;
+    margin-top: auto;
+    margin-bottom: 4px;
+    margin-left: 4px;
+    --unity-image-tint-color: var(--color-fishbase-anchovy);
+    background-color: var(--color-fishbase-catfish);
+    border-radius: 4px;
+}
+
+.pet-inventory-cell #_nfi {
+    display: none;
+    position: absolute;
+    margin: 0;
+    padding: 0;
+    background-color: var(--color-fishbase-catfish);
+    color: var(--color-fishbase-bonito);
+    font-size: 11px;
+    -unity-font-definition: var(--font-bold);
+    border-radius: 4px;
+    padding-top: 1px;
+    padding-bottom: 1px;
+    padding-left: 2px;
+    padding-right: 2px;
+    margin-bottom: 4px;
+    margin-left: 4px;
+}
+
+.pet-inventory-cell #_nft {
+    display: none;
+    position: absolute;
+    width: 18px;
+    height: 18px;
+    left: -4px;
+    bottom: -4px;
+    background-color: var(--color-tertiary-blueberry);
+    --unity-image-tint-color: var(--color-fishbase-catfish);
+    border-radius: 4px;
+    margin-bottom: 7px;
+    margin-left: 7px;
+}
+
+.pet-inventory-cell #_newBadge {
+    background-image: var(--image-star);
+    -unity-background-image-tint-color: var(--color-basic-alert);
+    height: 28px;
+    width: 28px;
+    align-items: center;
+    justify-content: center;
+}
+
+.pet-inventory-cell #_newBadge > UILabel {
+    color: var(--color-fishbase-eel);
+    font-size: 8px;
+    -unity-font-definition: var(--font-black-italic);
+    -unity-text-align: middle-center;
+    rotate: -11deg;
+    margin: 0;
+    padding: 0;
+}
+
+/* Mythical background */
+
+.pet-inventory-cell UIMythicalBackground {
+    display: none;
+}
+
+.pet-inventory-cell .mythical-background-mask {
+    display: none;
+}
+
+.pet-inventory-cell.rarity-mythical UIMythicalBackground {
+    display: flex;
+}
+
+.pet-inventory-cell #_selectedBadge {
+    display: none;
+    width: 22px;
+    height: 22px;
+    border-radius: 8px;
+    bottom: 5px;
+    right: 5px;
+    padding: 3px;
+    background-color: var(--color-accents-primary);
+    --unity-image-tint-color: var(--color-fishbase-eel);
+}
+
+.pet-inventory-cell:checked #_selectedBadge {
+    display: flex;
+}

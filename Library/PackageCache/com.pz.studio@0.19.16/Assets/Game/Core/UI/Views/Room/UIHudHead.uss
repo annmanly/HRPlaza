@@ -1,0 +1,91 @@
+.hud-head {}
+
+.hud-head-content {
+    height: 65px;
+    width: 52px;
+    border-radius: 6px;
+    overflow: hidden;
+    padding-bottom: 4px;
+}
+
+.hud-head-gradient {
+    margin: 4px;
+    height: 44px;
+    width: 44px;
+    border-radius: 6px;
+    background-color: var(--color-fishbase-blackfish-15);
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.hud-head-icon {
+    height: 44px;
+    width: 44px;
+}
+
+.hud-head-label {
+    -unity-font-definition: var(--font-black-italic);
+    -unity-font-style: bold;
+    color: var(--color-fishbase-whitefish);
+    -unity-text-align: middle-center;
+    -unity-text-outline-width: 1px;
+    -unity-text-outline-color: var(--color-black-40);
+    text-shadow: 0 1px 0 rgba(0, 0, 0, 0.4);
+    flex-grow: 1;
+    max-width: 100%;
+    padding-left: 4px;
+    padding-right: 4px;
+    height: 8px;
+}
+
+.hud-head .outlined-label #_innerLabel {
+    height: 8px;
+}
+
+.hud-head-alert-icon-container {
+    border-width: 1px;
+    border-radius: 6px;
+    height: 8px;
+    width: 8px;
+    position: absolute;
+    top: -2px;
+    right: -2px;
+    display: none;
+}
+
+/**
+.hud-head-alert-icon-background {
+    height: 8px;
+    width: 8px;
+    background-color: black;
+}
+**/
+
+.hud-head-new-indicator {
+    display: none;
+    width: 58px;
+    height: 24px;
+    position: absolute;
+    left: 42px;
+    top: 12px;
+    background-image: var(--image-hud-new-indicator);
+    -unity-background-image-tint-color: var(--color-tertiary-dragonfruit);
+}
+
+.hud-head-new-indicator UILabel {
+    color: var(--color-fishbase-whitefish);
+    margin: auto;
+    padding-left: 8px;
+    padding-right: 4px;
+    -unity-font-definition: var(--font-black-italic);
+}
+
+.hud-head-color-gradient {
+    background-image: var(--image-vgradient-exp-180);
+}
+
+.hud-head-header-image {
+    height: 12px;
+    top: -7px;
+}

@@ -1,0 +1,119 @@
+:root {
+    --safe-area-top: 0px;
+    --safe-area-left: 0px;
+    --safe-area-right: 0px;
+    --safe-area-bottom: 0px;
+    --screen-width: 0px;
+    --screen-height: 0px;
+    --screen-width-neg: 0px;
+    --screen-height-neg: 0px;
+    --half-screen-width: 0px;
+    --half-screen-height: 0px;
+    --half-screen-width-neg: 0px;
+    --half-screen-height-neg: 0px;
+    --feed-media-size: 0px;
+}
+
+.virtual-player {
+    flex-direction: column-reverse;
+    background-color: var(--unity-colors-default-background);
+    flex-grow: 1;
+}
+
+.virtual-player #_viewContainer {
+    flex-shrink: 0;
+    flex-grow: 1;
+}
+
+.virtual-player #_transformContainer {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    transform-origin: 0 0;
+}
+
+.virtual-player #_view {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+
+.virtual-player #_primaryTouchIcon,
+.virtual-player #_secondaryTouchIcon 
+{
+    position: absolute;
+    width: 32px;
+    height: 32px;
+    margin: 0;
+    padding: 0;
+    border-width: 0;
+    border-radius: 0;
+}
+
+.virtual-player #_primaryTouchIcon {
+    --unity-image: resource("ViewToolMove On");
+    --unity-image-tint-color: lightseagreen
+}
+.virtual-player #_secondaryTouchIcon {
+    --unity-image: resource("ViewToolMove On");
+    --unity-image-tint-color: limegreen
+}
+
+.virtual-player UIPlayer
+{
+    flex-grow: 1;
+}
+
+.virtual-player #_toolbar {
+    background-color: var(--unity-colors-tab-background-checked);
+    border-bottom-width: .5px;
+    border-bottom-color: var(--unity-colors-toolbar-border);
+    flex-direction: row;
+    width: 100%;
+    height: 20px;
+    display: flex;
+}
+
+.virtual-player #_toolbar > Button {
+    background-color: var(--unity-colors-toolbar_button-background);
+    border-width: 0;
+    border-left-width: 0.5px;
+    border-right-width: 0.5px;
+    border-color: var(--unity-colors-toolbar-border);
+    padding-left: 8px;
+    padding-right: 8px;
+    margin: 0;
+    border-radius: 0;
+    color: var(--unity-colors-toolbar_button-text);
+}
+
+.virtual-player #_toolbar > Button:checked {
+    background-color: var(--unity-colors-toolbar_button-background-checked);
+    color: var(--unity-colors-toolbar_button-text-checked);
+}
+
+
+.virtual-player #_connect,
+.virtual-player #_disconnect,
+.virtual-player #_autoConnect {
+    min-width: 110px;
+}
+
+.virtual-player .left-group,
+.virtual-player .right-group {
+    flex-direction: row;
+    display: flex;
+    align-items: center; /* Optional: Align items vertically within the group */
+}
+
+.virtual-player .right-group {
+    margin-left: auto; /* Push the group to the right */
+}
+
+.virtual-player #_latency {
+    min-width: 60px;
+}

@@ -1,0 +1,65 @@
+.event-boost-item-cell {
+}
+
+.event-boost-item-cell__card {
+    width: 73px;
+    height: 73px;
+    border-radius: 8px;
+    margin-top: 8px;
+    margin-right: 8px;
+    padding: 4px;
+}
+
+.event-boost-item-cell__boost-badge {
+    width: 28px;
+    height: 28px;
+    flex-direction: column;
+    justify-content: center;
+    margin-bottom: 4px;
+    margin-right: 5px;
+    border-radius: 8px;
+    background-color: var(--color-fishbase-tuna);
+}
+
+.event-boost-item-cell__boost-badge Image {
+    width: 12px;
+    height: 12px;
+    margin:  3px auto auto auto;
+    --unity-image-tint-color: var(--color-tertiary-banana);
+}
+
+.event-boost-item-cell__boost-badge UILabel {
+    font-size: 9px;
+    margin: auto;
+    color: var(--color-tertiary-banana);
+    -unity-font-definition: var(--font-bold-italic);
+}
+
+/* Effects icon */
+
+.event-boost-item-cell #_effectsIcon {
+    display: none;
+    position: absolute;
+    top: 2px;
+    right: 2px;
+    width: 24px;
+    height: 24px;
+    --unity-image-tint-color: var(--color-fishbase-eel-25);
+}
+
+/* Mythical Rarity */
+.event-boost-item-cell UIMythicalBackground {
+    display: none;
+}
+
+.event-boost-item-cell .mythical-background-mask {
+    display: none;
+}
+
+.event-boost-item-cell.rarity-mythical UIMythicalBackground {
+    display: flex;
+}
+
+.event-boost-item-cell.alt.rarity-mythical .mythical-background-mask {
+    display: flex;
+}

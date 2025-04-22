@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<UXML
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns="UnityEngine.UIElements"
+    xmlns:hr="Highrise.UI"
+    xmlns:editor="UnityEditor.UIElements"
+    xsi:noNamespaceSchemaLocation="../../../../../../UIElementsSchema/UIElements.xsd"
+>
+
+  <hr:UIRoomInfo class="room-info">
+    <hr:UICollection name="_collection">
+
+      <!-- Header-->
+      <hr:UICollectionSection name="_headerSection" class="room-info__header-and-radio">
+        <hr:UIRoomInfoHeader name="_header"/>
+        <hr:UIRoomInfoRadio name="_radio"/>
+      </hr:UICollectionSection>
+
+      <!-- Player Count -->
+      <hr:UICollectionSection>
+        <VisualElement class="room-info-player-count rtl-reverse">
+          <Image class="icon-profile"/>
+          <hr:UILabel name="_playerCount"/>
+        </VisualElement>
+      </hr:UICollectionSection>
+
+      <!-- Channels -->
+      <hr:UICollectionSection>
+        <hr:UIRoomInfoChannels name="_channels"/>
+      </hr:UICollectionSection>
+
+      <!-- Spectators -->
+      <hr:UICollectionSection name="_spectatorSection">
+        <VisualElement class="room-info-spectator-count rtl-reverse">
+          <Image class="icon-spectator"/>
+          <hr:UILabel name="_spectatorCount"/>
+        </VisualElement>
+      </hr:UICollectionSection>
+
+      <hr:UICollectionSection>
+        <VisualElement class="room-info-bottom-scroll-padding" name="_bottomSpacer" />
+      </hr:UICollectionSection>
+
+    </hr:UICollection>
+    
+    <!-- Room Boost -->
+    <VisualElement class="room-info__footer overlay-bottom" pickingMode="Ignore">
+      <hr:UIRoomBoost name="_roomBoost"/>
+      <VisualElement class="room-info__controls rtl-reverse">
+        <VisualElement class="room-info__voice-controls-container">
+          <hr:UIRoomInfoVoiceControls name="_voiceControls"/>
+        </VisualElement>
+        <hr:UIButton class="room-info__leave-button button-destructive" name="_leaveButton">
+          <hr:UIImage class="icon-leave"/>
+          <hr:UILabel key="leave"/>
+        </hr:UIButton>
+      </VisualElement>
+    </VisualElement>
+  </hr:UIRoomInfo>
+
+</UXML>

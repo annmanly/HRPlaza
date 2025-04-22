@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<UXML
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns="UnityEngine.UIElements"
+    xmlns:hr="Highrise.UI"
+    xmlns:hrui="Highrise.UI"
+    xmlns:editor="UnityEditor.UIElements"
+    xsi:noNamespaceSchemaLocation="../../../../../../UIElementsSchema/UIElements.xsd"
+>
+
+  <hr:UIPetInventoryCell class="pet-inventory-cell rarity-bg">
+    <hr:UIMythicalBackground class="overlay"/>
+    <hr:UIImage name="_clothingImage" class="overlay" loading-indicator="true"/>
+    <hr:UIImage name="_nonTradableOverlay" class="overlay-top-right icon-non-tradable"/>
+    <hr:UILabel name="_nfi" class="overlay-bottom-left"/>
+    <hr:UIImage name="_nft" class="overlay-bottom-left icon-non-tradable"/>
+    <VisualElement name="_newBadge" class="overlay-top-right">
+      <hr:UILabel name="_newBadgeLabel" />
+    </VisualElement>
+    <hr:UIImage name="_selectedBadge" class="overlay-bottom-right icon-checkmark"/>
+  </hr:UIPetInventoryCell>
+
+</UXML>

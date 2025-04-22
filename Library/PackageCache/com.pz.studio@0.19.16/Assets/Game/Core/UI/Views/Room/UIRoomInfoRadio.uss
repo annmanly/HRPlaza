@@ -1,0 +1,75 @@
+.room-info-radio {
+    padding: 0 12px 12px 12px;
+}
+
+.room-info-radio__content {
+    border-radius: 12px;
+    padding: 7px 6px;
+    height: 36px;
+    color: var(--color-fishbase-bonito);
+    background-color: var(--color-fishbase-tuna);
+    align-items: center;
+}
+
+.room-info-radio__text {
+    margin-left: 8px;
+    flex-grow: 0;
+    color: var(--color-fishbase-bonito);
+}
+
+.rtl .room-info-radio__text {
+    margin-left: 0;
+    margin-right: 8px;
+}
+
+.room-info-radio .icon-music-note {
+    width: 24px;
+    height: 24px;
+    flex-shrink: 0;
+    margin-top: auto;
+    margin-bottom: auto;
+    padding: 4px;
+    --unity-image-tint-color: var(--color-fishbase-bonito);
+}
+
+.room-info-radio .icon-sound {
+    width: 24px;
+    height: 24px;
+    flex-shrink: 0;
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-left: auto;
+    --unity-image-tint-color: var(--color-fishbase-bonito);
+}
+
+.rtl .room-info-radio .icon-sound {
+    margin-left: 0;
+    margin-right: auto;
+}
+
+.room-info-radio--enabled .icon-sound {
+    display: flex;
+}
+
+.room-info-radio #_stationName {
+    margin: 0;
+    padding: 0;
+    margin-top: auto;
+    margin-bottom: auto;
+    -unity-font-style: bold;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    flex-grow: 1;
+}
+
+.room-info-radio #_stationSong {
+    margin: 0;
+    padding: 0;
+    color: var(--color-fishbase-mackerel);
+    font-size: var(--font-size-s);
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+    display: none;
+}

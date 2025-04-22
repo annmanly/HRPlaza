@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<UXML
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns="UnityEngine.UIElements"
+    xmlns:hr="Highrise.Studio"
+    xsi:noNamespaceSchemaLocation="../../../../../UIElementsSchema/UIElements.xsd"
+>
+  <VisualElement class="asset-upload">
+    <VisualElement class="top">
+      <VisualElement class="left">
+        <Image name="_assetPreview"/>
+      </VisualElement>
+      <VisualElement class="right">
+        <VisualElement class="row">
+          <Label class="row-name" text="Type"/>
+          <Label name="_assetType" class="row-value" text="Character"/>
+        </VisualElement>
+        <VisualElement class="row">
+          <Label class="row-name" text="Id"/>
+          <Label name="_assetId" class="row-value" text="yo"/>
+        </VisualElement>
+        <VisualElement class="row">
+          <Label class="row-name" text="Global"/>
+          <Toggle name="_global" class="row-value"/>
+        </VisualElement>
+      </VisualElement>
+    </VisualElement>
+    <hr:UIUploadInfo name="_uploadInfo" class="info-content"/>
+    <HelpBox text="Once you upload, your Item will be saved as a draft. You and other users you grant permission to can then access the Item in the Highrise App." message-type="Info"/>
+    <VisualElement class="bottom">
+      <Label name="_estimatedSize"/>
+      <Button name="_uploadButton" class="button-primary">
+        <Label name="_uploadLabel" text="Upload" />
+      </Button>
+    </VisualElement>
+  </VisualElement>
+</UXML>

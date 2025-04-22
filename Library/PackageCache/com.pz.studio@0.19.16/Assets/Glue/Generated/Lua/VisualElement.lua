@@ -1,0 +1,85 @@
+--!AddComponentMenu("")
+
+-- VisualElement
+type VisualElement =
+{
+    canGrabFocus: boolean,
+    childCount: number,
+    contentContainer: VisualElement,
+    contentRect: Rect,
+    customStyle: ICustomStyle,
+    enabledInHierarchy: boolean,
+    enabledSelf: boolean,
+    experimental: IExperimentalFeatures,
+    layout: Rect,
+    localBound: Rect,
+    panel: IPanel,
+    parent: VisualElement,
+    resolvedStyle: IResolvedStyle,
+    schedule: IVisualElementScheduler,
+    style: IStyle,
+    transform: ITransform,
+    visualTreeAssetSource: VisualTreeAsset,
+    worldBound: Rect,
+    worldTransform: Matrix4x4,
+    name: string,
+    pickingMode: PickingMode,
+    tooltip: string,
+    viewDataKey: string,
+    visible: boolean,
+    Add: (child: VisualElement) -> (),
+    AddToClassList: (className: string) -> (),
+    BringToFront: () -> (),
+    Children: () -> {VisualElement},
+    ClassListContains: (cls: string) -> boolean,
+    Clear: () -> (),
+    ClearClassList: () -> (),
+    Contains: (child: VisualElement) -> boolean,
+    ContainsPoint: (localPoint: Vector2) -> boolean,
+    ElementAt: (index: number) -> VisualElement,
+    EnableInClassList: (className: string , enable: boolean) -> (),
+    FindCommonAncestor: (other: VisualElement) -> VisualElement,
+    Focus: () -> (),
+    GetClasses: () -> {string},
+    GetResolvedStyleSize: () -> Vector2,
+    IndexOf: (element: VisualElement) -> number,
+    Insert: (index: number , element: VisualElement) -> (),
+    IsDisplayed: () -> boolean,
+    LocalToWorld: (rect: Rect) -> Rect,
+    LocalToWorld: (point: Vector2) -> Vector2,
+    MarkDirtyRepaint: () -> (),
+    Overlaps: (rectangle: Rect) -> boolean,
+    PlaceBehind: (sibling: VisualElement) -> (),
+    PlaceInFront: (sibling: VisualElement) -> (),
+    Q: (name: string? , className: string?) -> VisualElement,
+    RegisterCallback: (type: Type , action: any , phase: TrickleDown?) -> Callback,
+    RegisterGesture: (gesture: Gesture) -> (),
+    RegisterLongPressCallback: (action: any , pressEffect: PressEffect? , sound: boolean? , haptic: boolean?) -> Callback,
+    RegisterPressCallback: (action: any , pressEffect: PressEffect? , sound: boolean? , haptic: boolean?) -> Callback,
+    Remove: (element: VisualElement) -> (),
+    RemoveAt: (index: number) -> (),
+    RemoveFromClassList: (className: string) -> (),
+    RemoveFromHierarchy: () -> (),
+    SendEvent: (e: EventBase) -> (),
+    SendToBack: () -> (),
+    SetDisplay: (display: boolean) -> (),
+    SetEnabled: (value: boolean) -> (),
+    Sort: (comp: (VisualElement, VisualElement) -> (number)) -> (),
+    ToggleInClassList: (className: string) -> (),
+    UnregisterCallback: (callback: Callback) -> (),
+    WorldToLocal: (rect: Rect) -> Rect,
+    WorldToLocal: (point: Vector2) -> Vector2,
+}
+
+-- VisualElementType
+type VisualElementType =
+{
+    disabledUssClassName: string,
+    new: () -> VisualElement,
+    __tostring: () -> string,
+}
+
+if not _G.VisualElement then
+    local VisualElementType_instance : VisualElementType = {}
+    _G.VisualElement = VisualElementType_instance;
+end

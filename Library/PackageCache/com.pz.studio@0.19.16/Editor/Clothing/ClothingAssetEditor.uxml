@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<UXML
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns="UnityEngine.UIElements"
+    xmlns:editor="UnityEditor.UIElements"
+    xmlns:toolbars="UnityEditor.Toolbars"
+    xmlns:hr="Highrise.UI"
+    xmlns:studio="Highrise.Studio.Characters"
+    xsi:noNamespaceSchemaLocation="../../../../../UIElementsSchema/UIElements.xsd"
+>
+
+  <VisualElement class="clothing-asset-editor">
+    <VisualElement name="_toolbar">
+        <VisualElement name="_toolbarLeft">
+            <editor:ToolbarButton name="_saveButton">
+                <Image/>
+            </editor:ToolbarButton>
+            <editor:ToolbarButton name="_openExternalButton">
+                <Image/>
+            </editor:ToolbarButton>
+        </VisualElement>
+        <VisualElement name="_toolbarRight">
+            <editor:ToolbarButton name="_showAllColors">
+                <Image/>
+            </editor:ToolbarButton>
+            <editor:ToolbarMenu name="_exportMenu" text="Export"/>
+            <editor:ToolbarButton name="_uploadButton" class="button-primary">
+                <Image/>
+                <Label text="Upload"/>
+            </editor:ToolbarButton>
+        </VisualElement>
+    </VisualElement>
+    <VisualElement name="_centerDisplay">
+        <VisualElement name="_left">
+            <VisualElement name="_slotOptionsContainer"/>
+            <VisualElement name="_backSlotDisplayContainer"/>
+            <VisualElement name="_palettesContainer"/>
+            <VisualElement name="_colorsContainer"/>
+        </VisualElement>
+
+        <VisualElement name="_right">
+            <TwoPaneSplitView fixed-pane-index="1" fixed-pane-initial-dimension="300" orientation="Vertical">
+                <VisualElement name="_previewContainer">
+                    <VisualElement name="_previewOptionsToolbar">
+                        <editor:ToolbarButton name="_rotateButton">
+                            <Image/>
+                        </editor:ToolbarButton>
+                    </VisualElement>
+                    <studio:CharacterOutfitView name="_preview"/>
+                </VisualElement>
+                <VisualElement name="_previewOptions">
+                </VisualElement>
+            </TwoPaneSplitView> 
+        </VisualElement>
+    </VisualElement>
+  </VisualElement>
+</UXML>

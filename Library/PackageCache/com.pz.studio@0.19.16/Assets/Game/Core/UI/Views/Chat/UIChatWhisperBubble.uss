@@ -1,0 +1,39 @@
+.chat-whisper-bubble {
+    max-width: 80%;
+    margin: 0 8px;
+}
+
+.chat-whisper-bubble .chat-whisper-bubble-main-container {
+    background-color: var(--color-accents-primary);
+    border-radius: 10px;
+    padding: 4px 10px;
+}
+
+.rtl .chat-whisper-bubble {
+    align-items: flex-end;
+}
+
+.chat-whisper-bubble .hint-carrot {
+    --unity-image-tint-color: var(--color-accents-primary);
+    top: -2px;
+    width: 17px;
+    height: 10px;
+    margin-left: 14px;
+}
+
+.rtl .chat-whisper-bubble .hint-carrot {
+    margin-left: initial;
+    margin-right: 14px;
+}
+
+.chat-whisper-bubble UIChatMessage #_label {
+    text-shadow: initial;
+    margin-left: 0;
+    -unity-font-style: italic;
+}
+
+.chat-whisper-bubble UIChatMessage #_label,
+.chat-whisper-bubble .chat-message.chat-event--color-default #_label,
+.chat-whisper-bubble .chat-message.chat-event--color-default.chat-event--whisper #_label {
+    color: var(--color-fishbase-blackfish);
+}

@@ -1,0 +1,31 @@
+.emotes
+{
+    background-color: var(--color-fishbase-eel);
+}
+
+.emotes #_instructions {
+    flex-direction: row;
+    align-items: flex-start;
+    padding-left: 16px;
+    padding-right: 16px;
+    margin-top: 8px;
+    margin-bottom: 8px;
+}
+
+.emotes #_instructions UILabel {
+    color: var(--color-fishbase-anchovy);
+    font-size: var(--font-size-s);
+    flex-grow: 1;
+    white-space: normal;
+}
+
+.emotes #_instructions UIImage {
+    width: 18px;
+    height: 18px;
+    --unity-image-tint-color: var(--color-fishbase-anchovy);
+    margin-right: 6px;
+}
+
+.emotes .collection-section {
+    padding: 16px;
+}

@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<UXML
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xmlns="UnityEngine.UIElements"
+        xmlns:hr="Highrise.UI"
+        xmlns:editor="UnityEditor.UIElements"
+        xsi:noNamespaceSchemaLocation="../../../../../UIElementsSchema/UIElements.xsd"
+>
+
+    <hr:UIRoomChat class="room-chat chat" picking-mode="Ignore">
+        <VisualElement name="_above" picking-mode="Ignore">
+            <VisualElement name="_controls">
+                <hr:UIActionPicker/>
+            </VisualElement>
+            <VisualElement name="_eventHudContainer">
+                <VisualElement>
+                    <!-- HUD heads -->
+                    <hr:UIEventSuperBoostHudHead name="_superBoostHud" hide-when-boost-expired="true" hide-with-event-popup="true" class="overlay-bottom-left" />
+                </VisualElement>
+            </VisualElement>
+        </VisualElement>
+
+        <!-- Spectator -->
+        <VisualElement name="_spectator" class="rtl-reverse">
+            <hr:UIBlur class="overlay"/>
+            <VisualElement class="blur-darken overlay"/>
+            <Image class="icon-spectator"/>
+            <hr:UILabel key="you_are_spectating"/>
+            <hr:UIButton name="_joinRoomButton" class="button-secondary-25">
+                <hr:UILabel name="_joinRoomButtonLabel" key="join_room"/>
+            </hr:UIButton>
+        </VisualElement>
+
+        <VisualElement>
+            <VisualElement>
+                <!-- History -->
+                <VisualElement name="_history">
+                    <hr:UICollection name="_historyCollection">
+                        <hr:UICollectionSection name="_historySection">
+                            <hr:UICollectionCells name="_historyCells" layout="stack" layout-spacing="0"/>
+                        </hr:UICollectionSection>
+                    </hr:UICollection>
+
+                    <!-- Typing indicator -->
+                    <hr:UILabel name="_typingIndicator" key="empty"/>
+                    <VisualElement class="room-chat__new-messages-indicator-container overlay-bottom"
+                                name="_newMessagesIndicator">
+                        <hr:UILabel name="_newMessagesIndicatorLabel" key="message"/>
+                    </VisualElement>
+
+                </VisualElement>
+
+                <!-- Chat Bar -->
+                <VisualElement name="_chatBarParent" class="overlay-bottom">
+                    <VisualElement class="chat-chat-bar-container">
+                        <VisualElement name="_chatBar" class="rtl-reverse">
+                            <VisualElement name="_chatBarBackground" class="overlay">
+                                <hr:UIBlur class="overlay"/>
+                                <VisualElement class="blur-darken overlay"/>
+                            </VisualElement>
+
+                            <!-- History button -->
+                            <hr:UIButton name="_historyButton" focusable="false">
+                                <Image class="icon-chat-history"/>
+                                <VisualElement class="unread-indicator overlay-top-right" name="_historyUnreadIndicator"/>
+                            </hr:UIButton>
+
+                            <VisualElement name="_chatInputContainer">
+                                <!-- Chat Input -->
+                                <hr:UITextField name="_chatInput" placeholder="say_something"/>
+
+                                <!-- Chat safety -->
+                                <VisualElement name="_chatInputSafety" class="overlay"/>
+                            </VisualElement>
+
+                            <!-- SendMessage Button -->
+                            <VisualElement name="_sendMessageButton" focusable="false">
+                                <Image class="icon-send-message rtl-rotate"/>
+                            </VisualElement>
+
+                            <!-- Emotes button -->
+                            <hr:UIButton name="_emotesButton" focusable="false">
+                                <Image class="icon-emotes"/>
+                            </hr:UIButton>
+
+                            <!-- User Suggestions -->
+                            <VisualElement name="_userSuggestionsContainer" class="overlay-bottom" picking-mode="Ignore">
+                                <hr:UIScrollView name="_userSuggestions"/>
+                            </VisualElement>
+                        </VisualElement>
+
+                        <VisualElement name="_voiceButton">
+                            <hr:UIBlur class="overlay"/>
+                            <Image class="icon-voice"/>
+                        </VisualElement>
+                    </VisualElement>
+
+                </VisualElement>
+            </VisualElement>
+        </VisualElement>
+
+        <!-- Emotes -->
+        <hr:UIEmotes name="_emotes"/>
+
+    </hr:UIRoomChat>
+
+</UXML>

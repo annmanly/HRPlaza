@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<UXML
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns="UnityEngine.UIElements"
+    xmlns:hr="Highrise.UI"
+    xmlns:editor="UnityEditor.UIElements"
+    xsi:noNamespaceSchemaLocation="../../../../../UIElementsSchema/UIElements.xsd"
+>
+
+  <hr:UIRoomBoostContent class="room-boost-content">
+    <hr:UILabel class="room-boost-content__description" name="_descriptionLabel"/>
+    <hr:UILabel class="room-boost-content__timer" name="_timerLabel"/>
+  </hr:UIRoomBoostContent>
+
+</UXML>

@@ -1,0 +1,38 @@
+/*
+
+    Room
+
+*/
+
+.room__toolbar {
+    margin-top: var(--spacing-l);
+}
+
+
+/*** Alerts ***/
+
+.alert {
+    max-width: 600px;
+}
+
+/*** Popups ***/
+
+.panel > .popup {
+    align-items: center;
+}
+
+.popup__content {
+    max-width: var(--lanscape-dialog-max-width);
+}
+
+.mini-profile {
+    max-width: initial;
+}
+
+/*** Banners ***/
+
+.banner {
+    background-color: rgba(0,0,0,0.25);
+    width: 344px;
+    position: relative;
+}

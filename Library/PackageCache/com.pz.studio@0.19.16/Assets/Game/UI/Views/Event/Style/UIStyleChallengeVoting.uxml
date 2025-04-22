@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<UXML
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xmlns="UnityEngine.UIElements"
+        xmlns:hr="Highrise.UI"
+        xmlns:editor="UnityEditor.UIElements"
+        xsi:noNamespaceSchemaLocation="../../../../../../UIElementsSchema/UIElements.xsd"
+>
+
+    <hr:UIStyleChallengeVoting class="style-challenge-voting">
+        <VisualElement name="_introContainer">
+            <hr:UIImage name="_eventBanner"/>
+            <hr:UILabel name="_eventInfo" key="style_challenge_intro"/>
+            <hr:UIButton class="button-primary" name="_letsGoButton">
+                <hr:UILabel key="lets_go_loud"/>
+            </hr:UIButton>
+        </VisualElement>
+
+        <VisualElement name="_votingContainer">
+            <hr:UIEventTickets name="_tickets"/>
+
+            <hr:UILabel key="which_style_matches_theme" name="_label"/>
+
+            <VisualElement name="_votingButtons">
+
+                <VisualElement name="_leftButton">
+                    <hr:UIImage class="icon-style-challenge-vote-heart"/>
+                </VisualElement>
+
+                <VisualElement name="_rightButton">
+                    <hr:UIImage class="icon-style-challenge-vote-heart"/>
+                </VisualElement>
+
+            </VisualElement>
+
+            <VisualElement name="_magicGlassesButton">
+                <hr:UIImage class="icon-magic-glasses"/>
+                <hr:UILabel key="use_magic_glasses" name="_magicGlassesLabel"/>
+
+                <hr:UILabel name="_magicGlassesAmount" class="overlay-top-right"/>
+            </VisualElement>
+
+        </VisualElement>
+
+        <VisualElement name="_resultsContainer">
+
+            <VisualElement name="_progressBarContainer">
+                <VisualElement name="_resultsProgressBarBackground"/>
+                <VisualElement name="_resultsProgressBarLeft" class="overlay"/>
+                <VisualElement name="_resultsProgressBarRight" class="overlay-top-right"/>
+
+                <VisualElement name="_leftResultData" class="overlay-left user-results-container">
+                    <hr:UILabel name="_leftUserPercentage" class="user-result-percent"/>
+                    <hr:UILabel name="_leftUser" class="user-result-name"/>
+                </VisualElement>
+
+                <VisualElement name="_rightResultData" class="overlay-right user-results-container">
+                    <hr:UILabel name="_rightUserPercentage" class="user-result-percent"/>
+                    <hr:UILabel name="_rightUser" class="user-result-name"/>
+                </VisualElement>
+            </VisualElement>
+            
+            <hr:UIEventTicketAndRankResults name="_results"/>
+            
+            <hr:UILabel name="_comboStreakLabel"/> 
+            
+            <hr:UILabel key="tap_to_continue" name="_tapToContinueLabel"/>
+
+        </VisualElement>
+
+        <hr:UISafeAreaBottom/>
+    </hr:UIStyleChallengeVoting>
+
+</UXML>

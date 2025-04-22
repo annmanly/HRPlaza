@@ -1,0 +1,82 @@
+/*
+
+    Outfit Asset Editor
+  
+*/
+
+.character-clothing-inspector {
+    margin-top: 8px;
+}
+
+.character-clothing-inspector TabbedView {
+    margin-left: -10px;
+}
+.character-clothing-inspector .icon {
+    width: 22px;
+    height: 22px;
+    opacity: 0.3;
+    margin-top: auto;
+    margin-bottom: auto;
+    flex-shrink: 0;
+}
+
+.character-clothing-inspector #_clothingLabel {
+    margin-top: 16px;
+}
+
+.character-clothing-inspector #_clothing {
+    -unity-text-align: middle-left;
+    margin-top: 8px;
+}
+
+.character-clothing-inspector .clothing {
+    flex-direction: row;
+    height: 48px;
+    -unity-text-align: middle-left;
+}
+
+.character-clothing-inspector .clothing UIImage {
+    background-color: var(--unity-colors-box-background);
+    border-radius: 4px;
+    width: 46px;
+    height: 46px;
+    padding: 2px;
+    margin-top: 1px;
+    margin-left: 4px;
+    flex-shrink: 0;
+}
+
+
+.character-clothing-inspector .copy {
+    --unity-image: url("project://database/Packages/com.pz.studio/Assets/Sprites/Icons/icon_copy.png");
+    width: 16px;
+    height: 16px;
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-left: 8px;
+    opacity: 0.5;
+    display: none;
+}
+
+.character-clothing-inspector .clothing:hover .copy {
+    display: flex;
+}
+
+.character-clothing-inspector #_skeleton {
+    margin-top: 8px;
+}
+
+.character-clothing-inspector HelpBox {
+    margin-bottom: 8px;
+}
+
+.character-clothing-inspector MultiColumnListView UIImage,
+.character-clothing-inspector .slots UIImage {
+    width: 32px;
+    height: 32px;
+    margin: 4px auto;
+}
+.character-clothing-inspector MultiColumnListView {
+    margin-top: 4px;
+    margin-bottom: 4px;
+}

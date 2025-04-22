@@ -1,0 +1,63 @@
+.event-lucky-tokens {
+}
+
+.event-lucky-tokens__card {
+    flex-shrink: 0;
+    background-color: var(--color-fishbase-catfish);
+    border-radius: 12px;
+    padding: 12px;
+}
+
+.event-lucky-tokens__title {
+    font-size: 17px;
+    color: var(--color-fishbase-whitefish);
+    -unity-font-definition: var(--font-bold);
+}
+
+.event-lucky-tokens__description {
+    font-size: 15px;
+    color: var(--color-fishbase-mackerel);
+    white-space: normal;
+    margin-top: 8px;
+}
+
+.event-lucky-tokens__progress {
+    margin-top: 12px;
+}
+
+.event-lucky-tokens__upgrade-buttons {
+    flex-direction: row;
+    margin-top: 16px;
+    justify-content: space-between;
+}
+
+.event-lucky-tokens__upgrade-button {
+    flex-grow: 1;
+    width: 1px; /* For equal buttons width */
+}
+
+.event-lucky-tokens__upgrade-button:disabled {
+    background-color: var(--color-fishbase-tuna);
+    color: var(--color-fishbase-salmon);
+}
+
+.event-lucky-tokens__upgrade-button Image {
+    width: 16px;
+    height: 16px;
+    margin-left: 3px;
+    margin-right: 3px;
+}
+
+.event-lucky-tokens__upgrade-button:disabled Image {
+    --unity-image-tint-color: null;
+    margin-left: 3px;
+    margin-right: 3px;
+}
+
+.event-lucky-tokens__left-button {
+    margin-right: 4px;
+}
+
+.event-lucky-tokens__right-button {
+    margin-left: 4px;
+}

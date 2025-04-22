@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<UXML
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns="UnityEngine.UIElements"
+    xmlns:hr="Highrise.UI"
+    xmlns:editor="UnityEditor.UIElements"
+    xsi:noNamespaceSchemaLocation="../../../../../UIElementsSchema/UIElements.xsd"
+>
+
+  <hr:UISpectators class="spectators">
+    <hr:UILabel name="_title"/>
+    <hr:UICollection>
+      <hr:UICollectionSection>
+        <hr:UICollectionCells name="_cells" layout="stack" layout-spacing="0" fixed-height="true"/>
+      </hr:UICollectionSection>
+      <hr:UICollectionSection>
+        <hr:UISafeAreaBottom />
+      </hr:UICollectionSection>
+    </hr:UICollection>
+  </hr:UISpectators>
+
+</UXML>

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<UXML
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns="UnityEngine.UIElements"
+    xmlns:hr="Highrise.UI"
+    xmlns:editor="UnityEditor.UIElements"
+    xsi:noNamespaceSchemaLocation="../../../../../UIElementsSchema/UIElements.xsd"
+>
+
+  <hr:UIHint class="hint">
+    <VisualElement class="hint-container rtl-reverse">
+      <VisualElement class="hint-icon-wrapper">
+        <hr:UIImage name="_hintIcon" class="icon-hint-new"/>
+      </VisualElement>
+      <VisualElement class="text-container">
+        <hr:UILabel name="_hintLabel" class="hint-text"/>
+        <hr:UILabel name="_hintLink" class="hint-link"/>
+      </VisualElement>
+      <VisualElement class="hint-dismiss-wrapper" name="_dismissContainer">
+        <hr:UIButton name="_dismissButton">
+          <hr:UIImage class="icon-clear hint-dismiss-button-icon" />
+        </hr:UIButton>
+      </VisualElement>
+
+    </VisualElement>
+
+  </hr:UIHint>
+
+</UXML>

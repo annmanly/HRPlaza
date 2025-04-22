@@ -1,0 +1,376 @@
+.message-log {
+    flex-grow: 1;
+    color: white;
+}
+
+.message-log .unity-list-view__empty-label {
+    display: none;
+}
+
+.message-log ToolbarSearchField {
+    margin-left: auto;
+    min-width: 200px;
+}
+
+.message-log #_toolbar {
+    border-top-width: .5px;
+    border-bottom-width: .5px;
+    border-top-color: var(--unity-colors-toolbar-border);
+    border-bottom-color: var(--unity-colors-toolbar-border);
+    flex-direction: row;
+}
+
+.message-log #_toolbar > Button {
+    background-color: rgba(0,0,0,0);
+    border-width: 0;
+    border-right-width: 0.5px;
+    border-color: var(--unity-colors-toolbar-border);
+    padding-left: 8px;
+    padding-right: 8px;
+    margin: 0;
+    border-radius: 0;
+}
+
+.message-log #_toolbar > Button:checked {
+    background-color: var(--unity-colors-toolbar_button-background-checked);
+    color: var(--unity-colors-toolbar_button-text-checked);
+}
+
+.message-log #_toolbar > Button:hover {
+    background-color: var(--unity-colors-button-background-hover);
+}
+
+.message-log #_toolbar > Button:active {
+    background-color: var(--unity-colors-button-background-pressed);
+}
+	
+.message-log #_details Foldout #unity-content {
+    margin-left: 18px;
+}
+
+.message-log #_details Foldout #unity-checkmark {
+    margin-top: 3px;
+}
+
+.message-log TwoPaneSplitView {
+    flex-grow: 1;
+    background-color: #25262e;
+}
+
+.message-log #_messagesView {
+    min-height: 100px;
+    flex-grow: 1;
+}
+
+.message-log-entry {
+    height: 20px;
+    flex-direction: row;
+    -unity-text-align: middle-left;
+}
+
+.message-log-entry Image{
+    height: 16px;
+    width: 16px;
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-right: 4px;
+    margin-left: 4px;    
+}
+
+.message-log-entry--send Image {
+    --unity-image: url("project://database/Packages/com.pz.studio/Assets/Editor/Sprites/MessageSend.png");
+    --unity-image-tint-color: #7db39a;
+}
+
+.message-log-entry--recv Image {
+    --unity-image: url("project://database/Packages/com.pz.studio/Assets/Editor/Sprites/MessageRecv.png");
+    --unity-image-tint-color: #be6f90;
+}
+
+.message-log-entry Label {
+    height: 20px;
+    margin: 0;
+    padding: 0;
+    margin-right: 8px;    
+    -unity-text-align: middle-left;
+}
+
+.message-log-entry__time {
+    margin: 0;
+    padding: 0;
+    flex-shrink: 0;
+    flex-grow: 0;
+    color: darkcyan;
+}
+
+.message-log-entry__name {
+    margin: 0;
+    padding: 0;
+    flex-shrink: 0;
+    flex-grow: 0;
+    -unity-font-style: bold;
+}
+
+.message-log-entry__id {
+    display: none;
+    margin: 0;
+    padding: 0;
+    flex-grow: 1;
+    margin-right: auto;
+    margin-left: 18px;
+    color: #f28b38;
+    -unity-font-style: italic;
+    font-size: 90%;
+}
+
+.message-log-entry--hasid .message-log-entry__id {
+    display: flex;
+}
+
+.message-log-entry--send .message-log-entry__id {
+    color: #7db39a;
+}
+
+.message-log-entry--recv .message-log-entry__id {
+    color: #be6f90;
+}
+
+.message-log #_details {
+    min-height: 200px;
+    -unity-text-align: middle-left;
+}
+
+.message-log #_details #_messageContent {
+    padding-left: 8px;
+    padding-right: 8px;
+}
+
+.message-log #_details #_messageIcon {
+    width: 20px;
+    height: 20px;
+    margin-left: 3px;
+    display:none;
+}
+
+.message-log #_details.message-log--send #_messageId {
+    color: #be6f90;
+}
+
+.message-log #_details.message-log--recv #_messageId {
+    color: #7db39a;
+}
+
+.message-log #_details.message-log--send #_messageIcon {
+    --unity-image: url("project://database/Packages/com.pz.studio/Assets/Editor/Sprites/MessageSend.png");
+    --unity-image-tint-color: #7db39a;
+    display:flex;
+}
+
+.message-log #_details.message-log--recv #_messageIcon {
+    --unity-image: url("project://database/Packages/com.pz.studio/Assets/Editor/Sprites/MessageRecv.png");
+    --unity-image-tint-color: #be6f90;
+    display:flex;
+}
+
+
+.message-log #_details #_messageId {
+    height: 20px;
+    -unity-font-style: italic;
+    font-size: 90%;
+    cursor: link;
+}
+
+.message-log #_messageContent {
+    margin-top: 8px;
+}
+
+.message-log-details__property {
+    flex-direction: row;
+    flex-grow: 1;
+    margin: 0;
+    padding: 0;
+    margin-left: 3px;
+    height: 22px;
+}
+
+.message-log-details__property-name {
+    color: white;
+    -unity-font-style: bold;
+}
+
+.message-log-details__object-type,
+.message-log-details__property-value {
+    color: #be6f90;
+    -unity-text-align: middle-left;
+    margin-left: 8px;
+    cursor: link;
+}
+
+.message-log-details__property-value.message-log-details__property-value--null {
+    color: #9984c1;
+}
+
+.message-log-details__property-value.message-log-details__property-value--number {
+    color: #7db39a;
+}
+
+.message-log-details__property-value.message-log-details__property-value--enum {
+    color: #f28b38;
+}
+
+.message-log-details__default {
+    flex-direction: row;
+    margin: 0;
+    padding: 0;
+    margin-left: 3px;
+    height: 22px;
+}
+
+
+
+
+/*
+
+    Message Header
+
+*/
+
+.message-log__details {
+    flex-direction: row;
+    flex-shrink: 0;
+    border-bottom-width: .5px;
+    border-bottom-color: dimgrey;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    background-color: rgba(0,0,0,.1);
+}
+
+.message-log__details #_messageName {
+    height: 20px;
+    flex-direction: row;
+}
+
+.message-log__details #_messageType {
+    margin-bottom: 2px;
+}
+
+
+
+
+
+/*
+
+    MessageProperty
+
+*/
+
+.message-property {
+    flex-direction: row;
+    -unity-text-align: middle-left;
+}
+
+Foldout.message-property {
+    flex-direction: column;
+    margin-left: -3px;
+}
+
+.message-property > Label {
+    height: 20px;
+    margin: 0;
+    padding: 0;
+    flex-shrink: 0;
+    flex-grow: 0;
+}
+
+Foldout.message-property Toggle {
+    margin-left: 0px;
+}
+
+Foldout.message-property Label,
+.message-property #_name {
+    -unity-font-style: bold;
+}
+
+.message-property #_value {
+    margin-left: 8px;
+    color: #be6f90;
+}
+
+.message-property #_value.message-property--null { color: #9984c1; }
+.message-property #_value.message-property--number { color: #7db39a; }
+.message-property #_value.message-property--bool,
+.message-property #_value.message-property--enum { color: #f28b38; }
+
+.message-property__type {
+    font-size: 80%;
+    color: darkgrey;
+    opacity: .5;
+    margin-left: 16px;
+}
+
+/**
+
+    Json
+
+ **/
+
+.json {
+}
+
+.json .json-property {
+    height: 20px;
+    flex-direction: row;
+    -unity-text-align: middle-left;
+}
+
+.json .json-property {
+    height: 20px;
+    margin: 0;
+    margin-left: 14px;
+    padding: 0;
+    -unity-text-align: middle-left;
+}
+
+.json Foldout Toggle .unity-foldout__text,
+.json .json-property-name {
+    -unity-font-style: bold;
+    color: #be6f90
+}
+
+.json .json-property-value {
+    color: #7db39a;
+}
+
+.json .json-property-tostring {
+    color: #7db39a;
+    -unity-text-align: middle-left;
+    margin-left: -2px;
+}
+
+.json .json-property-typename {
+    font-size: 85%;
+    color: dimgrey;
+    margin-left: 12px;
+}
+
+.json .json-property-type-unknown .json-property-value {
+    color: dimgrey;
+}
+
+.json .json-property-type-null .json-property-value {
+    color: #9984c1;
+}
+
+.json .json-property-type-enum .json-property-value,
+.json .json-property-type-boolean .json-property-value {
+    color: #f28b38;
+}
+
+.json Foldout > Toggle {
+    padding: 0;
+    margin: 0;
+}
+
+.json Foldout #unity-checkmark {
+    margin-top: 3px;
+}

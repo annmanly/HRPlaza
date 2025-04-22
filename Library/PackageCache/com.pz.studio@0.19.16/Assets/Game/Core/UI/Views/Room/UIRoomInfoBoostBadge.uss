@@ -1,0 +1,23 @@
+.room-info-boost-badge {
+    flex-direction: row;
+    background-color: var(--color-tertiary-strawberry);
+    border-radius: 6px;
+    padding-left: 2px;
+    padding-right: 6px;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    align-items: center;
+    margin-left: 8px;
+}
+
+.room-info-boost-badge__label {
+    color: var(--color-fishbase-whitefish);
+    font-size: var(--font-size-s);
+    -unity-text-align: middle-center;
+}
+
+.room-info-boost-badge .icon-boost {
+    height: 14px;
+    width: 14px;
+    --unity-image-tint-color: var(--color-fishbase-whitefish);
+}

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<UXML
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns="UnityEngine.UIElements"
+    xmlns:hr="Highrise.UI"
+    xmlns:editor="UnityEditor.UIElements"
+    xsi:noNamespaceSchemaLocation="../../../../../../UIElementsSchema/UIElements.xsd"
+>
+
+  <hr:UILuaView class="map">
+    <VisualElement class="map__header">
+      <Label class="map__header__title" text="Map" />
+    </VisualElement>
+
+    <VisualElement class="map__close" name="_closeButton">
+      <VisualElement class="button-content">
+        <Image name="_closeButtonImage" class="map__close__icon" />
+      </VisualElement>
+    </VisualElement>
+
+    <hr:UIScrollView name="_MapContent" class="map__content">
+      <!-- Map Content -->
+    </hr:UIScrollView>
+
+    <VisualElement class="map__item__info hidden" name="_itemInfo">
+      <VisualElement class="map__item__info__close" name="_closeInfoButton">
+        <VisualElement class="button-content">
+          <Image name="_closeButtonImage" class="map__item__info__close__icon" />
+        </VisualElement>
+      </VisualElement>
+
+      <VisualElement class="map__item__info-content" name="_ItemInfoContent">
+        <!-- Item Info Content -->
+      </VisualElement>
+
+    </VisualElement>
+  </hr:UILuaView>
+
+</UXML>

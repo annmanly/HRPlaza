@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+
+<UXML
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns="UnityEngine.UIElements"
+    xmlns:hr="Highrise.UI"
+    xsi:noNamespaceSchemaLocation="../../../../../UIElementsSchema/UIElements.xsd">
+    
+    <hr:UIWorldProduct class="overlay world-product">
+        <VisualElement name="world-product__close" class="overlay" />
+
+        <hr:UIBottomDrawer name="_drawer" expanded="true" half-expandable="false" picking-mode="Ignore">
+            <VisualElement class="world-product__popup" picking-mode="Ignore">
+                <VisualElement class="world-product__top">
+                    <hr:UIImage name="_productImage" addressable="world_product_placeholder" />
+                </VisualElement>
+                <VisualElement class="world-product__mid">
+                    <hr:UILabel name="_productName" />
+                    <hr:UILabel name="_worldItemDescription" />
+                </VisualElement>
+                <VisualElement class="world-product__bottom">
+                    <VisualElement name="_buyProductBackground">
+                        <hr:UIButton name="_buyProductBottom" class="overlay" />
+                        <VisualElement name="_buyProductProgress" class="overlay">
+                            <hr:UIButton name="_buyProduct" class="overlay" />
+                        </VisualElement>
+                    </VisualElement>
+                    <hr:UILabel name="_remainingBalance"/>
+                </VisualElement>
+            </VisualElement>
+            <hr:UIWallet name="_wallet" class="overlay-top-right-safe" custom="true"/>
+        </hr:UIBottomDrawer>
+    </hr:UIWorldProduct>
+    
+</UXML>

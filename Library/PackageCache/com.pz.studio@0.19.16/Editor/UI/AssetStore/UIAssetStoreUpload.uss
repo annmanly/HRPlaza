@@ -1,0 +1,142 @@
+/*
+
+    Asset Store Upload
+  
+*/
+
+.asset-store-upload {
+    flex-grow: 1;
+}
+
+.asset-store-upload .title {
+    -unity-font-style: bold;
+    font-size: 110%;
+    opacity: 0.75;
+    margin-top: 8px;
+    margin-bottom: 8px;
+}
+
+/*
+
+    Asset Selector
+  
+*/
+
+.asset-store-upload .select-asset {
+    padding-left: 8px;
+    padding-right: 8px;
+    padding-bottom: 8px;
+    flex-shrink: 0;
+}
+
+.asset-store-upload .update-asset-info {
+    margin-top: 8px;
+}
+
+.asset-store-upload .create-asset-info {
+    margin-top: 8px;
+}
+
+.asset-store-upload .create-asset-info-row {
+    flex-direction: row;
+    margin-left: 16px;
+    margin-right: 16px;
+    padding-top:2px;
+    padding-bottom: 2px;
+    height: 26px;
+}
+
+.asset-store-upload .create-asset-info-row > * {
+    flex-grow: 1;
+}
+
+.asset-store-upload .create-asset-info-row > .unity-label {
+    width: 90px;
+    flex-grow: 0;
+    margin-top: auto;
+    margin-bottom: auto;
+    -unity-font-style: bold;
+}
+
+/*
+
+    Included Files
+  
+*/
+
+.asset-store-upload .included-files {
+    padding: 8px;
+    border-bottom-width: 1px;
+    border-color: #303030;
+    flex-grow: 1;
+}
+
+.asset-store-upload-item {
+    flex-direction: row;
+}
+
+.asset-store-upload-item > .unity-label {
+    flex-grow: 0;
+    margin-right: auto;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+.asset-store-upload-item > .unity-image {
+    flex-grow: 0;
+    width: 16px;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+.asset-store-upload #unity-tree-view__item-toggle {
+    width: 14px;
+    height: 14px;
+    margin-top: auto;
+    margin-bottom: 3px;
+    margin-right: 0;
+}
+
+.asset-store-upload .unity-multi-column-header__column-resize-handle__drag-area {
+    display: none;
+}
+
+.asset-store-upload-item > .unity-toggle {
+    width: 14px;
+    height: 14px;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+.asset-store-upload .upload-options {
+    padding-left: 8px;
+    padding-right: 8px;
+    flex-shrink: 0;
+    flex-direction: row;
+}
+
+.asset-store-upload .upload-options #_createReadmeButton {
+    margin-left: auto;
+}
+
+.asset-store-upload .description {
+    padding-top:8px;
+    white-space: normal;
+}
+
+
+/*
+
+    Footer
+  
+*/
+
+.asset-store-upload .footer {
+    padding: 8px;
+    flex-shrink: 0;
+    background-color: rgba(0,0,0,0.1);
+}
+
+.asset-store-upload .footer #_uploadButton {
+    margin-left: auto;
+}

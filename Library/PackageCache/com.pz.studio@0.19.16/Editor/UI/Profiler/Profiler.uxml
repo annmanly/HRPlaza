@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+
+<UXML
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns="UnityEngine.UIElements"
+    xmlns:editor="UnityEditor.UIElements"
+    xmlns:hr="Highrise.UI"
+    xsi:noNamespaceSchemaLocation="../../../../../UIElementsSchema/UIElements.xsd">
+
+    <VisualElement class="profiler">
+        <TwoPaneSplitView fixed-pane-index="1" fixed-pane-initial-dimension="480">
+            <VisualElement name="_left">
+                <VisualElement name="_top">
+                    <Button name="_captureButton">
+                        <Label text="Capture" />
+                    </Button>
+                    <Button name="_clearButton">
+                        <Label text="Clear" />
+                    </Button>
+                    <DropdownField name="_sourceDropDown" />
+                </VisualElement>
+                <ListView name="_snapshotContainer">
+
+                </ListView>
+            </VisualElement>
+            <VisualElement name="_right">
+                <VisualElement name="_treeContainer">
+                </VisualElement>
+            </VisualElement>
+        </TwoPaneSplitView>
+    </VisualElement>
+</UXML>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<UXML
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns="UnityEngine.UIElements"
+    xmlns:editor="UnityEditor.UIElements"
+    xmlns:studio="Highrise.Studio.UI"
+    xsi:noNamespaceSchemaLocation="../../../../UIElementsSchema/UIElements.xsd"
+>
+
+  <VisualElement class="character-slot-inspector">
+    <studio:UIReadOnlyValues name="_values"/>
+    <Label text="States" name="_statesLabel"/>
+    <VisualElement name="_states"/>
+  </VisualElement>
+</UXML>

@@ -1,0 +1,156 @@
+.bind-items-confirm {
+    position: relative;
+    height: 100%;
+    width: 100%;
+}
+
+.landscape .bind-items-confirm {
+    /*width: 60%;*/
+    max-width: 800px;
+    width: initial;
+    height: initial;
+    align-self: center;
+    justify-content: center;
+    align-items: center;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+.bind-items-confirm-container {
+    position: absolute;
+    bottom: 0;
+    margin: 0;
+    width: 100%;
+}
+
+.landscape .bind-items-confirm-container {
+    position: relative;
+}
+
+.bind-items-confirm-cells {
+    align-items: center;
+    justify-content: center;
+}
+
+.landscape .closet__customization-top {
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+.bind-items-confirm-bg-small {
+    background-color: var(--color-fishbase-catfish);
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    padding-right: 0px;
+    padding-left: 0px;
+    margin: 0px;
+    height: 350px;
+}
+
+.bind-items-confirm-bg-large {
+    background-color: var(--color-fishbase-catfish);
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    padding-right: 0px;
+    padding-left: 0px;
+    margin: 0px;
+    height: 450px;
+}
+
+.bind-items-confirm-cell-container-small {
+    padding-top: 16px;
+    padding-right: 40px;
+    padding-left: 40px;
+    height:140px;
+    width: 100%;
+}
+
+.bind-items-confirm-cell-container-large {
+    padding-top: 16px;
+    padding-right: 40px;
+    padding-left: 40px;
+    height: 240px;
+    width: 100%;
+}
+
+.bind-items-confirm .collection-section {
+    padding-top: 8px;
+}
+
+.bind-items-confirm UIItemCell {
+    width: var(--4-column-item-min-width);
+    height: var(--4-column-item-min-width);
+    max-width: var(--4-column-item-max-width);
+    max-height: var(--4-column-item-max-width);
+}
+
+.bind-items-confirm-button-container {
+    padding-right: 16px;
+    padding-left: 16px;
+    margin-top: 0px;
+    padding-bottom: 32px;
+    background-image: var(--image-vgradient-180);
+    -unity-background-image-tint-color: var(--color-fishbase-catfish);
+}
+
+.bind-items-confirm-title-label .label {
+    color: var(--color-fishbase-bonito);
+    font-size: var(--font-size-xl);
+    -unity-text-align: middle-center;
+    -unity-font-definition: var(--font-bold);
+    width:auto;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    align-items: center;
+    padding-bottom: 20px;
+}
+
+.bind-items-confirm-label .label {
+    color: var(--color-fishbase-bonito);
+    font-size: var(--font-size-m);
+    -unity-text-align: middle-center;
+    -unity-font-definition: var(--font-regular);
+    width: auto;
+    white-space: normal;
+    align-items: center;
+    padding-bottom: 20px;
+}
+
+.bind-background {
+    padding-top: 15px;
+    background-color: var(--color-fishbase-catfish);
+}
+
+.bind-items-confirm-gradient {
+    background-image: var(--image-vgradient-180);
+    -unity-background-image-tint-color: var(--color-fishbase-catfish);
+    height: 30px;
+    width:100%;
+    position: absolute;
+    padding-bottom: var(--safe-area-bottom);
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+}
+
+ .bind-items-fill-element{
+    background-color: red;
+    width: 0%;
+    height: 100%;
+    top: 0;
+    left: 0;
+ }
+
+.button-bind-confirm,
+.button-bind-confirm:active,
+.button-bind-confirm:hover,
+.button-bind-confirm:hover:focus,
+.button-bind-confirm:focus {
+    background-color: var(--color-fishbase-blackfish);
+    color: var(--color-fishbase-blackfish);
+}
+
+.bind-items-confirm #_bindLabel{
+    color: #ffffff;
+}

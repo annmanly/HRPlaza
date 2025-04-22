@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<UXML
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns="UnityEngine.UIElements"
+    xmlns:hr="Highrise.UI"
+    xmlns:editor="UnityEditor.UIElements"
+    xsi:noNamespaceSchemaLocation="../../../../../UIElementsSchema/UIElements.xsd"
+>
+
+  <hr:UIDiscardItemAmount class="discard-item-amount">
+    <VisualElement class="discard-item-amount-top-bar rtl-reverse">
+      <VisualElement class="navigation-controller__left">
+        <hr:UIButton name="_cancelButton" focusable="true">
+          <hr:UILabel key="cancel" />
+        </hr:UIButton>
+      </VisualElement>
+      <VisualElement class="navigation-controller__title">
+        <hr:UILabel key="discard_item" />
+      </VisualElement>
+      <VisualElement class="navigation-controller__right" />
+    </VisualElement>
+    <hr:UILabel name="_youCanDiscardLabel" />
+    <hr:UILabel name="_youOwnInUseLabel" />
+    <VisualElement class="discard-item-amount-footer rtl-reverse">
+      <hr:UITextField name="_quantityInput" />
+      <hr:UIButton class="button-primary" name="_discardButton" focusable="true">
+        <hr:UILabel name="_discardButtonLabel" />
+        <hr:UICurrency name="_discardButtonCurrency" />
+      </hr:UIButton>
+    </VisualElement>
+    <hr:UIKeyboardContainer usage-hints="DynamicTransform"/>
+  </hr:UIDiscardItemAmount>
+
+</UXML>

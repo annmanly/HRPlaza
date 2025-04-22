@@ -1,0 +1,87 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &8530106252205849779
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 724016348970695908}
+  - component: {fileID: 4853991594395279756}
+  - component: {fileID: -7875491894278924587}
+  m_Layer: 3
+  m_Name: PetPreviewPrefab
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &724016348970695908
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8530106252205849779}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -1.4, y: -6.3, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &4853991594395279756
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8530106252205849779}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 867291933, guid: 30a4c7dce0b6891478396efa6bd2a6d0, type: 3 }
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _indicatorHeight: 1.5
+  _tags: 0
+  _rigRoot: {fileID: 0}
+  _longPressTransform: {fileID: 0}
+  _defaultIdleDirection: 1
+  _anchorSitOffsetFront: {x: 0, y: 0, z: 0}
+  _anchorSitOffsetBack: {x: 0, y: 0, z: 0}
+  _sittingIndicatorHeight: 0
+  _forceFront: 1
+  _isoTilePlane: {fileID: 0}
+  _material: {fileID: 2100000, guid: 0030b7a8692714944a374bf71f15abf0, type: 2}
+  _thinkRate: 10
+  _walkSpeed: 2
+  _walkVerticalSpeed: 2.5
+  _runSpeed: 5
+  _runVerticalSpeed: 5.5
+  _runAnimationDistance: 4
+  _jumpSpeed: 1
+  _idleAnimation: idle
+  _walkAnimation: walk
+  _walkVerticalAnimation: walk-vertical
+  _runAnimation: run
+  _runVerticalAnimation: run-vertical
+  _errorAnimation: emote-no
+  _chatSpeakingMin: 1
+  _chatSpeakingMax: 3
+  _minDistance: 0.5
+  _maxDistance: 2
+--- !u!114 &-7875491894278924587
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8530106252205849779}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -1790474054, guid: 30a4c7dce0b6891478396efa6bd2a6d0, type: 3 }
+  m_Name: 
+  m_EditorClassIdentifier: 

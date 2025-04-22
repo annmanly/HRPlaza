@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<UXML
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xmlns="UnityEngine.UIElements"
+        xmlns:hr="Highrise.UI"
+        xmlns:editor="UnityEditor.UIElements"
+        xsi:noNamespaceSchemaLocation="../../../../../../UIElementsSchema/UIElements.xsd"
+>
+
+    <hr:UIEventNextProgressReward class="event-next-progress-reward">
+
+        <VisualElement name="_finalRewardContainer">
+            <VisualElement name="_finalRewardImageBackground">
+                <hr:UIImage name="_finalRewardImage"/>
+            </VisualElement>
+            <hr:UIImage name="_finalRewardCarrot" class="icon-next-progress-reward-carrot"/>
+        </VisualElement>
+
+        <VisualElement name="_nextContainer">
+            <VisualElement name="_rewardImageBackground">
+                <hr:UIImage name="_rewardImage"/>
+                <hr:UILabel name="_amountLabel" class="overlay-top-right"/>
+            </VisualElement>
+
+
+            <VisualElement class="event-next-progress-reward__middle-content">
+                <VisualElement class="event-next-progress-reward__progress-container">
+                    <hr:UIImage class="event-tickets-icon" name="_ticketsIcon"/>
+                    <hr:UILabel name="_progressLabel"/>
+                </VisualElement>
+                <hr:UIProgressBar name="_progressBar"/>
+
+            </VisualElement>
+
+            <hr:UIButton class="button-icon" name="_homingButton">
+                <hr:UIImage class="icon-homing"/>
+            </hr:UIButton>
+
+        </VisualElement>
+    </hr:UIEventNextProgressReward>
+
+</UXML>

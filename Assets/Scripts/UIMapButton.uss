@@ -1,0 +1,36 @@
+.map-h-u-d {
+  display: flex; /* Use flexbox layout */
+  position: absolute; /* Position the element absolutely relative to its containing block */
+  right: 10px; /* Position the element 10 pixels from the left edge of the containing block */
+}
+
+.map-hud-container {
+  overflow: hidden; /* Hide any content that overflows the container */
+  flex-direction: row; /* Arrange child elements in a row */
+  align-items: center; /* Center-align items vertically */
+  justify-content: space-between; /* Distribute space between child elements */
+  
+  width: 52px; /* Set the width of the container */
+  height: 52px; /* Set the height of the container */
+  
+  color: #cccada; /* Set text color */
+  
+  border-bottom-left-radius: 8px; /* Rounded corners for the bottom-left corner */
+  border-top-left-radius: 8px; /* Rounded corners for the top-left corner */
+  border-top-right-radius: 8px; /* Rounded corners for the top-right corner */
+  border-bottom-right-radius: 8px; /* Rounded corners for the bottom-right corner */
+  
+  padding: 6px; /* Padding on the left and right sides of the container */
+}
+
+.map-icon {
+  width: 40px; /* Set the width of the icon */
+  height: 40px; /* Set the height of the icon */
+}
+
+.open-button {
+
+}
+
+
+

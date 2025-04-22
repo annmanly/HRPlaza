@@ -1,0 +1,115 @@
+.rewards-summary-cell {
+    width: 80px;
+    height: 80px;
+}
+
+.rewards-summary-cell__content {
+    border-radius: 8px;
+    flex-grow: 1;
+}
+
+.rewards-summary-cell #_image {
+    height: 100%;
+    margin: 4px;
+}
+
+.rewards-summary-cell .item-image-on-head-item#_image{
+    margin: 0;
+    bottom: -1px;
+}
+
+.rewards-summary-cell #_accountBound {
+    width: 16px;
+    height: 16px;
+    border-radius: 4px;
+    background-color: var(--color-fishbase-catfish);
+    --unity-image: var(--image-icon-non-tradable);
+    --unity-image-tint-color: var(--color-fishbase-anchovy);
+}
+
+.rewards-summary-cell #_quantity {
+    display: none;
+    position: absolute;
+    top: -3px;
+    right: -3px;
+    background-color: var(--color-fishbase-catfish);
+    color: var(--color-fishbase-anchovy);
+    font-size: 11px;
+    -unity-font-definition: var(--font-bold);
+    border-radius: 4px;
+    margin: 0;
+    padding: 1px 2px; 
+}
+
+.rewards-summary-cell #_newBadge {
+    display: none;
+    position: absolute;
+    right: -3px;
+    bottom: 10px;
+    background-color: var(--color-basic-alert);
+    color: var(--color-fishbase-eel);
+    -unity-font-definition: var(--font-black-italic);
+    font-size: 11px;
+    border-radius: 4px;
+    margin: 0;
+    padding: 2px 3px;
+}
+
+/* Mythical background */
+
+.rewards-summary-cell UIMythicalBackground {
+    display: none;
+}
+
+.rewards-summary-cell .mythical-background-mask {
+    display: none;
+}
+
+.rewards-summary-cell.rarity-mythical UIMythicalBackground {
+    display: flex;
+}
+
+.item-card.alt.rarity-mythical .mythical-background-mask {
+    display: flex;
+}
+
+/* Effects icon */
+
+.rewards-summary-cell #_effectsIcon {
+    display: none;
+    position: absolute;
+    top: 2px;
+    right: 2px;
+    width: 24px;
+    height: 24px;
+    --unity-image-tint-color: var(--color-fishbase-eel-25);
+}
+
+.rewards-summary-cell #_selectedOverlay {
+    display: none;
+    border-radius: 8px;
+    background-color: var(--color-tertiary-banana-25);
+}
+
+.rewards-summary-cell:checked {
+    border-radius: 8px;
+    border-width: 3px;
+    border-color: var(--color-tertiary-banana);
+}
+
+.rewards-summary-cell:checked #_selectedOverlay {
+    display: flex;
+}
+
+.rewards-summary-cell #_disabledOverlay {
+    display: none;
+    left: 50%;
+    top: 50%;
+    translate: -50% -50%;
+    width: 48px;
+    height: 48px;
+}
+
+.rewards-summary-cell:disabled #_disabledOverlay {
+    display: flex;
+}

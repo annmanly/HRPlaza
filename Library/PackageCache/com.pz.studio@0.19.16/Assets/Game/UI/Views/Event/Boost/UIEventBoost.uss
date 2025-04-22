@@ -1,0 +1,43 @@
+.event-boost {
+}
+
+.event-boost UIHint {
+}
+
+.event-boost__tab-bar {
+    flex-direction: row;
+    margin-top: 16px;
+    align-items: stretch;
+    background-color: var(--color-fishbase-catfish);
+    border-radius: 12px;
+    display: none;
+    flex-shrink: 0;
+    padding: 2px;
+}
+
+.event-boost__tab-button {
+    flex-grow: 1;
+    height: 32px;
+    border-radius: 10px;
+    background-color: var(--color-transparent);
+    border-color: var(--color-transparent);
+    color: var(--color-fishbase-mackerel);
+}
+
+.event-boost__tab-button:checked {
+    background-color: var(--color-accents-secondary-25);
+    color: var(--color-accents-secondary);
+}
+
+.event-boost #_modelButton {
+    border-radius: 10px;
+}
+
+.event-boost #_judgeButton {
+    border-radius: 10px;
+}
+
+.event-boost .shop-link-cell__bg {
+    margin: 0px;
+    margin-top: 16px;
+}

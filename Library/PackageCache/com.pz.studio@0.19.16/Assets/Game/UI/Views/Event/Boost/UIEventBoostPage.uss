@@ -1,0 +1,23 @@
+.event-boost-page {
+}
+
+.event-boost-page__header {
+    padding: 20px 0 16px 0;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.event-boost-page__title {
+    font-size: 22px;
+    color: var(--color-fishbase-whitefish);
+    -unity-font-definition: var(--font-bold);
+}
+
+.event-boost-page UIEventBoostItems {
+    margin-bottom: 12px;
+}
+
+.event-boost-page UIEventLuckyTokens {
+    margin-bottom: 12px;
+}

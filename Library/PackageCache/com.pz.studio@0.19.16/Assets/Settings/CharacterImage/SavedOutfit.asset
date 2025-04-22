@@ -1,0 +1,29 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 490792902, guid: 30a4c7dce0b6891478396efa6bd2a6d0, type: 3 }
+  m_Name: SavedOutfit
+  m_EditorClassIdentifier: 
+  _imageSize: {x: 256, y: 512}
+  _useFrame: 1
+  _frameMin: {x: -40, y: -170}
+  _frameMax: {x: 30, y: 10}
+  _defaultBackgroundColor: {r: 0.15686275, g: 0.15294118, b: 0.1764706, a: 0}
+  _shadow: {fileID: 0}
+  _hiddenAttachments:
+  - LeftEyeClosed
+  - RightEyeClosed
+  - SadMouth
+  - HappyMouth
+  - AwkwardMouth
+  - FullMouth
+  - SurprisedMouth
+  - ScaredMouth

@@ -1,0 +1,37 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<UXML
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns="UnityEngine.UIElements"
+    xmlns:editor="UnityEditor.UIElements"
+    xmlns:hr="Highrise.UI"
+    xsi:noNamespaceSchemaLocation="../../../../../UIElementsSchema/UIElements.xsd"
+>
+
+    <VisualElement class="leaderboard-viewer">
+        <VisualElement name="_top">
+            <Button name="_refreshButton">
+                <Image name="_refreshIcon"/>
+                <Label text="Refresh"/>
+            </Button>
+            
+            <DropdownField name="_leaderboardId"/>
+            
+            <Button name="_addButton" text="Add"/> 
+            <Button name="_editButton" text="Edit"/> 
+            <Button name="_deleteButton" text="Delete"/> 
+        </VisualElement>
+            
+        <MultiColumnListView name="_leaderboardEntries" fixed-item-height="20">
+            <Columns>
+                <Column name="_rank" title="Rank" width="10%" />
+                <Column name="_entryId" title="ID" width="45%" />
+                <Column name="_name" title="Name" width="30%" />
+                <Column name="_score" title="Score" width="15%" />
+            </Columns>
+        </MultiColumnListView>
+            
+        <VisualElement name="_bottom">
+            <editor:ToolbarSearchField name="_search"/>
+        </VisualElement>
+    </VisualElement>
+</UXML>

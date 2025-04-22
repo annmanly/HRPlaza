@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<UXML
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns="UnityEngine.UIElements"
+    xmlns:hr="Highrise.UI"
+    xmlns:editor="UnityEditor.UIElements"
+    xsi:noNamespaceSchemaLocation="../../../../../../UIElementsSchema/UIElements.xsd"
+>
+
+  <hr:UIRoomBoost class="room-boost">
+    <hr:RadialProgress class="room-boost__progress" name="_radialProgress">
+      <VisualElement class="room-boost__container" name="_container">
+        <VisualElement class="room-boost__count-container rtl-reverse">
+          <Image class="icon-boost"/>
+          <hr:UILabel name="_boostCountLabel"/>
+        </VisualElement>
+      </VisualElement>
+    </hr:RadialProgress>
+  </hr:UIRoomBoost>
+
+</UXML>

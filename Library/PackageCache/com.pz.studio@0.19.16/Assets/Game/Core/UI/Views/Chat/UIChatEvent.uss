@@ -1,0 +1,92 @@
+/*
+
+    Chat Event
+
+*/
+
+.chat-event--whisper .chat-event-foreground {
+    -unity-font-style: italic;
+}
+
+.chat-event--color-self.chat-event-background,
+.chat-event--color-self .chat-event-background {
+    background-color: var(--color-fishbase-catfish);
+}
+.chat-event--color-self .chat-event-foreground {
+    color: var(--color-accents-secondary);
+}
+
+.chat-event--color-bot.chat-event-background,
+.chat-event--color-bot .chat-event-background {
+    background-color: var(--color-fishbase-catfish);
+}
+.chat-event--color-bot .chat-event-foreground {
+    color: var(--color-tertiary-blueberry);
+}
+
+.chat-event--color-default.chat-event-background,
+.chat-event--color-default .chat-event-background{
+    background-color: var(--color-fishbase-whitefish);
+}
+.chat-event--color-default .chat-event-foreground {
+    color: var(--color-fishbase-eel);
+}
+
+.chat-event--whisper.chat-event--color-default .chat-event-foreground {
+    color: var(--color-fishbase-anchovy);
+}
+
+.chat-event--color-system.chat-event-background,
+.chat-event--color-system .chat-event-background{
+    background-color: var(--color-tertiary-strawberry);
+}
+.chat-event--color-system .chat-event-foreground {
+    color: var(--color-fishbase-eel);
+
+}
+
+
+.chat-event--color-roomboost.chat-event-background,
+.chat-event--color-roomboost .chat-event-background{
+    background-color: var(--color-tertiary-strawberry);
+}
+.chat-event--color-roomboost .chat-event-foreground {
+    color: var(--color-fishbase-eel);
+    -unity-font-style: italic;
+}
+
+.chat-event--color-staff.chat-event-background,
+.chat-event--color-staff .chat-event-background{
+    background-color: var(--color-fishbase-catfish);
+}
+.chat-event--color-staff .chat-event-foreground {
+    color: var(--color-tertiary-tangerine);
+}
+
+.chat-event--color-owner.chat-event-background,
+.chat-event--color-owner .chat-event-background{
+    background-color: var(--color-fishbase-catfish);
+}
+.chat-event--color-owner .chat-event-foreground {
+    color: var(--color-tertiary-blueberry);
+}
+
+.chat-event--color-moderator.chat-event-background,
+.chat-event--color-moderator .chat-event-background{
+    background-color: var(--color-fishbase-catfish);
+}
+.chat-event--color-moderator .chat-event-foreground {
+    color: var(--color-tertiary-blueberry);
+}
+
+.chat-event--color-tip.chat-event-background,
+.chat-event--color-tip .chat-event-background {
+    background-color: var(--color-fishbase-catfish);
+}
+.chat-event--color-tip .chat-event-foreground {
+    color: #F5AF03;
+}
+
+.chat-event--color-tip .chat-event-background{
+    background-color: var(--color-fishbase-catfish);
+}

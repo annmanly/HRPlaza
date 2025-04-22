@@ -1,0 +1,25 @@
+.scroll-back-control {
+    width: 100%;
+    position: absolute;
+    bottom: var(--safe-area-bottom);
+}
+
+.scroll-back-control UIImage {
+    translate: 0 100px 0;
+    margin: auto;
+    margin-bottom: 12px;
+    width: 36px;
+    height: 36px;
+    border-radius: 12px;
+    padding: 4px;
+    background-color: var(--color-fishbase-bonito);
+    --unity-image-tint-color: var(--color-fishbase-eel);
+}
+
+.scroll-back-control.ScrollDirection-Up UIImage {
+    rotate: 90deg;
+}
+
+.scroll-back-control.ScrollDirection-Down UIImage {
+    rotate: -90deg;
+}

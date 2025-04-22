@@ -1,0 +1,109 @@
+/*
+
+    Clothing Tool Editor
+  
+*/
+
+.clothing-window {
+    flex-grow: 1;
+}
+
+.clothing-window #_centerDisplay {
+    background-color: var(--unity-colors-tab-background-hover);
+    flex-grow: 1;
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+}
+
+.clothing-window #_content UICollection {
+    flex-grow: 1;
+}
+
+.clothing-window #_contentSection {
+    padding: 16px;
+}
+
+.clothing-window #_svgDropArea{
+    width: 90%;
+    height: 90%;
+    background-color: #131313;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+}
+
+.clothing-window #_svgDropLabel{
+    color: #ffffff;
+    font-size: 24px;
+}
+
+#_centerPane {
+    flex-grow: 1;
+    height: 100%;
+    width: 100%;
+}
+
+#_left {
+    flex-grow: 1;
+    flex-direction: row;
+}
+
+#_assetListContainer{
+    flex-grow: 1;
+}
+
+    
+/*
+
+    Toolbar
+  
+*/
+
+.clothing-window #_toolbar {
+    height: var(--unity-metrics-toolbar-height);
+    width: 100%;
+    background-color: var(--unity-colors-toolbar-background);
+    padding-left: 0;
+    padding-right: 0;
+    flex-direction: row;
+    border-bottom-width: 1px;
+    border-bottom-color: var(--unity-colors-toolbar-border);
+    -unity-text-align: middle-center;
+}
+
+.clothing-window #_toolbar .unity-toolbar-button {
+    padding-top: 0;
+    padding-bottom: 0;
+}
+
+#_toolbarLeft {
+    flex-direction: row;
+}
+
+#_toolbarRight {
+    position: absolute;
+    right: 8px;
+    flex-grow: 1;
+    flex-direction: row;
+}
+
+#_importMenu {
+    margin-left: 2px;
+}
+
+#_empty {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    -unity-text-align: middle-center;
+}
+
+#_empty Label
+{
+    flex-grow: 1;
+}

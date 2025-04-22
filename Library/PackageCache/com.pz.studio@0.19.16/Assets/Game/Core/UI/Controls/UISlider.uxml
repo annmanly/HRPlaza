@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<UXML
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xmlns="UnityEngine.UIElements"
+        xmlns:hr="Highrise.UI"
+        xsi:noNamespaceSchemaLocation="../../../../../UIElementsSchema/UIElements.xsd"
+>
+
+  <hr:UISlider class="slider">
+    <VisualElement class="slider__background" />
+    <VisualElement class="slider__dot-container" name="_dotContainer" />
+    <VisualElement class="slider__foreground" name="_foreground" />
+    <VisualElement class="slider__knob" name="_knob" />
+    <SliderInt class="slider__slider" name="_slider" />
+  </hr:UISlider>
+
+</UXML>

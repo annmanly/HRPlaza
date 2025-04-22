@@ -1,0 +1,145 @@
+.asset-store-item {
+    flex-grow: 1;
+    width: 100px;
+    height: 145px;
+    -unity-text-align: middle-center;
+    background-color: #252629;
+    padding: 5px;
+    border-radius: 8px;
+}
+
+.asset-store-item > .unity-image {
+    border-radius: 8px;
+    overflow: hidden;
+    width: 100%;
+    height: 100px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #252629;
+}
+
+.asset-store-item > .unity-label {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    font-size: 85%;
+    height: 14px;
+    margin-right: auto;
+    margin-top: 2px;
+    padding: 6px;
+}
+
+.asset-store-item .unity-progress-bar__container {
+    height: 10px;
+    width: 90px;
+    margin-left: auto;
+    margin-right: auto;
+    position: absolute;
+    top: 85px;
+}
+
+.asset-store-item .unity-progress-bar__background {
+    border-radius: 6px;
+}
+
+.asset-store-item .unity-progress-bar__progress {
+    border-radius: 4px;
+    background-color: greenyellow;
+}
+
+.asset-store-item:checked > .unity-label {
+    background-color: var(--unity-colors-highlight-background);
+    border-radius: 3px;
+    color: white;
+}
+
+.asset-store-item .installed {
+    width: 18px;
+    height: 18px;
+    right: 2px;
+    bottom: 2px;
+    background-image: url("project://database/Packages/com.pz.studio/Assets/Sprites/Icons/icon_save.png");
+    -unity-background-image-tint-color: greenyellow;
+}
+
+.asset-store-item:hover .install {
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    right: 4px;
+    top: 4px;
+    border-radius: 4px;
+    background-color: var(--unity-colors-toolbar-background);
+    background-image: url("project://database/Packages/com.pz.studio/Assets/Sprites/Icons/icon_save.png")
+}
+
+.asset-store-item:hover .like_empty {
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    left: 4px;
+    top: 4px;
+    border-radius: 4px;
+    background-color: var(--unity-colors-toolbar-background);
+    background-image: url("project://database/Packages/com.pz.studio/Editor/UI/Icons/icon_like_empty.png")
+}
+
+.asset-store-item:hover .like_full {
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    left: 4px;
+    top: 4px;
+    border-radius: 4px;
+    background-color: var(--unity-colors-toolbar-background);
+    background-image: url("project://database/Packages/com.pz.studio/Editor/UI/Icons/icon_like_full.png")
+}
+
+.asset-store-item .purchased {
+    width: 19px;
+    height: 19px;
+    padding: 1px;
+    right: 0px;
+    bottom: 2px;
+    background-image: url("project://database/Packages/com.pz.studio/Editor/UI/Icons/icon_purchased.png");
+}
+
+.asset-store-item .has_scripts {
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    left: 4px;
+    bottom: 4px;
+    border-radius: 4px;
+    background-image: url("project://database/Packages/com.pz.studio/Editor/Icons/LuaScript.png")
+}
+
+.asset-store-item .is_bundle {
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    right: 4px;
+    bottom: 4px;
+    background-image: url("project://database/Packages/com.pz.studio/Editor/Icons/StoreAssetBundleIcon.png")
+}
+
+.asset-store-item .item_state {
+    flex-direction: row;
+    top: 5px;
+    left: 5px;
+}
+
+.asset-store-item .cost_container {
+    flex-direction: row;
+    left: 2px;
+}
+
+.asset-store-item .item_cost {
+    font-size: 12px
+}
+
+.asset-store-item .item_cost_icon {
+    width:14px;
+    height:14px;
+    padding: 1px;
+    --unity-image: url("project://database/Packages/com.pz.studio/Editor/UI/Icons/gold_asset_store.png")
+}

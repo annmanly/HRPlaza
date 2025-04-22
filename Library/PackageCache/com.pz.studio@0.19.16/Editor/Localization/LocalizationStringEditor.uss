@@ -1,0 +1,52 @@
+.localization-string-editor {
+    flex-grow: 1;
+}
+
+.localization-string-editor #_top {
+    padding: 4px;
+    flex-direction: row;
+    justify-content: center;
+    border-color: var(--unity-colors-toolbar-border);
+    border-bottom-width: 1px;
+    flex-shrink: 0;
+}
+
+.localization-string-editor .unity-button {
+    justify-content: center;
+    flex-direction: row;
+}
+
+.localization-string-editor #_colorField {
+    width: 15px;
+    height: 15px;
+}
+
+.localization-string-editor #_middle {
+    padding: 4px;
+    flex-grow: 1;
+}
+
+.localization-string-editor #_keyField {
+    padding-bottom: 10px;
+}
+
+.localization-string-editor #_textField {
+    min-height: 120px;
+    white-space: normal;
+    flex-shrink: 1;
+}
+
+.localization-string-editor #_bottom {
+    padding: 4px;
+    flex-direction: row;
+    flex-shrink: 0;
+    justify-content: center;
+}
+
+.localization-string-editor #_saveButton {
+    width: 100px;
+}
+
+.localization-string-editor #_cancelButton {
+    width: 100px;
+}

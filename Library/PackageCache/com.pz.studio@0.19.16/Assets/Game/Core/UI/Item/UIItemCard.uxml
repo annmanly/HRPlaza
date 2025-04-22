@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<UXML
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns="UnityEngine.UIElements"
+    xmlns:hr="Highrise.UI"
+    xmlns:editor="UnityEditor.UIElements"
+    xsi:noNamespaceSchemaLocation="../../../../../UIElementsSchema/UIElements.xsd"
+>
+
+<hr:UIItemCard class="item-card">
+  
+  <!-- Main Content -->
+  <VisualElement class="overlay item-card__content rarity-bg">
+    <hr:UIMythicalBackground class="overlay"/>
+
+    <!-- Border -->
+    <VisualElement class="item-card__border overlay rarity-border" name="_border"/>  
+
+    <!-- Rarity-->
+    <hr:UILabel name="_rarity" key="rarity_legendary" uppercase="true" class="rarity-text"/>
+
+    <!-- Effects -->
+    <hr:UIImage name="_effectsIcon" class="icon-outfit-auras rarity-effects-icon"/>
+
+    <!-- Image and Account Bound -->
+    <Image name="_imageContainer">
+      <hr:UIImage name="_image" class="overlay" loading-indicator="true"/>
+      <VisualElement class="item-card-image-gradient rarity-bg-tint" name="_maskingGradient"/>
+      <VisualElement name="_iconContainer">
+          <Image name="_accountBound"/>
+          <hr:UILabel name="_nfi"/>
+          <Image name="_nft" class="icon-non-tradable"/>
+          <hr:UIImage name="_typeImage"/>
+      </VisualElement>
+    </Image>
+
+    <!-- Name -->
+    <hr:UILabel name="_name" class="rarity-text"/>
+
+    <Image name="_pinnedIcon" class="overlay-top-left icon-pin-small"/>
+
+    <!-- Cost -->
+    <VisualElement class="item-card__cost">
+      <hr:UICurrency name="_cost"/>
+      <hr:UILabel key="free_exclamation" name="_costFree" />
+    </VisualElement>
+    
+    <!-- Discount -->
+    <VisualElement name="_discount">
+      <Image class="overlay icon-ribbon-small" name="_discountRibbon"/>
+      <Label name="_discountText"/>  
+    </VisualElement>
+
+    <!--Other Badges -->
+    
+    <!-- Won and Quantity -->
+    <Image name="_won"/>
+        
+    <!-- New Badge -->
+    <VisualElement name="_newBadge" class="overlay-bottom-right">
+      <Label name="_newBadgeLabel" text="NEW!"/>
+    </VisualElement>
+
+    <!-- Boost Badge -->
+    <VisualElement name="_boostBadge" class="item-card__boost-badge overlay-bottom-right">
+      <Image class="icon-event-boost" />
+      <hr:UILabel name="_boostLabel" />
+    </VisualElement>
+    
+  </VisualElement>
+
+  <hr:UILabel name="_quantity"/>
+
+
+</hr:UIItemCard>
+
+</UXML>

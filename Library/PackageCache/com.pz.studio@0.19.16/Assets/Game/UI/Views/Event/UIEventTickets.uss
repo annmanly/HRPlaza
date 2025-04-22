@@ -1,0 +1,101 @@
+.event-tickets {
+}
+
+
+.event-tickets #_ticketsContainer {
+    visibility: hidden;
+    border-radius: 12px;
+    align-items: center;
+    justify-content: center;
+    height: 56px;
+    margin: 16px;
+    background-color: var(--color-fishbase-catfish);
+    flex-direction: row;
+}
+
+.event-tickets #_ticketCount {
+    align-self: center;
+    color: white;
+}
+
+.event-tickets .tickets-icon {
+    width: 16px;
+    height: 16px;
+}
+
+.event-tickets .regular-tickets-text {
+    align-self: center;
+    align-content: center;
+    align-items: center;
+    -unity-text-align: middle-center;
+    color: var(--color-fishbase-bonito);
+    padding-top: 0;
+    padding-bottom: 0;
+    margin-top: 0;
+    margin-left: 4px;
+    margin-bottom: 0;
+    font-size: 13px;
+}
+
+.event-tickets #_resultTicketCount {
+    -unity-font-definition: var(--font-bold);
+    font-size: 13px;
+    margin-left: 4px;
+    color: var(--color-fishbase-whitefish);
+}
+
+.event-tickets #_badgesContainer {
+    overflow: visible;
+    justify-content: center;
+    flex-grow: 0;
+    flex-shrink: 1;
+    top: 60px;
+    align-items: center;
+}
+
+.event-tickets #_superBoostContainer {
+    overflow: hidden;
+    border-radius: 11px;
+    border-color: var(--color-tertiary-tangerine-25);
+    border-width: 3px;
+}
+
+.event-tickets #_superBoostBackground {
+    background-color: var(--color-tertiary-banana);
+    border-color: var(--color-tertiary-tangerine-25);
+}
+
+.event-tickets #_superBoostGradient {
+    margin: -100px;
+    rotate: 45deg;
+    background-image: var(--image-vgradient-180);
+    -unity-background-image-tint-color: var(--color-tertiary-tangerine);
+}
+
+.event-tickets #_superBoostLabel {
+    -unity-font-definition: var(--font-black-italic);
+    font-size: 13px;
+    color: var(--color-fishbase-eel);
+    flex-grow: 0;
+    flex-shrink: 1;
+    padding: 3px 6px;
+    height: 24px;
+    -unity-text-align: middle-left;
+}
+
+.event-tickets #_streakLabel {
+    margin-left: 3px;
+    -unity-font-definition: var(--font-black-italic);
+    font-size: 13px;
+    flex-grow: 0;
+    flex-shrink: 1;
+    padding-left: 6px;
+    padding-right: 6px;
+    padding-top: 3px;
+    padding-bottom: 3px;
+    -unity-text-align: middle-center;
+    color: var(--color-fishbase-eel);
+    border-radius: 8px;
+    background-color: var(--color-tertiary-blueberry);
+    height: 24px;
+}

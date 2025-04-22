@@ -1,0 +1,163 @@
+/*
+
+    Chat Bubble
+
+*/
+
+.chat-bubble {
+    border-radius: 8px;
+    min-height: 22px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 3px;
+}
+
+.chat-bubble-message {
+    flex-wrap: wrap;
+    font-size: 14px;
+    max-width: 236px;
+    padding-left: 8px;
+    padding-right: 8px;
+    padding-top: 4px;
+    padding-bottom: 4px;
+    white-space: normal;
+    flex-shrink: 0;
+}
+
+.chat-bubble__message Label {
+    color: var(--color-fishbase-eel);
+    margin: 0;
+    padding-left: 8px;
+    padding-right: 8px;
+    padding-top: 3px;
+    padding-bottom: 3px;
+}
+
+/*
+
+    Player status 
+
+*/
+
+.indicator-player-status {
+    width: auto;
+    transform-origin: 50% 100%;
+    flex-grow:1;        
+}
+
+.indicator-player-status-bubble {
+    --unity-image: url("project://database/Packages/com.pz.studio/Assets/Sprites/Indicators/PlayerStatusBubble.png");
+    --unity-image-tint-color: var(--color-fishbase-eel);
+    width: 50px;
+    height: 50px;
+    flex-shrink: 0;
+}
+
+.indicator-player-status-icon {
+    width: 24px;
+    margin: auto;
+    margin-bottom: 8px;
+}
+
+/*
+
+    Voice Indicator
+
+*/
+
+.indicator-voice {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.indicator-voice .indicator-player-status-icon {
+    --unity-image: var(--image-icon-voice);
+    --unity-image-tint-color: var(--color-accents-secondary);
+}
+
+
+/*
+
+    AFK Indicator
+
+*/
+
+.indicator-afk .indicator-player-status-icon {
+    --unity-image: url("project://database/Packages/com.pz.studio/Assets/Sprites/Indicators/indicator_afk.png");
+    margin-bottom: 20px;
+}
+
+/*
+
+    On phone indicator
+
+*/
+
+.indicator-on-phone .indicator-player-status-bubble {
+    width: 40px;
+    height: 40px;
+}
+
+.indicator-on-phone .indicator-player-status-icon {
+    --unity-image: url("project://database/Packages/com.pz.studio/Assets/Sprites/Indicators/indicator_on_phone.png");
+    margin-bottom: 6px;
+}
+
+
+/*
+
+    Typing Indicator
+
+*/
+
+.indicator-typing {
+    flex-direction: row;
+    width: 38px;
+    height: 26px;
+    background-color: var(--color-fishbase-whitefish);
+    border-radius: 13px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.chat-bubble--self .indicator-typing {
+    background-color: var(--color-fishbase-catfish);
+}
+
+.indicator-typing #_nub {
+    position: absolute;
+    bottom: -4px;
+    left: 50%;
+    width: 8px;
+    height: 8px;
+    border-radius: 4px;
+    margin-left: -4px;
+    background-color: var(--color-fishbase-whitefish);
+}
+
+.chat-bubble--self .indicator-typing #_nub
+{
+    background-color: var(--color-fishbase-catfish);
+}
+
+.indicator-typing #_dot1,
+.indicator-typing #_dot2,
+.indicator-typing #_dot3 {
+    background-color: var(--color-fishbase-eel);
+    border-radius: 1.5px;
+    opacity: 0.5;
+    height: 3px;
+    width: 3px;
+    margin: auto 1.5px;
+}
+
+.indicator-typing #_dot1 {
+    margin-left: 10px;
+}
+
+.chat-bubble--self .indicator-typing #_dot1,
+.chat-bubble--self .indicator-typing #_dot2,
+.chat-bubble--self .indicator-typing #_dot3 {
+    background-color: var(--color-accents-secondary);
+}
+

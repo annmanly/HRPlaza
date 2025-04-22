@@ -1,0 +1,139 @@
+.asset-catalog-overlay {
+    width: 310px;
+    height: 500px;
+}
+
+.overlay-title {
+    margin-bottom: 4px;
+}
+
+.asset-catalog-overlay .row {
+    flex-direction: row;
+    align-items: center;
+}
+
+.asset-catalog-overlay #_mainPanel {
+    margin-top: 6px;
+}
+
+.asset-catalog-overlay #_searchField {
+    width: 200px;
+}
+
+.asset-catalog-overlay #_gotoMainPanelButton{
+    margin-left: auto;
+    margin-right: 5px;
+}
+
+.asset-catalog-overlay .heart-toggle  > .unity-toggle__input > .unity-toggle__checkmark {
+    background-image: url("project://database/Packages/com.pz.studio/Editor/UI/Icons/icon_like_empty.png");
+    width:16px;
+    height:16px;
+    padding: 2px;
+}
+
+.asset-catalog-overlay .heart-toggle:checked  > .unity-toggle__input > .unity-toggle__checkmark {
+    background-image: url("project://database/Packages/com.pz.studio/Editor/UI/Icons/icon_heart_white_full.png");
+}
+
+.asset-catalog-overlay #_goldBalanceArea {
+    flex-direction: row;
+    align-items: center;
+    margin-left: auto;
+    margin-right: 5px;
+}
+
+.asset-catalog-overlay .goldIcon {
+    width:20px;
+    height:20px;
+    padding: 2px;
+    --unity-image: url("project://database/Packages/com.pz.studio/Editor/UI/Icons/gold_asset_store.png")
+}
+
+.asset-catalog-overlay #_categoryDropdown {
+    width: 105px;
+}
+
+.asset-catalog-overlay #_assetPackDropdown {
+    width: 145px;
+}
+
+.asset-catalog-overlay .panel {
+    height: 450px;
+}
+
+/*
+    Asset Collection  
+*/
+
+.asset-catalog-overlay #_assetsContainer{
+    margin-top: 10px;
+    height: 500px;
+}
+
+.asset-catalog-overlay #_assetsBundleContainer{
+    height: 500px;
+}
+
+.asset-catalog-overlay .assetsContainer UICollectionSection {
+    padding: 8px;
+    padding-right: 16px;
+}
+
+.asset-catalog-overlay .asset-collection {
+    margin-left: 1px;
+    margin-right: 1px;
+}
+
+.asset-store-item {
+    max-width: 90px;
+    max-height: 115px;
+}
+
+.overlay-label {
+    font-size: 13px;
+    margin-right: 2px;
+    flex-grow: 1;
+    white-space: nowrap;
+    color: var(--color-fishbase-bonito);
+    -unity-text-align: middle-left;
+}
+
+/* 
+    Toggle
+*/
+
+.asset-catalog-overlay .inspector-toggle {
+    margin-left: auto;
+}
+
+.asset-catalog-overlay .inspector-toggle #unity-checkmark {
+    width: 28px;
+    height: 16px;
+    background-color: var(--unity-colors-dropdown-background);
+}
+
+.asset-catalog-overlay .inspector-toggle-thumb {
+    width: 12px;
+    height: 12px;
+    left: 3px;
+    top: 1px;
+}
+
+.asset-catalog-overlay .inspector-toggle-thumb:checked  {
+    left: 13px;
+}
+
+.asset-catalog-overlay .inspector-field Label{
+    min-width: 30px;
+}
+
+/* 
+    Dropdown
+*/
+
+#_dropdownListener {
+    width: 100%;
+    height: 100%;
+    position:absolute;
+}

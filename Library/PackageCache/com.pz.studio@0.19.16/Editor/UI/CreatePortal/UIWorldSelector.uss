@@ -1,0 +1,43 @@
+.world-selector {
+    width: 100%;
+    flex-grow: 1;
+}
+
+.world-selector #_search {
+    margin: 4px;
+    width: auto;
+}
+
+.world-selector #_listView
+{
+    flex-grow: 1;
+    background-color: rgba(0,0,0,0.1);
+    margin-bottom: 4px;
+}
+
+.world-selector .bottom {
+    flex-direction: row;
+    margin-left: auto;
+    margin-bottom: 4px;
+}
+
+.world-selector .name-cell {
+    flex-direction: row;
+    -unity-text-align: middle-left;
+    height: 36px;
+    margin-left: 6px;
+}
+
+.world-selector .id-cell {
+    -unity-text-align: middle-left;
+    height: 36px;
+}
+
+.world-selector .name-cell UIImage {
+    --unity-image: url("project://database/Packages/com.pz.studio/Editor/UI/Icons/IconWorld.png");
+    width: 32px;
+    height: 32px;
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-right: 4px;
+}

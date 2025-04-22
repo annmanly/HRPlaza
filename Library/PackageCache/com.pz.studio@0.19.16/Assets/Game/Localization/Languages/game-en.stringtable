@@ -1,0 +1,2778 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resources>
+  <string name="report">Report</string>
+  <string name="report_user">Report User Profile</string>
+  <string name="claim">Claim</string>
+  <string name="claim_all">Claim All</string>
+  <string name="block">Block</string>
+  <string name="travel">Travel</string>
+  <string name="maximum">Max</string>
+  <string name="okay">Okay</string>
+  <string name="themes">Themes</string>
+  <string name="current_theme">Current Theme</string>
+  <string name="message">Message</string>
+  <string name="whisper">Whisper</string>
+  <string name="message_requests">Message Requests</string>
+  <string name="message_user">Message User</string>
+  <string name="tradable">Tradable</string>
+  <string name="you_can_trade_these">You can trade these.</string>
+  <string name="rotate">Rotate</string>
+  <string name="explore">Explore</string>
+  <string name="submit">Submit</string>
+  <string name="collect">Collect</string>
+  <string name="new_follower">You have a new follower!</string>
+  <string name="inventory">Inventory</string>
+  <string name="item_collection">Item Collection</string>
+  <string name="bonus_stage">Bonus stage {{$1}} / 3</string>
+  <string name="online">Online</string>
+  <string name="likers">Likers</string>
+  <string name="private_crew_explanation">When your Crew is set to Private, only people you approve can join.</string>
+  <string name="refreshing">Refreshing</string>
+  <string name="settings">Settings</string>
+  <string name="rank">Rank</string>
+  <string name="rank_value">Rank {{$1}}</string>
+  <string name="final_stage">Final Stage!</string>
+  <string name="demoted_to_final_stage">Demoted to Final Stage</string>
+  <string name="demoted_to_stage">Demoted to Stage {{$1}}</string>
+  <string name="demoted_to_bonus_stage">Demoted to Bonus Stage {{$1}}</string>
+  <string name="privacy_policy">privacy policy</string>
+  <string name="unfollowing_or_blocking_info">Unfollowing or Blocking will hide all of their posts from your feed</string>
+  <string name="search_for_a_room">Search for a room</string>
+  <string name="delete_room">Delete Room</string>
+  <string name="recommended">Recommended</string>
+  <string name="notifications">Notifications</string>
+  <string name="mute_notifications">Mute Notifications</string>
+  <string name="notifications_muted">Notifications muted.</string>
+  <string name="notifications_unmuted">Notifications unmuted.</string>
+  <string name="notifications_muted_for">Notifications muted for {{$1}}.</string>
+  <string name="mute_for_">Mute for {{$1}}</string>
+  <string name="mute_forever">Mute Forever</string>
+  <string name="claimed">Claimed</string>
+  <string name="max_combo_streaks">{{$1}} Max Combo Streaks</string>
+  <string name="furniture">Furniture</string>
+  <string name="start">Start</string>
+  <string name="start_exclamation">START!</string>
+  <string name="belongs_to">by {{$1}}</string>
+  <string name="belongs_to_user">Belongs to @{{$1}}</string>
+  <string name="saved">Saved</string>
+  <string name="completed">Completed</string>
+  <string name="edit_post">Edit Post</string>
+  <string name="delete_post">Delete Post</string>
+  <string name="clothes">Clothes</string>
+  <string name="clothing">Clothing</string>
+
+  <string name="time_left">Time left: {{$1}}</string>
+  <string name="time_ago">{{$1}} ago</string>
+  <string name="users">Users</string>
+  <string name="link_copied">Link Copied</string>
+  <string name="complete_all_daily_goals">Complete all Daily goals and receive {{$1}}</string>
+  <string name="complete_all_daily_goals_time_left">Complete all Daily quests and receive {{1}}{{$1}}{{/1}}. \n{{2}}({{$2}} left){{/2}}</string>
+  <string name="nothing_to_see_here">Nothing to see here.</string>
+  <string name="follow_requests">Follow Requests</string>
+  <string name="invite_friends">Invite Friends</string>
+  <string name="faq">FAQ</string>
+  <string name="sale">Sale</string>
+  <string name="sales">Sales</string>
+  <string name="designer">Designer</string>
+  <string name="waiting">Waiting</string>
+  <string name="sign_out">Sign Out</string>
+  <string name="followers">Followers</string>
+  <string name="promoted_to_final_stage">Promoted to Final Stage</string>
+  <string name="promoted_to_bonus_stage">Promoted to Bonus Stage {{$1}}</string>
+  <string name="promoted_to_stage">Promoted to Stage {{$1}}</string>
+  <string name="disband">Disband</string>
+  <string name="crew_settings">Crew Settings</string>
+  <string name="crew_info">Crew Info</string>
+  <string name="crew_chat">Crew Chat</string>
+  <string name="invite_to_crew">Invite to Crew</string>
+  <string name="request_to_join_crew">Request to Join Crew</string>
+  <string name="join_crew">Join Crew</string>
+  <string name="disband_crew">Disband Crew</string>
+  <string name="change_crew_logo">Change Crew Logo</string>
+  <string name="crew_goals">Crew Goals</string>
+  <string name="crew_reach_goals">Reach the goals with your crewmates to unlock these rewards.</string>
+  <string name="not_available">n/a</string>
+  <string name="entry">Entry</string>
+  <string name="connecting_to_room">Connecting to Room</string>
+  <string name="stage_out_of10">Stage {{$1}} / 10</string>
+  <string name="this_will_pick_up_all_furniture">This will pick up all the furniture in the room</string>
+  <string name="crew">Crew</string>
+  <string name="add_members">Add Members</string>
+  <string name="follow">Follow</string>
+  <string name="unfollow">Unfollow</string>
+  <string name="following">Following</string>
+  <string name="user_wants_to_send_you_a_message">{{1}}{{$1}}{{/1}} {{2}}wants to send you a message{{/2}}</string>
+  <string name="info">Info</string>
+  <string name="remove_from_group">Remove from Group</string>
+  <string name="name_group_chat">Name Group Chat</string>
+  <string name="hashtags">Hashtags</string>
+  <string name="streak">Streak</string>
+  <string name="expired">Expired</string>
+  <string name="expires_in">Expires in {{$1}}</string>
+  <string name="start_trade">Start a Trade</string>
+  <string name="cancel_trade">Cancel Trade</string>
+  <string name="collect_items">Collect Items</string>
+  <string name="remove_from_trade">Remove from Trade</string>
+  <string name="add_to_trade">Add to Trade</string>
+  <string name="someone">Someone</string>
+  <string name="my_items">My Items</string>
+  <string name="tickets">Tickets</string>
+  <string name="filter">Filter</string>
+  <string name="all">All</string>
+  <string name="default_filter">{{$1}} (Default)</string>
+  <string name="earn_rewards_instantly">Earn rewards instantly when you reach Ticket Goals!</string>
+  <string name="reached">Reached</string>
+  <string name="recent">Recent</string>
+  <string name="results">Results</string>
+  <string name="unlock">Unlock</string>
+  <string name="collected">Collected</string>
+  <string name="are_you_sure">Are you sure?</string>
+  <string name="create_a_room">Create a Room</string>
+  <string name="create_your_own_room_at">Create your own room at</string>
+  <string name="per_month">/month</string>
+  <string name="name_your_room">Name your Room</string>
+  <string name="music_volume">Music Volume</string>
+  <string name="layout">Layout</string>
+  <string name="ready_to_vote_on_looks">Ready to vote on looks?</string>
+  <string name="invitation_sent">Invitation Sent</string>
+  <string name="post">Post</string>
+  <string name="add_comment">Add a comment...</string>
+  <string name="user_liked_your_post">{{$1}} liked your post</string>
+  <string name="user_commented_on_your_post">{{$1}} commented on your post</string>
+  <string name="user_started_following_you">{{$1}} started following you</string>
+  <string name="user_liked_your_comment">{{$1}} liked your comment</string>
+  <string name="user_mentioned_you_in_a_comment">{{$1}} mentioned you in a comment</string>
+  <string name="user_mentioned_you_in_a_post">{{$1}} mentioned you in a post</string>
+  <string name="user_wants_to_follow_you">{{$1}} wants to follow you</string>
+  <string name="_new">New</string>
+  <string name="unlocked">Unlocked</string>
+  <string name="storefront_ads">Storefront Ads</string>
+  <string name="which_style_matches_theme">Which style best matches the theme?</string>
+  <string name="submit_your_look">Submit Your Look</string>
+  <string name="dont_like_it">Don\'t like it?</string>
+  <string name="free">Free</string>
+  <string name="created_on_date">Created {{$1}}</string>
+  <string name="created_on">Created on {{$1}}</string>
+  <string name="save">Save</string>
+  <string name="lock">Lock</string>
+  <string name="change">Change</string>
+  <string name="visitors">Visitors</string>
+  <string name="purchases_disabled">Purchases are disabled in your device!</string>
+  <string name="previous_purchases_failed_processed">Something went wrong with your last purchase. Don\'t worry, we will try again the next time you connect and you will not be charged again.</string>
+  <string name="purchase_something_went_wrong">Something went wrong. Don\'t worry, your purchase was logged successfully and will automatically complete next time you reconnect.</string>
+  <string name="purchase_cancelled">Purchase cancelled. You were not charged.</string>
+  <string name="purchase_processing_error">Purchase Processing Error</string>
+  <string name="purchase_processing_error_message">There was an issue processing your purchase, we have given you {{$1}} Gold in the mean time.\n\nPlease {{1}}contact support{{/1}} to exchange this Gold for your intended purchase.</string>
+  <string name="shop">Shop</string>
+  <string name="event_shop">Event Shop</string>
+  <string name="access">Access</string>
+  <string name="next_in">Next in {{$1}}</string>
+  <string name="loading">Loading</string>
+  <string name="crew_description">Crews are groups of up to 50 members who come together to chat, compete in events and win prizes. You can only be in one crew at time.</string>
+  <string name="unknown_error">Unknown Error</string>
+  <string name="authorization_error">Authorization Error</string>
+  <string name="storefront">Storefront</string>
+  <string name="user">User</string>
+  <string name="pick_up_all_furniture">Pick Up All Furniture</string>
+  <string name="shop_limit_note_days">{{1}}{{$1}}{{/1}} / {{$2}} purchases left today.\nResets at UTC noon.</string>
+  <string name="shop_limit_note_months">{{1}}{{$1}}{{/1}} / {{$2}} purchases left this month.\nResets at the end of month.</string>
+  <string name="new_password">New Password</string>
+  <string name="change_password">Change Password</string>
+  <string name="incorrect_password">Incorrect Password</string>
+  <string name="incorrect_password_message">The password you entered is incorrect. Please try again.</string>
+  <string name="account_not_found">Can’t Find Account</string>
+  <string name="account_not_found_message">We can’t find an account with the name {{$1}}.</string>
+  <string name="ban_from_room">Ban from Room</string>
+  <string name="mute_in_room">Mute from Chat</string>
+  <string name="kick_from_room">Kick from Room</string>
+  <string name="promote_post">Promote Post</string>
+  <string name="demote_post">Demote Post</string>
+  <string name="permanently_delete_the_room">This will permanently delete the room</string>
+  <string name="retry">Retry</string>
+  <string name="ended">Ended</string>
+  <string name="moderate">Moderate</string>
+  <string name="admin_moderate">Admin Moderate</string>
+  <string name="moderation_and_design">Moderation &amp; Design</string>
+  <string name="activity">Activity</string>
+  <string name="feed">Feed</string>
+  <string name="inbox">Inbox</string>
+  <string name="messages">Messages</string>
+  <string name="edit">Edit</string>
+  <string name="search_tenor">Search Tenor</string>
+  <string name="promote_to_rank">Promote to {{$1}}</string>
+  <string name="demote_to_rank">Demote to {{$1}}</string>
+  <string name="judge_rank">Judge Rank {{$1}}</string>
+  <string name="judge">Judge</string>
+  <string name="next">Next</string>
+  <string name="room_deleted">Room has been deleted</string>
+  <string name="post_deleted">Post deleted</string>
+  <string name="no_messages_yet">No messages yet</string>
+  <string name="event">Event</string>
+  <string name="judge_boost">{{$1}} Judge Boost</string>
+  <string name="model_boost">{{$1}} Model Boost</string>
+  <string name="model">Model</string>
+  <string name="model_rank">Model Rank {{$1}}</string>
+  <string name="full">Full</string>
+  <string name="like">Like</string>
+  <string name="grab">Grab</string>
+  <string name="grabs">Grabs</string>
+  <string name="featured">Featured</string>
+  <string name="list_an_item">List an Item</string>
+  <string name="listings">Listings</string>
+  <string name="floor_price">Floor Price</string>
+  <string name="average">Average</string>
+  <string name="asking_price">Asking Price</string>
+  <string name="minimum_price_for_this_item">The minimum price of this item is {{1}}{{$1}}G{{/1}}.</string>
+  <string name="you_will_receive">You will receive</string>
+  <string name="list_this_item">List this Item</string>
+  <string name="item_listed">Item listed!</string>
+  <string name="all_listings">All Listings</string>
+  <string name="my_listings">My Listings</string>
+  <string name="no_listings_found">No listings found.</string>
+  <string name="marketplace">Marketplace</string>
+  <string name="market">Market</string>
+  <string name="collections">Collections</string>
+  <string name="daily_gift">Daily Gift</string>
+  <string name="hot_items">🔥 Hot Items</string>
+  <string name="newly_available">✨ Newly Available</string>
+  <string name="active">Active</string>
+  <string name="sold">Sold</string>
+  <string name="confirm_purchase">Confirm Purchase</string>
+  <string name="are_you_sure_you_want_to_buy_this_item">Are you sure you want to buy this item?</string>
+  <string name="buy_listing_for">Buy for {{1}}{{/1}} {{$1}}</string>
+  <string name="return_this_item">Return this item?</string>
+  <string name="item_will_be_sent_back">{{1}}{{$1}}{{/1}} will be sent back to your inventory.</string>
+  <string name="unlist_item">Unlist item</string>
+  <string name="gold_claimed">{{1}}×{{$1}} Gold{{/1}} claimed</string>
+  <string name="list_on_marketplace">List on Marketplace</string>
+  <string name="item_will_be_removed">The item will be removed from your inventory while listed. Listings expire after 14 days.</string>
+  <string name="list_item">List Item</string>
+  <string name="get_from_marketplace">Get from Marketplace</string>
+  <string name="get_from_grab">Get from Grab</string>
+  <string name="back">Back</string>
+  <string name="my_listing_status">{{$1}} \u2022 {{$2}}</string>
+  <string name="newest_first">Newest to Oldest</string>
+  <string name="oldest_first">Oldest to Newest</string>
+  <string name="price_low_to_high">Price: Low to High</string>
+  <string name="price_high_to_low">Price: High to Low</string>
+  <string name="price_range">Price Range</string>
+  <string name="price_range_display">Price: {{$1}} - {{$2}}</string>
+  <string name="rarity_low_to_high">Rarity: Low to High</string>
+  <string name="rarity_high_to_low">Rarity: High to Low</string>
+  <string name="min_dot">Min.</string>
+  <string name="max_dot">Max.</string>
+  <string name="relist">Relist</string>
+  <string name="relist_all_items">Relist All Items</string>
+  <string name="relist_all_expired_listings">Relist All Expired Listings?</string>
+  <string name="relisted_num_items">Relisted {{$1}} items.</string>
+  <string name="error_relisting">Error Relisting</string>
+  <string name="num_items_could_not_be_listed">{{$1}} of your items could not be listed due to Marketplace configuration changes. Please Relist them manually.</string>
+  <string name="all_items_from_expired_listings">All items from expired Listings will be relisted in the Marketplace at the same price.</string>
+  <string name="claim_gold_from_listings">Claim Gold from Listings?</string>
+  <string name="listings_have_been_sold">{{$1}} listings have been sold. You’ve earned {{$2}} Gold!</string>
+  <string name="you_have_not_created_listings">You have not created any listings yet!</string>
+  <string name="nothing_here_yet">Nothing here yet!</string>
+  <string name="your_listing_has_expired">Your {{1}}{{$1}}{{/1}} listing has expired.</string>
+  <string name="your_listings_have_expired">Your {{1}}{{$1}}{{/1}} and {{$2}} other listings have expired.</string>
+  <string name="marketplace_claimable_activity">{{1}}{{$1}}{{/1}} and {{$2}} other items sold. You can claim {{2}}{{$3}} Gold{{/2}}</string>
+  <string name="marketplace_claimable_activity_single">{{1}}{{$1}}{{/1}} sold. You can claim {{2}}{{$2}} Gold{{/2}}</string>
+  <string name="item_sold_on_marketplace">Your {{1}}{{$1}}{{/1}} sold on the Marketplace.</string>
+  <string name="want_to_collect_gold">Want to Collect Gold?</string>
+  <string name="you_must_visit_marketplace_to_collect">You must visit the Marketplace to collect your Gold from sold listings.</string>
+  <string name="no_results">No results.</string>
+  <string name="purchase_failed">Purchase Failed!</string>
+  <string name="item_no_longer_available_to_buy">The item you tried to buy is no longer available. You have not been charged.</string>
+  <string name="rarity">Rarity</string>
+  <string name="color">Color</string>
+  <string name="type">Type</string>
+  <string name="clear_all">Clear All</string>
+  <string name="avatar">Avatar</string>
+  <string name="furniture_returned_to_owners">All furniture has been returned to their owners</string>
+  <string name="your_furniture_returned_to_inventory">Your furniture has been returned to your inventory</string>
+  <string name="cash">Cash</string>
+  <string name="cash_shop">Cash Shop</string>
+  <string name="pick_up_all_furniture_in_your_room">This will pick up all of your furniture in the room</string>
+  <string name="individual">Individual</string>
+  <string name="rooms">Rooms</string>
+  <string name="active_rooms">Active Rooms</string>
+  <string name="items">Items</string>
+  <string name="comments">Comments</string>
+  <string name="membership">Membership</string>
+  <string name="percent_off">{{$1}}% OFF</string>
+  <string name="continue_with_service">Continue with {{$1}}</string>
+  <string name="connect_with_service">Connect with {{$1}}</string>
+  <string name="account_not_connected">This {{$1}} account is not connected to any Highrise accounts</string>
+  <string name="name_taken">Name is taken</string>
+  <string name="developer">Developer</string>
+  <string name="moderator">Moderator</string>
+  <string name="moderators_and_designers">Moderators &amp; Designers</string>
+  <string name="unblock_user">Unblock User</string>
+  <string name="block_user">Block User</string>
+  <string name="block_username">Block {{$1}}?</string>
+  <string name="block_and_report">Block &amp; Report</string>
+  <string name="they_wont_be_able_message_you">They won’t be able to message you or view your profile content. They won’t be notified that you blocked them.</string>
+  <string name="room">Room</string>
+  <string name="kicked_out_of_room">You\'ve been kicked</string>
+  <string name="boost">Boost</string>
+  <string name="vault">Vault</string>
+  <string name="create_crew">Create a Crew</string>
+  <string name="leave_crew">Leave Crew</string>
+  <string name="remove_from_crew">Remove from Crew</string>
+  <string name="one_hour">1 Hour</string>
+  <string name="one_day">1 Day</string>
+  <string name="upgrade">Upgrade</string>
+  <string name="top">Top</string>
+  <string name="amount_of_time_remaining">{{$1}} left</string>
+  <string name="photo">Photo</string>
+  <string name="text">Text</string>
+  <string name="friends">Friends</string>
+  <string name="posts">Posts</string>
+  <string name="gifts">Gifts</string>
+  <string name="spin">Spin</string>
+  <string name="help">Help</string>
+  <string name="horizontal">Horizontal</string>
+  <string name="vertical">Vertical</string>
+  <string name="rarity_uncommon">Uncommon</string>
+  <string name="rarity_common">Common</string>
+  <string name="rarity_rare">Rare</string>
+  <string name="rarity_epic">Epic</string>
+  <string name="rarity_legendary">Legendary</string>
+  <string name="rarity_mythical">Mythical</string>
+  <string name="discard">Discard</string>
+  <string name="user_has_been_blocked">{{$1}} has been blocked</string>
+  <string name="user_has_been_unblocked">{{$1}} has been unblocked</string>
+  <string name="shares">Shares</string>
+  <string name="created">Created</string>
+  <string name="changes_have_been_saved">Your changes have been saved!</string>
+  <string name="no_thanks">No Thanks</string>
+  <string name="thank_you">Thank you!</string>
+  <string name="next_prank_chance">{{$1}}% Chance</string>
+  <string name="privacy">Privacy</string>
+  <string name="sync_phone_contacts">Sync Phone Contacts</string>
+  <string name="let_friends_find_me">Let Friends Find Me</string>
+  <string name="limited">Limited</string>
+  <string name="chat_info">Chat Info</string>
+  <string name="num_free">{{$1}} Free</string>
+  <string name="yes">Yes</string>
+  <string name="no">No</string>
+  <string name="ok">Ok</string>
+  <string name="error">Error</string>
+  <string name="rewards">Rewards</string>
+  <string name="leaderboard">Leaderboard</string>
+  <string name="send_message_to">To:</string>
+  <string name="opened">Opened</string>
+  <string name="amount_owned">{{$1}} Owned</string>
+  <string name="done">Done</string>
+  <string name="requested">Requested</string>
+  <string name="requests">Requests</string>
+  <string name="request">Request</string>
+  <string name="_private">Private</string>
+  <string name="_public">Public</string>
+  <string name="hidden">Hidden</string>
+  <string name="show">Show</string>
+  <string name="message_deleted">Message Deleted.</string>
+  <string name="delete">Delete</string>
+  <string name="edit_message">Edit Message</string>
+  <string name="delete_message">Delete Message</string>
+  <string name="delete_comment">Delete Comment</string>
+  <string name="delete_all">Delete All</string>
+  <string name="delete_message_confirmation">Are you sure you want to delete this message? This cannot be undone.</string>
+  <string name="buy">Buy</string>
+  <string name="my_account">My Account</string>
+  <string name="account_management">Account Management</string>
+  <string name="let_user_send_messages">Do you want to let {{$1}} send you messages from now on?</string>
+  <string name="direction">Direction</string>
+  <string name="directory">Directory</string>
+  <string name="check_for_update">Check for Updates</string>
+  <string name="install_update">Restart and Install Update</string>
+  <string name="community_guidelines">Community Guidelines</string>
+  <string name="teleport">Teleport</string>
+  <string name="teleporter_destination">Teleporter destination set</string>
+  <string name="pick_up_furniture">Pick Up My Furniture</string>
+  <string name="join">Join</string>
+  <string name="joined">Joined</string>
+  <string name="success">Success</string>
+  <string name="active_amount_of_time_ago">Active {{$1}}</string>
+  <string name="starts_in">Starts in {{$1}}</string>
+  <string name="terms">Terms</string>
+  <string name="search">Search</string>
+  <string name="search_user_profiles">Search user profiles</string>
+  <string name="search_posts_by_hashtag">Search posts by hashtag</string>
+  <string name="go_to_hashtag">Go to Hashtag</string>
+  <string name="just_now">Just Now</string>
+  <string name="redeem_gold_bars">Redeem your Gold Bars for gold! Only Gold Bars that are not in a room can be redeemed</string>
+  <string name="amount_left">{{$1}} left</string>
+  <string name="agree_to_privacy_policy">By registering you accept the {{1}}Terms of Service{{/1}} and {{2}}Privacy Policy{{/2}}.</string>
+  <string name="go_to_room">Go to Room</string>
+  <string name="owned">Owned</string>
+  <string name="cancel">Cancel</string>
+  <string name="library">Library</string>
+  <string name="owner">Owner</string>
+  <string name="members">Members</string>
+  <string name="video_volume">Video Volume</string>
+  <string name="comment">Comment</string>
+  <string name="worlds">Worlds</string>
+  <string name="crew_members">{{$1}} members</string>
+  <string name="currency">Currency</string>
+  <string name="bubbles">Bubbles</string>
+  <string name="emotes">Emotes</string>
+  <string name="gold">Gold</string>
+  <string name="say_something">Say something...</string>
+  <string name="write_a_caption">Write a caption...</string>
+  <string name="text_post_placeholder">Tap your avatar to edit their pose and tap here to say something...</string>
+  <string name="today">Today</string>
+  <string name="tomorrow">Tomorrow</string>
+  <string name="this_week">This Week</string>
+  <string name="how_to_play">How to Play</string>
+  <string name="group_names_length_range">Group names must be between 3 and 22 characters long.</string>
+  <string name="older">Older</string>
+  <string name="wanna_trade_gold">Wanna trade gold or show off your wealth? Buy gold bars here!</string>
+  <string name="forever">Forever</string>
+  <string name="bio">Bio</string>
+  <string name="more_details">More Details</string>
+  <string name="name">Name</string>
+  <string name="pick_username">Pick a username</string>
+  <string name="get">Get</string>
+  <string name="accept">Accept</string>
+  <string name="remove">Remove</string>
+  <string name="suggested">Suggested</string>
+  <string name="daily_goals">Daily Goals</string>
+  <string name="connecting">Connecting...</string>
+  <string name="connecting_details">Please wait a moment while we connect you to Highrise.</string>
+  <string name="amount_of_gold">Amount of Gold</string>
+  <string name="sponsored">Sponsored</string>
+  <string name="pattern">Pattern</string>
+  <string name="includes">Includes</string>
+  <string name="trade_your_stuff">Trade items with other users! Gold is tradable, but must be converted to Gold Bars in the Shop first. Review trades carefully before accepting. All trades are final.</string>
+  <string name="choose_an_item">Choose an Item</string>
+  <string name="tap_to_continue">Tap to Continue</string>
+  <string name="refill_your_energy">Refill your Energy?</string>
+  <string name="refill_energy">Looks like your energy meter is running low. Refill it now and get back to action!</string>
+  <string name="emblem">Emblem</string>
+  <string name="signature">Signature</string>
+  <string name="you_got">You got:</string>
+  <string name="see_more">See more</string>
+  <string name="whats_new">What\'s new?</string>
+  <string name="exit">Exit</string>
+  <string name="undo">Undo</string>
+  <string name="redo">Redo</string>
+  <string name="already_have_an_account">I already have an account</string>
+  <string name="pick_avatar_to_start">Pick an avatar to start!</string>
+  <string name="pick_account_to_log_in">Pick an account to log in</string>
+  <string name="customize_this_avatar">Customize this avatar</string>
+  <string name="pick_another_one">Pick another one</string>
+  <string name="go">Go</string>
+  <string name="lets_go">Let\'s Go</string>
+  <string name="close">Close</string>
+  <string name="awesome">Awesome</string>
+  <string name="awesome_exclamation">Awesome!</string>
+  <string name="watch_video">Watch Video</string>
+  <string name="go_to_vault">Go to Vault</string>
+  <string name="how_do_gold_bars_work">{{1}}How do Gold Bars work?{{/1}}</string>
+  <string name="edit_profile">Edit Profile</string>
+  <string name="edit_bio">Edit Bio</string>
+  <string name="profile_bio">Profile Bio</string>
+  <string name="say_something_about_yourself">Say something about yourself...</string>
+  <string name="maximum_512_characters">Maximum 512 characters.</string>
+  <string name="maximum_n_characters">Maximum {{$1}} characters.</string>
+  <string name="privacy_settings">Privacy Settings</string>
+  <string name="edit_avatar">Edit Avatar</string>
+  <string name="got_it">Got it</string>
+  <string name="got_it_exclamation">Got It!</string>
+  <string name="submit_look">Submit Look</string>
+  <string name="edit_look">Edit Look</string>
+  <string name="item_added_to_your_inventory">{{$1}} x{{$2}} has been added to your Inventory</string>
+  <string name="unknown">Unknown</string>
+  <string name="in_room">In {{1}}{{$1}}{{/1}}</string>
+  <string name="leave_group">Leave Group</string>
+  <string name="leave_group_chat">Leave Group Chat</string>
+  <string name="leave_group_and_delete_conversation">Leave Group &amp; Delete Conversation</string>
+  <string name="choose_reason_for_moderating_post">Choose a reason for moderating this post</string>
+  <string name="choose_reason_for_moderating_comment">Choose a reason for moderating this comment</string>
+  <string name="choose_reason_for_moderating_user">Choose a reason for moderating {{$1}}</string>
+  <string name="spam">Spam</string>
+  <string name="self_injury">Self Injury</string>
+  <string name="promoting_self_injury">Promoting self-injury</string>
+  <string name="self_injury_info">Eating disorders, cutting or promoting suicide</string>
+  <string name="harassment_or_bullying">Harassment or bullying</string>
+  <string name="drugs_sale_promotion">Sale or promotion of drugs</string>
+  <string name="firearms_sale_promotion">Sale or promotion of firearms</string>
+  <string name="sexual_content">Sexual content</string>
+  <string name="nudity_or_pornography">Nudity or pornography</string>
+  <string name="scamming">Scamming</string>
+  <string name="scamming_details">Trading, items or Gold</string>
+  <string name="promoting_violence">Promoting violence</string>
+  <string name="violence_or_harm">Violence or harm</string>
+  <string name="hate_speech_or_symbols">Hate speech or symbols</string>
+  <string name="hate_speech_detail">Racist, homophobic or sexist slurs</string>
+  <string name="intellectual_property_violation">Intellectual property violation</string>
+  <string name="just_dont_like_it">I just don\'t like it</string>
+  <string name="warn">Warn</string>
+  <string name="timeout_ban">Timeout Ban (1 Hour)</string>
+  <string name="hours_amount_ban">{{$1}} Hour Ban</string>
+  <string name="days_amount_ban">{{$1}} Day Ban</string>
+  <string name="weeks_amount_ban">{{$1}} Week Ban</string>
+  <string name="action">Action</string>
+  <string name="user_will_be_warned_for">{{$1}} will be warned for {{$2}}</string>
+  <string name="user_will_be_banned_for">{{$1}} will be banned for {{$2}}</string>
+  <string name="explain_your_reason_for_taking_action">Please explain your reason for taking this action. This will be displayed in subsequent player history.\n\nYou can also enter an optional message to be sent to the user in the second textfield.</string>
+  <string name="required_reason">(Required) Reason</string>
+  <string name="optional_reason">(Optional) Reason</string>
+  <string name="you_are_being_warned_for">(Optional) You are being warned for {{$1}}.</string>
+  <string name="you_have_been_warned_for">(Optional) You have been warned for {{$1}}.</string>
+  <string name="you_have_been_banned_for">(Optional) You have been banned for {{$1}}.</string>
+  <string name="reason">Reason</string>
+  <string name="report_submitted">Report submitted</string>
+  <string name="gift_from_user">{{1}}{{$1}}{{/1}} {{2}}from{{/2}} {{3}}{{$2}}{{/3}}</string>
+  <string name="you_unlocked">You unlocked</string>
+  <string name="logo">Logo</string>
+  <string name="radio_stations">Radio Stations</string>
+  <string name="enable_radio">Enable Radio</string>
+  <string name="disable_radio">Disable Radio</string>
+  <string name="change_radio">Change Radio</string>
+  <string name="provide_radio_url">Provide custom radio streaming URL</string>
+  <string name="provide_radio_url_long">Provide custom radio streaming URL, either as link to playlist file (.pls) or direct streaming address</string>
+  <string name="url">url</string>
+  <string name="display_name">Display Name</string>
+  <string name="user_has_become_your_friend">{{$1}} has become your friend!</string>
+  <string name="highrise_support">Highrise Support</string>
+  <string name="user_created_trade">started a trade.</string>
+  <string name="user_updated_trade">updated the trade.</string>
+  <string name="user_unlocked_trade">unlocked the trade.</string>
+  <string name="user_locked_trade">locked the trade.</string>
+  <string name="user_accepted_trade">accepted the trade.</string>
+  <string name="user_cancelled_trade">cancelled the trade.</string>
+  <string name="user_collected_trade">collected items from the trade.</string>
+  <string name="user_joined_the_group">joined the group.</string>
+  <string name="user_left_the_group">left the group.</string>
+  <string name="user_was_banned_from_group">was banned from the group.</string>
+  <string name="body">Body</string>
+  <string name="hair">Hair</string>
+  <string name="hair_back">Hair Back</string>
+  <string name="eyes">Eyes</string>
+  <string name="nose">Nose</string>
+  <string name="mouth">Mouth</string>
+  <string name="extras">Extras</string>
+  <string name="bottom">Bottom</string>
+  <string name="full_body">Full Body</string>
+  <string name="accessories">Accessories</string>
+  <string name="shoes">Shoes</string>
+  <string name="seating">Seating</string>
+  <string name="table">Table</string>
+  <string name="exterior">Exterior</string>
+  <string name="decor">Decor</string>
+  <string name="wall">Wall</string>
+  <string name="floor">Floor</string>
+  <string name="lucky_tokens">Lucky Tokens</string>
+  <string name="chips">Chips</string>
+  <string name="auras">Auras</string>
+  <string name="skin">Skin</string>
+  <string name="face">Face</string>
+  <string name="footwear">Footwear</string>
+  <string name="spin_tokens">Spin Tokens</string>
+  <string name="crew_gift">{{$1}} Crew Gift</string>
+  <string name="xp">XP</string>
+  <string name="extra_spin">Extra Spin</string>
+  <string name="crew_gift_amount">{{$1}} {{$2}} Crew Gift</string>
+  <string name="everyone">Everyone</string>
+  <string name="only_me">Only me</string>
+  <string name="only_my_crew">My crew</string>
+  <string name="only_vips">VIPs</string>
+  <string name="only_my_teleports">My teleports</string>
+  <string name="only_crew_teleports">My crew teleports</string>
+  <string name="only_room_mods_and_designers">Moderators and Designers</string>
+  <string name="mandatory_outfit">Mandatory outfit</string>
+  <string name="only_by_invitation">Only by invitation</string>
+  <string name="off">Off</string>
+  <string name="on">On</string>
+  <string name="from_friends">From Friends</string>
+  <string name="from_people_i_follow">From People I Follow</string>
+  <string name="from_everyone">From Everyone</string>
+  <string name="go_to_settings">Go to Settings</string>
+  <string name="combo_streak">Combo Streak</string>
+  <string name="energy_full">Energy Full</string>
+  <string name="unknown_server_error">Unknown Server Error</string>
+  <string name="daily_reward">Daily Reward</string>
+  <string name="profile">Profile</string>
+  <string name="cancelled">Cancelled</string>
+  <string name="username">Username</string>
+  <string name="password">Password</string>
+  <string name="log_in">Log in</string>
+  <string name="sign_up">Sign Up</string>
+  <string name="email">Email</string>
+  <string name="forgot_password">Forgot password</string>
+  <string name="or">or</string>
+  <string name="complete_offers">Complete Offers</string>
+  <string name="purchase">Purchase</string>
+  <string name="redeem">Redeem</string>
+  <string name="empty_gifts_screen">You receive gifts from in-app events, your Crew, and friends. You don\'t have any gifts yet.</string>
+  <string name="no_storefront_ads">This user hasn\'t created any Storefront ads.</string>
+  <string name="reward">Reward</string>
+  <string name="storefront_advertise_items_instructions">Advertise items you want to trade or sell in your Profile.</string>
+  <string name="user_has_no_posts">This user hasn\'t created any posts.</string>
+  <string name="shared_post_appears_in_profile">When you share a post it will appear in your Profile.</string>
+  <string name="create_your_first_post">Create Your First Post</string>
+  <string name="language">Language</string>
+  <string name="room_language">Room Language</string>
+  <string name="sound">Sound</string>
+  <string name="music_and_sfx">Music and Sound Effects</string>
+  <string name="voice_chat">Voice Chat</string>
+  <string name="user_volume_in_calls">User Volume in Calls</string>
+  <string name="user_volume_in_rooms">User Volume in Rooms</string>
+  <string name="sound_effects">Sound Effects</string>
+  <string name="reject">Reject</string>
+  <string name="likes">Likes</string>
+  <string name="country">Country</string>
+  <string name="newsfeed_privacy">Newsfeed Privacy</string>
+  <string name="room_youre_in">Room You\'re In</string>
+  <string name="online_status">Online Status</string>
+  <string name="online_status_explanation">Allows everyone to see when you\'re online.</string>
+  <string name="room_youre_in_explanation">Allows everyone to see the room you\'re in and follow you there.</string>
+  <string name="private_newsfeed">Private Newsfeed</string>
+  <string name="private_newsfeed_explanation">When your Newsfeed is private, only people you approve can see your posts on Highrise. Your existing followers won’t be affected.</string>
+  <string name="show_my_country">Show My Country</string>
+  <string name="show_my_country_explanation">Allow everyone to see what country you’re from.</string>
+  <string name="char_count_limit">Must be {{$1}} characters or fewer</string>
+  <string name="room_layout">Room Layout</string>
+  <string name="create">Create</string>
+  <string name="registration_room_select_title">Choose your first space to call home and hangout.</string>
+  <string name="forgot_your_password">Forgot your password?</string>
+  <string name="enter_username_to_reset_password">Enter your username. We\'ll send you an email with instructions to reset your password.</string>
+  <string name="send_email">Send Email</string>
+  <string name="password_reset">Password Reset</string>
+  <string name="check_email_to_reset_password">Please check your email for a link to reset your password</string>
+  <string name="save_current_look_description">Save your current look to easily change to it whenever you want ✨</string>
+  <string name="save_my_current_look">Save My Current Look</string>
+  <string name="binding_confirm">Binding Confirmation</string>
+  <string name="binding_confirm_desc">You {{1}}cannot remove{{/1}} these item(s) from your Pet's inventory after they have been added.</string>
+  <string name="edit_pet_look">Edit Pet Look</string>
+  <string name="save_pet_look">Save Pet Look</string>
+  <string name="pet_inventory">Pet Inventory</string>
+  <string name="pet_items_tradable">Tradable Pet Items</string>
+  <string name="pet_items_nontradable">Account Bound Pet Items</string>
+  <string name="no_items_pet_inventory">No items have been added to this pet's inventory.</string>
+  <string name="pet_add_items">Add Items</string>
+  <string name="pet_items_wearing">Currently Wearing</string>
+  <string name="pet_items_not_wearing">Not Wearing</string>
+  <string name="viewing">Viewing:</string>
+  <string name="pet_name_inventory">{{$1}}'s Inventory</string>
+  <string name="max_items_equipped">Max items equipped</string>
+  <string name="bind_items_toast">Added {{$1}} Items to Pet's inventory</string>
+  <string name="eligible_items">Eligible Items</string>
+  <string name="not_eligible_items">Not Eligible</string>
+  <string name="pet_current_inventory">Pet's Current Inventory</string>
+  <string name="add_pet_items">Bind {{$1}} Items</string>
+  <string name="bind_pet_items_inventory">Bind {{$1}} Items to Inventory</string>
+  <string name="pet_items_not_eligible_hint">These items are either in a different Pet Inventory or are not compatible with this Pet</string>
+  <string name="items_missing_from_saved_look">One or more items from this Look are missing from your inventory</string>
+  <string name="wear_anyway">Wear Anyway</string>
+  <string name="delete_look">Delete Look</string>
+  <string name="confirm_delete_look">Are you sure you want to delete this look?</string>
+  <string name="promote_to_admin">Promote to Admin</string>
+  <string name="remove_admin_rights">Remove Admin Rights</string>
+  <string name="admin">Admin</string>
+  <string name="are_you_sure_wou_want_to_leave">Are you sure you want to leave?</string>
+  <string name="only_admin_left">You’re the only Admin in this Group. If you leave, the Group will no longer have Admins.</string>
+  <string name="owner_leaving_group">You’re the Owner of this Group. If you leave, the Group will no longer have an Owner.</string>
+  <string name="share">Share</string>
+  <string name="photo_saved">Photo saved to the Camera Roll</string>
+  <string name="see_all">See All</string>
+  <string name="trades">Trades</string>
+  <string name="group_chats">Group Chats</string>
+  <string name="background">Background</string>
+  <string name="update_background">Update Background</string>
+  <string name="choose_where_to_update">Choose where you’d like to update:</string>
+  <string name="profile_only">Profile Only</string>
+  <string name="profile_and_home">Profile &amp; Home</string>
+  <string name="custom_color">Custom Color</string>
+  <string name="custom_color_description">You can use a custom color by typing its hex value.</string>
+  <string name="custom_color_placeholder">e.g. #FFFFFF</string>
+  <string name="apply">Apply</string>
+  <string name="create_or_join_crew">Create or Join a Crew</string>
+  <string name="change_outfit">Change Outfit</string>
+  <string name="pose_and_background">Pose &amp; Background</string>
+  <string name="photo_booth">Photo Booth</string>
+  <string name="empty_activites_screen">There is no Activity to show at the moment.</string>
+  <string name="copy">Copy</string>
+  <string name="copy_text">Copy Text</string>
+  <string name="save_changes">Save Changes</string>
+  <string name="leave_without_saving">Leave without saving</string>
+  <string name="save_changes_prompt">Do you want to save changes before leaving?</string>
+  <string name="user_whispered">{{$1}} whispered to you...</string>
+  <string name="you_whispered">You whispered to {{$1}}...</string>
+  <string name="cant_whisper_to_yourself">You can't whisper to yourself</string>
+  <string name="user_not_in_room">{{$1}} is not in the room</string>
+  <string name="num_pending_approval">{{$1}} Pending Approval</string>
+  <string name="disband_crew_question">Disband Crew?</string>
+  <string name="crew_will_be_permanently_deleted">Your Crew will be permanently deleted.</string>
+  <string name="sure_to_leave_your_crew">Are you sure you want to leave your Crew?</string>
+  <string name="leave">Leave</string>
+  <string name="home">Home</string>
+  <string name="you_cant_leave_yet">You can\'t leave yet!</string>
+  <string name="only_founder_left">You\'re the only Founder in your Crew. Assign another Founder before you leave.</string>
+  <string name="go_to_member_list">Go to Member List</string>
+  <string name="invited">Invited</string>
+  <string name="member">Member</string>
+  <string name="senior_member">Senior Member</string>
+  <string name="founder">Founder</string>
+  <string name="kick_out">Kick Out</string>
+  <string name="kick_out_user">Kick Out {{$1}}</string>
+  <string name="sure_to_kick_out_member">Are you sure you want to remove this member from your Crew?</string>
+  <string name="invite">Invite</string>
+  <string name="pending">Pending</string>
+  <string name="event_performance">Event Performance</string>
+  <string name="check_how_crew_performed">Check how {{$1}} has performed in past Events.</string>
+  <string name="ended_at">Ended {{$1}}</string>
+  <string name="nobody_participated_in_event">Nobody has participated in the event.</string>
+  <string name="goals">Goals</string>
+  <string name="speed">Speed</string>
+  <string name="cadence">Cadence</string>
+  <string name="destination">Destination</string>
+  <string name="reboot">Reboot</string>
+  <string name="write_a_message_placeholder">Write a message...</string>
+  <string name="confirm">Confirm</string>
+  <string name="new_message">New Message</string>
+  <string name="pin_conversation">Pin Conversation</string>
+  <string name="pinned_conversation">Pinned Conversation</string>
+  <string name="unpinned_conversation">Unpinned Conversation</string>
+  <string name="deleted_conversation">Deleted Conversation</string>
+  <string name="left_conversation">Left Conversation</string>
+  <string name="delete_conversation">Delete Conversation</string>
+  <string name="delete_this_conversation">Are you sure you want to delete this conversation?</string>
+  <string name="read_all">Read All</string>
+  <string name="me">Me</string>
+  <string name="invites_sent">Invites Sent</string>
+  <string name="banned_users">Banned Users</string>
+  <string name="languages">Languages</string>
+  <string name="new_room">New Room</string>
+  <string name="unban">Unban</string>
+  <string name="suggested_for_you">Suggested for You</string>
+  <string name="user_accepted_your_follow_request">{{$1}} accepted your follow request</string>
+  <string name="open">Open</string>
+  <string name="feed_view_previous_comments">View previous comments</string>
+  <string name="trade_warning">Review the trade carefully before accepting it.</string>
+  <string name="follow_requests_description">Approve or Ignore requests</string>
+  <string name="username_char_num">Must be between {{$1}} and {{$2}} characters long.</string>
+  <string name="not_ranked">Not Ranked</string>
+  <string name="log_into_another_account">Log Into Another Account</string>
+  <string name="create_a_new_account">Create a New Account</string>
+  <string name="continue_with_email">Continue with Email</string>
+  <string name="app_settings">App Settings</string>
+  <string name="play_with_friends">Play with Friends</string>
+  <string name="connected_accounts">Connected Accounts</string>
+  <string name="must_register_to_sign_out">You must register your account before you sign out.</string>
+  <string name="find_us_on">Find us on…</string>
+  <string name="your_email_will_be_used">Your email will be used if you ever need to regain access to your account</string>
+  <string name="enter_your_email">Enter your email…</string>
+  <string name="set_password_description">Set a password to be able to log back into your account.</string>
+  <string name="set_password_enter_current_password">To set a new password, please enter your current password first.</string>
+  <string name="char_minimum_case_sensitive">{{$1}}-character minimum; case sensitive</string>
+  <string name="you_can_connect_socials">You can connect with social accounts for an easier way to log into your Highrise account.</string>
+  <string name="not_connected">Not Connected</string>
+  <string name="you_can_disconnect_social">You can disconnect it whenever you want</string>
+  <string name="we_wont_post_anything_to">We won\'t post anything on your {{$1}}!</string>
+  <string name="connect_account">Connect {{$1}}</string>
+  <string name="disconnect_account">Disconnect {{$1}}</string>
+  <string name="you_will_be_able_to_login_using">You will be able to log into Highrise using your {{$1}}.</string>
+  <string name="you_can_login_using">You can log into Highrise using this {{$1}} account.</string>
+  <string name="connected">Connected</string>
+  <string name="disconnected">Disconnected</string>
+  <string name="item_added">{{$1}} added</string>
+  <string name="notification_got_amount_of_items">You got {{1}}{{$1}}{{/1}} x{{$2}}</string>
+  <string name="notification_remove_amount_of_items">x{{$2}} {{1}}{{$1}}{{/1}} was removed from inventory</string>
+  <string name="no_experience_open">No Experience Open</string>
+  <string name="explore_thousands_of_experiences">Explore thousands of experiences in the Travel tab!</string>
+  <string name="open_travel">Open Travel</string>
+
+  <string name="liked_your_post">Liked your post.</string>
+  <string name="commented_on_your_post">Commented on your post.</string>
+  <string name="liked_your_comment">Liked your comment.</string>
+  <string name="mentioned_you_in_a_comment">Mentioned you in a comment.</string>
+  <string name="mentioned_you_in_a_post">Mentioned you in a post.</string>
+
+  <string name="reset">Reset</string>
+  <string name="continue_see_more">... see more</string>
+  <string name="want_to_wear_this_item">Do you want to wear this item now?</string>
+  <string name="not_yet">Not Yet</string>
+  <string name="want_to_go_to_pet_closet_now">Do you want to go to the Pet Closet now?</string>
+  <string name="enable_comments">Turn On Comments</string>
+  <string name="disable_comments">Turn Off Comments</string>
+  <string name="energy_refilled_notification">Your Energy is full! 🔋</string>
+  <string name="spin_price">Spin Price</string>
+  <string name="user_grab_price_description">This is the price users must pay to spin this grab. You will receive {{$1}}% of the earnings. The minimum price is 10 gold.</string>
+  <string name="user_grab_probabilites_description">This is how likely users will be to win an item of each specific rarity.</string>
+  <string name="price">Price</string>
+  <string name="grab_odds">Grab Odds</string>
+  <string name="draw_amount">Spin x{{$1}}</string>
+  <string name="add_amount_of_items_to_grab">Add {{$1}} Items to Grab</string>
+  <string name="number_of_items">Items ({{$1}})</string>
+  <string name="enable_grab">Enable Grab</string>
+  <string name="grab_probability_hint">This is how likely you are to win an item of these rarities from this Grab:</string>
+  <string name="grab_history">Grab\'s History</string>
+  <string name="user_won_item">{{1}}{{$1}}{{/1}} won {{2}}{{$2}}{{/2}}</string>
+  <string name="users_grab">{{$1}}\'s Grab</string>
+  <string name="disable_grab">Disable Grab</string>
+  <string name="grab_not_used">No one has used this Grab yet.</string>
+  <string name="grab_claim_information_message">You\'ve earned {{1}}{{$1}}{{/1}}!</string>
+  <string name="grab_claim_title">Claim {{1}} {{/1}} {{$1}}</string>
+  <string name="grab_is_now_empty">The Grab is now empty!</string>
+  <string name="grab_has_been_disabled_or_removed">The Grab has been disabled or removed.</string>
+  <string name="remove_grab_description">All items stored in a Grab Machine are returned to the owner’s inventory when it’s removed.</string>
+  <string name="remove_grab_machine">Remove Grab</string>
+  <string name="designed_by">Inspired by {{1}}{{$1}}{{/1}}</string>
+  <string name="history">History</string>
+  <string name="preview">Preview</string>
+  <string name="preview_background">Preview Background</string>
+  <string name="share_user">Share Profile</string>
+  <string name="ready_to_draw">Ready to Spin?</string>
+  <string name="are_you_sure_to_draw_user_grab">Are you sure you want to spin this Grab?</string>
+  <string name="draw_for_amount">Spin for {{1}} {{/1}} {{$1}}</string>
+  <string name="grab_name">Grab Name</string>
+  <string name="pick_grab_name">Pick a name for your Grab.</string>
+  <string name="length_between_characters">Must be between {{$1}} and {{$2}} characters long.</string>
+  <string name="claim_money_from_grab">You can claim {{1}}{{$1}}{{/1}} from {{2}}{{$2}}{{/2}}</string>
+  <string name="grab_is_empty">{{1}}{{$1}}{{/1}} is now empty</string>
+  <string name="few_items_left_in_grab">There are less than {{$1}} items left in {{1}}{{$2}}{{/1}}</string>
+  <string name="grab_out_of_rarity_items">{{1}}{{$1}}{{/1}} has run out of {{$2}} items</string>
+  <string name="you_must_visit_another_room">You must visit the {{1}}{{$1}}{{/1}} room to see this Grab.</string>
+  <string name="go_there">Go there</string>
+  <string name="lucky_gacha_items_info">Only 4 of your highest Boost-value Lucky Grab items are counted toward your current total.</string>
+  <string name="no_internet_error">No internet connection. Make sure that Wi-Fi or mobile data is turned on, then try again.</string>
+  <string name="amount_of_minutes">{{$1}} minutes</string>
+  <string name="ban">ban</string>
+  <string name="mute">mute</string>
+  <string name="spam_detected">Spam Detected!</string>
+  <string name="you_have_been_locked">You have been locked for {{$1}}</string>
+  <string name="room_boost_title">Do you want to Boost this Room?</string>
+  <string name="room_boost_message">Boosting a Room will push it to the top of the Room Directory, making it more visible to users and bringing more people to it.</string>
+  <string name="room_boost_info">You can boost your own Rooms, or other users’.</string>
+  <string name="room_boost_action">{{$1}}x Boost</string>
+  <string name="room_boosted_title">The Room has been pushed to the top!</string>
+  <string name="room_boosted_time_remaining">{{1}}{{$1}}{{/1}} remaining</string>
+  <string name="room_voice_time_remaining">{{1}}{{$1}}{{/1}} remaining</string>
+  <string name="channel_voice_remaining">· {{$1}} remaining</string>
+  <string name="user_boosted_room_message">Boosted the Room.</string>
+  <string name="user_boosted_room_message_times">Boosted the room ×{{$1}}</string>
+  <string name="currently_not_eligible">Currently Not Eligible (Store)</string>
+  <string name="currently_not_eligible_events">Currently Not Eligible (Events)</string>
+  <string name="not_eligible_items_description">Account Bound items are not tradable, and select items that are still available in the Highrise Store may be on hold for a short period before they are eligible for trading.</string>
+  <string name="rate_app_dialog_title">Enjoying Highrise?</string>
+  <string name="rate_app_dialog_message">Would you mind giving us a shout out in the Play Store?</string>
+  <string name="rate_app_dialog_button_rate">Sure</string>
+  <string name="rate_app_dialog_button_later">Not now</string>
+  <string name="rate_app_dialog_button_never">Never ask me again</string>
+  <string name="no_follow_requests_message">You have no Follow Requests.</string>
+  <string name="photo_saved_to_gallery">Photo saved to gallery</string>
+  <string name="first_username_change_description">Changing your name is free for the first time. After that, it will cost {{$1}}.</string>
+  <string name="username_change_description">You\'ve already changed your username once. It will cost {{$1}} to change your name again.</string>
+  <string name="reserved_username_change_description">Changing your name back is free. The next change will cost {{$1}}.</string>
+  <string name="username_reservation_description">You\'ll be able to change your username back to {{1}}{{$1}}{{/1}} for free for another {{$2}} days.</string>
+  <string name="change_name">Change Name {{1}}{{/1}} {{$1}}</string>
+  <string name="change_name_free">Change Name {{1}}{{2}}{{/2}} {{$1}}{{/1}} Free!</string>
+  <string name="already_taken">Already taken.</string>
+  <string name="available">Available.</string>
+  <string name="username_words_not_allowed">Contains words that are not allowed.</string>
+  <string name="username_changed">Username changed</string>
+  <string name="username_apply_changes">Your username has been changed. We\'ll apply the changes now.</string>
+  <string name="username_must_be_different">Must be different than the current name.</string>
+  <string name="error_video_file_too_long">Video is too long. Maximum allowed is {{$1}}s</string>
+  <string name="error_loading_asset">Sorry, there was an error loading {{$1}}. Please choose different assets</string>
+  <string name="user_is_typing">{{1}}{{$1}}{{/1}} is typing</string>
+  <string name="users_are_typing">{{1}}{{$1}}{{/1}} &amp; {{2}}{{$2}}{{/2}} are typing</string>
+  <string name="several_people_are_typing">Several people are typing</string>
+  <string name="are_you_sure_you_want_to_change_name">{{1}}Are you sure you want to change your name to \'{{$1}}\'?{{/1}}</string>
+  <string name="error_video_file_too_big">Video file too big. Maximum allowed is {{$1}}MB</string>
+  <string name="change_name_short">Change {{1}}{{/1}} {{$1}}</string>
+  <string name="change_name_free_short">Change for Free</string>
+  <string name="lucky_wheel_claim_rewards">Log in every day and claim your rewards!</string>
+  <string name="lucky_wheel">Lucky Wheel</string>
+  <string name="lucky_wheel_spin">Spin the Wheel</string>
+  <string name="lucky_wheel_spin_again">Spin Again</string>
+  <string name="category">Category</string>
+  <string name="room_category">Room Category</string>
+  <string name="category_chat">Chat</string>
+  <string name="category_games">Games</string>
+  <string name="category_trade">Trade</string>
+  <string name="category_other">Other</string>
+  <string name="category_all_rooms">All Rooms</string>
+  <string name="safety_lock">Safety Lock</string>
+  <string name="safety_lock_instructions">The Safety Lock protects your account from unauthorised access. Once enabled, some features on your account will be blocked for anyone logging on from a different device.</string>
+  <string name="enable_safety_lock">Enable Safety Lock</string>
+  <string name="your_account_is_not_protected">Your account isn\'t protected!</string>
+  <string name="some_features_will_require_pin">Some features, like trading, buying items, or changing your password, will require you to enter this pin when you log in with a new device.</string>
+  <string name="enter_a_six_digit_pin">Enter a 6-digit pin:</string>
+  <string name="enter_your_pin_again">Enter your pin again:</string>
+  <string name="your_safety_lock_pin_is">Your Safety Lock pin is:</string>
+  <string name="enter_your_pin">Enter your pin:</string>
+  <string name="forgot_pin">Forgot your pin?</string>
+  <string name="forgot_pin_instructions">We\'ll send instructions to your registered email address to disable your account\'s Safety Lock.</string>
+  <string name="i_forgot_my_pin">I forgot my pin</string>
+  <string name="disable_safety_lock">Disable Safety Lock</string>
+  <string name="enter_your_pin_to_disable_safety_lock">Enter your Safety Lock pin to disable Safety Lock.</string>
+  <string name="safety_lock_enabled">Safety Lock enabled.</string>
+  <string name="safety_lock_disabled">Safety Lock disabled.</string>
+  <string name="incorrect_pin">Incorrect Pin</string>
+  <string name="pin_reset_email_sent">Instructions sent via email</string>
+  <string name="room_boost_info_again">Boost it again to bring even more people to this Room.</string>
+  <string name="room_boosted">Room Boosted</string>
+  <string name="event_items">Event Items</string>
+  <string name="event_items_hint">Event Items expire when the ongoing Event ends.</string>
+
+
+
+  <string name="register_an_email_first">Register an email first</string>
+  <string name="register_an_email_first_description">You need to register your account with an email address to set up Safety Lock.</string>
+  <string name="help_us_keep_highrise_safe">Help us keep Highrise safe!</string>
+  <string name="we_dont_allow">We don\'t allow:</string>
+  <string name="sexually_inappropriate_behavior">Sexually inappropriate behavior.</string>
+  <string name="image">Image</string>
+  <string name="graphic_violence">Graphic Violence</string>
+  <string name="graphic_violence_description">We prohibit:\n•   Depictions of animal abuse.\n•   Depictions of severe physical violence.\n•   Depictions of gore.\n•   Depictions of violent or accidental deaths involving real people.</string>
+  <string name="self_injury_description">We prohibit:\n•   Content that promotes or glorifies suicide or self-harm.\n•   Content that supports eating disorders.\n•   Dangerous behaviour that is likely to cause physical harm.</string>
+  <string name="bullying_and_harassment">Bullying and harassment</string>
+  <string name="bullying_and_harassment_description">We prohibit:\n•   Making others feel unsafe.\n•   Publishing content with the intent of harming or embarrassing someone.\n•   Telling someone to harm themselves.\n•   Sharing someone’s personal information.</string>
+  <string name="hate_speech">Hate speech</string>
+  <string name="hate_speech_description">We prohibit:\n•   Content that attacks, threatens, or incites violence against any individual or group.\n•   Content that uses racial, homophobic, or other hateful slurs.\n•   Content that promotes hateful ideologies.</string>
+  <string name="illegal_activities">Illegal activities</string>
+  <string name="illegal_activities_description">We prohibit:\n•   Content that depicts the use or trade of drugs or other controlled substances.\n•   Content that depicts the sale or use of weapons.\n•   Content that depicts criminal activities.</string>
+  <string name="nudity_or_pornography_description">We prohibit:\n•   Nudity.\n•   Explicit sexual content.\n•   Implicit sexual content.\n•   Text-based sexual content.\n•   Art depicting nudity that is intended to arouse.</string>
+  <string name="frauds_and_scams">Frauds and scams</string>
+  <string name="frauds_and_scams_description">We prohibit:\n•   Misleading other users to acquire personal information.\n•   Deceiving other users into sending you currency or items.\n•   Selling Highrise items or currency for real money.</string>
+  <string name="minor_safety">Minor safety</string>
+  <string name="minor_safety_description">We prohibit:\n•   Users who are too young to be on Highrise.\n•   Minor abuse.\n•   Minors using dangerous substances.\n•   Naked images or sexual activity of a minor.\n•   Content that invites or pressures minors to share sexual images or comments.\n•   Interactions that feel violating.</string>
+
+  <string name="other_reason">Other</string>
+  <string name="other_reason_description">Offering a safe and supportive environment is our top priority. We also aim to cultivate an environment for authentic interactions by keeping deceptive content and accounts off our platform.</string>
+  <string name="do_you_have_any_comments">Do you have any comments?</string>
+  <string name="who_are_they_pretending_to_be">Who are they pretending to be?</string>
+  <string name="why_do_you_want_to_report_this">Why do you want to report this?</string>
+  <string name="what_do_you_want_to_report">What do you want to report?</string>
+  <string name="select_a_reason">Select a reason</string>
+  <string name="report_account">Report Account</string>
+  <string name="report_content">Report Content</string>
+  <string name="report_post">Report Post</string>
+  <string name="report_comment">Report Comment</string>
+  <string name="report_room">Report Room</string>
+  <string name="report_world">Report World</string>
+  <string name="report_conversation">Report Conversation</string>
+  <string name="report_content_instructions_description">This article provides an overview of how to report potential violations of the Highrise Community Guidelines.</string>
+  <string name="report_a_post">Report a post</string>
+  <string name="report_a_post_instructions">1. Tap the “…” icon on the lower right of the post.\n2. Tap the Report button.\n3. Follow the on-screen instructions.</string>
+  <string name="report_a_comment">Report a comment</string>
+  <string name="report_a_comment_instructions">1. Tap-and-hold on the comment you want to report.\n2. Tap the Report button.\n3. Follow the on-screen instructions.</string>
+  <string name="report_a_conversation">Report a conversation</string>
+  <string name="report_a_conversation_instructions">1. Tap on the flag icon on the upper right of the conversation.\n2. Follow the on-screen instructions.</string>
+  <string name="report_behavior_in_room">Report someone’s behavior in a room</string>
+  <string name="report_behavior_in_room_instructions">1. Tap on the user you want to report.\n2. Tap on the flag icon on the upper right of the mini-profile.\n3. Follow the on-screen instructions.</string>
+  <string name="report_this_message">Report this message?</string>
+  <string name="report_tip_message">Report Tip Message</string>
+  <string name="report_vw_message">Report Message</string>
+  <string name="report_inbox_message">Report Message</string>
+
+  <string name="you_are_not_old_enough">You\'re not old enough to use Highrise</string>
+  <string name="you_are_not_old_enough_description">You must be at least 13 years of age to use Highrise.\n\nWe hope you check us out again when you\'re older!</string>
+  <string name="i_understand">I understand</string>
+  <string name="are_you_old_enough">Are you old enough to use Highrise?</string>
+  <string name="your_birthday_wont_be_shown_to_other_users">Your birthday won\'t be shown to other users. This information helps us provide age-appropriate and safer experiences for the Highrise community.</string>
+  <string name="do_you_confirm_your_age">Do you confirm your age?</string>
+  <string name="yes_i_confirm_my_age">Yes, I\'m {{$1}} years old</string>
+  <string name="you_said_were_born_at">You said you were born on {{$1}}. That makes you {{$2}} years old.</string>
+  <string name="you_said_were_born_at_underage">You said you were born on {{$1}}. That makes you {{$2}} years old. You need to be at least 13 years old to use Highrise.</string>
+  <string name="when_is_your_birthday">When\'s your birthday?</string>
+  <string name="pick_your_username">Create your username.</string>
+  <string name="you_can_change_it_later">You can always change this later.</string>
+  <string name="your_birthday_wont_be_shown">This info won\'t be public and it helps keep the Highrise community safe.</string>
+  <string name="you_are_being_warned">You\'re being Warned</string>
+
+
+
+  <string name="ends_in">Ends in {{$1}}</string>
+  <string name="browse">Browse</string>
+
+  <string name="user_sent_a_message">{{$1}}: {{$2}}</string>
+  <string name="you_sent_a_message">You: {{$1}}</string>
+  <string name="you_sent_a_gif">You sent a GIF</string>
+  <string name="user_sent_a_gif">{{$1}}: sent a GIF</string>
+
+  <string name="you_created_trade">You started a trade</string>
+  <string name="you_updated_trade">You updated the trade</string>
+  <string name="you_unlocked_trade">You unlocked the trade</string>
+  <string name="you_locked_trade">You locked the trade</string>
+  <string name="you_accepted_trade">You accepted the trade</string>
+  <string name="you_cancelled_trade">You cancelled the trade</string>
+  <string name="you_collected_trade">You collected items from the trade</string>
+  <string name="latest">Latest</string>
+  <string name="my_home">My Home</string>
+  <string name="make_home_room">Make Home Room</string>
+  <string name="room_thumbnail">Room\nThumbnail</string>
+  <string name="photo_set_as_room_thumbnail">Photo set as room thumbnail.</string>
+
+  <string name="add_voice_time_message">You can get {{$1}} of Voice time for this room. This will enable the Room Owner and Moderators to speak. They can also invite room visitors to speak.\n\nOnce enabled, you can Extend Voice or End Voice at any time.</string>
+  <string name="add_voice_time_action">Enable Voice for 1 hour</string>
+
+
+  <string name="add_voice_time">Get Voice Time?</string>
+  <string name="voice_time_enabled">Voice Enabled</string>
+  <string name="voice_time_enabled_toast">Voice Enabled.</string>
+  <string name="voice_time_extended_toast">Voice extended for 1 hour.</string>
+  <string name="voice_time_ended_toast">Voice ended.</string>
+  <string name="enable_voice">Enable Voice</string>
+  <string name="voice">Voice</string>
+
+  <string name="extend_voice">Extend Voice</string>
+
+  <string name="end_voice_now_question">End Voice now?</string>
+  <string name="end_voice_confirmation">This will immediately end Voice for everyone in the room.</string>
+
+  <string name="end_voice">End Voice</string>
+  <string name="report_voice">Report User's Voice Activity</string>
+  <string name="report_world_voice">Report World Voice</string>
+
+  <string name="invite_to_voice">Invite to Voice</string>
+  <string name="remove_from_voice">Remove from Voice</string>
+  <string name="join_as_speaker">Join as a speaker</string>
+  <string name="invited_to_join_as_speaker">{{1}}{{$1}}{{/1}} invited you to join as a speaker.</string>
+  <string name="decline">No, thanks!</string>
+  <string name="voice_no_permission">Please give Highrise permission to use your microphone via the Settings app on your phone.</string>
+
+  <string name="mute_speaker">Mute</string>
+  <string name="unmute_speaker">Unmute</string>
+  <string name="mute_voice">Mute Voice</string>
+  <string name="unmute_voice">Unmute Voice</string>
+
+  <string name="voice_speaker_guideline_description">Avoid inappropriate behavior while using the Voice feature. You may lose the ability to use this feature if you violate our Community Guidelines. We don’t allow:</string>
+  <string name="voice_host_guideline_description">It’s your responsibility to monitor and moderate this room’s speakers. Failing to do so may result in the loss of your ability to use this feature. We don’t allow:</string>
+  <string name="keep_voice_fun">Keep Voice fun!</string>
+  <string name="keep_this_room_safe">Keep this room safe!</string>
+  <string name="add_one_hour">Add 1 hour</string>
+
+  <string name="you_muted_user">You muted {{1}}{{$1}}{{/1}}, so you can’t hear them.</string>
+  <string name="you_unmuted_user">You unmuted {{1}}{{$1}}{{/1}}. You can now hear them.</string>
+  <string name="user_muted_mic">{{1}}{{$1}}{{/1}} has muted their mic.</string>
+  <string name="user_unmuted_mic">{{1}}{{$1}}{{/1}} has unmuted their mic.</string>
+  <string name="user_deafened">This user has deafened voice, so they can’t hear anyone.</string>
+  <string name="no_permission_to_speak">You do not have permission to speak in this channel.</string>
+  <string name="user_without_permission_to_speak">{{1}}{{$1}}{{/1}} does not have permission to speak in this channel.</string>
+
+  <string name="beta">Beta</string>
+
+  <string name="won">WON</string>
+
+  <string name="you_own_item_amount_simple">You own: {{$1}}</string>
+
+  <string name="limited_time_sales">Limited Time Sales</string>
+  <string name="gold_packs">Gold Packs</string>
+  <string name="offers">Offers</string>
+  <string name="vault_description">Exchange Gold for Bars to trade and show off your wealth</string>
+  <string name="unfollow_user">Unfollow User?</string>
+  <string name="this_will_unfollow_user">This will unfollow {{$1}}, you can refollow them again at any time.</string>
+  <string name="archived_world">Archived World</string>
+  <string name="link_email">Link Email</string>
+  <string name="link_email_description">Link an email to update or remove your connected accounts.</string>
+
+  <!-- Promo currency -->
+
+
+  <string name="_new_loud">New!</string>
+
+  <string name="account_bound">Account Bound</string>
+  <string name="these_can_not_be_traded">These can’t be traded to other players.</string>
+  <string name="promo_tokens">Promo Grab Tokens</string>
+
+  <string name="promo_token_draw_alert_title">You’re using Promo Grab Tokens</string>
+  <string name="promo_token_draw_alert_description">The items you get will be Account Bound. They can’t be traded and don’t provide Event Boost.</string>
+
+  <string name="promo_token_explaination">Use this token to spin select grabs for free! The items you receive will be bound to your account.</string>
+  <string name="spin_token_explaination">Use this token to spin select grabs for free!</string>
+  <string name="lucky_token_explaination">Use Lucky Tokens to buy Event specific items and to spin special Event Grabs.</string>
+
+  <string name="room_boost_tokens">Room Boost Tokens</string>
+  <string name="room_boost_tokens_explanation">Use them to push your rooms higher in the Room Directory, making it more visible to users.</string>
+
+  <string name="voice_tokens">Voice Chat Tokens</string>
+  <string name="room_voice_tokens_explanation">Use them to get 1 hour of Voice Time in a room.</string>
+
+  <!-- Errors -->
+  <string name="error_retry">Retry ({{$1}})</string>
+  <string name="error_connection_title">Connection Error</string>
+  <string name="error_connection_details">Sorry {{$1}}, there was an error when trying to connect.\n\n{{$2}}\n\n{{1}}Contact Support{{/1}}</string>
+  <string name="error_update_required_title">Update Required</string>
+  <string name="error_update_required_details">We have launched a new and improved version. Please update the app for a better experience.</string>
+  <string name="error_update_now">Update Now</string>
+  <string name="error_logout_title">You’ve Been Logged Out</string>
+  <string name="error_logout_details">Please log back in.\n\n{{$1}}\n\n{{1}}Contact Support{{/1}}</string>
+  <string name="error_maintenance_title">Server Maintenance</string>
+  <string name="error_maintenance_details">Highrise is currently offline for maintenance. Don't worry! Your progress is saved and you should be able to log in again soon.</string>
+  <string name="error_no_connection_title">No Connection</string>
+  <string name="error_no_connection_details">Try moving to a location with better connection. If you still have trouble connecting, try again later.</string>
+  <string name="error_room_join_title">Room Join Error</string>
+  <string name="error_room_join_details">Sorry {{$1}}, there was an error when trying to join {{$2}}.\n\n{{$3}}\n\n{{1}}Contact Support{{/1}}</string>
+
+  <!-- Tipping -->
+  <string name="send_tip_to">Send a Tip to</string>
+  <string name="send_tip">Send Tip</string>
+  <string name="owned_amount">Owned: {{$1}}</string>
+  <string name="not_enough_gold">Not enough Gold!</string>
+  <string name="do_you_want_to_buy_more">You don’t have enough Gold. Do you want to get more?</string>
+  <string name="go_to_store">Go to Store</string>
+  <string name="anonymous">Anonymous</string>
+  <string name="you_can_send_a_custom_message_with_your_tip">You can send a custom message with your tip. This message will be private.</string>
+  <string name="you_sent_user_a_tip">You sent {{1}}{{$1}}{{/1}} a tip!</string>
+  <string name="user_sent_you_a_tip">{{1}}{{$1}}{{/1}} sent you a tip!</string>
+
+  <string name="tip">Tip</string>
+  <string name="maximum_140_characters">Maximum 140 characters.</string>
+  <string name="tip_sent">Tip Sent!</string>
+  <string name="you_got_a_tip">You got a tip!</string>
+  <!-- Tipping -->
+
+  <!-- Room sharing -->
+
+  <!-- Granular trade updates -->
+  <string name="trade_added_item">added {{1}}{{$1}}{{/1}} to the trade.</string>
+  <string name="trade_removed_item">removed {{1}}{{$1}}{{/1}} from the trade.</string>
+
+  <!-- Sky Pass -->
+  <string name="completion_reward">Completion Reward</string>
+  <string name="kompu_description">Complete the set of Grab items to get this {{1}}{{$1}}{{/1}} reward!</string>
+  <string name="progress_reward">Progress Reward</string>
+  <string name="spin_reward">Spin Reward</string>
+  <string name="progress_reward_description">Get this reward as you complete the collection.</string>
+  <string name="spin_reward_description">Get this reward as you spin the collection.</string>
+  <string name="gacha_progress_items">{{$1}} / {{$2}} Items</string>
+  <string name="gacha_progress_spins">{{$1}} / {{$2}} Spins</string>
+  <string name="gacha_progress_claimed">{{$1}} / {{$2}} ⸱ Claimed</string>
+
+  <string name="icon_amount">{{1}}{{/1}} {{$1}}</string>
+
+
+
+  <string name="free_draw">Free Spin</string>
+  <string name="free_draw_in">Free spin in {{$1}}</string>
+  <string name="spin_times_per_period">{{$1}} time(s) per {{$2}} ({{$3}} left)</string>
+
+
+  <string name="video_error_not_ready_yet_title">Ads not ready yet!</string>
+  <string name="video_error_not_ready_yet_message">The video ad isn\'t ready yet. Try again in a few seconds!</string>
+
+  <string name="video_error_ads_generic_title">Ad Could Not Load</string>
+  <string name="video_error_ads_generic_message">We're facing some issues loading the ads. Try the 'Retry' button. If the same problem persists, please come back again later. \nError: {{$1}}</string>
+
+  <string name="video_error_ads_not_supported_title">Ads Not Supported</string>
+  <string name="video_error_ads_not_supported_message">We’re facing some issues loading the ads. We’re currently working on this issue to bring you more ads soon!</string>
+
+  <string name="video_error_ads_unavailable_title">Ads Currently Unavailable</string>
+  <string name="video_error_ads_unavailable_message">Currently, our partners haven't provided any more ads to show. We're working with them to bring you more ads soon!</string>
+
+  <!-- Spectating -->
+  <string name="you_are_spectating">You are spectating</string>
+  <string name="join_room">Join Room</string>
+  <string name="room_full">Room Full</string>
+  <string name="allow_spectating">Allow Spectating</string>
+  <string name="join_room_to_chat">Join the room to chat</string>
+  <!-- Spectating -->
+
+  <!-- Crew gift -->
+  <string name="sent_a_gift">Wow! {{1}}{{$1}}{{/1}} sent everyone a {{2}}{{$2}}{{/2}}! 🎉</string>
+  <!-- Crew gift -->
+
+  <!-- Quick chat -->
+  <string name="go_loud">Go!</string>
+  <!-- Quick chat -->
+
+  <string name="gif">Gif</string>
+  <string name="custom_message">Custom Message</string>
+
+  <string name="pocket_coins">Pocket Coins</string>
+
+  <string name="not_enough_currency">Not enough {{$1}}!</string>
+  <string name="do_you_want_to_buy_more_currency">You don’t have enough {{$1}}. Do you want to buy more?</string>
+  <string name="energy">Energy</string>
+  <string name="cash_amount">${{$1}} USD</string>
+
+  <string name="buy_icon_amount">Buy {{1}}{{/1}} {{$1}}</string>
+  <string name="tip_gold">Tip Gold</string>
+
+  <string name="redeem_gold_button">Redeem {{1}}{{/1}} {{$1}} Gold</string>
+
+  <string name="payout">Payout</string>
+
+  <string name="from_nft_outfit">From {{1}}{{$1}}{{/1}}</string>
+  <string name="nft_account_bound">NFT Account Bound</string>
+  <string name="temporary">Temporary</string>
+  <string name="effects">Effects</string>
+
+  <string name="shared_a_room_invite">shared a room invite.</string>
+  <string name="shared_a_world_invite">shared a world invite.</string>
+  <string name="shared_an_invite">shared an invite.</string>
+
+  <!-- Announcements -->
+  <string name="announcements">Announcements</string>
+  <string name="plus_num_more">+{{$1}} More</string>
+  <!-- Announcements -->
+
+
+
+  <string name="tip_you_earned_amount_in_room">You earned {{$1}} on tips in {{1}}{{$2}}{{/1}}</string>
+  <string name="enter_password">Enter Password</string>
+  <string name="already_have_outfit">You already saved this outfit.</string>
+
+  <string name="follow_failed_limit">You can't follow any more users</string>
+  <string name="follow_failed_blocked">Unable to follow user</string>
+  <string name="name_not_acceptable">Name is unacceptable.</string>
+
+  <string name="expired_on">Expired {{$1}}</string>
+  <string name="expires_on">Expires {{$1}}</string>
+  <string name="expires_tomorrow">Expires Tomorrow</string>
+  <string name="friends_empty">When someone that you follow also follows you they will appear here!</string>
+  <string name="following_empty">You are not following anyone yet!</string>
+  <string name="followers_empty">You don’t have any followers yet!</string>
+
+  <string name="sort_title">Sort</string>
+  <string name="sort_lastused">Last Used</string>
+  <string name="sort_lastacquired">Last Acquired</string>
+  <string name="sort_rarity">Rarity</string>
+  <string name="sort_type">Type</string>
+
+  <string name="gender_title">Gender</string>
+  <string name="gender_masculine">Masculine</string>
+  <string name="gender_feminine">Feminine</string>
+
+  <string name="consumable">Consumable</string>
+  <string name="emote">Emote</string>
+  <string name="pets">Pets</string>
+  <string name="pet">Pet</string>
+
+  <string name="extra_title">Type</string>
+  <string name="extra_blush">Blush</string>
+  <string name="extra_freckle">Freckle</string>
+  <string name="extra_mole">Mole</string>
+
+  <string name="bottom_title">Type</string>
+  <string name="bottom_pants">Pants</string>
+  <string name="bottom_skirts">Skirts</string>
+  <string name="bottom_shorts">Shorts</string>
+
+  <string name="shoes_title">Type</string>
+  <string name="shoes_shoes">Shoes</string>
+  <string name="shoes_socks">Socks</string>
+
+  <string name="accessory_title">Type</string>
+  <string name="accessory_earrings">Earrings</string>
+  <string name="accessory_glasses">Glasses</string>
+  <string name="accessory_gloves">Gloves</string>
+  <string name="accessory_handbag">Handbag</string>
+  <string name="accessory_hat">Hat</string>
+  <string name="accessory_necklace">Necklace</string>
+  <string name="accessory_watch">Watch</string>
+  <string name="accessory_tattoo">Tattoo</string>
+
+  <string name="eyebrow_title">Type</string>
+  <string name="eyebrow_facehair">Face Hair</string>
+  <string name="eyebrow_eyebrow">Eyebrows</string>
+
+  <string name="contest">Contest</string>
+  <string name="waiting_for_user_to_collect">Waiting for the other user to collect their items...</string>
+  <string name="amount_name">{{$1}} {{$2}}</string>
+  <string name="x_amount_name">x{{$1}} {{$2}}</string>
+
+  <string name="delete_this_post">Are you sure you want to delete this post?</string>
+  <string name="join_room_confirmation">Do you want to go to {{$1}}</string>
+  <string name="hashtag_name">#{{$1}}</string>
+  <string name="post_edited">{{$1}} (Edited)</string>
+  <string name="post_comment">{{1}}{{$1}}{{/1}} {{$2}}</string>
+  <string name="crew_creation">Crew Creation</string>
+  <string name="crew_name">Crew name</string>
+  <string name="crew_bio">Crew bio</string>
+  <string name="say_something_about_your_crew">Say something about your crew...</string>
+  <string name="user_outfit">{{$1}}'s Outfit</string>
+  <string name="already_in_crew">Already in a crew</string>
+  <string name="add">Add</string>
+  <string name="user_not_found">User not found</string>
+  <string name="num_out_of">{{$1}} / {{$2}}</string>
+  <string name="coming_soon">COMING SOON!</string>
+  <string name="coming_soon_regular">Coming Soon</string>
+
+  <string name="other_user_followers_empty">This user does not have any followers yet.</string>
+  <string name="other_user_friends_empty">This user did not add any friends yet.</string>
+  <string name="other_user_following_empty">This user does not follow anyone yet.</string>
+
+  <string name="members_x_of_y">Members {{$1}}/{{$2}}</string>
+  <string name="try_it_on">Try it on</string>
+  <string name="limited_time">Limited Time</string>
+  <string name="limited_amount">Limited Amount</string>
+  <string name="limited_time_reward">Limited-Time Reward</string>
+  <string name="limited_time_bonus_reward">Limited-Time Bonus Reward</string>
+  <string name="plus_bonus_reward">+Bonus Reward</string>
+  <string name="limited_time_kompu_description">Complete the set of Grab items before time runs out to get this additional {{1}}{{$1}}{{/1}} item!</string>
+  <string name="limited_sold_out">{{1}}Limited Sold Out{{/1}}</string>
+  <string name="sold_out">Sold Out</string>
+  <string name="sold_out_exclamation">Sold Out!</string>
+  <string name="limited_items_left">{{1}}{{$1}} Limited{{/1}} Items Left</string>
+  <string name="remaining_left">{{1}}{{$1}}{{/1}} / {{$2}} left</string>
+  <string name="sale_ended">Sale Ended</string>
+  <string name="sale_ended_exclamation">Sale Ended!</string>
+  <string name="sold_out_message">This item has already sold out. Your purchase didn’t go through.</string>
+  <string name="sale_ended_message">The sale is already over. Your purchase didn’t go through.</string>
+  <string name="limited_stock_sale_explanation">These unique items are only available in limited amounts. Get yours before they’re gone!</string>
+  <string name="limited_time_sale_explanation">These unique items are only available for a limited time!</string>
+  <string name="help_your_crew_by_sending_event_item">Help your Crew push forward by buying Event Items for every member!</string>
+
+  <string name="purchase_completed">Purchase Completed</string>
+  <string name="do_you_want_to_wear_this_item_now">Do you want to wear this item now?</string>
+  <string name="quit_confirmation">Are you sure you want to quit?</string>
+  <string name="disable">Disable</string>
+  <string name="radio_playback_error">There was a problem with radio station playback</string>
+  <string name="genres">Genres</string>
+  <string name="open_all">Open All</string>
+  <string name="hello">Hello</string>
+  <string name="support_center">Support Center</string>
+  <string name="woo">Woo!</string>
+  <string name="your_progress_has_been_reset">Your progress has been reset!</string>
+  <string name="you_can_complete_the_collection_again">You can complete the collection again to claim this reward once more.</string>
+  <string name="you_won_limited_time_reward">You won the Limited Time Reward!</string>
+  <string name="complete_collection_before_time_runs_out">Complete the full collection again before time runs out to receive the reward once more.</string>
+  <string name="you_won_progress_reward">You won the Progress Reward!</string>
+  <string name="complete_full_set_to_get_completion">Complete the full set to receive the Completion Reward!</string>
+  <string name="you_won_spin_reward">You won the Spin Reward!</string>
+  <string name="empty_string"></string>
+
+  <!-- Settings -->
+  <string name="hidden_spectator">Hidden Spectator</string>
+  <string name="show_deleted_posts">Show Deleted Posts</string>
+  <string name="performance">Performance</string>
+  <string name="clear_cache">Clear Downloaded Content</string>
+  <string name="clear_cache_confirm_content"> Improve your loading experience by cleaning out old files.  This can help make things run more smoothly.  Note: Loading some data or images might take longer, especially if your network is unstable.</string>
+  <string name="haptic_feedback">Haptic Feedback</string>
+  <string name="render_scale">Render Scale</string>
+  <string name="graphics_quality">Graphics Quality</string>
+  <string name="quality">Quality</string>
+  <string name="default">Default</string>
+  <string name="low">Low</string>
+  <string name="medium">Medium</string>
+  <string name="high">High</string>
+  <string name="stats">Stats</string>
+  <string name="general">General</string>
+  <string name="disable_client_validation">Disable Client Validation</string>
+  <string name="recording_gesture">Recording Gesture</string>
+  <string name="draw">Draw</string>
+  <string name="draw_avatars">Avatars</string>
+  <string name="draw_subfloor">Subfloor</string>
+  <string name="draw_furniture">Furniture</string>
+  <string name="draw_indicators">Indicators</string>
+  <string name="draw_chat">Chat</string>
+  <string name="restore_default_values">Restore Default Values</string>
+
+
+  <string name="high_res_video">High Resolution Video</string>
+  <!-- Settings -->
+
+  <!-- Trust and Safety -->
+  <string name="ts_reason">Reason: {{$1}}</string>
+  <string name="ts_banned_title">You Have Been Banned</string>
+  <string name="ts_banned_subtitle">Your account has been permanently suspended from Highrise.</string>
+  <string name="ts_banned_footer">Our safety team enforces our {{1}}Guidelines{{/1}} through automation and manual reviews. If you would like us to take another look at your ban, please {{2}}Contact Us{{/2}}.</string>
+  <string name="ts_suspended_title">You Have Been Suspended</string>
+  <string name="ts_suspended_subtitle">Your account has been suspended for:</string>
+  <string name="ts_suspended_footer">Our safety team enforces our {{1}}Guidelines{{/1}} through automation and manual reviews. If you would like us to take another look at your suspension, please {{2}}Contact Us{{/2}}.</string>
+  <string name="ts_muted_title">You Have Been Muted</string>
+  <string name="ts_muted_subtitle">Your account has been muted for:</string>
+  <string name="ts_muted_footer">{{1}}Read Our Guidelines{{/1}}\n\nYou will not be able to use public chat, voice chat, private messages, or the newsfeed until your mute timer ends.</string>
+  <string name="ts_warning_title">Reminder</string>
+  <string name="ts_warning_subtitle">Your account has been reviewed by our safety team.</string>
+  <string name="ts_warning_footer">{{1}}Read Our Guidelines{{/1}}\n\nThis does not affect your account. It’s a reminder to always follow the rules when enjoying Highrise!</string>
+  <string name="ts_guidelines">{{1}}Read Our Guidelines{{/1}}</string>
+
+  <!-- Trust and Safety -->
+
+  <!-- Promo Codes -->
+  <string name="redeem_a_promo_code">Redeem a Promo Code</string>
+  <string name="redeem_code">Redeem a Code</string>
+  <string name="got_promo_code">Got a promo code? Enter it here to redeem it for special rewards.</string>
+  <string name="redeem_promo_code">Redeem Promo Code</string>
+  <string name="promo_code_already_redeemed">This promo code was already redeemed by you or another account associated to this device.</string>
+  <string name="promo_code_expired">This promo code has expired.</string>
+  <string name="promo_code_not_eligible">You’re not eligible to redeem this promo code.</string>
+  <string name="promo_code_failed">Redeeming failed. Please, try again.</string>
+  <!-- Promo Codes -->
+
+  <!-- Quests -->
+  <!-- Quests -->
+
+  <!-- Room Editor -->
+  <string name="type_title">Type</string>
+  <string name="favorite">Favorite</string>
+  <string name="interactive">Interactive</string>
+  <string name="furniture_misc">Misc</string>
+  <string name="furniture_seating">Seating</string>
+  <string name="furniture_table">Table</string>
+  <string name="furniture_exterior">Exterior</string>
+  <string name="furniture_decor">Decor</string>
+  <string name="furniture_wall">Wall</string>
+  <string name="furniture_walldecor">Wall Decor</string>
+  <string name="furniture_block">Block</string>
+  <string name="furniture_floor">Floor</string>
+  <string name="furniture_goldbar">Gold Bar</string>
+  <string name="furniture_door">Door</string>
+  <string name="furniture_crewbanner">Crew Banner</string>
+  <string name="furniture_portrait">Portrait</string>
+  <string name="furniture_projectile">Projectile</string>
+  <string name="furniture_usergrab">User Grab</string>
+  <string name="furniture_tipjar">Tip Jar</string>
+  <string name="only_one_door">A room can only have one door!</string>
+  <!-- Room Editor -->
+
+  <!-- Room Creation -->
+  <string name="description">Description</string>
+  <string name="max_visitors">Max Visitors</string>
+  <string name="in_voice">In Voice</string>
+  <string name="say_something_about_your_room">Say something about your room...</string>
+  <string name="category_description">Your room will be shown to users browsing rooms under this category in the Room Directory.</string>
+  <string name="allow_users_to_spectate">Allow Users to Spectate</string>
+  <string name="allow_spectating_description">If enabled, users will be able to join your Room as spectators when it's full.</string>
+  <string name="enter_max_visitors">Enter max visitors...</string>
+  <string name="max_visitors_description">Select the maximum amount of visitors that can visit your room.</string>
+  <string name="language_description">Your room will be shown to users browsing rooms under this language in the Room Directory.</string>
+  <string name="access_policy_description">Control who has access to your room.</string>
+  <string name="intensity">Intensity</string>
+  <string name="dimensions">Room Dimensions</string>
+  <string name="x">X</string>
+  <string name="y">Y</string>
+  <string name="z">Z</string>
+  <!-- Room Creation -->
+
+  <!-- Studio -->
+  <string name="world">World</string>
+  <string name="importing">Importing {{$1}}</string>
+  <string name="play">Play</string>
+  <string name="console">Console</string>
+  <string name="hierarchy">Hierarchy</string>
+  <string name="inspector">Inspector</string>
+  <string name="assets">Assets</string>
+  <string name="transform">Transform</string>
+  <string name="select_files">Select Files</string>
+  <string name="projects">Projects</string>
+  <string name="documentation">Documentation</string>
+  <string name="updates">Updates</string>
+  <string name="forum">Forum</string>
+  <!-- Studio -->
+
+  <!-- Sky Pass -->
+  <string name="sky_pass_stars">SkyPass Stars</string>
+  <!-- Sky Pass -->
+
+  <!-- UGC grabs -->
+  <string name="add_to_grab">Add to Grab</string>
+  <string name="remove_from_grab">Remove from Grab</string>
+  <string name="amount_x_of_y">{{1}}x{{$1}}{{/1}}/{{2}}{{$2}}{{/2}}</string>
+  <string name="x_amount">{{1}}x{{$1}}{{/1}}</string>
+  <string name="user_grab_spin_cost_and_time">{{1}}{{$1}}{{/1}} - {{2}}{{$2}}{{/2}}</string>
+  <string name="claim_gold_from_grab">Claim Gold from Grab</string>
+  <string name="x_amount_left_in_your_inventory">x{{1}}{{$1}}{{/1}} left in your Inventory</string>
+  <string name="you_can_not_draw">You can not Spin!</string>
+  <string name="are_you_sure_to_remove_grab_machine">Are you sure you want to remove the Grab Machine?</string>
+  <!-- UGC grabs -->
+
+  <!-- Date Picker -->
+  <string name="day">Day</string>
+  <string name="month">Month</string>
+  <string name="year">Year</string>
+  <!-- Date Picker -->
+
+  <!-- Desktop Updater -->
+  <string name="update_available">Update available</string>
+  <string name="update_available_message">A new version is available for download</string>
+  <string name="update_available_latest">Latest:</string>
+  <string name="update_available_installed">Installed:</string>
+  <string name="update_button_update">Update</string>
+  <!-- Desktop Updater -->
+
+  <!-- Events -->
+  <string name="overview">Overview</string>
+
+  <string name="style_event_hint">Style a look that matches the theme, then head to the Event Room to score other people’s looks.</string>
+  <string name="prank_event_hint">Go to the Event Room to prank other users.</string>
+  <string name="donate_event_hint">Go to the Event Room to collect items that the NPC wants and give it to them.</string>
+  <string name="how_to_play_question">How to Play?</string>
+  <string name="crew_rank_plain_title">Crew Rank</string>
+  <string name="individual_rank_title">Rank</string>
+  <string name="judge_rank_plain_title">Judge Rank</string>
+  <string name="model_rank_plain_title">Model Rank</string>
+  <string name="next_progress_reward">Next Progress Reward</string>
+  <string name="submit_your_model_look">Submit your Model Look</string>
+  <string name="edit_your_model_look">Edit your Model Look</string>
+  <string name="boost_hint">Boost help to increase the number of tickets you get.</string>
+  <string name="event_shop_hint">Stay ahead of the Event with Event Essentials and Boost Items!</string>
+  <string name="leaderboard_and_prizes">Leaderboard and Prizes</string>
+  <string name="progress_reward_ticket_count">{{1}}{{$1}}{{/1}} / {{$2}}</string>
+  <string name="collect_loud">Collect!</string>
+  <string name="lucky_tokens_description">You can get Lucky Tokens from participating in the event and crew goals.</string>
+  <string name="boost_items">Boost Items</string>
+  <string name="boost_items_description">Spin the Event Grab to get items with Boost.</string>
+  <string name="boost_items_empty_message">You have no Boost Items.</string>
+  <string name="progress_rewards">Progress Rewards</string>
+  <string name="join_a_crew">Join a Crew</string>
+  <string name="go_to_event">Go to Event</string>
+  <string name="event_grabs">Event Grabs</string>
+  <string name="use_magic_glasses">Use Magic Glasses</string>
+  <string name="count_streak">+{{$1}}X Streak</string>
+  <string name="lets_go_loud">Let’s Go!</string>
+  <string name="style_challenge_intro">Choose the look that best matches the theme. If you pick the look that’s earned the most votes, your {{1}}Critique Streak{{/1}} goes up and you earn more tickets. Hit a {{2}}Streak{{/2}} of 10 to earn a mega prize!</string>
+  <string name="plus_super_boost">+{{$1}}% Super Boost!</string>
+  <string name="choose_an_item_to_prank_with">Choose an item to Prank with:</string>
+  <string name="success_loud">Success!</string>
+  <string name="oh_no_loud">Oh no!</string>
+  <string name="event_leaderboard_model_hint">Get Model Tickets when other users vote for your Look!</string>
+  <string name="event_leaderboard_judge_hint">Get Judge Tickets when you vote in the Event Room.</string>
+  <string name="event_leaderboard_prank_hint">Get Tickets when you prank others in the Event Room!</string>
+  <string name="event_leaderboard_donate_hint">Get Tickets when you collect items the NPC wants and give it to them.</string>
+  <string name="event_leaderboard_crew_hint">Work together as a Crew to receive Event Rewards!</string>
+  <string name="event_leaderboard_crew_hint_has_crew">The total number of Judge Tickets collected by all members makes up the Crew Tickets.</string>
+  <string name="event_not_started_hint">The event has not started yet.</string>
+  <string name="tier_rewards">{{$1}} - {{$2}} Rewards</string>
+  <string name="tier_rewards_no_range">{{$1}} Rewards</string>
+  <string name="tickets_to_next_tier">{{1}}{{$1}}{{/1}} more to next Tier</string>
+  <string name="your_look_submitted">Your Look has been submitted!</string>
+  <string name="submit_your_look_prompt_message">{{$1}}\n\nCurrent Theme:\n\n{{$2}}</string>
+  <string name="create_an_outfit">Create an Outfit</string>
+  <string name="choose_an_item_to_donate">Choose an item to Donate:</string>
+  <string name="super_boost_your_tickets_question">Super Boost your Tickets?</string>
+  <string name="super_boost_description">Want to Boost your tickets? Use some Jet Fuel to activate Super Boost for 30m now!</string>
+  <string name="your_tickets_super_boosted">Your Tickets are Super Boosted!</string>
+  <string name="super_boosted_for_duration">Your Tickets are Super Boosted for the following duration:\n\n{{$1}}</string>
+  <string name="super_boost_remaining">{{1}}{{$1}} remaining{{/1}}</string>
+  <string name="my_bag">My Bag</string>
+  <string name="tickets_amount_combo_streak">{{1}}{{$1}}{{/1}} / {{$2}} Combo Streaks</string>
+  <string name="you_have_no_lucky_grab_items">You have no Lucky Grab Items.</string>
+  <string name="additional_boost">Additional boost</string>
+  <string name="highrise_concepts">Concepts</string>
+  <string name="ideas">Ideas</string>
+  <string name="wishlist">Wishlist</string>
+  <string name="add_to_wishlist">Add to Wishlist</string>
+  <string name="remove_from_wishlist">Remove from Wishlist</string>
+  <string name="empty_wishlist">Items you added to Wishlist will appear here.</string>
+  <string name="added_item_to_wishlist">Added Item to Wishlist.</string>
+  <string name="removed_item_from_wishlist">Removed Item from Wishlist.</string>
+  <!-- Events -->
+
+  <string name="empty"></string>
+
+  <string name="never_share_your_password">Never share your password or personal information with anyone.</string>
+  <string name="in_wallet">In Wallet</string>
+
+  <string name="traits">Traits: {{$1}}</string>
+
+  <string name="backgrounds_description">Backgrounds appear behind your avatar in your profile and thumbnail.</string>
+
+  <!-- Showcases -->
+  <string name="showcase">Showcase</string>
+  <string name="exhibit_your_prized_belongings">Exhibit your prized belongings, either for admiration or trade.</string>
+  <string name="this_user_isnt_displaying_any_items">This user isn't displaying any items.</string>
+  <string name="add_my_first_item">Add My First Item</string>
+  <string name="add_to_showcase">Add to Showcase</string>
+  <string name="remove_from_showcase">Remove from Showcase</string>
+  <string name="showcase_conversation_message">Hi! Are you selling {{$1}}?</string>
+
+  <string name="designed_items">Designed Items</string>
+
+  <!-- Pinning -->
+  <string name="pin">Pin</string>
+  <string name="unpin">Unpin</string>
+  <string name="pinned">Pinned</string>
+  <string name="room_pinned">Room Pinned.</string>
+  <string name="room_unpinned">Room Unpinned.</string>
+  <string name="designed_item_pinned">Designed Item Pinned.</string>
+  <string name="designed_item_unpinned">Designed Item Unpinned.</string>
+  <string name="post_pinned">Post Pinned.</string>
+  <string name="post_unpinned">Post Unpinned.</string>
+  <string name="comment_pinned">Comment Pinned.</string>
+  <string name="comment_unpinned">Comment Unpinned.</string>
+  <string name="item">Item</string>
+  <string name="showcase_pinned">Showcase Pinned.</string>
+  <string name="showcase_unpinned">Showcase Unpinned.</string>
+  <string name="pin_room">Pin Room</string>
+  <string name="unpin_room">Unpin Room</string>
+  <string name="pin_comment">Pin Comment</string>
+  <string name="unpin_comment">Unpin Comment</string>
+  <string name="pin_emote">Pin Emote</string>
+  <string name="unpin_emote">Unpin Emote</string>
+  <string name="emote_info">Emote Info</string>
+
+  <!-- Creations -->
+  <string name="creations">Creations</string>
+  <string name="this_user_does_not_have_any_creations_yet">This user does not have any Creations yet.</string>
+
+  <string name="pose">Pose</string>
+  <string name="denied_storage_write_permission">You have denied external storage write access permission and Highrise can not save your file. Please grant permission in your device settings.</string>
+  <string name="empty_media_library">Media library is empty, cannot pick any media to create a post.</string>
+
+  <!-- Reporting -->
+  <string name="pretending_to_be_someone">Pretending to be someone</string>
+  <string name="pretending_to_be_someone_description">We prohibit:\n•   Pretending to be another user.\n•   Pretending to be a staff member.\n•   Pretending to be a celebrity?</string>
+  <string name="inappropriate_profile_bio">Inappropriate profile bio</string>
+  <string name="inappropriate_profile_bio_description">We prohibit:\n•   Inappropriate usernames.\n•   Inappropriate user bio.</string>
+  <string name="inappropriate_username">Inappropriate username</string>
+  <string name="inappropriate_username_description">Usernames on Highrise should follow our guidelines and should be free of: \n•   Hate speech\n•   Vulgarity\n•   Private information\n•   Harassment\n•   Sexual content\n•   Illegal content\n•   Impersonation</string>
+  <string name="inappropriate_name">Inappropriate name</string>
+  <string name="inappropriate_name_description">Names on Highrise should follow our guidelines and should be free of: \n•   Hate speech\n•   Vulgarity\n•   Private information\n•   Harassment\n•   Sexual content\n•   Illegal content\n•   Impersonation</string>
+  <string name="inappropriate_newsfeed">Inappropriate posts</string>
+  <string name="inappropriate_newsfeed_description">All newsfeed posts should follow our Community Guidelines. If this newsfeed contains inappropriate content, please use the form below to let us know. You can also report specific posts to us. Here's how:\n•   Open the post you would like to report\n•   Tap the '...' icon under the post\n•   Tap on Report</string>
+  <string name="inappropriate_inbox_messages">Inappropriate DM messages</string>
+  <string name="inappropriate_inbox_messages_description">When reporting something on Highrise, it's really important to flag the exact message or post. Millions of messages are being shared, so reporting the specific message or post will help us track it down quickly. \nHere's how to report a private message:\n•   Open the conversation in your inbox\n•   Tap the flag icon at the top of the screen\n•   Tap on Report</string>
+  <string name="inappropriate_vw_chat">Inappropriate public chats</string>
+  <string name="inappropriate_vw_chat_description">When reporting something on Highrise, it's really important to flag the exact message or post. Millions of messages are being shared, so reporting the specific message or post will help us track it down quickly.\nHere's how to report a chat message:\n•   Tap and hold the specific message you would like to report\n•   Tap on Report</string>
+  <string name="underage">May be under 13 years old</string>
+  <string name="underage_description">All users must be 13 years or older to play Highrise. If this user's profile suggests they're underage, please submit a report using this form. </string>
+  <string name="loading_ad">Loading Ad</string>
+  <string name="cash_shop_not_available">Cash Shop not available</string>
+
+  <!-- Tip Jar -->
+  <string name="top_tippers">Top Tippers</string>
+  <string name="room_tip_jar">Room's Tip Jar</string>
+  <string name="send_a_tip">Send a Tip</string>
+  <string name="amount_of_gold_in_tip_jar">{{1}}{{/1}} {{$1}} Gold in the Tip Jar</string>
+  <string name="no_one_has_tipped_this_room_yet">No one has tipped this room yet!</string>
+  <string name="no_one_has_left_any_messages_yet">No one has left any messages yet!</string>
+  <string name="claim_gold_in_tip_jar">Claim Gold in Tip Jar?</string>
+  <string name="people_tipped_this_tip_jar_you_earned">{{1}}{{$1}} people{{/1}} tipped this Tip Jar. You’ve earned {{2}}{{$2}} Gold!{{/2}}</string>
+  <string name="remove_tip_jar_question">Remove Tip Jar?</string>
+  <string name="remove_tip_jar_description">Any Gold left in the Tip Jar will be sent to the room owner.</string>
+  <string name="remove_tip_jar">Remove Tip Jar</string>
+  <string name="you_must_visit_the_room_to_collect_the_tips">You must visit the {{1}}{{$1}}{{/1}} room to collect the tips.</string>
+  <string name="tip_jar_recent_tips_hint">Support this Room by sending a tip! The owner of the Room will receive it.</string>
+  <string name="tip_at_least_100_to_add_a_custom_message">Tip at least 100 Gold to leave a message with your tip!</string>
+  <string name="tips_larger_than_5k_will_show">Tips larger than 5,000 Gold will show your message to everyone in the room!</string>
+  <string name="user_tipped_the_room">{{1}}{{$1}}{{/1}} tipped the room</string>
+  <string name="user_tipped_big_amount">Wow! {{1}}{{$1}}{{/1}} tipped the room {{2}}{{$2}} Gold!💰{{/2}}</string>
+
+
+  <string name="big_tip_message_with_amount">{{$1}} - 💰 {{1}}{{$2}}{{/1}}</string>
+  <string name="big_tip_amount">💰 {{1}}{{$1}}{{/1}}</string>
+  <string name="sender_sent_a_tip_to_receiver">{{$1}} sent a tip to {{$2}}!</string>
+  <string name="you_sent_a_tip">You sent a tip!</string>
+  <!-- Tip Jar -->
+
+  <string name="select_languages_of_rooms_youd_like_to_see">Please select the language(s) of rooms you'd like to see.</string>
+
+  <string name="force_portrait">Force portrait UI</string>
+  <string name="restart_needed">Restart needed</string>
+  <string name="portrait_restart_message">In order to apply the change, the app will now quit. Please reopen it.</string>
+
+  <!-- Gacha probabilities -->
+  <string name="grab_info">Grab Info</string>
+  <string name="spin_rates">Spin Rates</string>
+  <string name="swap_rates">Swap Rates</string>
+  <string name="gacha_probabilities_description">Each Spin gives one item from {{1}}this{{/1}} Grab. See the full item list and chances below:</string>
+  <string name="gacha_swap_rates_description">After you spin from a Grab, you will have a chance to Swap your rewards for alternate items. Swapping items of different rarities will earn you different rewards.</string>
+  <string name="percentage">{{$1}}%</string>
+
+
+  <string name="swap_mythical_item">Swap a {{1}}Mythical{{/1}} item to get:</string>
+  <string name="swap_legendary_item">Swap a {{1}}Legendary{{/1}} item to get:</string>
+  <string name="swap_epic_item">Swap an {{1}}Epic{{/1}} item to get:</string>
+  <string name="swap_rare_item">Swap a {{1}}Rare{{/1}} item to get:</string>
+  <string name="swap_uncommon_item">Swap an {{1}}Uncommon{{/1}} item to get:</string>
+  <string name="swap_common_item">Swap a {{1}}Common{{/1}} item to get:</string>
+  <string name="swap_account_bound_item">Swap an {{1}}Account Bound{{/1}} item to get:</string>
+  <string name="swap_regular_item">Swap a {{1}}Regular{{/1}} item to get:</string>
+  <string name="swappable">Swappable</string>
+  <string name="item_swapping">Item Swapping</string>
+  <string name="swap_items_for_different_rewards">Swap items for different rewards!</string>
+  <string name="what_can_i_get">What can I get?</string>
+  <string name="select_the_items_you_want_to_swap">Select the items you want to swap</string>
+  <string name="touch_and_hold_to_swap_items">Touch-and-hold to swap items!</string>
+  <string name="tap_exclamation">Tap!</string>
+  <string name="select_all">Select All</string>
+  <string name="unselect_all">Unselect All</string>
+  <string name="swap_items">Swap Items</string>
+  <string name="select_items_to_swap">Select Items to Swap</string>
+  <!-- Gacha probabilities -->
+
+  <string name="style_hint_1">Submit your outfit and see how other Highrisers vote. You’ll receive Model Tickets if they like your look!</string>
+  <string name="style_hint_2">You can vote, too! If you vote for the winning style, you will be awarded with Judge Tickets.</string>
+  <string name="style_hint_3">Win the event to get LIMITED Item rewards! These items won't be available any other way, so don't miss your chance!</string>
+
+  <string name="prank_hint_1">Tap on the bubble above another person’s head to initiate a Prank on them.</string>
+  <string name="prank_hint_2">Select the item you want to prank them with. You’ll be awarded with Tickets when you successfully Prank someone. </string>
+  <string name="prank_hint_3">Win the event to get LIMITED Item rewards! These items won't be available any other way, so don't miss your chance!</string>
+
+  <string name="donate_hint_1">Tap on the bubble above another person’s head to collect an item.</string>
+  <string name="donate_hint_2">The NPC will indicate how many items they need from you. Once you have collected enough items, exchange them with the NPC!</string>
+  <string name="donate_hint_3">Win the event to get LIMITED Item rewards! These items won't be available any other way, so don't miss your chance!</string>
+
+  <string name="learn_more">Learn More</string>
+
+  <!-- Item mentioning -->
+  <string name="mention_item_by_name">Mention an item by name.</string>
+  <string name="mention_item_by_name_creates_link">Mention an item by name, creates a link to more details.</string>
+
+  <!-- Worlds -->
+  <string name="enter_world">Enter World</string>
+  <string name="enter_dev_world">Enter Dev World</string>
+  <string name="enter_world_18_plus">Enter World (18+)</string>
+  <string name="creator">Creator</string>
+  <string name="total_visits">Total Visits</string>
+  <string name="no_matching_results">We couldn\'t find any matching results.</string>
+  <string name="worlds_in_beta">Heads up! Worlds is still in beta. Expect some missing features and a few bugs along the way.</string>
+  <string name="world_join_update_required">The World you're trying to join was made for a newer app version. Update your app to explore the new and improved World.</string>
+  <string name="world_join_update_available_title">New Version Available</string>
+  <string name="world_join_update_available_details">A newer version of this World is available. You can still join without updating, but updating will enhance your experience!</string>
+  <string name="world_join_without_update">Join Anyway</string>
+  <string name="world_join_update_later">Later</string>
+  <string name="world_join_room_full_title">Room Full</string>
+  <string name="world_join_room_full_details">The room you're trying to join is currently full. You can retry joining this room or visit a new room.</string>
+  <string name="world_join_room_unavailable_title">Room Unavailable</string>
+  <string name="world_join_room_unavailable_details">The room you're trying to join no longer exists.</string>
+  <string name="world_join_new_room">Join New Room</string>
+  <string name="world_join_world_unavailable_title">World Unavailable</string>
+  <string name="world_join_world_unavailable_details">The World you're trying to join no longer exists.</string>
+  <string name="world_join_world_outdated_title">World is Out of Date</string>
+  <string name="world_join_world_outdated_details">The World you're trying to join is no longer supported, the creator has been made aware that they need to update it.</string>
+  <string name="downloading">Downloading...</string>
+  <string name="last_updated">Last Updated</string>
+  <string name="version_history">Version History</string>
+  <string name="version">Version {{$1}}</string>
+  <string name="world_item">{{1}}{{$1}}{{/1}} Item</string>
+  <string name="world_item_with_description">{{1}}{{$1}}{{/1}} Item\n {{$2}}</string>
+  <string name="get_more_gold">Get More Gold</string>
+
+   <!-- Social media links -->
+   <string name="social_media_links">Social Media Links</string>
+   <string name="social_link_username">{{$1}} Username</string>
+   <string name="proceed_with_caution">Proceed With Caution</string>
+   <string name="visiting_external_link_warning">You’re leaving Highrise to visit an external website or app.\n\n We are not responsible for the content on other apps and websites. For your safety, never disclose your password or personal information.</string>
+   <string name="_continue">Continue</string>
+   <string name="inappropriate_social_links">Inappropriate Social Links</string>
+   <string name="inappropriate_social_links_description">All social links should follow our Community Guidelines. If the social links in this account engages in or promotes activities such as spam, violence, hate speech, harassment, or other violations, please use the form below to let us know.</string>
+   <string name="invalid_social_link">Invalid Username</string>
+   <string name="invalid_social_link_description">Make sure you only entered your username, not a link, into the social media fields.</string>
+   <string name="invalid_social_link_confirm">Understood</string>
+   <string name="social_link_username_copied_to_clipboard">{{$1}} username copied to clipboard: {{1}}{{$2}}{{/1}}</string>
+   <!-- Social media links -->
+
+
+  <!-- Loading -->
+  <!-- Loading -->
+
+  <!-- OOTD -->
+  <string name="ootd_prompt">Today’s OOTD challenge is:\n\n{{$1}}\n\nUse our curated list of items to put together a stylish outfit. (Sorry, you can’t take the items with you!)</string>
+  <string name="finish">Finish</string>
+  <string name="ootd_post_text">Check out the outfit I created! #{{$1}}</string>
+  <!-- OOTD -->
+
+  <!-- Subscriptions -->
+  <string name="subscriptions">Subscriptions</string>
+  <string name="subscriptions_choose_amount_of_gold">Choose the amount of Gold you want to receive today and every time your subscription is renewed.</string>
+  <string name="subscriptions_terms">Features can change at any time. By tapping “Subscribe” you acknowledge that you agree to our {{1}}Terms of Use{{/1}} and {{2}}Privacy Policy{{/2}}. You consent to the immediate performance of the contract and acknowledge that you thereby lose your right of withdrawal. Subscription will auto renew until cancelled. Cancel anytime through your app store. No partial refunds.</string>
+  <string name="subscribe">Subscribe</string>
+  <string name="price_per_month">{{1}}{{$1}}{{/1}} / mth</string>
+  <string name="manage_plan">Manage Plan</string>
+  <string name="change_plan">Change Plan</string>
+  <string name="buy_additional_plan">Buy Additional Plan</string>
+  <string name="current_plan">Current Plan</string>
+  <string name="current_plans">Current Plan(s)</string>
+  <string name="next_billing_date">Next billing date: {{$1}}</string>
+  <string name="amount_of_gold_subscription">{{$1}}G Subscription</string>
+  <string name="app_icon">App Icon</string>
+  <string name="app_icon_description">Choose your app icon appearance.</string>
+  <string name="highrise_plus">Highrise+</string>
+  <string name="hr_plus">HR+</string>
+  <string name="subscription_ending">Your {{$1}} subscription is ending {{$2}}.</string>
+  <string name="hr_plus_badge">Highrise+ Badge</string>
+  <string name="hr_plus_description">If enabled, an HR+ badge will be shown on your profile.</string>
+  <string name="show_hr_plus_badge">Show Highrise+ Badge</string>
+  <string name="saved_looks">Saved Looks</string>
+  <string name="monthly_gold_and_exclusive_style">Monthly Gold and exclusive style.</string>
+  <string name="see_plans">See Plans</string>
+  <string name="manage_subscription">Manage Subscription</string>
+  <string name="highrise_plus_benefits">Highrise+ benefits</string>
+  <string name="manage_features">Manage Features</string>
+  <string name="subscription_gold_per_month">{{$1}}G/mth</string>
+  <string name="keep_current_plan">Keep Current Plan</string>
+  <string name="subscription">Subscription</string>
+  <string name="you_are_now_subscribed_to">You are now subscribed to {{$1}}</string>
+  <string name="your_new_plan_will_apply_starting">Your new plan will apply starting {{$1}}</string>
+  <string name="upgrade_plan_description">You will receive {{1}}{{$1}} Gold {{/1}} today to adjust for the refund of your current plan. You will receive the full amount when your plan renews.</string>
+  <string name="downgrade_plan_description">After you press &quot;Change Plan&quot; you will need to check your platform’s app store to see &amp; manage the scheduled plan change.</string>
+  <string name="for_more_details_see_our_faq">For more details, see our FAQ.</string>
+  <string name="cant_manage_subscription_error_mobile">Unfortunately you cannot manage this subscription because it’s associated with another app store account.</string>
+  <string name="cant_manage_subscription_error_web">Unfortunately you cannot manage your subscription through the mobile app. Please log into https://highrise.game/ and manage your subscription.</string>
+  <string name="cant_manage_subscription_error_hr">You currently have a free subscription. This subscription is handled directly by the Highrise team. To manage this subscription, please contact Highrise Support.\n\nPurchasing another subscription through an app store will grant you additional Gold each month on top of your free subscription.</string>
+  <string name="cant_manage_subscription_error_hr_and_paid">Your free Highrise+ Subscription is handled directly by the Highrise team. To manage this subscription, please contact Highrise Support. You can manage your paid subscription directly.</string>
+  <string name="cant_manage_subscription_error_hr_and_paid_different_account">Your free Highrise+ Subscription is handled directly by the Highrise team. To manage this subscription, please contact Highrise Support.\n\nYou cannot manage your paid subscription because it’s associated with another app store account.</string>
+  <string name="no_active_subscription">No active subscription</string>
+  <string name="highrise_plus_name_amount">Highrise+ {{$1}}G</string>
+  <string name="highrise_plus_gold_pack">Highrise+ Gold Pack</string>
+  <string name="subscription_store_banner_tagline">Monthly Gold\nand Exclusive Style.</string>
+  <string name="subscription_store_banner_features">More avatar colors • Discount on Gold packs •  Support Creators • Beta Feature Access</string>
+  <string name="active_subscription_store_banner_tagline">Enjoy your Monthly Gold\nand Exclusive Style.</string>
+  <string name="hr_plus_members_get_more_gold">{{$1}} members get 5% more Gold from packs</string>
+  <string name="hr_plus_bonus_gold">HR+ Bonus Gold</string>
+  <string name="ios_subscription_already_linked_to_another_account">There’s already a subscription linked to your app store account, but it’s associated with another Highrise account. You cannot tie an app store account to multiple Highrise+ subscriptions.</string>
+  <string name="android_subscription_already_linked_to_another_account">There’s already a subscription linked to your Google Play account, but it’s associated with another Highrise account. You cannot tie an app store account to multiple Highrise+ subscriptions.</string>
+  <string name="multiple_subscriptions_disclaimer">You cannot tie an app store account to multiple Highrise+ subscriptions. If you want to subscribe on another Highrise account you will need to use another platform account for payment.</string>
+  <string name="ios_account_is_already_subscribed">App store Account is Already Subscribed</string>
+  <string name="android_account_is_already_subscribed">Google Play Account is Already Subscribed</string>
+  <!-- Subscriptions -->
+
+  <!-- Source Attribution -->
+  <!-- Source Attribution -->
+
+
+  <!-- Inbox -->
+  <string name="enter_room">Enter Room</string>
+  <string name="content_is_no_longer_available">Content is no longer available</string>
+  <string name="content_might_have_been_removed">The content might have been removed or deleted.</string>
+  <string name="deleted_a_message">deleted a message.</string>
+  <string name="editing_message">Editing Message</string>
+  <string name="message_edited">{{$1}} {{1}}(edited){{/1}}</string>
+  <string name="you_deleted_a_message">You deleted a message</string>
+  <string name="user_deleted_a_message">{{$1}} deleted a message</string>
+  <string name="open_conversation_to_start_chatting">Open a conversation to start chatting!</string>
+  <!-- Inbox -->
+
+  <!-- Gift Pack descriptions -->
+  <string name="gift_pack_description_diamond">When a member of a Crew buys Gold, other members in the crew receive a Crew Gift as a bonus. The Crew Gift may include items like Gold, Bubbles, or Grab Tokens!</string>
+  <string name="gift_pack_description_other">When a member of a Crew buys Gold, other members in the crew receive a Crew Gift as a bonus. The Crew Gift may include items like Gold or Bubbles!</string>
+  <!-- Gift Pack descriptions -->
+
+  <!-- Voice Calls -->
+  <string name="join_call">Join Call</string>
+  <string name="started_a_call">started a call.</string>
+  <string name="started_a_call_group">{{$1}}: started a call.</string>
+  <string name="call_ended">Call Ended</string>
+  <string name="ongoing_call">Ongoing Call</string>
+  <string name="user_is_here">{{$1}} is here</string>
+  <string name="users_are_here">{{$1}} are here</string>
+  <string name="invite_and_go">Invite &amp; Go</string>
+  <string name="go_alone">Go Alone</string>
+  <string name="going_to_room">Going to {{$1}}</string>
+  <string name="do_you_want_to_invite_to_go_with_you">Do you want to invite {{1}}{{$1}}{{/1}} to go with you?</string>
+  <string name="keep_calls_fun">Keep Calls fun!</string>
+  <string name="ts_calls_description">Avoid inappropriate behavior while using the Voice feature. You may lose the ability to use this feature if you violate our Community Guidelines. We don’t allow:</string>
+  <string name="call">Call</string>
+  <string name="invite_to_new_group">Invite to New Group with {{$1}}</string>
+  <string name="invite_to_group">Invite to Group</string>
+  <string name="group_members">Group Members</string>
+  <string name="crew_members_title">Crew Members</string>
+  <string name="calling">Calling...</string>
+  <string name="sound_settings">Sound Settings</string>
+  <string name="leave_call">Leave Call</string>
+  <string name="report_call">Report Call</string>
+  <string name="create_new_group">Create New Group</string>
+  <string name="invite_others">Others</string>
+  <string name="you_are_in_a_call">You're Already in a Call</string>
+  <string name="your_current_call_will_end">To join this Call, your current Call will end.</string>
+  <string name="leave_current_call">Leave Current Call</string>
+  <string name="move_current_call_to_group">Move this Call to a new Group? Your current Call will end.</string>
+  <string name="call_disconnected">Call Disconnected</string>
+  <string name="current_call_was_ended">You current Call was ended.</string>
+  <string name="you_are_in_voice">You're in Voice</string>
+  <string name="to_join_call_leave_voice">To join this Call, you’ll need to leave Voice.</string>
+  <string name="leave_voice">Leave Voice</string>
+  <string name="you_are_in_call">You're in a Call</string>
+  <string name="to_join_voice_leave_call">To join Voice, you’ll need to leave your current Call.</string>
+  <!-- Voice Calls -->
+
+  <!-- Contacts Syncing -->
+  <string name="contacts_sync_title">Sync phone contacts to\nfind friends</string>
+  <string name="contacts_sync_enable_desc">Sync your phone contacts to find out which of your friends are already here.</string>
+  <string name="contacts_sync_disable_desc">Turning off this setting will stop your contacts from being synced and your account will no longer be suggested to people in your contacts.\n\nTo stop seeing suggestions from already synced contacts, you'll need to remove previously synced contacts.</string>
+  <string name="enable_contacts_syncing">Enable Contacts Syncing</string>
+  <string name="disable_contacts_syncing">Disable Contacts Syncing</string>
+  <string name="disable_contacts_syncing_desc">We won’t delete any existing friend recommendations, but no new contacts will be synced with our system when you Disable Syncing.</string>
+  <string name="remove_synced_contacts">Remove Previously Synced Contacts</string>
+  <string name="remove_contacts">Remove Contacts</string>
+  <string name="remove_synced_contacts_desc">We won’t delete any existing friend This will turn off syncing and remove previously synced data on all devices. This action may take a while to complete.</string>
+  <string name="contacts_find_me_title">Let friends find me</string>
+  <string name="contacts_find_me_enable_desc">To enable this, you’ll need to first sync your contacts.</string>
+  <string name="contacts_find_me_disable_desc">When you disable this setting, users who have your phone number in their contacts can no longer find your profile.</string>
+  <string name="you_can_turn_this_off">You can turn this off at any time in Settings.</string>
+  <string name="dont_let_friends_find_me">Don’t Let Friends Find Me</string>
+  <string name="join_me_on_highrise">Join me (@{{$1}}) on Highrise! Chat with people in rooms, play immersive games, and express your digital self! See you there! {{$2}}</string>
+  <string name="phone_contacts_synced">Phone contacts synced.</string>
+  <string name="disabled_contacts_syncing">Disabled contacts syncing.</string>
+  <string name="removed_synced_contacts">Removed previously synced contacts.</string>
+  <string name="phone_contacts_can_find_you">Phone contacts can now find you.</string>
+  <string name="phone_contacts_can_not_find_you">Phone contacts can no longer find you.</string>
+  <string name="find_friends_on_highrise">Find Friends on Highrise</string>
+  <string name="find_friends">Find Friends</string>
+  <string name="skip">Skip</string>
+  <string name="add_contacts_later">Add contacts later</string>
+  <string name="already_here">Already here</string>
+  <string name="add_your_contacts">Add Your Contacts</string>
+  <string name="users_on_highrise">Users on Highrise</string>
+  <string name="contact_name">Contact: {{$1}}</string>
+  <string name="followed_by">Followed by {{$1}}</string>
+  <string name="followed_by_two">Followed by {{$1}} and {{$2}}</string>
+  <string name="followed_by_plus_more">Followed by {{$1}} + {{$2}} more</string>
+  <string name="friends_with">Friends with {{$1}}</string>
+  <string name="friends_with_two">Friends with {{$1}} and {{$2}}</string>
+  <string name="friends_with_plus_more">Friends with {{$1}} + {{$2}} more</string>
+  <string name="see_who_is_already_there">See who’s already here</string>
+  <string name="enable_permissions">Enable Permissions</string>
+  <string name="highrise_has_no_access_to_contacts">Highrise does not have access your Contacts. You have to enable Contacts access in your device’s Settings.</string>
+  <string name="not_now">Not Now</string>
+  <string name="contacts">Contacts</string>
+  <!-- Contacts Syncing -->
+
+  <!-- Pinning messages -->
+  <string name="pinned_message">Pinned Message</string>
+  <string name="pinned_by">Pinned by {{$1}}</string>
+  <string name="pin_message">Pin Message</string>
+  <string name="unpin_message">Unpin Message</string>
+  <string name="pinned_a_message">pinned a message.</string>
+  <!-- Pinning messages -->
+
+  <!-- Reactions -->
+  <string name="search_emojis">Search emojis</string>
+  <string name="frequently_used">Frequently Used</string>
+  <string name="smileys_and_people">Smileys &amp; People</string>
+  <string name="animals_and_nature">Animals &amp; Nature</string>
+  <string name="food_and_drink">Food &amp; Drink</string>
+  <string name="activities">Activities</string>
+  <string name="travel_and_places">Travel &amp; Places</string>
+  <string name="objects">Objects</string>
+  <string name="symbols">Symbols</string>
+  <string name="flags">Flags</string>
+  <string name="you_sent_user_a">You sent {{$1}} a {{$2}}</string>
+  <string name="user_sent_you_a">{{$1}} sent you a {{$2}}</string>
+  <string name="you_sent_a_in">you sent a {{$1}} in {{$2}}</string>
+  <string name="sent_you_a_in">sent you a {{$1}} in {{$2}}</string>
+  <!-- Reactions -->
+
+  <!-- Replying to messages -->
+  <string name="reply">Reply</string>
+  <string name="replying_to_user">Replying to {{1}}{{$1}}{{/1}}</string>
+  <string name="sent_a_tip">sent a tip.</string>
+  <string name="shared_their_location">shared their location.</string>
+  <string name="shared_an_attachment">shared an attachment.</string>
+  <!-- Replying to messages -->
+
+  <!-- Ratings & Reviews -->
+  <string name="ratings_and_reviews">Ratings &amp; Reviews</string>
+  <string name="leave_a_review">Leave a Review</string>
+  <string name="edit_review">Edit Review</string>
+  <string name="world_review_placeholder">Say something about this World</string>
+  <string name="optional_suffix">{{$1}} (Optional)</string>
+  <string name="post_to_feed">Post to Feed</string>
+  <string name="liked">Liked</string>
+  <string name="disliked">Disliked</string>
+  <string name="playtime">· {{$1}} playtime</string>
+  <string name="report_review">Report Review</string>
+  <string name="delete_review">Delete Review</string>
+  <string name="review_posted">Your Review has been posted.</string>
+  <string name="review_updated">Your Review has been updated.</string>
+  <string name="review_deleted">Your Review has been deleted.</string>
+  <string name="delete_this_review">Are you sure you want to delete this review?</string>
+  <string name="cant_rate_world">Can’t Rate World</string>
+  <string name="you_must_visit_world">You must spend 5 minutes in a World before you can rate it.</string>
+  <string name="visit_world">Visit World</string>
+  <string name="nevermind">Nevermind</string>
+  <string name="how_was_your_experience">How was your experience?</string>
+  <!-- Ratings & Reviews -->
+
+  <!-- World Posts -->
+  <string name="empty_world_posts">Posts you create will appear here.</string>
+  <string name="create_post">Create Post</string>
+  <string name="posted_by">Posted by {{$1}}</string>
+  <string name="posted_by_time_ago">Posted by {{$1}} &#183; {{$2}}</string>
+  <string name="following_world">Following World.</string>
+  <string name="user_published_new_world">{{$1}} published a new World: {{$2}}</string>
+  <string name="world_updated_to_new_version">{{$1}} updated to a new version</string>
+  <string name="world_made_a_new_feed_post">{{$1}} made a new Feed post</string>
+  <string name="user_wrote_a_comment_on_your_world">{{$1}} wrote a comment on your World</string>
+  <string name="like_status_and_playtime">{{$1}} · {{$2}} playtime</string>
+  <!-- World Posts -->
+
+  <!-- Media messages -->
+  <string name="media">Media</string>
+  <string name="tap_to_see_attachment">Tap to see attachment</string>
+  <string name="failed_to_send">Failed To Send</string>
+  <string name="your_message_failed_to_upload">Sorry, looks like your message failed to upload. Would you like to try again?</string>
+  <string name="failed_to_send_media">Failed to send. Tap for options.</string>
+  <string name="image_and_video_disabled">Image and Video Disabled</string>
+  <string name="to_keep_safe_minors_cannot_use_media">To keep Highrise safe, users under 18 years old are not allowed to send or view images and video. For more info, see our {{1}}Community Guidelines{{/1}}.</string>
+  <string name="the_content_of_that_message_hidden">The content of this message has been hidden.\n\nTap for more info.</string>
+  <string name="media_saved">Media saved to gallery.</string>
+  <string name="media_save_error">Failed to save media: {{$1}}.</string>
+  <string name="media_saving_not_supported">Saving media to gallery is not supported on this platform.</string>
+  <!-- Media messages -->
+
+  <!-- Daily Rewards -->
+  <string name="daily_rewards">Daily Rewards</string>
+  <string name="lucky_wheel_description">Log in every day and claim your rewards!</string>
+  <string name="get_free_daily_gift">Get FREE Daily Gift</string>
+  <string name="get_daily_gift">Get Daily Gift</string>
+  <!-- Daily Rewards -->
+
+  <!-- Directory V2 -->
+  <string name="friends_here">Friends Here</string>
+  <string name="amount_of_people_in_room">{{1}}{{$1}}{{/1}} / {{2}}{{$2}}{{/2}}</string>
+  <string name="home_room_updated">Home room updated</string>
+  <!-- Directory V2 -->
+
+  <!-- Account Deletion -->
+  <string name="delete_your_account">Delete Your Account</string>
+  <string name="account_deletion_is_permanent">Account deletion is permanent after 30 days. You will need to enter your credentials to begin the process.</string>
+  <string name="enter_credentials_to_begin">Enter Credentials to Begin</string>
+  <string name="deleting_cannot_be_undone">Deleting your account cannot be undone. You'll have {{1}}24 hours{{/1}} to cancel the deletion process from this screen in the app. After that, your account will be disabled and all data will be permanently deleted after 30 days.\n\nSubscriptions are not affected by this process. Please use the platform connected to your subscription to cancel it.</string>
+  <string name="begin_account_deletion">Begin Account Deletion</string>
+  <string name="stop_account_deletion">Stop Account Deletion</string>
+  <string name="deletion_has_begun">Account deletion has begun, account will disable in {{1}}{{$1}}{{/1}}.</string>
+  <string name="account_deactivated">Account Deactivated</string>
+  <string name="your_account_has_been_deactivated">Your account has been deactivated and you will now be logged out.\n\n{{1}}Contact our support team{{/1}} within 30 days to reactivate your account, afterwards it will be {{2}}permanently deleted{{/2}}.</string>
+  <string name="login_credentials">Login Credentials</string>
+  <!-- Account Deletion -->
+
+  <!-- Push Notifications -->
+  <string name="turn_on_notifications_to_receive_updates">Turn on notifications from your device settings to receive updates from outside of Highrise.</string>
+  <string name="go_to_device_settings">Go to device settings</string>
+  <string name="push_notifications">Push Notifications</string>
+  <string name="in_app_notifications">In-app Notifications</string>
+  <string name="profiles_i_follow">Profiles I Follow</string>
+  <!-- Push Notifications -->
+
+  <!-- Directory -->
+  <string name="by_user">by {{1}}{{$1}}{{/1}}</string>
+  <string name="room_in_world">Room in {{1}}{{$1}}{{/1}}</string>
+  <string name="host">Host</string>
+  <string name="edit_room_info">Edit Room Info</string>
+  <string name="create_paid_owned_room_hint">Create your own room in this World. This is a subscription-based feature. This room will auto-renew monthly until canceled.</string>
+  <string name="title">Title</string>
+  <string name="no_one">No one</string>
+  <string name="view_world_info">View World Info</string>
+  <string name="add_user">Add user</string>
+  <string name="remove_designer">Remove Designer</string>
+  <string name="make_designer">Make Designer</string>
+  <string name="make_moderator">Make Moderator</string>
+  <string name="remove_moderator">Remove Moderator</string>
+  <string name="share_room">Share Room</string>
+  <string name="create_room">Create Room</string>
+  <string name="cancel_subscription">Cancel Subscription</string>
+  <string name="room_subscription_renewed">Room Subscription Renewed</string>
+  <string name="room_subscription_for_room_successfully_renewed">Your subscription for the room '{{1}}{{$1}}{{/1}}' in {{2}}{{$2}}{{/2}} has been successfully renewed.</string>
+  <string name="manage_room_subscriptions">Manage Room Subscriptions</string>
+  <string name="view_room_info">View Room Info</string>
+  <string name="room_subscription_ended">Room Subscription Ended</string>
+  <string name="renew">Renew</string>
+  <string name="renew_room_subscription_question">Renew Room Subscription?</string>
+  <string name="room_subscription_changes">Room Subscription Changes</string>
+  <string name="your_subscription_for_room_in_world_will_end_due_to_disabled_room_creation">Your subscription for the room '{{1}}{{$1}}{{/1}}' in {{2}}{{$2}}{{/2}} will end on {{3}}{{$3}}{{/3}} as the World Creator has disabled room creation.</string>
+  <string name="your_subscription_for_room_in_world_will_end_due_to_price_change">Your subscription for the room '{{1}}{{$1}}{{/1}}' in {{2}}{{$2}}{{/2}} will end on {{3}}{{$3}}{{/3}} due to a room subscription price change made by the World Creator.</string>
+  <string name="room_subscriptions">Room Subscriptions</string>
+  <string name="if_you_cancel_subscription_you_will_have_access_until">If you cancel your subscription, you will still have access to this room until {{1}}{{$1}}{{/1}}.</string>
+  <string name="room_subscription_renewed_activity">Your {{1}}room{{/1}} subscription in {{2}}{{$1}}{{/2}} has been renewed</string>
+  <string name="room_subscription_insufficient_funds_activity">Your {{1}}room{{/1}} subscription in {{2}}{{$1}}{{/2}} ended due to insufficient funds.</string>
+  <string name="room_subscription_disabled_activity">Your {{1}}room{{/1}} subscription in {{2}}{{$1}}{{/2}} will end in {{3}}{{$2}}{{/3}} as the World Creator has disabled room creation</string>
+  <string name="room_subscription_changed_activity">Your {{1}}room{{/1}} subscription in {{2}}{{$1}}{{/2}} will end in {{3}}{{$2}}{{/3}} due to a change in room subscription pricing made by the World Creator</string>
+  <string name="room_subscription_get_gold">Your subscription for the room {{1}}{{$1}}{{/1}} in {{2}}{{$2}}{{/2}} has ended due to insufficient funds. Do you want to get more Gold?</string>
+  <string name="room_subscription_renew_description">Your subscription for the room {{1}}{{$1}}{{/1}} in {{2}}{{$2}}{{/2}} has ended due to insufficient funds. Would you like to renew it?</string>
+  <string name="room_info">Room Info</string>
+  <string name="world_info">World Info</string>
+  <string name="cancelled_room_subscription">Cancelled room subscription</string>
+  <string name="renew_subscription">Renew subscription</string>
+  <string name="renewed_room_subscription">Renewed room subscription</string>
+  <string name="are_you_sure_renew_subscription">Are you sure you want to enable future payments for your room subscription? This Room will start renewing every month at {{$1}}G until you cancel.</string>
+  <string name="are_you_sure_delete_room">Are you sure you want to delete your room? This room will be removed once it’s empty. This action cannot be undone.</string>
+  <string name="are_you_sure_delete_and_cancel_room">Are you sure you want to delete your room? This room will be removed once it’s empty, and your subscription will be canceled. This action cannot be undone.</string>
+  <string name="room_subscription_cancelled_room_deleted">Room Subscription Cancelled and Room Deleted.</string>
+  <string name="no_active_rooms_available">There are no other active rooms available.</string>
+  <string name="create_your_own_room">Create Your Own Room</string>
+  <string name="create_your_own_room_description">Creating your own room allows you to:</string>
+  <string name="host_your_experiences">Host Your Own Experiences</string>
+  <string name="host_exclusive_gatherings">Create and host exclusive gatherings</string>
+  <string name="customize_settings">Customise Settings</string>
+  <string name="customize_settings_to_suit">Customise room settings to suit your preferences</string>
+  <string name="manage_your_room">Manage Your Own Room</string>
+  <string name="control_and_manage_your_room">Control and manage your room</string>
+  <string name="create_room_disclaimer">This is a subscription-based feature that auto-renews each month. You can cancel the subscription at any time in Settings (Room Subscriptions).</string>
+  <string name="get_started">Get Started</string>
+  <string name="renews_on">Renews on {{$1}}</string>
+  <string name="moderation">Moderation</string>
+  <string name="moderators">Moderators</string>
+  <string name="mute_from_chat">Mute from Chat</string>
+  <string name="users_that_have_been_banned_from_your_room">Users that have been banned from your room.</string>
+
+  <string name="user_has_been_banned_from_the_room_forever">{{1}}{{$1}}{{/1}} has been banned from the room forever.</string>
+  <string name="user_has_been_unbanned_from_the_room">{{1}}{{$1}}{{/1}} has been unbanned from the room.</string>
+  <string name="user_has_been_banned_from_the_room_for_time">{{1}}{{$1}}{{/1}} has been banned from the room for {{$2}}.</string>
+  <string name="user_has_been_muted_from_chat_for_time">{{1}}{{$1}}{{/1}} has been muted from the room for {{$2}}.</string>
+  <string name="user_has_been_kicked_from_the_room">{{1}}{{$1}}{{/1}} has been kicked from the room.</string>
+  <string name="moderator_added">Moderator added.</string>
+  <string name="moderator_removed">Moderator removed.</string>
+  <string name="add_your_name_so_friends_can_find_you">Add your name so friends can find you</string>
+  <!-- Directory -->
+
+  <!-- Directory V3 -->
+  <string name="discover">Discover</string>
+  <string name="my_creations">My Creations</string>
+  <!-- Directory V3 -->
+
+  <!-- Age Verification -->
+  <string name="age_verification_required">Age Verification Required</string>
+  <string name="your_account_locked_to_confirm_age">Your account has been locked because we need to confirm your date of birth.\n\nFor the safety of our community, it’s important that your age is verified before you continue playing Highrise.</string>
+  <string name="verify_my_age">Verify My Age</string>
+  <string name="valid_age">Valid Age</string>
+  <string name="thank_you_for_verifying_age">Thanks for verifying! We automatically updated the date of birth on your account to match your ID.\n\nYour account has been unlocked.</string>
+  <string name="verification_underage_title">Underage</string>
+  <string name="verification_underage_description">On Highrise, we’re committed to keeping our community safe for everyone.\n\nYour account has been suspended for not meeting our age requirement. All Highrise users must be 13 years or older.</string>
+  <string name="verification_error">Verification Error</string>
+  <string name="there_was_an_error_verifying_age">There was an error when verifying your age, please try again.</string>
+  <string name="please_verify_age_to_use_all_features">Please verify your age to continue using all features of Highrise. You can still explore the app, but some functions will be temporarily unavailable until your age is confirmed.\n\nFor the safety of our community, it’s important that your age is verified before you continue playing Highrise.</string>
+  <string name="your_account_has_been_restricted">Your account has been restricted. Verify your age to unlock all features.</string>
+  <string name="verify_age">Verify Age</string>
+  <string name="age_verification">Age Verification</string>
+  <string name="age_verified_18_plus">Age Verified 18+</string>
+  <string name="adult_verified_only">18+ Verified Only</string>
+  <string name="verification_attempt_expired">Verification Attempt Expired</string>
+  <string name="your_verification_attempt_has_expired">Your verification attempt has expired. Contact support to try again.</string>
+  <!-- Age Verification -->
+
+  <!-- Display names -->
+  <string name="role_dot_name">{{$1}} \u2e31 {{$2}}</string>
+  <string name="contains_words_that_are_not_allowed">Contains words that are not allowed.</string>
+  <string name="contains_characters_that_are_not_allowed">Contains characters that are not allowed.</string>
+  <string name="whats_your_name">What’s your name?</string>
+  <string name="choose_a_name_to_continue">Choose a name to continue.</string>
+  <string name="share_profile">Share Profile</string>
+  <string name="profile_link_copied">Profile link copied</string>
+  <string name="room_link_copied">Room link copied</string>
+  <string name="world_link_copied">World link copied</string>
+  <string name="post_link_copied">Post link copied</string>
+  <!-- Display names -->
+
+  <!-- Seamless Registration -->
+  <string name="secure_your_account">Secure your account!</string>
+  <string name="register_to_edit_profile">Register to edit your profile</string>
+  <string name="register_to_save_your_avatar">Register your account to save your avatar and login later.</string>
+  <string name="your_email_can_be_used_to_recover">Your email can be used to recover your account in case you forget your password.</string>
+  <string name="you_will_be_able_to_change_it">You will be able to change it again later.</string>
+  <string name="registration_required">Registration Required</string>
+  <string name="complete_registration_to_use_feature">You need to complete registration in order to use this feature.</string>
+  <string name="complete_registration">Complete registration</string>
+  <string name="by_signing_up_you_accept">By signing up you accept the {{1}}Terms of Service{{/1}} and {{2}}Privacy Policy{{/2}}.</string>
+  <!-- Seamless Registration -->
+
+  <!-- Phone Number Registration -->
+  <string name="phone_number">Phone Number</string>
+  <string name="you_can_use_your_phone_number">You can use your phone number for future login. Others cannot see your phone number publicly. {{1}}Learn More{{/1}}</string>
+  <string name="we_dont_support_numbers_outside_us">We do not support phone numbers outside of the US.</string>
+  <string name="country_codes">Country Codes</string>
+  <string name="invalid_phone_number">Invalid phone number</string>
+  <string name="verify_your_number">Verify your number</string>
+  <string name="enter_the_six_digit_code">Enter the 6-digit code we sent to {{$1}}</string>
+  <string name="resend_code">Resend code</string>
+  <string name="resend_code_in">Resend code in {{$1}}</string>
+  <string name="incorrect_code">Incorrect code</string>
+  <string name="phone_number_connected">Phone Number connected.</string>
+  <string name="code_sent">Code sent.</string>
+  <string name="error_sending_code">Error sending code. Please try again.</string>
+  <string name="we_need_phone_number_for_contacts">We need your phone number to verify your contacts.\n\nYou can also login to Highrise with your phone number for extra convenience and maximum account security! 📱✨</string>
+  <string name="connect_service">Connect {{$1}}</string>
+  <string name="other_cannot_see_phone_number">Others cannot see your phone number publicly!</string>
+  <string name="use_phone_number">Use Phone Number</string>
+  <string name="phone_already_in_use">Phone number already in use</string>
+  <string name="this_number_is_already_linked">This number is already linked to another account.\n\nTo unlink it, please login to that account to set up another social login or a password. This helps to prevent you from losing access to your other account.</string>
+  <string name="login_to_existing_account">Login to existing account</string>
+  <string name="your_contact_is_on_highrise">Your contact {{$1}} is on Highrise, say hi!</string>
+  <string name="contacts_on_highrise">Contacts on Highrise</string>
+  <string name="your_contact_joined_highrise">Your contact {{$1}} joined Highrise as {{$2}}</string>
+  <string name="cant_find_account">Can\'t Find Account</string>
+  <string name="this_number_has_not_been_registered">This number has not been registered yet</string>
+  <string name="you_have_entered_invalid_code">You\'ve entered an invalid 6-digit code. Tap on \'Resend Code\' to get a new one.</string>
+  <string name="next_resend_code_in">You need to wait for {{$1}} to request a new code</string>
+  <!-- Phone Number Registration -->
+
+  <!-- Experience Link v2 -->
+  <string name="inviter_not_in_room">Inviter Not in Room</string>
+  <string name="inviter_not_in_room_desc">The inviter is not in the Room. Would you still like to join {{$1}}?</string>
+  <string name="inviter_shared_this_room_with_you">{{$1}} shared this Room with you</string>
+  <string name="follow_them_to_keep_in_touch">Follow them to keep in touch?</string>
+  <string name="later">Later</string>
+  <!-- Experience Link v2 -->
+
+
+  <string name="your_balance_after_this_transaction_will_be">Your balance after this transaction will be {{$1}}</string>
+  <string name="item_link_copied">Item link copied.</string>
+  <string name="share_item">Share Item</string>
+  <string name="pinned_emote">Pinned Emote</string>
+  <string name="unpinned_emote">Unpinned Emote</string>
+  <string name="your_friend_joined_the_room">Your friend {{$1}} joined the room</string>
+  <string name="visit_profile">Visit Profile</string>
+  <string name="report_chat">Report Chat</string>
+
+  <!-- Room leaving -->
+  <string name="exit_room">Exit Room?</string>
+  <string name="you_want_to_leave_room">Are you sure you want to leave the current Room?</string>
+  <!-- Room leaving -->
+
+  <!-- ATTracking Prompt -->
+  <string name="find_your_people">Find your people, vibe together</string>
+  <string name="we_use_your_activity_description">We use your activity to better {{1}}understand your interests and preferences{{/1}}.</string>
+  <string name="by_seeing_what_you_like_description">By seeing what you like, we can show you more relevant {{1}}content, ads, and recommendations that fit your style{{/1}}.</string>
+  <string name="this_also_helps_description">This also helps us improve the experience for others with similar tastes, making Highrise {{1}}more personalized and enjoyable for everyone{{/1}}.</string>
+  <string name="learn_how_we_use_your_data">{{1}}Learn more about how we use your data{{/1}}.</string>
+  <!-- ATTracking Prompt -->
+
+  <!-- Shoppable Closet -->
+  <string name="cart">Cart</string>
+  <string name="not_available_header">Not Available</string>
+  <string name="price_dropped">Price dropped!</string>
+  <string name="price_increased">Price increased</string>
+  <string name="no_listings_available">No listings available</string>
+  <string name="in_a_grab">In a Grab</string>
+  <string name="price_and_availability_changed">Item prices and availability may have changed. Review your cart before you purchase.</string>
+  <string name="total">Total</string>
+  <string name="are_you_sure_you_want_to_buy_these_items">Are you sure you want to buy these items for the price shown below?</string>
+  <string name="are_you_sure_to_clear_cart_and_buy_items">Are you sure you want to buy these items for the price shown below?\n\n{{1}}{{$1}} unavailable item(s) in your cart will be removed once your purchase is completed.{{/1}}</string>
+  <string name="buy_for">Buy for</string>
+  <string name="wear_new_items">Wear New Items</string>
+  <string name="do_you_want_to_wear_new_items">Do you want to wear your new items?</string>
+  <string name="some_prices_updated_or_items_unavailable">Some prices have been updated or items are no longer available. You have not been charged.</string>
+  <string name="clear">Clear</string>
+  <string name="items_in_cart">Items In Cart</string>
+  <string name="you_have_items_in_cart">You have items in your Cart. Leaving will empty your Cart. Are you sure you want to leave?</string>
+  <string name="leave_and_empty_cart">Leave &amp; Empty Cart</string>
+  <string name="leave_and_move_items_to_wishlist">Leave &amp; Move Items to Wishlist</string>
+  <string name="customize_your_avatar">Customize Your Avatar</string>
+  <string name="closet_category_looks">Looks</string>
+  <string name="closet_category_pets">Pets</string>
+  <string name="closet_category_nft">NFT</string>
+  <string name="closet_category_all">All</string>
+  <string name="closet_category_tops">Tops</string>
+  <string name="closet_category_bottoms">Bottoms</string>
+  <string name="closet_category_onepiece">Full Body</string>
+  <string name="closet_category_auras">Auras</string>
+  <string name="closet_category_accessories">Accessories</string>
+  <string name="closet_category_shoes">Shoes</string>
+  <string name="closet_category_skin">Skin</string>
+  <string name="closet_category_hairfront">Hair</string>
+  <string name="closet_category_hairback">Back Hair</string>
+  <string name="closet_category_eyes">Eyes</string>
+  <string name="closet_category_brows">Brows</string>
+  <string name="closet_category_nose">Nose</string>
+  <string name="closet_category_mouth">Mouth</string>
+  <string name="closet_category_freckles">Makeup</string>
+  <string name="closet_category_facialhair">Facial Hair</string>
+  <string name="reset_to_recent_look">Reset to Recent Look</string>
+  <string name="unequip_all_items">Unequip All Items</string>
+  <string name="try_these_items_in_closet">Try these items in the Closet</string>
+  <string name="wear_available_only">Wear Available Items Only</string>
+  <string name="wear_full_look">Wear Full Look (with missing items)</string>
+  <!-- Shoppable Closet -->
+
+  <!-- Drop shop -->
+  <string name="in_stock">In Stock</string>
+  <string name="out_now">Out Now</string>
+  <string name="retired">Retired</string>
+  <string name="notify_me">Notify Me</string>
+  <string name="drop_notification_confirmation">You will be notified when this Drop is in stock.</string>
+  <string name="drop_notification_removed_confirmation">You will not receive notifications about this Drop.</string>
+  <string name="restocks_in">Restocks in {{$1}}</string>
+  <string name="releases_in">Releases in {{$1}}</string>
+  <!-- Drop shop -->
+
+  <!-- Push prompt -->
+  <string name="dont_miss_out">Don't miss out</string>
+  <string name="notification_prompt_description">Never miss a friend’s message, a hot new drop, and more. You can turn this off anytime.</string>
+  <string name="get_notified">Get Notified</string>
+  <!-- Push prompt -->
+
+  <!-- Home Screen -->
+  <string name="show_profile">Show Profile</string>
+  <string name="closet">Closet</string>
+  <!-- Home Screen -->
+
+  <string name="oops">Oops!</string>
+  <string name="looks_like_we_couldnt_find_that_post">Looks like we couldn’t find that post.</string>
+
+  <string name="you_dont_have_any_pet_items_yet">You don’t have any pet items yet!</string>
+
+  <!-- Grab spin confirmation -->
+  <string name="confirm_multiple_draws">Confirm Multiple Spins</string>
+  <string name="are_you_sure_you_want_to_draw_n_times">Are you sure you want to spin {{1}}{{$1}} times{{/1}}?</string>
+  <string name="grab_multiple_spin_dont_ask_me_again">Don’t ask me again. You can re-enable confirmation later in Settings.</string>
+  <string name="multi_draw_confirmation">Multi-spin Confirmation</string>
+  <string name="multi_draw_confirmation_description">When enabled, you will get a confirmation dialog anytime you Spin more than x1 at a time.</string>
+  <string name="enable_multi_draw_confirmation">Enable Multi-spin Confirmation</string>
+  <string name="multi_draw_confirmation_enabled">Multi-spin Confirmation Enabled</string>
+  <string name="multi_draw_confirmation_disabled">Multi-spin Confirmation Disabled</string>
+  <!-- Grab spin confirmation -->
+
+  <!-- File Saving -->
+  <string name="choose_directory">Choose Directory</string>
+  <string name="filename">File Name</string>
+  <string name="save_path">Save Path</string>
+  <string name="save_image">Save Image</string>
+  <!-- File Saving -->
+
+  <string name="crew_created">Crew created</string>
+
+
+  <string name="mention_user">Mention User</string>
+
+  <!-- Style Picker -->
+  <string name="what_is_your_style">What's your style?</string>
+  <string name="pick_your_style">Pick your style to help us bring you content that feels more like you!</string>
+  <string name="anything">Anything</string>
+  <string name="style_preference">Style Preference</string>
+  <!-- Style Picker -->
+
+  <!-- Gacha Pity Rewards -->
+  <string name="if_eligible_for_both_guarantees">If both guarantees apply, you will receive the higher rarity item.</string>
+  <string name="spins_for_guarantees_are_tracked">Unowned Legendaries are prioritized, but only through the guarantee system.\n\nSpins for guarantees are tracked {{1}}per Grab{{/1}} and {{2}}per rarity{{/2}}, and reset when you obtain an Epic or Legendary, except in the cases listed below:\n\n    \u2022 The Legendary guarantee counter does not reset if you receive a Legendary that you already own. It DOES reset if you receive a Legendary that you do not already own.\n\n    \u2022 Progress, Limited-Time, and Completion rewards are not rewarded by guarantees, nor does receiving one contribute to or reset guarantee counters.</string>
+  <string name="guaranteed_rarity">Guaranteed {{$1}}</string>
+  <string name="guaranteed_within">{{$1}} guaranteed within </string>
+  <string name="within_spins">{{$1}} Spins</string>
+  <string name="epic_spin_guarantee">{{$1}} Spin Guarantee: If you spin {{$2}} times without an epic, your {{$1}}th spin guarantees {{$3}} or higher.</string>
+  <string name="legendary_spin_guarantee">{{$1}} Spin Guarantee: If you spin {{$2}} times without a Legendary, your {{$1}}th spin guarantees {{$3}}.</string>
+
+  <!-- Missions -->
+  <string name="select_reward_you_want_to_work_towards">Select the Reward you want to work towards for the next {{$1}}</string>
+  <string name="earn_exp_to_fill_bar">Earn {{$1}} to fill the bar each day and unlock your outfit!</string>
+  <string name="select">select</string>
+  <string name="selection_cannot_be_changed">Selection cannot be changed later, previously earned rewards have been replaced.\n\nYou will have {{$1}} to complete the {{$2}} reward track.</string>
+  <string name="you_have_completed_all_missions">You’ve completed all missions for today. Come back tomorrow for more!</string>
+  <string name="remind_me">Remind Me</string>
+  <string name="try_again_question">Try Again?</string>
+  <string name="do_you_want_reminders_daily_quests">Do you want reminders when the next Daily Quest becomes available?</string>
+  <string name="outfits_progress">Outfits {{$1}}/{{$2}}</string>
+  <string name="more_coming_soon">More coming soon!</string>
+  <string name="items_from_outfit">Items from Outfit:</string>
+  <string name="reveal_my_outfits">Reveal My Outfits</string>
+  <string name="reveal_three_outfits">Reveal 3 outfits, then select ONE to earn through your daily quests.</string>
+  <string name="outfit_choices_are_final">Outfit choices are final once revealed!</string>
+  <string name="repeat">Repeat</string>
+  <!-- Missions -->
+
+  <!-- Discarding -->
+  <string name="discard_items">Discard Items?</string>
+  <string name="are_you_sure_you_want_to_discard">Are you sure you want to discard {{1}}{{$1}}{{/1}}? Once discarded, they cannot be recovered.</string>
+  <string name="discard_you_will_receive">You will receive {{1}}{{$1}}{{/1}}.</string>
+  <string name="discard_items_to_get">Discard {{$1}} to Get</string>
+  <string name="discard_items_to_get_none">Discard {{$1}}</string>
+  <string name="discard_custom_amount">Discard Custom Amount</string>
+  <string name="you_discarded_item">You discarded {{$1}}</string>
+  <string name="discard_item">Discard Item</string>
+  <string name="discard_to_get">Discard to Get</string>
+  <string name="you_cannot_save_your_outfit_items_unavailable">You cannot save your outfit because the above items are no longer available.</string>
+  <string name="you_can_discard">You can Discard: {{$1}}</string>
+  <string name="you_own_with_in_use">You own: {{$1}}, with {{$2}} currently in use</string>
+  <!-- Discarding -->
+
+  <!-- Wishlist privacy -->
+  <string name="private_wishlist">Private Wishlist</string>
+  <string name="allow_others_to_see_items_in_your_wishlist">Allow others to see items in your Wishlist.</string>
+  <!-- Wishlist privacy -->
+
+  <!-- Giftables -->
+  <string name="gift">Gift</string>
+  <string name="includes_colon">Includes:</string>
+  <string name="users_wishlist">{{$1}}'s Wishlist</string>
+  <string name="gift_an_item_from_users_wishlist">Gift an item from {{$1}}'s Wishlist!</string>
+  <string name="preview_gift">Preview Gift</string>
+  <string name="send_gift">Send Gift</string>
+  <string name="free_exclamation">FREE!</string>
+  <string name="send_a_gift_to">Send a Gift to</string>
+  <string name="gift_sent">Gift Sent</string>
+  <string name="send_gift_question_mark">Send Gift?</string>
+  <string name="purchase_failed_price_changed">The price has changed, or item is no longer available. You have not been charged.</string>
+  <string name="price_updated">Price Updated</string>
+  <string name="item_no_longer_available">Item no longer available.</string>
+  <string name="tap_on_item_to_see_it_wrapped">Tap on item to see it wrapped</string>
+  <string name="sent_a_gift_receiver">sent a Gift. Go claim it now!</string>
+  <string name="sent_a_gift_sender">sent a Gift</string>
+  <string name="sending_a_gift_to">Sending Gift to</string>
+  <string name="your_gift_is_on_the_way">Your Gift is on the way!</string>
+  <string name="chances_of_receiving_an_item">Chances of receiving an item:</string>
+  <string name="giftable_inventory">Giftable Inventory</string>
+  <string name="get_from_gift_shop">Get from Gift Shop</string>
+  <string name="no_items_found">No items found.</string>
+  <string name="giftable">Giftable</string>
+  <string name="you_can_gift_these_items_from_the_inbox">You can gift these items from the Inbox.</string>
+  <string name="this_item_can_only_be_gifted_from_inbox">This item can only be gifted from the Inbox.</string>
+  <string name="go_to_inbox">Go to Inbox</string>
+  <string name="consumable_type_containerdefault">Box</string>
+  <string name="consumable_type_containerlootbox">Blind Box</string>
+  <string name="consumable_type_containergift">Gift-only</string>
+  <string name="consumable_type_currency">Currency</string>
+  <string name="you_got_a_gift_only_item">You got a Gift-only item!</string>
+  <string name="you_got_a_gift_only_item_description">This is a {{1}}Gift-only{{/1}} item. To get the items inside, they have to be {{2}}claimed as a Gift{{/2}} sent from one user to another in the {{3}}Inbox.{{/3}}</string>
+  <string name="whats_inside_claim_the_gift">What's inside? Claim the gift to reveal your surprise!</string>
+  <string name="claim_gift">Claim Gift</string>
+  <string name="blind_box">Blind Box</string>
+  <string name="gift_only">Gift Only</string>
+  <string name="select_gift">Select Gift</string>
+  <string name="select_gifts_to_exchange">Select Gifts to Exchange</string>
+  <string name="gifted_items_cannot_be_exchanged_later">Gifted items cannot be exchanged later.</string>
+  <string name="touch_and_hold_to_exchange_items_for_currency">Touch-and-hold to exchange items for currency</string>
+  <string name="you_receive">You receive:</string>
+  <string name="select_the_items_you_want_to_exchange">Select the items you want to exchange.</string>
+  <string name="gift_exchanging">Gift Exchanging</string>
+  <string name="dont_ask_me_again_today">Don’t ask me again today.</string>
+  <!-- Giftables -->
+
+  <string name="buy_with_currency">Buy with {{$1}}</string>
+
+  <!-- Remove Follower -->
+  <string name="remove_user_question">Remove {{$1}}?</string>
+  <string name="we_wont_tell_follower_removal">We won’t tell {{1}}{{$1}}{{/1}} they were removed from your followers.</string>
+  <string name="removed_user">Removed {{1}}{{$1}}{{/1}}</string>
+  <!-- Remove Follower -->
+
+  <!-- Blocked List -->
+  <string name="connections">Connections</string>
+  <string name="blocked_users">Blocked Users</string>
+  <string name="unblock">Unblock</string>
+  <string name="blocked_users_empty">You haven't blocked anyone yet!</string>
+  <!-- Blocked List -->
+
+  <string name="favorite_room">Favorite Room</string>
+  <string name="unfavorite_room">Unfavorite Room</string>
+  <string name="added_to_your_favorites">Added to your Favorites</string>
+  <string name="removed_from_your_favorites">Removed from your Favorites</string>
+
+  <!-- Navigation Rework -->
+  <string name="select_conversations">Select Conversations</string>
+  <string name="get_highrise_plus">Get Highrise+</string>
+  <string name="creator_center">Creator Center</string>
+  <string name="daily_quests">Daily Quests</string>
+  <string name="return">Return</string>
+  <string name="background_and_pose">Background and Pose</string>
+  <string name="reconnect_to_room">Reconnect to {{$1}}?</string>
+  <string name="jump_back_in">Jump Back In</string>
+  <string name="or_go_somewhere_else">Or go somewhere else?</string>
+  <string name="go_to_shop">Go to Shop</string>
+  <!-- Navigation Rework -->
+
+  <!-- Admin Room Access -->
+  <string name="this_is_private_room">This is a private Room!</string>
+  <string name="admin_private_room_access_description">You would not normally have access to this room without being an Admin.</string>
+  <string name="enter">Enter</string>
+  <!-- Admin Room Access -->
+
+  <!-- Blocking user bullets -->
+  <string name="this_will_also_block_any_other_accounts">This will also block any other accounts that they may have or create in the future.</string>
+  <string name="they_wont_be_able_to_message_you_or_access_your_profile">They won’t be able to {{1}}message you{{/1}} or access your {{2}}profile content{{/2}} on Highrise.</string>
+  <string name="they_wont_be_notified_that_you_blocked_them">They {{1}}won’t be notified{{/1}} that you blocked them.</string>
+  <string name="you_can_unblock_them_anytime_in_settings">You can unblock them anytime in {{1}}Settings{{/1}}.</string>
+  <!-- Blocking user bullets -->
+
+  <!-- 18+ -->
+  <string name="verify">Verify</string>
+  <string name="eighteen_plus_verification_required">18+ Verification Required</string>
+  <string name="to_gain_access_take_just_a_couple_moments">To gain access, take just a couple moments to verify your age. {{1}}More info.{{/1}}</string>
+  <string name="your_hr_account_is_currently_restricted_from_entering_spaces">Your Highrise account is currently restricted from entering 18+ only spaces. {{1}}Contact support{{/1}} for assistance. {{2}}More info.{{/2}}</string>
+  <!-- 18+ -->
+
+  <!-- Home Spawn -->
+  <string name="home_spawn">Home Spawn</string>
+  <string name="if_enabled_you_will_spawn">If enabled, you will spawn into your Home Room on app startup. If disabled, you will directly open to the Inbox.</string>
+  <string name="spawn_in_home_room">Spawn in Home Room</string>
+  <!-- Home Spawn -->
+
+  <!-- Friend Streaks -->
+  <string name="introducing_streaks">Introducing {{1}}Streaks{{/1}}</string>
+  <string name="start_a_streak_with_someone">Unlock a Streak with someone by interacting with each other in the Inbox for {{1}}3 consecutive days{{/1}}:</string>
+  <string name="chat_in_the_inbox">Chat in the Inbox, send media or GIFs</string>
+  <string name="invite_them_to_places">Invite them to places</string>
+  <string name="send_gifts">Send Gifts</string>
+  <string name="trade_items">Trade items</string>
+  <string name="streak_unlocked">Streak Unlocked!</string>
+  <string name="you_have_a_streak_going_for">You have a Streak going for</string>
+  <string name="streak_ended">Streak ended</string>
+  <string name="streak_restored">Streak Restored!</string>
+  <string name="restore_your_streak">Restore your Streak</string>
+  <string name="confirm_restore_streak">Confirm Restore Streak</string>
+  <string name="interact_with_each_other_everyday">Interact with each other everyday to maintain your Streak. Miss a day and you'll lose your Streak.</string>
+  <string name="send_message_to_keep_streak_going">{{$1}} Send a quick message to keep your Streak going!</string>
+  <string name="unlock_a_new_streak_by_interacting">Unlock a new Streak by interacting with each other for 3 consecutive days.</string>
+  <string name="would_you_like_to_restore_your_streak">Would you like to Restore your Streak of {{$1}} days with {{1}}{{$2}}{{/1}}?</string>
+
+  <string name="you_unlocked_a_streak_interact_everyday">You unlocked a {{1}}Streak{{/1}} {{$1}}. Interact everyday to maintain your Streak!</string>
+  <string name="dont_let_your_streak_end">{{$1}} Don't let your Streak end. Send a quick message to keep it going!</string>
+  <string name="lost_your_n_day_streak_restore_it_time_left">Lost your {{$1}}-day Streak {{$2}}. {{1}}Restore it?{{/1}} {{2}}{{$3}}{{/2}} left.</string>
+  <string name="lost_your_n_day_streak">Lost your {{$1}}-day Streak {{$2}}.</string>
+  <string name="user_restored_your_n_day_streak">{{1}}{{$1}}{{/1}} restored your {{$2}}-day Streak {{$3}}.</string>
+  <string name="you_restored_your_n_day_streak">You restored your {{$1}}-day Streak {{$2}}.</string>
+  <string name="youre_on_a_roll_just_1_more_day_to_unlock_your_streak">You're on a roll! Just 1 more day to unlock your {{1}}Streak{{/1}}!</string>
+
+  <string name="you_can_restore_your_streak_for_the_next">You can restore your Streak for the next {{1}}{{$1}}{{/1}}. You have {{1}}{{$2}}{{/1}} / {{$3}} free restores this month.</string>
+  <string name="otherwise_you_can_start_a_new_streak">Otherwise, you can start a new Streak by interacting for three consecutive days.</string>
+  <string name="restore_streak">Restore Streak</string>
+  <string name="restore_streak_paid">Restore Streak {{$1}}</string>
+  <string name="num_day_streak">{{$1}}-day Streak</string>
+  <string name="num_day_streak_lost">{{$1}}-day Streak Lost.</string>
+  <string name="started_your_streak_on">Started your Streak on {{1}}{{$1}}{{/1}}</string>
+  <string name="restore_it">Restore it?</string>
+  <!-- Friend Streaks -->
+
+  <!-- Translations -->
+  <string name="see_original">{{$1}} See original</string>
+  <string name="translate">Translate</string>
+  <string name="translating">Translating</string>
+  <!-- Translations -->
+
+  <string name="tradable_in">Tradable in {{$1}}</string>
+
+  <!-- Hatchables -->
+  <string name="hatch">Hatch</string>
+  <string name="hatch_now">Hatch Now</string>
+  <string name="hatch_egg_now">Hatch Egg Now?</string>
+  <string name="hatch_will_reveal_new_pet">Hatching this egg will reveal your new pet! Once hatched, it cannot be undone. Do you want to proceed?</string>
+  <string name="its_a_name">It's a {{$1}}!</string>
+  <string name="give_your_buddy_a_name">Let’s give your little buddy a name.</string>
+  <string name="name_confirmation_description">Neat name! {{1}}This is permanent{{/1}}, so press confirm to make it official.</string>
+  <string name="rename">Rename</string>
+  <string name="a_pet_egg">A Pet Egg?</string>
+  <string name="tap_to_find_whats_inside">Tap it to find out what’s inside!</string>
+  <!-- Hatchables -->
+
+  <!-- What's New -->
+  <string name="whats_new_2">What's New</string>
+  <string name="follow_us_for_more_updates">Follow us for more updates:</string>
+  <!-- What's New -->
+
+  <!-- Containers -->
+  <string name="open_now">Open Now</string>
+  <string name="save_to_my_items">Save to My Items</string>
+  <!-- Containers -->
+
+  <!-- New User Journey -->
+  <string name="best_place_for_new_players">Best place for new players!</string>
+  <string name="visit_room_to_explore">Visit the {{$1}} to explore thousands of spaces.</string>
+  <string name="getting_started">Getting started!</string>
+  <string name="visit_room_to_unlock_full_app">Visit the {{$1}} to unlock the full app!</string>
+  <!-- New User Journey -->
+  
+  <!-- Payment card -->
+  <string name="instantly_receive_amount_upon_purchase">Instantly receive {{$1}} {{1}}{{$2}}{{/1}} upon purchase. Login daily to claim {{$3}} {{2}}{{$4}}{{/2}} for {{$5}} days.</string>
+  <string name="name_info">{{$1}} Info</string>
+  <string name="valid_for_n_days_from_purchase_date">*Valid for {{$1}} days from purchase date</string>
+  <string name="available_in">Available in {{$1}}</string>
+  <string name="dont_miss_out_on_your_gold">Don’t miss out on your Gold!</string>
+  <string name="enable_push_notifications_to_be_notified_when_your_gold">Enable Push Notifications to be notified when your Gold is ready to be claimed.</string>
+  <string name="enable_push_notifications">Enable Push Notifications</string>
+  <string name="payment_card_info">
+{{1}}What will I get when I buy the Gold Pass?{{/1}}
+You’ll instantly receive {{$1}}, with the ability to claim {{$2}} every day for {{$3}} days – for a total of up to {{$4}}. 
+  
+{{2}}How do I claim my daily Gold?{{/2}}
+Log in and visit this page each day to manually claim your {{$5}}. 
+  
+{{3}}When does the daily claim reset?{{/3}}
+Daily claim resets at UTC {{$6}}.
+  
+{{4}}What if I miss a day?{{/4}}
+Missed Gold can’t be refunded or carried over – so make sure to claim it each day.
+  
+{{5}}How long is the Gold Pass valid?{{/5}}
+The pass is valid for {{$7}} days from the time of purchase.
+  </string>
+  <!-- Payment card -->
+
+  <!-- Drag-and-drop Layers -->
+  <string name="drag_to_rearrange_items">Drag to rearrange items you are wearing.</string>
+  <!-- Drag-and-drop Layers -->
+
+  <!-- Plurals -->
+  <plurals name="you_have_num_requests">
+      <item quantity="one">You have 1 Request</item>
+      <item quantity="other">You have {{$1}} Requests</item>
+    </plurals>
+  <plurals name="num_likes">
+    <item quantity="one">1 Like</item>
+    <item quantity="other">{{$1}} Likes</item>
+  </plurals>
+  <plurals name="num_ratings">
+    <item quantity="one">1 Rating</item>
+    <item quantity="other">{{$1}} Ratings</item>
+  </plurals>
+  <plurals name="num_comments">
+    <item quantity="one">See 1 comment</item>
+    <item quantity="other">See all {{$1}} comments</item>
+  </plurals>
+  <plurals name="num_followers">
+    <item quantity="one">1 Follower</item>
+    <item quantity="other">{{$1}} Followers</item>
+  </plurals>
+  <plurals name="num_friends">
+    <item quantity="one">1 Friend</item>
+    <item quantity="other">{{$1}} Friends</item>
+  </plurals>
+  <plurals name="in_num_days">
+    <item quantity="zero">today</item>
+    <item quantity="one">in 1 day</item>
+    <item quantity="other">in {{$1}} days</item>
+  </plurals>
+  <plurals name="num_days">
+    <item quantity="one">1 day</item>
+    <item quantity="other">{{$1}} days</item>
+  </plurals>
+  <plurals name="num_days_ago">
+    <item quantity="one">1 day ago</item>
+    <item quantity="other">{{$1}} days ago</item>
+  </plurals>
+  <plurals name="num_hours_ago">
+    <item quantity="one">1 hour ago</item>
+    <item quantity="other">{{$1}} hours ago</item>
+  </plurals>
+  <plurals name="num_hours">
+    <item quantity="one">1 hour</item>
+    <item quantity="other">{{$1}} hours</item>
+  </plurals>
+  <plurals name="num_minutes_ago">
+    <item quantity="one">1 minute ago</item>
+    <item quantity="other">{{$1}} minutes ago</item>
+  </plurals>
+  <plurals name="num_minutes">
+    <item quantity="one">1 minute</item>
+    <item quantity="other">{{$1}} minutes</item>
+  </plurals>
+  <plurals name="num_weeks_ago">
+    <item quantity="one">1 week ago</item>
+    <item quantity="other">{{$1}} weeks ago</item>
+  </plurals>
+  <plurals name="num_weeks">
+    <item quantity="one">1 week</item>
+    <item quantity="other">{{$1}} weeks</item>
+  </plurals>
+  <plurals name="num_years_ago">
+    <item quantity="one">1 year ago</item>
+    <item quantity="other">{{$1}} years ago</item>
+  </plurals>
+  <plurals name="num_years">
+    <item quantity="one">1 year</item>
+    <item quantity="other">{{$1}} years</item>
+  </plurals>
+  <plurals name="num_gold">
+    <item quantity="one">1 Gold</item>
+    <item quantity="other">{{$1}} Gold</item>
+  </plurals>
+  <plurals name="num_bubbles">
+    <item quantity="one">1 Bubble</item>
+    <item quantity="other">{{$1}} Bubbles</item>
+  </plurals>
+  <plurals name="num_tickets">
+    <item quantity="one">1 Ticket</item>
+    <item quantity="other">{{$1}} Tickets</item>
+  </plurals>
+  <plurals name="num_lucky_tokens">
+    <item quantity="one">1 Lucky Token</item>
+    <item quantity="other">{{$1}} Lucky Tokens</item>
+  </plurals>
+  <plurals name="num_chips">
+    <item quantity="one">1 Chip</item>
+    <item quantity="other">{{$1}} Chips</item>
+  </plurals>
+  <plurals name="num_spin_tokens">
+    <item quantity="one">1 Spin Token</item>
+    <item quantity="other">{{$1}} Spin Tokens</item>
+  </plurals>
+  <plurals name="num_xp">
+    <item quantity="one">1 XP</item>
+    <item quantity="other">{{$1}} XP</item>
+  </plurals>
+  <plurals name="num_extra_spins">
+    <item quantity="one">1 Extra Spin</item>
+    <item quantity="other">{{$1}} Extra Spins</item>
+  </plurals>
+  <plurals name="group_chat_display_name">
+    <item quantity="one">{{$2}} &amp; 1 other</item>
+    <item quantity="other">{{$2}} &amp; {{$1}} others</item>
+  </plurals>
+  <plurals name="num_promo_tokens">
+    <item quantity="one">1 Promo Grab Token</item>
+    <item quantity="other">{{$1}} Promo Grab Tokens</item>
+  </plurals>
+  <plurals name="num_room_boost_tokens">
+    <item quantity="one">1 Room Boost Token</item>
+    <item quantity="other">{{$1}} Room Boost Tokens</item>
+  </plurals>
+  <plurals name="num_voice_tokens">
+    <item quantity="one">1 Voice Token</item>
+    <item quantity="other">{{$1}} Voice Tokens</item>
+  </plurals>
+  <plurals name="num_pocket_coins">
+    <item quantity="one">1 Pocket Coin</item>
+    <item quantity="other">{{$1}} Pocket Coins</item>
+  </plurals>
+  <plurals name="num_spectators">
+    <item quantity="one">1 Spectator</item>
+    <item quantity="other">{{$1}} Spectators</item>
+  </plurals>
+  <plurals name="delete_chats">
+    <item quantity="one">Delete 1 Chat?</item>
+    <item quantity="other">Delete {{$1}} Chats?</item>
+  </plurals>
+  <plurals name="delete_message_requests">
+      <item quantity="one">Delete 1 Message Request?</item>
+      <item quantity="other">Delete {{$1}} Message Requests?</item>
+    </plurals>
+  <plurals name="num_posts">
+    <item quantity="one">1 post</item>
+    <item quantity="other">{{$1}} posts</item>
+  </plurals>
+  <plurals name="num_sky_pass_stars">
+    <item quantity="one">1 SkyPass Star</item>
+    <item quantity="other">{{$1}} SkyPass Stars</item>
+  </plurals>
+  <plurals name="num_pinned_messages">
+    <item quantity="one">1 Pinned Message</item>
+    <item quantity="other">{{$1}} Pinned Messages</item>
+  </plurals>
+  <plurals name="num_friends_here">
+      <item quantity="one">1 Friend Here {{$2}}</item>
+      <item quantity="other">{{$1}} Friends Here {{$2}}</item>
+    </plurals>
+  <plurals name="x_people_here">
+    <item quantity="one">1 Person Here</item>
+    <item quantity="other">{{$1}} People Here</item>
+  </plurals>
+  <plurals name="num_people_activity">
+    <item quantity="zero">{{$2}}</item>
+    <item quantity="one">{{$2}} + {{$1}} other</item>
+    <item quantity="other">{{$2}} + {{$1}} others</item>
+  </plurals>
+  <plurals name="num_new_messages">
+    <item quantity="one">1 new message</item>
+    <item quantity="other">{{$1}} new messages</item>
+  </plurals>
+  <plurals name="num_items_left">
+    <item quantity="one">1 item left</item>
+    <item quantity="other">{{$1}} items left</item>
+  </plurals>
+  <plurals name="num_items">
+    <item quantity="one">1 item</item>
+    <item quantity="other">{{$1}} items</item>
+  </plurals>
+  <plurals name="num_items_capital">
+    <item quantity="one">1 Item</item>
+    <item quantity="other">{{$1}} Items</item>
+  </plurals>
+  <plurals name="num_duplicates">
+    <item quantity="one">1 Duplicate</item>
+    <item quantity="other">{{$1}} Duplicates</item>
+  </plurals>
+  <plurals name="wearing_unavailable_items">
+    <item quantity="one">Wearing Unavailable Item</item>
+    <item quantity="other">Wearing Unavailable Items</item>
+  </plurals>
+
+  <plurals name="exchange_num_items">
+    <item quantity="one">Exchange 1 Item</item>
+    <item quantity="other">Exchange {{$1}} Items</item>
+  </plurals>
+
+  <plurals name="num_seconds">
+    <item quantity="one">1 second</item>
+    <item quantity="other">{{$1}} seconds</item>
+  </plurals>
+
+  <plurals name="num_months">
+    <item quantity="one">1 month</item>
+    <item quantity="other">{{$1}} months</item>
+  </plurals>
+
+</resources>

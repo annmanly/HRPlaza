@@ -1,0 +1,111 @@
+.player {
+    margin-top: 2px;
+    flex-direction: row-reverse;
+}
+
+.player #_roomContainer {
+    flex-grow: 1;
+}
+
+.player #_controller {
+    flex-grow: 1;
+}
+
+.player #_roomCustom {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 64px;
+}
+
+.top-right {
+    padding-top: var(--safe-area-top);
+    margin: 16px;
+}
+
+.top-right-buttons {
+    flex-direction: row;
+    margin-bottom: 12px;
+}
+
+.top-right-buttons #_cameraButton {
+    width: 36px;
+    height:36px;
+    margin-right: 8px;
+    border-radius: 12px;
+    background-color: rgba(2,0,1,0.3);
+    overflow: hidden;
+}
+
+.top-right-buttons #_cameraButton > Image {
+    width: 20px;
+    height: 20px;
+    margin: auto;
+    flex-shrink: 0;
+}
+
+.player #_right {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    top: 0;
+    width: 375px;
+}
+
+.player #_worldInfo {
+    flex-grow: 1;
+    background-color: var(--color-fishbase-eel);
+}
+
+.player #_loading {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    background-color: var(--color-fishbase-eel);
+}
+
+.player #_chat {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+
+.player #_leftToolbar {
+    width: 88px;
+    background-color: var(--color-fishbase-blackfish);
+    justify-content: flex-start;
+    padding-top: 32px;
+}
+
+.toolbar-button {
+    height: auto;
+    align-items: center;
+    justify-content: center;
+    padding: 16px 8px;
+}
+
+.toolbar-button UIImage {
+    --unity-image-tint-color: var(--color-fishbase-salmon);
+    width: 36px;
+    height: 36px;
+    flex-shrink: 0;
+    margin-bottom: 4px;
+}
+
+.toolbar-button UIImage.icon-marketplace {
+    width: 28px;
+    height: 28px;
+}
+
+.toolbar-button .icon-settings {
+    padding: 4px;
+}
+
+.player .modal {
+    background-color: var(--color-fishbase-blackfish-80);
+}

@@ -1,0 +1,229 @@
+/*
+
+    Copyright ? 2022 Pocketz World. All rights reserved.
+
+*/
+
+.navigation-controller {
+    flex-grow: 1;
+    flex-direction: column-reverse;
+}
+
+.landscape .navigation-controller {
+    overflow: hidden;
+}
+
+.navigation-controller__background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: var(--color-fishbase-eel);
+}
+
+.navigation-controller__header-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+
+.navigation-controller__header-safe-area {
+    height: var(--safe-area-top);
+}
+
+.navigation-controller__header {
+    flex-grow: 0;
+    flex-shrink: 0;
+    flex-direction: row;
+}
+
+.navigation-controller__content {
+    flex-grow: 1;
+}
+
+.navigation-controller__title {
+    flex-grow: 1;
+    max-width: 75%;
+}
+
+.navigation-controller__title .label {
+    color: var(--color-fishbase-bonito);
+    font-size: var(--font-size-l);
+    -unity-text-align: middle-center;
+    -unity-font-definition: var(--font-black);
+    flex-grow: 1;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    align-self: center;
+}
+
+.navigation-controller__title .label {
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+.split-controller__detail .navigation-controller__title .label {
+    padding-left: 16px;
+    color: var(--color-fishbase-whitefish);
+    align-self: flex-start;
+    -unity-font-definition: var(--font-bold);
+    -unity-text-align: middle-left;
+}
+
+.rtl .split-controller__detail .navigation-controller__title .label {
+    align-self: flex-end;
+    padding-right: 16px;
+}
+
+.navigation-controller__item {
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+}
+
+.navigation-controller__left, .navigation-controller__right {
+    justify-content: center;
+    margin-left: auto;
+    margin-top: auto;
+    margin-bottom: auto;
+    height: 44px;
+}
+
+.navigation-controller__left {
+    margin-left: 6px;
+    flex-shrink: 0;
+    align-items: flex-start;
+    min-width: 25%;
+}
+
+.split-controller__detail .navigation-controller__left {
+    display: none;
+}
+
+.rtl .split-controller__detail .navigation-controller__left {
+    display: flex;
+}
+
+.rtl .split-controller__detail .navigation-controller__right {
+    display: none;
+}
+
+.navigation-controller__right {
+    margin-right: 6px;
+    flex-shrink: 0;
+    align-items: flex-end;
+    min-width: 25%;
+}
+
+/** Back Button **/
+
+.navigation-controller-back {
+    flex-shrink: 0;
+    flex-grow: 0;
+    padding: 10px;
+    align-items: center;
+    justify-content: center;
+}
+
+.navigation-controller-back UIImage {
+    --unity-image-tint-color: var(--color-fishbase-mackerel);
+    --unity-image: var(--image-icon-back);
+    width: 24px;
+    height: 24px;
+}
+
+.rtl .navigation-controller-back UIImage {
+    rotate: 180deg;
+}
+
+/** Close Button **/
+.navigation-controller__close {
+    height: 44px;
+    width: 44px;
+    align-items: center;
+    justify-content: center;
+}
+
+.navigation-controller__close > UIImage {
+    --unity-image-tint-color: var(--color-fishbase-mackerel);
+    --unity-image: var(--image-icon-close);
+    width: 24px;
+    height: 24px;
+}
+
+/** Add Button **/
+
+.navigation-controller__right #_addButton {
+    flex-shrink: 0;
+    flex-grow: 0;
+    padding: 4px;
+    background-color: rgba(0,0,0,0);
+}
+
+.navigation-controller__right #_addButton UIImage {
+    --unity-image-tint-color: var(--color-fishbase-mackerel);
+    --unity-image: var(--image-icon-add);
+    width: 24px;
+    height: 24px;
+}
+
+
+
+/** Navigation Button **/
+
+.navigation-controller__header .button,
+.navigation-controller__header .button:active,
+.navigation-controller__header .button:hover,
+.navigation-controller__header .button:hover:focus,
+.navigation-controller__header .button:focus {
+    background-color: rgba(0,0,0,0);
+    -unity-background-image-tint-color: var(--color-fishbase-mackerel);
+    width: auto;
+    height: 100%;
+    padding: 10px;
+}
+
+.navigation-controller__header .button {
+    
+}
+
+.navigation-controller__header .button Image,
+.navigation-controller__header .button UIImage {
+    --unity-image-tint-color: var(--color-fishbase-mackerel);
+}
+
+
+.navigation-controller__header .button:disabled {
+    background-color: rgba(0,0,0,0);
+    color: var(--color-fishbase-tuna);
+    height: 100%;
+}
+
+.navigation-controller__header .button:disabled Image,
+.navigation-controller__header .button:disabled UIImage {
+    --unity-image-tint-color: var(--color-fishbase-tuna);
+}
+
+.navigation-controller__view {
+    flex-grow: 1;        
+}
+
+.navigation-controller__input-blocker {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: none;
+}
+
+/*** Background ***/
+
+.landscape .navigation-controller__content {
+    background-color: var(--color-fishbase-eel);
+}

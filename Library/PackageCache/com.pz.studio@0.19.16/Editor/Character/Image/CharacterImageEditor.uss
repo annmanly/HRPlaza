@@ -1,0 +1,78 @@
+.character-image-editor {
+    flex-grow: 1;
+}
+
+.character-image-editor .unity-label {
+    -unity-text-align: middle-center;
+}
+
+.character-image-editor .unity-text-field {
+    flex-grow: 1;
+}
+
+.character-image-editor .unity-integer-field {
+    flex-grow: 1;
+}
+
+.character-image-editor .field-label {
+    width: 100px;
+    -unity-text-align: middle-right;
+}
+
+.character-image-editor .small-field {
+    width: 40px;
+    flex-grow: 0;
+}
+
+.character-image-editor #_saveProgressBar {
+    flex-grow: 1;
+    padding-top:1px;
+}
+
+.character-image-editor #_left {
+    padding: 10px;
+}
+
+.character-image-editor .row {
+    flex-direction: row;
+    padding: 5px;
+}
+
+.character-image-editor #_preview {
+    flex-grow: 1;
+    background-image: url("project://database/Packages/com.pz.studio/Editor/Character/CharacterGrid.png");
+    background-repeat: repeat;
+    background-size: 96px;
+    padding: 4px;
+}
+
+.character-image-editor .unity-slider {
+    flex-grow: 1;
+}
+
+.character-image-editor .unity-min-max-slider {
+    flex-grow: 1;
+}
+
+.character-image-editor #_clipPickSection {
+    flex-direction: row;
+    flex-grow: 1;
+}
+
+.character-image-editor #_clipPicker {
+    flex-grow: 1;
+}
+
+.character-image-editor #_emotePickSection {
+    flex-direction: row;
+    flex-grow: 1;
+}
+
+.character-image-editor #_emoteField {
+    margin-right: 0px;
+    flex-grow: 1;
+}
+
+.character-image-editor #_emoteButton {
+    margin-left: -19px;
+}

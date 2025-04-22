@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<UXML
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns="UnityEngine.UIElements"
+    xmlns:hr="Highrise.UI"
+    xmlns:editor="UnityEditor.UIElements"
+    xsi:noNamespaceSchemaLocation="../../../../../UIElementsSchema/UIElements.xsd"
+>
+
+  <hr:UIBackpack class="backpack">
+    <hr:UICollection class="backpack__collection">
+      <hr:UICollectionSection>
+        <hr:UIHint key="event_items_hint" class="section-hint"/>
+      </hr:UICollectionSection>
+      <hr:UICollectionSection>
+        <hr:UICollectionCells name="_cells" layout="grid" layout-spacing="8" fixed-height="true"/>
+      </hr:UICollectionSection>
+      <hr:UICollectionSection>
+        <VisualElement name="_footer"/>
+      </hr:UICollectionSection>
+    </hr:UICollection>
+  </hr:UIBackpack>
+
+</UXML>

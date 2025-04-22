@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<UXML
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns="UnityEngine.UIElements"
+    xmlns:editor="UnityEditor.UIElements"
+    xmlns:hr="Highrise.UI"
+    xsi:noNamespaceSchemaLocation="../../../../../UIElementsSchema/UIElements.xsd"
+>
+
+  <VisualElement class="create-clothing-editor">
+
+    <VisualElement name="_titleBar">
+        <Label name="_stepLabel"/>
+        <Button name="_chooseTemplateButton" text="Custom.."/>
+    </VisualElement>
+
+    <VisualElement name="_centerDisplay">
+        <VisualElement name="_skeletonContainer"/>
+        <VisualElement name="_templateListContainer"/>
+        <VisualElement name="_palettesContainer"/>
+        <VisualElement name="_outfitContainer"/>
+        <VisualElement name="_nameContainer"/>
+        <VisualElement name="_clothingTypeContainer"/>
+    </VisualElement>
+
+    <VisualElement name="_bottomLayout">
+        <Button name="_backButton">
+            <Label text="Back"/>
+        </Button>
+        <Button name="_nextButton">
+        </Button>
+    </VisualElement>
+
+  </VisualElement>
+</UXML>
