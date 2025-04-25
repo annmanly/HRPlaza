@@ -19,12 +19,10 @@ end
 
 PopulateIcon(MapImage) -- Initialize the map icon with the provided MapImage texture
 
-function OpenMap()
+_openButton:RegisterPressCallback(function()
   if not MapMenuUI.activeSelf then
     MapMenuUI:SetActive(true)
+  else
+    MapMenuUI:SetActive(false)
   end
-end
-
-_openButton:RegisterPressCallback(function()
-  OpenMap()
 end)
