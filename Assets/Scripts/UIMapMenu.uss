@@ -1,27 +1,28 @@
 .map {
-  display: flex;
-  position: absolute;
 
   top: 10%;
-  height: 415px;
-
-  padding: 0px;
+  height: 350px;
+  width: 350px;
 
   align-self: center;
-  justify-content: center;
-  align-items: center;
 
   color: #fff;
   -unity-font-definition: var(--font-bold);
 
   background-color: #1b1935;
   border-radius: 10px;
-  border-radius: 5px;
-  border-width: 2px;
-  border-color: rgba(23, 25, 35, 0.5);
+
+  overflow: hidden;
+}
+
+.map__container {
+  width: 100%;
+  height: 100%;
 }
 
 .map__header {
+  align-self: center;
+
   font-size: 30px;
   text-shadow: 1px 5px 3px rgba(0, 0, 0, .3);
 }
@@ -29,219 +30,161 @@
 .map__close {
   position: absolute;
 
-  right: 0px;
-  top: 0px;
+  right: 5px;
+  top: 5px;
 
   width: 30px;
   height: 30px;
 }
 
-.map__content {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-
-  justify-content: center;
-  align-items: flex-start;
-
-  width: 100%;
-  min-width: 280px;
-  margin-top: 4px;
-
-  overflow: scroll;
-  align-self: center;
-
-  padding: 2px;
-}
-
-.scroll-view__content-viewport {
-  flex-wrap: wrap;
-  width: 100%;
-}
-
-.scroll-view__content-container {
-
-  display: flex;
-  justify-content: flex-start;
-  flex-direction: row;
-  flex-wrap: wrap;
-
-  width: 355px;
-  height: auto;
-}
-
-.scroll-bar {
-  width: 7px;
-  height: 100%;
-
-  background-color: #212037;
-  border-radius: 5px;
-
-}
-
-.scroll-bar__thumb {
-  background-color: #2f2c4f;
-  border-radius: 5px;
-}
-
-.scroll-bar__thumb:hover {
-  background-color: #fff;
-}
-
-.map__item {
-  width: 32px;
-  height: 32px;
-
-  margin-bottom: 3px;
-  margin-right: 3px;
-
-  padding: 3px;
-
-  background-color: #2f2c4f;
-  border-radius: 5px;
-  border-width: 0px;
-  border-color: rgba(23, 25, 35, 0.5);
-
-  transition-property: opacity, scale;
-  transition-duration: 0.2s;
-}
-
-.map__item:hover {
-  opacity: 0.8;
-  scale: 0.9;
-}
-
-.map__item-amount {
-  position: absolute;
-
-  bottom: 0;
-  right: 0;
-
-  font-size: 14px;
-}
-
-.hidden {
-  display: none;
-}
-
-.map__item-icon UIImage {
-  width: 35px;
-  height: 35px;
-
-  align-self: center;
-}
-
-.map__item__info {
-  position: absolute;
-
-  width: 350px;
-  height: 415px;
-
-  padding: 10px;
-  align-self: center;
-  justify-content: center;
-
-  align-items: center;
-  flex-direction: column;
-
-  background-color: #1b1935;
-  border-radius: 10px;
-  border-width: 2px;
-  border-color: rgba(23, 25, 35, 0.5);
-}
-
-.map__item__info-content {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-
-  height: 90%;
-  width: 90%;
-
-  padding: 5px;
-}
-
-.map__item__info-name {
-  font-size: 24px;
-  text-shadow: 1px 5px 3px rgba(0, 0, 0, .3);
-  margin-bottom: 5px;
-}
-
-.map__item__info-icon {
-  width: 250px;
-  height: 250px;
-
-  justify-content: center;
-  align-items: center;
-  margin-bottom: 10px;
-
-  overflow: hidden;
-  padding: 3px;
-
-  background-color: #2f2c4f;
-  border-radius: 5px;
-  border-width: 2px;
-  border-color: rgba(23, 25, 35, 0.5);
-}
-
-.map__item__info-amount {
-  position: absolute;
-
-  top: 2px;
-  right: 0;
-
-  -unity-text-align: middle-right;
-
-  font-size: 20px;
-}
-
-.map__item__info-icon UIImage {
-  width: 300px;
-  height: 300px;
-}
-
-.map__item__info-description {
-  width: 100%;
-  height: 100%;
-
-  padding: 5px;
-  font-size: 14px;
-
-  overflow: scroll;
-  align-self: center;
-  -unity-text-align: middle-center;
-
-  flex-wrap: wrap;
-  white-space: normal;
-  flex-grow: 1;
-
-  color: #fff;
-  -unity-font-definition: var(--font-regular);
-}
-
-.map__item__info__description-label {
-  max-width: 100%;
-  white-space: normal;
-}
-
-.map__item__info__close {
-  position: absolute;
-
-  right: 0px;
-  top: 0px;
-
-  width: 40px;
-  height: 40px;
-
-  justify-content: center;
-  align-items: center;
-}
-
-.map__item__info__close Image {
-  --unity-image: var(--image-icon-close);
-}
-
 .map__close Image {
   --unity-image: var(--image-icon-close);
 }
+
+.map-background {
+  position: center;
+
+  height: 100%;
+  width: 100%;
+
+}
+
+.market__button {
+  position: absolute;
+
+  width: 50px;
+  height: 80px;
+
+
+  left: 32px; 
+  top: 85px;
+
+  background-color: #f50039;
+  opacity: 0;
+
+}
+
+.shop__button {
+  position: absolute;
+
+  width: 50px;
+  height: 90px;
+
+
+  left: 97px; 
+  top: 52px;
+
+  background-color: #f50039;
+  opacity: 0;
+
+}
+
+.welcome__button {
+  position: absolute;
+
+  width: 50px;
+  height: 80px;
+
+
+  left: 160px; 
+  top: 48px;
+
+  background-color: #f50039;
+  opacity: 0;
+
+}
+
+.townhall__button {
+  position: absolute;
+
+  width: 50px;
+  height: 110px;
+
+
+  left: 215px; 
+  top: 70px;
+
+  background-color: #f50039;
+  opacity: 0;
+
+}
+
+.events__button {
+  position: absolute;
+
+  width: 50px;
+  height: 110px;
+
+
+  left: 265px; 
+  top: 108px;
+
+  background-color: #f50039;
+  opacity: 0;
+
+}
+
+.park__button {
+  position: absolute;
+
+  width: 60px;
+  height: 90px;
+
+
+  left: 145px; 
+  top: 140px;
+
+  background-color: #f50039;
+  opacity: 0;
+
+}
+
+.artcenter__button {
+  position: absolute;
+
+  width: 50px;
+  height: 70px;
+
+
+  left: 58px; 
+  top: 180px;
+
+  background-color: #f50039;
+  opacity: 0;
+
+}
+
+.buildercenter__button {
+  position: absolute;
+
+  width: 50px;
+  height: 85px;
+
+
+  left: 98px; 
+  top: 190px;
+
+  background-color: #f50039;
+  opacity: 0;
+
+}
+
+.transitstation__button {
+  position: absolute;
+
+  width: 55px;
+  height: 90px;
+
+
+  left: 205px; 
+  top: 215px;
+
+  background-color: #f50039;
+  opacity: 0;
+
+
+}
+
+
+
+

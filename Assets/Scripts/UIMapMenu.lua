@@ -1,120 +1,117 @@
 --!Type(UI)
 
 --!Bind
-local _MapContent : UIScrollView = nil -- Important do not remove
---!Bind
-local _itemInfo : VisualElement = nil -- Important do not remove
---!Bind
-local _ItemInfoContent : VisualElement = nil -- Important do not remove
-
-
+local _mapBackground : UIImage = nil -- UIImage for displaying the map background, initialized to nil
 --!Bind
 local _closeButton : VisualElement = nil -- Close button for the map UI
 --!Bind
-local _closeInfoButton : VisualElement = nil -- Close button for the item info UI
+local _marketButton : VisualElement = nil
+--!Bind
+local _shopButton : VisualElement = nil
+--!Bind
+local _welcomeButton : VisualElement = nil
+--!Bind
+local _townhallButton : VisualElement = nil
+--!Bind
+local _eventsButton : VisualElement = nil
+--!Bind
+local _parkButton : VisualElement = nil
+--!Bind
+local _artcenterButton : VisualElement = nil
+--!Bind
+local _buildercenterButton : VisualElement = nil
+--!Bind
+local _transitstationButton : VisualElement = nil
 
 --!SerializeField
 local MapImage  : Texture    = nil   -- map background image
+--!SerializeField
+local MarketPostion  : Transform    = nil   -- map background image
+--!SerializeField
+local ShopPosition  : Transform    = nil   -- map background image
+--!SerializeField
+local WelcomePosition  : Transform    = nil   -- map background image
+--!SerializeField
+local TownHallPosition  : Transform    = nil   -- map background image
+--!SerializeField
+local EventsPosition  : Transform    = nil   -- map background image
+--!SerializeField
+local ParkPosition  : Transform    = nil   -- map background image
+--!SerializeField
+local ArtCenterPosition  : Transform    = nil   -- map background image
+--!SerializeField
+local BuilderCenterPosition  : Transform    = nil   -- map background image
+--!SerializeField
+local TrasitStationPosition  : Transform    = nil   -- map background image
+
+
+
+--!SerializeField
+--local PointerImage  : Texture    = nil   -- player position pointer
+
+local teleporterScript = self:GetComponent(TeleporterScript)
+
+-- Function to update the map icon image
+function PopulateMapBackground(icon: Texture)
+  _mapBackground.image = icon -- Set the image of the map icon to the provided texture
+end
+
+PopulateMapBackground(MapImage)
 
 -- Register a callback to close the map UI
 _closeButton:RegisterPressCallback(function()
   self.gameObject:SetActive(false)
-end, true, true, true)
+end)
 
--- Function to create an item in the map
-function CreateItem(amount: number, image: Texture)
-  local item = VisualElement.new()
-  item:AddToClassList("map__item")
+_marketButton:RegisterPressCallback(function()
+    self.gameObject:SetActive(false)
+    teleporterScript.Teleport(MarketPostion.position)
+end)
 
-  local _itemIcon = VisualElement.new()
-  _itemIcon:AddToClassList("map__item-icon")
+_shopButton:RegisterPressCallback(function()
+  self.gameObject:SetActive(false)
+  teleporterScript.Teleport(ShopPosition.position)
+end)
 
-  local _itemImage = UIImage.new(true)
-  _itemImage:AddToClassList("map__item__icon__image")
-  _itemImage.image = image
-  _itemIcon:Add(_itemImage)
+_welcomeButton:RegisterPressCallback(function()
+  self.gameObject:SetActive(false)
+  teleporterScript.Teleport(WelcomePosition.position)
+end)
 
-  local _itemAmount = VisualElement.new()
-  _itemAmount:AddToClassList("map__item-amount")
+_townhallButton:RegisterPressCallback(function()
+  self.gameObject:SetActive(false)
+  teleporterScript.Teleport(TownHallPosition.position)
+end)
 
-  local _itemAmountText = UILabel.new()
-  _itemAmountText:SetPrelocalizedText(tostring(amount))
-  _itemAmount:Add(_itemAmountText)
+_eventsButton:RegisterPressCallback(function()
+  self.gameObject:SetActive(false)
+  teleporterScript.Teleport(EventsPosition.position)
+end)
 
-  item:Add(_itemIcon)
-  item:Add(_itemAmount)
+_parkButton:RegisterPressCallback(function()
+  self.gameObject:SetActive(false)
+  teleporterScript.Teleport(ParkPosition.position)
+end)
 
-  _MapContent:Add(item)
+_artcenterButton:RegisterPressCallback(function()
+  self.gameObject:SetActive(false)
+  teleporterScript.Teleport(ArtCenterPosition.position)
+end)
 
-  return item
-end
+_buildercenterButton:RegisterPressCallback(function()
+  self.gameObject:SetActive(false)
+  teleporterScript.Teleport(BuilderCenterPosition.position)
+end)
 
-function CreateItemInfoPage(name: string, amount: number, description: string, image: Texture)  
-  _itemInfo:RemoveFromClassList("hidden")
-  _ItemInfoContent:Clear()
-
-  local _ItemInfoIcon = VisualElement.new()
-  _ItemInfoIcon:AddToClassList("map__item__info-icon")
-
-  local _ItemInfoImage = UIImage.new(true)
-  _ItemInfoImage:AddToClassList("map__item__info__icon__image")
-  _ItemInfoImage.image = image
-
-
-  local _ItemInfoAmount = VisualElement.new()
-  _ItemInfoAmount:AddToClassList("map__item__info-amount")
-
-  local _ItemInfoAmountText = UILabel.new()
-  _ItemInfoAmountText:AddToClassList("map__item__info__amount-label")
-  _ItemInfoAmountText:SetPrelocalizedText(tostring(amount))
-  _ItemInfoAmount:Add(_ItemInfoAmountText)
-
-  _ItemInfoIcon:Add(_ItemInfoImage)
-  _ItemInfoIcon:Add(_ItemInfoAmount)
+_transitstationButton:RegisterPressCallback(function()
+  self.gameObject:SetActive(false)
+  teleporterScript.Teleport(TrasitStationPosition.position)
+end)
 
 
-  local _ItemInfoName = VisualElement.new()
-  _ItemInfoName:AddToClassList("map__item__info-name")
-
-  local _ItemInfoNameText = UILabel.new()
-  _ItemInfoNameText:AddToClassList("map__item__info__name-label")
-  _ItemInfoNameText:SetPrelocalizedText(name)
-  _ItemInfoName:Add(_ItemInfoNameText)
-
-  local _ItemInfoDescription = VisualElement.new()
-  _ItemInfoDescription:AddToClassList("map__item__info-description")
-
-  local _ItemInfoDescriptionText = UILabel.new()
-  _ItemInfoDescriptionText:AddToClassList("map__item__info__description-label")
-  _ItemInfoDescriptionText:SetPrelocalizedText(description)
-  _ItemInfoDescription:Add(_ItemInfoDescriptionText)
-
-  _ItemInfoContent:Add(_ItemInfoIcon)
-  _ItemInfoContent:Add(_ItemInfoName)
-  _ItemInfoContent:Add(_ItemInfoDescription)
-end
-
--- Register a callback to close the item info UI
-_closeInfoButton:RegisterPressCallback(function()
-  _itemInfo:AddToClassList("hidden")
-end, true, true, true)
 
 
--- 
-function CreateMapData()
-  -- Clear out any existing items
-  _MapContent:Clear()
-
-    -- Create an item with the live coin amount.
-    local item = CreateItem(0, mapImage)
-    
-    -- Set up a callback to show more info when the item is pressed.
-    item:RegisterPressCallback(function()
-      CreateItemInfoPage("Description")
-    end, true, true, true)
-end
 
 
-CreateMapData()
 
 
