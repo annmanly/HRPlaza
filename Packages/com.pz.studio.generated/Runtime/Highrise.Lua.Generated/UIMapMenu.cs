@@ -26,6 +26,15 @@ namespace Highrise.Lua.Generated
         public override string ScriptGUID => s_scriptGUID;
 
         [SerializeField] public UnityEngine.Texture m_MapImage = default;
+        [SerializeField] public UnityEngine.Transform m_MarketPostion = default;
+        [SerializeField] public UnityEngine.Transform m_ShopPosition = default;
+        [SerializeField] public UnityEngine.Transform m_WelcomePosition = default;
+        [SerializeField] public UnityEngine.Transform m_TownHallPosition = default;
+        [SerializeField] public UnityEngine.Transform m_EventsPosition = default;
+        [SerializeField] public UnityEngine.Transform m_ParkPosition = default;
+        [SerializeField] public UnityEngine.Transform m_ArtCenterPosition = default;
+        [SerializeField] public UnityEngine.Transform m_BuilderCenterPosition = default;
+        [SerializeField] public UnityEngine.Transform m_TrasitStationPosition = default;
 
         protected override SerializedPropertyValue[] SerializeProperties()
         {
@@ -39,7 +48,22 @@ namespace Highrise.Lua.Generated
                 CreateSerializedProperty(_script.GetPropertyAt(2), null),
                 CreateSerializedProperty(_script.GetPropertyAt(3), null),
                 CreateSerializedProperty(_script.GetPropertyAt(4), null),
-                CreateSerializedProperty(_script.GetPropertyAt(5), m_MapImage),
+                CreateSerializedProperty(_script.GetPropertyAt(5), null),
+                CreateSerializedProperty(_script.GetPropertyAt(6), null),
+                CreateSerializedProperty(_script.GetPropertyAt(7), null),
+                CreateSerializedProperty(_script.GetPropertyAt(8), null),
+                CreateSerializedProperty(_script.GetPropertyAt(9), null),
+                CreateSerializedProperty(_script.GetPropertyAt(10), null),
+                CreateSerializedProperty(_script.GetPropertyAt(11), m_MapImage),
+                CreateSerializedProperty(_script.GetPropertyAt(12), m_MarketPostion),
+                CreateSerializedProperty(_script.GetPropertyAt(13), m_ShopPosition),
+                CreateSerializedProperty(_script.GetPropertyAt(14), m_WelcomePosition),
+                CreateSerializedProperty(_script.GetPropertyAt(15), m_TownHallPosition),
+                CreateSerializedProperty(_script.GetPropertyAt(16), m_EventsPosition),
+                CreateSerializedProperty(_script.GetPropertyAt(17), m_ParkPosition),
+                CreateSerializedProperty(_script.GetPropertyAt(18), m_ArtCenterPosition),
+                CreateSerializedProperty(_script.GetPropertyAt(19), m_BuilderCenterPosition),
+                CreateSerializedProperty(_script.GetPropertyAt(20), m_TrasitStationPosition),
             };
         }
     }
