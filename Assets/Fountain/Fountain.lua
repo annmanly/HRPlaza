@@ -100,7 +100,7 @@ function EmitReward()
     print("EMITTING GOLD")
     for i, player in playersInRange do
         if player then
-            TransferGold(player, 1)
+            -- TransferGold(player, 1)
         end
     end
 end

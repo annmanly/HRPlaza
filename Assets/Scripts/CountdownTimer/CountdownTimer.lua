@@ -1,14 +1,16 @@
 --!Type(UI)
 
 --!Bind
+local _billBoard: UILabel = nil
+--!Bind
 local countdownLabel: UILabel = nil
 --!Bind
 local billboardDisplay: UIImage = nil
 --!Bind
-local timerContainer: VisualElement = nil
+local countdownContainer: VisualElement = nil
 
 --!SerializeField
-local eventImages: {Texture} = {}
+local eventImages: {Texture2D} = {}
 
 --!SerializeField
 --!Tooltip("List of ET start times for each event in 'YYYY-MM-DD HH:MM:SS'")
@@ -19,8 +21,8 @@ local eventStartTimes: {string} = {}
 local eventEndTimes: {string} = {}
 
 -- Parsed epoch lists
-local _eventStartEpochs: table = {}
-local _eventEndEpochs: table = {}
+local _eventStartEpochs = {}
+local _eventEndEpochs = {}
 
 -- Calculate host timezone offset (local epoch minus UTC epoch)
 local function getTimezoneOffset()
@@ -60,7 +62,10 @@ function self:Awake()
 end
 
 function self:Start()
-    countdownLabel:SetPrelocalizedText("")
+    countdownLabel:SetPrelocalizedText("Live Now!")
+
+        
+
 end
 
 function self:Update()
@@ -78,16 +83,18 @@ function self:Update()
                 and string.format(fmt, h, m, sec)
                 or string.format(fmt, m, sec)
             countdownLabel:SetPrelocalizedText("Next Event: " .. text)
-            billboardDisplay.image = eventImages[i]
+            -- billboardDisplay.image = eventImages[i]
+            _billBoard.style.backgroundImage = eventImages[i]
             return
         elseif now < e then
             countdownLabel:SetPrelocalizedText("Live Now!")
-            billboardDisplay.image = eventImages[i]
+            -- billboardDisplay.image = eventImages[i]
+            _billBoard.style.backgroundImage = eventImages[i]
             return
         end
     end
-    countdownLabel:SetPrelocalizedText("")
-    timerContainer:AddToClassList("hidden")
+    countdownLabel:SetPrelocalizedText(" ")
+    countdownContainer:AddToClassList("hidden")
 end
 
 
