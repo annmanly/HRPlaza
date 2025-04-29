@@ -2,97 +2,94 @@
 
 --!Bind
 local countdownLabel: UILabel = nil
+--!Bind
+local billboardDisplay: UIImage = nil
+--!Bind
+local timerContainer: VisualElement = nil
 
 --!SerializeField
---!Tooltip("List of local date-times for event starts in 'YYYY-MM-DD HH:MM:SS'")
-local eventStartTimes: {string} = {"2025-06-15 10:00:00", "2025-06-15 18:00:00"}
+local eventImages: {Texture} = {}
 
 --!SerializeField
---!Tooltip("List of local date-times for event ends in 'YYYY-MM-DD HH:MM:SS'")
-local eventEndTimes: {string} = {"2025-06-15 12:00:00", "2025-06-15 20:00:00"}
+--!Tooltip("List of ET start times for each event in 'YYYY-MM-DD HH:MM:SS'")
+local eventStartTimes: {string} = {}
 
--- Parsed epoch times for each event marker
+--!SerializeField
+--!Tooltip("List of ET end times for each event in 'YYYY-MM-DD HH:MM:SS'")
+local eventEndTimes: {string} = {}
+
+-- Parsed epoch lists
 local _eventStartEpochs: table = {}
 local _eventEndEpochs: table = {}
 
--- Parse a local date-time string into an epoch timestamp (DST-aware)
-local function parseLocalDateTime(str)
-    print("[CountdownTimer] Parsing local date-time:", str)
+-- Calculate host timezone offset (local epoch minus UTC epoch)
+local function getTimezoneOffset()
+    local now = os.time()
+    local utcNow = os.time(os.date("!*t", now))
+    return os.difftime(now, utcNow)
+end
+local tzOffset = getTimezoneOffset()
+
+-- ET offset relative to UTC (ET = UTC-4)
+local ET_OFFSET = 4 * 3600
+
+-- Parse an ET date-time string into a UTC epoch timestamp
+local function parseETDateTime(str)
     local y, m, d, H, Min, S = str:match("(%d+)%-(%d+)%-(%d+)%s+(%d+):(%d+):(%d+)")
     if not y then
-        print("[CountdownTimer] parseLocalDateTime: failed to match pattern", str)
-        return nil
+        return 0
     end
     local tbl = {
         year = tonumber(y), month = tonumber(m), day = tonumber(d),
-        hour = tonumber(H),   min = tonumber(Min),      sec = tonumber(S),
-        isdst = false  -- auto-detect DST
+        hour = tonumber(H),   min = tonumber(Min),      sec = tonumber(S)
     }
-    local epoch = os.time(tbl)
-    print("[CountdownTimer] parseLocalDateTime: epoch =", epoch)
-    return epoch
+    local naiveEpoch = os.time(tbl)
+    -- convert naive local to UTC, then apply ET offset
+    local utcEpoch = naiveEpoch + tzOffset
+    return utcEpoch + ET_OFFSET
 end
 
 function self:Awake()
-    print("[CountdownTimer] Awake: parsing multiple events")
-    -- Ensure tables are clear
     _eventStartEpochs = {}
     _eventEndEpochs = {}
-
-    -- Parse each paired start/end time
-    local count = math.min(#eventStartTimes, #eventEndTimes)
+    local count = math.min(#eventStartTimes, #eventEndTimes, #eventImages)
     for i = 1, count do
-        local sEpoch = parseLocalDateTime(eventStartTimes[i]) or 0
-        local eEpoch = parseLocalDateTime(eventEndTimes[i])   or 0
-        table.insert(_eventStartEpochs, sEpoch)
-        table.insert(_eventEndEpochs, eEpoch)
-        print(string.format("[CountdownTimer] Event %d: start=%d, end=%d", i, sEpoch, eEpoch))
+        _eventStartEpochs[i] = parseETDateTime(eventStartTimes[i])
+        _eventEndEpochs[i]   = parseETDateTime(eventEndTimes[i])
     end
 end
 
 function self:Start()
-    print("[CountdownTimer] Start: clearing label, now=", os.time())
     countdownLabel:SetPrelocalizedText("")
 end
 
 function self:Update()
     local now = os.time()
-    -- Debug all events
-    for i = 1, #_eventStartEpochs do
-        print(string.format(
-          "[CountdownTimer] Event %d epochs: start=%d, end=%d", 
-          i, _eventStartEpochs[i], _eventEndEpochs[i]
-        ))
-    end
-    print("[CountdownTimer] now =", now)
-
-    -- Iterate through events
     for i = 1, #_eventStartEpochs do
         local s = _eventStartEpochs[i]
         local e = _eventEndEpochs[i]
-        -- Before event start: countdown
         if now < s then
-            print(string.format("[CountdownTimer] Phase: countdown to Event %d start", i))
-            local remaining = s - now
-            local h = math.floor(remaining / 3600)
-            local m = math.floor((remaining % 3600) / 60)
-            local sec = remaining % 60
-            local timeStr = (h > 0)
-                and string.format("%02d:%02d:%02d", h, m, sec)
-                or string.format("%02d:%02d", m, sec)
-            print(string.format("[CountdownTimer] remaining to E%d start: %d (%s)", i, remaining, timeStr))
-            countdownLabel:SetPrelocalizedText(timeStr)
+            local rem = s - now
+            local h = math.floor(rem / 3600)
+            local m = math.floor((rem % 3600) / 60)
+            local sec = rem % 60
+            local fmt = (h > 0) and "%02d:%02d:%02d" or "%02d:%02d"
+            local text = (h > 0)
+                and string.format(fmt, h, m, sec)
+                or string.format(fmt, m, sec)
+            countdownLabel:SetPrelocalizedText("Next Event: " .. text)
+            billboardDisplay.image = eventImages[i]
             return
-        end
-        -- During event: live
-        if now < e then
-            print(string.format("[CountdownTimer] Phase: Event %d Live", i))
-            countdownLabel:SetPrelocalizedText(string.format("Event%02d Live!", i))
+        elseif now < e then
+            countdownLabel:SetPrelocalizedText("Live Now!")
+            billboardDisplay.image = eventImages[i]
             return
         end
     end
-
-    -- After all events: clear label
-    print("[CountdownTimer] Phase: after all events")
     countdownLabel:SetPrelocalizedText("")
+    timerContainer:AddToClassList("hidden")
 end
+
+
+
+

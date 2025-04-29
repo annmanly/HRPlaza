@@ -6,9 +6,10 @@
     xmlns:editor="UnityEditor.UIElements"
     xsi:noNamespaceSchemaLocation="../../UIElementsSchema/UIElements.xsd"
 >
-    <hr:UILuaView class="countdown-timer">
-        <VisualElement class="timer-container">
-            <hr:UILabel name="countdownLabel" class="timer-label" text="00:00:00"/>
-        </VisualElement>
+    <hr:UILuaView class="billboard">
+         <VisualElement name="timerContainer" class="timer-container">
+                <hr:UILabel name="countdownLabel" class="timer-label" text="00:00:00"/>
+                <hr:UIImage name="billboardDisplay" class="billboard-display" />   
+            </VisualElement>
     </hr:UILuaView>
 </UXML>
