@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<UXML
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns="UnityEngine.UIElements"
+    xmlns:hr="Highrise.UI"
+    xmlns:editor="UnityEditor.UIElements"
+    xsi:noNamespaceSchemaLocation="../../UIElementsSchema/UIElements.xsd"
+>
+
+  <hr:UILuaView class="writeWishWindow" picking-mode="Ignore">
+  <VisualElement name="writeWishContainer"  picking-mode="Ignore">
+   <VisualElement name="_closeButton"/>
+    <VisualElement name="headerRow" picking-mode="Ignore">
+      <hr:UILabel name="_title" />
+    </VisualElement>
+    <VisualElement class="mainContent">
+      <VisualElement class="wishContainer">
+        <VisualElement class="inputTextContainer">
+        <hr:UITextField class="textInput"  name="_wishInput" maxLength="200" placeholder="What do you wish for?"> 
+        </hr:UITextField>
+        </VisualElement>
+        <VisualElement class="wishDetailsRow">
+          <!-- <hr:UILabel class="wishAuthor"  name="_wishAuthorDisplay" /> -->
+          <Label class="length-counter" text="0 / 200" name="_wishLengthCounter" />
+        </VisualElement>
+      </VisualElement>
+    </VisualElement>
+    <!-- <VisualElement class="toggleSetting">
+      <hr:UISwitchToggle name="_isAnonAuthor" class="margin-right" value="false" />
+      <Label text="Hide My Name"/>
+    </VisualElement>
+    <VisualElement class="toggleSetting">
+      <hr:UISwitchToggle name="_isSecret" class="margin-right" value="false" />
+      <Label text="Secret Wish (Text will be hidden)"/>
+    </VisualElement> -->
+    <VisualElement class="buttonRow">
+      <VisualElement class="button" name="_submit">
+        <Label text="Submit Wish"/>
+      </VisualElement>
+    </VisualElement>
+  </VisualElement>
+  </hr:UILuaView>
+
+</UXML>
