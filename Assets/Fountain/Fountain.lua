@@ -45,12 +45,14 @@ end
 function OnWishEvent(player)
     coin = GameObject.Instantiate(coinObj, player.character.transform.position)
     coinController = coin.gameObject:GetComponent(CoinController)
-    Timer.After(.5, function() coinController.throw(coinTarget.gameObject.transform.position) end)
-    Timer.After(.8, function() player.character:PlayEmote("emoji-pray", false) end)
-    Timer.After(1.1, function() 
-        wishParticles.gameObject:SetActive(true) 
-        Timer.After(1, function() wishParticles.gameObject:SetActive(false) end)
+    Timer.After(.5, function() 
+        coinController.throw(coinTarget.gameObject.transform.position) 
+        Timer.After(.6, function() 
+            wishParticles.gameObject:SetActive(true) 
+            Timer.After(1, function() wishParticles.gameObject:SetActive(false) end)
+        end)
     end)
+    Timer.After(.8, function() player.character:PlayEmote("emoji-pray", false) end)
     
 end
 
