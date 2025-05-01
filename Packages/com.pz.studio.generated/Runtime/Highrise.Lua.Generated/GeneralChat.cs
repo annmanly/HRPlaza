@@ -30,6 +30,8 @@ namespace Highrise.Lua.Generated
         [SerializeField] public System.String m_noVoiceChannelName = "General Chat";
         [SerializeField] public System.String m_voiceChannelName = "General Voice";
         [SerializeField] public System.String m_broadcastChannelName = "Broadcast";
+        [Tooltip("Restricts voice chat to world/room owners, moderators, and verified 18+ users")]
+        [SerializeField] public System.Boolean m_verifiedOnlyVoice = false;
         [SerializeField] public System.Boolean m_enableProximityChat = true;
         [Tooltip("The distance between players where their voice starts to get softer")]
         [SerializeField] public System.Double m_maxVolumeDistance = 15;
@@ -48,9 +50,10 @@ namespace Highrise.Lua.Generated
                 CreateSerializedProperty(_script.GetPropertyAt(2), m_noVoiceChannelName),
                 CreateSerializedProperty(_script.GetPropertyAt(3), m_voiceChannelName),
                 CreateSerializedProperty(_script.GetPropertyAt(4), m_broadcastChannelName),
-                CreateSerializedProperty(_script.GetPropertyAt(5), m_enableProximityChat),
-                CreateSerializedProperty(_script.GetPropertyAt(6), m_maxVolumeDistance),
-                CreateSerializedProperty(_script.GetPropertyAt(7), m_minVolumeDistance),
+                CreateSerializedProperty(_script.GetPropertyAt(5), m_verifiedOnlyVoice),
+                CreateSerializedProperty(_script.GetPropertyAt(6), m_enableProximityChat),
+                CreateSerializedProperty(_script.GetPropertyAt(7), m_maxVolumeDistance),
+                CreateSerializedProperty(_script.GetPropertyAt(8), m_minVolumeDistance),
             };
         }
     }

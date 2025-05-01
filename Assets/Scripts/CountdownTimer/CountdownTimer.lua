@@ -81,7 +81,7 @@ function self:Update()
             billboardDisplay.image = eventImages[i]
             return
         elseif now < e then
-            countdownLabel:SetPrelocalizedText("Live Now!")
+            countdownLabel:SetPrelocalizedText("LIVE NOW!")
             billboardDisplay.image = eventImages[i]
             return
         end

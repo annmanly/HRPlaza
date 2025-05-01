@@ -1,0 +1,352 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &1635964932954331658
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1532223480110855631}
+  - component: {fileID: 3345317119146116799}
+  - component: {fileID: 1882358953229487807}
+  m_Layer: 0
+  m_Name: HRLiveBillboard_Tall
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1532223480110855631
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1635964932954331658}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: 0.26522234, z: -0, w: -0.96418726}
+  m_LocalPosition: {x: 13.109, y: -0.61, z: -30.819}
+  m_LocalScale: {x: 1.5456227, y: 1.5456227, z: 1.5456227}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 8365916210780015498}
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: -30.76, z: 0}
+--- !u!33 &3345317119146116799
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1635964932954331658}
+  m_Mesh: {fileID: 4300000, guid: 98b9127e094001849abe00d6ae4f1c85, type: 3}
+--- !u!23 &1882358953229487807
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1635964932954331658}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
+  m_MotionVectors: 1
+  m_LightProbeUsage: 0
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 2
+  m_RayTraceProcedural: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 2100000, guid: 2dda19039c1504b9eb73848844d81f23, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_AdditionalVertexStreams: {fileID: 0}
+--- !u!1001 &3170836272932447501
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 1532223480110855631}
+    m_Modifications:
+    - target: {fileID: 3334731579557114303, guid: 3739f1ad83b5d40aa9cfd42939f8d739,
+        type: 3}
+      propertyPath: m_eventImages.Array.size
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 3334731579557114303, guid: 3739f1ad83b5d40aa9cfd42939f8d739,
+        type: 3}
+      propertyPath: m_eventEndTimes.Array.size
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 3334731579557114303, guid: 3739f1ad83b5d40aa9cfd42939f8d739,
+        type: 3}
+      propertyPath: m_eventImages.Array.data[0]
+      value: 
+      objectReference: {fileID: 2800000, guid: 5a2bc2f87c40c4984b02b553d17b2935, type: 3}
+    - target: {fileID: 3334731579557114303, guid: 3739f1ad83b5d40aa9cfd42939f8d739,
+        type: 3}
+      propertyPath: m_eventImages.Array.data[1]
+      value: 
+      objectReference: {fileID: 2800000, guid: 81395dd03bece405ea5b574bf84cca03, type: 3}
+    - target: {fileID: 3334731579557114303, guid: 3739f1ad83b5d40aa9cfd42939f8d739,
+        type: 3}
+      propertyPath: m_eventImages.Array.data[2]
+      value: 
+      objectReference: {fileID: 2800000, guid: 081e691ae2fb04cad89e63ec17f463b5, type: 3}
+    - target: {fileID: 3334731579557114303, guid: 3739f1ad83b5d40aa9cfd42939f8d739,
+        type: 3}
+      propertyPath: m_eventImages.Array.data[3]
+      value: 
+      objectReference: {fileID: 2800000, guid: 367fac336a3b14bd99fc9baf578ccdfd, type: 3}
+    - target: {fileID: 3334731579557114303, guid: 3739f1ad83b5d40aa9cfd42939f8d739,
+        type: 3}
+      propertyPath: m_eventImages.Array.data[4]
+      value: 
+      objectReference: {fileID: 2800000, guid: e7db04e41639348c4969bef9d36d3b1e, type: 3}
+    - target: {fileID: 3334731579557114303, guid: 3739f1ad83b5d40aa9cfd42939f8d739,
+        type: 3}
+      propertyPath: m_eventImages.Array.data[5]
+      value: 
+      objectReference: {fileID: 2800000, guid: 82435053aff264e93a35b58559bf98d4, type: 3}
+    - target: {fileID: 3334731579557114303, guid: 3739f1ad83b5d40aa9cfd42939f8d739,
+        type: 3}
+      propertyPath: m_eventImages.Array.data[6]
+      value: 
+      objectReference: {fileID: 2800000, guid: a68eb36f7f5db418cb8825bd9c8dd18f, type: 3}
+    - target: {fileID: 3334731579557114303, guid: 3739f1ad83b5d40aa9cfd42939f8d739,
+        type: 3}
+      propertyPath: m_eventStartTimes.Array.size
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 3334731579557114303, guid: 3739f1ad83b5d40aa9cfd42939f8d739,
+        type: 3}
+      propertyPath: m_eventEndTimes.Array.data[0]
+      value: 2025-04-30 23:00:00
+      objectReference: {fileID: 0}
+    - target: {fileID: 3334731579557114303, guid: 3739f1ad83b5d40aa9cfd42939f8d739,
+        type: 3}
+      propertyPath: m_eventEndTimes.Array.data[1]
+      value: 2025-05-01 21:00:00
+      objectReference: {fileID: 0}
+    - target: {fileID: 3334731579557114303, guid: 3739f1ad83b5d40aa9cfd42939f8d739,
+        type: 3}
+      propertyPath: m_eventEndTimes.Array.data[2]
+      value: 2025-05-02 13:00:00
+      objectReference: {fileID: 0}
+    - target: {fileID: 3334731579557114303, guid: 3739f1ad83b5d40aa9cfd42939f8d739,
+        type: 3}
+      propertyPath: m_eventEndTimes.Array.data[3]
+      value: 2025-05-02 19:00:00
+      objectReference: {fileID: 0}
+    - target: {fileID: 3334731579557114303, guid: 3739f1ad83b5d40aa9cfd42939f8d739,
+        type: 3}
+      propertyPath: m_eventEndTimes.Array.data[4]
+      value: 2025-05-02 21:30:00
+      objectReference: {fileID: 0}
+    - target: {fileID: 3334731579557114303, guid: 3739f1ad83b5d40aa9cfd42939f8d739,
+        type: 3}
+      propertyPath: m_eventEndTimes.Array.data[5]
+      value: 2025-05-03 19:00:00
+      objectReference: {fileID: 0}
+    - target: {fileID: 3334731579557114303, guid: 3739f1ad83b5d40aa9cfd42939f8d739,
+        type: 3}
+      propertyPath: m_eventEndTimes.Array.data[6]
+      value: 2025-05-03 22:00:00
+      objectReference: {fileID: 0}
+    - target: {fileID: 3334731579557114303, guid: 3739f1ad83b5d40aa9cfd42939f8d739,
+        type: 3}
+      propertyPath: m_eventStartTimes.Array.data[0]
+      value: 2025-04-30 21:00:00
+      objectReference: {fileID: 0}
+    - target: {fileID: 3334731579557114303, guid: 3739f1ad83b5d40aa9cfd42939f8d739,
+        type: 3}
+      propertyPath: m_eventStartTimes.Array.data[1]
+      value: 2025-05-01 20:00:00
+      objectReference: {fileID: 0}
+    - target: {fileID: 3334731579557114303, guid: 3739f1ad83b5d40aa9cfd42939f8d739,
+        type: 3}
+      propertyPath: m_eventStartTimes.Array.data[2]
+      value: 2025-05-02 12:00:00
+      objectReference: {fileID: 0}
+    - target: {fileID: 3334731579557114303, guid: 3739f1ad83b5d40aa9cfd42939f8d739,
+        type: 3}
+      propertyPath: m_eventStartTimes.Array.data[3]
+      value: 2025-05-02 17:00:00
+      objectReference: {fileID: 0}
+    - target: {fileID: 3334731579557114303, guid: 3739f1ad83b5d40aa9cfd42939f8d739,
+        type: 3}
+      propertyPath: m_eventStartTimes.Array.data[4]
+      value: 2025-05-02 19:00:00
+      objectReference: {fileID: 0}
+    - target: {fileID: 3334731579557114303, guid: 3739f1ad83b5d40aa9cfd42939f8d739,
+        type: 3}
+      propertyPath: m_eventStartTimes.Array.data[5]
+      value: 2025-05-03 17:00:00
+      objectReference: {fileID: 0}
+    - target: {fileID: 3334731579557114303, guid: 3739f1ad83b5d40aa9cfd42939f8d739,
+        type: 3}
+      propertyPath: m_eventStartTimes.Array.data[6]
+      value: 2025-05-03 20:00:00
+      objectReference: {fileID: 0}
+    - target: {fileID: 6348006959374298759, guid: 3739f1ad83b5d40aa9cfd42939f8d739,
+        type: 3}
+      propertyPath: m_LocalScale.x
+      value: 1.5482395
+      objectReference: {fileID: 0}
+    - target: {fileID: 6348006959374298759, guid: 3739f1ad83b5d40aa9cfd42939f8d739,
+        type: 3}
+      propertyPath: m_LocalScale.y
+      value: 2.2549362
+      objectReference: {fileID: 0}
+    - target: {fileID: 6348006959374298759, guid: 3739f1ad83b5d40aa9cfd42939f8d739,
+        type: 3}
+      propertyPath: m_LocalScale.z
+      value: 0.45098734
+      objectReference: {fileID: 0}
+    - target: {fileID: 6348006959374298759, guid: 3739f1ad83b5d40aa9cfd42939f8d739,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -0.002849417
+      objectReference: {fileID: 0}
+    - target: {fileID: 6348006959374298759, guid: 3739f1ad83b5d40aa9cfd42939f8d739,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 1.4621937
+      objectReference: {fileID: 0}
+    - target: {fileID: 6348006959374298759, guid: 3739f1ad83b5d40aa9cfd42939f8d739,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0.08376425
+      objectReference: {fileID: 0}
+    - target: {fileID: 6348006959374298759, guid: 3739f1ad83b5d40aa9cfd42939f8d739,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.0008376837
+      objectReference: {fileID: 0}
+    - target: {fileID: 6348006959374298759, guid: 3739f1ad83b5d40aa9cfd42939f8d739,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6348006959374298759, guid: 3739f1ad83b5d40aa9cfd42939f8d739,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0.99999964
+      objectReference: {fileID: 0}
+    - target: {fileID: 6348006959374298759, guid: 3739f1ad83b5d40aa9cfd42939f8d739,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6348006959374298759, guid: 3739f1ad83b5d40aa9cfd42939f8d739,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6348006959374298759, guid: 3739f1ad83b5d40aa9cfd42939f8d739,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 149.336
+      objectReference: {fileID: 0}
+    - target: {fileID: 6348006959374298759, guid: 3739f1ad83b5d40aa9cfd42939f8d739,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6630504038331972231, guid: 3739f1ad83b5d40aa9cfd42939f8d739,
+        type: 3}
+      propertyPath: m_Name
+      value: HRLiveCalendarUI
+      objectReference: {fileID: 0}
+    m_RemovedComponents:
+    - {fileID: 1872679283629668171, guid: 3739f1ad83b5d40aa9cfd42939f8d739, type: 3}
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 6630504038331972231, guid: 3739f1ad83b5d40aa9cfd42939f8d739,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 7899104853261024325}
+  m_SourcePrefab: {fileID: 100100000, guid: 3739f1ad83b5d40aa9cfd42939f8d739, type: 3}
+--- !u!23 &5132097559947496829 stripped
+MeshRenderer:
+  m_CorrespondingSourceObject: {fileID: 7726432312444725360, guid: 3739f1ad83b5d40aa9cfd42939f8d739,
+    type: 3}
+  m_PrefabInstance: {fileID: 3170836272932447501}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &8071957415745953674 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6630504038331972231, guid: 3739f1ad83b5d40aa9cfd42939f8d739,
+    type: 3}
+  m_PrefabInstance: {fileID: 3170836272932447501}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &7899104853261024325
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8071957415745953674}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 493f0ad2a9224406b2bfd444bfd6911c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _networkId: 0
+  _script: {fileID: -974389366465450183, guid: f3e00a0713fd44d30860d491050991c9, type: 3}
+  _properties: []
+  _uiOutput: 1
+  _uiOutputSettings:
+    rid: 8680671389101326338
+  m_eventImages:
+  - {fileID: 2800000, guid: 86c5a3d7c84fe4b9f9fe834e0e406043, type: 3}
+  - {fileID: 2800000, guid: 8b56e1de6ac6645f7939a85caed298e6, type: 3}
+  - {fileID: 2800000, guid: 6e8186468e2b148fd95487749b488dca, type: 3}
+  m_eventStartTimes:
+  - 2025-04-30 23:00:00
+  - 2025-05-01 20:00:00
+  - 2025-05-02 12:00:00
+  m_eventEndTimes:
+  - 2025-04-30 23:30:00
+  - 2025-05-01 21:00:00
+  - 2025-05-02 13:00:00
+  references:
+    version: 2
+    RefIds:
+    - rid: 8680671389101326338
+      type: {class: UIWorldOutputSettings, ns: Highrise.Client, asm: com.pz.highrise.game.client}
+      data:
+        Renderer: {fileID: 5132097559947496829}
+        Size: {x: 256, y: 373}
+        ClearColor: 1
+        ClearColorValue: {r: 1, g: 1, b: 1, a: 0}
+--- !u!4 &8365916210780015498 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 6348006959374298759, guid: 3739f1ad83b5d40aa9cfd42939f8d739,
+    type: 3}
+  m_PrefabInstance: {fileID: 3170836272932447501}
+  m_PrefabAsset: {fileID: 0}
