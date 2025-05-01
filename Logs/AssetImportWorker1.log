@@ -1,0 +1,454 @@
+Unity Editor version:    2022.3.30f1 (70558241b701)
+Branch:                  2022.3/staging
+Build type:              Release
+Batch mode:              YES
+macOS version:           Version 14.6.1 (Build 23G93)
+Darwin version:          23.6.0
+Architecture:            arm64
+Running under Rosetta:   NO
+Available memory:        16384 MB
+Using pre-set license
+Pro License: YES
+
+COMMAND LINE ARGUMENTS:
+/Applications/Unity/Hub/Editor/2022.3.30f1/Unity.app/Contents/MacOS/Unity
+-adb2
+-batchMode
+-noUpm
+-name
+AssetImportWorker1
+-projectPath
+/Users/annmanly/Downloads/Highrise Studio Projects/HRPlazaGit
+-logFile
+Logs/AssetImportWorker1.log
+-srvPort
+53558
+Successfully changed project path to: /Users/annmanly/Downloads/Highrise Studio Projects/HRPlazaGit
+/Users/annmanly/Downloads/Highrise Studio Projects/HRPlazaGit
+[UnityMemory] Configuration Parameters - Can be set up in boot.config
+    "memorysetup-bucket-allocator-granularity=16"
+    "memorysetup-bucket-allocator-bucket-count=8"
+    "memorysetup-bucket-allocator-block-size=33554432"
+    "memorysetup-bucket-allocator-block-count=8"
+    "memorysetup-main-allocator-block-size=16777216"
+    "memorysetup-thread-allocator-block-size=16777216"
+    "memorysetup-gfx-main-allocator-block-size=16777216"
+    "memorysetup-gfx-thread-allocator-block-size=16777216"
+    "memorysetup-cache-allocator-block-size=4194304"
+    "memorysetup-typetree-allocator-block-size=2097152"
+    "memorysetup-profiler-bucket-allocator-granularity=16"
+    "memorysetup-profiler-bucket-allocator-bucket-count=8"
+    "memorysetup-profiler-bucket-allocator-block-size=33554432"
+    "memorysetup-profiler-bucket-allocator-block-count=8"
+    "memorysetup-profiler-allocator-block-size=16777216"
+    "memorysetup-profiler-editor-allocator-block-size=1048576"
+    "memorysetup-temp-allocator-size-main=16777216"
+    "memorysetup-job-temp-allocator-block-size=2097152"
+    "memorysetup-job-temp-allocator-block-size-background=1048576"
+    "memorysetup-job-temp-allocator-reduction-small-platforms=262144"
+    "memorysetup-allocator-temp-initial-block-size-main=262144"
+    "memorysetup-allocator-temp-initial-block-size-worker=262144"
+    "memorysetup-temp-allocator-size-background-worker=32768"
+    "memorysetup-temp-allocator-size-job-worker=262144"
+    "memorysetup-temp-allocator-size-preload-manager=33554432"
+    "memorysetup-temp-allocator-size-nav-mesh-worker=65536"
+    "memorysetup-temp-allocator-size-audio-worker=65536"
+    "memorysetup-temp-allocator-size-cloud-worker=32768"
+    "memorysetup-temp-allocator-size-gi-baking-worker=262144"
+    "memorysetup-temp-allocator-size-gfx=262144"
+Player connection [8617152320] Host "[IP] 192.168.1.13 [Port] 0 [Flags] 2 [Guid] 1594257128 [EditorId] 1594257128 [Version] 1048832 [Id] OSXEditor(0,MacBook-Pro.local) [Debug] 1 [PackageName] OSXEditor [ProjectName] Editor" joined multi-casting on [225.0.0.222:54997]...
+
+Player connection [8617152320] Host "[IP] 192.168.1.13 [Port] 0 [Flags] 2 [Guid] 1594257128 [EditorId] 1594257128 [Version] 1048832 [Id] OSXEditor(0,MacBook-Pro.local) [Debug] 1 [PackageName] OSXEditor [ProjectName] Editor" joined alternative multi-casting on [225.0.0.222:34997]...
+
+[Physics::Module] Initialized MultithreadedJobDispatcher with 7 workers.
+Refreshing native plugins compatible for Editor in 48.60 ms, found 5 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Initialize engine version: 2022.3.30f1 (70558241b701)
+[Subsystems] Discovering subsystems at path /Applications/Unity/Hub/Editor/2022.3.30f1/Unity.app/Contents/Resources/UnitySubsystems
+[Subsystems] Discovering subsystems at path /Users/annmanly/Downloads/Highrise Studio Projects/HRPlazaGit/Assets
+GfxDevice: creating device client; threaded=0; jobified=0
+ preferred device: Apple M2 (high power)
+Metal devices available: 1
+0: Apple M2 (high power)
+Using device Apple M2 (high power)
+Initializing Metal device caps: Apple M2
+Initialize mono
+Mono path[0] = '/Applications/Unity/Hub/Editor/2022.3.30f1/Unity.app/Contents/Managed'
+Mono path[1] = '/Applications/Unity/Hub/Editor/2022.3.30f1/Unity.app/Contents/MonoBleedingEdge/lib/mono/unityjit-macos'
+Mono config path = '/Applications/Unity/Hub/Editor/2022.3.30f1/Unity.app/Contents/MonoBleedingEdge/etc'
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56856
+Begin MonoManager ReloadAssembly
+Registering precompiled unity dll's ...
+Register platform support module: /Applications/Unity/Hub/Editor/2022.3.30f1/Unity.app/Contents/PlaybackEngines/MacStandaloneSupport/UnityEditor.OSXStandalone.Extensions.dll
+Registered in 0.002296 seconds.
+- Loaded All Assemblies, in  0.212 seconds
+Native extension for OSXStandalone target not found
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  0.135 seconds
+Domain Reload Profiling: 347ms
+	BeginReloadAssembly (79ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (0ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (0ms)
+	RebuildCommonClasses (21ms)
+	RebuildNativeTypeToScriptingClass (7ms)
+	initialDomainReloadingComplete (26ms)
+	LoadAllAssembliesAndSetupDomain (79ms)
+		LoadAssemblies (79ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (78ms)
+			TypeCache.Refresh (77ms)
+				TypeCache.ScanAssembly (68ms)
+			ScanForSourceGeneratedMonoScriptInfo (0ms)
+			ResolveRequiredComponents (0ms)
+	FinalizeReload (135ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (102ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (5ms)
+			SetLoadedEditorAssemblies (4ms)
+			RefreshPlugins (0ms)
+			BeforeProcessingInitializeOnLoad (1ms)
+			ProcessInitializeOnLoadAttributes (71ms)
+			ProcessInitializeOnLoadMethodAttributes (21ms)
+			AfterProcessingInitializeOnLoad (0ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (0ms)
+========================================================================
+Worker process is ready to serve import requests
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory is not a mono symbol file
+- Loaded All Assemblies, in  0.623 seconds
+Refreshing native plugins compatible for Editor in 4.03 ms, found 5 plugins.
+Native extension for OSXStandalone target not found
+Package Manager log level set to [2]
+[Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] UpmClient::Send -- Unable to send message (not connected to UPM process).
+[Package Manager] Cannot connect to Unity Package Manager local server
+[MODES] ModeService[none].Initialize
+[MODES] ModeService[none].LoadModes
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  0.605 seconds
+Domain Reload Profiling: 1228ms
+	BeginReloadAssembly (65ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (3ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (11ms)
+	RebuildCommonClasses (19ms)
+	RebuildNativeTypeToScriptingClass (7ms)
+	initialDomainReloadingComplete (23ms)
+	LoadAllAssembliesAndSetupDomain (509ms)
+		LoadAssemblies (293ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (244ms)
+			TypeCache.Refresh (203ms)
+				TypeCache.ScanAssembly (180ms)
+			ScanForSourceGeneratedMonoScriptInfo (31ms)
+			ResolveRequiredComponents (8ms)
+	FinalizeReload (605ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (492ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (2ms)
+			SetLoadedEditorAssemblies (2ms)
+			RefreshPlugins (0ms)
+			BeforeProcessingInitializeOnLoad (48ms)
+			ProcessInitializeOnLoadAttributes (295ms)
+			ProcessInitializeOnLoadMethodAttributes (144ms)
+			AfterProcessingInitializeOnLoad (1ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (2ms)
+Launching external process: /Applications/Unity/Hub/Editor/2022.3.30f1/Unity.app/Contents/Tools/UnityShaderCompiler
+Launched and connected shader compiler UnityShaderCompiler after 0.03 seconds
+Refreshing native plugins compatible for Editor in 3.95 ms, found 5 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 7672 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 165 unused Assets / (0.7 MB). Loaded Objects now: 8430.
+Memory consumption went from 319.5 MB to 318.8 MB.
+Total: 9.633917 ms (FindLiveObjects: 0.353375 ms CreateObjectMapping: 0.215417 ms MarkObjects: 8.506292 ms  DeleteObjects: 0.558292 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
+  custom:AudioImporter_EditorPlatform: 3918e3fc78b5a79bad01e8451be0beb8 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:CustomObjectIndexerAttribute: 72b91833f83ae208fae7752999fa3104 -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:framework-osx-AVFoundation: e770b220cccbd017edd2c1fefb359320 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 8404.176048 seconds.
+  path: Assets/Prefabs/MapMenu.prefab
+  artifactKey: Guid(d5bf9080509c949d09552fe56bdebcde) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/MapMenu.prefab using Guid(d5bf9080509c949d09552fe56bdebcde) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f99c06b970a84ad5c0e3a38a3ebc12cf') in 0.041235 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 48
+========================================================================
+Received Import Request.
+  Time since last request: 0.000028 seconds.
+  path: Assets/Prefabs/EventsBillboard_Tall.prefab
+  artifactKey: Guid(76a53bbc9012a4af0a886184d6efb0e4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/EventsBillboard_Tall.prefab using Guid(76a53bbc9012a4af0a886184d6efb0e4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2e018b7eb4233da4913f2d5dbc72b3ec') in 0.119867 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 47
+========================================================================
+Received Import Request.
+  Time since last request: 0.000046 seconds.
+  path: Assets/Prefabs/DeepLink.prefab
+  artifactKey: Guid(d8edc950d258b6d4db78a4575b57da38) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/DeepLink.prefab using Guid(d8edc950d258b6d4db78a4575b57da38) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a3cf084ba99c58a9b17bb45d55bc5fbb') in 0.008595 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 28
+========================================================================
+Received Import Request.
+  Time since last request: 0.000036 seconds.
+  path: Assets/Prefabs/HRLiveBillboard_EventCountdown.prefab
+  artifactKey: Guid(5eb63a2e214d741699d687c66caa4721) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/HRLiveBillboard_EventCountdown.prefab using Guid(5eb63a2e214d741699d687c66caa4721) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3608ce564c637e8b33d25aff2eca3eeb') in 0.006526 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 38
+========================================================================
+Received Import Request.
+  Time since last request: 349.162839 seconds.
+  path: Assets/Downloads/Rise Shelf 2/RisePack/Mesh/Rise_Shelf_2.fbx
+  artifactKey: Guid(33153d65c076c934487b0b2b62ec9b18) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Downloads/Rise Shelf 2/RisePack/Mesh/Rise_Shelf_2.fbx using Guid(33153d65c076c934487b0b2b62ec9b18) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6c232264be86704690645d0c55029ac5') in 0.066343 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 9
+========================================================================
+Received Import Request.
+  Time since last request: 23.645706 seconds.
+  path: Assets/Downloads/Toys - Low Poly Pack/Toys-Low_Poly_Big_Pack/Models/boomerang.fbx
+  artifactKey: Guid(c8fb1b1c8fa09b64d8af10019c5f7cff) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Downloads/Toys - Low Poly Pack/Toys-Low_Poly_Big_Pack/Models/boomerang.fbx using Guid(c8fb1b1c8fa09b64d8af10019c5f7cff) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '99809c21f62f9b71d3821caed10b5aca') in 0.010133 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 8
+========================================================================
+Received Import Request.
+  Time since last request: 0.000051 seconds.
+  path: Assets/Downloads/Loading Games/Toon City Pack/Models/Buildings/Commercial Buildings/commercial-building-coffee-shop.fbx
+  artifactKey: Guid(4e452fc9aaac34b03b583851cfe966d4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Downloads/Loading Games/Toon City Pack/Models/Buildings/Commercial Buildings/commercial-building-coffee-shop.fbx using Guid(4e452fc9aaac34b03b583851cfe966d4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '01e13a6cabd088c138b2059844b50cce') in 0.018743 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 16
+========================================================================
+Received Import Request.
+  Time since last request: 0.000084 seconds.
+  path: Assets/Downloads/Loading Games/Toon City Pack/Prefabs/Buildings/Commercial Buildings/commercial-building-coffee-shop.prefab
+  artifactKey: Guid(bf1f5bdc441574cccb97bc77d94cccac) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Downloads/Loading Games/Toon City Pack/Prefabs/Buildings/Commercial Buildings/commercial-building-coffee-shop.prefab using Guid(bf1f5bdc441574cccb97bc77d94cccac) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a4a4a0d641da19d906303e45a08e02c1') in 0.005385 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 17
+========================================================================
+Received Import Request.
+  Time since last request: 0.000033 seconds.
+  path: Assets/Downloads/Simple Billboard/SimpleBillboard/SimpleBillboard.lua
+  artifactKey: Guid(3ceab48c95daa604688c3d970e7a2720) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Downloads/Simple Billboard/SimpleBillboard/SimpleBillboard.lua using Guid(3ceab48c95daa604688c3d970e7a2720) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e66cc8d789485069c0668d3d82fc0558') in 0.001232 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 6
+========================================================================
+Received Import Request.
+  Time since last request: 158.242021 seconds.
+  path: Assets/Downloads/FastMesh/Materials/Black 2.mat
+  artifactKey: Guid(1f2a608d8e9f3024197ed64fc02041f9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Downloads/FastMesh/Materials/Black 2.mat using Guid(1f2a608d8e9f3024197ed64fc02041f9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2f2b28e5edb751c08ed059336c723301') in 0.008002 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000042 seconds.
+  path: Assets/Downloads/FastMesh/Materials/Floor 4.mat
+  artifactKey: Guid(cbcb8c85164fd094eadffb22f8789239) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Downloads/FastMesh/Materials/Floor 4.mat using Guid(cbcb8c85164fd094eadffb22f8789239) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1f0c0fe96e80d78deb74550b37d5f65a') in 0.004496 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000141 seconds.
+  path: Assets/Downloads/FastMesh/Materials/Purple-Pink 1.mat
+  artifactKey: Guid(da6ee0149d48cd44f96962a956d78207) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Downloads/FastMesh/Materials/Purple-Pink 1.mat using Guid(da6ee0149d48cd44f96962a956d78207) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '85f2f3362e20d2e79cebe2f10622b6b0') in 0.004542 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000048 seconds.
+  path: Assets/Downloads/FastMesh/Materials/Orange 2.mat
+  artifactKey: Guid(eef5c77e2e281434fabd46228b9bc266) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Downloads/FastMesh/Materials/Orange 2.mat using Guid(eef5c77e2e281434fabd46228b9bc266) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c8c4ef6263a0aaad6161dc0d76c3a0ca') in 0.003981 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000034 seconds.
+  path: Assets/Downloads/FastMesh/Materials/GreenDark.mat
+  artifactKey: Guid(3fdf6524f7daca2438e3a5d6c137f39b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Downloads/FastMesh/Materials/GreenDark.mat using Guid(3fdf6524f7daca2438e3a5d6c137f39b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'aa7271ac5278ceded000db9dce509a1b') in 0.004612 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000048 seconds.
+  path: Assets/Downloads/FastMesh/Materials/wood 2.mat
+  artifactKey: Guid(7a6ea77746828b94ab099afff5a6965b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Downloads/FastMesh/Materials/wood 2.mat using Guid(7a6ea77746828b94ab099afff5a6965b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '59fda2a4c37809b95153696de2255328') in 0.004487 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000207 seconds.
+  path: Assets/Downloads/FastMesh/Materials/Steel 2.mat
+  artifactKey: Guid(7eb1df4fcbfc19c42ba0cedb12a877bd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Downloads/FastMesh/Materials/Steel 2.mat using Guid(7eb1df4fcbfc19c42ba0cedb12a877bd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0d6620cae01a486f9f510488c8e4e06e') in 0.005173 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 1293.664958 seconds.
+  path: Assets/Scripts/HRLive_Calendar/HRLive_Calendar.uss
+  artifactKey: Guid(acabc3659977a4dd881f58a1ee8f150c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/HRLive_Calendar/HRLive_Calendar.uss using Guid(acabc3659977a4dd881f58a1ee8f150c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ad903227874bf89f5db75b0f7a3187fd') in 0.011888 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000088 seconds.
+  path: Assets/Textures/HRLiveCalendar_BeatsAndBlooms.png
+  artifactKey: Guid(6e8186468e2b148fd95487749b488dca) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Textures/HRLiveCalendar_BeatsAndBlooms.png using Guid(6e8186468e2b148fd95487749b488dca) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '605735f2fd8f509dd155eb39e985f309') in 0.069696 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 19.930477 seconds.
+  path: Assets/Textures/HRLiveCalendar_StudioShowcase.png
+  artifactKey: Guid(36883cab1588e47198010a356411af47) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Textures/HRLiveCalendar_StudioShowcase.png using Guid(36883cab1588e47198010a356411af47) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1c6cb71b47c157d5c2ec3e8eca97c674') in 0.009629 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 10.159555 seconds.
+  path: Assets/Textures/HRLiveBillboard_TGIT.png
+  artifactKey: Guid(81395dd03bece405ea5b574bf84cca03) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Textures/HRLiveBillboard_TGIT.png using Guid(81395dd03bece405ea5b574bf84cca03) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1b3c99f731534fbd15223031dea4814b') in 0.009592 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000038 seconds.
+  path: Assets/Textures/HRLiveBillboardl_Default.png
+  artifactKey: Guid(11250b6bfc4a94af4b0afbeae516925d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Textures/HRLiveBillboardl_Default.png using Guid(11250b6bfc4a94af4b0afbeae516925d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8bc0fd772478cb1126184ebb934c7fc0') in 0.004935 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 19.809103 seconds.
+  path: Assets/Textures/HRLiveBillboard_KappaLotusNight.png
+  artifactKey: Guid(a68eb36f7f5db418cb8825bd9c8dd18f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Textures/HRLiveBillboard_KappaLotusNight.png using Guid(a68eb36f7f5db418cb8825bd9c8dd18f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '546dcac10577974d51a6b8cdc8ccdeab') in 0.012372 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000077 seconds.
+  path: Assets/Textures/HRLiveBillboard_NostalgiaNight.png
+  artifactKey: Guid(5a2bc2f87c40c4984b02b553d17b2935) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Textures/HRLiveBillboard_NostalgiaNight.png using Guid(5a2bc2f87c40c4984b02b553d17b2935) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '04b72ce486b55f546d98226cf02b097e') in 0.011010 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 186.167892 seconds.
+  path: Assets/Textures/EventsBillboard_Small_HarajukuDaydreams.png
+  artifactKey: Guid(929b10814516a43918a3606423e1597d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Textures/EventsBillboard_Small_HarajukuDaydreams.png using Guid(929b10814516a43918a3606423e1597d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '952aee2882e092fe37704281c436a520') in 0.010945 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000120 seconds.
+  path: Assets/Textures/comingsoon.png
+  artifactKey: Guid(68084bcde331843209ca29bdc765f2f0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Textures/comingsoon.png using Guid(68084bcde331843209ca29bdc765f2f0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4c7fda5c91c93cc8f9f7b77204f981c5') in 0.004848 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000063 seconds.
+  path: Assets/Textures/EmojiHand.png
+  artifactKey: Guid(4f2593742d75e44a58d4c90a36c4e05d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Textures/EmojiHand.png using Guid(4f2593742d75e44a58d4c90a36c4e05d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '116b595654143b4c2ce5c3b24e3ffbe3') in 0.009464 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000078 seconds.
+  path: Assets/Textures/EventsBillboard_Harajuku.psd
+  artifactKey: Guid(7dae421b28a06439dbc492b68839736b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Textures/EventsBillboard_Harajuku.psd using Guid(7dae421b28a06439dbc492b68839736b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '590bf4d07902891b6f5b8ff79e1499e7') in 0.008743 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 153.643235 seconds.
+  path: Assets/Downloads/Loading Games/Toon City Pack/Models/Infrastructure/Infrastructure Buildings/infrastructure-building-airport.fbx
+  artifactKey: Guid(4c71066b1aa33458b9708dad0587a354) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Downloads/Loading Games/Toon City Pack/Models/Infrastructure/Infrastructure Buildings/infrastructure-building-airport.fbx using Guid(4c71066b1aa33458b9708dad0587a354) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ce52f0f0e88a795a23beea22c8b24bca') in 0.061965 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 23
+========================================================================
+Received Import Request.
+  Time since last request: 0.000117 seconds.
+  path: Assets/Downloads/Loading Games/Toon City Pack/Models/Infrastructure/Props/road-sign-single.fbx
+  artifactKey: Guid(790776b712c434523b711946403a7b62) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Downloads/Loading Games/Toon City Pack/Models/Infrastructure/Props/road-sign-single.fbx using Guid(790776b712c434523b711946403a7b62) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fa673b93f70e909e20b4eef22dc798ea') in 0.013359 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 14
+========================================================================
+Received Import Request.
+  Time since last request: 0.000129 seconds.
+  path: Assets/Downloads/Loading Games/Toon City Pack/Models/Vegetation/tree-type-C.fbx
+  artifactKey: Guid(38a4c5ebc9a2f4ea3841e7ebbc45b8b6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Downloads/Loading Games/Toon City Pack/Models/Vegetation/tree-type-C.fbx using Guid(38a4c5ebc9a2f4ea3841e7ebbc45b8b6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5c87f465744853acee6d1513eede2a9e') in 0.011355 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 10
+========================================================================
+Received Import Request.
+  Time since last request: 0.000121 seconds.
+  path: Assets/Downloads/Loading Games/Toon City Pack/Models/Vegetation/tree-type-B.fbx
+  artifactKey: Guid(80e7d82b43d664c56bf105cb38071268) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Downloads/Loading Games/Toon City Pack/Models/Vegetation/tree-type-B.fbx using Guid(80e7d82b43d664c56bf105cb38071268) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ad8c0e896cb88810a74f0c94274e9d60') in 0.008048 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 10
+========================================================================
+Received Import Request.
+  Time since last request: 0.000028 seconds.
+  path: Assets/Downloads/Loading Games/Toon City Pack/Models/Infrastructure/Props/road-block-type-A.fbx
+  artifactKey: Guid(6d5c9bf9d4fc04226bf2b0873193d2e7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Downloads/Loading Games/Toon City Pack/Models/Infrastructure/Props/road-block-type-A.fbx using Guid(6d5c9bf9d4fc04226bf2b0873193d2e7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '40b0dd00ee221b07e64a081bee917ba9') in 0.008703 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 10
+========================================================================
+Received Import Request.
+  Time since last request: 0.000103 seconds.
+  path: Assets/Downloads/Loading Games/Toon City Pack/Models/Infrastructure/Props/road-sign-double(two-lane-road).fbx
+  artifactKey: Guid(505062bdf3e564a748607d29fea0d3a7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Downloads/Loading Games/Toon City Pack/Models/Infrastructure/Props/road-sign-double(two-lane-road).fbx using Guid(505062bdf3e564a748607d29fea0d3a7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '250e05e705420eca210c23407c3821e3') in 0.009199 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 14
