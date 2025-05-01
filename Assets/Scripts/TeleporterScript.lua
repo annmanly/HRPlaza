@@ -7,15 +7,15 @@ function self:ClientAwake()
 
     local player = client.localPlayer
 
-    local teleportLocation = nil
+    local teleportLoaction = nil
 
     function Teleport(position)
-        teleportLocation = position
-        teleportRequest:FireServer(teleportLocation)
+        teleportLoaction = position
+        teleportRequest:FireServer (teleportLoaction)
     end
 
     teleportEvent:Connect(function(player, pos)
-        player.character:Teleport(pos)
+        player.character:Teleport(teleportLoaction)
     end)
 end
 
@@ -24,6 +24,6 @@ end
 function self:ServerAwake()
     teleportRequest:Connect(function(player, pos)
         player.character.transform.position = pos
-        teleportEvent:FireAllClients(player, pos)
+        teleportEvent:FireAllClients(player)
     end)
 end
