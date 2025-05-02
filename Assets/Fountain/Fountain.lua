@@ -23,6 +23,7 @@ local bubbleRewardAmount = 10
 local winnerGoldAmount = 5 -- live would be ~69
 local inRangeGoldAmount = 1
 local maxRangePlayers = 30
+local minimumRequiredBalance = 50
 local currentRangeCount = 0
 local oddsNumber = 2 -- will win 1 in 2, live would be 100
 local wishitemID = "wish"
@@ -56,9 +57,10 @@ end
 function OnWishEvent(player, wonGold)
     if wonGold then particles = wishGoldWonParticles else particles = wishParticles end
 
-    coin = GameObject.Instantiate(coinObj, player.character.transform.position + Vector3.new(0,2,0))
-    coinController = coin.gameObject:GetComponent(CoinController)
+    
     Timer.After(.5, function() 
+        coin = GameObject.Instantiate(coinObj, player.character.transform.position + Vector3.new(0,3,0))
+        coinController = coin.gameObject:GetComponent(CoinController)
         coinController.throw(coinTarget.gameObject.transform.position) 
         Timer.After(1.2, function() 
             particles.gameObject:SetActive(true) 
@@ -145,13 +147,16 @@ end
 
 function EmitReward(winningPlayer)
     print("EMITTING GOLD")
-    for i, player in playersInRange do
-        if player then
-            if player == winningPlayer then
-                 TransferGold(player, winnerGoldAmount)
-            else
-            TransferGold(player, 1)
-            GiveSingleCoinEvent:FireAllClients(player)
+    for name, player in playersInRange do
+
+        if player ~= nil then
+            if not player.isDestroyed then
+                if player == winningPlayer then
+                    TransferGold(player, winnerGoldAmount)
+                else
+                TransferGold(player, 1)
+                GiveSingleCoinEvent:FireAllClients(player)
+                end
             end
         end
     end
@@ -172,16 +177,6 @@ function TransferGold(player, amount)
     end)
   end
 
-function GetWorldWalletBalance()
-    Wallet.GetWallet(function(response, err)
-        if err ~= WalletError.None then
-            error("Something went wrong while retrieving wallet: " .. WalletError[err])
-            return
-        end
-
-        print("Current Gold: ", response.gold)
-    end)
-end
 
 function OnWishSubmitRequest(player, wishData)
     print("RECEIVED WISH: " .. player.name .. "WISH: " .. wishData.wishMessage)
@@ -192,16 +187,20 @@ function OnWishSubmitRequest(player, wishData)
             return
         end
 
-        currentGold = response.gold
+        print("Current Gold: " .. response.gold .. " EARNED GOLD: " .. response.earnedGold) 
+        
+
+        currentGold = response.gold + response.earnedGold
         rollNumber = math.random(1,oddsNumber)
-        if rollNumber == 1 and currentGold >= 100 then
+        if rollNumber == 1 and currentGold >= minimumRequiredBalance then
+
             WishEvent:FireAllClients(player, true)
             EmitReward(player)
         else
             WishEvent:FireAllClients(player, false)
         end
 
-        print("Current Gold: ", response.gold)
+        
     end)
 
 end
