@@ -56,7 +56,7 @@ end
 function OnWishEvent(player, wonGold)
     if wonGold then particles = wishGoldWonParticles else particles = wishParticles end
 
-    coin = GameObject.Instantiate(coinObj, player.character.transform.position)
+    coin = GameObject.Instantiate(coinObj, player.character.transform.position + Vector3.new(0,2,0))
     coinController = coin.gameObject:GetComponent(CoinController)
     Timer.After(.5, function() 
         coinController.throw(coinTarget.gameObject.transform.position) 
@@ -82,7 +82,7 @@ function giveCoinsAnimation(player, number)
             coinStartPos = coinTarget.gameObject.transform.position + Vector3.new(startOffsetX, 0, StartOffsetZ)
             coin = GameObject.Instantiate(coinObj, coinStartPos)
             coinController = coin.gameObject:GetComponent(CoinController)
-            coinController.throw(player.character.transform.position + Vector3.new(0,2,0)) 
+            coinController.throw(player.character.transform.position + Vector3.new(0,3,0)) 
         end )
 
     end
@@ -235,7 +235,7 @@ function ServerHandlePurchase(purchase, player: Player)
             Storage.SetPlayerValue(player, "Wishes", value)
         end)
 
-        print("[ServerHandlePurchase]: Tip received from " .. player.name .. " for " .. itemToGive.Name)
+        print("[ServerHandlePurchase]: Tip received from " .. player.name)
     end) 
 end
 
