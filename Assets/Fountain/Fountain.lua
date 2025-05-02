@@ -25,6 +25,7 @@ local inRangeGoldAmount = 1
 local maxRangePlayers = 30
 local currentRangeCount = 0
 local oddsNumber = 2 -- will win 1 in 2, live would be 100
+local wishitemID = "wish"
 
 local AddInRangeRequest = Event.new("AddToRange")
 local RemoveInRangeRequest = Event.new("RemoveInRange")
@@ -110,6 +111,20 @@ function self:OnTriggerExit(collider: Collider)
     end
 end
 
+-- Function to prompt the purchase
+function BuyWish(wishData)
+    print("[SendTip]: Prompting purchase for wish ")
+    -- Prompt the purchase
+    local itemId = wishitemID
+    Payments:PromptPurchase(itemId, function(paid)
+        if paid then
+            WishSubmitRequest:FireServer(wishData)
+        else
+            print("[SendTip]: Purchase failed!")
+        end
+    end)
+end
+
 -- [[ SERVER ]]
 
 function AddToRange(player)
@@ -169,7 +184,7 @@ function GetWorldWalletBalance()
 end
 
 function OnWishSubmitRequest(player, wishData)
-    print("RECEIVED WISH DATA: " .. player.name .. " WISH: " .. wishData.wishMessage)
+    print("RECEIVED WISH: " .. player.name .. "WISH: " .. wishData.wishMessage)
     Wallet.GetWallet(function(response, err)
         if err ~= WalletError.None then
             error("Something went wrong while retrieving wallet: " .. WalletError[err])
@@ -191,8 +206,41 @@ function OnWishSubmitRequest(player, wishData)
 
 end
 
-function self:ServerAwake()
+function ServerHandlePurchase(purchase, player: Player)
+    local productId = purchase.product_id
+    print("[ServerHandlePurchase]: Purchase made by player " .. tostring(player) .. " for product " .. tostring(productId))
 
+    local itemToGive = "wish"
+    if not itemToGive then
+        Payments.AcknowledgePurchase(purchase, false)
+        error("[ServerHandlePurchase]: Item not found!" .. tostring(productId))
+        return
+    end
+
+
+    Payments.AcknowledgePurchase(purchase, true, function(ackErr: PaymentsError)
+        if ackErr ~= PaymentsError.None then
+            error("[ServerHandlePurchase]: Acknowledge purchase failed!" .. tostring(ackErr))
+            return
+        end
+
+        
+        Storage.GetPlayerValue(player, "Wishes", function(value)
+            if value then
+                value = value + 1
+            else
+                value = 1
+            end
+
+            Storage.SetPlayerValue(player, "Wishes", value)
+        end)
+
+        print("[ServerHandlePurchase]: Tip received from " .. player.name .. " for " .. itemToGive.Name)
+    end) 
+end
+
+function self:ServerAwake()
+    Payments.PurchaseHandler = ServerHandlePurchase
     WishSubmitRequest:Connect(OnWishSubmitRequest)
     AddInRangeRequest:Connect(AddToRange)
     RemoveInRangeRequest:Connect(RemoveFromRange)

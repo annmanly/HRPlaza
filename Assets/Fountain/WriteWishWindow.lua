@@ -54,7 +54,8 @@ function submitWish()
         -- wishDate = timestamp,
         wishMessage = _wishInput.text
     }
-    fountainManager.WishSubmitRequest:FireServer(wish)
+    -- fountainManager.WishSubmitRequest:FireServer(wish)
+    fountainManager.BuyWish(wish)
     print("SUBMIT WISH WITH TEXT" .. _wishInput.text .. " AUTHOR: " .. client.localPlayer.name)
 
     closeWindow()
