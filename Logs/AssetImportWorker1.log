@@ -1,0 +1,615 @@
+Unity Editor version:    2022.3.30f1 (70558241b701)
+Branch:                  2022.3/staging
+Build type:              Release
+Batch mode:              YES
+macOS version:           Version 14.6.1 (Build 23G93)
+Darwin version:          23.6.0
+Architecture:            arm64
+Running under Rosetta:   NO
+Available memory:        16384 MB
+Using pre-set license
+Pro License: YES
+
+COMMAND LINE ARGUMENTS:
+/Applications/Unity/Hub/Editor/2022.3.30f1/Unity.app/Contents/MacOS/Unity
+-adb2
+-batchMode
+-noUpm
+-name
+AssetImportWorker1
+-projectPath
+/Users/annmanly/Downloads/Highrise Studio Projects/HRPlazaGit
+-logFile
+Logs/AssetImportWorker1.log
+-srvPort
+54221
+Successfully changed project path to: /Users/annmanly/Downloads/Highrise Studio Projects/HRPlazaGit
+/Users/annmanly/Downloads/Highrise Studio Projects/HRPlazaGit
+[UnityMemory] Configuration Parameters - Can be set up in boot.config
+    "memorysetup-bucket-allocator-granularity=16"
+    "memorysetup-bucket-allocator-bucket-count=8"
+    "memorysetup-bucket-allocator-block-size=33554432"
+    "memorysetup-bucket-allocator-block-count=8"
+    "memorysetup-main-allocator-block-size=16777216"
+    "memorysetup-thread-allocator-block-size=16777216"
+    "memorysetup-gfx-main-allocator-block-size=16777216"
+    "memorysetup-gfx-thread-allocator-block-size=16777216"
+    "memorysetup-cache-allocator-block-size=4194304"
+    "memorysetup-typetree-allocator-block-size=2097152"
+    "memorysetup-profiler-bucket-allocator-granularity=16"
+    "memorysetup-profiler-bucket-allocator-bucket-count=8"
+    "memorysetup-profiler-bucket-allocator-block-size=33554432"
+    "memorysetup-profiler-bucket-allocator-block-count=8"
+    "memorysetup-profiler-allocator-block-size=16777216"
+    "memorysetup-profiler-editor-allocator-block-size=1048576"
+    "memorysetup-temp-allocator-size-main=16777216"
+    "memorysetup-job-temp-allocator-block-size=2097152"
+    "memorysetup-job-temp-allocator-block-size-background=1048576"
+    "memorysetup-job-temp-allocator-reduction-small-platforms=262144"
+    "memorysetup-allocator-temp-initial-block-size-main=262144"
+    "memorysetup-allocator-temp-initial-block-size-worker=262144"
+    "memorysetup-temp-allocator-size-background-worker=32768"
+    "memorysetup-temp-allocator-size-job-worker=262144"
+    "memorysetup-temp-allocator-size-preload-manager=33554432"
+    "memorysetup-temp-allocator-size-nav-mesh-worker=65536"
+    "memorysetup-temp-allocator-size-audio-worker=65536"
+    "memorysetup-temp-allocator-size-cloud-worker=32768"
+    "memorysetup-temp-allocator-size-gi-baking-worker=262144"
+    "memorysetup-temp-allocator-size-gfx=262144"
+Player connection [8617152320] Host "[IP] 192.168.1.13 [Port] 0 [Flags] 2 [Guid] 2897483950 [EditorId] 2897483950 [Version] 1048832 [Id] OSXEditor(0,MacBook-Pro.local) [Debug] 1 [PackageName] OSXEditor [ProjectName] Editor" joined multi-casting on [225.0.0.222:54997]...
+
+Player connection [8617152320] Host "[IP] 192.168.1.13 [Port] 0 [Flags] 2 [Guid] 2897483950 [EditorId] 2897483950 [Version] 1048832 [Id] OSXEditor(0,MacBook-Pro.local) [Debug] 1 [PackageName] OSXEditor [ProjectName] Editor" joined alternative multi-casting on [225.0.0.222:34997]...
+
+[Physics::Module] Initialized MultithreadedJobDispatcher with 7 workers.
+Refreshing native plugins compatible for Editor in 39.96 ms, found 5 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Initialize engine version: 2022.3.30f1 (70558241b701)
+[Subsystems] Discovering subsystems at path /Applications/Unity/Hub/Editor/2022.3.30f1/Unity.app/Contents/Resources/UnitySubsystems
+[Subsystems] Discovering subsystems at path /Users/annmanly/Downloads/Highrise Studio Projects/HRPlazaGit/Assets
+GfxDevice: creating device client; threaded=0; jobified=0
+ preferred device: Apple M2 (high power)
+Metal devices available: 1
+0: Apple M2 (high power)
+Using device Apple M2 (high power)
+Initializing Metal device caps: Apple M2
+Initialize mono
+Mono path[0] = '/Applications/Unity/Hub/Editor/2022.3.30f1/Unity.app/Contents/Managed'
+Mono path[1] = '/Applications/Unity/Hub/Editor/2022.3.30f1/Unity.app/Contents/MonoBleedingEdge/lib/mono/unityjit-macos'
+Mono config path = '/Applications/Unity/Hub/Editor/2022.3.30f1/Unity.app/Contents/MonoBleedingEdge/etc'
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56950
+Begin MonoManager ReloadAssembly
+Registering precompiled unity dll's ...
+Register platform support module: /Applications/Unity/Hub/Editor/2022.3.30f1/Unity.app/Contents/PlaybackEngines/MacStandaloneSupport/UnityEditor.OSXStandalone.Extensions.dll
+Registered in 0.001027 seconds.
+- Loaded All Assemblies, in  0.207 seconds
+Native extension for OSXStandalone target not found
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  0.152 seconds
+Domain Reload Profiling: 359ms
+	BeginReloadAssembly (76ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (0ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (0ms)
+	RebuildCommonClasses (20ms)
+	RebuildNativeTypeToScriptingClass (7ms)
+	initialDomainReloadingComplete (25ms)
+	LoadAllAssembliesAndSetupDomain (79ms)
+		LoadAssemblies (77ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (76ms)
+			TypeCache.Refresh (76ms)
+				TypeCache.ScanAssembly (67ms)
+			ScanForSourceGeneratedMonoScriptInfo (0ms)
+			ResolveRequiredComponents (0ms)
+	FinalizeReload (152ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (116ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (5ms)
+			SetLoadedEditorAssemblies (3ms)
+			RefreshPlugins (0ms)
+			BeforeProcessingInitializeOnLoad (1ms)
+			ProcessInitializeOnLoadAttributes (83ms)
+			ProcessInitializeOnLoadMethodAttributes (24ms)
+			AfterProcessingInitializeOnLoad (0ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (0ms)
+========================================================================
+Worker process is ready to serve import requests
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory is not a mono symbol file
+- Loaded All Assemblies, in  0.599 seconds
+Refreshing native plugins compatible for Editor in 4.94 ms, found 5 plugins.
+Native extension for OSXStandalone target not found
+Package Manager log level set to [2]
+[Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] UpmClient::Send -- Unable to send message (not connected to UPM process).
+[Package Manager] Cannot connect to Unity Package Manager local server
+[MODES] ModeService[none].Initialize
+[MODES] ModeService[none].LoadModes
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  0.589 seconds
+Domain Reload Profiling: 1187ms
+	BeginReloadAssembly (62ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (3ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (12ms)
+	RebuildCommonClasses (19ms)
+	RebuildNativeTypeToScriptingClass (7ms)
+	initialDomainReloadingComplete (23ms)
+	LoadAllAssembliesAndSetupDomain (488ms)
+		LoadAssemblies (275ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (238ms)
+			TypeCache.Refresh (202ms)
+				TypeCache.ScanAssembly (180ms)
+			ScanForSourceGeneratedMonoScriptInfo (26ms)
+			ResolveRequiredComponents (8ms)
+	FinalizeReload (589ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (479ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (2ms)
+			SetLoadedEditorAssemblies (3ms)
+			RefreshPlugins (0ms)
+			BeforeProcessingInitializeOnLoad (48ms)
+			ProcessInitializeOnLoadAttributes (285ms)
+			ProcessInitializeOnLoadMethodAttributes (141ms)
+			AfterProcessingInitializeOnLoad (1ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (1ms)
+Launching external process: /Applications/Unity/Hub/Editor/2022.3.30f1/Unity.app/Contents/Tools/UnityShaderCompiler
+Launched and connected shader compiler UnityShaderCompiler after 0.03 seconds
+Refreshing native plugins compatible for Editor in 3.53 ms, found 5 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 7668 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 165 unused Assets / (0.7 MB). Loaded Objects now: 8426.
+Memory consumption went from 317.5 MB to 316.8 MB.
+Total: 9.155167 ms (FindLiveObjects: 0.288542 ms CreateObjectMapping: 0.247583 ms MarkObjects: 8.149333 ms  DeleteObjects: 0.469125 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
+  custom:AudioImporter_EditorPlatform: 3918e3fc78b5a79bad01e8451be0beb8 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:CustomObjectIndexerAttribute: 72b91833f83ae208fae7752999fa3104 -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:scripting/precompiled-assembly-types:com.pz.studio.generated: ef2e768c8766e0d04fb097cc2d15bcbc -> 5ce50bd6f6a483d159660d2ebb539a08
+  custom:framework-osx-AVFoundation: e770b220cccbd017edd2c1fefb359320 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:scripting/monoscript/fileName/TweenModule.cs:  -> c50afdabcbb851028b017b77d4f54688
+  custom:scripting/monoscript/fileName/Fountain.cs:  -> 14bf784da1c14fb2ff7345dc2375d5d4
+  custom:scripting/monoscript/fileName/FountainInteract.cs:  -> f75d90350fbe1add6d47064683a8797e
+  custom:scripting/monoscript/fileName/CoinController.cs:  -> b4248239e3141d03aa993bc188f8a949
+  custom:scripting/monoscript/fileName/WriteWishWindow.cs:  -> 25d9d8e8d5d413ec9c96b84e233c691e
+  custom:scripting/monoscript/fileName/FountainWishes.cs:  -> 59822d7f8b1ff8721dab9fecddbe9e77
+========================================================================
+Received Prepare
+Begin MonoManager ReloadAssembly
+Thread 0x33ae47000 may have been prematurely finalized
+Symbol file LoadedFromMemory is not a mono symbol file
+- Loaded All Assemblies, in  0.337 seconds
+Refreshing native plugins compatible for Editor in 3.35 ms, found 5 plugins.
+Native extension for OSXStandalone target not found
+[Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] UpmClient::Send -- Unable to send message (not connected to UPM process).
+[Package Manager] Cannot connect to Unity Package Manager local server
+[MODES] ModeService[none].Initialize
+[MODES] ModeService[none].LoadModes
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  0.720 seconds
+Domain Reload Profiling: 1057ms
+	BeginReloadAssembly (102ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (2ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (49ms)
+	RebuildCommonClasses (19ms)
+	RebuildNativeTypeToScriptingClass (7ms)
+	initialDomainReloadingComplete (19ms)
+	LoadAllAssembliesAndSetupDomain (190ms)
+		LoadAssemblies (196ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (20ms)
+			TypeCache.Refresh (9ms)
+				TypeCache.ScanAssembly (0ms)
+			ScanForSourceGeneratedMonoScriptInfo (0ms)
+			ResolveRequiredComponents (10ms)
+	FinalizeReload (720ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (432ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (2ms)
+			SetLoadedEditorAssemblies (3ms)
+			RefreshPlugins (0ms)
+			BeforeProcessingInitializeOnLoad (46ms)
+			ProcessInitializeOnLoadAttributes (259ms)
+			ProcessInitializeOnLoadMethodAttributes (122ms)
+			AfterProcessingInitializeOnLoad (1ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (5ms)
+Refreshing native plugins compatible for Editor in 4.93 ms, found 5 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 7473 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 126 unused Assets / (0.7 MB). Loaded Objects now: 8448.
+Memory consumption went from 284.0 MB to 283.3 MB.
+Total: 8.505125 ms (FindLiveObjects: 0.276083 ms CreateObjectMapping: 0.158667 ms MarkObjects: 7.689917 ms  DeleteObjects: 0.379916 ms)
+
+Prepare: number of updated asset objects reloaded= 7
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
+  custom:AudioImporter_EditorPlatform: 3918e3fc78b5a79bad01e8451be0beb8 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:CustomObjectIndexerAttribute: 72b91833f83ae208fae7752999fa3104 -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:framework-osx-AVFoundation: e770b220cccbd017edd2c1fefb359320 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 11715.856130 seconds.
+  path: Assets/UI.uxmlf
+  artifactKey: Guid(c65e086ed33db43afb0409648b512d14) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/UI.uxmlf using Guid(c65e086ed33db43afb0409648b512d14) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b1e78037c66f356693d9abab2f60c75c') in 0.001926 seconds
+Number of updated asset objects reloaded before import = 7
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 0.000055 seconds.
+  path: Assets/UniversalRenderPipelineGlobalSettings.asset
+  artifactKey: Guid(870d812eeb7bc51419ffa8232187b58b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/UniversalRenderPipelineGlobalSettings.asset using Guid(870d812eeb7bc51419ffa8232187b58b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '07d67a76541cdffe2c0cebd3e4553e95') in 0.007381 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000438 seconds.
+  path: Assets/WorldSceneJoystick.prefab
+  artifactKey: Guid(911fa8abe91964a7bb438af98183ac59) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/WorldSceneJoystick.prefab using Guid(911fa8abe91964a7bb438af98183ac59) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cb29fbc2ee9d6454901dee8302e30178') in 0.029046 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 78
+========================================================================
+Received Prepare
+Begin MonoManager ReloadAssembly
+Thread 0x31e287000 may have been prematurely finalized
+Symbol file LoadedFromMemory is not a mono symbol file
+- Loaded All Assemblies, in  0.448 seconds
+Refreshing native plugins compatible for Editor in 4.19 ms, found 5 plugins.
+Native extension for OSXStandalone target not found
+[Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] UpmClient::Send -- Unable to send message (not connected to UPM process).
+[Package Manager] Cannot connect to Unity Package Manager local server
+[MODES] ModeService[none].Initialize
+[MODES] ModeService[none].LoadModes
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  1.255 seconds
+Domain Reload Profiling: 1703ms
+	BeginReloadAssembly (133ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (2ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (76ms)
+	RebuildCommonClasses (19ms)
+	RebuildNativeTypeToScriptingClass (7ms)
+	initialDomainReloadingComplete (19ms)
+	LoadAllAssembliesAndSetupDomain (269ms)
+		LoadAssemblies (242ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (56ms)
+			TypeCache.Refresh (14ms)
+				TypeCache.ScanAssembly (1ms)
+			ScanForSourceGeneratedMonoScriptInfo (33ms)
+			ResolveRequiredComponents (9ms)
+	FinalizeReload (1255ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (438ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (3ms)
+			SetLoadedEditorAssemblies (3ms)
+			RefreshPlugins (0ms)
+			BeforeProcessingInitializeOnLoad (49ms)
+			ProcessInitializeOnLoadAttributes (254ms)
+			ProcessInitializeOnLoadMethodAttributes (129ms)
+			AfterProcessingInitializeOnLoad (1ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (42ms)
+Refreshing native plugins compatible for Editor in 6.62 ms, found 5 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 7499 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 127 unused Assets / (0.7 MB). Loaded Objects now: 8540.
+Memory consumption went from 292.4 MB to 291.8 MB.
+Total: 8.534833 ms (FindLiveObjects: 0.298208 ms CreateObjectMapping: 0.157333 ms MarkObjects: 7.687500 ms  DeleteObjects: 0.391083 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
+  custom:AudioImporter_EditorPlatform: 3918e3fc78b5a79bad01e8451be0beb8 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:CustomObjectIndexerAttribute: 72b91833f83ae208fae7752999fa3104 -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:framework-osx-AVFoundation: e770b220cccbd017edd2c1fefb359320 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 389.751036 seconds.
+  path: Assets/Textures/EmojiHand.png
+  artifactKey: Guid(4f2593742d75e44a58d4c90a36c4e05d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Textures/EmojiHand.png using Guid(4f2593742d75e44a58d4c90a36c4e05d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '116b595654143b4c2ce5c3b24e3ffbe3') in 0.058242 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000032 seconds.
+  path: Assets/Textures/HRLiveBillboard_StudioShowcase.png
+  artifactKey: Guid(e7db04e41639348c4969bef9d36d3b1e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Textures/HRLiveBillboard_StudioShowcase.png using Guid(e7db04e41639348c4969bef9d36d3b1e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '06e6dec2c765bb5c6e73b17d6c053364') in 0.008736 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000072 seconds.
+  path: Assets/Textures/HRLiveCalendar_LiveWithLexapro.png
+  artifactKey: Guid(37ed2b3c209eb419dae6aba5529545f9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Textures/HRLiveCalendar_LiveWithLexapro.png using Guid(37ed2b3c209eb419dae6aba5529545f9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0ee85e979cec359917aa7f0d18da0638') in 0.008278 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000083 seconds.
+  path: Assets/Textures/HRLiveBillboard_NostalgiaNight.png
+  artifactKey: Guid(5a2bc2f87c40c4984b02b553d17b2935) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Textures/HRLiveBillboard_NostalgiaNight.png using Guid(5a2bc2f87c40c4984b02b553d17b2935) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '04b72ce486b55f546d98226cf02b097e') in 0.007910 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000028 seconds.
+  path: Assets/Textures/HRLiveCalendar_NostalgiaNight.png
+  artifactKey: Guid(86c5a3d7c84fe4b9f9fe834e0e406043) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Textures/HRLiveCalendar_NostalgiaNight.png using Guid(86c5a3d7c84fe4b9f9fe834e0e406043) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'acdf22cdd4848fd80195ae9bf077c231') in 0.007298 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000044 seconds.
+  path: Assets/Textures/HRLiveCalendar_AnimeShenanigans.png
+  artifactKey: Guid(f1a5a7f079dbb4e7fb7ab814ddaa6001) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Textures/HRLiveCalendar_AnimeShenanigans.png using Guid(f1a5a7f079dbb4e7fb7ab814ddaa6001) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c2e7397c1ccc753de3e794696f1ca1eb') in 0.006604 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000084 seconds.
+  path: Assets/Textures/EventsBillboard_CitySirens.png
+  artifactKey: Guid(d78fe3fcbe3714655835c0aabf591efc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Textures/EventsBillboard_CitySirens.png using Guid(d78fe3fcbe3714655835c0aabf591efc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2d8ffada53b88584abe650c17347a8c5') in 0.008207 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000026 seconds.
+  path: Assets/Textures/EventsBillboard_Small_Default.png
+  artifactKey: Guid(2ee4137efbf05483385b888c1e7d3b4a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Textures/EventsBillboard_Small_Default.png using Guid(2ee4137efbf05483385b888c1e7d3b4a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b0a342d60b078ec710818eab74622f01') in 0.004938 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000037 seconds.
+  path: Assets/Textures/EventsBillboard_Small_CitySirens.png
+  artifactKey: Guid(a501fd625ffcb494fb2954dd32783671) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Textures/EventsBillboard_Small_CitySirens.png using Guid(a501fd625ffcb494fb2954dd32783671) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '66e1ccef3253dded0fe62549aa802dd6') in 0.007989 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000171 seconds.
+  path: Assets/Textures/HRLiveBillboardl_Default.png
+  artifactKey: Guid(11250b6bfc4a94af4b0afbeae516925d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Textures/HRLiveBillboardl_Default.png using Guid(11250b6bfc4a94af4b0afbeae516925d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8bc0fd772478cb1126184ebb934c7fc0') in 0.004248 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000051 seconds.
+  path: Assets/Textures/HRLiveBillboard_BloomsAndBeats.png
+  artifactKey: Guid(081e691ae2fb04cad89e63ec17f463b5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Textures/HRLiveBillboard_BloomsAndBeats.png using Guid(081e691ae2fb04cad89e63ec17f463b5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8243455b8d5c71355c2f21f3ce0a884c') in 0.008078 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000034 seconds.
+  path: Assets/Textures/HRLiveBillboard_KappaLotusNight.png
+  artifactKey: Guid(a68eb36f7f5db418cb8825bd9c8dd18f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Textures/HRLiveBillboard_KappaLotusNight.png using Guid(a68eb36f7f5db418cb8825bd9c8dd18f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '546dcac10577974d51a6b8cdc8ccdeab') in 0.007410 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 2.857640 seconds.
+  path: Assets/Prefabs/EventsBillboard_Main.prefab
+  artifactKey: Guid(f655f9a2d161846d38667b883d83b516) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/EventsBillboard_Main.prefab using Guid(f655f9a2d161846d38667b883d83b516) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c0b6c46388194f5696ee10c377ac9868') in 0.236591 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 51
+========================================================================
+Received Import Request.
+  Time since last request: 0.000050 seconds.
+  path: Assets/Prefabs/PrefabEventsTimer02.prefab
+  artifactKey: Guid(8283580a59c194d7798eef4357a17267) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/PrefabEventsTimer02.prefab using Guid(8283580a59c194d7798eef4357a17267) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '75e1f954e753d0a14ed32cae974e8821') in 0.005307 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 17
+========================================================================
+Received Import Request.
+  Time since last request: 0.000114 seconds.
+  path: Assets/Prefabs/PrefabEventsTimer01.prefab
+  artifactKey: Guid(84a8175ba805d45339b2ecf5c8cf0229) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/PrefabEventsTimer01.prefab using Guid(84a8175ba805d45339b2ecf5c8cf0229) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b71febda631510ccdbe5d05607e63fcf') in 0.004528 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 18
+========================================================================
+Received Import Request.
+  Time since last request: 0.000147 seconds.
+  path: Assets/Prefabs/PrefabHRLiveEvents.prefab
+  artifactKey: Guid(3739f1ad83b5d40aa9cfd42939f8d739) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/PrefabHRLiveEvents.prefab using Guid(3739f1ad83b5d40aa9cfd42939f8d739) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '95620817a3471154a192530be9449ef9') in 0.007187 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 24
+========================================================================
+Received Import Request.
+  Time since last request: 0.000036 seconds.
+  path: Assets/Prefabs/HRLive_CalendarBillboard.prefab
+  artifactKey: Guid(a79774c4eb7c84e17addde7dca2a31e1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/HRLive_CalendarBillboard.prefab using Guid(a79774c4eb7c84e17addde7dca2a31e1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4dda5ea9b6615e9b2240b9ac120b5cc2') in 0.008863 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 52
+========================================================================
+Received Import Request.
+  Time since last request: 0.000036 seconds.
+  path: Assets/Prefabs/HRLiveBillboard_Tall.prefab
+  artifactKey: Guid(a3c71038c6ff44ca889bdb9894aa254e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/HRLiveBillboard_Tall.prefab using Guid(a3c71038c6ff44ca889bdb9894aa254e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '80d17a50c2f7e75c991575caf3806c96') in 0.007784 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 48
+========================================================================
+Received Import Request.
+  Time since last request: 0.000035 seconds.
+  path: Assets/Prefabs/HRLiveBillboard_EventCountdown.prefab
+  artifactKey: Guid(5eb63a2e214d741699d687c66caa4721) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/HRLiveBillboard_EventCountdown.prefab using Guid(5eb63a2e214d741699d687c66caa4721) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cee0d09907a03c0c38e34d26e86e0374') in 0.000681 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 273.671740 seconds.
+  path: Assets/Downloads/Paulisia_S/3D Game Kit - Lowpoly city assets/Prefabs/buildings/police_station.prefab
+  artifactKey: Guid(e41eed048e843684ea1424dd6b101eb6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Downloads/Paulisia_S/3D Game Kit - Lowpoly city assets/Prefabs/buildings/police_station.prefab using Guid(e41eed048e843684ea1424dd6b101eb6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '61c719e90c561a24975e2a06ca08efc9') in 0.184953 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 18
+========================================================================
+Received Import Request.
+  Time since last request: 0.000053 seconds.
+  path: Assets/Downloads/Toys - Low Poly Pack/Toys-Low_Poly_Big_Pack/Models/popIt.fbx
+  artifactKey: Guid(c6a6cd086dea8964188b0c2b721a7abe) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Downloads/Toys - Low Poly Pack/Toys-Low_Poly_Big_Pack/Models/popIt.fbx using Guid(c6a6cd086dea8964188b0c2b721a7abe) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '78c2b1f9cb6b0edb36e3f7b4b01db5c8') in 0.030807 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 8
+========================================================================
+Received Import Request.
+  Time since last request: 0.000083 seconds.
+  path: Assets/Downloads/Tools - Low-Poly Pack/Tools-Low_Poly_Big_Pack/Prefabs/pressure_gauge.prefab
+  artifactKey: Guid(02a9e9283ffcba2488de9a2f27939bb6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Downloads/Tools - Low-Poly Pack/Tools-Low_Poly_Big_Pack/Prefabs/pressure_gauge.prefab using Guid(02a9e9283ffcba2488de9a2f27939bb6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8ed72fb8bf975735f6d2e3df82ac1758') in 0.076740 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 15
+========================================================================
+Received Import Request.
+  Time since last request: 0.000040 seconds.
+  path: Assets/Downloads/SimplePoly City - Low Poly Assets/Models/Props_BillBoard_large.fbx
+  artifactKey: Guid(3b11d86015e5ec34498b9a3d432bd029) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Downloads/SimplePoly City - Low Poly Assets/Models/Props_BillBoard_large.fbx using Guid(3b11d86015e5ec34498b9a3d432bd029) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a73b637f7536a6dc90544dd516dc2800') in 0.008240 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 10
+========================================================================
+Received Import Request.
+  Time since last request: 0.000042 seconds.
+  path: Assets/Downloads/Paulisia_S/3D Game Kit - Lowpoly city assets/Prefabs/decorations/post.prefab
+  artifactKey: Guid(33994efc560df1d49867ad7306de895e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Downloads/Paulisia_S/3D Game Kit - Lowpoly city assets/Prefabs/decorations/post.prefab using Guid(33994efc560df1d49867ad7306de895e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7a82790ab40b5aa72251dd1339b157a0') in 0.004196 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 16
+========================================================================
+Received Import Request.
+  Time since last request: 113.214649 seconds.
+  path: Assets/Prefabs/HRLive_CalendarBillboard.prefab
+  artifactKey: Guid(a79774c4eb7c84e17addde7dca2a31e1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/HRLive_CalendarBillboard.prefab using Guid(a79774c4eb7c84e17addde7dca2a31e1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f4c74d6d40b2ebd01f93b43e88e3f3c4') in 0.059814 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 32
+========================================================================
+Received Import Request.
+  Time since last request: 80.540044 seconds.
+  path: Assets/Downloads/Loading Games/Toon City Pack/Models/Infrastructure/Infrastructure Buildings/infrastructure-building-airport.fbx
+  artifactKey: Guid(4c71066b1aa33458b9708dad0587a354) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Downloads/Loading Games/Toon City Pack/Models/Infrastructure/Infrastructure Buildings/infrastructure-building-airport.fbx using Guid(4c71066b1aa33458b9708dad0587a354) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ce52f0f0e88a795a23beea22c8b24bca') in 0.058387 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 23
+========================================================================
+Received Import Request.
+  Time since last request: 0.000032 seconds.
+  path: Assets/Downloads/Loading Games/Toon City Pack/Models/Vegetation/bush-type-B.fbx
+  artifactKey: Guid(c9f72eeb45d194541bda6aaf5b1a12c5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Downloads/Loading Games/Toon City Pack/Models/Vegetation/bush-type-B.fbx using Guid(c9f72eeb45d194541bda6aaf5b1a12c5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'aa4dc5fa60b34fb0d23b92af237dff55') in 0.009476 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 10
+========================================================================
+Received Import Request.
+  Time since last request: 0.000193 seconds.
+  path: Assets/Downloads/Loading Games/Toon City Pack/Models/Infrastructure/Props/road-sign-single.fbx
+  artifactKey: Guid(790776b712c434523b711946403a7b62) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Downloads/Loading Games/Toon City Pack/Models/Infrastructure/Props/road-sign-single.fbx using Guid(790776b712c434523b711946403a7b62) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fa673b93f70e909e20b4eef22dc798ea') in 0.013454 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 14
+========================================================================
+Received Import Request.
+  Time since last request: 0.000032 seconds.
+  path: Assets/Downloads/Loading Games/Toon City Pack/Models/Infrastructure/Props/traffic-cone.fbx
+  artifactKey: Guid(4763bbf4887ca411ab3e27d26fcbe415) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Downloads/Loading Games/Toon City Pack/Models/Infrastructure/Props/traffic-cone.fbx using Guid(4763bbf4887ca411ab3e27d26fcbe415) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd3dbe509bafa3e8ec48f71596624f747') in 0.017023 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 10
+========================================================================
+Received Import Request.
+  Time since last request: 0.000029 seconds.
+  path: Assets/Downloads/Loading Games/Toon City Pack/Models/Vegetation/rock-type-A.fbx
+  artifactKey: Guid(5c294368f908947ec9bc224ac47a13b8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Downloads/Loading Games/Toon City Pack/Models/Vegetation/rock-type-A.fbx using Guid(5c294368f908947ec9bc224ac47a13b8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'eb4af1e3e486e060289e2e3f3196446c') in 0.007712 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 10
+========================================================================
+Received Import Request.
+  Time since last request: 0.000025 seconds.
+  path: Assets/Downloads/Loading Games/Toon City Pack/Models/Urban Props/public-bench.fbx
+  artifactKey: Guid(5dbfd83462db149559d2e2533bc9b177) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Downloads/Loading Games/Toon City Pack/Models/Urban Props/public-bench.fbx using Guid(5dbfd83462db149559d2e2533bc9b177) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6b2cffef1585bdc6646496ad9a0117ac') in 0.010239 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 10
+========================================================================
+Received Import Request.
+  Time since last request: 0.000037 seconds.
+  path: Assets/Downloads/Loading Games/Toon City Pack/Models/Infrastructure/Props/road-block-type-B.fbx
+  artifactKey: Guid(d6ef19e5ee2a54f219d8b41966560051) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Downloads/Loading Games/Toon City Pack/Models/Infrastructure/Props/road-block-type-B.fbx using Guid(d6ef19e5ee2a54f219d8b41966560051) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '606f9945d6ecd9c745c3578c4ac7c779') in 0.008281 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 10

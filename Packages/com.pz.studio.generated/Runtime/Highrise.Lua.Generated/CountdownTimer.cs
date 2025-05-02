@@ -25,9 +25,10 @@ namespace Highrise.Lua.Generated
         private const string s_scriptGUID = "5086252910e534b6b9ef6fb451017f59";
         public override string ScriptGUID => s_scriptGUID;
 
-        [Tooltip("List of local date-times for event starts in 'YYYY-MM-DD HH:MM:SS'")]
+        [SerializeField] public System.Collections.Generic.List<UnityEngine.Texture> m_eventImages = default;
+        [Tooltip("List of ET start times for each event in 'YYYY-MM-DD HH:MM:SS'")]
         [SerializeField] public System.Collections.Generic.List<System.String> m_eventStartTimes = default;
-        [Tooltip("List of local date-times for event ends in 'YYYY-MM-DD HH:MM:SS'")]
+        [Tooltip("List of ET end times for each event in 'YYYY-MM-DD HH:MM:SS'")]
         [SerializeField] public System.Collections.Generic.List<System.String> m_eventEndTimes = default;
 
         protected override SerializedPropertyValue[] SerializeProperties()
@@ -38,8 +39,11 @@ namespace Highrise.Lua.Generated
             return new SerializedPropertyValue[]
             {
                 CreateSerializedProperty(_script.GetPropertyAt(0), null),
-                CreateSerializedProperty(_script.GetPropertyAt(1), m_eventStartTimes),
-                CreateSerializedProperty(_script.GetPropertyAt(2), m_eventEndTimes),
+                CreateSerializedProperty(_script.GetPropertyAt(1), null),
+                CreateSerializedProperty(_script.GetPropertyAt(2), null),
+                CreateSerializedProperty(_script.GetPropertyAt(3), m_eventImages),
+                CreateSerializedProperty(_script.GetPropertyAt(4), m_eventStartTimes),
+                CreateSerializedProperty(_script.GetPropertyAt(5), m_eventEndTimes),
             };
         }
     }
