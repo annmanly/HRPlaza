@@ -3,8 +3,6 @@
 -- Fountain that sprays a gift of bubbles at a set interval to all players within the range
 
 --!SerializeField
-local fountainInteractUI:GameObject = nil
---!SerializeField
 local writeWishWindowObj:GameObject = nil
 local writeWishUI = nil
 --!SerializeField
@@ -15,10 +13,18 @@ local coinObj:GameObject = nil
 local coinTarget:GameObject = nil
 --!SerializeField
 local wishParticles:GameObject = nil
+--!SerializeField
+local wishGoldWonParticles:GameObject = nil
 
 local playersInRange = {}
 local bubbleRewardAmount = 10
-local bubbleFountainInterval = 15 -- time between emission in seconds
+
+-- GOLD PRIZE --
+local winnerGoldAmount = 5 -- live would be ~69
+local inRangeGoldAmount = 1
+local maxRangePlayers = 30
+local currentRangeCount = 0
+local oddsNumber = 2 -- will win 1 in 2, live would be 100
 
 local AddInRangeRequest = Event.new("AddToRange")
 local RemoveInRangeRequest = Event.new("RemoveInRange")
@@ -26,7 +32,10 @@ local RemoveInRangeRequest = Event.new("RemoveInRange")
 OpenWriteWishWindow = Event.new("OpenWriteWishWindow") -- client/client
 
 WishSubmitRequest = Event.new("WishSubmitRequest") -- client->server
+GiveSingleCoinEvent = Event.new("SingleCoinAnimationEvent") -- server->client
 WishEvent = Event.new("WishEvent") -- server->client
+
+
 
 -- [[ CLIENT ]]
 local InRange = false
@@ -35,6 +44,7 @@ function self:ClientAwake()
     writeWishUI = writeWishWindowObj.gameObject:GetComponent(WriteWishWindow)
     if writeWishUI then OpenWriteWishWindow:Connect(OnWishButtonPress) end
     WishEvent:Connect(OnWishEvent)
+    GiveSingleCoinEvent:Connect(onGiveSingleCoinEvent)
 end
 
 function OnWishButtonPress()
@@ -42,19 +52,41 @@ function OnWishButtonPress()
     writeWishUI.openWindow()
 end
 
-function OnWishEvent(player)
+function OnWishEvent(player, wonGold)
+    if wonGold then particles = wishGoldWonParticles else particles = wishParticles end
+
     coin = GameObject.Instantiate(coinObj, player.character.transform.position)
     coinController = coin.gameObject:GetComponent(CoinController)
     Timer.After(.5, function() 
         coinController.throw(coinTarget.gameObject.transform.position) 
-        Timer.After(.6, function() 
-            wishParticles.gameObject:SetActive(true) 
-            Timer.After(1, function() wishParticles.gameObject:SetActive(false) end)
+        Timer.After(1.2, function() 
+            particles.gameObject:SetActive(true) 
+            Timer.After(1, function() particles.gameObject:SetActive(false) end)
+            if wonGold then giveCoinsAnimation(player, 15) end
         end)
     end)
     Timer.After(.8, function() player.character:PlayEmote("emoji-pray", false) end)
     
 end
+
+function onGiveSingleCoinEvent(player)
+    Timer.After(1.7, function() giveCoinsAnimation(player, 1) end)
+end
+
+function giveCoinsAnimation(player, number)
+    for i = 1, number do
+        Timer.After(i*.25, function() 
+            startOffsetX = math.random(0, .2)
+            StartOffsetZ = math.random(0, .2)
+            coinStartPos = coinTarget.gameObject.transform.position + Vector3.new(startOffsetX, 0, StartOffsetZ)
+            coin = GameObject.Instantiate(coinObj, coinStartPos)
+            coinController = coin.gameObject:GetComponent(CoinController)
+            coinController.throw(player.character.transform.position + Vector3.new(0,2,0)) 
+        end )
+
+    end
+end
+
 
 function self:OnTriggerEnter(collider: Collider)
     character = collider.gameObject:GetComponent(Character)
@@ -62,7 +94,7 @@ function self:OnTriggerEnter(collider: Collider)
         if character == client.localPlayer.character and InRange == false then
             AddInRangeRequest:FireServer()
             InRange = true
-            fountainInteractUI:SetActive(true)
+          
         end
     end
 end
@@ -73,7 +105,7 @@ function self:OnTriggerExit(collider: Collider)
         if character == client.localPlayer.character then
             RemoveInRangeRequest:FireServer()
             InRange = false
-            fountainInteractUI:SetActive(false)
+           
         end
     end
 end
@@ -96,11 +128,16 @@ function RemoveFromRange(player)
 
 end
 
-function EmitReward()
+function EmitReward(winningPlayer)
     print("EMITTING GOLD")
     for i, player in playersInRange do
         if player then
-            -- TransferGold(player, 1)
+            if player == winningPlayer then
+                 TransferGold(player, winnerGoldAmount)
+            else
+            TransferGold(player, 1)
+            GiveSingleCoinEvent:FireAllClients(player)
+            end
         end
     end
 end
@@ -120,10 +157,38 @@ function TransferGold(player, amount)
     end)
   end
 
+function GetWorldWalletBalance()
+    Wallet.GetWallet(function(response, err)
+        if err ~= WalletError.None then
+            error("Something went wrong while retrieving wallet: " .. WalletError[err])
+            return
+        end
+
+        print("Current Gold: ", response.gold)
+    end)
+end
 
 function OnWishSubmitRequest(player, wishData)
     print("RECEIVED WISH DATA: " .. player.name .. " WISH: " .. wishData.wishMessage)
-    WishEvent:FireAllClients(player)
+    Wallet.GetWallet(function(response, err)
+        if err ~= WalletError.None then
+            error("Something went wrong while retrieving wallet: " .. WalletError[err])
+            WishEvent:FireAllClients(player, false)
+            return
+        end
+
+        currentGold = response.gold
+        rollNumber = math.random(1,oddsNumber)
+        if rollNumber == 1 and currentGold >= 100 then
+            WishEvent:FireAllClients(player, true)
+            EmitReward(player)
+        else
+            WishEvent:FireAllClients(player, false)
+        end
+
+        print("Current Gold: ", response.gold)
+    end)
+
 end
 
 function self:ServerAwake()
@@ -132,7 +197,5 @@ function self:ServerAwake()
     AddInRangeRequest:Connect(AddToRange)
     RemoveInRangeRequest:Connect(RemoveFromRange)
 
-    -- Loop to emit gold or bubbles or whatever
-    Timer.Every(bubbleFountainInterval, EmitReward)
     
 end

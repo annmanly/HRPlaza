@@ -48,14 +48,14 @@ function submitWish()
     -- else
     --     author = client.localPlayer.name
     -- end
-    timestamp = ConvertDateFormat(os.date("%c"))
+    -- timestamp = ConvertDateFormat(os.date("%c"))
     wish = {
         wishAuthor = client.localPlayer.name,
-        wishDate = timestamp,
+        -- wishDate = timestamp,
         wishMessage = _wishInput.text
     }
     fountainManager.WishSubmitRequest:FireServer(wish)
-    print("SUBMIT WISH WITH TEXT" .. _wishInput.text .. " AUTHOR: " .. client.localPlayer.name .. "TIME: " .. timestamp) 
+    print("SUBMIT WISH WITH TEXT" .. _wishInput.text .. " AUTHOR: " .. client.localPlayer.name)
 
     closeWindow()
 end
@@ -69,7 +69,7 @@ function self:ClientStart()
     fountainManager.OpenWriteWishWindow:Connect(openWindow)
 
     
-    _title:SetPrelocalizedText("What do you wish for?")
+    _title:SetPrelocalizedText("Make a Wish")
     -- _wishAuthorDisplay:SetPrelocalizedText("-" .. client.localPlayer.name)
 
 

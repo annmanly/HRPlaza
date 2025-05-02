@@ -8,7 +8,7 @@ local _wishButton:VisualElement = nil
 fountainManager = require("Fountain")
 
 function self:ClientAwake()
-    _wishButton:RegisterPressCallback(function() fountainManager.OpenWriteWishWindow:Fire() self.gameObject:SetActive(false) end)
+    _wishButton:RegisterPressCallback(function() fountainManager.OpenWriteWishWindow:Fire() end)
     
 end
 

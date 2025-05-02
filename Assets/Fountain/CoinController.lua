@@ -8,7 +8,7 @@ local tempTime = 0
 local speed = 2
 local startPos = nil
 local targetPos = nil
-local angularSpeed = 500
+local angularSpeed = math.random(300, 500)
 
 local throwTween = Tween:new(
     0,
@@ -20,7 +20,7 @@ local throwTween = Tween:new(
     function(value, t)
         positionOffset = positionCurve:Evaluate(value)
         self.gameObject.transform.position = Vector3.Lerp(startPos, targetPos, value) + Vector3.new(0, positionOffset*2, 0)
-        self.gameObject.transform.eulerAngles = Vector3.new(value*angularSpeed, 0, 0)
+        self.gameObject.transform.eulerAngles = Vector3.new(value*angularSpeed, 0, value*(angularSpeed/2))
     end,
     function()
         GameObject.Destroy(self.gameObject)

@@ -12,11 +12,13 @@
    <VisualElement name="_closeButton"/>
     <VisualElement name="headerRow" picking-mode="Ignore">
       <hr:UILabel name="_title" />
+      
     </VisualElement>
+    <Label class="smallText" text="If your coin is lucky, this Wishing Fountain will gift gold to you and players nearby!" />
     <VisualElement class="mainContent">
       <VisualElement class="wishContainer">
         <VisualElement class="inputTextContainer">
-        <hr:UITextField class="textInput"  name="_wishInput" maxLength="200" placeholder="What do you wish for?"> 
+        <hr:UITextField class="textInput"  name="_wishInput" maxLength="200" > 
         </hr:UITextField>
         </VisualElement>
         <VisualElement class="wishDetailsRow">
