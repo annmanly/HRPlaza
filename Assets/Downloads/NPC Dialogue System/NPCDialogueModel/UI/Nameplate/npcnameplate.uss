@@ -1,0 +1,26 @@
+.npcnameplate {
+    align-items: center;
+    margin-top: auto;
+    margin-bottom: auto;
+
+    -unity-font-definition: var(--font-bold-italic);
+}
+
+#nameplateContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+#nameLabel {
+    font-size: 150px;
+    margin-right: 10px;
+
+    white-space: normal;   
+    letter-spacing: 3px;
+
+    -unity-text-align: middle-center;
+
+    color: black;
+}

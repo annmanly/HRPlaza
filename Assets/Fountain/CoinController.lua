@@ -3,7 +3,7 @@
 --!SerializeField
 local positionCurve:AnimationCurve = nil
 local TweenModule = require("TweenModule")
-Tween = TweenModule.Tween
+local Tween = TweenModule.Tween
 local tempTime = 0
 local speed = 2
 local startPos = nil
