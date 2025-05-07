@@ -3769,7 +3769,7 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Sprite
       value: 
-      objectReference: {fileID: 21300000, guid: fa0236004c477a34dad8eaf584b0d076,
+      objectReference: {fileID: 21300000, guid: ac5646df8e08a4e20966e743da0548d0,
         type: 3}
     - target: {fileID: 5421611232124293289, guid: d8edc950d258b6d4db78a4575b57da38,
         type: 3}
@@ -13295,6 +13295,12 @@ PrefabInstance:
       propertyPath: m_linkurl
       value: https://high.rs/web-open?login=true&path=support.highrise.game/
       objectReference: {fileID: 0}
+    - target: {fileID: 4882646114582503911, guid: d8edc950d258b6d4db78a4575b57da38,
+        type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 3fb8be98e4932443ea2ceb2be45fb7e1,
+        type: 3}
     - target: {fileID: 5421611232124293289, guid: d8edc950d258b6d4db78a4575b57da38,
         type: 3}
       propertyPath: m_Height
@@ -15937,6 +15943,74 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d8edc950d258b6d4db78a4575b57da38, type: 3}
+--- !u!1001 &727130432
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 74964323047163179, guid: a66ed6031089241fa954d312b6718132,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -35.56
+      objectReference: {fileID: 0}
+    - target: {fileID: 74964323047163179, guid: a66ed6031089241fa954d312b6718132,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 2.36
+      objectReference: {fileID: 0}
+    - target: {fileID: 74964323047163179, guid: a66ed6031089241fa954d312b6718132,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 18.83
+      objectReference: {fileID: 0}
+    - target: {fileID: 74964323047163179, guid: a66ed6031089241fa954d312b6718132,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: -0.92387754
+      objectReference: {fileID: 0}
+    - target: {fileID: 74964323047163179, guid: a66ed6031089241fa954d312b6718132,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 74964323047163179, guid: a66ed6031089241fa954d312b6718132,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0.38268825
+      objectReference: {fileID: 0}
+    - target: {fileID: 74964323047163179, guid: a66ed6031089241fa954d312b6718132,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 74964323047163179, guid: a66ed6031089241fa954d312b6718132,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 74964323047163179, guid: a66ed6031089241fa954d312b6718132,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 314.999
+      objectReference: {fileID: 0}
+    - target: {fileID: 74964323047163179, guid: a66ed6031089241fa954d312b6718132,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7679567337749869303, guid: a66ed6031089241fa954d312b6718132,
+        type: 3}
+      propertyPath: m_Name
+      value: WorldCelebration
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: a66ed6031089241fa954d312b6718132, type: 3}
 --- !u!1001 &730086388
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -21340,7 +21414,7 @@ PrefabInstance:
     - target: {fileID: 2300000, guid: b549b1699e4cdad44b2c014041303df4, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
-      objectReference: {fileID: 2100000, guid: 365ac846c5f934634baca5d8e0cc82bb, type: 2}
+      objectReference: {fileID: 2100000, guid: 435b69fbee9b54858a65ea1142b80b5f, type: 2}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -27979,7 +28053,7 @@ PrefabInstance:
     - target: {fileID: 2300000, guid: b549b1699e4cdad44b2c014041303df4, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
-      objectReference: {fileID: 2100000, guid: 365ac846c5f934634baca5d8e0cc82bb, type: 2}
+      objectReference: {fileID: 2100000, guid: e67b0428b7d3649c38696cab7e43b908, type: 2}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -37986,6 +38060,12 @@ PrefabInstance:
       propertyPath: m_linkurl
       value: https://high.rs/web-open?path=
       objectReference: {fileID: 0}
+    - target: {fileID: 4882646114582503911, guid: d8edc950d258b6d4db78a4575b57da38,
+        type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 19b1af02162824d029289d20771771cb,
+        type: 3}
     - target: {fileID: 5421611232124293289, guid: d8edc950d258b6d4db78a4575b57da38,
         type: 3}
       propertyPath: m_Height
@@ -38675,7 +38755,7 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Sprite
       value: 
-      objectReference: {fileID: 21300000, guid: fa0236004c477a34dad8eaf584b0d076,
+      objectReference: {fileID: 21300000, guid: ac5646df8e08a4e20966e743da0548d0,
         type: 3}
     - target: {fileID: 5421611232124293289, guid: d8edc950d258b6d4db78a4575b57da38,
         type: 3}
@@ -40190,6 +40270,12 @@ PrefabInstance:
       propertyPath: m_linkurl
       value: https://high.rs/event-info
       objectReference: {fileID: 0}
+    - target: {fileID: 4882646114582503911, guid: d8edc950d258b6d4db78a4575b57da38,
+        type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: ad9e9668165c841a39c7c97413d44f92,
+        type: 3}
     - target: {fileID: 5421611232124293289, guid: d8edc950d258b6d4db78a4575b57da38,
         type: 3}
       propertyPath: m_Height
@@ -43131,8 +43217,14 @@ PrefabInstance:
     - target: {fileID: 2275543859428097043, guid: d8edc950d258b6d4db78a4575b57da38,
         type: 3}
       propertyPath: m_linkurl
-      value: https://high.rs/web-open?root=discord.comcalendar.google.com&path=/calendar/u/0/embed?src=c_1r9bsclehorpehj5hmdnv1ktho@group.calendar.google.com&ctz=America/Los_Angeles
+      value: https://high.rs/web-open?root=discord.com&path=/invite/highrise/
       objectReference: {fileID: 0}
+    - target: {fileID: 4882646114582503911, guid: d8edc950d258b6d4db78a4575b57da38,
+        type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 46c39f30af95248f7a51565f59a12113,
+        type: 3}
     - target: {fileID: 5421611232124293289, guid: d8edc950d258b6d4db78a4575b57da38,
         type: 3}
       propertyPath: m_Height
@@ -46441,7 +46533,7 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Sprite
       value: 
-      objectReference: {fileID: 21300000, guid: fa0236004c477a34dad8eaf584b0d076,
+      objectReference: {fileID: 21300000, guid: d65690bece4cf45ca87e120036860249,
         type: 3}
     - target: {fileID: 5421611232124293289, guid: d8edc950d258b6d4db78a4575b57da38,
         type: 3}
@@ -49196,3 +49288,4 @@ SceneRoots:
   - {fileID: 1377378425}
   - {fileID: 1580495510}
   - {fileID: 1036386584}
+  - {fileID: 727130432}
