@@ -5,7 +5,7 @@ local _DialogueCameraController : DialogueCameraController = nil
 
 local npcBehaviour : NPCBehaviour = nil
 
-local CreatureResponses = {
+local Responses = {
   ["choose_creature_nature"] = function()
     print("Verdant")
   end,
@@ -18,6 +18,15 @@ local CreatureResponses = {
   ["choose_creature_poison"] = function()
     print("Venomous")
   end,
+  ["choose_collect_info"] = function()
+    print("help selected")
+  end,
+  ["choose_collect_yes"] = function()
+    print("yes selected")
+  end,
+  ["choose_collect_no"] = function()
+    print("no selected")
+  end
 }
 
 ResponseChosenEvent = Event.new("ResponseChosenEvent")
@@ -61,7 +70,7 @@ function self:ClientAwake()
 
   ResponseChosenEvent:Connect(function(player, response)
     print("Response chosen by " .. player.name .. ": " .. response)
-    CreatureResponses[response]()
+    Responses[response]()
 
     local npcCharacter = GetNPCCharacter()
     if npcCharacter then

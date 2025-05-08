@@ -1,6 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!1 &531679214792400777
+--- !u!1 &7298936379375837997
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -8,77 +8,48 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 1814311252602881466}
-  - component: {fileID: 4303266636089393757}
-  - component: {fileID: 5002532042630861601}
-  - component: {fileID: 2014780991633161578}
-  - component: {fileID: 9060467195001277545}
+  - component: {fileID: 4776998277090607768}
+  - component: {fileID: 3128412967698535247}
+  - component: {fileID: 8845639399610776744}
+  - component: {fileID: 6009507636144700851}
   m_Layer: 0
-  m_Name: NPCNameLabel
+  m_Name: Cube
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &1814311252602881466
+--- !u!4 &4776998277090607768
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 531679214792400777}
+  m_GameObject: {fileID: 7298936379375837997}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 2, y: 1, z: 1}
+  m_LocalPosition: {x: 1.5, y: 0.5, z: 1.5}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &4303266636089393757
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 531679214792400777}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8de164032fe201e1a3bcdaf2bdc3d2cd, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _networkId: 0
-  _script: {fileID: -974389366465450183, guid: 373e64d6953d01341963da27071cd218, type: 3}
-  _properties: []
-  _uiOutput: 1
-  _uiOutputSettings:
-    rid: 3733624293908283393
-  references:
-    version: 2
-    RefIds:
-    - rid: 3733624293908283393
-      type: {class: UIWorldOutputSettings, ns: Highrise.Client, asm: com.pz.highrise.game.client}
-      data:
-        Renderer: {fileID: 2014780991633161578}
-        Size: {x: 1500, y: 512}
-        ClearColor: 1
-        ClearColorValue: {r: 1, g: 1, b: 1, a: 0}
---- !u!33 &5002532042630861601
+--- !u!33 &3128412967698535247
 MeshFilter:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 531679214792400777}
-  m_Mesh: {fileID: 10210, guid: 0000000000000000e000000000000000, type: 0}
---- !u!23 &2014780991633161578
+  m_GameObject: {fileID: 7298936379375837997}
+  m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!23 &8845639399610776744
 MeshRenderer:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 531679214792400777}
-  m_Enabled: 1
+  m_GameObject: {fileID: 7298936379375837997}
+  m_Enabled: 0
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
@@ -91,7 +62,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 4712b79b4b1d2a945bb7a2797e17cd5f, type: 2}
+  - {fileID: 2100000, guid: cfdf75251a30c8e45b6c190205a75e7d, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -113,29 +84,26 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!114 &9060467195001277545
+--- !u!114 &6009507636144700851
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 531679214792400777}
+  m_GameObject: {fileID: 7298936379375837997}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8635b4592f05a6d1d2533d42b4a527f5, type: 3}
+  m_Script: {fileID: 11500000, guid: 45ce44e8b892b0c1419bbe78a62067a5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   _networkId: 0
-  _script: {fileID: -974389366465450183, guid: 3ceab48c95daa604688c3d970e7a2720, type: 3}
+  _script: {fileID: -974389366465450183, guid: ff11443d024db014fb44bead1cff6770, type: 3}
   _properties: []
   _uiOutput: 0
   _uiOutputSettings:
     rid: -2
-  m_billboard: 1
-  m_amount: {x: 1, y: 1, z: 1}
-  m_offset: {x: 0, y: 0, z: 0}
-  m_cameraOverride: {fileID: 0}
-  m_useInitialRotation: 0
+  m_collectibleObject: {fileID: 5304292563348878933, guid: 2f39cc36dc747c440ba666f5110cc019,
+    type: 3}
   references:
     version: 2
     RefIds:
