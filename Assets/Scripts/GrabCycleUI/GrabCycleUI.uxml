@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<UXML
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns="UnityEngine.UIElements"
+    xmlns:hr="Highrise.UI"
+    xmlns:editor="UnityEditor.UIElements"
+    xsi:noNamespaceSchemaLocation="../../UIElementsSchema/UIElements.xsd"
+>
+    <hr:UILuaView class="billboard">
+         <VisualElement name="billboardContainer" class="billboard-container">
+                <hr:UIImage name="billboardDisplay" class="billboard-display" />
+                <VisualElement name="textContainer" class="text-container">
+                    <Label name="headerText" class="header-text" text="SPIN NOW:"/>
+                    <hr:UILabel name="primaryText" class="primary-text" text=""/>
+                    <hr:UILabel name="countdownText" class="timer-text" text="00:00:00"/>
+                </VisualElement>
+            </VisualElement>
+    </hr:UILuaView>
+</UXML>
