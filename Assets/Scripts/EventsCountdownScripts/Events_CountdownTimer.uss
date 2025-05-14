@@ -1,0 +1,45 @@
+.billboard {
+    width: 100%;
+    height: 100%;
+}
+
+.billboard-container {
+
+}
+
+
+.billboard-display {
+
+}
+
+.text-container {
+    position: absolute;
+    top: 170px;
+    left: 40px;
+    -unity-text-align: middle-left;
+    color: white;
+    padding: 5px;
+    -unity-font-definition: var(--font-bold);
+    text-shadow: 5px 5px 5px rgb(70, 70, 70);
+
+}
+
+.header-text {
+    font-size: 40px;
+}
+
+.primary-text {
+    font-size: 100px;
+}
+
+.timer-text {
+    font-size: 60px;
+}
+
+
+
+
+.hidden {
+  display: none;
+}
+

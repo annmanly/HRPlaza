@@ -1,0 +1,188 @@
+.map {
+
+  top: 10%;
+  height: 350px;
+  width: 350px;
+
+  align-self: center;
+
+  color: #fff;
+  -unity-font-definition: var(--font-bold);
+
+  background-color: #1b1935;
+  border-radius: 10px;
+
+  overflow: hidden;
+}
+
+.map__container {
+  width: 100%;
+  height: 100%;
+}
+
+.map__header {
+  align-self: center;
+
+  font-size: 30px;
+  text-shadow: 1px 5px 3px rgba(0, 0, 0, .3);
+}
+
+.map__close {
+  position: absolute;
+
+  right: 5px;
+  top: 5px;
+
+  width: 30px;
+  height: 30px;
+}
+
+.map__close Image {
+  --unity-image: var(--image-icon-close);
+}
+
+.map-background {
+  height: 100%;
+  width: 100%;
+
+}
+
+.market__button {
+  position: absolute;
+
+  width: 50px;
+  height: 80px;
+
+
+  left: 32px; 
+  top: 85px;
+
+  background-color: #f50039;
+  opacity: 0;
+
+}
+
+.shop__button {
+  position: absolute;
+
+  width: 50px;
+  height: 90px;
+
+
+  left: 97px; 
+  top: 52px;
+
+  background-color: #f50039;
+  opacity: 0;
+
+}
+
+.welcome__button {
+  position: absolute;
+
+  width: 50px;
+  height: 80px;
+
+
+  left: 160px; 
+  top: 48px;
+
+  background-color: #f50039;
+  opacity: 0;
+
+}
+
+.townhall__button {
+  position: absolute;
+
+  width: 50px;
+  height: 110px;
+
+
+  left: 215px; 
+  top: 70px;
+
+  background-color: #f50039;
+  opacity: 0;
+
+}
+
+.events__button {
+  position: absolute;
+
+  width: 50px;
+  height: 110px;
+
+
+  left: 265px; 
+  top: 108px;
+
+  background-color: #f50039;
+  opacity: 0;
+
+}
+
+.park__button {
+  position: absolute;
+
+  width: 60px;
+  height: 90px;
+
+
+  left: 145px; 
+  top: 140px;
+
+  background-color: #f50039;
+  opacity: 0;
+
+}
+
+.artcenter__button {
+  position: absolute;
+
+  width: 50px;
+  height: 70px;
+
+
+  left: 58px; 
+  top: 180px;
+
+  background-color: #f50039;
+  opacity: 0;
+
+}
+
+.buildercenter__button {
+  position: absolute;
+
+  width: 50px;
+  height: 85px;
+
+
+  left: 98px; 
+  top: 190px;
+
+  background-color: #f50039;
+  opacity: 0;
+
+}
+
+.transitstation__button {
+  position: absolute;
+
+  width: 55px;
+  height: 90px;
+
+
+  left: 205px; 
+  top: 215px;
+
+  background-color: #f50039;
+  opacity: 0;
+
+
+}
+
+
+
+

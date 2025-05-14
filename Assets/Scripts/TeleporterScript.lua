@@ -7,23 +7,27 @@ function self:ClientAwake()
 
     local player = client.localPlayer
 
-    local teleportLoaction = nil
-
-    function Teleport(position)
-        teleportLoaction = position
-        teleportRequest:FireServer (teleportLoaction)
+    function Teleport(position, lookAtTransform)
+        local angle = Quaternion.LookRotation(lookAtTransform - position).eulerAngles.y
+        teleportRequest:FireServer (position, angle)
     end
 
-    teleportEvent:Connect(function(player, pos)
-        player.character:Teleport(teleportLoaction)
+    teleportEvent:Connect(function(player, pos, angle)
+        player.character:Teleport(pos)
+        if player == client.localPlayer then
+            local camera = client.mainCamera:GetComponent(Custom3rdPersonCam)
+            camera.ResetCamera()
+            camera.SetYaw(angle)
+        end
     end)
+
 end
 
 ------------ Server ------------
 
 function self:ServerAwake()
-    teleportRequest:Connect(function(player, pos)
+    teleportRequest:Connect(function(player, pos, angle)
         player.character.transform.position = pos
-        teleportEvent:FireAllClients(player)
+        teleportEvent:FireAllClients(player, pos, angle)
     end)
 end

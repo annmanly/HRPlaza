@@ -9,29 +9,22 @@ local Textures : { Texture } = nil
 --!SerializeField
 local linkurls : { string } = ""
 
-local _currentIdx = 1
 local _currentLink = ""
 
--- local recursive function to advance the texture every 5 seconds
+-- Waits 5 seconds then picks a random texture, applies it, and recurses
 local function CycleTexture()
     Timer.After(5, function()
-        -- wrap index if past the end
-        if _currentIdx > #Textures then
-            _currentIdx = 1
+        if #Textures > 0 then
+            -- pick a random index
+            local idx = math.random(1, #Textures)
+            local tex = Textures[idx]
+            if Material and tex then
+                Material.mainTexture = tex
+                _currentLink = linkurls[idx]
+                print("link: " .. _currentLink)
+            end
         end
-
-        -- apply the texture
-        local tex = Textures[_currentIdx]
-        if Material and tex then
-            Material.mainTexture = tex
-            _currentLink = linkurls[_currentIdx]
-            print("link: " .. _currentLink)
-        end
-
-        -- advance for next call
-        _currentIdx = _currentIdx + 1
-
-        -- recurse
+        -- continue cycling
         CycleTexture()
     end)
 end
@@ -41,16 +34,19 @@ function self:ClientStart()
         return
     end
 
+    -- seed the random number generator
+    math.randomseed(os.time())
+
+    -- handle taps
     self.gameObject:GetComponent(TapHandler).Tapped:Connect(OnTap)
 
-    -- immediately set to the first texture
-    Material.mainTexture = Textures[1]
-    _currentLink = linkurls[1]
+    -- immediately set a random initial texture
+    local initialIdx = math.random(1, #Textures)
+    Material.mainTexture = Textures[initialIdx]
+    _currentLink = linkurls[initialIdx]
     print("link: " .. _currentLink)
-    -- next time, we'll pull Textures[2]
-    _currentIdx = 2
 
-    -- start the cycle
+    -- begin the random cycle
     CycleTexture()
 end
 
