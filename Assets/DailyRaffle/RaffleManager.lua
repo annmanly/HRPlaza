@@ -2,52 +2,180 @@
 --!SerializeField
 local raffleUI:RaffleUI = nil
 
+local promoCodeCollection = require("PromoCodes")
 
-PrizeCodeEvent = Event.new("PrizeCodeEvent")
 SubmitTicket = Event.new("SubmitTicket")
+
+WinnersRequest = Event.new("RequestWinners")
+PromoCodeRequest = Event.new("RequestPromoCode")
+WinnersResponse = Event.new("WinnersResponse")
+PromoCodeResponse = Event.new("PromoCodeResponse")
+
+
+-- [[ CLIENT & SERVER ]]
+
+function GetTodayDateString() 
+    local currentDate = os.date("!*t")
+    return string.format("%d-%02d-%02d", currentDate.year,currentDate.month, currentDate.day)
+end
+
+function GetYesterdayDateString() 
+    local yesterday = os.time() - (24*60*60)
+    local yesterdayDate = os.date("!*t", yesterday)
+    return string.format("%d-%02d-%02d", yesterdayDate.year,yesterdayDate.month, yesterdayDate.day)
+end
 
 -- [[ CLIENT ]]
 
 
-function OnPrizeCodeEvent(code)
-
-end
-
-
-
 function self:ClientStart()
-    PrizeCodeEvent:Connect(OnPrizeCodeEvent)
+    -- WinnersResponse:Connect(function(winners) print("WINNER DATA RECEIVED") end)
+    -- WinnersRequest:FireServer(GetYesterdayDateString())
 end
 
 -- [[ SERVER ]]
 
 local raffleTicketsPrefix = "RaffleTickets"
-
-local yesterdayWinners = ""
-
-local prizeCodesKey = "testcodes"
-local prizeCodeIndexKey = "testCodeIndex"
+local prizeCodeIndexKey = "codeIndex"
 local prizeCodes = {}
 local currentIndex = 1
+local raffleTicketCount = 0
+
+-- replace with promo code item id
+local promoCodeID = "codeID" 
+
+-- RAFFLE CONFIGURATION
+local numberOfWinners = 2
+
+function OnSubmitTicketRequest(player, ticketCount)
+    for i=1,ticketCount do 
+        AddPlayerTicketToStorage(player)
+    end
+end
+
+function DrawWinners()
+    local yesterday = GetYesterdayDateString()
+    local ticketsKey = raffleTicketsPrefix .. yesterday
+    local winnerKey = "WINNERS" .. yesterday
 
 
-function GetDateString()
-    local currentTime = os.date("!*t")
+    Storage.GetValue(winnerKey, function(value, err) 
+        if value then
+            print("WINNERS ALREADY DRAWN")
+        else
+            Storage.GetValue(ticketsKey, function(value, err) 
+                if value == nil then 
+                    print("NO TICKETS FOUND FOR: " .. ticketsKey)
+                    return {}
+                else
+                    winnerCount = numberOfWinners
+                    tickets = value
 
-    return string.format("%d-%02d-%02d", currentTime.year,currentTime.month,  currentTime.day)
+                    if #tickets <= numberOfWinners then winnerCount = #tickets end
+        
+                    winners = {}
+                    winnerNames = {}
+                    for i=1,winnerCount do
+                        if #tickets == 0 then
+                            break
+                        end
+
+                        choice = math.random(1, #tickets)
+
+                        table.insert(winners, tickets[choice])
+                        table.insert(winnerNames, tickets[choice][2])
+
+                        GeneratePlayerPromoCode(tickets[choice][1])
+
+                        tickets = removePlayerFromTickets(tickets, tickets[choice])
+                        
+                    end
+
+                    print("WINNERS SELECTED: " .. table.concat(winnerNames, ", "))
+                    AddWinnersToStorage(winners, yesterday)
+                end
+            end)
+        end
+    end)
+
+
+end
+
+function OnPromoCodeRequest(player)
+    Storage.GetValue(player .."/promocodes", function(value, error) 
+        if error then
+            print(`Promo code request -- STORAGE ERROR {StorageError[error]}`)
+            return
+        end
+
+        if value then
+            PromoCodeResponse:FireClient(player, value)
+        end
+    end)
+end
+
+
+
+function GeneratePlayerPromoCode(playerid)
+    if currentIndex > #prizeCodes then
+        print("ERROR: NO MORE PROMO CODES")
+        return
+    end
+
+    newCode = prizeCodes[currentIndex]
+    currentIndex += 1
+
+    Storage.GetValue(playerid .. "/promocodes", function(value, error) 
+        if not value then 
+            codes = {}
+        else
+            codes = value
+        end 
+
+        codes[promoCodeID] = newCode
+
+        Storage.SetValue(playerid .. "/promocodes", codes)
+    end)
+    
+end
+
+
+function OnWinnerRequest(client, date)
+    print("RECEIVED REQUEST FROM " .. client.user.name)
+    local winnerKey = "WINNERS" .. date
+    Storage.GetValue(winnerKey, function(value, err) 
+        if value then
+            WinnersResponse:FireClient(client, value)
+        end
+    end)
+end
+
+function removePlayerFromTickets(tickets, player)
+    newTickets = {}
+    for i,ticketPlayer in ipairs(tickets) do
+        if ticketPlayer[1] ~= player[1] then
+            table.insert(newTickets,ticketPlayer)
+        end
+    end
+    return newTickets
+end
+
+function AddWinnersToStorage(winners, date)
+    winnerKey = "WINNERS" .. date
+    Storage.SetValue(winnerKey, winners, function(err) end)
 end
 
 function AddPlayerTicketToStorage(player)
-    todaysTickets = raffleTicketsPrefix .. GetDateString()
+    todaysTickets = raffleTicketsPrefix .. GetTodayDateString()
     Storage.GetValue(todaysTickets, function(value, err) 
         if value == nil then 
             newTickets = {}
         else
             newTickets = value
         end
-        table.insert(newTickets, player.name)
+        table.insert(newTickets, {player.user.id, player.user.name})
         Storage.SetValue(todaysTickets, newTickets)
-        print("TICKET ADDED FOR: " .. player.name)
+        print("TICKET ADDED FOR: " .. player.name .. "TOTAL TICKETS: " .. #newTickets)
     end)
     Storage.GetPlayerValue(player, todaysTickets, function(value, err) 
         if value == nil then
@@ -57,11 +185,19 @@ function AddPlayerTicketToStorage(player)
     end)
 end
 
+function GetCodeList()
+    return promoCodeCollection.promoCodes[promoCodeID]
+end
+
 
 function GetCodeListFromStorage()
-    Storage.GetValue(prizeCodesKey, function(value, error) 
+    Storage.GetValue("PROMOCODES_" .. promoCodeID, function(value, error) 
         prizeCodes = value
-        print(prizeCodes[1])
+        if not value then 
+            print("NO CODES FOUND FOR KEY: " .. promoCodeID)
+            default = {""}
+            Storage.SetValue("PROMOCODES_" .. promoCodeID, default)
+        end
     end)
 end
 
@@ -75,15 +211,19 @@ function SaveCodeIndex()
     Storage.SetValue(prizeCodeIndexKey, currentIndex)
 end
 
-function OnSubmitTicketRequest(player, ticketCount)
-    for i=1,ticketCount do 
-        AddPlayerTicketToStorage(player)
-    end
-end
-
 function self:ServerStart()
     GetCodeListFromStorage()
     SubmitTicket:Connect(OnSubmitTicketRequest)
-    Timer.Every(1, SaveCodeIndex)
+    WinnersRequest:Connect(OnWinnerRequest)
+    DrawWinners()
 
+    local currentDate = os.date("!*t")
+    Timer.Every(1, function() 
+        SaveCodeIndex()
+        date =  os.date("!*t")
+        if date.day ~= currentDate then
+            currentDate = os.date("!*t")
+            DrawWinners()
+        end
+    end)
 end

@@ -1,6 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!1 &7617895892909997283
+--- !u!1 &3327550273468773148
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -8,44 +8,44 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 3493169700394432186}
-  - component: {fileID: 1451660295258884763}
-  m_Layer: 0
-  m_Name: RaffleUI
+  - component: {fileID: 1325535931725441346}
+  - component: {fileID: 7222452544153585454}
+  m_Layer: 8
+  m_Name: Codes
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &3493169700394432186
+--- !u!4 &1325535931725441346
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7617895892909997283}
+  m_GameObject: {fileID: 3327550273468773148}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: -1.1, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1451660295258884763
+--- !u!114 &7222452544153585454
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7617895892909997283}
+  m_GameObject: {fileID: 3327550273468773148}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5cd7c7741d13d68111dae9091608253f, type: 3}
+  m_Script: {fileID: 11500000, guid: 387cd6b69d281fa1a0748815255f7b8d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   _networkId: 0
-  _script: {fileID: -974389366465450183, guid: e608c7a1a7ccd654ab05e9dcacd725ea, type: 3}
+  _script: {fileID: -974389366465450183, guid: 82a3d66327f71f741aab88c09f807b58, type: 3}
   _properties: []
   _uiOutput: 3
   _uiOutputSettings:

@@ -1,0 +1,30 @@
+--!Type(Module)
+promoCodes = {
+    codeID = {
+        "Welcome1vx6",
+        "Welcome800c",
+        "Welcomej42c",
+        "Welcome428o",
+        "Welcome0gl6",
+        "Welcome2s52",
+        "Welcome0n2m",
+        "Welcomeyc33",
+        "Welcome0mr0",
+        "Welcomej28a",
+        "Welcomehkbe",
+        "Welcomelx7r",
+        "Welcometihv",
+        "Welcomeo8t4",
+        "Welcome04r8",
+        "Welcome0fb0",
+        "Welcome4qsg",
+        "Welcomercjh",
+        "Welcome8log",
+        "Welcome5qav",
+        "Welcome3y7g",
+        "Welcome80kw",
+        "Welcomes582",
+        "Welcomeq5xi",
+        "Welcomey6p1"
+    }
+}

@@ -1,0 +1,93 @@
+
+:root {
+    --primary-dark: #1B182A;
+    --confirm-color: #64F2A9;
+    --secondary-dark: #322F41;
+    --plum-color: #9374FD;
+    --blue-color: #67acdb;
+}
+
+.raffle-info {
+    width:100%;
+    height:100%;
+    position:absolute;
+    flex-direction: column;
+    align-items: center;
+    justify-content:center;
+
+}
+
+
+.windowContainer {
+    width:350px;
+    height:400px;
+    background-color: var(--blue-color);
+    border-width:2px;
+    border-radius:10px;
+    border-color:white;
+    flex-direction:column;
+    align-items:center;
+    padding:10px;
+}
+
+.hidden {
+    display:none;
+}
+
+.modal {
+    background-color: black;
+    opacity: 0.7;
+    height: 200%;
+    width: 120%;
+    margin-top:-500px;
+    margin-bottom:-500px;
+    position:absolute;
+}
+
+.centered {
+    -unity-text-align: middle-center;
+}
+
+.white-text {
+    color:white;
+    white-space:normal;
+    padding:0px;
+    margin:0px;
+}
+
+#_closeButton {
+    position:absolute;
+    right:-10px;
+    top:-10px;
+    width:36px;
+    height:36px;
+    background-color:var(--blue-color);
+    border-color:white;
+    border-width:2px;
+    border-radius:25px;
+    flex-direction:row;
+    justify-content:center;
+    align-items:center;
+}
+
+#_closeImage {
+    background-image: url(project://database/Assets/DailyRaffle/Sprites/close-icon.png);
+    width:50%;
+    height:50%;
+    -unity-background-scale-mode: scale-to-fit;
+}
+
+#_mainImage {
+    width:90%;
+    height:100%;
+}
+
+.info-image-1 {
+    background-image: url(project://database/Assets/DailyRaffle/Sprites/info-page1.png);
+    -unity-background-scale-mode: scale-to-fit;
+}
+
+.info-image-2 {
+    background-image: url(project://database/Assets/DailyRaffle/Sprites/info-page2.png);
+    -unity-background-scale-mode: scale-to-fit;
+}

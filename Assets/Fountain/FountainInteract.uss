@@ -3,6 +3,7 @@
     --confirm-color: #64F2A9;
     --secondary-dark: #322F41;
     --plum-color: #9374FD;
+    --blue-color: #67acdb;
 }
 
 .fountain-interact {
@@ -28,8 +29,11 @@
     
 }
 #_wishButton {
-    background-color:var(--plum-color);
-    color:var(--primary-dark);
+    background-color:var(--blue-color);
+    /* color:var(--primary-dark); */
+    border-color:white;
+    border-width:2px;
+
 }
 .buttonRow {
     flex-direction: row;

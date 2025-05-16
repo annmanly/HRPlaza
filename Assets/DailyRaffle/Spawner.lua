@@ -1,33 +1,36 @@
 --!Type(Client)
 --!SerializeField
 local collectibleObject:GameObject = nil
-local collectibleObj = nil
-local lifetime:number = 45 -- time before despawn
-local minRespawnTimer:number = 5 -- time after collected before spawning again but will add offset
+
+--!SerializeField
+local startSpawnPositions:{Transform} = {}
+--!SerializeField
+local endSpawnPositions:{Transform} = {}
+
+local lifetime:number = 25 -- time before despawn
+local minRespawnTimer:number = lifetime -- time after collected before spawning again but will add offset
 timerOffset = math.random(0, 5)
 
+
 function spawnObject()
-    if collectibleObj then
-        if not collectibleObj.gameObject.activeInHierarchy then 
-            collectibleObj.gameObject:SetActive(true)
-            Timer.After(lifetime, despawnObject)
-        end
-    end
+    Timer.After(math.random(0, 1), 
+        function() 
+            randomChoice = math.random(1, #startSpawnPositions)
+            spawnPos = startSpawnPositions[randomChoice]
+            newObj = GameObject.Instantiate(collectibleObject, spawnPos.position)
+            newObj.gameObject.transform:LookAt(endSpawnPositions[randomChoice])
+            Timer.After(lifetime, function() despawnObject(newObj) end)
+    end)
+
 end
 
-function despawnObject()
-    if collectibleObj then
-        if collectibleObj.gameObject.activeInHierarchy then 
-            collectibleObj.gameObject:SetActive(false)
-            timerOffset = math.random(0, 5)
-            Timer.After(minRespawnTimer+timerOffset, spawnObject)
-        end
+function despawnObject(obj)
+    if obj then
+        GameObject.Destroy(obj)
     end
 end
 
 function self:Start()
-    collectibleObj = GameObject.Instantiate(collectibleObject, self.gameObject.transform.position)
-    collectibleObj.gameObject.transform.eulerAngles = Vector3.new(0, math.random(10,350), 0)
-    Timer.After(timerOffset, spawnObject)
-    -- Timer.After(respawnTimer, spawnObject)
+    spawnObject()
+    Timer.Every(minRespawnTimer, spawnObject)
 end

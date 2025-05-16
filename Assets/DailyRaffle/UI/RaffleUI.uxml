@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<UXML
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns="UnityEngine.UIElements"
+    xmlns:hr="Highrise.UI"
+    xmlns:editor="UnityEditor.UIElements"
+    xsi:noNamespaceSchemaLocation="../../UIElementsSchema/UIElements.xsd"
+>
+
+  <hr:UILuaView class="raffle-ui">
+  <VisualElement name="_closeOverlay" class="modal"/>
+  <VisualElement class="buttonRow" >
+    <VisualElement class="button" name="_infoButton">
+    <Label class="buttonText white-text centered" text="INFO"/>
+    </VisualElement>
+    
+    <VisualElement class="button" name="_codesButton">
+      <VisualElement class="alertIndicator hidden"/>
+      <VisualElement name="_giftImage"/>
+    </VisualElement>
+  </VisualElement>
+  <VisualElement name="_contentWindow" class="windowContainer vertical-layout" picking-mode="Ignore">
+    <VisualElement name="_closeButton">
+      <VisualElement name="_closeImage"/>
+    </VisualElement>
+    <Label class="white-text centered" text="NEXT RAFFLE DRAWING"/>
+    <Label name="_countDown" class=" white-text centered" text="00:00:24:21"/>
+    <Label name="_playerTicketCount" class="white-text centered" text="You have 0 tickets."/>
+  </VisualElement>
+
+  </hr:UILuaView>
+
+</UXML>
