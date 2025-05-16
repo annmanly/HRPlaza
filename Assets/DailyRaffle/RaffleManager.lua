@@ -10,6 +10,8 @@ WinnersRequest = Event.new("RequestWinners")
 PromoCodeRequest = Event.new("RequestPromoCode")
 WinnersResponse = Event.new("WinnersResponse")
 PromoCodeResponse = Event.new("PromoCodeResponse")
+TicketCountRequest = Event.new("TicketCoutnRequest")
+TicketCountResponse = Event.new("TicketCountResponse")
 
 
 -- [[ CLIENT & SERVER ]]
@@ -20,7 +22,8 @@ function GetTodayDateString()
 end
 
 function GetYesterdayDateString() 
-    local yesterday = os.time() - (24*60*60)
+    local currentTime = os.time(os.date("!*t"))
+    local yesterday = currentTime - (24*60*60)
     local yesterdayDate = os.date("!*t", yesterday)
     return string.format("%d-%02d-%02d", yesterdayDate.year,yesterdayDate.month, yesterdayDate.day)
 end
@@ -40,6 +43,7 @@ local prizeCodeIndexKey = "codeIndex"
 local prizeCodes = {}
 local currentIndex = 1
 local raffleTicketCount = 0
+local currentDate = nil
 
 -- replace with promo code item id
 local promoCodeID = "codeID" 
@@ -150,6 +154,19 @@ function OnWinnerRequest(client, date)
     end)
 end
 
+function OnTicketCountRequest(player)
+    todaysTickets = raffleTicketsPrefix .. GetTodayDateString()
+
+    Storage.GetPlayerValue(player, todaysTickets, function(value, err) 
+        if value then
+            TicketCountResponse:FireClient(player, value)
+        else
+            TicketCountResponse:FireClient(player, 0)
+        end
+    end)
+end
+
+
 function removePlayerFromTickets(tickets, player)
     newTickets = {}
     for i,ticketPlayer in ipairs(tickets) do
@@ -215,13 +232,14 @@ function self:ServerStart()
     GetCodeListFromStorage()
     SubmitTicket:Connect(OnSubmitTicketRequest)
     WinnersRequest:Connect(OnWinnerRequest)
+    TicketCountRequest:Connect(OnTicketCountRequest)
     DrawWinners()
 
-    local currentDate = os.date("!*t")
+    currentDate = os.date("!*t")
     Timer.Every(1, function() 
         SaveCodeIndex()
         date =  os.date("!*t")
-        if date.day ~= currentDate then
+        if date.day ~= currentDate.day then
             currentDate = os.date("!*t")
             DrawWinners()
         end

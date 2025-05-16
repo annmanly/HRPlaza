@@ -1,26 +1,38 @@
 --!Type(Module)
 
 --!SerializeField
-local mainRaffleUI:GameObject=nil
+local mainRaffleUIObj:GameObject=nil
 --!SerializeField
-local infoUI:GameObject=nil
+local infoUIObj:GameObject=nil
 --!SerializeField
-local codesUI:GameObject=nil
+local codesUIObj:GameObject=nil
+
+local RaffleManager = require("RaffleManager")
+local mainUI = nil
+local codesUI = nil
 
 function openInfo()
-    infoUI.gameObject:SetActive(true)
+    infoUIObj.gameObject:SetActive(true)
 end
 
 function openCodes()
-    codesUI.gameObject:SetActive(true)
+    codesUIObj.gameObject:SetActive(true)
     -- TO DO: add actual promo codes
 end
 
 function openMainUI()
-    mainRaffleUI.gameObject:SetActive(true)
-    -- TO DO: add actual promo codes
+    mainRaffleUIObj.gameObject:SetActive(true)
+    RaffleManager.TicketCountRequest:FireServer()
+
+end
+
+function setMainUiTicketCount(count)
+    mainUI.setTicketCount(count)
 end
 
 function self:ClientAwake()
     self.gameObject:GetComponent(TapHandler).Tapped:Connect(openMainUI)
+    mainUI = mainRaffleUIObj.gameObject:GetComponent(RaffleUI)
+    RaffleManager.TicketCountResponse:Connect(setMainUiTicketCount)
+    RaffleManager.TicketCountRequest:FireServer()
 end

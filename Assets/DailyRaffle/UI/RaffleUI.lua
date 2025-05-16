@@ -21,12 +21,57 @@ local _playerTicketCount:Label = nil
 
 local raffleUIManager = require("RaffleUIManager")
 
+
+
 function setTicketCount(number)
-    _playerTicketCount.text = number
+    _playerTicketCount.text = `You have {number} tickets.`
 end
 
-function updateTimer(number)
-    -- TO DO: add countdown
+function timeUntilTomorrow(targetTime)
+
+    -- Get the current time in UTC
+    local currentTime = os.time(os.date("!*t"))
+
+
+
+    -- Create the target time table in UTC
+    local tomorrowExact = os.time(os.date("!*t")) + (24*60*60)
+    local tomorrowDate = os.date("!*t",tomorrowExact)
+    local targetTime = os.time({
+        year = tomorrowDate.year,
+        month = tomorrowDate.month,
+        day = tomorrowDate.day,
+        hour = 0,
+        min =  0,
+        sec = 0
+    })
+
+    -- Calculate the difference in seconds
+    local diffInSeconds = os.difftime(targetTime, currentTime)
+
+    -- If the time has already passed, return "0:0:0"
+    if diffInSeconds <= 0 then
+        print(`diff below zero {diffInSeconds}`)
+        return "00:00:00:00"
+    end
+
+    -- Convert the difference to days, hours, and minutes
+    local days = math.floor(diffInSeconds / (24 * 3600))
+    diffInSeconds = diffInSeconds % (24 * 3600)
+
+    local hours = math.floor(diffInSeconds / 3600)
+    diffInSeconds = diffInSeconds % 3600
+
+    local minutes = math.floor(diffInSeconds / 60)
+
+    local sec = diffInSeconds % 60
+
+    -- Return the formatted string
+    return string.format("%02d:%02d:%02d", hours, minutes, sec)
+end
+
+function updateTimer()
+    _countDown.text = timeUntilTomorrow()
 end
 
 function close()
@@ -49,4 +94,5 @@ function self:Awake()
     _closeButton:RegisterPressCallback(close)
     _infoButton:RegisterPressCallback(OnInfoPress)
     _codesButton:RegisterPressCallback(OnCodesPress)
+    Timer.Every(1, function() if self.gameObject.activeInHierarchy then updateTimer() end end)
 end
