@@ -19,7 +19,7 @@ local HelpMessages = {
     "Don't miss a message! Check your Message Requests for messages from non-followed accounts.",
 	"Find deals on second-hand items in the Marketplace!",
 	"Starter grabs are great for new users. Go to Shop > Grabs or check out the Welcome Center right next door",
-	"Hang out by the Welcome Center (Hint: it's right next door!) if you are open to giving or recieving advic",
+	"Hang out by the Welcome Center (Hint: it's right next door!) if you are open to giving or recieving advice",
 	"Don't be shy! The best way to learn how to play is making friend"
 }
 
