@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<UXML
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns="UnityEngine.UIElements"
+    xmlns:hr="Highrise.UI"
+    xmlns:editor="UnityEditor.UIElements"
+    xsi:noNamespaceSchemaLocation="../../../../../../UIElementsSchema/UIElements.xsd"
+>
+
+  <hr:UILuaView class="map">
+    <VisualElement class="map__container">
+
+      <VisualElement class="map__header">
+        <Label class="map__header__title" text="Map" />
+      </VisualElement>
+
+      <VisualElement class="map__close" name="_closeButton">
+        <VisualElement class="button-content">
+          <Image name="_closeButtonImage" class="map__close__icon" />
+        </VisualElement>
+      </VisualElement>
+
+      <hr:UIImage class="map-background" name="_mapBackground" />
+
+      <VisualElement class="market__button" name="_marketButton"></VisualElement>
+      <VisualElement class="shop__button" name="_shopButton"></VisualElement>
+      <VisualElement class="welcome__button" name="_welcomeButton"></VisualElement>
+      <VisualElement class="townhall__button" name="_townhallButton"></VisualElement>
+      <VisualElement class="events__button" name="_eventsButton"></VisualElement>
+      <VisualElement class="park__button" name="_parkButton"></VisualElement>
+      <VisualElement class="artcenter__button" name="_artcenterButton"></VisualElement>
+      <VisualElement class="buildercenter__button" name="_buildercenterButton"></VisualElement>
+      <VisualElement class="transitstation__button" name="_transitstationButton"></VisualElement>
+
+
+    </VisualElement>
+  </hr:UILuaView>
+
+</UXML>
