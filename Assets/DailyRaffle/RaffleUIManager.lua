@@ -27,7 +27,9 @@ function openMainUI()
 end
 
 function setMainUiTicketCount(count)
-    mainUI.setTicketCount(count)
+    if mainUI and mainRaffleUIObj.activeInHierarchy then
+        mainUI.setTicketCount(count)
+    end
 end
 
 function self:ClientAwake()
