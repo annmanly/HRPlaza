@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<UXML
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns="UnityEngine.UIElements"
+    xmlns:hr="Highrise.UI"
+    xmlns:editor="UnityEditor.UIElements"
+    xsi:noNamespaceSchemaLocation="../../UIElementsSchema/UIElements.xsd"
+>
+    <hr:UILuaView class="marquee">
+         <VisualElement name="marqueeContainer" class="marquee-container">
+                <hr:UIImage name="marqueeBackground" class="marquee-background" />   
+                <hr:UILabel name="countdownLabel" class="countdown-label" text="00:00:00"/>
+                <hr:UILabel name="countdownTimer" class="countdown-timer" text="00:00:00"/>
+                <hr:UIImage name="imageDisplay" class="image-display" />   
+            </VisualElement>
+    </hr:UILuaView>
+</UXML>
