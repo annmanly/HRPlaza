@@ -8,6 +8,8 @@ local popUPObj:GameObject = nil
 local mainObj:GameObject = nil
 --!SerializeField
 local ticketObj:GameObject = nil
+--!SerializeField
+local particlesObj:GameObject = nil
 local speed = 2
 local timer = 0
 
@@ -56,6 +58,7 @@ function OnTapped()
         ticketObj.gameObject:SetActive(false)
         mainObj.gameObject:SetActive(false)
         popUPObj.gameObject:SetActive(true)
+        particlesObj.gameObject:GetComponentInChildren(ParticleSystem, false):Stop()
         plusTicketPopIn:start()
     end
     
