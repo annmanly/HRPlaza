@@ -1,0 +1,32 @@
+.general-hud {
+    position: absolute;
+    right:10px;
+}
+
+.button-container {
+    flex-direction: column; /* Arrange child elements in a row */
+    align-items: center; /* Center-align items vertically */
+    justify-content: space-between; /* Distribute space between child elements */
+}
+
+.button {
+
+    flex-direction: column; /* Arrange child elements in a row */
+    align-items: center; /* Center-align items vertically */
+    justify-content: space-between; /* Distribute space between child elements */
+
+    width: 40px; /* Set the width of the container */
+    height: 40px; /* Set the height of the container */
+
+    color: #cccada; /* Set text color */
+
+    border-radius:8px;
+    border-color:white;
+    border-width:2px;
+
+    padding: 6px; /* Padding on the left and right sides of the container */
+    background-color: #67acdb;
+}
+#_raffleButton {
+    background-image: url(project://database/Assets/DailyRaffle/Sprites/raffle-gift.png);
+}

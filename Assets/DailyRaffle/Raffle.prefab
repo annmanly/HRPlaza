@@ -309,6 +309,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: TempRaffleStand
       objectReference: {fileID: 0}
+    - target: {fileID: 5689592711173142659, guid: dfa67c0a5a3b72f49940413018530866,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -394,6 +399,18 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 5717552219363437666}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &8345582372738502171 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 4362199686903259769, guid: 501b1f892ce7df14bb3c10e72080d415,
+    type: 3}
+  m_PrefabInstance: {fileID: 5717552219363437666}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5cd7c7741d13d68111dae9091608253f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &7023626590021760694
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -452,6 +469,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4980452516859130707, guid: 16231d3f53f8fdd48a3120b5a362e1c0,
+        type: 3}
+      propertyPath: m_raffleUI
+      value: 
+      objectReference: {fileID: 8345582372738502171}
     - target: {fileID: 8363349953836611844, guid: 16231d3f53f8fdd48a3120b5a362e1c0,
         type: 3}
       propertyPath: m_Name
