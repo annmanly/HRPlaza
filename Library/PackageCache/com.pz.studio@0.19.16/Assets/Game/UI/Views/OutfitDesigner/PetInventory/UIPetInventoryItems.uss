@@ -1,0 +1,57 @@
+.pet-inventory-items {
+    height: 200px;
+    flex-shrink: 1;
+    bottom:0;
+}
+
+.pet-inventory-items .collection-section {
+    padding-top: 8px;
+    padding-right: 16px;
+}
+
+.pet-inventory-items UIPetBindCell {
+    width: var(--4-column-item-min-width);
+    height: var(--4-column-item-min-width);
+    max-width: var(--4-column-item-max-width);
+    max-height: var(--4-column-item-max-width);
+}
+
+.pet-inventory-items UIItemCell {
+    width: var(--4-column-item-min-width);
+    height: var(--4-column-item-min-width);
+    max-width: var(--4-column-item-max-width);
+    max-height: var(--4-column-item-max-width);
+}
+
+.pet-inventory-items__save-button {
+    margin-top: 0px;
+    margin-bottom: auto;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 13px 26px;
+}
+
+.pet-inventory-items-top > UILabel {
+    color: var(--color-fishbase-bonito);
+    font-size: var(--font-size-xl);
+    -unity-font-definition: var(--font-bold);
+    width:auto;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    flex-grow: 1;
+}
+
+.pet-inventory-items__save-button {
+    margin-top: 0px;
+    margin-bottom: auto;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 13px 26px;
+}
+
+.pet-inventory-items-top {
+    flex-direction: row;
+    align-items: center;
+    height: 44px;
+}

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<UXML
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns="UnityEngine.UIElements"
+    xmlns:hr="Highrise.UI"
+    xmlns:hrui="Highrise.UI"
+    xmlns:editor="UnityEditor.UIElements"
+    xsi:noNamespaceSchemaLocation="../../../../../../UIElementsSchema/UIElements.xsd"
+>
+
+  <hr:UIPetBindItems class="bind-items">
+    <VisualElement name="_leftButtons">
+        <hr:UIButton name="_cancelButton" focusable="true">
+            <hr:UILabel key="cancel"/>
+        </hr:UIButton>
+    </VisualElement>
+      <hr:UICollection>
+          <hr:UICollectionSection>
+              <hr:UILabel key="eligible_items" class="bind-items__section-title"/>
+              <hr:UICollectionCells name="_eligibleItemCells" layout="grid" layout-spacing="4"/>
+          </hr:UICollectionSection>
+          <hr:UICollectionSection>
+              <hr:UILabel key="pet_current_inventory" class="bind-items__section-title"/>
+              <hr:UICollectionCells name="_petInventoryItemCells" layout="grid" layout-spacing="4"/>
+          </hr:UICollectionSection>
+          <hr:UICollectionSection>
+              <hr:UILabel key="not_eligible_items" class="bind-items__section-title"/>
+              <hr:UIHint name="_hint" key="pet_items_not_eligible_hint"/>
+              <hr:UICollectionCells name="_notEligibleItemCells" layout="grid" layout-spacing="4"/>
+          </hr:UICollectionSection>
+          <hr:UICollectionSection name="_emptyStateSection">
+              <hr:UIEmptyState empty-message="you_dont_have_any_pet_items_yet"/>
+          </hr:UICollectionSection>
+      </hr:UICollection>
+    <VisualElement class="bind-items-gradient" name="_gradient" picking-mode="Ignore"/>
+    <VisualElement name="_addButtonContainer" class="bind-item-add-container">
+        <hr:UIButton name="_addButton" class="bind-items__save-button">
+            <hr:UILabel name="_addLabel" key="add_pet_items"/>
+        </hr:UIButton>
+    </VisualElement>
+  </hr:UIPetBindItems>
+
+</UXML>

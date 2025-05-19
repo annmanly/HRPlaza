@@ -1,0 +1,45 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<UXML
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns="UnityEngine.UIElements"
+    xmlns:editor="UnityEditor.UIElements"
+    xmlns:hr="Highrise.UI"
+    xsi:noNamespaceSchemaLocation="../../../../../UIElementsSchema/UIElements.xsd"
+>
+
+  <VisualElement class="storage-viewer">
+    <TwoPaneSplitView fixed-pane-initial-dimension="300">
+        <VisualElement name="_left">
+            <VisualElement name="_topLeft">
+                <Button name="_refreshButton">
+                    <Image name="_refreshIcon"/>
+                    <Label text="Refresh"/>
+                </Button>
+                <DropdownField name="_sortingDropdown"/>
+            </VisualElement>
+            
+            <hr:UICollection editor="true">
+                <hr:UICollectionSection>
+                    <hr:UICollectionCells name="_entryCells" layout="stack"/>
+                </hr:UICollectionSection>
+            </hr:UICollection>
+
+            <VisualElement name="_bottomLeft">
+                <editor:ToolbarSearchField name="_search"/>
+            </VisualElement>
+        </VisualElement>
+        <VisualElement name="_right">
+            <VisualElement name="_topRight">
+                <DropdownField name="_versionDropdown"/>
+                <Label name="_key"/>
+                <Button name="_addButton" text="Add"/>  
+                <Button name="_updateButton" text="Update"/>   
+                <Button name="_deleteButton" text="Delete"/> 
+            </VisualElement>
+            <ScrollView>
+                <TextField name="_value"/>
+            </ScrollView>
+        </VisualElement>
+    </TwoPaneSplitView>
+  </VisualElement>
+</UXML>

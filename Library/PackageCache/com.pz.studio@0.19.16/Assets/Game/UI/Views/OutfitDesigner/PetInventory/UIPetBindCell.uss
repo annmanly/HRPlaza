@@ -1,0 +1,29 @@
+.bind-cell {
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 2px;
+    overflow: hidden;
+    background-color: var(--color-accents-secondary-50);
+}
+
+.bind-cell-border-container {
+    display: none;
+    border-width: 0px;
+    border-color: var(--color-accents-primary);
+    border-radius: 0px;
+}
+
+.bind-cell #_addImage {
+    overflow: hidden;
+    border-radius: 0px;
+    width: 24px;
+    height: 24px;
+    --unity-image-tint-color: var(--color-accents-secondary);
+}
+
+.bind-cell #_addButton {
+    border-radius: 2px;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+}

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<UXML
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns="UnityEngine.UIElements"
+    xmlns:hr="Highrise.UI"
+    xmlns:editor="UnityEditor.UIElements"
+    xsi:noNamespaceSchemaLocation="../../../../../../UIElementsSchema/UIElements.xsd"
+>
+
+  <hr:UIEventBoostItems class="event-boost-items">
+    <VisualElement class="event-boost-items__card">
+      <hr:UILabel class="event-boost-items__title" key="boost_items" />
+      <hr:UILabel class="event-boost-items__description" key="boost_items_description" />
+      <hr:UIEventBoostProgress name="_progress" class="event-boost-items__progress" />
+      <hr:UIEmptyState name="_emptyState" empty-message="boost_items_empty_message" />
+      <VisualElement name="_activeBoostItemsGrid" class="event-boost-items__grid" />
+      <hr:UISeparator class="event-boost-items__separator"/>
+      <hr:UILabel class="event-boost-items__subtitle event-boost-items__subtitle-lucky-gacha" key="additional_boost" />
+      <hr:UILabel class="event-boost-items__description" key="lucky_gacha_items_info" />
+      <VisualElement name="_activeLuckyGachaBoostItemsGrid" class="event-boost-items__grid" />
+      <hr:UIEmptyState name="_luckyGachaBoostItemsEmptyState" empty-message="you_have_no_lucky_grab_items" />
+    </VisualElement>
+  </hr:UIEventBoostItems>
+
+</UXML>

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<UXML
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns="UnityEngine.UIElements"
+    xmlns:editor="UnityEditor.UIElements"
+    xmlns:hr="Highrise.UI"
+    xsi:noNamespaceSchemaLocation="../../../../../UIElementsSchema/UIElements.xsd"
+>
+    <VisualElement class="asset-catalog-overlay">
+        <VisualElement class="row">
+            <Label name="_titleLabel" text="Asset Catalog" class="overlay-title" />
+
+            <VisualElement name="_goldBalanceArea" class="row">
+                <Image class="goldIcon"/>
+                <Label name="_goldBalance" text="0"/>
+            </VisualElement>
+        </VisualElement>
+
+        <VisualElement name="_searchRow" class="row">
+            <editor:ToolbarSearchField name="_searchField" />
+            <Button name="_gotoMainPanelButton" text="Back" />
+
+        </VisualElement>
+
+        <VisualElement name="_mainPanel">
+            <VisualElement name="_categoryRow" class="row">
+                <Label text="Category" class="overlay-label"/>
+            </VisualElement>
+
+            <VisualElement class="assetsContainer" name="_assetsContainer" />
+        </VisualElement>
+
+        <VisualElement name="_assetBundlePanel">
+            <VisualElement class="assetsContainer" name="_assetsBundleContainer" />
+        </VisualElement>
+
+        <VisualElement name="_dropdownListener"/>
+    </VisualElement>
+</UXML>

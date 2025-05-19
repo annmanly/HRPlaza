@@ -1,0 +1,83 @@
+.event-how-to-play {
+    border-radius: 20px;
+    margin: 16px;
+    margin-top: auto;
+    margin-bottom: auto;
+    padding: 8px;
+    background-color: var(--color-fishbase-catfish);
+}
+
+.landscape .event-how-to-play {
+    align-self: center;
+    max-width: var(--lanscape-dialog-max-width);
+}
+
+.event-how-to-play UICarousel {
+    flex-grow: 0;
+    min-height: 326px;
+    overflow: hidden;
+    border-radius: 8px;
+}
+
+.event-how-to-play UICarousel UIImageView {
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.event-how-to-play__caption {
+    flex-grow: 1;
+    margin-top: 12px;
+    min-height: 84px;
+    font-size: 17px;
+    margin-left: 4px;
+    margin-right: 4px;
+    color: var(--color-fishbase-bonito);
+    -unity-text-align: upper-center;
+    white-space: normal;
+}
+
+.event-how-to-play .page-view__page {
+    border-color: initial;
+}
+
+.event-how-to-play .image-gradient {
+    margin-top: auto;
+    height: 44px;
+    background-image: var(--image-vgradient-180);
+    -unity-background-image-tint-color: var(--color-fishbase-blackfish-60);
+}
+
+.event-how-to-play #_pageIndicator {
+    margin-top: auto;
+}
+
+.event-how-to-play #_pageIndicatorContainer {
+    height: 44px;
+}
+
+.event-how-to-play__more-details-button {
+    flex-grow: 1;
+    margin-bottom: 16px;
+    font-size: 17px;
+    color: var(--color-accents-primary);
+    -unity-text-align: middle-center;
+}
+
+.event-how-to-play__buttons UIButton {
+    flex-grow: 1;
+}
+
+.event-how-to-play__prev-button {
+    margin: 8px;
+    margin-right: 4px;
+    background-color: var(--color-fishbase-tuna);
+}
+
+.event-how-to-play__prev-button:disabled {
+    background-color: transparent;
+}
+
+.event-how-to-play__next-button {
+    margin: 8px;
+    margin-left: 4px;
+}

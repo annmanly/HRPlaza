@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<UXML
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns="UnityEngine.UIElements"
+    xmlns:hr="Highrise.UI"
+    xsi:noNamespaceSchemaLocation="../../../../../UIElementsSchema/UIElements.xsd"
+>
+
+  <hr:UIRoomCamera class="room-camera">
+    <hr:UIImageShare name="_imageShare" class="room-camera-image-share"/>
+    <VisualElement name="_loadingOverlay">
+      <hr:LoadingIndicator />
+    </VisualElement>
+    <VisualElement name="_flashOverlay" />
+  </hr:UIRoomCamera>
+</UXML>

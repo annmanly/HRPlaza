@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<UXML
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xmlns="UnityEngine.UIElements"
+        xmlns:hr="Highrise.UI"
+        xmlns:editor="UnityEditor.UIElements"
+        xsi:noNamespaceSchemaLocation="../../../../../../UIElementsSchema/UIElements.xsd"
+>
+
+    <hr:UIEventRank class="event-rank flex-row">
+
+        <hr:UILabel name="_rankTitle"/>
+
+        <VisualElement class="rank-icon-amount" name="_rankContainer">
+            <hr:UIImage name="_rankIcon" class="disabled-rank-icon"/>
+            <hr:UILabel name="_rankAmount"/>
+        </VisualElement>
+
+        <VisualElement class="rank-icon-amount" name="_ticketsContainer">
+            <hr:UIImage name="_ticketsIcon" class="event-tickets-icon"/>
+            <hr:UILabel name="_ticketsAmount"/>
+        </VisualElement>
+
+        <hr:UIButton class="button-primary-text-no-outline" name="_joinCrewButton">
+            <hr:UILabel key="join_a_crew"/>
+        </hr:UIButton>
+      
+      <hr:UIButton class="button-icon" name="_moreDetailsButton">
+          <hr:UIImage class="icon-back"/>
+      </hr:UIButton>
+
+    </hr:UIEventRank>
+
+</UXML>

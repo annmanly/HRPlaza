@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<UXML
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns="UnityEngine.UIElements"
+    xmlns:hr="Highrise.UI"
+    xmlns:editor="UnityEditor.UIElements"
+    xsi:noNamespaceSchemaLocation="../../../../../UIElementsSchema/UIElements.xsd"
+>
+
+  <hr:UIUserAgePrompt class="user-age-prompt">
+    
+    <Image class="icon-shield-warning" name="_icon"/>
+    <hr:UILabel name="_title" key="are_you_old_enough"/>
+    <hr:UILabel name="_subtitle" key="your_birthday_wont_be_shown_to_other_users"/>
+    
+    <hr:UIDatePicker name="_datePicker"/>
+    
+    <hr:UIButton name="_submitButton" class="button-primary">
+      <hr:UILabel key="submit"/>
+    </hr:UIButton>
+    
+  </hr:UIUserAgePrompt>
+
+</UXML>

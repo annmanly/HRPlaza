@@ -1,0 +1,63 @@
+.my-items-page {
+    flex-grow: 1;
+    background-color: var(--color-fishbase-eel);
+}
+
+.my-items-page__section-title {
+    white-space: normal;
+    font-size: 22px;
+    margin-top: 8px;
+    margin-bottom: 8px;
+    color: var(--color-fishbase-whitefish);
+    -unity-font-definition: var(--font-bold);
+}
+
+.my-items-page__section-caption {
+    white-space: normal;
+    font-size: 15px;
+    margin-bottom: 12px;
+    color: var(--color-fishbase-mackerel);
+}
+
+.my-items-page__cells {
+    margin-top: 12px;
+    margin-bottom: 12px;
+}
+
+.my-items-page .collection-section {
+    padding-left: 16px;
+    padding-right: 16px;
+    padding-bottom: 16px;
+}
+
+.my-items-page-filters {
+    background-color: var(--color-fishbase-eel);
+}
+
+.my-items-page UIImageView {
+    border-radius: 8px;
+    width: 169px;
+    height: 169px;
+    overflow: hidden;
+}
+
+.my-items-page #_emptyTradableItemsState #_emptyPetInventoryTradableItemsState {
+    display: none;
+}
+
+.my-items-page #_vaultButtonsContainer {
+    padding-top: 16px;
+    padding-bottom: 16px;
+    display: none;
+}
+
+.my-items-page #_goldBarsFaqLabel {
+    font-size: 17px;
+    color: var(--color-accents-primary);
+    -unity-text-align: middle-center;
+    margin-top: 12px;
+}
+
+.my-items-page .text-field__input {
+    margin-left: 8px;
+}

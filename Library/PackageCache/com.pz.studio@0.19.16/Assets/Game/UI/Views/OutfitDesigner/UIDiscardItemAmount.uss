@@ -1,0 +1,71 @@
+.discard-item-amount {
+    background-color: var(--color-fishbase-eel);
+    margin-bottom: var(--safe-area-bottom);
+}
+
+.discard-item-amount #_cancelButton {
+    background-color: transparent;
+    padding: 10px;
+}
+
+.discard-item-amount #_cancelButton UILabel {
+    -unity-font-definition: var(--font-bold);
+    font-size: 17px;
+    -unity-text-align: middle-center;
+}
+
+.discard-item-amount #_youCanDiscardLabel {
+    color: var(--color-fishbase-whitefish);
+    font-size: 15px;
+    margin: 16px;
+    -unity-text-align: middle-center;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: normal;
+}
+
+.discard-item-amount #_youOwnInUseLabel {
+    color: var(--color-fishbase-mackerel);
+    font-size: 15px;
+    margin: -8px 16px 16px;
+    -unity-text-align: middle-center;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: normal;
+}
+
+.discard-item-amount-footer {
+    padding-left: 12px;
+    padding-right: 12px;
+    padding-bottom: 16px;
+    width: 100%;
+}
+
+.discard-item-amount-footer #_quantityInput {
+    width: 64px;
+    margin-left: 4px;
+    margin-right: 4px;
+    border-radius: 12px;
+    background-color: var(--color-fishbase-catfish);
+    -unity-text-align: middle-center;
+}
+
+.discard-item-amount-footer #_quantityInput > .text-field__input {
+    -unity-font-definition: var(--font-bold);
+    color: var(--color-fishbase-mackerel);
+}
+
+.discard-item-amount-footer #_discardButton {
+    flex-grow: 1;
+    margin-left: 4px;
+    margin-right: 4px;
+    padding: 0px;
+}
+
+.landscape .discard-item-amount {
+    margin-bottom: 0;
+}
+
+.landscape .discard-item-amount > UIKeyboardContainer {
+    display: none;
+}

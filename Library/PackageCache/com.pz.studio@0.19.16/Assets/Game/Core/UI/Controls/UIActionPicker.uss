@@ -1,0 +1,17 @@
+.action-picker {
+    border-radius: 12px;
+    overflow: hidden;
+}
+
+.action-picker #_actions {
+    flex-direction: row;    
+    max-width: 250px;
+    flex-wrap: wrap;
+}
+
+.action-picker-action {
+    width: 32px;
+    height: 32px;
+    flex-shrink: 0;
+    margin: 5px;
+}

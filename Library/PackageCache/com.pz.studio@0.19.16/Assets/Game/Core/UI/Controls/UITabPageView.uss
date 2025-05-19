@@ -1,0 +1,51 @@
+.tab-page-view {
+    flex-grow:1;
+}
+
+.tab-page-view > UIScrollView {
+    flex-grow: 0;
+    background-color: var(--color-fishbase-eel);
+}
+
+.tab-page-view #_pageView {
+    flex-grow:1;
+}
+
+.tab-page-view-tabs {
+    flex-direction: row;
+    padding-left: 16px;
+    align-content: flex-start;
+    color: var(--color-fishbase-anchovy);
+    flex-shrink: 1;
+}
+
+.rtl .tab-page-view-tabs {
+    padding-left: 0;
+    padding-right: 16px;
+}
+
+.tab-page-view__tab {
+    margin-top: 0;
+    margin-bottom: 0;
+    margin-left: 0;
+    margin-right: 24px;
+    padding: 0px;
+    height: 44px;
+    flex-grow: 0;
+    font-size: 18px;
+    -unity-text-align: middle-center;
+    border-bottom-width: 4px;
+    border-color: var(--color-accents-eel);
+    -unity-font-definition: var(--font-bold);
+}
+
+.rtl .tab-page-view__tab {
+    margin-left: 24px;
+    margin-right: 0;
+}
+
+.tab-page-view__tab:checked {
+    color: var(--color-fishbase-whitefish);   
+    border-bottom-width: 4px;
+    border-color: var(--color-accents-secondary);
+}

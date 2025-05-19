@@ -1,0 +1,33 @@
+.user-follow-button Image {
+    --unity-image: var(--image-icon-follow);
+}
+
+.user-follow-button.is-following Image {
+    --unity-image: var(--image-icon-following);
+}
+
+.user-follow-button.button-small Image {
+    display: none;
+}
+
+.user-follow-button {
+    padding: 9px 12px;
+}
+
+.user-follow-button .button__content {
+    margin-left: 4px;
+    margin-right: 4px;
+    justify-content: center;
+}
+
+.user-follow-button.is-friend,
+.user-follow-button.is-friend:active,
+.user-follow-button.is-friend:hover,
+.user-follow-button.is-friend:focus {
+    background-color: var(--color-fishbase-catfish);
+    color: var(--color-fishbase-mackerel);
+}
+
+.user-follow-button.is-friend Image {
+    --unity-image-tint-color: var(--color-fishbase-mackerel);
+}

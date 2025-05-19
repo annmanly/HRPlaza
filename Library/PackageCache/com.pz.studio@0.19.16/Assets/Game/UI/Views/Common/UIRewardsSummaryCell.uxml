@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<UXML
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns="UnityEngine.UIElements"
+    xmlns:hr="Highrise.UI"
+    xmlns:editor="UnityEditor.UIElements"
+    xsi:noNamespaceSchemaLocation="../../../../../UIElementsSchema/UIElements.xsd"
+>
+
+  <hr:UIRewardsSummaryCell class="rewards-summary-cell">
+    <VisualElement class="rewards-summary-cell__content rarity-bg">
+      <hr:UIMythicalBackground class="overlay"/>
+      <hr:UIImage name="_image">
+        <Image name="_accountBound" class="overlay-bottom-left"/>
+      </hr:UIImage>
+      <VisualElement name="_selectedOverlay" class="overlay"/>
+      <hr:UIImage name="_disabledOverlay" class="icon-nope overlay"/>
+
+    </VisualElement>
+    <hr:UIImage name="_effectsIcon" class="icon-outfit-auras" />
+    <Label name="_quantity"/>
+    <Label name="_newBadge" text="NEW!"/>
+  </hr:UIRewardsSummaryCell>
+
+</UXML>

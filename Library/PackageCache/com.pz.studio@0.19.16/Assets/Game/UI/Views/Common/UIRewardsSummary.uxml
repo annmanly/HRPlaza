@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<UXML
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xmlns="UnityEngine.UIElements"
+        xmlns:hr="Highrise.UI"
+        xmlns:editor="UnityEditor.UIElements"
+        xsi:noNamespaceSchemaLocation="../../../../../UIElementsSchema/UIElements.xsd"
+>
+
+    <hr:UIRewardsSummary class="rewards-summary landscape-narrow">
+        <hr:UILabel name="_title" key="you_got"/>
+
+        <hr:UICollection>
+            <hr:UICollectionSection>
+                <hr:UICollectionCells name="_cells" layout="grid" layout-spacing="8" layout-columns="4"/>
+            </hr:UICollectionSection>
+        </hr:UICollection>
+        <VisualElement class="overlay-bottom" name="_buttonContainer">
+            <hr:UISeparator name="_topSeparator"/>
+            <hr:UIButton name="_swapItemsButton" class="button-primary">
+                <hr:UIImage class="icon-swap-small"/>
+                <hr:UILabel key="select_items_to_swap"/>
+            </hr:UIButton>
+            <VisualElement name="_giftExchangeContainer">
+                <hr:UILabel name="_giftExchangeLabel" key="gifted_items_cannot_be_exchanged_later"/>
+                <hr:UIButton name="_exchangeGiftsButton" class="button-tertiary-banana-25">
+                    <hr:UILabel key="select_gifts_to_exchange"/>
+                </hr:UIButton>
+            </VisualElement>
+            <hr:UIButton name="_gotItButton" class="button-primary">
+                <hr:UILabel key="got_it"/>
+            </hr:UIButton>
+            <hr:UISafeAreaBottom/>
+        </VisualElement>
+    </hr:UIRewardsSummary>
+
+</UXML>

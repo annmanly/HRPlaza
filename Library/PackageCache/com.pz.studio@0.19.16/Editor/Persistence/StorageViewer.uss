@@ -1,0 +1,93 @@
+
+.storage-viewer {
+    flex-grow: 1;
+}
+
+.storage-viewer .collection {
+    flex-grow: 1;
+}
+
+.storage-viewer #_topLeft {
+    flex-direction: row;
+    border-color: var(--unity-colors-toolbar-border);
+    border-bottom-width: 1px;
+    padding-top: 4px;
+    padding-bottom: 4px;
+    flex-shrink: 0;
+}
+
+.storage-viewer #_refreshButton {
+    flex-direction: row;
+    margin-right: auto;
+}
+
+.storage-viewer #_refreshIcon {
+    width: 15px;
+    height: 15px;
+    --unity-image: url("project://database/Packages/com.pz.studio/Editor/UI/Icons/icon_swap_small.png");
+}
+
+.storage-viewer .storage-entry {
+    flex-direction: row;
+    font-size: 13px;
+    padding: 2px 4px;
+}
+
+.storage-viewer #_entryKey {
+    margin-right: 2px;
+    -unity-text-align: middle-left;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    flex-shrink: 1;
+}
+
+.storage-viewer #_entryMetadata {
+    margin-left: auto;
+    -unity-text-align: middle-right;
+    font-size: 12px;
+    flex-shrink: 0;
+}
+
+.storage-viewer .storage-entry:hover {
+    color: var(--unity-colors-default-text-hover);
+    background-color: var(--unity-colors-highlight-background-hover);
+}
+
+.storage-viewer .storage-entry:checked {
+    background-color: var(--unity-colors-highlight-background);
+    color: white;
+}
+
+.storage-viewer #_bottomLeft {
+    flex-shrink: 0;
+}
+
+.storage-viewer .unity-toolbar-search-field {
+    width: auto;
+    margin: 4px;
+}
+
+.storage-viewer #_topRight {
+    flex-direction: row;
+    border-color: var(--unity-colors-toolbar-border);
+    border-bottom-width: 1px;
+    padding-top: 4px;
+    padding-bottom: 4px;
+    flex-shrink: 0;
+}
+
+.storage-viewer #_key {
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 16px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    flex-shrink: 1;
+}
+
+.storage-viewer #_value {
+    white-space: normal;
+    margin: 4px;
+}

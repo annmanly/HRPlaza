@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<UXML
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xmlns="UnityEngine.UIElements"
+        xmlns:hr="Highrise.UI"
+        xmlns:editor="UnityEditor.UIElements"
+        xsi:noNamespaceSchemaLocation="../../../../../../UIElementsSchema/UIElements.xsd"
+>
+
+    <hr:UIEventRewardAnimation class="event-reward-animation">
+        <hr:UIImage name="_rewardAnimation" class="overlay"/>
+        <VisualElement name="_topContent">
+            <VisualElement class="event-reward-animation-top-tickets" name="_ticketsContainer">
+                <hr:UIImage class="event-tickets-icon"/>
+                <hr:UILabel class="event-reward-animation-top-tickets-amount" name="_ticketsAmount"/>
+            </VisualElement>
+            <hr:UILabel class="event-reward-animation-top-title" name="_topTitle"/>
+        </VisualElement>
+        <hr:UIScrollView name="_bottomContent">
+            <hr:UILabel class="event-reward-animation-bottom-title" name="_bottomTitle"/>
+            <hr:UILabel class="event-reward-animation-bottom-description" name="_bottomDescription"/>
+        </hr:UIScrollView>
+    </hr:UIEventRewardAnimation>
+
+</UXML>

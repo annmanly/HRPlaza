@@ -1,0 +1,353 @@
+/*
+
+    Asset Store
+  
+*/
+
+.asset-store {
+    flex-grow: 1;
+}
+
+.asset-store #_content {
+    flex-grow: 1;
+    flex-direction: row;
+    border-top-width: 1px;
+    border-top-color: var(--unity-colors-toolbar-border);
+}
+
+.asset-store #_categories {
+    width: 170px;
+}
+
+.asset-store #_assetsContainer {
+    flex-grow: 1;
+}
+
+.asset-store #_assetsContainer UICollectionSection {
+    padding: 8px;
+    padding-right: 16px;
+}
+
+.asset-store .asset-scroll-view {
+    flex-grow: 1;
+}
+
+.asset-store .asset-collection {
+    flex-grow: 1;
+    margin-left: 1px;
+    margin-right: 1px;
+}
+
+/*
+
+    Toolbar
+  
+*/
+
+.asset-store #_toolbar {
+    height: var(--unity-metrics-toolbar-height);
+    background-color: var(--unity-colors-toolbar-background);
+    padding-left: 8px;
+    padding-right: 8px;
+    flex-direction: row-reverse;
+}
+
+.asset-store #_search {
+    margin-left: auto;
+}
+
+.asset-store #_hasScripts {
+    flex-direction: row;
+    align-items: center;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+.asset-store #_hasScriptsToggle {
+    margin: 3px;
+}
+
+.asset-store #_hasScriptsToggleIcon {
+    width:20px;
+    padding: 1px;
+    --unity-image: url("project://database/Packages/com.pz.studio/Editor/Icons/LuaScript.png")
+}
+
+.asset-store #_refreshButton {
+    flex-direction: row;
+    margin-right: 5px;
+}
+
+.asset-store #_refreshIcon {
+    width: 20px;
+    --unity-image: url("project://database/Packages/com.pz.studio/Editor/UI/Icons/icon_swap_small.png");
+}
+
+.asset-store #_goldBalanceArea {
+    flex-direction: row;
+    align-items: center;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+.asset-store #_goldBalance {
+    -unity-font-style: bold;
+    font-size: 12px
+}
+
+.asset-store #_goldIcon {
+    width:20px;
+    height:20px;
+    padding: 2px;
+    --unity-image: url("project://database/Packages/com.pz.studio/Editor/UI/Icons/gold_asset_store.png")
+}
+
+/*
+
+    Filter Toolbar
+
+*/
+
+.asset-store #_filterToolbar {
+    background-color: var(--unity-colors-toolbar-background);
+    padding-left: 8px;
+    padding-right: 8px;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.asset-store #_filterTopBar, #_filterBottomBar{
+    flex-direction: row;
+}
+
+.asset-store #_filterTopBar {
+    margin-top: 8px;
+}
+
+
+.asset-store #_filterBottomBar{
+    margin-left: 45px;
+}
+
+.asset-store #_filterLabel{
+    font-size: 13px;
+    -unity-font-style: bold;
+    -unity-text-align: middle-center;
+}
+
+.asset-store #_packFilterDropdown {
+    width: 130px;
+}
+
+.asset-store #_bundleIcon {
+    width: 20px;
+    --unity-image: url("project://database/Packages/com.pz.studio/Editor/UI/Icons/icon_swap_small.png");
+}
+
+.asset-ross .dropdown-parent {
+    flex-direction: column;
+}
+
+.asset-store .filter-button {
+    width: 80px;
+    height: 90%;
+    flex-direction: row;
+    align-items: center;
+    background-color: var(--unity-colors-button-background);
+}
+
+.filter-button:hover {
+    background-color: var(--unity-colors-button-background-hover);
+}
+
+.filter-dropdown-image {
+    width: 14px;
+    height: 14px;
+    position: absolute;
+    right: 4px;
+    background-image: url("project://database/Packages/com.pz.studio/Assets/Sprites/Icons/icon_carrow_down.png");
+    -unity-background-image-tint-color: #bfbfbf;
+}
+
+.asset-store .dropdown-container {
+    position: absolute;
+    background-color: var(--unity-colors-dropdown-background);
+    border-width: 3px;
+    border-color: var(--unity-colors-dropdown-border);
+    border-radius: 5px;
+    flex-direction: column;
+    margin-bottom: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    width: 200px;
+}
+
+.asset-store #_dropdownOptionParent{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+.asset-store #_filterClickListener{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+}
+
+.filter-toggle {
+    margin-bottom: 0px;
+}
+
+.filter-toggle:hover {
+    background-color: #9F9F9F;
+}
+
+.filter-toggle > .unity-label {
+    color: var(--unity-colors-dropdown-text);
+}
+
+.filter-on-display {
+    width: 150px;
+    height: 21px;
+    flex-direction: row;
+    background-color: #bfbfbf;
+    align-items: center;
+}
+
+.filter-on-display:hover {
+    background-color: #dfdfdf;
+}
+
+.filter-cancel-image {
+    width: 20px;
+    height: 20px;
+    background-image: url("project://database/Packages/com.pz.studio/Assets/Sprites/Icons/icon_close.png");
+    -unity-background-image-tint-color: #4f4f4f;
+    position: absolute;
+    right: 0px;
+}
+
+.filter-cancel-label{
+    color: #2f2f2f;
+}
+
+
+/*
+
+    Asset Store Category
+  
+*/
+
+.asset-store #_categories {
+    background-color: var(--unity-colors-tab-background-hover);
+}
+
+.asset-store-category {
+    padding-left: 8px;
+    flex-direction: row;
+    font-size: 110%;
+    -unity-font-style: bold;
+    height: 28px;
+    -unity-text-align: middle-left;
+    color: #ABADB8;
+}
+
+.asset-store-category:hover
+{
+    background-color: var(--unity-colors-tab-background);
+}
+
+.asset-store-category:checked {
+    background-color: var(--unity-colors-tab-background-checked);
+    color: white;
+}
+
+.asset-store-category > .unity-label {
+    margin-left: 4px;
+}
+
+.asset-store-category > .unity-image {
+    width: 20px;
+    height: 20px;
+    margin-top: auto;
+    margin-bottom: auto;
+    --unity-image: url("project://database/Packages/com.pz.studio/Editor/UI/Icons/icon_categories_new.png");
+    --unity-image-tint-color: var(--color-greybase4)
+}
+
+.asset-store-category:checked > .unity-image {
+    --unity-image-tint-color: white;
+}
+
+/*
+
+    Asset Store Categories
+  
+*/
+
+.asset-store-category.AssetCategory-Purchased > .unity-image {
+    --unity-image: url("project://database/Packages/com.pz.studio/Editor/UI/Icons/icon_purchased.png");
+}
+
+.asset-store-category.AssetCategory-Installed > .unity-image {
+    --unity-image: url("project://database/Packages/com.pz.studio/Assets/Sprites/Icons/icon_save.png");
+}
+
+.asset-store-category.AssetCategory-Liked > .unity-image {
+    --unity-image: url("project://database/Packages/com.pz.studio/Editor/UI/Icons/icon_heart_white_full.png");
+}
+
+.asset-store-category.AssetCategory-Landscape > .unity-image {
+    --unity-image: url("project://database/Packages/com.pz.studio/Editor/UI/Icons/icon_assetstore_landscape.png");
+}
+
+.asset-store-category.AssetCategory-Furniture > .unity-image {
+    --unity-image: url("project://database/Packages/com.pz.studio/Editor/UI/Icons/inventory_furniture.png");
+}
+
+.asset-store-category.AssetCategory-Structure > .unity-image {
+    --unity-image: url("project://database/Packages/com.pz.studio/Editor/UI/Icons/tab_bar_rooms_new.png");
+}
+
+.asset-store-category.AssetCategory-Light > .unity-image {
+    --unity-image: url("project://database/Packages/com.pz.studio/Editor/UI/Icons/icon_lighting.png");
+}
+
+.asset-store-category.AssetCategory-Vehicle > .unity-image {
+    --unity-image: url("project://database/Packages/com.pz.studio/Editor/UI/Icons/icon_assetstore_vehicle.png");
+}
+
+.asset-store-category.AssetCategory-Clothing > .unity-image {
+    --unity-image: url("project://database/Packages/com.pz.studio/Editor/UI/Icons/closet_tops_new.png");
+}
+
+.asset-store-category.AssetCategory-Creatures > .unity-image {
+    --unity-image: url("project://database/Packages/com.pz.studio/Editor/UI/Icons/icon_assetstore_creatures.png");
+}
+
+.asset-store-category.AssetCategory-DevModules > .unity-image {
+    --unity-image: url("project://database/Packages/com.pz.studio/Editor/UI/Icons/icon_assetstore_devmodules.png");
+}
+
+.asset-store-category.AssetCategory-GUI > .unity-image {
+    --unity-image: url("project://database/Packages/com.pz.studio/Editor/UI/Icons/icon_gui.png");
+}
+
+.asset-store-category.AssetCategory-BuiltInComponents > .unity-image {
+    --unity-image: url("project://database/Packages/com.pz.studio/Editor/Icons/LuaScript.png");
+}
+
+.asset-store-category.AssetCategory-VFX > .unity-image {
+    --unity-image: url("project://database/Packages/com.pz.studio/Editor/UI/Icons/closet_auras_new.png");
+}
+
+.asset-store-category.AssetCategory-Props > .unity-image {
+    --unity-image: url("project://database/Packages/com.pz.studio/Editor/UI/Icons/icon_props.png");
+}
+
+.asset-store-category.AssetCategory-Animations > .unity-image {
+    --unity-image: url("project://database/Packages/com.pz.studio/Editor/UI/Icons/icon_animation.png");
+}
+

@@ -1,0 +1,307 @@
+/*
+
+    UITextField
+
+*/
+
+
+.text-field {
+    height: 44px;
+    border-radius: 10px;
+    border-width: 2px;
+    background-color: var(--color-fishbase-blackfish);
+    flex-direction: row;
+    margin-bottom: 8px;
+    -unity-text-align: middle-left;
+}
+
+.rtl .text-field {
+    -unity-text-align: middle-right;
+    flex-direction: row-reverse;
+}
+
+.portrait .text-field {
+    border-width: 0px;
+}
+
+.text-field:focus {
+    border-color: var(--color-accents-secondary-25);
+    --unity-selection-color: var(--color-accents-primary-50);
+    --unity-cursor-color: white;
+}
+
+.text-field:active,
+.text-field:active:focus,
+.text-field:hover:focus,
+.text-field:hover {
+    border-color: var(--color-accents-secondary-25);
+}
+
+.text-field:active .text-field__input,
+.text-field:active:focus .text-field__input,
+.text-field:hover:focus .text-field__input,
+.text-field:hover .text-field__input {
+    color: var(--color-fishbase-whitefish);
+}
+
+.text-field:disabled:hover,
+.text-field:disabled {
+    border-color:var(--color-fishbase-catfish);
+    background-color: var(--color-fishbase-catfish);
+}
+
+
+.text-field Label {
+    color: var(--color-fishbase-whitefish);
+    padding: 0px;
+    margin: 0px;
+    -unity-text-align: middle-left;
+    flex-grow: 1;
+    margin-left: 6px;
+    margin-right: 6px;
+}
+
+
+/*
+
+    UITextField Input
+
+*/
+
+
+.text-field .text-field__input {
+    color: var(--color-fishbase-mackerel);
+    -unity-font-definition: var(--font-regular);
+    margin: auto 12px;
+    flex-grow: 1;
+    overflow: scroll;
+    white-space: nowrap;
+    height: 100%;
+    font-size: var(--font-size-m);
+}
+
+.text-field:disabled .text-field__input {
+    color: var(--color-fishbase-tuna);
+}
+
+
+.text-field-show-password {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 12px;
+    margin-right: 12px;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.rtl .text-field-show-password {
+    right: auto;
+    left: 12px;
+    margin-left: 12px;
+}
+
+.text-field__big-emojis .text-field__input {
+    font-size: var(--font-size-big-emojis);
+}
+
+
+/*
+
+    Multiline
+
+*/
+
+.text-field .unity-base-text-field__input--multiline {
+    white-space: normal;
+    overflow: hidden;
+    margin-right: 0;
+}
+
+
+/*
+
+    Transparent TextField
+
+*/
+
+.transparent-text-field {
+    border-radius: 0px;
+    border-width: 0px;
+    background-color: rgba(0,0,0,0);
+}
+
+.transparent-text-field .unity-text-field__input {
+    border-radius: 0px;
+    border-width: 0px;
+    padding: 0;
+    margin: 0;
+    margin-top: auto;
+    margin-bottom: auto;
+    background-color: rgba(0,0,0,0);
+    color: var(--color-fishbase-whitefish);
+}
+
+.transparent-text-field Label {
+    border-radius: 0px;
+    border-width: 0px;
+    padding: 0;
+    margin: 0;
+    margin-top: auto;
+    margin-bottom: auto;
+    background-color: rgba(0,0,0,0);
+}
+
+.transparent-text-field:focus,
+.transparent-text-field:active,
+.transparent-text-field:hover,
+.transparent-text-field:disabled,
+.transparent-text-field:focus .unity-text-field__input,
+.transparent-text-field:active .unity-text-field__input,
+.transparent-text-field:disabled:hover .unity-text-field__input,
+.transparent-text-field:hover .unity-text-field__input {
+    background-color: rgba(0,0,0,0);
+    border-width: 0;
+}
+
+
+/*
+
+    Password
+
+*/
+
+.text-field .text-field__show-password {
+    --unity-image: var(--image-icon-spectators);
+    --unity-image-tint-color: var(--color-fishbase-anchovy);
+    width: 24px;
+    height: 24px;
+    margin-top: auto;
+    margin-bottom: auto;
+    padding: 0;
+    padding-left: 0;
+    flex-shrink: 0;
+    margin-right: 12px;
+}
+
+.rtl .text-field .text-field__show-password {
+    margin-right: 0;
+    margin-left: 12px;
+}
+
+.text-field .text-field__show-password:checked {
+    --unity-image-tint-color: var(--color-accents-primary);
+}
+
+/*
+
+    Placeholder
+
+*/
+
+.text-field .text-field__placeholder {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    margin: 0;
+    padding: 0;
+    color: var(--color-fishbase-anchovy);
+    -unity-font-definition: var(--font-regular);
+    white-space: normal;
+}
+
+.rtl .text-field .text-field__placeholder {
+    -unity-text-align: middle-right;
+}
+
+/*
+
+    Clear
+
+*/
+
+.text-field .text-field__clear {
+    --unity-image: var(--image-icon-clear);
+    --unity-image-tint-color: var(--color-fishbase-salmon);
+    width: 16px;
+    height: 16px;
+    margin-right: 10px;
+    margin-top: auto;
+    margin-bottom: auto;
+    flex-shrink: 0;
+}
+
+.rtl .text-field .text-field__clear {
+    margin-left: 10px;
+    margin-right: 0;
+}
+
+
+/*
+
+    Search
+
+*/
+
+.text-field .text-field__search {
+    --unity-image: var(--image-icon-search);
+    --unity-image-tint-color: var(--color-fishbase-anchovy);
+    width: 16px;
+    height: 16px;
+    margin-left: 8px;
+    margin-right: 0;
+    margin-top: auto;
+    margin-bottom: auto;
+    flex-shrink: 0;
+    flex-grow: 0;
+}
+
+.rtl .text-field .text-field__search {
+    margin-left: 0;
+    margin-right: 10px;
+}
+
+/*
+
+    Virtual keyboard
+
+*/
+
+.text-field-keyboard {
+    background-color: lightgray;
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+
+.text-field-keyboard UIKeyboardContainer {
+    height: 0;
+}
+
+.text-field-keyboard__border {
+    height: 8px;
+    background-color: grey;
+}
+
+.text-field-keyboard UIImage {
+    --unity-image-tint-color: grey;
+    margin: auto;
+    width: 75%;
+}
+
+/*
+
+    Input Too Long
+
+*/
+
+.text-field.text-field__input-too-long .text-field__input,
+.text-field.text-field__input-too-long:active .text-field__input,
+.text-field.text-field__input-too-long:active:focus .text-field__input,
+.text-field.text-field__input-too-long:hover:focus .text-field__input,
+.text-field.text-field__input-too-long:hover .text-field__input {
+    color: var(--color-basic-destructive);
+}

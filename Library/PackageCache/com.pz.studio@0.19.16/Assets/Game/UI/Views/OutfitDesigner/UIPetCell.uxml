@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<UXML
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns="UnityEngine.UIElements"
+    xmlns:hr="Highrise.UI"
+    xmlns:hrui="Highrise.UI"
+    xmlns:editor="UnityEditor.UIElements"
+    xsi:noNamespaceSchemaLocation="../../../../../UIElementsSchema/UIElements.xsd"
+>
+
+  <hr:UIPetCell class="pet-cell">
+      <hr:UIImage name="_image"/>
+      <Image name="_nft" class="overlay-bottom-left icon-non-tradable"/>
+      <hr:UIImage name="_selectedBadge" class="overlay-bottom-right icon-checkmark"/>
+  </hr:UIPetCell>
+
+</UXML>

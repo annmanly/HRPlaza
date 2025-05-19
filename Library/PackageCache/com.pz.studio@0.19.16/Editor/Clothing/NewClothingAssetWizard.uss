@@ -1,0 +1,84 @@
+/*
+
+    Create Clothing Editor
+  
+*/
+
+.create-clothing-editor {
+    flex-grow: 1;
+}
+
+.create-clothing-editor #_centerDisplay {
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+}
+
+.create-clothing-editor #_content UICollection {
+    flex-grow: 1;
+}
+
+.create-clothing-editor #_contentSection {
+}
+
+#_titleBar {
+    width: 100%;
+    height: 40px;
+    flex-direction: row;
+    align-items: center;
+    background-color: var(--unity-colors-box-background);
+}
+
+#_stepLabel {
+    margin-left: 8px;
+    font-size: 14px;
+    -unity-font-style: bold;
+    -unity-text-align: middle-center;
+}
+
+#_chooseTemplateButton{
+    width: 140px;
+    height: 20px;
+    position: absolute;
+    right: 2px;
+}
+
+#_centerPane {
+    flex-grow: 1;
+    height: 100%;
+    width: 100%;
+}
+
+#_assetListContainer, #_paletteTypeContainer, #_outfitContainer{
+    flex-grow: 1;
+}
+
+#_bottomLayout {
+    width: 100%;
+    height: 35px;
+    justify-content: center;
+    background-color: var(--unity-colors-box-background);
+    border-top-width: .5px;
+    border-color: var(--unity-colors-toolbar-border);
+}
+
+#_nextButton, #_backButton {
+    width: 50px;
+    height: 25px;
+    justify-content: center;
+}
+
+#_nextButton {
+    right: 2px;
+    position: absolute;
+}
+
+#_backButton {
+    left: 2px;
+    position: absolute;
+}
+
+#_openButton Label{
+    font-size: 16px;
+    -unity-text-align: middle-center;
+}

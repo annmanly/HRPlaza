@@ -1,0 +1,100 @@
+.rtl {
+    align-content: flex-end;
+}
+
+.rtl .text-upper-start {
+    -unity-text-align: upper-right;
+}
+
+.rtl .text-middle-start {
+    -unity-text-align: middle-right;
+}
+
+.rtl .text-lower-start {
+    -unity-text-align: lower-right;
+}
+
+.rtl PopupTextElement {
+    -unity-text-align: middle-right;
+    margin-right: 16px;
+}
+
+.rtl TabbedView > * {
+    flex-direction: row-reverse;
+}
+
+.rtl .overlay-right {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+}
+
+.rtl .overlay-left { 
+    position: absolute; 
+    top: 0; 
+    right: 0; 
+    bottom: 0; 
+}
+
+.rtl .overlay-top-right { 
+    left: 0;
+    right: initial;
+}
+
+.rtl .overlay-top-right-safe { 
+    left: initial; 
+    right: var(--safe-area-left); 
+}
+
+.rtl .overlay-top-left {
+    left: initial;
+    right: 0; 
+}
+
+.rtl .overlay-bottom-right {
+    left: 0;
+    right: initial;
+}
+
+.rtl .overlay-bottom-left {
+    left: initial;
+    right: 0;
+}
+
+.rtl .overlay-safe {
+    left: var(--safe-area-right);
+    right: var(--safe-area-left);
+}
+
+.rtl-normal {
+    flex-direction: row;
+}
+
+.rtl-reverse {
+    flex-direction: row;
+}
+
+.rtl .rtl-reverse {
+    flex-direction: row-reverse;
+}
+
+.rtl-rotate {
+    rotate: 0deg;
+}
+
+.rtl .rtl-rotate {
+    rotate: 180deg;
+}
+
+.rtl .button__content {
+    flex-direction: row-reverse;
+}
+
+.rtl .page-view {
+    scale: -1 1 1;
+}
+
+.rtl .page-view__page {
+    scale: -1 1 1;
+}

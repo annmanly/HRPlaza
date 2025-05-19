@@ -14,41 +14,25 @@ local codesUI = nil
 function openInfo()
     infoUIObj.gameObject:SetActive(true)
 end
-function closeInfo()
-    infoUIObj.gameObject:SetActive(false)
-end
 
 function openCodes()
-    -- TO DO: sync actual promo codes
     codesUIObj.gameObject:SetActive(true)
-    closeInfo()
-    closeMainUI()
-
+    -- TO DO: add actual promo codes
 end
-function closeCodes()
-    codesUIObj.gameObject:SetActive(false)
-end
-
 
 function openMainUI()
     mainRaffleUIObj.gameObject:SetActive(true)
     RaffleManager.TicketCountRequest:FireServer()
-    closeCodes()
-    closeInfo()
-end
 
-function closeMainUI()
-    mainRaffleUIObj.gameObject:SetActive(false)
 end
 
 function setMainUiTicketCount(count)
-    if mainUI and mainRaffleUIObj.activeInHierarchy then
-        mainUI.setTicketCount(count)
-    end
+    mainUI.setTicketCount(count)
 end
 
 function self:ClientAwake()
     self.gameObject:GetComponent(TapHandler).Tapped:Connect(openMainUI)
     mainUI = mainRaffleUIObj.gameObject:GetComponent(RaffleUI)
     RaffleManager.TicketCountResponse:Connect(setMainUiTicketCount)
+    RaffleManager.TicketCountRequest:FireServer()
 end

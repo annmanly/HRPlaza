@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<UXML
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xmlns="UnityEngine.UIElements"
+        xmlns:hr="Highrise.UI"
+        xsi:noNamespaceSchemaLocation="../../../../../../UIElementsSchema/UIElements.xsd">
+
+    <hr:UIChatBubble class="chat-bubble">
+        <VisualElement name="_messages" picking-mode="Ignore" class="chat-bubble-messages"/>
+        <VisualElement name="_indicators" picking-mode="Ignore">
+            <!-- Typing indicator -->
+            <hr:UITypingIndicator name="_typingIndicator" class="indicator-player-status indicator-typing">
+                <Image name="_dot1"/>
+                <Image name="_dot2"/>
+                <Image name="_dot3"/>
+                <VisualElement name="_nub"/>
+            </hr:UITypingIndicator>
+
+            <!-- AFK indicator -->
+            <VisualElement name="_afkIndicator" class="indicator-player-status indicator-afk">
+                <Image class="indicator-player-status-bubble">
+                    <Image class="indicator-player-status-icon"/>
+                </Image>
+            </VisualElement>
+
+            <!-- Voice indicator -->
+            <VisualElement name="_voiceIndicator" class="indicator-player-status indicator-voice">
+                <Image class="indicator-player-status-bubble">
+                    <Image class="indicator-player-status-icon"/>
+                </Image>
+            </VisualElement>
+
+            <!-- On phone indicator -->
+            <VisualElement name="_onPhoneIndicator" class="indicator-player-status indicator-on-phone">
+                <Image class="indicator-player-status-bubble">
+                    <Image class="indicator-player-status-icon"/>
+                </Image>
+            </VisualElement>
+        </VisualElement>
+    </hr:UIChatBubble>
+</UXML>

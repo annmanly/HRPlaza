@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<UXML
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns="UnityEngine.UIElements"
+    xmlns:hr="Highrise.UI"
+    xmlns:editor="UnityEditor.UIElements"
+    xsi:noNamespaceSchemaLocation="../../../../../../../UIElementsSchema/UIElements.xsd"
+>
+
+  <hr:UIMultiColorPickerSetColors class="multi-color-picker-set-colors">
+    <hr:UILabel class="multi-color-picker-set-colors-title" key="color"/>
+    <VisualElement class="multi-color-picker-set-colors-container" name="_container"/>
+    <hr:UIButton class="button-primary" name="_applyButton">
+      <hr:UILabel key="apply"/>
+    </hr:UIButton>
+  </hr:UIMultiColorPickerSetColors>
+
+</UXML>

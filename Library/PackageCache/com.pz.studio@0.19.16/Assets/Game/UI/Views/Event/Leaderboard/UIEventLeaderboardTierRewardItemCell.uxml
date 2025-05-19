@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<UXML
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns="UnityEngine.UIElements"
+    xmlns:hr="Highrise.UI"
+    xmlns:editor="UnityEditor.UIElements"
+    xsi:noNamespaceSchemaLocation="../../../../../../UIElementsSchema/UIElements.xsd"
+>
+
+  <hr:UIEventLeaderboardTierRewardItemCell class="event-leaderboard-tier-reward-item-cell">
+    <VisualElement name="_card" class="event-leaderboard-tier-reward-item-cell__card">
+      <VisualElement class="event-leaderboard-tier-reward-item-cell__rank-container" name="_header">
+        <hr:UIImage name="_rankIcon" class="event-leaderboard-tier-reward-item-cell__rank-icon"/>
+        <hr:UILabel name="_rankLabel" class="event-leaderboard-tier-reward-item-cell__rank-label"/>
+      </VisualElement>
+      <VisualElement name="_rewardsGrid" class="event-leaderboard-tier-reward-item-cell__grid"/>
+      <VisualElement class="separator"/>
+      <VisualElement name="_dropdown" class="event-leaderboard-tier-reward-item-cell__rank-dropdown">
+        <hr:UILabel key="rank" />
+        <hr:UIImage name="_collapseButton" class="event-leaderboard-tier-reward-item-cell__collapse-button icon-carrot"/>
+      </VisualElement>
+    </VisualElement>
+  </hr:UIEventLeaderboardTierRewardItemCell>
+
+</UXML>

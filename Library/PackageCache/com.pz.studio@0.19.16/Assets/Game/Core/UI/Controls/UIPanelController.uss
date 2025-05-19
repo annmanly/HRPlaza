@@ -1,0 +1,33 @@
+.panel-controller {
+    flex-grow: 1;
+}
+
+.panel-controller__main {
+    flex-grow: 1;
+}
+
+.panel-controller__details {
+    background-color: var(--color-fishbase-eelfish);
+    display: none;
+    width: 30%;
+    max-width: 400px;
+    min-width: 300px;
+    border-left-width: 1px;
+    border-color: var(--color-fishbase-catfish);
+    padding-top: var(--safe-area);
+}
+
+.panel-controller__details-content {
+    flex-grow: 1;
+}
+
+.panel-controller #_detailsCloseButton {
+    height: 44px;
+    width: 44px;
+    margin-left: 8px;
+    margin-top: 8px;
+}
+
+.panel-controller .navigation-controller__content {
+    align-items: center;
+}

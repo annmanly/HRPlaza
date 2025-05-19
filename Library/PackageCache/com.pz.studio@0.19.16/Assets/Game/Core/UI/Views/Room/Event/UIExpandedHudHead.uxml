@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<UXML
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns="UnityEngine.UIElements"
+    xmlns:hr="Highrise.UI"
+    xmlns:editor="UnityEditor.UIElements"
+    xsi:noNamespaceSchemaLocation="../../../../../UIElementsSchema/UIElements.xsd"
+>
+
+  <hr:UIExpandedHudHead class="expanded-hud-head">
+      <VisualElement class="expanded-hud-head__texts-container">
+          <VisualElement class="expanded-hud-head__info-container">
+              <hr:UIImage name="_icon" class="icon-energy"/>
+              <hr:UILabel name="_additionalTextLabel"/>
+          </VisualElement>
+          <hr:UILabel name="_titleLabel" auto-sizing-font-size="10"/>
+      </VisualElement>
+
+      <VisualElement class="expanded-hud-head__thumbnail-container" name="_thumbnailContainer">
+          <hr:UIImage name="_thumbnail"/>
+          <hr:UIImage class="overlay expanded-hud-head__gradient"/>
+      </VisualElement>
+  </hr:UIExpandedHudHead>
+
+</UXML>

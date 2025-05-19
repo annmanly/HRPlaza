@@ -1,0 +1,53 @@
+.date-picker {
+    flex-direction: row;
+    justify-content: center;
+}
+
+.date-picker-dropdown {
+    flex-grow: 1;
+    width: 100%;
+}
+
+.date-picker-info {
+    font-size: 15px;
+    color: var(--color-fishbase-bonito);
+}
+
+.landscape .date-picker-info {
+    font-size: 22px;
+}
+
+.date-picker-container {
+    flex-grow: 1;
+    align-items: center;
+}
+
+.date-picker .unity-base-popup-field__text {
+    margin-right: 0;
+    font-size: 22px;
+    -unity-font-definition: var(--font-bold);
+    color: var(--color-fishbase-whitefish);
+}
+
+.landscape .date-picker .unity-base-popup-field__text {
+    font-size: 22px;
+}
+
+.date-picker .unity-base-popup-field__input {
+    margin: 0px;
+    background-color: var(--color-fishbase-blackfish);
+    border-width: 0px;
+    border-radius: 10px;
+    padding: 10px 12px;
+}
+
+.mobile .unity-base-dropdown__checkmark {
+    width: 0px;
+    margin: 0px;
+}
+
+.date-picker UIScrollPicker {
+    flex-grow: 1;
+    width: 100%;
+    margin-top: 8px;
+}

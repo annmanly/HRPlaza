@@ -1,0 +1,74 @@
+.hint {
+    margin-top: 12px;
+    flex-shrink: 0;
+}
+
+.hint .hint-container {
+    background-color: var(--color-fishbase-catfish);
+    border-radius: 16px;
+}
+
+.hint .hint-icon-wrapper {
+    background-color: var(--color-fishbase-eel);
+    margin: 12px;
+    border-radius: 12px;
+    width: 44px;
+    height: 44px;
+}
+
+.hint #_hintIcon {
+    width: 24px;
+    height: 24px;
+    margin: auto;
+}
+
+.hint .text-container {
+    flex: 1 0;
+    margin-right: 12px;
+    margin-top: 12px;
+    margin-bottom: 12px;
+}
+
+.rtl .hint .text-container {
+    margin-right: 0;
+    margin-left: 12px;
+}
+
+.hint .hint-text {
+    font-size: var(--font-size-m);
+    color: var(--color-fishbase-mackerel);
+    white-space: normal;
+    -unity-text-align: middle-left;
+}
+
+.hint .hint-link {
+    display: none;
+    margin-right: 12px;
+    margin-top: 4px;
+    -unity-font-style: bold;
+    font-size: 15px;
+    color: var(--color-accents-secondary);
+    white-space: normal;
+}
+
+.rtl .hint .hint-link {
+    margin-right: 0;
+    margin-left: 12px;
+}
+
+.hint .hint-dismiss-wrapper {
+    width: 40px;
+}
+
+.hint #_dismissButton {
+    height: 40px;
+    width: 40px;
+    padding: 0px;
+    background-color: var(--color-fishbase-catfish);
+    padding: 12px;
+}
+
+
+.hint .hint-dismiss-button-icon {
+    --unity-image-tint-color: var(--color-fishbase-salmon);
+}

@@ -1,0 +1,12 @@
+.color-cell-list .collection-section
+{
+    padding-left: 16px;
+    padding-right: 16px;
+}
+
+.color-cell-list UIItemCell {
+    width: var(--4-column-item-min-width);
+    height: var(--4-column-item-min-width);
+    max-width: var(--4-column-item-max-width);
+    max-height: var(--4-column-item-max-width);
+}

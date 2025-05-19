@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<UXML
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns="UnityEngine.UIElements"
+    xmlns:hr="Highrise.UI"
+    xmlns:editor="UnityEditor.UIElements"
+    xsi:noNamespaceSchemaLocation="../../../../../../UIElementsSchema/UIElements.xsd"
+>
+
+  <hr:UIRoomInfoPlayerCell class="room-info-player-cell">
+    <VisualElement class="room-info-player-cell-content rtl-reverse">
+      <VisualElement class="room-info-player-cell-thumbnail-container">
+        <VisualElement name="_thumbnailBorder">
+          <hr:UIUserThumbnail name="_thumbnail" class="user-thumbnail-small" online-indicator="false" picking-mode="Ignore"/>
+        </VisualElement>
+      </VisualElement>
+      <VisualElement class="room-info-player-cell-name-info">
+        <VisualElement class="room-info-player-cell-name-container rtl-reverse">
+          <hr:UILabel name="_name"/>
+          <hr:UIRoomInfoBoostBadge name="_roomBoostBadge"/>
+        </VisualElement>
+      </VisualElement>
+      <VisualElement class="room-info-player-cell-icons rtl-reverse" name="_iconsContainer">
+        <Image class="icon-deafened" name="_deafenIcon" />
+        <Image name="_mutedIcon" />
+        <hr:UIVoiceIndicator name="_voiceIndicator" />
+      </VisualElement>
+    </VisualElement>
+  </hr:UIRoomInfoPlayerCell>
+
+</UXML>

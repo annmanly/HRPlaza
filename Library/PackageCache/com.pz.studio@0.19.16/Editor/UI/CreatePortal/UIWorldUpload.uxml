@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<UXML
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xmlns="UnityEngine.UIElements"
+  xmlns:hr="Highrise.UI"
+  xmlns:studio="Highrise.Studio"
+  xsi:noNamespaceSchemaLocation="../../../../UIElementsSchema/UIElements.xsd"
+>
+  <VisualElement class="world-upload">
+    <VisualElement class="top">
+      <VisualElement class="left">
+        <Image name="_defaultWorldIcon">
+          <hr:UIImage name="_worldIcon"/>
+        </Image>
+      </VisualElement>
+      <VisualElement class="right">
+        <VisualElement class="row">
+          <Label class="row-name" text="Id"/>
+          <Label name="_worldId" class="row-value" text="yo"/>
+        </VisualElement>
+        <VisualElement class="row">
+          <Label class="row-name" text="Name"/>
+          <Label name="_worldName" class="row-value"/>
+          <TextField name="_worldNameEntry"/>  
+        </VisualElement>
+        <VisualElement class="row">
+          <Label class="row-name" text="Upload Size"/>
+          <Label name="_uploadSize" class="row-value" text=""/>
+        </VisualElement>
+      </VisualElement>
+      <VisualElement class="buttons">
+        <Button name="_selectWorldButton">
+          <Label text="Select World..."/>
+        </Button>
+      </VisualElement>
+    </VisualElement>
+    
+    <VisualElement name="_gameJamRoot">
+      <Toggle name="_gameJamToggle"/>
+      <Label name="_gameJamText"/>
+    </VisualElement>
+
+    <studio:UIUploadInfo name="_uploadInfo" class="info-content" />
+
+    <HelpBox
+      text="Once you upload, your World will be saved as a draft. You and other users you grant permission to can then access the World in the Highrise App.\n\nTo publish the World to the public, you must release a build via the Highrise Creator Portal."
+      message-type="Info"
+      name="_uploadHelp">
+        <Button name="_loginButton" text="Login..."/>
+      </HelpBox>
+      
+    <VisualElement class="bottom">
+      <Button name="_worldSettingsButton">
+        <Label text="World Settings..." />
+      </Button>
+      <Button name="_uploadButton">
+        <Label name="_uploadLabel" text="Upload World"/>
+      </Button>
+    </VisualElement>
+
+  </VisualElement>
+</UXML>

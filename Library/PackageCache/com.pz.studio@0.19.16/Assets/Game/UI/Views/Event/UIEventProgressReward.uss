@@ -1,0 +1,93 @@
+.event-progress-reward {
+    flex-direction: row;
+    background-color: var(--color-fishbase-catfish);
+    border-radius: 12px;
+    flex-shrink: 0;
+}
+
+.event-progress-reward #_rewardImage {
+    width: 56px;
+    height: 56px;
+    margin: auto;
+}
+
+.event-progress-reward #_rewardImageBackground {
+    width: 64px;
+    border-radius: 8px;
+    background-color: var(--color-rarities-rare-dark);
+    height: 64px;
+    margin: 8px;
+}
+
+
+.event-progress-reward #_amountLabel {
+    margin-top: -3px;
+    margin-right: -3px;
+    -unity-font-definition: var(--font-bold);
+    color: var(--color-fishbase-anchovy);
+}
+
+
+.event-progress-reward #_title {
+    font-size: 15px;
+    color: var(--color-fishbase-whitefish);
+    overflow: hidden;
+    -unity-font-definition: var(--font-bold-italic);
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+.event-progress-reward__middle-content {
+    flex-grow: 1;
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-left: 4px;
+}
+
+.event-progress-reward__progress-container {
+    margin-top: 4px;
+    align-items: center;
+    margin-left: 4px;
+    flex-direction: row;
+}
+
+.event-progress-reward #_ticketsIcon {
+    width: 18px;
+    height: 18px;
+}
+
+.event-progress-reward #_progressLabel {
+    font-size: 13px;
+    color: var(--color-fishbase-anchovy);
+    margin-left: 4px;
+}
+
+.event-progress-reward #_progressBar {
+    margin-left: 8px;
+}
+
+.event-progress-reward #_seeMoreButton {
+    margin-top: auto;
+    margin-bottom: auto;
+    padding-right: 12px;
+    padding-left: 12px;
+}
+
+.event-progress-reward #_seeMoreButton UIImage {
+    rotate: 180deg;
+    width: 16px;
+    height: 16px;
+    --unity-image-tint-color: var(--color-fishbase-anchovy);    
+}
+
+/* Effects icon */
+
+.event-progress-reward #_effectsIcon {
+    display: none;
+    position: absolute;
+    top: 2px;
+    right: 2px;
+    width: 24px;
+    height: 24px;
+    --unity-image-tint-color: var(--color-fishbase-eel-25);
+}

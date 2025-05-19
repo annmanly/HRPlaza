@@ -1,0 +1,23 @@
+.text-popover {
+    position: absolute;
+}
+
+.text-popover #_textContainer {
+    height: 16px;
+    font-size: 11px;
+    -unity-font-style: bold;
+    background-color: var(--color-accents-secondary);
+    -unity-text-align: middle-center;
+    border-radius: 4px;
+    padding-left: 4px;
+    padding-right: 4px;
+    color: var(--color-fishbase-blackfish);
+}
+
+.text-popover #_carrot {
+    --unity-image-tint-color: var(--color-accents-secondary);
+    height: 6px;
+    margin-top: -1px;
+    margin-left: auto;
+    margin-right: auto;
+}

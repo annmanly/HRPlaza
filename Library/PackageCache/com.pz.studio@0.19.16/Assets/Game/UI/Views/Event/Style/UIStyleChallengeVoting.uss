@@ -1,0 +1,286 @@
+.style-challenge-voting {
+    border-radius: 16px;
+    background-color: var(--color-fishbase-eel);
+    margin-top: auto;
+    align-self: center;
+    width: 100%;
+}
+
+.landscape .style-challenge-voting {
+    max-width: var(--lanscape-dialog-max-width);
+}
+
+.style-challenge-voting #_introContainer {
+    display: flex;
+}
+
+.style-challenge-voting #_eventBanner {
+    margin: 16px;
+    overflow: hidden;
+    height: 157px;
+    border-radius: 12px;
+}
+
+.style-challenge-voting #_eventInfo {
+    font-size: 15px;
+    white-space: normal;
+    -unity-text-align: middle-center;
+    margin-top: 4px;
+    margin-left: 16px;
+    margin-right: 16px;
+    margin-bottom: 4px;
+    color: var(--color-fishbase-mackerel);
+}
+
+.style-challenge-voting #_letsGoButton {
+    margin: 16px;
+}
+
+.style-challenge-voting #_votingContainer {
+    display: none;
+}
+
+.style-challenge-voting #_votingContainer:disabled {
+    opacity: 1;
+}
+
+.style-challenge-voting #_comboStreakLabel {
+    -unity-font-definition: var(--font-black-italic);
+    font-size: 15px;
+    flex-grow: 0;
+    flex-shrink: 1;
+    padding-left: 6px;
+    padding-right: 6px;
+    padding-top: 3px;
+    padding-bottom: 3px;
+    margin-top: 8px;
+    -unity-text-align: middle-center;
+    color: var(--color-fishbase-eel);
+    border-radius: 8px;
+    background-color: var(--color-tertiary-blueberry);
+}
+
+.style-challenge-voting #_label {
+    margin-top: 16px;
+    margin-left: 16px;
+    margin-right: 16px;
+    -unity-font-definition: var(--font-regular-italic);
+    font-size: 15px;
+    -unity-text-align: middle-center;
+    color: var(--color-fishbase-salmon);
+}
+
+
+.style-challenge-voting #_votingButtons {
+    flex-direction: row;
+    margin-top: 8px;
+    margin-left: 16px;
+    height: 64px;
+    margin-right: 16px;
+}
+
+.style-challenge-voting #_leftButton {
+    flex-grow: 1;
+    border-top-left-radius: 12px;
+    border-bottom-left-radius: 12px;
+    background-color: var(--color-tertiary-blueberry-25);
+}
+
+.style-challenge-voting #_leftButton UIImage {
+    width: 32px;
+    height: 32px;
+    margin: auto;
+    --unity-image-tint-color: var(--color-tertiary-blueberry)
+}
+
+.style-challenge-voting #_rightButton {
+    flex-grow: 1;
+    border-top-right-radius: 12px;
+    border-bottom-right-radius: 12px;
+    background-color: var(--color-tertiary-dragonfruit-25);
+}
+
+.style-challenge-voting #_rightButton UIImage {
+    width: 32px;
+    height: 32px;
+    margin: auto;
+    --unity-image-tint-color: var(--color-tertiary-dragonfruit)
+}
+
+.style-challenge-voting #_magicGlassesButton {
+    height: 56px;
+    flex-direction: row;
+    border-radius: 12px;
+    background-color: var(--color-accents-secondary-25);
+    justify-content: center;
+    align-items: center;
+    margin-top: 8px;
+    margin-left: 16px;
+    margin-right: 16px;
+    margin-bottom: 16px;
+}
+
+.style-challenge-voting #_magicGlassesLabel {
+    color: var(--color-accents-secondary);
+    font-size: 17px;
+    -unity-font-style: bold;
+}
+
+
+.style-challenge-voting #_magicGlassesButton UIImage {
+    width: 76px;
+    max-width: 76px;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.style-challenge-voting #_mockLabel {
+    color: white;
+}
+
+.style-challenge-voting #_magicGlassesAmount {
+    border-radius: 4px;
+    background-color: var(--color-fishbase-catfish);
+    color: var(--color-fishbase-anchovy);
+    font-size: 11px;
+    padding-left: 4px;
+    padding-right: 4px;
+    padding-top: 1px;
+    padding-bottom: 1px;
+    margin-top: -3px;
+    margin-right: -3px;
+}
+
+.style-challenge-voting #_progressBarContainer {
+    width: 100%;
+}
+
+.style-challenge-voting #_resultsContainer {
+    display: none;
+    align-content: center;
+    flex-grow: 1;
+    align-items: center;
+    margin: 16px;
+}
+
+.style-challenge-voting #_resultsContainer:disabled {
+    opacity: 1;
+}
+
+.style-challenge-voting #_results {
+    margin-top: 0px;
+}
+
+.style-challenge-voting #_resultsProgressBarBackground {
+    border-radius: 12px;
+    height: 64px;
+    background-color: var(--color-fishbase-catfish);
+}
+
+.style-challenge-voting #_resultsProgressBarLeft {
+    height: 64px;
+    border-top-left-radius: 12px;
+    border-bottom-left-radius: 12px;
+    background-color: var(--color-tertiary-blueberry);
+    right: 50%;
+}
+
+.style-challenge-voting #_resultsProgressBarRight {
+    height: 64px;
+    border-top-right-radius: 12px;
+    border-bottom-right-radius: 12px;
+    background-color: var(--color-tertiary-dragonfruit);
+    left: 50%;
+}
+
+.style-challenge-voting .user-results-container {
+    margin: 12px;
+    margin-top: auto;
+    margin-bottom: auto;
+    justify-content: center;
+}
+
+.style-challenge-voting .user-result-percent {
+    color: var(--color-fishbase-blackfish);
+    -unity-font-definition: var(--font-black);
+    font-size: 17px;
+}
+
+.style-challenge-voting #_rightUserPercentage {
+    -unity-text-align: middle-right;
+}
+
+.style-challenge-voting .user-result-name {
+    color: var(--color-fishbase-blackfish);
+    -unity-font-definition: var(--font-regular);
+    font-size: 15px;
+    margin-top: 4px;
+}
+
+.style-challenge-voting #_resultTicketsContainer {
+    justify-content: center;
+    margin-top: 16px;
+}
+
+.style-challenge-voting #_ticketsIcon {
+    width: 16px;
+    height: 16px;
+}
+
+.style-challenge-voting #_ticketsTotal {
+    font-size: 15px;
+    margin-left: 4px;
+    color: var(--color-fishbase-mackerel);
+}
+
+.style-challenge-voting #_ticketsWon {
+    margin-left: 8px;
+    font-size: 15px;
+    -unity-font-definition: var(--font-bold-italic);
+    color: var(--color-fishbase-whitefish);
+}
+
+.style-challenge-voting #_resultRankContainer {
+    justify-content: center;
+    margin-top: 4px;
+}
+
+.style-challenge-voting #_rankIcon {
+    width: 16px;
+    height: 16px;
+}
+
+.style-challenge-voting #_currentRank {
+    color: var(--color-fishbase-anchovy);
+    font-size: 15px;
+}
+
+.style-challenge-voting #_rankDiffIcon {
+    width: 16px;
+    height: 16px;
+    margin-left: 10px;
+}
+
+.style-challenge-voting #_rankDiff {
+    margin-left: 4px;
+    font-size: 15px;
+    -unity-font-definition: var(--font-bold-italic);
+    color: var(--color-accents-primary);
+}
+
+.style-challenge-voting #_tapToContinueLabel {
+    -unity-text-align: middle-center;
+    white-space: normal;
+    margin-top: 16px;
+    margin-left: 16px;
+    margin-right: 16px;
+    padding-top: 11px;
+    padding-bottom: 11px;
+    color: var(--color-fishbase-salmon);
+    -unity-font-definition: var(--font-regular-italic);
+    width: auto;
+}
+
+
+

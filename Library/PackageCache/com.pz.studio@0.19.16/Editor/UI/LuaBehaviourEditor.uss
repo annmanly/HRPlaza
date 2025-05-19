@@ -1,0 +1,25 @@
+.lua-editor-header {
+    position: absolute;
+    left: 60px;
+    right: 65px;
+    top: 0;
+    bottom: 0;
+    margin: 2px 0px;
+    background-color: var(--unity-colors-inspector_titlebar-background);
+    -unity-font-style: bold;
+    -unity-text-align: middle-left;
+    overflow: hidden;
+}
+
+.lua-editor-header Label {
+    height: 100%;
+}
+
+.lua-editor-header:checked {
+    background-color: var(--unity-colors-inspector_titlebar-background-hover);
+}
+
+.lua-editor-header-old {
+    height: var(--unity-metrics-inspector_titlebar-height);
+}
+

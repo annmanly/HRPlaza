@@ -1,0 +1,29 @@
+.tab-page-title-view {
+    flex-direction: row;
+    align-items: center;
+}
+
+.tab-page-title-unseen-count-container {
+    margin-left: 6px;
+    height: 18px;
+    background-color: var(--color-basic-alert);
+    border-radius: 7px;
+    padding: 1px 5px;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.tab-page-title-unseen-count-label {
+    color: var(--color-fishbase-eel);
+    font-size: 13px;
+    -unity-text-align: middle-center;
+    -unity-font-definition: var(--font-bold);
+}
+
+.tab-page-title-unseen-dot {
+    margin-left: 6px;
+    width: 8px;
+    height: 8px;
+    background-color: var(--color-basic-alert);
+    border-radius: 3px;
+}

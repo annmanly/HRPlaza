@@ -1,0 +1,90 @@
+.search-control {
+    justify-content: center;
+    align-items: center;
+}
+
+.search-control UIImage {
+    --unity-image-tint-color: var(--color-fishbase-mackerel);
+    width: 16px;
+    height: 16px;
+    margin-right: 4px;
+}
+
+.search-control-query {
+    font-size: 15px;
+    color: var(--color-fishbase-mackerel);
+    margin-right: 4px;
+}
+
+.rtl .search-control-query {
+    margin-right: 0;
+    margin-left: 4px;
+}
+
+.search-control-collapsed {
+    border-radius: 8px;
+    padding-left: 8px;
+    padding-right: 4px;
+    height: 32px;
+    margin-right: 8px;
+    background-color: var(--color-fishbase-catfish);
+    justify-content: center;
+    align-items: center;
+}
+
+.rtl .search-control-collapsed {
+    margin-right: 0;
+    margin-left: 8px;
+}
+
+.search-control-expanded {
+    align-items: center;
+    background-color: var(--color-fishbase-eel);
+    margin-right: 12px;
+}
+
+.rtl .search-control-expanded {
+    margin-right: 0;
+    margin-left: 16px;
+}
+
+.search-control-expanded-input {
+    flex-grow: 1;
+    border-radius: 8px;
+    margin-left: 16px;
+    margin-right: 16px;
+    margin-bottom: 0px;
+    background-color: var(--color-fishbase-catfish);
+}
+
+.search-control-expanded-back-button {
+    height: 32px;
+    width: 32px;
+    padding: 4px;
+    margin-left: 12px;
+}
+
+.search-control-expanded-back-button > UIImage {
+    width: 24px;
+    height: 24px;
+    margin-right: 0px;
+}
+
+.search-control-expanded > UITextField {
+    height: 32px;
+    margin-right: 0;
+    margin-left: 0;
+}
+
+.search-control:checked .search-control-collapsed {
+    background-color: var(--color-accents-secondary-25);
+}
+
+.search-control:checked .search-control-collapsed UILabel {
+    color: var(--color-accents-secondary);
+}
+
+
+.search-control:checked .search-control-collapsed UIImage {
+    --unity-image-tint-color: var(--color-accents-secondary);
+}

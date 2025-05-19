@@ -1,0 +1,29 @@
+.palette-color-selector UICollection {
+    flex-grow: 1;
+}
+
+.palette-color-selector UICollectionSection {
+    padding: 8px;
+    background-color: var(--unity-colors-tab-background-hover);
+}
+
+.palette-color-selector .color-cell {
+    width: 48px;
+    height: 48px;
+    border-width: 4px;
+    border-radius: 8px;
+    flex-shrink: 0;
+    border-color: var(--unity-colors-tab-background-hover);
+}
+
+.palette-color-selector .color-cell:checked {
+    border-width: 4px;
+    border-color: var(--unity-colors-highlight-text);
+    background-color: var(--unity-colors-tab-background-hover);
+    padding: 3px;
+}
+
+.palette-color-selector .color-cell > VisualElement {
+    flex-grow: 1;
+    border-radius: 4px;
+}

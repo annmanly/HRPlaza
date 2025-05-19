@@ -1,0 +1,151 @@
+.player {
+    margin-top: 2px;
+}
+
+.player #_roomContainer {
+    flex-grow: 1;
+}
+
+.player #_controller {
+    flex-grow: 1;
+}
+
+.player #_roomCustom {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 64px;
+}
+
+.top-left {
+    margin-top: var(--safe-area-top);
+    position: absolute;
+    top: 0px;
+    left: 6px;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.player #_hamburgerButton {
+    width: 44px;
+    height: 44px;
+}
+
+.player #_hamburgerBackground {
+    position: absolute;
+    left: 4px;
+    right: 4px;
+    top: 4px;
+    bottom: 4px;
+    border-radius: 12px;
+    background-color: var(--color-fishbase-blackfish-40);
+}
+
+.player #_hamburgerIcon {
+    width: 24px;
+    height: 24px;
+    margin: auto;
+    --unity-image-tint-color: var(--color-fishbase-whitefish);
+}
+
+.top-right {
+    margin-top: var(--safe-area-top);
+    position: absolute;
+    top: 4px;
+    right: 12px;
+}
+
+.top-right-buttons {
+    flex-direction: row;
+    margin-bottom: 12px;
+}
+
+.top-right-buttons #_cameraButton {
+    width: 36px;
+    height:36px;
+    margin-right: 8px;
+    border-radius: 12px;
+    background-color: rgba(2,0,1,0.3);
+    overflow: hidden;
+}
+
+.top-right-buttons #_cameraButton > Image {
+    width: 24px;
+    height: 24px;
+    margin: auto;
+    --unity-image-tint-color: var(--color-fishbase-bonito);
+}
+
+.player #_right {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    top: 0;
+    width: 325px;
+    background-color: var(--color-fishbase-eel);
+}
+
+.player #_worldInfo {
+    flex-grow: 1;
+    padding-top: var(--safe-area-top);
+}
+
+.player #_loading {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    background-color: var(--color-fishbase-eel);
+}
+
+.player #_chat {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+
+.player .bottom-menu-bar {
+    align-items: center;
+    background-color: var(--color-fishbase-eel);
+    height: 48px;
+    border-top-width: 0.5px;
+    border-top-color: var(--color-fishbase-catfish);
+}
+
+.player .bottom-menu-bar .background {
+    position: absolute;
+    left: auto;
+    right: auto;
+    top: -8px;
+    height: 44px;
+    width: 64px;
+    border-radius: 12px;
+    margin: 0;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--color-accents-primary);
+}
+
+.player .bottom-menu-bar .background UIImage {
+    --unity-image-tint-color: var(--color-fishbase-blackfish);
+    width: 32px;
+    height: 32px;
+    margin: 0;
+    padding: 0;
+}
+
+.player #_touchBlocker {
+    display: none;
+    width: 100%;
+    height: 100%;
+    background-color: var(--color-fishbase-blackfish-40);
+}
+
+.player .bottom-safe {
+    background-color: var(--color-fishbase-eel);
+    height: var(--safe-area-bottom);
+} 

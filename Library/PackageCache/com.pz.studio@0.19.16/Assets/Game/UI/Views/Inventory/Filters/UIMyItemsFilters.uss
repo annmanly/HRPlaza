@@ -1,0 +1,63 @@
+.my-items-filters {
+}
+
+.my-items-filters .scroll-view--horizontal .scroll-bar {
+    height: 4px;
+}
+
+.my-items-filters-container {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    padding-left: 16px;
+    padding-right: 8px;
+    flex-direction: row;
+}
+
+.my-items-filters-container .button {
+    border-radius: 8px;
+    font-size: 15px;
+}
+
+.my-items-filters-container > UIPopupPicker {
+    padding-right: 8px;
+}
+
+.my-items-filters-container > UIMultiColorPicker {
+    margin-right: 8px;
+}
+
+.my-items-filters-container .button-secondary-25 {
+    height: 32px;
+}
+
+.my-items-filters-search-control {
+    padding: 2px 0;
+}
+
+.my-items-filters-favorites Image, .my-items-filters-account-bound Image {
+    --unity-image-tint-color: var(--color-fishbase-mackerel);
+    width:16px;
+    height:16px;
+    margin: 0px;
+}
+
+.my-items-filters-favorites, .my-items-filters-account-bound {
+    margin-top: 0px;
+    margin-bottom: 0px;
+    width: 32px;
+    height: 32px;
+    margin-right: 8px;
+    background-color: var(--color-fishbase-catfish);
+}
+
+.my-items-filters-favorites:checked Image, .my-items-filters-account-bound:checked Image {
+    --unity-image-tint-color: var(--color-accents-secondary);
+}
+
+.my-items-filters-favorites:checked, .my-items-filters-account-bound:checked {
+    background-color: var(--color-accents-secondary-25);
+}
+
+.my-items-filters #_clearAllButton {
+    background-color: rgba(0,0,0,0);
+}

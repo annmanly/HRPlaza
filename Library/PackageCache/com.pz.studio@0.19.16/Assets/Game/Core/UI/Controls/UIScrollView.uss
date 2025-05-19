@@ -1,0 +1,259 @@
+/*
+
+    UIScrollView
+
+*/
+
+.scroll-view {
+    flex-grow: 1;
+    flex-shrink: 1;
+}
+
+.scroll-view__content-viewport {
+    flex-grow: 1;
+    flex-shrink: 1;
+    overflow: hidden;
+    padding: 0;
+}
+
+.scroll-view__content-container {
+    overflow: scroll;
+    flex-shrink: 0;
+}
+
+/*
+
+    Vertical
+
+*/
+
+.scroll-view--vertical {
+    flex-direction: row;
+}
+
+.scroll-view--vertical .scroll-view__slider {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    margin: 0;
+    width: 8px;
+    rotate: 180deg;
+}
+
+.scroll-view--vertical .scroll-view__slider #unity-dragger {
+    width: 8px;
+    background-color: var(--color-fishbase-salmon);
+    border-radius: 4px;
+}
+
+/*
+
+    Horizontal
+
+*/
+
+.scroll-view--horizontal .scroll-view__content-viewport,
+.scroll-view--horizontal .scroll-view__content-container {
+    flex-direction: row;
+}
+
+.scroll-view--horizontal .scroll-view__slider {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: 0;
+    height: 8px;
+}
+
+/*
+
+    Scroll Bar
+
+*/
+
+.scroll-bar {
+    position: absolute;
+}
+
+.scroll-bar.unity-disabled {
+    opacity: 0;
+}
+
+.scroll-view--vertical > .scroll-bar {
+    width: 8px;
+    right: 2px;
+    top: 0;
+    bottom: 0;
+}
+
+.scroll-view--horizontal > .scroll-bar {
+    height: 8px;
+    left: 0;
+    right: 0;
+    bottom: 2px;
+}
+
+.scroll-bar__thumb {
+    border-radius: 4px;
+    background-color: rgba(0,0,0,0);
+    transition-duration: .25s;
+    transition-property: background-color;
+}
+
+.scroll-bar:disabled > .scroll-bar__thumb {
+    background-color: rgba(0,0,0,0);
+}
+
+.scroll-view--vertical > .scroll-bar > .scroll-bar__thumb {
+    min-height: 64px;
+}
+
+.scroll-view--horizontal > .scroll-bar > .scroll-bar__thumb {
+    min-width: 64px;
+}
+
+.portrait .scroll-view--horizontal > .scroll-bar > .scroll-bar__thumb {
+    display: none;
+}
+
+/*
+
+    WebGL / Desktop ScrollBar
+
+*/
+
+.webgl .scroll-bar:active .scroll-bar__thumb,
+.webgl .scroll-view:hover .scroll-bar__thumb,
+.builder .scroll-bar:active .scroll-bar__thumb,
+.builder .scroll-view:hover .scroll-bar__thumb,
+.desktop .scroll-bar:active .scroll-bar__thumb,
+.desktop .scroll-view:hover .scroll-bar__thumb {
+    background-color: var(--color-fishbase-salmon);
+}
+
+.webgl .scroll-bar .scroll-bar__thumb:hover,
+.webgl .scroll-bar:active .scroll-bar__thumb,
+.desktop .scroll-bar .scroll-bar__thumb:hover,
+.desktop .scroll-bar:active .scroll-bar__thumb,
+.builder .scroll-bar .scroll-bar__thumb:hover,
+.builder .scroll-bar:active .scroll-bar__thumb
+{
+    background-color: var(--color-fishbase-whitefish);
+}
+
+/*
+
+    Faded edges
+
+*/
+
+.scroll-view.scroll-view--vertical UIScrollBar {
+    margin-top: 2px;
+    margin-bottom: 2px;
+}
+
+.scroll-view.scroll-view--vertical.scroll-view--fade-edges UIScrollBar {
+    margin-top: 18px;
+    margin-bottom: 18px;
+}
+
+.scroll-view.scroll-view--vertical.scroll-view--fade-edges #unity-content-viewport {
+    padding-top: 16px;
+    padding-bottom: 16px;
+}
+
+.scroll-view.scroll-view--horizontal UIScrollBar {
+    margin-left: 2px;
+    margin-right: 2px;
+}
+
+.scroll-view.scroll-view--horizontal.scroll-view--fade-edges UIScrollBar {
+    margin-left: 18px;
+    margin-right: 18px;
+}
+
+.scroll-view.scroll-view--horizontal.scroll-view--fade-edges #unity-content-viewport {
+    padding-left: 16px;
+    padding-right: 16px;
+}
+
+.scroll-view__gradients {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+}
+
+.scroll-view--vertical .scroll-view__gradients-top {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 16px;
+    background-image: var(--image-vgradient);
+    -unity-background-image-tint-color: var(--color-fishbase-eel);
+}
+
+.scroll-view--vertical .scroll-view__gradients-bottom {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 16px;
+    background-image: var(--image-vgradient-180);
+    -unity-background-image-tint-color: var(--color-fishbase-eel);
+}
+
+.scroll-view--horizontal .scroll-view__gradients-top {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    width: 16px;
+    background-image: var(--image-hgradient);
+    -unity-background-image-tint-color: var(--color-fishbase-eel);
+}
+
+.scroll-view--horizontal .scroll-view__gradients-bottom {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    width: 16px;
+    background-image: var(--image-hgradient-180);
+    -unity-background-image-tint-color: var(--color-fishbase-eel);
+}
+
+/*
+
+    Mobile ScrollBar
+
+*/
+
+.portrait .scroll-view--vertical .scroll-bar__thumb {
+    border-radius: 2px;
+}
+
+.portrait .scroll-view--vertical .scroll-bar {
+    width: 4px;
+}
+
+.portrait .scroll-view:active .scroll-bar__thumb {
+    background-color: var(--color-fishbase-salmon);
+}
+
+/*
+
+    RTL
+
+*/
+
+.rtl .scroll-view--horizontal UILabel,
+.rtl .scroll-view--horizontal UIImage,
+.rtl .scroll-view--horizontal Label,
+.rtl .scroll-view--horizontal Image {
+    scale: -1 1 1;
+}

@@ -1,0 +1,17 @@
+.expandable-text {
+    flex-direction: column;
+}
+
+.expandable-text__label {
+    color: var(--color-fishbase-bonito);
+    font-size: 15px;
+    -unity-font-definition: var(--font-regular);
+    overflow: hidden;
+    white-space: normal;
+    letter-spacing: -0.25px;
+}
+
+.expandable-text__see-more {
+    color: var(--color-accents-secondary);
+    font-size: 15px;
+}

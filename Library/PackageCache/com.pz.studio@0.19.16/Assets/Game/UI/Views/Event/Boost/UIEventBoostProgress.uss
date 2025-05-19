@@ -1,0 +1,28 @@
+.event-boost-progress {
+}
+
+.event-boost-progress__container {
+    flex-direction: column;
+}
+
+.event-boost-progress__counter {
+    flex-direction: row;
+    align-items: center;
+}
+
+.event-boost-progress__icon {
+    --unity-image: var(--image-icon-event-boost);
+    width: 16px;
+    height: 16px;
+}
+
+.event-boost-progress__label {
+    font-size: 17px;
+    color: var(--color-fishbase-anchovy);
+    margin-left: 4px;
+}
+
+.event-boost-progress UIProgressBar {
+    margin-top: 12px;
+    display: none;
+}

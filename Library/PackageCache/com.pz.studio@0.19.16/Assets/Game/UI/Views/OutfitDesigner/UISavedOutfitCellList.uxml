@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<UXML
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns="UnityEngine.UIElements"
+    xmlns:hr="Highrise.UI"
+    xmlns:editor="UnityEditor.UIElements"
+    xsi:noNamespaceSchemaLocation="../../../../../UIElementsSchema/UIElements.xsd"
+>
+
+  <hr:UISavedOutfitCellList name="saved-outfit-cell-list" class="saved-outfit-cell-list flex-grow">
+    <VisualElement name="_saveOutfitDisplay">
+        <Image class="icon-outfit-savedoutfits-artwork"/> 
+        <hr:UILabel class="saved-outfit-cell-list__save-label" key="save_current_look_description"/>  
+        <hr:UIButton name="_saveOutfitButton" class="button-primary saved-outfit-cell-list__save-button">
+            <hr:UILabel key="save_my_current_look"/>  
+        </hr:UIButton>
+    </VisualElement>
+    <hr:UICollection>
+        <hr:UICollectionSection name="_headerSection" class="rtl-reverse">
+            <hr:UILabel class="saved-outfit-cell-list__header-label" key="saved_looks"/>
+            <hr:UILabel name="_outfitSlotsLabel"/>
+            <hr:UIImage name="_addSlots"/>
+        </hr:UICollectionSection>
+        <hr:UICollectionSection name="_outfitsSection">
+            <hr:UICollectionCells name="_outfitGrid" layout="grid" layout-spacing="2"/>
+        </hr:UICollectionSection>
+    </hr:UICollection>
+  </hr:UISavedOutfitCellList>
+
+</UXML>

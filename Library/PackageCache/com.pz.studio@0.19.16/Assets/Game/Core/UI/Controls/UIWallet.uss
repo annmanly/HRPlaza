@@ -1,0 +1,64 @@
+.wallet {
+    height: 36px;
+    background-color: var(--color-fishbase-catfish);
+    border-radius: 14px;
+    padding-left: 8px;
+    padding-right: 8px;
+    margin-top: 4px;
+    margin-bottom: 4px;
+}
+
+.rtl .wallet {
+    flex-direction: row-reverse;
+    padding-left: 6px;
+    padding-right: 8px;
+}
+
+.wallet-spacer {
+    border-color: var(--color-fishbase-salmon);
+    border-right-width: 2px;
+    width: 2px;
+    height: 20px;
+    margin: auto 6px;
+}
+
+.wallet > Image {
+    width: 24px;
+    height: 24px;
+    margin: auto 0 auto 6px;
+    --unity-image: var(--image-icon-wallet-filled);
+}
+
+.rtl .wallet > Image {
+    margin: auto 6px auto 0;
+}
+
+.wallet .currency .label {
+    font-size: 15px;
+    color: var(--color-fishbase-bonito);
+}
+
+.popup .wallet {
+    position: absolute;
+    top: var(--safe-area-top);
+    right: 10px;
+    flex-shrink: 0;
+}
+
+.popup .navigation-controller__header .wallet {
+    position: initial;
+    top: initial;
+    right: initial;
+    flex-shrink: initial;
+}
+
+.rtl .popup .wallet {
+    left: 10px;
+    right: auto;
+}
+
+.wallet .unread-indicator-bordered {
+    position: absolute;
+    right: -3px;
+    top: -3px;
+}

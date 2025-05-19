@@ -1,0 +1,1290 @@
+fileFormatVersion: 2
+guid: 47c877930c14f7bf4fb7deab2cddcaa7
+importerOverride:
+  nativeImporterType: 2089858483
+  scriptedImporterType:
+    serializedVersion: 2
+    Hash: b6844c399658f1e71c858c072e100fb2
+ScriptedImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 2
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+  script: {fileID: 1271891579, guid: a215bd465061e3c4abe0b86c7c8c3d14, type: 3 }
+  _skinName: placeholders
+  _defaultOutfit:
+  - body-flesh
+  _spineOutfit: []
+  _fallbacks:
+  - eye-n_eyeSpinePlaceholder
+  - mouth-n_mouthSpinePlaceholder
+  _clothingScale: 6
+  _pixelsPerUnit: 60
+  _position: {x: 0.02, y: 0.16, z: -0.2}
+  _shadowSize: 1.25
+  _shadowOffset: {x: 0, y: 0, z: 0}
+  _palettes:
+  - Type: 2
+    Usage: 1
+    Asset: {fileID: 11400000, guid: d71cdd9dd53c85f4497f6a8243371e5d, type: 2}
+    Rarity: {fileID: 11400000, guid: 5416f26f14b5c8049b13d6302adb29f8, type: 2}
+  - Type: 12
+    Usage: 0
+    Asset: {fileID: 11400000, guid: 01992f4fe140e664a98a5985fa13c74c, type: 2}
+    Rarity: {instanceID: 0}
+  - Type: 11
+    Usage: 0
+    Asset: {fileID: 11400000, guid: 01992f4fe140e664a98a5985fa13c74c, type: 2}
+    Rarity: {instanceID: 0}
+  - Type: 7
+    Usage: 0
+    Asset: {fileID: 11400000, guid: 7a51891621c09fe48a81d976f4d4eb6d, type: 2}
+    Rarity: {instanceID: 0}
+  - Type: 16
+    Usage: 0
+    Asset: {fileID: 11400000, guid: aef7c40976a1e7f4ead22b7ff5fa4706, type: 2}
+    Rarity: {instanceID: 0}
+  - Type: 5
+    Usage: 0
+    Asset: {fileID: 11400000, guid: 06a6e38c75a814d41b1a213719c3fc30, type: 2}
+    Rarity: {instanceID: 0}
+  - Type: 6
+    Usage: 0
+    Asset: {fileID: 11400000, guid: 6b0e817bb5f250f4f961856ba137648e, type: 2}
+    Rarity: {instanceID: 0}
+  - Type: 16
+    Usage: 2
+    Asset: {fileID: 11400000, guid: be3a50fafb62ba547a7603a145368b6d, type: 2}
+    Rarity: {instanceID: 0}
+  _optimizationTolerancePosition: 1
+  _optimizationToleranceRotation: 1
+  _optimizationToleranceScale: 1
+  _type: 0
+  _parentSkeletonId: 
+  _slotOptions:
+  - Name: HairFront
+    AttachmentType: 0
+    MeshBounds:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 0
+      height: 0
+    Position: {x: -7, y: 126.5}
+  - Name: HairBack
+    AttachmentType: 0
+    MeshBounds:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 0
+      height: 0
+    Position: {x: -6.5, y: 121.5}
+  - Name: Mouth
+    AttachmentType: 1
+    MeshBounds:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 0
+      height: 0
+    Position: {x: 0, y: 0}
+  - Name: Skirt
+    AttachmentType: 0
+    MeshBounds:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 0
+      height: 0
+    Position: {x: -5, y: 49}
+  - Name: Head
+    AttachmentType: 0
+    MeshBounds:
+      serializedVersion: 2
+      x: -36
+      y: 85
+      width: 59
+      height: 70
+    Position: {x: -6.5, y: 120}
+  - Name: BagMaxLower
+    AttachmentType: 1
+    MeshBounds:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 0
+      height: 0
+    Position: {x: -4.5, y: 65.5}
+  - Name: HatLower
+    AttachmentType: 1
+    MeshBounds:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 0
+      height: 0
+    Position: {x: -5.5, y: 128.5}
+  - Name: BagLower
+    AttachmentType: 1
+    MeshBounds:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 0
+      height: 0
+    Position: {x: 9, y: 49}
+  - Name: NecklaceLower
+    AttachmentType: 1
+    MeshBounds:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 0
+      height: 0
+    Position: {x: -4.5, y: 70}
+  - Name: RightItemLower
+    AttachmentType: 1
+    MeshBounds:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 0
+      height: 0
+    Position: {x: 27, y: 32.5}
+  - Name: RightHand
+    AttachmentType: 1
+    MeshBounds:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 0
+      height: 0
+    Position: {x: 14, y: 49.5}
+  - Name: RightLowerArm
+    AttachmentType: 1
+    MeshBounds:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 0
+      height: 0
+    Position: {x: 10, y: 61}
+  - Name: TatRightLowerArm
+    AttachmentType: 1
+    MeshBounds:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 0
+      height: 0
+    Position: {x: 12, y: 61}
+  - Name: RightUpperArm
+    AttachmentType: 1
+    MeshBounds:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 0
+      height: 0
+    Position: {x: 5.5, y: 74.5}
+  - Name: TatRightUpperArm
+    AttachmentType: 1
+    MeshBounds:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 0
+      height: 0
+    Position: {x: 6.5, y: 74.5}
+  - Name: RightLowerSleeve
+    AttachmentType: 1
+    MeshBounds:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 0
+      height: 0
+    Position: {x: 10, y: 61}
+  - Name: RightUpperSleeve
+    AttachmentType: 1
+    MeshBounds:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 0
+      height: 0
+    Position: {x: 5.5, y: 74.5}
+  - Name: RightGlove
+    AttachmentType: 1
+    MeshBounds:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 0
+      height: 0
+    Position: {x: 13.5, y: 48.5}
+  - Name: RightItemUpper
+    AttachmentType: 1
+    MeshBounds:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 0
+      height: 0
+    Position: {x: 19.5, y: 41.5}
+  - Name: BagMid
+    AttachmentType: 1
+    MeshBounds:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 0
+      height: 0
+    Position: {x: 5.5, y: 67}
+  - Name: ShirtBodyLower
+    AttachmentType: 1
+    MeshBounds:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 0
+      height: 0
+    Position: {x: -3, y: 60}
+  - Name: SkirtLower
+    AttachmentType: 1
+    MeshBounds:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 0
+      height: 0
+    Position: {x: -5.5, y: 61}
+  - Name: RightShoeBottom
+    AttachmentType: 1
+    MeshBounds:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 0
+      height: 0
+    Position: {x: 2.5, y: 2}
+  - Name: RightFoot
+    AttachmentType: 1
+    MeshBounds:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 0
+      height: 0
+    Position: {x: 3.5, y: 6}
+  - Name: RightLowerLeg
+    AttachmentType: 1
+    MeshBounds:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 0
+      height: 0
+    Position: {x: -0.5, y: 18.5}
+  - Name: TatRightLowerLeg
+    AttachmentType: 1
+    MeshBounds:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 0
+      height: 0
+    Position: {x: -1, y: 18}
+  - Name: SkirtRightLower
+    AttachmentType: 1
+    MeshBounds:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 0
+      height: 0
+    Position: {x: -1, y: 18.5}
+  - Name: SockRightFoot
+    AttachmentType: 1
+    MeshBounds:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 0
+      height: 0
+    Position: {x: 4, y: 5.5}
+  - Name: SockRightLower
+    AttachmentType: 1
+    MeshBounds:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 0
+      height: 0
+    Position: {x: -1, y: 18}
+  - Name: RightShoeTop
+    AttachmentType: 1
+    MeshBounds:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 0
+      height: 0
+    Position: {x: 2, y: 4}
+  - Name: RightPantsBottom
+    AttachmentType: 1
+    MeshBounds:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 0
+      height: 0
+    Position: {x: -1, y: 19}
+  - Name: RightUpperLeg
+    AttachmentType: 1
+    MeshBounds:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 0
+      height: 0
+    Position: {x: 1, y: 38}
+  - Name: TatRightUpperLeg
+    AttachmentType: 1
+    MeshBounds:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 0
+      height: 0
+    Position: {x: 1.5, y: 38.5}
+  - Name: SkirtRightUpper
+    AttachmentType: 1
+    MeshBounds:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 0
+      height: 0
+    Position: {x: 0.5, y: 38.5}
+  - Name: SockRightUpper
+    AttachmentType: 1
+    MeshBounds:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 0
+      height: 0
+    Position: {x: 1.5, y: 38.5}
+  - Name: RightPants
+    AttachmentType: 1
+    MeshBounds:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 0
+      height: 0
+    Position: {x: 0.5, y: 37}
+  - Name: RightShoeShin
+    AttachmentType: 1
+    MeshBounds:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 0
+      height: 0
+    Position: {x: -0.5, y: 13.5}
+  - Name: RightShoeThigh
+    AttachmentType: 1
+    MeshBounds:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 0
+      height: 0
+    Position: {x: 1.5, y: 38.5}
+  - Name: CoreBody
+    AttachmentType: 1
+    MeshBounds:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 0
+      height: 0
+    Position: {x: -6, y: 68}
+  - Name: TattooBody
+    AttachmentType: 1
+    MeshBounds:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 0
+      height: 0
+    Position: {x: -5, y: 68}
+  - Name: CenterPants
+    AttachmentType: 1
+    MeshBounds:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 0
+      height: 0
+    Position: {x: -5.5, y: 50.5}
+  - Name: CenterSkirt
+    AttachmentType: 1
+    MeshBounds:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 0
+      height: 0
+    Position: {x: -5, y: 68}
+  - Name: LeftShoeBottom
+    AttachmentType: 1
+    MeshBounds:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 0
+      height: 0
+    Position: {x: -9, y: -3}
+  - Name: LeftLowerLeg
+    AttachmentType: 1
+    MeshBounds:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 0
+      height: 0
+    Position: {x: -12, y: 14}
+  - Name: LeftFoot
+    AttachmentType: 1
+    MeshBounds:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 0
+      height: 0
+    Position: {x: -8.5, y: 1}
+  - Name: TatLeftLowerLeg
+    AttachmentType: 1
+    MeshBounds:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 0
+      height: 0
+    Position: {x: -12, y: 14.5}
+  - Name: SkirtLeftLower
+    AttachmentType: 1
+    MeshBounds:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 0
+      height: 0
+    Position: {x: -12, y: 15}
+  - Name: SockLeftFoot
+    AttachmentType: 1
+    MeshBounds:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 0
+      height: 0
+    Position: {x: -8, y: 1.5}
+  - Name: SockLeftLower
+    AttachmentType: 1
+    MeshBounds:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 0
+      height: 0
+    Position: {x: -12, y: 14.5}
+  - Name: LeftShoeTop
+    AttachmentType: 1
+    MeshBounds:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 0
+      height: 0
+    Position: {x: -10, y: -0.5}
+  - Name: LeftPantsBottom
+    AttachmentType: 1
+    MeshBounds:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 0
+      height: 0
+    Position: {x: -12.5, y: 15.5}
+  - Name: LeftUpperLeg
+    AttachmentType: 1
+    MeshBounds:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 0
+      height: 0
+    Position: {x: -10.5, y: 37}
+  - Name: TatLeftUpperLeg
+    AttachmentType: 1
+    MeshBounds:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 0
+      height: 0
+    Position: {x: -10.5, y: 36.5}
+  - Name: SkirtLeftUpper
+    AttachmentType: 1
+    MeshBounds:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 0
+      height: 0
+    Position: {x: -11, y: 37}
+  - Name: SockLeftUpper
+    AttachmentType: 1
+    MeshBounds:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 0
+      height: 0
+    Position: {x: -10.5, y: 36.5}
+  - Name: LeftPants
+    AttachmentType: 1
+    MeshBounds:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 0
+      height: 0
+    Position: {x: -11.5, y: 35.5}
+  - Name: LeftShoeShin
+    AttachmentType: 1
+    MeshBounds:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 0
+      height: 0
+    Position: {x: -12.5, y: 10.5}
+  - Name: LeftShoeThigh
+    AttachmentType: 1
+    MeshBounds:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 0
+      height: 0
+    Position: {x: -10.5, y: 36.5}
+  - Name: ShirtBody
+    AttachmentType: 1
+    MeshBounds:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 0
+      height: 0
+    Position: {x: -5.5, y: 64.5}
+  - Name: HairRightShoulder
+    AttachmentType: 1
+    MeshBounds:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 0
+      height: 0
+    Position: {x: -5, y: 103}
+  - Name: NecklaceMid
+    AttachmentType: 1
+    MeshBounds:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 0
+      height: 0
+    Position: {x: -6, y: 65.5}
+  - Name: BagUpper
+    AttachmentType: 1
+    MeshBounds:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 0
+      height: 0
+    Position: {x: -29, y: 31}
+  - Name: HatMidLower
+    AttachmentType: 1
+    MeshBounds:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 0
+      height: 0
+    Position: {x: -0.5, y: 96.5}
+  - Name: Earring
+    AttachmentType: 1
+    MeshBounds:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 0
+      height: 0
+    Position: {x: -24, y: 92}
+  - Name: Freckle
+    AttachmentType: 1
+    MeshBounds:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 0
+      height: 0
+    Position: {x: 1, y: 102}
+  - Name: Blush
+    AttachmentType: 1
+    MeshBounds:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 0
+      height: 0
+    Position: {x: 1, y: 102.5}
+  - Name: LowerFacialHair
+    AttachmentType: 1
+    MeshBounds:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 0
+      height: 0
+    Position: {x: -3.5, y: 96.5}
+  - Name: AwkwardMouth
+    AttachmentType: 1
+    MeshBounds:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 0
+      height: 0
+    Position: {x: 1.5, y: 94}
+  - Name: FullMouth
+    AttachmentType: 1
+    MeshBounds:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 0
+      height: 0
+    Position: {x: 3, y: 93.5}
+  - Name: HappyMouth
+    AttachmentType: 1
+    MeshBounds:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 0
+      height: 0
+    Position: {x: 2, y: 94}
+  - Name: PlainMouth
+    AttachmentType: 1
+    MeshBounds:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 0
+      height: 0
+    Position: {x: 2, y: 94.5}
+  - Name: SadMouth
+    AttachmentType: 1
+    MeshBounds:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 0
+      height: 0
+    Position: {x: 2.5, y: 94.5}
+  - Name: ScaredMouth
+    AttachmentType: 1
+    MeshBounds:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 0
+      height: 0
+    Position: {x: 1.5, y: 93}
+  - Name: SurprisedMouth
+    AttachmentType: 1
+    MeshBounds:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 0
+      height: 0
+    Position: {x: 2, y: 93}
+  - Name: UpperFacialHair
+    AttachmentType: 1
+    MeshBounds:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 0
+      height: 0
+    Position: {x: 1.5, y: 101}
+  - Name: RightEye
+    AttachmentType: 1
+    MeshBounds:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 0
+      height: 0
+    Position: {x: 12.5, y: 112}
+  - Name: RightEyeClosed
+    AttachmentType: 1
+    MeshBounds:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 0
+      height: 0
+    Position: {x: 13.5, y: 113}
+  - Name: RightPupil
+    AttachmentType: 1
+    MeshBounds:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 0
+      height: 0
+    Position: {x: 12.5, y: 112.5}
+  - Name: RightLash
+    AttachmentType: 1
+    MeshBounds:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 0
+      height: 0
+    Position: {x: 13, y: 113}
+  - Name: RightEyebrow
+    AttachmentType: 1
+    MeshBounds:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 0
+      height: 0
+    Position: {x: 13, y: 119.5}
+  - Name: Nose
+    AttachmentType: 1
+    MeshBounds:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 0
+      height: 0
+    Position: {x: 4, y: 104.5}
+  - Name: NoseMole
+    AttachmentType: 1
+    MeshBounds:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 0
+      height: 0
+    Position: {x: 3.5, y: 110}
+  - Name: LeftEye
+    AttachmentType: 1
+    MeshBounds:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 0
+      height: 0
+    Position: {x: -8.5, y: 111.5}
+  - Name: LeftEyeClosed
+    AttachmentType: 1
+    MeshBounds:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 0
+      height: 0
+    Position: {x: -8.5, y: 112.5}
+  - Name: LeftPupil
+    AttachmentType: 1
+    MeshBounds:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 0
+      height: 0
+    Position: {x: -7, y: 112.5}
+  - Name: LeftLash
+    AttachmentType: 1
+    MeshBounds:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 0
+      height: 0
+    Position: {x: -9, y: 113}
+  - Name: LeftEyebrow
+    AttachmentType: 1
+    MeshBounds:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 0
+      height: 0
+    Position: {x: -8, y: 119.5}
+  - Name: HatMid
+    AttachmentType: 1
+    MeshBounds:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 0
+      height: 0
+    Position: {x: -0.5, y: 96.5}
+  - Name: Glasses
+    AttachmentType: 1
+    MeshBounds:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 0
+      height: 0
+    Position: {x: -4, y: 111.5}
+  - Name: HatUpper
+    AttachmentType: 1
+    MeshBounds:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 0
+      height: 0
+    Position: {x: -5.5, y: 142}
+  - Name: LeftItemLower
+    AttachmentType: 1
+    MeshBounds:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 0
+      height: 0
+    Position: {x: -25.5, y: 35.5}
+  - Name: LeftItem
+    AttachmentType: 1
+    MeshBounds:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 0
+      height: 0
+    Position: {x: -24, y: 37.5}
+  - Name: LowerLeftGlove
+    AttachmentType: 1
+    MeshBounds:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 0
+      height: 0
+    Position: {x: -1.5, y: 26.5}
+  - Name: LeftHand
+    AttachmentType: 1
+    MeshBounds:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 0
+      height: 0
+    Position: {x: -24.5, y: 42.5}
+  - Name: LeftLowerArm
+    AttachmentType: 1
+    MeshBounds:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 0
+      height: 0
+    Position: {x: -22, y: 55}
+  - Name: TatLeftLowerArm
+    AttachmentType: 1
+    MeshBounds:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 0
+      height: 0
+    Position: {x: -22, y: 54.5}
+  - Name: LeftUpperArm
+    AttachmentType: 1
+    MeshBounds:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 0
+      height: 0
+    Position: {x: -17.5, y: 71}
+  - Name: TatLeftUpperArm
+    AttachmentType: 1
+    MeshBounds:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 0
+      height: 0
+    Position: {x: -18, y: 71.5}
+  - Name: LeftLowerSleeve
+    AttachmentType: 1
+    MeshBounds:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 0
+      height: 0
+    Position: {x: -22, y: 56.5}
+  - Name: LeftUpperSleeve
+    AttachmentType: 1
+    MeshBounds:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 0
+      height: 0
+    Position: {x: -18, y: 72.5}
+  - Name: LeftGlove
+    AttachmentType: 1
+    MeshBounds:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 0
+      height: 0
+    Position: {x: -24, y: 41}
+  - Name: Watch
+    AttachmentType: 1
+    MeshBounds:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 0
+      height: 0
+    Position: {x: -24, y: 47.5}
+  - Name: LeftItemUpper
+    AttachmentType: 1
+    MeshBounds:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 0
+      height: 0
+    Position: {x: -32.5, y: 15.5}
+  - Name: HairLeftShoulder
+    AttachmentType: 1
+    MeshBounds:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 0
+      height: 0
+    Position: {x: -6, y: 105}
+  - Name: Necklace
+    AttachmentType: 1
+    MeshBounds:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 0
+      height: 0
+    Position: {x: -3.5, y: 80}
+  - Name: BagMaxUpper
+    AttachmentType: 1
+    MeshBounds:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 0
+      height: 0
+    Position: {x: -8.5, y: 71}
+  - Name: HairBackMedium
+    AttachmentType: 1
+    MeshBounds:
+      serializedVersion: 2
+      x: -70
+      y: 45
+      width: 122
+      height: 132
+    Position: {x: 0, y: 0}
+  - Name: HairBackTinyBraid
+    AttachmentType: 1
+    MeshBounds:
+      serializedVersion: 2
+      x: -60
+      y: 52
+      width: 101
+      height: 111
+    Position: {x: 0, y: 0}
+  - Name: HairBackXLong
+    AttachmentType: 1
+    MeshBounds:
+      serializedVersion: 2
+      x: -68
+      y: -7
+      width: 117
+      height: 180
+    Position: {x: 0, y: 0}
+  - Name: HairBackPony
+    AttachmentType: 1
+    MeshBounds:
+      serializedVersion: 2
+      x: -85
+      y: 13
+      width: 125
+      height: 169
+    Position: {x: 0, y: 0}
+  - Name: HairBackPigtails
+    AttachmentType: 1
+    MeshBounds:
+      serializedVersion: 2
+      x: -80
+      y: 12
+      width: 144
+      height: 163
+    Position: {x: 0, y: 0}
+  - Name: HairBackLong
+    AttachmentType: 1
+    MeshBounds:
+      serializedVersion: 2
+      x: -69
+      y: 25
+      width: 121
+      height: 166
+    Position: {x: 0, y: 0}
+  - Name: HairBackChinL
+    AttachmentType: 1
+    MeshBounds:
+      serializedVersion: 2
+      x: -59
+      y: 69
+      width: 102
+      height: 98
+    Position: {x: 0, y: 0}
+  - Name: HairFrontMedium
+    AttachmentType: 1
+    MeshBounds:
+      serializedVersion: 2
+      x: -62
+      y: 53
+      width: 107
+      height: 132
+    Position: {x: 0, y: 0}
+  - Name: HairFrontXLong
+    AttachmentType: 1
+    MeshBounds:
+      serializedVersion: 2
+      x: -50
+      y: 81
+      width: 79
+      height: 82
+    Position: {x: 0, y: 0}
+  - Name: HairFrontPony
+    AttachmentType: 1
+    MeshBounds:
+      serializedVersion: 2
+      x: -58
+      y: 66
+      width: 86
+      height: 106
+    Position: {x: 0, y: 0}
+  - Name: HairFrontLong
+    AttachmentType: 1
+    MeshBounds:
+      serializedVersion: 2
+      x: -52
+      y: 22
+      width: 96
+      height: 155
+    Position: {x: 0, y: 0}
+  - Name: HairFrontChinL
+    AttachmentType: 1
+    MeshBounds:
+      serializedVersion: 2
+      x: -61
+      y: 66
+      width: 106
+      height: 109
+    Position: {x: 0, y: 0}
+  _animations:
+  - Name: dress-up
+    Type: 0
+    Embedded: 1
+    Loop: 1
+  - Name: dress-up-1
+    Type: 0
+    Embedded: 1
+    Loop: 1
+  - Name: dress-up-2
+    Type: 0
+    Embedded: 1
+    Loop: 1
+  - Name: emoji-thumbsdown
+    Type: 0
+    Embedded: 1
+    Loop: 1
+  - Name: emote-bobble
+    Type: 0
+    Embedded: 1
+    Loop: 1
+  - Name: emote-teleport-in
+    Type: 0
+    Embedded: 1
+    Loop: 1
+  - Name: emote-teleport-in-2
+    Type: 0
+    Embedded: 1
+    Loop: 1
+  - Name: emote-teleport-out
+    Type: 0
+    Embedded: 1
+    Loop: 1
+  - Name: idle
+    Type: 2
+    Embedded: 1
+    Loop: 1
+  - Name: idle-1
+    Type: 3
+    Embedded: 1
+    Loop: 0
+  - Name: idle-2
+    Type: 3
+    Embedded: 1
+    Loop: 0
+  - Name: idle-3
+    Type: 3
+    Embedded: 1
+    Loop: 0
+  - Name: idle-4
+    Type: 3
+    Embedded: 1
+    Loop: 0
+  - Name: idle-5
+    Type: 3
+    Embedded: 1
+    Loop: 0
+  - Name: idle-loop-dizzy
+    Type: 0
+    Embedded: 1
+    Loop: 1
+  - Name: idle-loop-headbobbing
+    Type: 0
+    Embedded: 1
+    Loop: 1
+  - Name: jump
+    Type: 0
+    Embedded: 1
+    Loop: 0
+  - Name: reaction-clap
+    Type: 0
+    Embedded: 1
+    Loop: 1
+  - Name: reaction-heart
+    Type: 0
+    Embedded: 1
+    Loop: 1
+  - Name: reaction-thumbs
+    Type: 0
+    Embedded: 1
+    Loop: 1
+  - Name: reaction-wave
+    Type: 0
+    Embedded: 1
+    Loop: 1
+  - Name: reaction-wink
+    Type: 0
+    Embedded: 1
+    Loop: 1
+  - Name: run
+    Type: 4
+    Embedded: 1
+    Loop: 1
+  - Name: sit
+    Type: 0
+    Embedded: 1
+    Loop: 0
+  - Name: sit-bobble
+    Type: 0
+    Embedded: 1
+    Loop: 1
+  - Name: sit-idle
+    Type: 0
+    Embedded: 1
+    Loop: 1
+  - Name: sit-idle-sleep
+    Type: 0
+    Embedded: 1
+    Loop: 1
+  - Name: sit-stand
+    Type: 0
+    Embedded: 1
+    Loop: 0
+  - Name: sleep
+    Type: 0
+    Embedded: 1
+    Loop: 1
+  - Name: talking
+    Type: 0
+    Embedded: 1
+    Loop: 1
+  - Name: talking-short
+    Type: 0
+    Embedded: 1
+    Loop: 1
+  - Name: use-furniture
+    Type: 0
+    Embedded: 1
+    Loop: 1
+  - Name: walk
+    Type: 5
+    Embedded: 1
+    Loop: 1
+  - Name: idle-loop-sitfloor
+    Type: 1
+    Embedded: 1
+    Loop: 1
+  - Name: emoji-angry
+    Type: 1
+    Embedded: 1
+    Loop: 1
+  - Name: emoji-thumbsup
+    Type: 1
+    Embedded: 1
+    Loop: 1
+  - Name: emote-hello
+    Type: 1
+    Embedded: 1
+    Loop: 1
+  - Name: emote-tired
+    Type: 1
+    Embedded: 1
+    Loop: 1
+  - Name: dance-macarena
+    Type: 1
+    Embedded: 1
+    Loop: 1
+  - Name: catwalk
+    Type: 0
+    Embedded: 0
+    Loop: 1
+  _useLegacyUvs: 1

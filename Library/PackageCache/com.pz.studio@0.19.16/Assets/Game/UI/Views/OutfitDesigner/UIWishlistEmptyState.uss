@@ -1,0 +1,23 @@
+.wishlist-empty-state {
+}
+
+.wishlist-empty-state .icon-empty-wishlist {
+    width: 64px;
+    height: 64px;
+    --unity-image-tint-color: var(--color-fishbase-catfish);
+    align-self: center;
+}
+
+.wishlist-empty-state .wishlist-empty-state-description {
+    font-size: 15px;
+    color: var(--color-fishbase-tuna);
+    margin-top: 16px;
+    align-self: center;
+}
+
+.wishlist-empty-state #_goToShopButton {
+    margin-top: 16px;
+    margin-left: 64px;
+    margin-right: 64px;
+    flex-grow: 1;
+}

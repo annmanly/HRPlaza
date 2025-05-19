@@ -1,0 +1,83 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &6615959032308951927
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 5317071944765357807}
+  - component: {fileID: 2251193699339308157}
+  - component: {fileID: 1738970651693370677}
+  m_Layer: 0
+  m_Name: World Room Context
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &5317071944765357807
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6615959032308951927}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2251193699339308157
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6615959032308951927}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -2118008695, guid: 5e99434f214126023bd8db55a8296c39, type: 3 }
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _layouts:
+  - {fileID: 11400000, guid: 9d62cf094b0efec4695c3396b2755e70, type: 2}
+  - {fileID: 11400000, guid: 0ab955eaa3b7b094795237a25b63a2b2, type: 2}
+  - {fileID: 11400000, guid: fe94e825bc2f77347ba4497ad9f33deb, type: 2}
+  - {fileID: 11400000, guid: 9034bc426ee930c45b5204bcd8cd7631, type: 2}
+  - {fileID: 11400000, guid: 79346f52c538e5349a90a47ba52fb113, type: 2}
+  - {fileID: 11400000, guid: 765ee62a80754f04ab7f2b463d52cb02, type: 2}
+  - {fileID: 11400000, guid: c280465b030614d429d90c22854fc557, type: 2}
+  - {fileID: 11400000, guid: a6bc726262e41374ab26632c101a0a21, type: 2}
+  - {fileID: 11400000, guid: 8e7d9126131fb694dab105a131c6c332, type: 2}
+  - {fileID: 11400000, guid: f9cbafea21e894c4e962cb608c58e636, type: 2}
+  _subfloorMaterial: {fileID: 2100000, guid: 2a8f064b4d70e484b9c5df695af3e498, type: 2}
+  _subfloorPrefab: {fileID: 6980058860490649145, guid: 23984e2d2d1a800498bc03a9de90bdf6,
+    type: 3}
+  _partPrefab: {fileID: 6980058860490649145, guid: af4825a929aee714e9d0fc58c68d734c,
+    type: 3}
+  _defaultFurniture: {fileID: 7768148223813429816, guid: 642c3ab6676872848aa7dbdf02ed458a,
+    type: 3}
+--- !u!114 &1738970651693370677
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6615959032308951927}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -181761357, guid: 30a4c7dce0b6891478396efa6bd2a6d0, type: 3 }
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _walkHeight: 0.15
+  _stepHeight: 0.5
+  _jumpHeight: 1.01
+  _turningCost: 1
+  _stepCost: 1.1
+  _jumpCost: 2

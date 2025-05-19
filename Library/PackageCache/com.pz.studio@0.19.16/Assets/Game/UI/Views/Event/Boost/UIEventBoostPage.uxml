@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<UXML
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns="UnityEngine.UIElements"
+    xmlns:hr="Highrise.UI"
+    xmlns:editor="UnityEditor.UIElements"
+    xsi:noNamespaceSchemaLocation="../../../../../UIElementsSchema/UIElements.xsd"
+>
+
+  <hr:UIEventBoostPage class="event-boost-page">
+    <VisualElement class="event-boost-page__header">
+      <hr:UILabel name="_title" class="event-boost-page__title" key="judge_boost" />
+      <hr:UIEventBoostProgress name="_totalProgress" />
+    </VisualElement>
+    <VisualElement name="_content" class="event-boost-page__content" />
+  </hr:UIEventBoostPage>
+
+</UXML>

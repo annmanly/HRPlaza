@@ -1,0 +1,29 @@
+.empty-state {
+    flex-shrink: 0;
+}
+
+.empty-state #_emptyLabel {
+    margin: 10px 16px 24px;
+    color: var(--color-fishbase-tuna);
+    font-size: var(--font-size-m);
+    white-space: normal;
+    -unity-text-align: middle-center;
+    align-self: center;
+}
+
+.empty-state #_iconBackground{
+    margin-top: 16px;
+    align-self: center;
+    border-radius: 20px;
+    background-color: var(--color-fishbase-catfish);
+    width: 64px;
+    height: 64px;
+    flex-shrink: 0;
+}
+
+.empty-state #_emptyImage {
+    --unity-image-tint-color: var(--color-fishbase-eel);
+    margin: auto;
+    width: 32px;
+    height: 32px;
+}

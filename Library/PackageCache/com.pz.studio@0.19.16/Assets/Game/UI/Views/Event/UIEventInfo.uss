@@ -1,0 +1,121 @@
+.event-info {
+    background-color: var(--color-fishbase-eel);
+}
+
+.bottom-drawer-collapsing.event-info {
+    background-color: var(--color-fishbase-blackfish-60);
+}
+
+.bottom-drawer-collapsing .event-info-container {
+    background-color: var(--color-fishbase-eel);
+}
+
+.event-info__banner {
+    background-color: #00a6ff;
+    height: 172px;
+}
+
+.event-info__tabs {
+    flex-grow: 0;
+    flex-direction: row;
+    align-content: flex-start;
+}
+
+.event-info__tabs .scroll-view__content-container {
+    padding-left: 16px;
+}
+
+.event-info__tabs UIScrollBar {
+    display: none;
+}
+
+.event-info__tab {
+    margin-right: 24px;
+    height: 44px;
+    border-bottom-width: 4px;
+    border-color: var(--color-accents-blackfish);
+    flex-direction: row;
+}
+
+.event-info__tab:checked {
+    border-color: var(--color-accents-secondary);
+}
+
+.event-info__tab:checked UILabel {
+    color: var(--color-fishbase-whitefish);
+}
+
+.event-info__tab UILabel {
+    margin-top: 14px;
+    height: 18px;
+    color: var(--color-fishbase-anchovy);
+    font-size: 17px;
+    -unity-text-align: middle-center;
+    -unity-font-style: bold;
+}
+
+.event-info__pages {
+    display: none;
+    flex-grow: 1;
+    height: var(--screen-height); /* updates after determining highest tab height */
+}
+
+.event-info__pages .scroll-view__content-viewport > .scroll-view__content-container {
+    padding-left: 16px;
+    padding-right: 16px;   
+    padding-bottom: 120px;
+}
+
+.event-info__cta-button-container {
+    position: absolute;
+    width: 100%;
+    bottom: 0px;
+    padding-bottom: var(--safe-area-bottom);
+    padding-top: 32px;
+    background-image: var(--image-vgradient-180);
+    -unity-background-image-tint-color: var(--color-fishbase-blackfish-60);
+}
+
+.event-info #_goToEventRoomButton {
+    margin-left: 16px;
+    margin-right: 16px;
+    margin-bottom: 16px;
+}
+
+.event-info #_leaveIcon {
+    width: 24px;
+    height: 24px;
+    margin-right: 4px;
+    --unity-image-tint-color: var(--color-fishbase-eel);
+}
+
+.event-info #_loadingIndicatorContainer {
+    display: none;
+    width: 100%;
+    height: 100%;
+    background-color: var(--color-fishbase-blackfish-60);
+}
+
+.event-info.view-loading #_loadingIndicatorContainer {
+    display: flex;
+}
+
+.event-info #_loadingIndicator {
+    margin: auto;
+}
+
+.event-info #_closeButton {
+    width: 36px;
+    height: 36px;
+    margin: 4px 12px;
+    padding: 0;
+}
+
+.landscape .event-info #_closeButton {
+    display: none;
+}
+
+#_eventWallet {
+    left: auto;
+    margin: 8px;
+}

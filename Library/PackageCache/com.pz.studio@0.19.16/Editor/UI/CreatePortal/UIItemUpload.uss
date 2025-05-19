@@ -1,0 +1,67 @@
+.asset-upload {
+    flex-grow: 1;
+}
+
+.asset-upload #_uploadButton {
+    margin-right: 8px;
+    margin-left: auto;
+    margin-top: 8px;
+    margin-bottom: 8px;
+}
+
+.asset-upload HelpBox {
+    margin: 8px;
+    flex-shrink: 0;
+    min-height: 60px;
+}
+
+.asset-upload .bottom {
+    flex-direction: row;
+    flex-shrink: 0;
+    background-color: rgba(0,0,0,0.1);
+}
+
+.asset-upload .top {
+    margin: 8px;
+    height: 64px;
+    flex-shrink: 0;
+    flex-direction: row;
+}
+
+.asset-upload #_estimatedSize {
+    height: 100%;
+    flex-grow: 1;
+    -unity-text-align: middle-left;
+    margin-left: 8px;
+}
+
+.asset-upload .row {
+    flex-direction: row;
+    height: 20px;
+    -unity-text-align: middle-left;
+}
+
+.asset-upload .row-name {
+    width: 80px;
+    height: 100%;
+    -unity-font-style: bold;
+}
+
+.asset-upload .row-value {
+    height: 100%;
+}
+
+.asset-upload .row Toggle {
+    padding: 0;
+    margin: 0;
+}
+
+.asset-upload #_assetPreview {
+    width: 64px;
+    height: 64px;
+    flex-shrink: 0;
+    margin-right: 8px;
+    background-color: rgba(0,0,0,0.1);
+    border-radius: 8px;
+    padding: 4px;
+}

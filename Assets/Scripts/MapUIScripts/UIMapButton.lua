@@ -12,15 +12,6 @@ local _MapIcon : UIImage = nil -- UIImage for displaying the map icon, initializ
 --!Bind
 local _openButton : VisualElement = nil 
 
---!Bind
-local _raffleButton:VisualElement = nil
-
-local raffleUIManager = require("RaffleUIManager")
-
-_raffleButton:RegisterPressCallback(function() 
-    raffleUIManager.openMainUI()
-end)
-
 -- Function to update the map icon image
 function PopulateIcon(icon: Texture)
   _MapIcon.image = icon -- Set the image of the map icon to the provided texture

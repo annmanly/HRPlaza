@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<UXML
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns="UnityEngine.UIElements"
+    xmlns:editor="UnityEditor.UIElements"
+    xmlns:hr="Highrise.UI"
+    xsi:noNamespaceSchemaLocation="../../../../../UIElementsSchema/UIElements.xsd"
+>
+
+  <VisualElement class="clothing-window">
+    <VisualElement name="_toolbar">
+        <VisualElement name="_toolbarLeft">
+            <editor:ToolbarButton name="_createNewButton" text="New..."/>
+            <editor:ToolbarMenu name="_importMenu" text="Import"/>
+        </VisualElement>
+        <VisualElement name="_toolbarRight">
+        </VisualElement>
+    </VisualElement>
+    <VisualElement name="_assetListContainer">
+        <VisualElement name="_empty">
+            <Label text="No clothing found, drag an svg into this window or create a new clothing item." class="empty-label"/>
+        </VisualElement>
+    </VisualElement>
+  </VisualElement>
+</UXML>

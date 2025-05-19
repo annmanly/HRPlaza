@@ -15,7 +15,6 @@ using UnityEngine;
 using Highrise.Client;
 using Highrise.Studio;
 using Highrise.Lua;
-using UnityEditor;
 
 namespace Highrise.Lua.Generated
 {
@@ -26,12 +25,12 @@ namespace Highrise.Lua.Generated
         private const string s_scriptGUID = "328bb4de975c92841803f81c6aad8254";
         public override string ScriptGUID => s_scriptGUID;
 
+        [SerializeField] public UnityEngine.GameObject m_fountainInteractUI = default;
         [SerializeField] public UnityEngine.GameObject m_writeWishWindowObj = default;
         [SerializeField] public UnityEngine.GameObject m_wishCollectionObj = default;
         [SerializeField] public UnityEngine.GameObject m_coinObj = default;
         [SerializeField] public UnityEngine.GameObject m_coinTarget = default;
         [SerializeField] public UnityEngine.GameObject m_wishParticles = default;
-        [SerializeField] public UnityEngine.GameObject m_wishGoldWonParticles = default;
 
         protected override SerializedPropertyValue[] SerializeProperties()
         {
@@ -40,22 +39,14 @@ namespace Highrise.Lua.Generated
 
             return new SerializedPropertyValue[]
             {
-                CreateSerializedProperty(_script.GetPropertyAt(0), m_writeWishWindowObj),
-                CreateSerializedProperty(_script.GetPropertyAt(1), m_wishCollectionObj),
-                CreateSerializedProperty(_script.GetPropertyAt(2), m_coinObj),
-                CreateSerializedProperty(_script.GetPropertyAt(3), m_coinTarget),
-                CreateSerializedProperty(_script.GetPropertyAt(4), m_wishParticles),
-                CreateSerializedProperty(_script.GetPropertyAt(5), m_wishGoldWonParticles),
+                CreateSerializedProperty(_script.GetPropertyAt(0), m_fountainInteractUI),
+                CreateSerializedProperty(_script.GetPropertyAt(1), m_writeWishWindowObj),
+                CreateSerializedProperty(_script.GetPropertyAt(2), m_wishCollectionObj),
+                CreateSerializedProperty(_script.GetPropertyAt(3), m_coinObj),
+                CreateSerializedProperty(_script.GetPropertyAt(4), m_coinTarget),
+                CreateSerializedProperty(_script.GetPropertyAt(5), m_wishParticles),
             };
         }
-        
-#if HR_STUDIO
-        [MenuItem("CONTEXT/Fountain/Edit Script")]
-        private static void EditScript()
-        {
-            VisualStudioCodeOpener.OpenPath(AssetDatabase.GUIDToAssetPath(s_scriptGUID));
-        }
-#endif
     }
 }
 

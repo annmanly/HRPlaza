@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<UXML
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xmlns="UnityEngine.UIElements"
+        xmlns:hr="Highrise.UI"
+        xmlns:editor="UnityEditor.UIElements"
+        xsi:noNamespaceSchemaLocation="../../../../../UIElementsSchema/UIElements.xsd"
+>
+
+    <hr:UIEventCrewChestCycle class="event-crew-chest-cycle">
+        <VisualElement class="event-crew-chest-cycle__title-container">
+            <hr:UILabel key="crew_goals" name="_title"/>
+            <hr:UIImage class="icon-small-time" name="_timeIcon"/>
+            <hr:UILabel name="_timeLeft"/>
+        </VisualElement>
+        <hr:UILabel name="_description" key="crew_reach_goals"/>
+
+        <VisualElement class="event-crew-chest-cycle__progress-container">
+            <VisualElement name="_rewardsContainer"/>
+            <hr:UILabel name="_progressStatus"/>
+
+            <hr:UIProgressBar name="_progressBar" />
+            
+            <hr:UIButton class="button-primary" name="_joinCrewButton">
+                <hr:UILabel key="join_crew"/>
+            </hr:UIButton>
+        </VisualElement>
+
+    </hr:UIEventCrewChestCycle>
+
+</UXML>

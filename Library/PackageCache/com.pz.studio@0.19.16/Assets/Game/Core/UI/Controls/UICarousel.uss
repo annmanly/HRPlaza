@@ -1,0 +1,47 @@
+.carousel {
+    flex-grow:1;
+}
+
+.carousel-pages {
+    flex-grow: 1;
+}
+
+.carousel__top {
+    flex-direction:row;
+    flex-grow:1;
+}
+
+.carousel .carousel-arrow {
+    padding: 0;
+    margin: 0;
+}
+
+.carousel-bottom {
+    justify-content: center;
+    align-items: center;
+    background-color: var(--color-fishbase-eel);
+}
+
+.carousel-marker-container {
+    flex-direction:row;
+    height: 8px;
+    margin-top: 6px;
+    margin-bottom: 6px;
+}
+
+.carousel__marker {
+    width: 6px;
+    height: 6px; 
+    border-radius: 3px;
+    background-color: var(--color-fishbase-whitefish-15);
+    margin-left: 3px;
+    margin-right: 3px;
+}
+
+.carousel__marker:checked {
+    background-color: var(--color-fishbase-whitefish);   
+}
+
+.carousel UIImageView {
+    flex-grow:1;
+}

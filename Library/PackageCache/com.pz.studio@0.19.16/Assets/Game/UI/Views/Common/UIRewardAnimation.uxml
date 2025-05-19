@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<UXML
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xmlns="UnityEngine.UIElements"
+        xmlns:hr="Highrise.UI"
+        xmlns:editor="UnityEditor.UIElements"
+        xsi:noNamespaceSchemaLocation="../../../../../UIElementsSchema/UIElements.xsd"
+>
+
+    <hr:UIRewardAnimation class="reward-animation">
+        <hr:UIImage name="_rewardAnimation" class="overlay"/>
+        <VisualElement class="overlay-top-safe reward-animation-parent-image-container">
+            <hr:UIImage name="_parentImage" class="reward-animation-parent-image"/>
+        </VisualElement>
+        <VisualElement class="overlay-top-safe reward-animation-top-buttons" picking-mode="Ignore">
+            <hr:UIButton class="button-floating" name="_infoButton">
+                <hr:UIImage class="icon-info"/>
+            </hr:UIButton>
+            <VisualElement class="flex-grow" picking-mode="Ignore"/>
+            <hr:UIButton name="_openAllButton" class="button-floating">
+                <hr:UILabel key="open_all"/>
+            </hr:UIButton>
+        </VisualElement>
+        <VisualElement class="overlay-bottom-safe">
+            <hr:UIButton name="_selectGiftButton" class="button-primary">
+                <hr:UILabel key="select_gift"/>
+            </hr:UIButton>
+
+            <VisualElement name="_giftExchangingContainer">
+                <hr:UILabel name="_giftExchangingLabel" key="gifted_items_cannot_be_exchanged_later"/>
+                <hr:UIButton name="_giftExchangingButton" class="button-tertiary-banana-25">
+                    <hr:UILabel key="gift_exchanging"/>
+                </hr:UIButton>
+                <hr:UIButton name="_gotItButton" class="button-primary">
+                    <hr:UILabel key="got_it"/>
+                </hr:UIButton>
+            </VisualElement>
+            <hr:UIButton name="_hatchButton" class="button-tertiary-banana-25">
+                <hr:UILabel key="hatch"/>
+            </hr:UIButton>
+            <hr:UIButton name="_openContainerButton" class="button-primary">
+                <hr:UILabel key="open_now"/>
+            </hr:UIButton>
+            <hr:UIButton name="_laterButton" class="button-transparent">
+                <hr:UIImage class="icon-my-items" name="_iconMyItems"/>
+                <hr:UILabel key="save_to_my_items"/>
+            </hr:UIButton>
+        </VisualElement>
+    </hr:UIRewardAnimation>
+
+</UXML>

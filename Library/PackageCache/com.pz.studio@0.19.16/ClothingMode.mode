@@ -1,0 +1,56 @@
+hr_clothing = {
+    label = "Studio Clothing"
+
+    capabilities = {
+        remember = true
+        reset_menus = true
+        layout_switching = true
+        layout_window_menu = true
+        status_bar_extra_features = true
+    }
+
+	layout = [
+	    "Packages/com.pz.studio/Layouts/Studio Clothing.wlt"
+	]
+
+    layouts = [
+        "Packages/com.pz.studio/Layouts/Studio Clothing.wlt"
+    ]
+
+    menus = [
+        { name = "File" children = [
+            { name = "New Scene" children = "*"}
+            { name = "Open Scene" children = "*"}
+            { name = "Open Recent Scene" children = "*"}
+            null
+            { name = "Save" children = "*"}
+            { name = "Save As..." children = "*"}
+            null
+            { name = "New Project..." children = "*"}
+            { name = "Open Project..." children = "*"}
+            { name = "Save Project" children = "*"}
+            null
+            { name = "Close" children = "*"}
+        ]}
+
+        { name = "Edit" children = "*"}
+
+        { name = "Highrise" children = "*"}
+
+        { name = "Window" children = [
+			{ name = "Highrise" children = "*"}
+            { name = "General" children = [
+                { name = "Scene" children = "*"}
+                { name = "Game" children = "*"}
+                { name = "Inspector" children = "*"}
+                { name = "Hierarchy" children = "*"}
+                { name = "Project" children = "*"}
+                { name = "Console" children = "*"}
+                { name = "Progress" children = "*"}
+            ]}
+			{ name = "Layouts" children = "*" }
+            { name = "Editor Mode" children = "*" }
+		]}
+        { name = "Help" children = "*"}
+    ]
+}

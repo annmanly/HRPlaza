@@ -15,7 +15,6 @@ using UnityEngine;
 using Highrise.Client;
 using Highrise.Studio;
 using Highrise.Lua;
-using UnityEditor;
 
 namespace Highrise.Lua.Generated
 {
@@ -28,23 +27,14 @@ namespace Highrise.Lua.Generated
 
         [SerializeField] public UnityEngine.Texture m_MapImage = default;
         [SerializeField] public UnityEngine.Transform m_MarketPostion = default;
-        [SerializeField] public UnityEngine.Transform m_MarketLookAtPosition = default;
         [SerializeField] public UnityEngine.Transform m_ShopPosition = default;
-        [SerializeField] public UnityEngine.Transform m_ShopLookAtPosition = default;
         [SerializeField] public UnityEngine.Transform m_WelcomePosition = default;
-        [SerializeField] public UnityEngine.Transform m_WelcomeLookAtPosition = default;
         [SerializeField] public UnityEngine.Transform m_TownHallPosition = default;
-        [SerializeField] public UnityEngine.Transform m_TownHallLookAtPosition = default;
         [SerializeField] public UnityEngine.Transform m_EventsPosition = default;
-        [SerializeField] public UnityEngine.Transform m_EventsLookAtPosition = default;
         [SerializeField] public UnityEngine.Transform m_ParkPosition = default;
-        [SerializeField] public UnityEngine.Transform m_ParkLookAtPosition = default;
         [SerializeField] public UnityEngine.Transform m_ArtCenterPosition = default;
-        [SerializeField] public UnityEngine.Transform m_ArtCenterLookAtPosition = default;
         [SerializeField] public UnityEngine.Transform m_BuilderCenterPosition = default;
-        [SerializeField] public UnityEngine.Transform m_BuilderCenterLookAtPosition = default;
         [SerializeField] public UnityEngine.Transform m_TrasitStationPosition = default;
-        [SerializeField] public UnityEngine.Transform m_TransitLookAtPosition = default;
 
         protected override SerializedPropertyValue[] SerializeProperties()
         {
@@ -66,33 +56,16 @@ namespace Highrise.Lua.Generated
                 CreateSerializedProperty(_script.GetPropertyAt(10), null),
                 CreateSerializedProperty(_script.GetPropertyAt(11), m_MapImage),
                 CreateSerializedProperty(_script.GetPropertyAt(12), m_MarketPostion),
-                CreateSerializedProperty(_script.GetPropertyAt(13), m_MarketLookAtPosition),
-                CreateSerializedProperty(_script.GetPropertyAt(14), m_ShopPosition),
-                CreateSerializedProperty(_script.GetPropertyAt(15), m_ShopLookAtPosition),
-                CreateSerializedProperty(_script.GetPropertyAt(16), m_WelcomePosition),
-                CreateSerializedProperty(_script.GetPropertyAt(17), m_WelcomeLookAtPosition),
-                CreateSerializedProperty(_script.GetPropertyAt(18), m_TownHallPosition),
-                CreateSerializedProperty(_script.GetPropertyAt(19), m_TownHallLookAtPosition),
-                CreateSerializedProperty(_script.GetPropertyAt(20), m_EventsPosition),
-                CreateSerializedProperty(_script.GetPropertyAt(21), m_EventsLookAtPosition),
-                CreateSerializedProperty(_script.GetPropertyAt(22), m_ParkPosition),
-                CreateSerializedProperty(_script.GetPropertyAt(23), m_ParkLookAtPosition),
-                CreateSerializedProperty(_script.GetPropertyAt(24), m_ArtCenterPosition),
-                CreateSerializedProperty(_script.GetPropertyAt(25), m_ArtCenterLookAtPosition),
-                CreateSerializedProperty(_script.GetPropertyAt(26), m_BuilderCenterPosition),
-                CreateSerializedProperty(_script.GetPropertyAt(27), m_BuilderCenterLookAtPosition),
-                CreateSerializedProperty(_script.GetPropertyAt(28), m_TrasitStationPosition),
-                CreateSerializedProperty(_script.GetPropertyAt(29), m_TransitLookAtPosition),
+                CreateSerializedProperty(_script.GetPropertyAt(13), m_ShopPosition),
+                CreateSerializedProperty(_script.GetPropertyAt(14), m_WelcomePosition),
+                CreateSerializedProperty(_script.GetPropertyAt(15), m_TownHallPosition),
+                CreateSerializedProperty(_script.GetPropertyAt(16), m_EventsPosition),
+                CreateSerializedProperty(_script.GetPropertyAt(17), m_ParkPosition),
+                CreateSerializedProperty(_script.GetPropertyAt(18), m_ArtCenterPosition),
+                CreateSerializedProperty(_script.GetPropertyAt(19), m_BuilderCenterPosition),
+                CreateSerializedProperty(_script.GetPropertyAt(20), m_TrasitStationPosition),
             };
         }
-        
-#if HR_STUDIO
-        [MenuItem("CONTEXT/UIMapMenu/Edit Script")]
-        private static void EditScript()
-        {
-            VisualStudioCodeOpener.OpenPath(AssetDatabase.GUIDToAssetPath(s_scriptGUID));
-        }
-#endif
     }
 }
 

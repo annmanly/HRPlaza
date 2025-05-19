@@ -1,0 +1,18 @@
+.spam-detected {
+    height: 100%;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.spam-detected #_header {
+    color: var(--color-fishbase-whitefish);
+    font-size: 28px;
+    margin-bottom: 16px;
+    -unity-font-definition: var(--font-bold);
+}
+
+.spam-detected #_message {
+    color: var(--color-fishbase-whitefish);
+    font-size: 14px;
+}

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<UXML
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns="UnityEngine.UIElements"
+    xmlns:hr="Highrise.UI"
+    xmlns:editor="UnityEditor.UIElements"
+    xsi:noNamespaceSchemaLocation="../../../../../UIElementsSchema/UIElements.xsd"
+>
+
+  <hr:UIEventTickets class="event-tickets">
+    <VisualElement name="_ticketsContainer">
+
+      <hr:UIImage name="_ticketsIcon" class="event-tickets-icon tickets-icon" />
+      <hr:UILabel name="_baseTicketCount" class="regular-tickets-text"/>
+
+      <Label name="_xMultiplier" text="×" class="regular-tickets-text"/>
+
+      <hr:UIImage name="_boostIcon" class="icon-boost-event-hint tickets-icon" />
+      <hr:UILabel name="_boostTicketCount" class="regular-tickets-text"/>
+
+      <Label name="_equals" text="=" class="regular-tickets-text"/>
+
+      <hr:UIImage name="_resultTicketsIcon" class="event-tickets-icon tickets-icon" />
+      <hr:UILabel name="_resultTicketCount"/>
+      
+    </VisualElement>
+
+    <VisualElement name="_badgesContainer" class="overlay-top flex-row">      
+      <VisualElement name="_superBoostContainer">
+        <hr:UIImage name="_superBoostBackground" class="overlay"/>
+        <hr:UIImage name="_superBoostGradient" class="overlay"/>
+        <hr:UILabel name="_superBoostLabel"/>
+      </VisualElement>
+      <hr:UILabel name="_streakLabel"/>
+    </VisualElement>
+  </hr:UIEventTickets>
+
+</UXML>

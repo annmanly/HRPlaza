@@ -1,0 +1,37 @@
+.room-info-voice-controls {
+    padding-left: 8px;
+    padding-right: 8px;
+    flex-grow: 1;
+}
+
+.room-info-voice-controls UIButton {
+    width: 36px;
+    height: 36px;
+    margin: 12px 4px;
+    padding: 0px;
+    background-color: var(--color-fishbase-catfish);
+}
+
+.room-info-voice-controls UIButton Image {
+    --unity-image-tint-color: var(--color-fishbase-mackerel);
+}
+
+.room-info-voice-controls UIButton:disabled Image {
+    --unity-image-tint-color: var(--color-fishbase-salmon);
+}
+
+#_muteButton Image {
+    --unity-image: var(--image-icon-voice);
+}
+
+#_muteButton.room-info-voice-controls-muted Image {
+    --unity-image: var(--image-icon-voice-muted);
+}
+
+#_deafenButton Image {
+    --unity-image: var(--image-icon-deafen);
+}
+
+#_deafenButton.room-info-voice-controls-deafened Image {
+    --unity-image: var(--image-icon-deafened-red);
+}

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<UXML
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xmlns="UnityEngine.UIElements"
+        xmlns:hr="Highrise.UI"
+        xmlns:editor="UnityEditor.UIElements"
+        xsi:noNamespaceSchemaLocation="../../../../../UIElementsSchema/UIElements.xsd"
+>
+
+    <hr:UIDonateEvent class="donate-event">
+        <VisualElement class="flex-row" name="_header">
+            <hr:UILabel name="_npcName"/>
+            <VisualElement name="_heartsContainer" class="flex-row"/>
+        </VisualElement>
+        <VisualElement name="_donateContainer">
+            <hr:UIEventTickets name="_tickets"/>
+            <hr:UILabel key="choose_an_item_to_donate" name="_chooseItemLabel"/>
+            <VisualElement name="_itemsContainer"/>
+        </VisualElement>
+        <VisualElement name="_resultsContainer">
+            <hr:UIEventTicketAndRankResults name="_results"/>
+
+            <hr:UILabel key="tap_to_continue" name="_tapToContinueLabel"/>
+
+        </VisualElement>
+        <hr:UISafeAreaBottom/>
+    </hr:UIDonateEvent>
+
+</UXML>

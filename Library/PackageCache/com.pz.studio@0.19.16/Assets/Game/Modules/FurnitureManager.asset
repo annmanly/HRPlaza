@@ -1,0 +1,29 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -330426174, guid: 30a4c7dce0b6891478396efa6bd2a6d0, type: 3 }
+  m_Name: FurnitureManager
+  m_EditorClassIdentifier: 
+  _furniturePrefab: {fileID: 7768148223813429816, guid: 642c3ab6676872848aa7dbdf02ed458a,
+    type: 3}
+  _partPrefab: {fileID: 6980058860490649145, guid: af4825a929aee714e9d0fc58c68d734c,
+    type: 3}
+  _defaultMaterial: {fileID: 2100000, guid: 984c4679a41695647967efe4bf5d63bd, type: 2}
+  _floorMaterial: {fileID: 2100000, guid: 5466a0da7db95db4fb77a319a5f40c56, type: 2}
+  _wallMaterial: {fileID: 2100000, guid: cf0b2111d501ae745bf2ce0fee940e47, type: 2}
+  _wallDecorMaterial: {fileID: 2100000, guid: ab09a0c361bbfb74cad9191bf7643762, type: 2}
+  _doorMaterial: {fileID: 2100000, guid: 8fa000ae5021aad4d9e19792dd70af94, type: 2}
+  _defaultMaterialAlpha: {fileID: 2100000, guid: 904965d99fa4df1469dafc32be5e3ea8,
+    type: 2}
+  _previewRoomPrefab: {fileID: 8188473861296701101, guid: b394c0f054119124e87535684b1e18f1,
+    type: 3}
+  _floorExtrusionPixels: 4
+  _flatFurnitureThreshold: 0.02

@@ -1,0 +1,737 @@
+.item-info {
+    height: 100%;
+    width: 100%;
+    align-items: center;
+}
+
+.item-info #_containerInfo {
+    flex-grow: 1;
+    width: 100%;
+}
+
+.item-info-main-container {
+    width: 100%;
+    background-color: var(--color-fishbase-eel);
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    overflow: hidden;
+    margin-top: var(--safe-area-top);
+}
+
+.landscape .item-info-main-container {
+    height: 100%;
+    background-color: var(--color-transparent);
+}
+
+.item-info .safe-area-bottom {
+    background-color: var(--color-fishbase-eel);
+    width: 100%;
+}
+
+.landscape .item-info .safe-area-bottom {
+    background-color: rgba(0, 0, 0, 0);
+}
+
+.item-info #_nftInfo {
+    color: var(--color-fishbase-whitefish);
+    font-size: 16px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 3px;
+    margin-bottom: 3px;
+}
+
+.item-info #_inspiredByLabel {
+    margin-top: 3px;
+    margin-bottom: 3px;
+}
+
+.item-info #_inspiredByLabel UILabel {
+    -unity-text-align: middle-center;
+    color: var(--color-fishbase-mackerel);
+    font-size: 15px;
+    white-space: normal;
+}
+
+.item-info #_inspiredByLabel .skeleton-label__skeleton-content .skeleton-label__line {
+    width: 40%;
+}
+
+.item-info #_belongsToLabel {
+    display: none;
+    margin-top: 3px;
+    margin-bottom: 3px;
+    font-size: 15px;
+    white-space: normal;
+    color: var(--color-fishbase-mackerel);
+    -unity-text-align: middle-center;
+}
+
+.item-info #_traitsContainer {
+    display: none;
+    border-radius: 12px;
+    margin-bottom: 8px;
+    flex-grow:1;
+    background-color: var(--color-fishbase-catfish);
+}
+
+.item-info #_traits {
+    white-space: normal;
+    -unity-text-align: middle-center;
+    -unity-font-definition: var(--font-bold);
+    color: var(--color-fishbase-mackerel);
+    font-size: 15px;
+    margin: 12px 8px;
+}
+
+.item-info #_eventProgressInfo {
+    display: none;
+    justify-content: center;
+    align-items: center;
+}
+
+.item-info #_eventProgressInfoIcon {
+    width: 14px;
+    height: 14px;
+}
+
+.item-info #_eventProgressInfoLabel {
+    font-size: 15px;
+    margin-left: 8px;
+    color: var(--color-fishbase-whitefish);
+}
+
+.item-info #_caption {
+    margin: 6px 16px;
+}
+
+.item-info #_caption UILabel {
+    display: none;
+    font-size: 15px;
+    margin: 6px 16px;
+    color: var(--color-fishbase-mackerel);
+    white-space: normal;
+    -unity-text-align: middle-center;
+}
+
+.item-info #_note {
+    display: none;
+    font-size: 15px;
+    margin: 8px 16px;
+    color: var(--color-fishbase-mackerel);
+    white-space: normal;
+    -unity-text-align: middle-center;
+}
+
+
+.item-info #_rarityBackground {
+    height: auto;
+    max-height: 500px;
+    min-height: 317px;
+}
+
+.landscape .item-info #_rarityBackground {
+    height: auto;
+    flex-grow: 0;
+}
+
+.item-info #_imageContainer {
+    width: auto;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+    min-height: 191px;
+    max-height: 300px;
+    max-width: 90%;
+}
+
+.item-info__close {
+    height: 36px;
+    width: 36px;
+    padding: 6px;
+    margin-top: 12px;
+    margin-right: 12px;
+    margin-left: auto;
+}
+
+.rtl .item-info__close {
+    margin-left: 12px;
+    margin-right: auto;
+}
+
+.landscape .item-info__close {
+    display: none;
+}
+
+.item-info #_closeButtonImage {
+    width: 24px;
+    height: 24px;
+    margin: 0;
+    color: var(--color-fishbase-bonito);
+}
+
+.item-info #_name {
+    font-size: 32px;
+    margin-left: 24px;
+    margin-right: 24px;
+    -unity-font-definition: var(--font-black);
+    opacity: 0.5;
+    margin-top: 8px;
+    margin-bottom: 0px;
+    padding: 0;
+    -unity-text-align: middle-left;
+    white-space: normal;
+    overflow: hidden;
+    max-height: 75px;
+    min-height: 36px;
+}
+
+.rtl .item-info #_name {
+    -unity-text-align: lower-right;
+    margin-left: 24px;
+    margin-right: 24px;
+}
+
+.item-info #_subName {
+    font-size: 18px;
+    -unity-font-definition: var(--font-black);
+    opacity: 0.3;
+    margin-top: 0px;
+    margin-bottom: 4px;
+    padding: 0;
+    -unity-text-align: middle-left;
+    white-space: normal;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    height: 20px;
+    max-height: 42px;
+    --line-height: 18;
+    min-height: 18px;
+}
+
+.item-info__tag {
+    border-radius: 8px;
+    margin-right: 8px;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+.rtl .item-info__tag {
+    margin-right: 0;
+    margin-left: 8px;
+}
+
+.item-info__tag Image {
+    width: 16px;
+    height: 16px;
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-left: 8px;
+}
+
+.item-info__tag Label {
+    padding: 3px 4px;
+    margin: 0;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+.item-info #_rarity {
+    rotate: 90deg;
+    position: absolute;
+    padding: 0;
+    margin: 0;
+    left: 16px;
+    top: -20px;
+    opacity: 0.25;
+    font-size: 36px;
+    -unity-font-definition: var(--font-black);
+    -unity-font-style: bold;
+    transform-origin: left bottom;
+}
+
+.rtl .item-info #_rarity {
+    rotate: -90deg;
+    left: auto;
+    right: 24px;
+    transform-origin: right bottom;
+}
+
+.item-info #_textLabelsContainer {
+    display: none;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: 9px 12px;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--color-fishbase-catfish);
+}
+
+/* Footer */
+
+.item-info__footer {
+    padding-left: 16px;
+    padding-right: 16px;
+    padding-top: 12px;
+    padding-bottom: 12px;
+}
+
+.landscape .item-info__footer {
+    height: auto;
+    flex-shrink: 0;
+}
+
+.item-info #_bonusRewardTypeLabel {
+    display: none;
+    color: var(--color-fishbase-whitefish);
+    font-size: 22px;
+    -unity-font-definition: var(--font-bold);
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 4px;
+    margin-bottom: 4px;
+}
+
+.item-info #_bonusRewardProgressLabel {
+    display: none;
+    color: var(--color-fishbase-mackerel);
+    font-size: 17px;
+    -unity-font-definition: var(--font-bold);
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 4px;
+    margin-bottom: 4px;
+}
+
+.item-info #_bonusRewardDescriptionLabel {
+    display: none;
+    color: var(--color-fishbase-mackerel);
+    font-size: 15px;
+    white-space: normal;
+    -unity-text-align: middle-center;
+    margin-left: auto;
+    margin-right: auto;
+    margin: 0;
+    margin-top: 4px;
+    margin-bottom: 4px;
+}
+
+.item-info #_ownedAmount {
+    display: none;
+    color: var(--color-fishbase-whitefish);
+    font-size: var(--font-size-m);
+    padding: 0px;
+    margin: 0;
+    margin-top: 3px;
+    margin-bottom: 3px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.item-info #_tradabilityTimerContainer {
+    display: none;
+    min-height: 26px;
+    justify-content: center;
+    align-items: center;
+}
+
+.item-info #_tradabilityTimerContainer UIImage {
+    flex-shrink: 0;
+    width: 14px;
+    height: 14px;
+    --unity-image-tint-color: var(--color-fishbase-mackerel);
+}
+
+.item-info #_tradabilityTimer {
+    margin-left: 4px;
+    color: var(--color-fishbase-mackerel);
+    font-size: 15px;
+    -unity-text-align: middle-center;
+    white-space: normal;
+}
+
+.item-info #_quantityInput,
+.item-info #_shopQuantityInput {
+    width: 64px;
+    height: 44px;
+    margin-right: 8px;
+    margin-bottom: 0;
+    border-width: 0;
+    -unity-text-align: middle-center;
+}
+
+.rtl .item-info #_quantityInput,
+.rtl .item-info #_shopQuantityInput {
+    margin-right: 0;
+    margin-left: 8px;
+    -unity-text-align: middle-center;
+}
+
+.rtl .item-info #_quantityInput #unity-text-input .unity-text-element,
+.rtl .item-info #_shopQuantityInput #unity-text-input .unity-text-element {
+    -unity-text-align: middle-center;
+}
+
+.item-info #_quantityPositiveButton {
+    flex-grow: 1;
+}
+
+.item-info #_quantityNegativeButton {
+    flex-grow: 1;
+    margin-top: 8px;
+}
+
+.item-info #_quantityPicker {
+    display: none;
+    margin-top: 4px;
+    margin-bottom: 4px;
+}
+
+.item-info #_countdown {
+    padding: 10px;
+    background-color: var(--color-tertiary-strawberry);
+    display: none;
+}
+
+.item-info #_limitedSaleStatusIcon {
+    width: 18px;
+    height: 18px;
+    margin-right: 4px;
+    --unity-image-tint-color: var(--color-fishbase-eel);
+}
+
+.item-info #_limitedSaleStatusLabel {
+    font-size: var(--font-size-m);
+    -unity-font-definition: var(--font-regular);
+}
+
+.item-info #_shopContainer {
+    display: none;
+    margin-top: 4px;
+    margin-bottom: 4px;
+}
+
+.item-info #_tryOnButton {
+    margin-left: auto;
+    margin-right: 12px;
+    margin-top: 8px;
+    display: flex;
+    background-color: var(--color-fishbase-blackfish-40);
+    border-radius: 12px;
+    align-items: center;
+    height: 36px;
+    width: 36px;
+    padding: 6px;
+}
+
+.item-info .button-icon {
+    margin-left: auto;
+    margin-right: 12px;
+    margin-top: 8px;
+    background-color: var(--color-fishbase-blackfish-40);
+    border-radius: 12px;
+    align-items: center;
+    height: 36px;
+    width: 36px;
+    padding: 6px;
+}
+
+.rtl .item-info .button-icon {
+    margin-left: 12px;
+    margin-right: auto;
+}
+
+.item-info .button-icon UIImage {
+    --unity-image-tint-color: var(--color-fishbase-bonito);
+    width: 24px;
+    height: 24px;
+}
+
+.item-info #_itemPurchaseButton {
+    display: none;
+    margin: 0px 0px 16px;
+}
+
+.item-info #_itemPurchaseButton #_purchaseButton {
+    flex-grow: 1;
+    flex-direction: row;
+    align-items: center;
+}
+
+.item-info #_itemPurchaseButton #_purchaseButton:disabled {
+    background-color: var(--color-fishbase-tuna);
+    color: var(--color-fishbase-salmon);
+}
+
+.item-info #_itemPurchaseButton #_purchaseButton UILabel {
+    margin: 0 3px;
+    padding: 0;
+    height: 18px;
+}
+
+.item-info #_itemPurchaseButton #_purchaseButton Image {
+    width: 18px;
+    height: 18px;
+    margin: 0;
+    padding: 0;
+    --unity-image-tint-color: null;
+}
+
+.item-info #_itemPurchaseButton #_purchaseButton .currency {
+    height: 20px;
+}
+
+.item-info .purchase-side-button {
+    width: 44px;
+    margin-left: 0;
+    margin-right: 12px;
+    display: none;
+}
+
+.item-info .purchase-side-button Image {
+    --unity-image-tint-color: var(--color-accents-primary);
+}
+
+.item-info #_tryItOnBigButton {
+    margin-top: 4px;
+    margin-bottom: 4px;
+}
+
+.item-info #_tryItOnBigIcon {
+    --unity-image-tint-color: var(--color-accents-primary);
+    height: 24px;
+    width: 24px;
+    margin-right: 4px;
+}
+
+.item-info #_messageUserButton {
+    display: none;
+    margin-top: 4px;
+    margin-bottom: 4px;
+}
+
+.item-info #_getFromMarketplaceButton {
+    margin-top: 4px;
+    margin-bottom: 4px;
+}
+
+.item-info #_getFromMarketplaceButton UIImage {
+    --unity-image-tint-color: var(--color-accents-primary);
+    height: 24px;
+    width: 24px;
+    margin-right: 4px;
+}
+
+.item-info-get-from-other-place-button {
+    margin-top: 4px;
+    margin-bottom: 4px;
+}
+
+/*
+
+    3D
+
+*/
+
+.item-info.item-info-3d #_name {
+    opacity: 0;
+}
+
+.item-info.item-info-3d #_rarityBackground {
+    padding-top: 100px;
+}
+
+.item-info.item-info-3d #_imageContainer {
+    height: 400px;
+    scale: 1.2 1.2 1;
+}
+
+.item-info-3d .item-info__close {
+    position: absolute;
+    top: 12px;
+    left: 12px;
+}
+
+.item-info.item-info-3d #_rarity {
+    opacity: 0;
+}
+
+.item-info.item-info-3d #_tryOnButton {
+    position: absolute;
+    top: 12px;
+    right: 12px;
+    width: 36px;
+    height: 36px;
+}
+
+.item-info.item-info-3d #_tryOnButton Image {
+    width: 24px;
+    height: 24px;
+    margin: auto;
+}
+
+
+.item-info-card-front,
+.item-info-card-border,
+.item-info-card-back {
+    width: 280px;
+    height: 375px;
+    margin: auto;
+    position: relative;
+    background-color: rgba(0, 0, 0, 0);
+    overflow: hidden;
+    scale: .99 .99 1;
+}
+
+
+.item-info-card-back .item-card.item-card-large .item-card__content {
+    border-radius: 32px;
+}
+
+.item-info-card-back .item-card.item-card-large .item-card__border {
+    border-width: 16px;
+    border-radius: 32px;
+}
+
+.item-info-card-back .item-card.item-card-large {
+    width: 280px;
+    height: 375px;
+    margin: 0;
+}
+
+.item-info-card-back .item-card.item-card-large #_imageContainer {
+    --unity-image-tint-color: rgba(1, 1, 1, .2);
+}
+
+.item-info-card-back .item-card.item-card-large #_name {
+    margin-bottom: 12px;
+    height: 100px;
+    -unity-text-align: lower-left;
+}
+
+.item-info-card-border {
+    border-radius: 32px;
+}
+
+.item-info-card__image {
+    position: absolute;
+    top: 8px;
+    right: 8px;
+    bottom: 34px;
+    left: 8px;
+}
+
+.item-info #_tryOnButton .button__content {
+    margin: 0;
+}
+
+.item-info__footer-extra-info {
+    margin-top: 0px;
+}
+
+.item-info__footer-inventory {
+    margin-top: 0px;
+    height: 188px;
+}
+
+.item-info__buttons {
+    position: absolute;
+    left: 0;
+    height: 188px;
+}
+
+.rtl .item-info__buttons {
+    left: 0;
+    right: initial;
+}
+
+.item-info__buttons-container {
+    flex-shrink: 0;
+}
+
+.item-info #_image {
+    align-content: center;
+    align-items: center;
+    align-self: center;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+.item-info #_itemShowcaseButton {
+    display: none;
+}
+
+.item-info #_showcaseButton {
+    display: none;
+    margin-top: 4px;
+    margin-bottom: 4px;
+}
+
+.item-info #_removeFromShowcasesButton {
+    display: none;
+    margin-top: 4px;
+    margin-bottom: 4px;
+}
+
+.item-info #_subContainer {
+    flex-direction: row;
+    align-items: center;
+    margin-left: 24px;
+}
+
+/* Mythical rarity */
+
+.item-info #_rarityBackground > UIMythicalBackground {
+    display: none;
+    border-radius: 20px 20px 0px 0px;
+}
+
+.item-info #_rarityBackground .mythical-background-mask {
+    display: none;
+}
+
+.item-info #_rarityBackground.rarity-mythical > UIMythicalBackground {
+    display: flex;
+}
+
+.item-info #_rarityBackground.rarity-mythical #_name {
+    opacity: 1.0;
+}
+
+/* Hashtag */
+.item-info #_hashtagLabel {
+    font-size: 15px;
+    color: var(--color-accents-secondary);
+    align-self: center;
+}
+
+
+/*
+Special case for when the UIM is in the popover (e.g. Item Swapping)
+ */
+
+.popover .item-info #_rarityBackground {
+    max-height: 500px;
+    min-height: 317px;
+}
+
+.item-info #_hashtagLabel:disabled {
+    opacity: 1;
+}
+
+.item-info #_inspiredByLabel:disabled {
+    opacity: 1;
+}
+
+/* Effects icon */
+
+.item-info #_effectsIcon {
+    display: none;
+    position: absolute;
+    top: 8px;
+    right: 8px;
+    width: 96px;
+    height: 96px;
+    --unity-image-tint-color: var(--color-fishbase-eel-25);
+}
+

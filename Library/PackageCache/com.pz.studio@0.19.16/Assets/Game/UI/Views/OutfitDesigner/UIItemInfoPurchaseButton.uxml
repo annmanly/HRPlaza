@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<UXML
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns="UnityEngine.UIElements"
+    xmlns:hr="Highrise.UI"
+    xmlns:editor="UnityEditor.UIElements"
+    xsi:noNamespaceSchemaLocation="../../../../../UIElementsSchema/UIElements.xsd"
+>
+
+  <hr:UIItemInfoPurchaseButton class="item-info-purchase-button rtl-reverse">
+    <hr:UITextField name="_shopQuantityInput" />
+    <hr:UIButton name="_purchaseButton" class="button-primary" focusable="false">
+      <hr:UILabel name="_purchaseButtonLabel" />
+      <hr:UICurrency name="_purchaseButtonCurrency" />
+    </hr:UIButton>
+  </hr:UIItemInfoPurchaseButton>
+
+</UXML>

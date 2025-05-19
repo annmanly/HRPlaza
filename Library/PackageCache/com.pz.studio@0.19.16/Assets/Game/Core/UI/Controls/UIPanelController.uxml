@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<UXML
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns="UnityEngine.UIElements"
+    xmlns:hr="Highrise.UI"
+    xmlns:editor="UnityEditor.UIElements"
+    xsi:noNamespaceSchemaLocation="../../../../../UIElementsSchema/UIElements.xsd"
+>
+
+  <hr:UIPanelController class="panel-controller rtl-reverse">
+    <VisualElement name="_mainPanel" class="panel-controller__main"/>
+    <VisualElement name="_detailsPanel" class="panel-controller__details">
+      <hr:UIView name="_detailsPanelContent" class="panel-controller__details-content"/>
+      <hr:UIButton name="_detailsCloseButton" class="button-transparent overlay-top-left">
+        <hr:UIImage class="icon-close"/>
+      </hr:UIButton>
+    </VisualElement>
+  </hr:UIPanelController>
+
+</UXML>

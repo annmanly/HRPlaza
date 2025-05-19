@@ -1,0 +1,274 @@
+.character-palette-editor {
+    flex-grow: 1;
+}
+
+.character-palette-editor #_previewOptionsContent {
+    flex-grow: 1;
+}
+
+.character-palette-editor MultiColumnListView {
+    flex-grow: 1;
+}
+
+.character-palette-editor #_toolbar,
+.character-palette-editor #_previewOptionsToolbar {
+    background-color: var(--unity-colors-tab-background-checked);
+    border-bottom-width: .5px;
+    border-bottom-color: var(--unity-colors-toolbar-border);
+    flex-direction: row;
+    flex-shrink: 0;
+    width: 100%;
+    height: var(--unity-metrics-toolbar-height);
+    display: flex;
+}
+
+.character-palette-editor #_content {
+    flex-grow: 1;
+}
+
+.character-palette-editor #_content Label {
+    -unity-text-align: middle-left;
+    height: 100%;
+}
+
+.character-palette-editor #_content .displayColor {
+    height: 16px;
+    margin: auto 2px;
+}
+
+.character-palette-editor #_content .colorCell {
+    width: 100%;
+    height: 100%;
+}
+
+.character-palette-editor #_content .color {
+    width: auto;
+    height: 16px;
+    margin: auto 2px;
+}
+
+.character-palette-editor .lockHeader {
+    width: 16px;
+    height: 16px;
+    margin: auto;
+    --unity-image: url("project://database/Packages/com.pz.studio/Editor/Icons/IconLock.png");
+    --unity-image-tint-color: rgba(255,255,255,0.7);
+}
+
+.character-palette-editor .lock {
+    width: 16px;
+    height: 16px;
+    margin: auto;
+}
+
+.character-palette-editor .lock:checked {
+    --unity-image: url("project://database/Packages/com.pz.studio/Editor/Icons/IconLock.png");
+    --unity-image-tint-color: rgba(255,255,255,0.2);
+}
+
+.character-palette-editor .premiumHeader {
+    width: 18px;
+    height: 18px;
+    margin: auto;
+    --unity-image: url("project://database/Packages/com.pz.studio/Editor/Icons/IconHighrisePlus.png")
+}
+
+.character-palette-editor .premium {
+    width: 20px;
+    height: 20px;
+    margin: auto;
+    background-color: var(--unity-colors-input_field-background);
+    border-width: 1px;
+    border-color: var(--unity-colors-input_field-border);
+    border-radius: 4px;
+}
+
+.character-palette-editor .premium:disabled {
+    background-color: transparent;
+    border-color: transparent;
+}
+
+.character-palette-editor #_content .premium Image {
+    width: 20px;
+    height: 20px;
+}
+
+.character-palette-editor .premium:checked Image {
+    --unity-image: url("project://database/Packages/com.pz.studio/Editor/Icons/IconHighrisePlus.png")
+}
+
+.character-palette-editor #_addColumn {
+    width: 100%;
+    height: 100%;
+}
+
+.character-palette-editor #_addColumn Image {
+    width: 12px;
+    height: 12px;
+    margin: auto;
+    --unity-image: url("project://database/Packages/com.pz.studio/Editor/Icons/IconAdd.png");
+    --unity-image-tint-color: rgba(255,255,255,0.7);
+}
+
+.character-palette-editor #_addRow {
+    flex-shrink: 0;
+    height: 24px;
+    border-top-width: 1px;
+    border-bottom-width: 1px;
+    border-color: var(--unity-colors-toolbar-border);
+    background-color: var(--unity-colors-app_toolbar_button-background);
+    margin-top: auto;
+}
+
+.character-palette-editor #_addRow:hover {
+    background-color: var(--unity-colors-app_toolbar_button-background-hover);
+}
+
+.character-palette-editor #_addRow Image {
+    width: 12px;
+    height: 12px;
+    margin: auto;
+    --unity-image: url("project://database/Packages/com.pz.studio/Editor/Icons/IconAdd.png");
+    --unity-image-tint-color: rgba(255,255,255,0.7);
+}
+
+.character-palette-editor #_content .index
+{
+    -unity-text-align: middle-center;
+    border-right-width: 1px;
+    border-bottom-width: .5px;
+    border-top-width: .5px;
+    border-color: var(--unity-colors-toolbar-border);
+}
+
+.character-palette-editor #_content .id
+{
+    -unity-text-align: middle-left;
+    margin-left: 6px;
+}
+
+.character-palette-editor #_content TextField
+{
+    margin: auto 2px;
+}
+
+.character-palette-editor #_content TextField TextInput
+{
+    border-width: 0;
+    background-color: transparent;
+}
+
+.character-palette-editor #_content TextField:focus TextInput
+{
+    border-width: 1px;
+    background-color: var(--unity-colors-input_field-background);
+}
+
+.character-palette-editor .unity-list-view__empty-label {
+    display: none;
+}
+
+.character-palette-editor #_empty {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+
+.character-palette-editor #_empty Button {
+    width: 150px;
+    margin: auto;
+}
+
+#_previewToggle {
+    width: 30px;
+    margin-left: 4px;
+}
+
+#_previewToggle Image {
+    position: absolute;
+    top: 2px;
+    left: 2px;
+    right: 2px;
+    bottom: 2px;
+    --unity-image: url("project://database/Packages/com.pz.studio/Editor/Icons/CharacterOutfit.png");
+    --unity-image-tint-color: rgba(255,255,255,0.7);
+}
+
+#_lockToggle {
+    width: 30px;
+    margin-left: auto;
+}
+
+#_lockToggle Image {
+    position: absolute;
+    top: 2px;
+    left: 2px;
+    right: 2px;
+    bottom: 2px;
+    --unity-image: url("project://database/Packages/com.pz.studio/Editor/Icons/IconLock.png");
+    --unity-image-tint-color: rgba(255,255,255,0.7);
+}
+
+#_sortToggle {
+    width: 30px;
+    margin-left: 4px;
+}
+
+#_sortToggle Image {
+    position: absolute;
+    top: 2px;
+    left: 2px;
+    right: 2px;
+    bottom: 2px;
+    --unity-image: url("project://database/Packages/com.pz.studio/Editor/Icons/IconSort.png");
+    --unity-image-tint-color: rgba(255,255,255,0.7);
+}
+
+#_toolbarMenu {
+    width: 26px;
+    padding: 0;
+    margin-left: -3px;
+}
+
+#_toolbarMenu .unity-toolbar-menu__text {
+    display: none;
+}
+
+#_toolbarMenu .unity-toolbar-menu__arrow {
+    margin: auto;
+}
+
+#_saveButton Image {
+    width: 16px;
+    height: 16px;
+    --unity-image-tint-color: rgba(255,255,255,0.7);
+    margin-right: 0;
+}
+
+#_preview {
+    flex-grow: 1;
+}
+
+#_previewOptions,
+#_previewOptions TabbedView {
+    flex-grow: 1;
+}
+
+#_previewOptions .unity-tabbed-view__content-container {
+    padding: 0;
+}
+
+#_rotateButton {
+    width: 26px;
+    padding: 0;
+}
+
+#_rotateButton Image {
+    width: 16px;
+    height: 16px;
+    margin: auto;
+    --unity-image-tint-color: rgba(255,255,255,0.7);
+   --unity-image: url("project://database/Packages/com.pz.studio/Editor/Icons/IconRotate.png");
+}

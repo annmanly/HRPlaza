@@ -1,0 +1,33 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -658367206, guid: 30a4c7dce0b6891478396efa6bd2a6d0, type: 3 }
+  m_Name: AVManager
+  m_EditorClassIdentifier: 
+  _mixer: {fileID: 24100000, guid: 4440a39ab7caa4b468d92a1321c44a0d, type: 2}
+  _soundMixerGroup: {fileID: 2984182745452386601, guid: 4440a39ab7caa4b468d92a1321c44a0d,
+    type: 2}
+  _audioSourcePoolSize: 32
+  _audioSourcePrefab: {fileID: -7609245770676828255, guid: 6833f05a72509e549bcbbe2a0aca7a36,
+    type: 3}
+  _musicMixerGroup: {fileID: -5764285146833948891, guid: 4440a39ab7caa4b468d92a1321c44a0d,
+    type: 2}
+  _musicCrossFadeDuration: 1
+  _musicDuckWhenSpeaking: 0.1
+  _musicDuckWhenSpeakingInDuration: 5
+  _musicDuckWhenSpeakingOutDuration: 0.25
+  _musicIntensityTimeout: 5
+  _musicIntensityDampen: 0.025
+  _videoPlayerPrefab: {fileID: -3962556260609131922, guid: 35f3c9aec372fab4b992dac00b70268b,
+    type: 3}
+  _videoMixerGroup: {fileID: 8106428985720707071, guid: 4440a39ab7caa4b468d92a1321c44a0d,
+    type: 2}
+  _videoPlayerPoolSize: 8

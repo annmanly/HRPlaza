@@ -1,0 +1,48 @@
+#floor-list {
+    height: auto;
+    padding: 4px;
+    min-width: 160px;
+    max-height: 200px;
+}
+
+.unity-list-view__item {
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: row;
+}
+
+.unity-list-view__empty-label {
+    display: none;
+}
+
+.cell-container {
+    padding: 4px;
+    height: 28px;
+    background-color: #1F2023;
+    border-color: #505050;
+    border-width: 2px;
+    border-radius: 4px;
+    flex-grow: 1;
+    flex-shrink: 0;
+}
+
+.unity-button:hover {
+    border-color: #6242F3;
+}
+
+.unity-collection-view__item--selected {
+    background-color: rgba(0, 0, 0, 0);
+}
+
+.unity-collection-view__item {
+    background-color: rgba(0, 0, 0, 0);
+}
+
+.unity-collection-view__item--selected .cell-container {
+    border-color: #6242F3;
+    background-color: #3F35AD;
+}
+
+.unity-collection-view__item .cell-container:hover {
+    border-color: #6242F3;
+}

@@ -1,0 +1,42 @@
+.split-controller {
+    flex-grow: 1;
+}
+
+.split-controller .split-controller__main {
+    width: 30%;
+    max-width: 448px;
+    min-width: 375px;
+    border-right-width: 1px;
+    border-color: var(--color-fishbase-catfish);
+}
+
+.rtl .split-controller .split-controller__main {
+    border-right-width: initial;
+    border-left-width: 1px;
+}
+
+.landscape .split-controller .split-controller__main {
+    background-color: var(--color-fishbase-blackfish);
+}
+
+.portrait .split-controller__main {
+    width: 100%;
+    max-width: initial;
+    min-width: initial;
+    flex-grow: 1;
+    border-right-width: 0px;
+}
+
+.split-controller .split-controller__detail {
+    flex-grow: 1;
+    background-color: var(--color-fishbase-eel);
+    padding: 0 0;
+}
+
+.split-controller .split-controller__detail > .empty-state {
+    margin: auto;
+}
+
+.portrait .split-controller__detail {
+    display: none;
+}

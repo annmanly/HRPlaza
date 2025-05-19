@@ -1,0 +1,111 @@
+
+.inventory-viewer {
+    flex-grow: 1;
+}
+
+.inventory-viewer .collection {
+    flex-grow: 1;
+}
+
+.inventory-viewer #_topLeft {
+    flex-direction: row;
+    border-color: var(--unity-colors-toolbar-border);
+    border-bottom-width: 1px;
+    padding-top: 4px;
+    padding-bottom: 4px;
+    flex-shrink: 0;
+}
+
+.inventory-viewer #_refreshButton {
+    flex-direction: row;
+    margin-right: auto;
+}
+
+.inventory-viewer #_refreshIcon {
+    width: 15px;
+    height: 15px;
+    --unity-image: url("project://database/Packages/com.pz.studio/Editor/UI/Icons/icon_swap_small.png");
+}
+
+.inventory-viewer .holder-entry {
+    padding: 2px 4px;
+}
+
+.inventory-viewer #_holderName {
+    font-size: 13px;
+    -unity-text-align: middle-left;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    flex-shrink: 1;
+}
+
+.inventory-viewer #_entryMetadata {
+    margin-left: auto;
+    -unity-text-align: middle-right;
+    font-size: 12px;
+    flex-shrink: 0;
+}
+
+.inventory-viewer .holder-entry:hover {
+    color: var(--unity-colors-default-text-hover);
+    background-color: var(--unity-colors-highlight-background-hover);
+}
+
+.inventory-viewer .holder-entry:checked {
+    background-color: var(--unity-colors-highlight-background);
+    color: white;
+}
+
+.inventory-viewer #_bottomLeft {
+    flex-shrink: 0;
+}
+
+.inventory-viewer .unity-toolbar-search-field {
+    width: auto;
+    margin: 4px;
+}
+
+.inventory-viewer #_topRight {
+    flex-direction: row;
+    border-color: var(--unity-colors-toolbar-border);
+    border-bottom-width: 1px;
+    padding-top: 4px;
+    padding-bottom: 4px;
+    flex-shrink: 0;
+}
+
+.inventory-viewer #_addButton {
+    margin-left: auto;
+}
+
+.inventory-viewer #_itemList {
+    flex-grow: 1;
+}
+
+.inventory-viewer .unity-multi-column-header {
+    height: 29px;
+}
+
+.inventory-viewer .unity-multi-column-view__row-container:hover {
+    color: var(--unity-colors-default-text-hover);
+    background-color: var(--unity-colors-highlight-background-hover);
+}
+
+.inventory-viewer .unity-multi-column-view__row-container:checked {
+    background-color: var(--unity-colors-highlight-background);
+    color: white;
+}
+
+.inventory-viewer .unity-multi-column-view__cell {
+    padding-left: 6px;
+    justify-content: center;
+}
+
+.inventory-viewer .unity-list-view__empty-label {
+    display: none;
+}
+
+.inventory-viewer #_bottomRight {
+    flex-shrink: 0;
+}

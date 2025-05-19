@@ -1,0 +1,29 @@
+.backpack {
+    background-color: var(--color-fishbase-eel);
+}
+
+.backpack .collection-section {
+    padding-left: 16px;
+    padding-right: 16px;
+}
+
+.backpack UIHint {
+    margin-bottom: 16px;
+    margin-top:16px;
+}
+
+.backpack UIBannerDropCell {
+    margin-left: -16px;
+    margin-right: -16px;
+}
+
+.backpack UIItemCard #_name {
+    max-height: 28px;
+    -unity-text-align: middle-center;
+    -unity-font-definition: var(--font-regular);
+}
+
+.backpack UIItemCard {
+    min-width: var(--4-column-item-min-width);
+    max-width: var(--4-column-item-max-width);
+}

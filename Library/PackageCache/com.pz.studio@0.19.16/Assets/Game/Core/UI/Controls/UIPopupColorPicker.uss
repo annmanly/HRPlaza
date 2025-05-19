@@ -1,0 +1,31 @@
+.popup-color-picker #_button {
+    color: var(--color-fishbase-mackerel);
+    background-color: var(--color-fishbase-catfish);
+    height: 100%;
+    padding: 7px 8px;
+}
+
+.popup-color-picker #_button UIImage {
+    --unity-image-tint-color: var(--color-fishbase-salmon);
+    width: 12px;
+    height: 100%;
+    rotate: 180deg;
+    margin: 0;
+    margin-left: 4px;
+}
+
+.popup-color-picker:checked #_button {
+    background-color: var(--color-accents-secondary-25);
+}
+
+.popup-color-picker:checked #_button UIImage {
+    --unity-image-tint-color: var(--color-accents-secondary);
+}
+
+.popup-color-picker #_button #_color {
+    display: none;
+    width: 18px;
+    height: 18px;
+    border-width: 0;
+    border-radius: 6px;
+}

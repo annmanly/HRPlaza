@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<UXML
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns="UnityEngine.UIElements"
+    xmlns:hr="Highrise.UI"
+    xmlns:editor="UnityEditor.UIElements"
+    xsi:noNamespaceSchemaLocation="../../../../../../UIElementsSchema/UIElements.xsd"
+>
+
+  <hr:UIEventSuperBoostInactiveContent class="event-super-boost-inactive-content">
+    <hr:UILabel class="event-super-boost-inactive-content__label" key="super_boost_description" />
+    <VisualElement name="_itemsContainer" class="event-super-boost-inactive-content__items-container"/>
+  </hr:UIEventSuperBoostInactiveContent>
+
+</UXML>

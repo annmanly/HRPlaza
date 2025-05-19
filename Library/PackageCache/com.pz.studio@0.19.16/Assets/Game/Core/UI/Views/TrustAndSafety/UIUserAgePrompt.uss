@@ -1,0 +1,45 @@
+.user-age-prompt {
+    background-color: var(--color-fishbase-eel);
+    height: 100%;
+    padding-top: var(--safe-area-top);
+}
+
+.user-age-prompt #_icon {
+    width: 118px;
+    height: 118px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 24px;
+    --unity-image-tint-color: var(--color-accents-primary);
+}
+
+.user-age-prompt #_title {
+    -unity-text-align: middle-center;
+    white-space: normal;
+    color: var(--color-fishbase-whitefish);
+    margin-top: 24px;
+    margin-left: 16px;
+    margin-right: 16px;
+    -unity-font-style: bold;
+    font-size: 24px;
+}
+
+.user-age-prompt #_subtitle {
+    -unity-text-align: middle-center;
+    white-space: normal;
+    color: var(--color-fishbase-mackerel);
+    margin-top: 24px;
+    margin-left: 16px;
+    margin-right: 16px;
+    font-size: 15px;
+}
+
+.user-age-prompt #_datePicker {
+    margin: 16px;
+}
+
+.user-age-prompt #_submitButton {
+    margin-top: auto;
+    margin: 16px;
+}
+

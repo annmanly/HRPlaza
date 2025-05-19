@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<UXML
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns="UnityEngine.UIElements"
+    xmlns:hr="Highrise.UI"
+    xmlns:editor="UnityEditor.UIElements"
+    xsi:noNamespaceSchemaLocation="../../../../../../UIElementsSchema/UIElements.xsd"
+>
+
+  <hr:UIActionSheetButton class="action-sheet-button">
+    <hr:UIImage class="action-sheet-button-image" name="_icon"/>
+    <VisualElement class="action-sheet-button-middle rtl-reverse">
+      <hr:UILabel class="action-sheet-button-title" name="_titleLabel"/>
+      <VisualElement name="_currenciesContainer" />
+    </VisualElement>
+    <hr:UIImage class="action-sheet-button-arrow icon-right-arrow" name="_rightArrow"/>
+  </hr:UIActionSheetButton>
+
+</UXML>

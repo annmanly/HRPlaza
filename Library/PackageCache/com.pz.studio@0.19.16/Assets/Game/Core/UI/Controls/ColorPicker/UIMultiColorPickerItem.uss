@@ -1,0 +1,17 @@
+.multi-color-picker-item {
+    height: 36px;
+    width: 36px;
+    border-radius: 12px;
+    justify-content: center;
+    align-items: center;
+}
+
+.multi-color-picker-item > #_image {
+    height: 36px;
+    width: 36px;
+}
+
+.multi-color-picker-item:checked {
+    border-color: var(--color-accents-primary);
+    border-width: 3px;
+}

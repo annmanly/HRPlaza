@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<UXML
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xmlns="UnityEngine.UIElements"
+        xmlns:hr="Highrise.UI"
+        xmlns:editor="UnityEditor.UIElements"
+        xsi:noNamespaceSchemaLocation="../../../../../UIElementsSchema/UIElements.xsd"
+>
+
+    <hr:UIEventHowToPlay class="event-how-to-play">
+        <VisualElement>
+            <hr:UICarousel name="_carousel"/>
+            <VisualElement name="_pageIndicatorContainer" class="overlay-bottom">
+                <hr:UIPageIndicator name="_pageIndicator" />
+            </VisualElement>
+        </VisualElement>
+        <hr:UILabel name="_caption" class="event-how-to-play__caption"/>
+        <hr:UILabel name="_moreDetailsButton" key="learn_more" class="event-how-to-play__more-details-button"/>
+        <VisualElement class="event-how-to-play__buttons rtl-reverse">
+            <hr:UIButton name="_prevButton" class="event-how-to-play__prev-button button">
+                <hr:UILabel key="back" />
+            </hr:UIButton>
+            <hr:UIButton name="_nextButton" class="event-how-to-play__next-button button-primary">
+                <hr:UILabel name="_nextButtonLabel"/>
+            </hr:UIButton>
+        </VisualElement>
+    </hr:UIEventHowToPlay>
+
+</UXML>
