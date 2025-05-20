@@ -17,7 +17,6 @@ function self:ClientAwake()
         if player == client.localPlayer then
             local camera = client.mainCamera:GetComponent(RTSCamera)
             camera.ResetCamera()
-            camera.SetYaw(angle)
         end
     end)
 

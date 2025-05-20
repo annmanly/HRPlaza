@@ -22,7 +22,7 @@ AssetImportWorker0
 -logFile
 Logs/AssetImportWorker0.log
 -srvPort
-59512
+49815
 Successfully changed project path to: /Users/annmanly/Downloads/Highrise Studio Projects/HRPlazaGit
 /Users/annmanly/Downloads/Highrise Studio Projects/HRPlazaGit
 [UnityMemory] Configuration Parameters - Can be set up in boot.config
@@ -56,12 +56,12 @@ Successfully changed project path to: /Users/annmanly/Downloads/Highrise Studio 
     "memorysetup-temp-allocator-size-cloud-worker=32768"
     "memorysetup-temp-allocator-size-gi-baking-worker=262144"
     "memorysetup-temp-allocator-size-gfx=262144"
-Player connection [8391167808] Host "[IP] 192.168.1.5 [Port] 0 [Flags] 2 [Guid] 660292780 [EditorId] 660292780 [Version] 1048832 [Id] OSXEditor(0,MacBook-Pro.local) [Debug] 1 [PackageName] OSXEditor [ProjectName] Editor" joined multi-casting on [225.0.0.222:54997]...
+Player connection [8376569664] Host "[IP] 192.168.1.5 [Port] 0 [Flags] 2 [Guid] 3696791026 [EditorId] 3696791026 [Version] 1048832 [Id] OSXEditor(0,MacBook-Pro.local) [Debug] 1 [PackageName] OSXEditor [ProjectName] Editor" joined multi-casting on [225.0.0.222:54997]...
 
-Player connection [8391167808] Host "[IP] 192.168.1.5 [Port] 0 [Flags] 2 [Guid] 660292780 [EditorId] 660292780 [Version] 1048832 [Id] OSXEditor(0,MacBook-Pro.local) [Debug] 1 [PackageName] OSXEditor [ProjectName] Editor" joined alternative multi-casting on [225.0.0.222:34997]...
+Player connection [8376569664] Host "[IP] 192.168.1.5 [Port] 0 [Flags] 2 [Guid] 3696791026 [EditorId] 3696791026 [Version] 1048832 [Id] OSXEditor(0,MacBook-Pro.local) [Debug] 1 [PackageName] OSXEditor [ProjectName] Editor" joined alternative multi-casting on [225.0.0.222:34997]...
 
 [Physics::Module] Initialized MultithreadedJobDispatcher with 7 workers.
-Refreshing native plugins compatible for Editor in 52.96 ms, found 5 plugins.
+Refreshing native plugins compatible for Editor in 17.24 ms, found 5 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Initialize engine version: 2022.3.30f1 (70558241b701)
 [Subsystems] Discovering subsystems at path /Applications/Unity/Hub/Editor/2022.3.30f1/Unity.app/Contents/Resources/UnitySubsystems
@@ -76,44 +76,44 @@ Initialize mono
 Mono path[0] = '/Applications/Unity/Hub/Editor/2022.3.30f1/Unity.app/Contents/Managed'
 Mono path[1] = '/Applications/Unity/Hub/Editor/2022.3.30f1/Unity.app/Contents/MonoBleedingEdge/lib/mono/unityjit-macos'
 Mono config path = '/Applications/Unity/Hub/Editor/2022.3.30f1/Unity.app/Contents/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56955
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56521
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
 Register platform support module: /Applications/Unity/Hub/Editor/2022.3.30f1/Unity.app/Contents/PlaybackEngines/MacStandaloneSupport/UnityEditor.OSXStandalone.Extensions.dll
-Registered in 0.001961 seconds.
-- Loaded All Assemblies, in  0.216 seconds
+Registered in 0.002219 seconds.
+- Loaded All Assemblies, in  0.232 seconds
 Native extension for OSXStandalone target not found
 Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  0.138 seconds
-Domain Reload Profiling: 354ms
-	BeginReloadAssembly (82ms)
+- Finished resetting the current domain, in  0.145 seconds
+Domain Reload Profiling: 377ms
+	BeginReloadAssembly (87ms)
 		ExecutionOrderSort (0ms)
 		DisableScriptedObjects (0ms)
 		BackupInstance (0ms)
 		ReleaseScriptingObjects (0ms)
 		CreateAndSetChildDomain (0ms)
-	RebuildCommonClasses (21ms)
+	RebuildCommonClasses (22ms)
 	RebuildNativeTypeToScriptingClass (7ms)
-	initialDomainReloadingComplete (26ms)
-	LoadAllAssembliesAndSetupDomain (80ms)
-		LoadAssemblies (82ms)
+	initialDomainReloadingComplete (27ms)
+	LoadAllAssembliesAndSetupDomain (88ms)
+		LoadAssemblies (88ms)
 		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (78ms)
-			TypeCache.Refresh (76ms)
-				TypeCache.ScanAssembly (68ms)
+		AnalyzeDomain (87ms)
+			TypeCache.Refresh (86ms)
+				TypeCache.ScanAssembly (76ms)
 			ScanForSourceGeneratedMonoScriptInfo (0ms)
-			ResolveRequiredComponents (1ms)
-	FinalizeReload (138ms)
+			ResolveRequiredComponents (0ms)
+	FinalizeReload (146ms)
 		ReleaseScriptCaches (0ms)
 		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (104ms)
+		SetupLoadedEditorAssemblies (110ms)
 			LogAssemblyErrors (0ms)
 			InitializePlatformSupportModulesInManaged (5ms)
-			SetLoadedEditorAssemblies (3ms)
+			SetLoadedEditorAssemblies (4ms)
 			RefreshPlugins (0ms)
 			BeforeProcessingInitializeOnLoad (1ms)
-			ProcessInitializeOnLoadAttributes (73ms)
-			ProcessInitializeOnLoadMethodAttributes (22ms)
+			ProcessInitializeOnLoadAttributes (77ms)
+			ProcessInitializeOnLoadMethodAttributes (24ms)
 			AfterProcessingInitializeOnLoad (0ms)
 			EditorAssembliesLoaded (0ms)
 		ExecutionOrderSort2 (0ms)
@@ -122,8 +122,8 @@ Domain Reload Profiling: 354ms
 Worker process is ready to serve import requests
 Begin MonoManager ReloadAssembly
 Symbol file LoadedFromMemory is not a mono symbol file
-- Loaded All Assemblies, in  0.738 seconds
-Refreshing native plugins compatible for Editor in 3.82 ms, found 5 plugins.
+- Loaded All Assemblies, in  0.751 seconds
+Refreshing native plugins compatible for Editor in 4.02 ms, found 5 plugins.
 Native extension for OSXStandalone target not found
 Package Manager log level set to [2]
 [Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
@@ -132,48 +132,48 @@ Package Manager log level set to [2]
 [MODES] ModeService[none].Initialize
 [MODES] ModeService[none].LoadModes
 Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  0.649 seconds
-Domain Reload Profiling: 1388ms
-	BeginReloadAssembly (67ms)
+- Finished resetting the current domain, in  0.701 seconds
+Domain Reload Profiling: 1452ms
+	BeginReloadAssembly (71ms)
 		ExecutionOrderSort (0ms)
-		DisableScriptedObjects (2ms)
+		DisableScriptedObjects (3ms)
 		BackupInstance (0ms)
 		ReleaseScriptingObjects (0ms)
-		CreateAndSetChildDomain (11ms)
-	RebuildCommonClasses (19ms)
+		CreateAndSetChildDomain (13ms)
+	RebuildCommonClasses (21ms)
 	RebuildNativeTypeToScriptingClass (7ms)
-	initialDomainReloadingComplete (23ms)
-	LoadAllAssembliesAndSetupDomain (622ms)
-		LoadAssemblies (416ms)
+	initialDomainReloadingComplete (25ms)
+	LoadAllAssembliesAndSetupDomain (627ms)
+		LoadAssemblies (400ms)
 		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (237ms)
-			TypeCache.Refresh (196ms)
-				TypeCache.ScanAssembly (175ms)
-			ScanForSourceGeneratedMonoScriptInfo (32ms)
-			ResolveRequiredComponents (9ms)
-	FinalizeReload (650ms)
+		AnalyzeDomain (260ms)
+			TypeCache.Refresh (218ms)
+				TypeCache.ScanAssembly (193ms)
+			ScanForSourceGeneratedMonoScriptInfo (30ms)
+			ResolveRequiredComponents (10ms)
+	FinalizeReload (701ms)
 		ReleaseScriptCaches (0ms)
 		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (537ms)
+		SetupLoadedEditorAssemblies (575ms)
 			LogAssemblyErrors (0ms)
 			InitializePlatformSupportModulesInManaged (2ms)
 			SetLoadedEditorAssemblies (3ms)
 			RefreshPlugins (0ms)
-			BeforeProcessingInitializeOnLoad (46ms)
-			ProcessInitializeOnLoadAttributes (343ms)
-			ProcessInitializeOnLoadMethodAttributes (142ms)
-			AfterProcessingInitializeOnLoad (0ms)
+			BeforeProcessingInitializeOnLoad (50ms)
+			ProcessInitializeOnLoadAttributes (362ms)
+			ProcessInitializeOnLoadMethodAttributes (157ms)
+			AfterProcessingInitializeOnLoad (1ms)
 			EditorAssembliesLoaded (0ms)
 		ExecutionOrderSort2 (0ms)
 		AwakeInstancesAfterBackupRestoration (2ms)
 Launching external process: /Applications/Unity/Hub/Editor/2022.3.30f1/Unity.app/Contents/Tools/UnityShaderCompiler
 Launched and connected shader compiler UnityShaderCompiler after 0.03 seconds
-Refreshing native plugins compatible for Editor in 3.87 ms, found 5 plugins.
+Refreshing native plugins compatible for Editor in 4.52 ms, found 5 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 7731 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 165 unused Assets / (0.7 MB). Loaded Objects now: 8499.
-Memory consumption went from 377.7 MB to 377.0 MB.
-Total: 8.986250 ms (FindLiveObjects: 0.276458 ms CreateObjectMapping: 0.208875 ms MarkObjects: 8.025875 ms  DeleteObjects: 0.474583 ms)
+Unloading 7732 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 165 unused Assets / (0.7 MB). Loaded Objects now: 8500.
+Memory consumption went from 377.6 MB to 377.0 MB.
+Total: 9.038291 ms (FindLiveObjects: 0.284417 ms CreateObjectMapping: 0.211625 ms MarkObjects: 8.063833 ms  DeleteObjects: 0.477833 ms)
 
 AssetImportParameters requested are different than current active one (requested -> active):
   custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
@@ -190,19 +190,19 @@ AssetImportParameters requested are different than current active one (requested
   custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
 ========================================================================
 Received Import Request.
-  Time since last request: 68253.030913 seconds.
-  path: Assets/Prefabs/MarketPlaceItems.prefab
-  artifactKey: Guid(2d704f0e5ee56445598cce7c515c650c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/MarketPlaceItems.prefab using Guid(2d704f0e5ee56445598cce7c515c650c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '133f8d257f10b39b744ff30e054bad33') in 0.227691 seconds
+  Time since last request: 1510.128105 seconds.
+  path: Assets/Scripts/EventsCountdownScripts/Events_CountdownNew.lua
+  artifactKey: Guid(7934e8fd965c042f481c2483d80167c6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/EventsCountdownScripts/Events_CountdownNew.lua using Guid(7934e8fd965c042f481c2483d80167c6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a5cd939616a747994c46c328700bcb22') in 0.044303 seconds
 Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 128
+Number of asset objects unloaded after import = 32
 ========================================================================
 Received Prepare
 Begin MonoManager ReloadAssembly
-Thread 0x341087000 may have been prematurely finalized
+Thread 0x348bab000 may have been prematurely finalized
 Symbol file LoadedFromMemory is not a mono symbol file
-- Loaded All Assemblies, in  0.346 seconds
-Refreshing native plugins compatible for Editor in 3.50 ms, found 5 plugins.
+- Loaded All Assemblies, in  0.295 seconds
+Refreshing native plugins compatible for Editor in 3.48 ms, found 5 plugins.
 Native extension for OSXStandalone target not found
 [Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
 [Package Manager] UpmClient::Send -- Unable to send message (not connected to UPM process).
@@ -210,46 +210,530 @@ Native extension for OSXStandalone target not found
 [MODES] ModeService[none].Initialize
 [MODES] ModeService[none].LoadModes
 Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  1.193 seconds
-Domain Reload Profiling: 1539ms
-	BeginReloadAssembly (116ms)
+- Finished resetting the current domain, in  1.179 seconds
+Domain Reload Profiling: 1473ms
+	BeginReloadAssembly (89ms)
 		ExecutionOrderSort (0ms)
-		DisableScriptedObjects (7ms)
+		DisableScriptedObjects (2ms)
 		BackupInstance (0ms)
 		ReleaseScriptingObjects (0ms)
-		CreateAndSetChildDomain (53ms)
+		CreateAndSetChildDomain (40ms)
+	RebuildCommonClasses (18ms)
+	RebuildNativeTypeToScriptingClass (7ms)
+	initialDomainReloadingComplete (15ms)
+	LoadAllAssembliesAndSetupDomain (165ms)
+		LoadAssemblies (172ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (18ms)
+			TypeCache.Refresh (7ms)
+				TypeCache.ScanAssembly (0ms)
+			ScanForSourceGeneratedMonoScriptInfo (0ms)
+			ResolveRequiredComponents (9ms)
+	FinalizeReload (1179ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (419ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (2ms)
+			SetLoadedEditorAssemblies (3ms)
+			RefreshPlugins (0ms)
+			BeforeProcessingInitializeOnLoad (45ms)
+			ProcessInitializeOnLoadAttributes (251ms)
+			ProcessInitializeOnLoadMethodAttributes (117ms)
+			AfterProcessingInitializeOnLoad (1ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (5ms)
+Refreshing native plugins compatible for Editor in 4.42 ms, found 5 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 7521 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 126 unused Assets / (0.7 MB). Loaded Objects now: 8523.
+Memory consumption went from 305.2 MB to 304.5 MB.
+Total: 8.560709 ms (FindLiveObjects: 0.293709 ms CreateObjectMapping: 0.210125 ms MarkObjects: 7.672167 ms  DeleteObjects: 0.384042 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:framework-osx-AVFoundation: e770b220cccbd017edd2c1fefb359320 -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:AudioImporter_EditorPlatform: 3918e3fc78b5a79bad01e8451be0beb8 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:CustomObjectIndexerAttribute: 72b91833f83ae208fae7752999fa3104 -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+========================================================================
+Received Prepare
+Begin MonoManager ReloadAssembly
+Thread 0x16b61f000 may have been prematurely finalized
+Symbol file LoadedFromMemory is not a mono symbol file
+- Loaded All Assemblies, in  0.336 seconds
+Refreshing native plugins compatible for Editor in 3.69 ms, found 5 plugins.
+Native extension for OSXStandalone target not found
+[Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] UpmClient::Send -- Unable to send message (not connected to UPM process).
+[Package Manager] Cannot connect to Unity Package Manager local server
+[MODES] ModeService[none].Initialize
+[MODES] ModeService[none].LoadModes
+HR_STUDIO: Lua: Failed to find lua script 'WorldScene Variant' 88de721fb90843944b4f498ca102c1b3 (Packages/com.pz.studio/Runtime/Lua/PlayerCharacterSpawner.lua)
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  1.303 seconds
+Domain Reload Profiling: 1640ms
+	BeginReloadAssembly (115ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (2ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (59ms)
 	RebuildCommonClasses (19ms)
 	RebuildNativeTypeToScriptingClass (7ms)
 	initialDomainReloadingComplete (16ms)
-	LoadAllAssembliesAndSetupDomain (188ms)
-		LoadAssemblies (197ms)
+	LoadAllAssembliesAndSetupDomain (179ms)
+		LoadAssemblies (188ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (19ms)
+			TypeCache.Refresh (8ms)
+				TypeCache.ScanAssembly (0ms)
+			ScanForSourceGeneratedMonoScriptInfo (0ms)
+			ResolveRequiredComponents (10ms)
+	FinalizeReload (1303ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (412ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (2ms)
+			SetLoadedEditorAssemblies (3ms)
+			RefreshPlugins (0ms)
+			BeforeProcessingInitializeOnLoad (46ms)
+			ProcessInitializeOnLoadAttributes (238ms)
+			ProcessInitializeOnLoadMethodAttributes (122ms)
+			AfterProcessingInitializeOnLoad (1ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (7ms)
+Refreshing native plugins compatible for Editor in 4.69 ms, found 5 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 7563 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 128 unused Assets / (0.7 MB). Loaded Objects now: 8794.
+Memory consumption went from 317.1 MB to 316.4 MB.
+Total: 14.406250 ms (FindLiveObjects: 0.345666 ms CreateObjectMapping: 0.257542 ms MarkObjects: 13.184167 ms  DeleteObjects: 0.618334 ms)
+
+Prepare: number of updated asset objects reloaded= 1
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:framework-osx-AVFoundation: e770b220cccbd017edd2c1fefb359320 -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:AudioImporter_EditorPlatform: 3918e3fc78b5a79bad01e8451be0beb8 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:CustomObjectIndexerAttribute: 72b91833f83ae208fae7752999fa3104 -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+========================================================================
+Received Prepare
+Begin MonoManager ReloadAssembly
+Thread 0x16b61f000 may have been prematurely finalized
+Symbol file LoadedFromMemory is not a mono symbol file
+- Loaded All Assemblies, in  0.300 seconds
+Refreshing native plugins compatible for Editor in 3.63 ms, found 5 plugins.
+Native extension for OSXStandalone target not found
+[Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] UpmClient::Send -- Unable to send message (not connected to UPM process).
+[Package Manager] Cannot connect to Unity Package Manager local server
+[MODES] ModeService[none].Initialize
+[MODES] ModeService[none].LoadModes
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  1.202 seconds
+Domain Reload Profiling: 1503ms
+	BeginReloadAssembly (98ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (2ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (45ms)
+	RebuildCommonClasses (18ms)
+	RebuildNativeTypeToScriptingClass (7ms)
+	initialDomainReloadingComplete (16ms)
+	LoadAllAssembliesAndSetupDomain (161ms)
+		LoadAssemblies (169ms)
 		RebuildTransferFunctionScriptingTraits (0ms)
 		AnalyzeDomain (18ms)
 			TypeCache.Refresh (8ms)
 				TypeCache.ScanAssembly (0ms)
 			ScanForSourceGeneratedMonoScriptInfo (0ms)
 			ResolveRequiredComponents (9ms)
-	FinalizeReload (1193ms)
+	FinalizeReload (1203ms)
 		ReleaseScriptCaches (0ms)
 		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (429ms)
+		SetupLoadedEditorAssemblies (409ms)
 			LogAssemblyErrors (0ms)
 			InitializePlatformSupportModulesInManaged (2ms)
 			SetLoadedEditorAssemblies (3ms)
 			RefreshPlugins (0ms)
-			BeforeProcessingInitializeOnLoad (48ms)
-			ProcessInitializeOnLoadAttributes (249ms)
-			ProcessInitializeOnLoadMethodAttributes (126ms)
+			BeforeProcessingInitializeOnLoad (46ms)
+			ProcessInitializeOnLoadAttributes (243ms)
+			ProcessInitializeOnLoadMethodAttributes (114ms)
 			AfterProcessingInitializeOnLoad (1ms)
 			EditorAssembliesLoaded (0ms)
 		ExecutionOrderSort2 (0ms)
-		AwakeInstancesAfterBackupRestoration (6ms)
-Refreshing native plugins compatible for Editor in 4.29 ms, found 5 plugins.
+		AwakeInstancesAfterBackupRestoration (8ms)
+Refreshing native plugins compatible for Editor in 4.38 ms, found 5 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 7521 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 126 unused Assets / (0.7 MB). Loaded Objects now: 8567.
-Memory consumption went from 308.1 MB to 307.4 MB.
-Total: 8.794625 ms (FindLiveObjects: 0.288000 ms CreateObjectMapping: 0.206000 ms MarkObjects: 7.936375 ms  DeleteObjects: 0.363834 ms)
+Unloading 7532 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 126 unused Assets / (0.7 MB). Loaded Objects now: 8828.
+Memory consumption went from 319.8 MB to 319.1 MB.
+Total: 9.173167 ms (FindLiveObjects: 0.303334 ms CreateObjectMapping: 0.222208 ms MarkObjects: 8.236375 ms  DeleteObjects: 0.410583 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:framework-osx-AVFoundation: e770b220cccbd017edd2c1fefb359320 -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:AudioImporter_EditorPlatform: 3918e3fc78b5a79bad01e8451be0beb8 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:CustomObjectIndexerAttribute: 72b91833f83ae208fae7752999fa3104 -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+========================================================================
+Received Prepare
+Begin MonoManager ReloadAssembly
+Thread 0x16b61f000 may have been prematurely finalized
+Symbol file LoadedFromMemory is not a mono symbol file
+- Loaded All Assemblies, in  0.337 seconds
+Refreshing native plugins compatible for Editor in 3.81 ms, found 5 plugins.
+Native extension for OSXStandalone target not found
+[Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] UpmClient::Send -- Unable to send message (not connected to UPM process).
+[Package Manager] Cannot connect to Unity Package Manager local server
+[MODES] ModeService[none].Initialize
+[MODES] ModeService[none].LoadModes
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  1.238 seconds
+Domain Reload Profiling: 1575ms
+	BeginReloadAssembly (117ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (2ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (58ms)
+	RebuildCommonClasses (19ms)
+	RebuildNativeTypeToScriptingClass (7ms)
+	initialDomainReloadingComplete (15ms)
+	LoadAllAssembliesAndSetupDomain (179ms)
+		LoadAssemblies (190ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (19ms)
+			TypeCache.Refresh (8ms)
+				TypeCache.ScanAssembly (0ms)
+			ScanForSourceGeneratedMonoScriptInfo (0ms)
+			ResolveRequiredComponents (10ms)
+	FinalizeReload (1238ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (403ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (2ms)
+			SetLoadedEditorAssemblies (3ms)
+			RefreshPlugins (0ms)
+			BeforeProcessingInitializeOnLoad (46ms)
+			ProcessInitializeOnLoadAttributes (238ms)
+			ProcessInitializeOnLoadMethodAttributes (114ms)
+			AfterProcessingInitializeOnLoad (1ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (7ms)
+Refreshing native plugins compatible for Editor in 4.48 ms, found 5 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 7518 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 126 unused Assets / (0.7 MB). Loaded Objects now: 8836.
+Memory consumption went from 324.6 MB to 323.9 MB.
+Total: 9.276250 ms (FindLiveObjects: 0.285875 ms CreateObjectMapping: 0.231834 ms MarkObjects: 8.300167 ms  DeleteObjects: 0.457917 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:framework-osx-AVFoundation: e770b220cccbd017edd2c1fefb359320 -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:AudioImporter_EditorPlatform: 3918e3fc78b5a79bad01e8451be0beb8 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:CustomObjectIndexerAttribute: 72b91833f83ae208fae7752999fa3104 -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+========================================================================
+Received Prepare
+Begin MonoManager ReloadAssembly
+Thread 0x16b61f000 may have been prematurely finalized
+Symbol file LoadedFromMemory is not a mono symbol file
+- Loaded All Assemblies, in  0.366 seconds
+Refreshing native plugins compatible for Editor in 3.88 ms, found 5 plugins.
+Native extension for OSXStandalone target not found
+[Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] UpmClient::Send -- Unable to send message (not connected to UPM process).
+[Package Manager] Cannot connect to Unity Package Manager local server
+[MODES] ModeService[none].Initialize
+[MODES] ModeService[none].LoadModes
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  1.314 seconds
+Domain Reload Profiling: 1681ms
+	BeginReloadAssembly (118ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (2ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (62ms)
+	RebuildCommonClasses (19ms)
+	RebuildNativeTypeToScriptingClass (7ms)
+	initialDomainReloadingComplete (15ms)
+	LoadAllAssembliesAndSetupDomain (207ms)
+		LoadAssemblies (202ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (31ms)
+			TypeCache.Refresh (13ms)
+				TypeCache.ScanAssembly (0ms)
+			ScanForSourceGeneratedMonoScriptInfo (0ms)
+			ResolveRequiredComponents (18ms)
+	FinalizeReload (1314ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (414ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (2ms)
+			SetLoadedEditorAssemblies (3ms)
+			RefreshPlugins (0ms)
+			BeforeProcessingInitializeOnLoad (47ms)
+			ProcessInitializeOnLoadAttributes (245ms)
+			ProcessInitializeOnLoadMethodAttributes (116ms)
+			AfterProcessingInitializeOnLoad (1ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (7ms)
+Refreshing native plugins compatible for Editor in 4.77 ms, found 5 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 7518 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 126 unused Assets / (0.7 MB). Loaded Objects now: 8844.
+Memory consumption went from 330.1 MB to 329.5 MB.
+Total: 9.524041 ms (FindLiveObjects: 0.280958 ms CreateObjectMapping: 0.172584 ms MarkObjects: 8.602500 ms  DeleteObjects: 0.467291 ms)
+
+Prepare: number of updated asset objects reloaded= 1
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:framework-osx-AVFoundation: e770b220cccbd017edd2c1fefb359320 -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:AudioImporter_EditorPlatform: 3918e3fc78b5a79bad01e8451be0beb8 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:CustomObjectIndexerAttribute: 72b91833f83ae208fae7752999fa3104 -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+========================================================================
+Received Prepare
+Begin MonoManager ReloadAssembly
+Thread 0x16b61f000 may have been prematurely finalized
+Symbol file LoadedFromMemory is not a mono symbol file
+- Loaded All Assemblies, in  0.363 seconds
+Refreshing native plugins compatible for Editor in 3.53 ms, found 5 plugins.
+Native extension for OSXStandalone target not found
+[Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] UpmClient::Send -- Unable to send message (not connected to UPM process).
+[Package Manager] Cannot connect to Unity Package Manager local server
+[MODES] ModeService[none].Initialize
+[MODES] ModeService[none].LoadModes
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  1.374 seconds
+Domain Reload Profiling: 1737ms
+	BeginReloadAssembly (131ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (2ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (75ms)
+	RebuildCommonClasses (19ms)
+	RebuildNativeTypeToScriptingClass (7ms)
+	initialDomainReloadingComplete (16ms)
+	LoadAllAssembliesAndSetupDomain (190ms)
+		LoadAssemblies (198ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (19ms)
+			TypeCache.Refresh (8ms)
+				TypeCache.ScanAssembly (0ms)
+			ScanForSourceGeneratedMonoScriptInfo (0ms)
+			ResolveRequiredComponents (10ms)
+	FinalizeReload (1374ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (405ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (2ms)
+			SetLoadedEditorAssemblies (3ms)
+			RefreshPlugins (0ms)
+			BeforeProcessingInitializeOnLoad (46ms)
+			ProcessInitializeOnLoadAttributes (241ms)
+			ProcessInitializeOnLoadMethodAttributes (112ms)
+			AfterProcessingInitializeOnLoad (1ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (7ms)
+Refreshing native plugins compatible for Editor in 4.40 ms, found 5 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 7518 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 126 unused Assets / (0.7 MB). Loaded Objects now: 8852.
+Memory consumption went from 335.7 MB to 335.0 MB.
+Total: 8.506708 ms (FindLiveObjects: 0.284166 ms CreateObjectMapping: 0.147667 ms MarkObjects: 7.626792 ms  DeleteObjects: 0.447292 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:framework-osx-AVFoundation: e770b220cccbd017edd2c1fefb359320 -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:AudioImporter_EditorPlatform: 3918e3fc78b5a79bad01e8451be0beb8 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:CustomObjectIndexerAttribute: 72b91833f83ae208fae7752999fa3104 -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+========================================================================
+Received Prepare
+Begin MonoManager ReloadAssembly
+Thread 0x16b61f000 may have been prematurely finalized
+Symbol file LoadedFromMemory is not a mono symbol file
+- Loaded All Assemblies, in  0.350 seconds
+Refreshing native plugins compatible for Editor in 3.65 ms, found 5 plugins.
+Native extension for OSXStandalone target not found
+[Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] UpmClient::Send -- Unable to send message (not connected to UPM process).
+[Package Manager] Cannot connect to Unity Package Manager local server
+[MODES] ModeService[none].Initialize
+[MODES] ModeService[none].LoadModes
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  1.322 seconds
+Domain Reload Profiling: 1672ms
+	BeginReloadAssembly (120ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (2ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (65ms)
+	RebuildCommonClasses (19ms)
+	RebuildNativeTypeToScriptingClass (7ms)
+	initialDomainReloadingComplete (16ms)
+	LoadAllAssembliesAndSetupDomain (188ms)
+		LoadAssemblies (195ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (19ms)
+			TypeCache.Refresh (8ms)
+				TypeCache.ScanAssembly (0ms)
+			ScanForSourceGeneratedMonoScriptInfo (0ms)
+			ResolveRequiredComponents (10ms)
+	FinalizeReload (1322ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (412ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (2ms)
+			SetLoadedEditorAssemblies (3ms)
+			RefreshPlugins (0ms)
+			BeforeProcessingInitializeOnLoad (46ms)
+			ProcessInitializeOnLoadAttributes (244ms)
+			ProcessInitializeOnLoadMethodAttributes (116ms)
+			AfterProcessingInitializeOnLoad (0ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (7ms)
+Refreshing native plugins compatible for Editor in 4.37 ms, found 5 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 7518 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 126 unused Assets / (0.7 MB). Loaded Objects now: 8860.
+Memory consumption went from 341.2 MB to 340.6 MB.
+Total: 9.263959 ms (FindLiveObjects: 0.279709 ms CreateObjectMapping: 0.202791 ms MarkObjects: 8.323834 ms  DeleteObjects: 0.457209 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:framework-osx-AVFoundation: e770b220cccbd017edd2c1fefb359320 -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:AudioImporter_EditorPlatform: 3918e3fc78b5a79bad01e8451be0beb8 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:CustomObjectIndexerAttribute: 72b91833f83ae208fae7752999fa3104 -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+========================================================================
+Received Prepare
+Begin MonoManager ReloadAssembly
+Thread 0x16b61f000 may have been prematurely finalized
+Symbol file LoadedFromMemory is not a mono symbol file
+- Loaded All Assemblies, in  0.358 seconds
+Refreshing native plugins compatible for Editor in 3.75 ms, found 5 plugins.
+Native extension for OSXStandalone target not found
+[Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] UpmClient::Send -- Unable to send message (not connected to UPM process).
+[Package Manager] Cannot connect to Unity Package Manager local server
+[MODES] ModeService[none].Initialize
+[MODES] ModeService[none].LoadModes
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  1.355 seconds
+Domain Reload Profiling: 1714ms
+	BeginReloadAssembly (137ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (2ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (79ms)
+	RebuildCommonClasses (19ms)
+	RebuildNativeTypeToScriptingClass (7ms)
+	initialDomainReloadingComplete (16ms)
+	LoadAllAssembliesAndSetupDomain (179ms)
+		LoadAssemblies (188ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (19ms)
+			TypeCache.Refresh (8ms)
+				TypeCache.ScanAssembly (0ms)
+			ScanForSourceGeneratedMonoScriptInfo (0ms)
+			ResolveRequiredComponents (10ms)
+	FinalizeReload (1356ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (416ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (2ms)
+			SetLoadedEditorAssemblies (3ms)
+			RefreshPlugins (0ms)
+			BeforeProcessingInitializeOnLoad (47ms)
+			ProcessInitializeOnLoadAttributes (247ms)
+			ProcessInitializeOnLoadMethodAttributes (115ms)
+			AfterProcessingInitializeOnLoad (0ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (7ms)
+Refreshing native plugins compatible for Editor in 4.37 ms, found 5 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 7518 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 126 unused Assets / (0.7 MB). Loaded Objects now: 8868.
+Memory consumption went from 346.8 MB to 346.1 MB.
+Total: 8.956583 ms (FindLiveObjects: 0.291750 ms CreateObjectMapping: 0.215166 ms MarkObjects: 8.004208 ms  DeleteObjects: 0.444542 ms)
 
 Prepare: number of updated asset objects reloaded= 0
 AssetImportParameters requested are different than current active one (requested -> active):
@@ -267,89 +751,35 @@ AssetImportParameters requested are different than current active one (requested
   custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
 ========================================================================
 Received Import Request.
-  Time since last request: 26.183204 seconds.
-  path: Assets/Prefabs/MarketPlaceItems.prefab
-  artifactKey: Guid(2d704f0e5ee56445598cce7c515c650c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/MarketPlaceItems.prefab using Guid(2d704f0e5ee56445598cce7c515c650c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'eaa404ded94c14265a6845a6f4f1ec90') in 0.187262 seconds
+  Time since last request: 4737.926007 seconds.
+  path: Assets/Textures/map2.png
+  artifactKey: Guid(b40bf2ba3a6e14f4c998efe2ac597bf4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Textures/map2.png using Guid(b40bf2ba3a6e14f4c998efe2ac597bf4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '01ec69318e819401c135424bb5d68b8c') in 0.063685 seconds
+Number of updated asset objects reloaded before import = 1
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 4.739944 seconds.
+  path: Assets/Textures/map2.png
+  artifactKey: Guid(b40bf2ba3a6e14f4c998efe2ac597bf4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Textures/map2.png using Guid(b40bf2ba3a6e14f4c998efe2ac597bf4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3570a12c26edb732dcd0343759458e69') in 0.027598 seconds
 Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 145
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 9.385232 seconds.
+  path: Assets/Textures/map.psd
+  artifactKey: Guid(b186efdc18f104caab71719a7c122dba) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Textures/map.psd using Guid(b186efdc18f104caab71719a7c122dba) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7c180b895fffd80f05053e5e6c27cacc') in 0.007520 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
 ========================================================================
 Received Prepare
 Begin MonoManager ReloadAssembly
-Thread 0x16dd1f000 may have been prematurely finalized
+Thread 0x16b61f000 may have been prematurely finalized
 Symbol file LoadedFromMemory is not a mono symbol file
-- Loaded All Assemblies, in  0.359 seconds
-Refreshing native plugins compatible for Editor in 3.87 ms, found 5 plugins.
-Native extension for OSXStandalone target not found
-[Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
-[Package Manager] UpmClient::Send -- Unable to send message (not connected to UPM process).
-[Package Manager] Cannot connect to Unity Package Manager local server
-[MODES] ModeService[none].Initialize
-[MODES] ModeService[none].LoadModes
-HR_STUDIO: Lua: Failed to find lua script 'WorldScene Variant' c5c51b90893ddc5419e9641764c16452 (Packages/com.pz.studio/Runtime/Lua/PetCharacterController.lua)
-Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  1.387 seconds
-Domain Reload Profiling: 1746ms
-	BeginReloadAssembly (128ms)
-		ExecutionOrderSort (0ms)
-		DisableScriptedObjects (7ms)
-		BackupInstance (0ms)
-		ReleaseScriptingObjects (0ms)
-		CreateAndSetChildDomain (66ms)
-	RebuildCommonClasses (18ms)
-	RebuildNativeTypeToScriptingClass (7ms)
-	initialDomainReloadingComplete (15ms)
-	LoadAllAssembliesAndSetupDomain (190ms)
-		LoadAssemblies (196ms)
-		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (20ms)
-			TypeCache.Refresh (9ms)
-				TypeCache.ScanAssembly (0ms)
-			ScanForSourceGeneratedMonoScriptInfo (0ms)
-			ResolveRequiredComponents (10ms)
-	FinalizeReload (1387ms)
-		ReleaseScriptCaches (0ms)
-		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (417ms)
-			LogAssemblyErrors (0ms)
-			InitializePlatformSupportModulesInManaged (2ms)
-			SetLoadedEditorAssemblies (3ms)
-			RefreshPlugins (0ms)
-			BeforeProcessingInitializeOnLoad (48ms)
-			ProcessInitializeOnLoadAttributes (251ms)
-			ProcessInitializeOnLoadMethodAttributes (112ms)
-			AfterProcessingInitializeOnLoad (1ms)
-			EditorAssembliesLoaded (0ms)
-		ExecutionOrderSort2 (0ms)
-		AwakeInstancesAfterBackupRestoration (11ms)
-Refreshing native plugins compatible for Editor in 4.51 ms, found 5 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 7563 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 130 unused Assets / (0.7 MB). Loaded Objects now: 8872.
-Memory consumption went from 322.7 MB to 322.0 MB.
-Total: 10.320000 ms (FindLiveObjects: 0.284042 ms CreateObjectMapping: 0.177458 ms MarkObjects: 9.467708 ms  DeleteObjects: 0.390417 ms)
-
-Prepare: number of updated asset objects reloaded= 0
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:framework-osx-AVFoundation: e770b220cccbd017edd2c1fefb359320 -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:AudioImporter_EditorPlatform: 3918e3fc78b5a79bad01e8451be0beb8 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:CustomObjectIndexerAttribute: 72b91833f83ae208fae7752999fa3104 -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-========================================================================
-Received Prepare
-Begin MonoManager ReloadAssembly
-Thread 0x17ec07000 may have been prematurely finalized
-Symbol file LoadedFromMemory is not a mono symbol file
-- Loaded All Assemblies, in  0.376 seconds
-Refreshing native plugins compatible for Editor in 3.38 ms, found 5 plugins.
+- Loaded All Assemblies, in  0.375 seconds
+Refreshing native plugins compatible for Editor in 4.35 ms, found 5 plugins.
 Native extension for OSXStandalone target not found
 [Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
 [Package Manager] UpmClient::Send -- Unable to send message (not connected to UPM process).
@@ -357,253 +787,46 @@ Native extension for OSXStandalone target not found
 [MODES] ModeService[none].Initialize
 [MODES] ModeService[none].LoadModes
 Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  1.280 seconds
-Domain Reload Profiling: 1656ms
-	BeginReloadAssembly (128ms)
+- Finished resetting the current domain, in  1.365 seconds
+Domain Reload Profiling: 1741ms
+	BeginReloadAssembly (119ms)
 		ExecutionOrderSort (0ms)
-		DisableScriptedObjects (3ms)
-		BackupInstance (0ms)
-		ReleaseScriptingObjects (0ms)
-		CreateAndSetChildDomain (69ms)
-	RebuildCommonClasses (18ms)
-	RebuildNativeTypeToScriptingClass (7ms)
-	initialDomainReloadingComplete (15ms)
-	LoadAllAssembliesAndSetupDomain (207ms)
-		LoadAssemblies (208ms)
-		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (27ms)
-			TypeCache.Refresh (15ms)
-				TypeCache.ScanAssembly (0ms)
-			ScanForSourceGeneratedMonoScriptInfo (0ms)
-			ResolveRequiredComponents (11ms)
-	FinalizeReload (1280ms)
-		ReleaseScriptCaches (0ms)
-		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (413ms)
-			LogAssemblyErrors (0ms)
-			InitializePlatformSupportModulesInManaged (2ms)
-			SetLoadedEditorAssemblies (3ms)
-			RefreshPlugins (0ms)
-			BeforeProcessingInitializeOnLoad (47ms)
-			ProcessInitializeOnLoadAttributes (246ms)
-			ProcessInitializeOnLoadMethodAttributes (115ms)
-			AfterProcessingInitializeOnLoad (1ms)
-			EditorAssembliesLoaded (0ms)
-		ExecutionOrderSort2 (0ms)
-		AwakeInstancesAfterBackupRestoration (10ms)
-Refreshing native plugins compatible for Editor in 4.53 ms, found 5 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 7532 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 126 unused Assets / (0.7 MB). Loaded Objects now: 8908.
-Memory consumption went from 325.4 MB to 324.7 MB.
-Total: 9.065875 ms (FindLiveObjects: 0.394250 ms CreateObjectMapping: 0.214208 ms MarkObjects: 7.948917 ms  DeleteObjects: 0.508125 ms)
-
-Prepare: number of updated asset objects reloaded= 0
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:framework-osx-AVFoundation: e770b220cccbd017edd2c1fefb359320 -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:AudioImporter_EditorPlatform: 3918e3fc78b5a79bad01e8451be0beb8 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:CustomObjectIndexerAttribute: 72b91833f83ae208fae7752999fa3104 -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-========================================================================
-Received Prepare
-Begin MonoManager ReloadAssembly
-Thread 0x16dd1f000 may have been prematurely finalized
-Symbol file LoadedFromMemory is not a mono symbol file
-- Loaded All Assemblies, in  0.354 seconds
-Refreshing native plugins compatible for Editor in 3.90 ms, found 5 plugins.
-Native extension for OSXStandalone target not found
-[Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
-[Package Manager] UpmClient::Send -- Unable to send message (not connected to UPM process).
-[Package Manager] Cannot connect to Unity Package Manager local server
-[MODES] ModeService[none].Initialize
-[MODES] ModeService[none].LoadModes
-Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  1.339 seconds
-Domain Reload Profiling: 1693ms
-	BeginReloadAssembly (122ms)
-		ExecutionOrderSort (0ms)
-		DisableScriptedObjects (3ms)
-		BackupInstance (0ms)
-		ReleaseScriptingObjects (0ms)
-		CreateAndSetChildDomain (62ms)
-	RebuildCommonClasses (18ms)
-	RebuildNativeTypeToScriptingClass (7ms)
-	initialDomainReloadingComplete (16ms)
-	LoadAllAssembliesAndSetupDomain (190ms)
-		LoadAssemblies (195ms)
-		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (23ms)
-			TypeCache.Refresh (11ms)
-				TypeCache.ScanAssembly (0ms)
-			ScanForSourceGeneratedMonoScriptInfo (0ms)
-			ResolveRequiredComponents (11ms)
-	FinalizeReload (1339ms)
-		ReleaseScriptCaches (0ms)
-		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (428ms)
-			LogAssemblyErrors (0ms)
-			InitializePlatformSupportModulesInManaged (9ms)
-			SetLoadedEditorAssemblies (5ms)
-			RefreshPlugins (0ms)
-			BeforeProcessingInitializeOnLoad (47ms)
-			ProcessInitializeOnLoadAttributes (250ms)
-			ProcessInitializeOnLoadMethodAttributes (117ms)
-			AfterProcessingInitializeOnLoad (1ms)
-			EditorAssembliesLoaded (0ms)
-		ExecutionOrderSort2 (0ms)
-		AwakeInstancesAfterBackupRestoration (9ms)
-Refreshing native plugins compatible for Editor in 4.69 ms, found 5 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 7518 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 126 unused Assets / (0.7 MB). Loaded Objects now: 8916.
-Memory consumption went from 330.2 MB to 329.5 MB.
-Total: 14.239125 ms (FindLiveObjects: 0.341958 ms CreateObjectMapping: 0.215458 ms MarkObjects: 13.137500 ms  DeleteObjects: 0.543666 ms)
-
-Prepare: number of updated asset objects reloaded= 0
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:framework-osx-AVFoundation: e770b220cccbd017edd2c1fefb359320 -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:AudioImporter_EditorPlatform: 3918e3fc78b5a79bad01e8451be0beb8 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:CustomObjectIndexerAttribute: 72b91833f83ae208fae7752999fa3104 -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-========================================================================
-Received Prepare
-Begin MonoManager ReloadAssembly
-Thread 0x16dd1f000 may have been prematurely finalized
-Symbol file LoadedFromMemory is not a mono symbol file
-- Loaded All Assemblies, in  0.409 seconds
-Refreshing native plugins compatible for Editor in 3.31 ms, found 5 plugins.
-Native extension for OSXStandalone target not found
-[Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
-[Package Manager] UpmClient::Send -- Unable to send message (not connected to UPM process).
-[Package Manager] Cannot connect to Unity Package Manager local server
-[MODES] ModeService[none].Initialize
-[MODES] ModeService[none].LoadModes
-Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  1.405 seconds
-Domain Reload Profiling: 1814ms
-	BeginReloadAssembly (154ms)
-		ExecutionOrderSort (0ms)
-		DisableScriptedObjects (3ms)
-		BackupInstance (0ms)
-		ReleaseScriptingObjects (0ms)
-		CreateAndSetChildDomain (89ms)
-	RebuildCommonClasses (22ms)
-	RebuildNativeTypeToScriptingClass (7ms)
-	initialDomainReloadingComplete (19ms)
-	LoadAllAssembliesAndSetupDomain (206ms)
-		LoadAssemblies (215ms)
-		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (20ms)
-			TypeCache.Refresh (9ms)
-				TypeCache.ScanAssembly (0ms)
-			ScanForSourceGeneratedMonoScriptInfo (0ms)
-			ResolveRequiredComponents (10ms)
-	FinalizeReload (1405ms)
-		ReleaseScriptCaches (0ms)
-		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (472ms)
-			LogAssemblyErrors (0ms)
-			InitializePlatformSupportModulesInManaged (2ms)
-			SetLoadedEditorAssemblies (3ms)
-			RefreshPlugins (0ms)
-			BeforeProcessingInitializeOnLoad (48ms)
-			ProcessInitializeOnLoadAttributes (300ms)
-			ProcessInitializeOnLoadMethodAttributes (119ms)
-			AfterProcessingInitializeOnLoad (1ms)
-			EditorAssembliesLoaded (0ms)
-		ExecutionOrderSort2 (0ms)
-		AwakeInstancesAfterBackupRestoration (9ms)
-Refreshing native plugins compatible for Editor in 4.88 ms, found 5 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 7518 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 126 unused Assets / (0.7 MB). Loaded Objects now: 8924.
-Memory consumption went from 335.7 MB to 335.1 MB.
-Total: 13.005000 ms (FindLiveObjects: 0.434166 ms CreateObjectMapping: 0.195542 ms MarkObjects: 11.899916 ms  DeleteObjects: 0.474666 ms)
-
-Prepare: number of updated asset objects reloaded= 0
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:framework-osx-AVFoundation: e770b220cccbd017edd2c1fefb359320 -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:AudioImporter_EditorPlatform: 3918e3fc78b5a79bad01e8451be0beb8 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:CustomObjectIndexerAttribute: 72b91833f83ae208fae7752999fa3104 -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-========================================================================
-Received Prepare
-Begin MonoManager ReloadAssembly
-Thread 0x16dd1f000 may have been prematurely finalized
-Symbol file LoadedFromMemory is not a mono symbol file
-- Loaded All Assemblies, in  0.376 seconds
-Refreshing native plugins compatible for Editor in 4.17 ms, found 5 plugins.
-Native extension for OSXStandalone target not found
-[Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
-[Package Manager] UpmClient::Send -- Unable to send message (not connected to UPM process).
-[Package Manager] Cannot connect to Unity Package Manager local server
-[MODES] ModeService[none].Initialize
-[MODES] ModeService[none].LoadModes
-Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  1.381 seconds
-Domain Reload Profiling: 1758ms
-	BeginReloadAssembly (124ms)
-		ExecutionOrderSort (0ms)
-		DisableScriptedObjects (3ms)
+		DisableScriptedObjects (2ms)
 		BackupInstance (0ms)
 		ReleaseScriptingObjects (0ms)
 		CreateAndSetChildDomain (63ms)
 	RebuildCommonClasses (19ms)
 	RebuildNativeTypeToScriptingClass (7ms)
-	initialDomainReloadingComplete (16ms)
-	LoadAllAssembliesAndSetupDomain (211ms)
-		LoadAssemblies (218ms)
+	initialDomainReloadingComplete (21ms)
+	LoadAllAssembliesAndSetupDomain (210ms)
+		LoadAssemblies (217ms)
 		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (20ms)
-			TypeCache.Refresh (9ms)
+		AnalyzeDomain (19ms)
+			TypeCache.Refresh (8ms)
 				TypeCache.ScanAssembly (0ms)
 			ScanForSourceGeneratedMonoScriptInfo (0ms)
 			ResolveRequiredComponents (10ms)
-	FinalizeReload (1382ms)
+	FinalizeReload (1366ms)
 		ReleaseScriptCaches (0ms)
 		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (441ms)
+		SetupLoadedEditorAssemblies (424ms)
 			LogAssemblyErrors (0ms)
-			InitializePlatformSupportModulesInManaged (2ms)
+			InitializePlatformSupportModulesInManaged (3ms)
 			SetLoadedEditorAssemblies (3ms)
 			RefreshPlugins (0ms)
 			BeforeProcessingInitializeOnLoad (47ms)
-			ProcessInitializeOnLoadAttributes (245ms)
-			ProcessInitializeOnLoadMethodAttributes (143ms)
+			ProcessInitializeOnLoadAttributes (255ms)
+			ProcessInitializeOnLoadMethodAttributes (116ms)
 			AfterProcessingInitializeOnLoad (1ms)
 			EditorAssembliesLoaded (0ms)
 		ExecutionOrderSort2 (0ms)
-		AwakeInstancesAfterBackupRestoration (31ms)
-Refreshing native plugins compatible for Editor in 5.68 ms, found 5 plugins.
+		AwakeInstancesAfterBackupRestoration (7ms)
+Refreshing native plugins compatible for Editor in 5.21 ms, found 5 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Unloading 7518 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 126 unused Assets / (0.7 MB). Loaded Objects now: 8932.
-Memory consumption went from 341.3 MB to 340.6 MB.
-Total: 17.543208 ms (FindLiveObjects: 0.452250 ms CreateObjectMapping: 0.212375 ms MarkObjects: 14.917458 ms  DeleteObjects: 1.960709 ms)
+Unloading 126 unused Assets / (0.7 MB). Loaded Objects now: 8881.
+Memory consumption went from 353.0 MB to 352.3 MB.
+Total: 10.542209 ms (FindLiveObjects: 0.573334 ms CreateObjectMapping: 0.224375 ms MarkObjects: 9.299750 ms  DeleteObjects: 0.444042 ms)
 
 Prepare: number of updated asset objects reloaded= 0
 AssetImportParameters requested are different than current active one (requested -> active):
@@ -619,3 +842,1752 @@ AssetImportParameters requested are different than current active one (requested
   custom:CustomObjectIndexerAttribute: 72b91833f83ae208fae7752999fa3104 -> 
   custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
   custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 330.247509 seconds.
+  path: Assets/Fountain/WriteWishWindow.lua
+  artifactKey: Guid(11a642230dfcf1743b00eaf3fc3b3807) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Fountain/WriteWishWindow.lua using Guid(11a642230dfcf1743b00eaf3fc3b3807) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '10677374b63e9897a5dbb25ec3c58b2d') in 0.053049 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 6
+========================================================================
+Received Import Request.
+  Time since last request: 18.516724 seconds.
+  path: Assets/AnnPlazaRTSTiny.unity
+  artifactKey: Guid(d8c81c613bdbf4594904dccc2733cfe4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AnnPlazaRTSTiny.unity using Guid(d8c81c613bdbf4594904dccc2733cfe4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7a35d908d0bf944cb5f05a60b49e4dda') in 0.000396 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Prepare
+Begin MonoManager ReloadAssembly
+Thread 0x16b61f000 may have been prematurely finalized
+Symbol file LoadedFromMemory is not a mono symbol file
+- Loaded All Assemblies, in  0.355 seconds
+Refreshing native plugins compatible for Editor in 3.78 ms, found 5 plugins.
+Native extension for OSXStandalone target not found
+[Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] UpmClient::Send -- Unable to send message (not connected to UPM process).
+[Package Manager] Cannot connect to Unity Package Manager local server
+[MODES] ModeService[none].Initialize
+[MODES] ModeService[none].LoadModes
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  1.269 seconds
+Domain Reload Profiling: 1626ms
+	BeginReloadAssembly (134ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (3ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (78ms)
+	RebuildCommonClasses (19ms)
+	RebuildNativeTypeToScriptingClass (7ms)
+	initialDomainReloadingComplete (16ms)
+	LoadAllAssembliesAndSetupDomain (182ms)
+		LoadAssemblies (184ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (22ms)
+			TypeCache.Refresh (10ms)
+				TypeCache.ScanAssembly (0ms)
+			ScanForSourceGeneratedMonoScriptInfo (0ms)
+			ResolveRequiredComponents (11ms)
+	FinalizeReload (1269ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (407ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (2ms)
+			SetLoadedEditorAssemblies (3ms)
+			RefreshPlugins (0ms)
+			BeforeProcessingInitializeOnLoad (50ms)
+			ProcessInitializeOnLoadAttributes (239ms)
+			ProcessInitializeOnLoadMethodAttributes (112ms)
+			AfterProcessingInitializeOnLoad (0ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (10ms)
+Refreshing native plugins compatible for Editor in 5.03 ms, found 5 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 7518 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 126 unused Assets / (0.7 MB). Loaded Objects now: 8889.
+Memory consumption went from 358.8 MB to 358.2 MB.
+Total: 9.251333 ms (FindLiveObjects: 0.298000 ms CreateObjectMapping: 0.193709 ms MarkObjects: 8.323833 ms  DeleteObjects: 0.435042 ms)
+
+Prepare: number of updated asset objects reloaded= 1
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:framework-osx-AVFoundation: e770b220cccbd017edd2c1fefb359320 -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:AudioImporter_EditorPlatform: 3918e3fc78b5a79bad01e8451be0beb8 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:CustomObjectIndexerAttribute: 72b91833f83ae208fae7752999fa3104 -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 246.079739 seconds.
+  path: Assets/Template/Scenes/AnnPlazaRTS.unity
+  artifactKey: Guid(e8fe818a6866f41e9a8da43eb8326cf9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Template/Scenes/AnnPlazaRTS.unity using Guid(e8fe818a6866f41e9a8da43eb8326cf9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '05ea1d69ef2f634a0f3d16db713a47fe') in 0.004232 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 130.326685 seconds.
+  path: Assets/Scripts/MapUIScripts/RTSUIMapMenu.uss
+  artifactKey: Guid(700c1652f1a8343729c98e6ad6468a5e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/MapUIScripts/RTSUIMapMenu.uss using Guid(700c1652f1a8343729c98e6ad6468a5e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f2c6630ef832addd86ed5af94495c631') in 0.033516 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Prepare
+Begin MonoManager ReloadAssembly
+Thread 0x16b61f000 may have been prematurely finalized
+Symbol file LoadedFromMemory is not a mono symbol file
+- Loaded All Assemblies, in  0.356 seconds
+Refreshing native plugins compatible for Editor in 3.59 ms, found 5 plugins.
+Native extension for OSXStandalone target not found
+[Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] UpmClient::Send -- Unable to send message (not connected to UPM process).
+[Package Manager] Cannot connect to Unity Package Manager local server
+[MODES] ModeService[none].Initialize
+[MODES] ModeService[none].LoadModes
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  1.307 seconds
+Domain Reload Profiling: 1664ms
+	BeginReloadAssembly (121ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (2ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (63ms)
+	RebuildCommonClasses (19ms)
+	RebuildNativeTypeToScriptingClass (7ms)
+	initialDomainReloadingComplete (15ms)
+	LoadAllAssembliesAndSetupDomain (194ms)
+		LoadAssemblies (198ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (25ms)
+			TypeCache.Refresh (9ms)
+				TypeCache.ScanAssembly (0ms)
+			ScanForSourceGeneratedMonoScriptInfo (0ms)
+			ResolveRequiredComponents (15ms)
+	FinalizeReload (1308ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (414ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (2ms)
+			SetLoadedEditorAssemblies (3ms)
+			RefreshPlugins (0ms)
+			BeforeProcessingInitializeOnLoad (46ms)
+			ProcessInitializeOnLoadAttributes (243ms)
+			ProcessInitializeOnLoadMethodAttributes (119ms)
+			AfterProcessingInitializeOnLoad (1ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (8ms)
+Refreshing native plugins compatible for Editor in 4.42 ms, found 5 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 7518 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 126 unused Assets / (0.7 MB). Loaded Objects now: 8897.
+Memory consumption went from 364.7 MB to 364.0 MB.
+Total: 11.075958 ms (FindLiveObjects: 0.345125 ms CreateObjectMapping: 0.201041 ms MarkObjects: 10.069375 ms  DeleteObjects: 0.459667 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:framework-osx-AVFoundation: e770b220cccbd017edd2c1fefb359320 -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:AudioImporter_EditorPlatform: 3918e3fc78b5a79bad01e8451be0beb8 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:CustomObjectIndexerAttribute: 72b91833f83ae208fae7752999fa3104 -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+========================================================================
+Received Prepare
+Switching render pipeline 7b7fd9122c28c4d15b667c7040e3b3fd -> c5ca88e9b17b24976bac59625274883c
+Refreshing native plugins compatible for Editor in 3.85 ms, found 5 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 14 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 14 unused Assets / (0.6 MB). Loaded Objects now: 8897.
+Memory consumption went from 281.7 MB to 281.0 MB.
+Total: 34.596875 ms (FindLiveObjects: 0.358250 ms CreateObjectMapping: 0.199958 ms MarkObjects: 33.610458 ms  DeleteObjects: 0.427875 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:srp/default-pipeline: 5cac889e1bb74279b6ca9526254788c3 -> b7f79d21c2824c1db566c707043e3bdf
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:framework-osx-AVFoundation: e770b220cccbd017edd2c1fefb359320 -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:AudioImporter_EditorPlatform: 3918e3fc78b5a79bad01e8451be0beb8 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:CustomObjectIndexerAttribute: 72b91833f83ae208fae7752999fa3104 -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 40.235674 seconds.
+  path: Assets/Scripts/MapUIScripts/RTSUIMapMenu.uss
+  artifactKey: Guid(700c1652f1a8343729c98e6ad6468a5e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/MapUIScripts/RTSUIMapMenu.uss using Guid(700c1652f1a8343729c98e6ad6468a5e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fa4165c445987693239ef6a1e83be026') in 0.011806 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 11.190211 seconds.
+  path: Assets/Scripts/MapUIScripts/RTSUIMapMenu.uss
+  artifactKey: Guid(700c1652f1a8343729c98e6ad6468a5e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/MapUIScripts/RTSUIMapMenu.uss using Guid(700c1652f1a8343729c98e6ad6468a5e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '987a4357aebf3b1829717e2d83606bae') in 0.002608 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 20.857982 seconds.
+  path: Assets/Scripts/MapUIScripts/RTSUIMapMenu.uss
+  artifactKey: Guid(700c1652f1a8343729c98e6ad6468a5e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/MapUIScripts/RTSUIMapMenu.uss using Guid(700c1652f1a8343729c98e6ad6468a5e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bf1dc8bb7eb5dd460e1317668a510aa3') in 0.001800 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 29.613433 seconds.
+  path: Assets/Scripts/MapUIScripts/RTSUIMapMenu.uss
+  artifactKey: Guid(700c1652f1a8343729c98e6ad6468a5e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/MapUIScripts/RTSUIMapMenu.uss using Guid(700c1652f1a8343729c98e6ad6468a5e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd576c9b3fc19708da4054bc174d46c1c') in 0.001008 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 33.451935 seconds.
+  path: Assets/Scripts/MapUIScripts/RTSUIMapMenu.uss
+  artifactKey: Guid(700c1652f1a8343729c98e6ad6468a5e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/MapUIScripts/RTSUIMapMenu.uss using Guid(700c1652f1a8343729c98e6ad6468a5e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '44fd5550734e983a2268cb3f935fbc65') in 0.000931 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 8.790932 seconds.
+  path: Assets/Scripts/MapUIScripts/RTSUIMapMenu.uss
+  artifactKey: Guid(700c1652f1a8343729c98e6ad6468a5e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/MapUIScripts/RTSUIMapMenu.uss using Guid(700c1652f1a8343729c98e6ad6468a5e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b5a0a76c2de03b8052546fb504c41b57') in 0.000995 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 15.594799 seconds.
+  path: Assets/Scripts/MapUIScripts/RTSUIMapMenu.uss
+  artifactKey: Guid(700c1652f1a8343729c98e6ad6468a5e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/MapUIScripts/RTSUIMapMenu.uss using Guid(700c1652f1a8343729c98e6ad6468a5e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '22b4ff02f11b209ecaaf4e1c55f87531') in 0.003685 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 13.483892 seconds.
+  path: Assets/Scripts/MapUIScripts/RTSUIMapMenu.uss
+  artifactKey: Guid(700c1652f1a8343729c98e6ad6468a5e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/MapUIScripts/RTSUIMapMenu.uss using Guid(700c1652f1a8343729c98e6ad6468a5e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c8d4bdcb392fd11b1c03f294a479d4bf') in 0.001140 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 13.535164 seconds.
+  path: Assets/Scripts/MapUIScripts/RTSUIMapMenu.uss
+  artifactKey: Guid(700c1652f1a8343729c98e6ad6468a5e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/MapUIScripts/RTSUIMapMenu.uss using Guid(700c1652f1a8343729c98e6ad6468a5e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b632f8ca03ae7b2a8d69b16806fe7def') in 0.016353 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 95.287782 seconds.
+  path: Assets/Scripts/MapUIScripts/RTSUIMapMenu.uss
+  artifactKey: Guid(700c1652f1a8343729c98e6ad6468a5e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/MapUIScripts/RTSUIMapMenu.uss using Guid(700c1652f1a8343729c98e6ad6468a5e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ab6e75f481f32a535aed4bab20915ef3') in 0.003920 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 53.448118 seconds.
+  path: Assets/Scripts/MapUIScripts/RTSUIMapMenu.uss
+  artifactKey: Guid(700c1652f1a8343729c98e6ad6468a5e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/MapUIScripts/RTSUIMapMenu.uss using Guid(700c1652f1a8343729c98e6ad6468a5e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '50829f05130af720d284729ee69d124e') in 0.001157 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 24.284882 seconds.
+  path: Assets/Scripts/MapUIScripts/RTSUIMapMenu.uss
+  artifactKey: Guid(700c1652f1a8343729c98e6ad6468a5e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/MapUIScripts/RTSUIMapMenu.uss using Guid(700c1652f1a8343729c98e6ad6468a5e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '23c70d6638928a3c8997a1105dd857cc') in 0.001211 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 24.334993 seconds.
+  path: Assets/Scripts/MapUIScripts/RTSUIMapMenu.uss
+  artifactKey: Guid(700c1652f1a8343729c98e6ad6468a5e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/MapUIScripts/RTSUIMapMenu.uss using Guid(700c1652f1a8343729c98e6ad6468a5e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '89972c71d8280fdc678599db8c1eeb3d') in 0.001145 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 5.411254 seconds.
+  path: Assets/Scripts/MapUIScripts/RTSUIMapMenu.uss
+  artifactKey: Guid(700c1652f1a8343729c98e6ad6468a5e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/MapUIScripts/RTSUIMapMenu.uss using Guid(700c1652f1a8343729c98e6ad6468a5e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8d72cca57b8378dab33b2c9fa6f47bf5') in 0.001076 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 5.467436 seconds.
+  path: Assets/Scripts/MapUIScripts/RTSUIMapMenu.uss
+  artifactKey: Guid(700c1652f1a8343729c98e6ad6468a5e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/MapUIScripts/RTSUIMapMenu.uss using Guid(700c1652f1a8343729c98e6ad6468a5e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '638fab462763229b3852bc0c1c2649f1') in 0.000876 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 4.879783 seconds.
+  path: Assets/Scripts/MapUIScripts/RTSUIMapMenu.uss
+  artifactKey: Guid(700c1652f1a8343729c98e6ad6468a5e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/MapUIScripts/RTSUIMapMenu.uss using Guid(700c1652f1a8343729c98e6ad6468a5e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '21cb142a7b4e138f09098c0d810a763a') in 0.000919 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 6.152508 seconds.
+  path: Assets/Scripts/MapUIScripts/RTSUIMapMenu.uss
+  artifactKey: Guid(700c1652f1a8343729c98e6ad6468a5e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/MapUIScripts/RTSUIMapMenu.uss using Guid(700c1652f1a8343729c98e6ad6468a5e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '23208a63179777dad30ca5d9e64af157') in 0.001141 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 9.869254 seconds.
+  path: Assets/Scripts/MapUIScripts/RTSUIMapMenu.uss
+  artifactKey: Guid(700c1652f1a8343729c98e6ad6468a5e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/MapUIScripts/RTSUIMapMenu.uss using Guid(700c1652f1a8343729c98e6ad6468a5e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '986d20dbb2c2fd731151719fe3905349') in 0.000878 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 3.996469 seconds.
+  path: Assets/Scripts/MapUIScripts/RTSUIMapMenu.uss
+  artifactKey: Guid(700c1652f1a8343729c98e6ad6468a5e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/MapUIScripts/RTSUIMapMenu.uss using Guid(700c1652f1a8343729c98e6ad6468a5e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ecea6e3f93160e5705839e655b4de5b1') in 0.000902 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 4.864704 seconds.
+  path: Assets/Scripts/MapUIScripts/RTSUIMapMenu.uss
+  artifactKey: Guid(700c1652f1a8343729c98e6ad6468a5e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/MapUIScripts/RTSUIMapMenu.uss using Guid(700c1652f1a8343729c98e6ad6468a5e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '35841b065fe40815b5cff362f9373273') in 0.000865 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 8.807241 seconds.
+  path: Assets/Scripts/MapUIScripts/RTSUIMapMenu.uss
+  artifactKey: Guid(700c1652f1a8343729c98e6ad6468a5e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/MapUIScripts/RTSUIMapMenu.uss using Guid(700c1652f1a8343729c98e6ad6468a5e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f0c6d203593620fe8bf05330c26591b6') in 0.000909 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 6.946425 seconds.
+  path: Assets/Scripts/MapUIScripts/RTSUIMapMenu.uss
+  artifactKey: Guid(700c1652f1a8343729c98e6ad6468a5e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/MapUIScripts/RTSUIMapMenu.uss using Guid(700c1652f1a8343729c98e6ad6468a5e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f292f55a68b23370fd549bc479d87250') in 0.000877 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 23.050219 seconds.
+  path: Assets/Scripts/MapUIScripts/RTSUIMapMenu.uss
+  artifactKey: Guid(700c1652f1a8343729c98e6ad6468a5e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/MapUIScripts/RTSUIMapMenu.uss using Guid(700c1652f1a8343729c98e6ad6468a5e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c2afa25b933c10cd33dcd7e63636e326') in 0.001588 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 29.375883 seconds.
+  path: Assets/Scripts/MapUIScripts/RTSUIMapMenu.uss
+  artifactKey: Guid(700c1652f1a8343729c98e6ad6468a5e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/MapUIScripts/RTSUIMapMenu.uss using Guid(700c1652f1a8343729c98e6ad6468a5e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6789e7c95464f009eec2d9e23b55b141') in 0.003134 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 5.548112 seconds.
+  path: Assets/Scripts/MapUIScripts/RTSUIMapMenu.uss
+  artifactKey: Guid(700c1652f1a8343729c98e6ad6468a5e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/MapUIScripts/RTSUIMapMenu.uss using Guid(700c1652f1a8343729c98e6ad6468a5e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '76503f483abe2ee708e7f584e0d1b147') in 0.000995 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 5.995694 seconds.
+  path: Assets/Scripts/MapUIScripts/RTSUIMapMenu.uss
+  artifactKey: Guid(700c1652f1a8343729c98e6ad6468a5e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/MapUIScripts/RTSUIMapMenu.uss using Guid(700c1652f1a8343729c98e6ad6468a5e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '185b2d4c164b2d79f29ab70d2f9bd229') in 0.001088 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 6.350738 seconds.
+  path: Assets/Scripts/MapUIScripts/RTSUIMapMenu.uss
+  artifactKey: Guid(700c1652f1a8343729c98e6ad6468a5e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/MapUIScripts/RTSUIMapMenu.uss using Guid(700c1652f1a8343729c98e6ad6468a5e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '02cce53ad7ba1d1aec51168f23740451') in 0.000906 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 10.826966 seconds.
+  path: Assets/Scripts/MapUIScripts/RTSUIMapMenu.uss
+  artifactKey: Guid(700c1652f1a8343729c98e6ad6468a5e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/MapUIScripts/RTSUIMapMenu.uss using Guid(700c1652f1a8343729c98e6ad6468a5e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9bd7e15ed9e97cc647c7c6367f9ac197') in 0.001268 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 6.661453 seconds.
+  path: Assets/Scripts/MapUIScripts/RTSUIMapMenu.uss
+  artifactKey: Guid(700c1652f1a8343729c98e6ad6468a5e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/MapUIScripts/RTSUIMapMenu.uss using Guid(700c1652f1a8343729c98e6ad6468a5e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'befd2dce35fddef66eaccca9e9ab248d') in 0.002042 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 9.078223 seconds.
+  path: Assets/Scripts/MapUIScripts/RTSUIMapMenu.uss
+  artifactKey: Guid(700c1652f1a8343729c98e6ad6468a5e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/MapUIScripts/RTSUIMapMenu.uss using Guid(700c1652f1a8343729c98e6ad6468a5e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1bdc6bce976ad87aecfe2410e3f55eef') in 0.000947 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 17.250033 seconds.
+  path: Assets/Scripts/MapUIScripts/RTSUIMapMenu.uss
+  artifactKey: Guid(700c1652f1a8343729c98e6ad6468a5e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/MapUIScripts/RTSUIMapMenu.uss using Guid(700c1652f1a8343729c98e6ad6468a5e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f4937cbdd034f9d567afe003025dee29') in 0.000902 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 21.306557 seconds.
+  path: Assets/Scripts/MapUIScripts/RTSUIMapMenu.uss
+  artifactKey: Guid(700c1652f1a8343729c98e6ad6468a5e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/MapUIScripts/RTSUIMapMenu.uss using Guid(700c1652f1a8343729c98e6ad6468a5e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fbd3c83534e34d31574a6d1d374006a8') in 0.000966 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 45.823618 seconds.
+  path: Assets/Scripts/MapUIScripts/RTSUIMapMenu.uss
+  artifactKey: Guid(700c1652f1a8343729c98e6ad6468a5e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/MapUIScripts/RTSUIMapMenu.uss using Guid(700c1652f1a8343729c98e6ad6468a5e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3b633eef5e3632434a5d925d2c7dda38') in 0.000888 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 8.728005 seconds.
+  path: Assets/Scripts/MapUIScripts/RTSUIMapMenu.uss
+  artifactKey: Guid(700c1652f1a8343729c98e6ad6468a5e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/MapUIScripts/RTSUIMapMenu.uss using Guid(700c1652f1a8343729c98e6ad6468a5e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '965ce007db65337d7db21be4ebc2f3f1') in 0.002191 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 14.921735 seconds.
+  path: Assets/Scripts/MapUIScripts/RTSUIMapMenu.uss
+  artifactKey: Guid(700c1652f1a8343729c98e6ad6468a5e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/MapUIScripts/RTSUIMapMenu.uss using Guid(700c1652f1a8343729c98e6ad6468a5e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'dcffa169e06556b01bd7d7a62cadacd1') in 0.000905 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 8.613442 seconds.
+  path: Assets/Scripts/MapUIScripts/RTSUIMapMenu.uss
+  artifactKey: Guid(700c1652f1a8343729c98e6ad6468a5e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/MapUIScripts/RTSUIMapMenu.uss using Guid(700c1652f1a8343729c98e6ad6468a5e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ee29d982829325bf993c4f3c72391fe7') in 0.000852 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 5.067594 seconds.
+  path: Assets/Scripts/MapUIScripts/RTSUIMapMenu.uss
+  artifactKey: Guid(700c1652f1a8343729c98e6ad6468a5e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/MapUIScripts/RTSUIMapMenu.uss using Guid(700c1652f1a8343729c98e6ad6468a5e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0ad53fb4263561bb87f9ec7ecf3d18af') in 0.000852 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 7.757312 seconds.
+  path: Assets/Scripts/MapUIScripts/RTSUIMapMenu.uss
+  artifactKey: Guid(700c1652f1a8343729c98e6ad6468a5e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/MapUIScripts/RTSUIMapMenu.uss using Guid(700c1652f1a8343729c98e6ad6468a5e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '959d88c120aa6afc7cc9fa6bf468d0f6') in 0.000952 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 33.631171 seconds.
+  path: Assets/Scripts/MapUIScripts/RTSUIMapMenu.uss
+  artifactKey: Guid(700c1652f1a8343729c98e6ad6468a5e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/MapUIScripts/RTSUIMapMenu.uss using Guid(700c1652f1a8343729c98e6ad6468a5e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7ac9f50bd2334c7831a752111549debe') in 0.000935 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 9.120726 seconds.
+  path: Assets/Scripts/MapUIScripts/RTSUIMapMenu.uss
+  artifactKey: Guid(700c1652f1a8343729c98e6ad6468a5e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/MapUIScripts/RTSUIMapMenu.uss using Guid(700c1652f1a8343729c98e6ad6468a5e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5c4744b4dcf2e9b8c665fa1f8108a2a6') in 0.000934 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 7.819126 seconds.
+  path: Assets/Scripts/MapUIScripts/RTSUIMapMenu.uss
+  artifactKey: Guid(700c1652f1a8343729c98e6ad6468a5e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/MapUIScripts/RTSUIMapMenu.uss using Guid(700c1652f1a8343729c98e6ad6468a5e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '27c30361dd55b6d75f5a14bae9370b0e') in 0.000847 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 15.192374 seconds.
+  path: Assets/Scripts/MapUIScripts/RTSUIMapMenu.uss
+  artifactKey: Guid(700c1652f1a8343729c98e6ad6468a5e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/MapUIScripts/RTSUIMapMenu.uss using Guid(700c1652f1a8343729c98e6ad6468a5e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'eb167249e991ea16237a0cc3886e3167') in 0.000843 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 25.809298 seconds.
+  path: Assets/Scripts/MapUIScripts/RTSUIMapMenu.uss
+  artifactKey: Guid(700c1652f1a8343729c98e6ad6468a5e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/MapUIScripts/RTSUIMapMenu.uss using Guid(700c1652f1a8343729c98e6ad6468a5e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd3d13982f3eee47d8f0ee42698570456') in 0.002094 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 9.263679 seconds.
+  path: Assets/Scripts/MapUIScripts/RTSUIMapMenu.uss
+  artifactKey: Guid(700c1652f1a8343729c98e6ad6468a5e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/MapUIScripts/RTSUIMapMenu.uss using Guid(700c1652f1a8343729c98e6ad6468a5e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2a7f157005a153fdb020b176ff8867e0') in 0.003204 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 5.044193 seconds.
+  path: Assets/Scripts/MapUIScripts/RTSUIMapMenu.uss
+  artifactKey: Guid(700c1652f1a8343729c98e6ad6468a5e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/MapUIScripts/RTSUIMapMenu.uss using Guid(700c1652f1a8343729c98e6ad6468a5e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '640ae84a45e84645506fcbdd2f98a7f8') in 0.000994 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 13.718145 seconds.
+  path: Assets/Scripts/MapUIScripts/RTSUIMapMenu.uss
+  artifactKey: Guid(700c1652f1a8343729c98e6ad6468a5e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/MapUIScripts/RTSUIMapMenu.uss using Guid(700c1652f1a8343729c98e6ad6468a5e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3d3abc1a746a42a78113cbaa83377b2d') in 0.001138 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 33.522947 seconds.
+  path: Assets/Scripts/MapUIScripts/RTSUIMapMenu.uss
+  artifactKey: Guid(700c1652f1a8343729c98e6ad6468a5e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/MapUIScripts/RTSUIMapMenu.uss using Guid(700c1652f1a8343729c98e6ad6468a5e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1d68d75288e2c55b6586af5929fcebd2') in 0.000983 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 10.661921 seconds.
+  path: Assets/Scripts/MapUIScripts/RTSUIMapMenu.uss
+  artifactKey: Guid(700c1652f1a8343729c98e6ad6468a5e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/MapUIScripts/RTSUIMapMenu.uss using Guid(700c1652f1a8343729c98e6ad6468a5e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6a678a98991a0234b2dca027979ff495') in 0.001323 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 6.982087 seconds.
+  path: Assets/Scripts/MapUIScripts/RTSUIMapMenu.uss
+  artifactKey: Guid(700c1652f1a8343729c98e6ad6468a5e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/MapUIScripts/RTSUIMapMenu.uss using Guid(700c1652f1a8343729c98e6ad6468a5e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c56c9d2fec3a164e9c9f6b5bc62edb3b') in 0.000878 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 3.700456 seconds.
+  path: Assets/Scripts/MapUIScripts/RTSUIMapMenu.uss
+  artifactKey: Guid(700c1652f1a8343729c98e6ad6468a5e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/MapUIScripts/RTSUIMapMenu.uss using Guid(700c1652f1a8343729c98e6ad6468a5e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8b379dc582fea6bac9673b74e92ef33b') in 0.009516 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 4.614272 seconds.
+  path: Assets/Scripts/MapUIScripts/RTSUIMapMenu.uss
+  artifactKey: Guid(700c1652f1a8343729c98e6ad6468a5e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/MapUIScripts/RTSUIMapMenu.uss using Guid(700c1652f1a8343729c98e6ad6468a5e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9520974c2ee41e45694af20e70c3af86') in 0.000920 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 21.327170 seconds.
+  path: Assets/Scripts/MapUIScripts/RTSUIMapMenu.uss
+  artifactKey: Guid(700c1652f1a8343729c98e6ad6468a5e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/MapUIScripts/RTSUIMapMenu.uss using Guid(700c1652f1a8343729c98e6ad6468a5e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2b39810d7efe3f6e16836ef050e754ae') in 0.000927 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 14.711054 seconds.
+  path: Assets/Scripts/MapUIScripts/RTSUIMapMenu.uss
+  artifactKey: Guid(700c1652f1a8343729c98e6ad6468a5e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/MapUIScripts/RTSUIMapMenu.uss using Guid(700c1652f1a8343729c98e6ad6468a5e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '05dea28e0b2fa1714e8b0ea67f80c775') in 0.000875 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 6.528900 seconds.
+  path: Assets/Scripts/MapUIScripts/RTSUIMapMenu.uss
+  artifactKey: Guid(700c1652f1a8343729c98e6ad6468a5e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/MapUIScripts/RTSUIMapMenu.uss using Guid(700c1652f1a8343729c98e6ad6468a5e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ea2ca3a24fe05ba822c034389e54916e') in 0.000854 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 11.205115 seconds.
+  path: Assets/Scripts/MapUIScripts/RTSUIMapMenu.uss
+  artifactKey: Guid(700c1652f1a8343729c98e6ad6468a5e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/MapUIScripts/RTSUIMapMenu.uss using Guid(700c1652f1a8343729c98e6ad6468a5e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '21c62679e7bf9178d2c9c09b32dd483e') in 0.000850 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 9.664098 seconds.
+  path: Assets/Scripts/MapUIScripts/RTSUIMapMenu.uss
+  artifactKey: Guid(700c1652f1a8343729c98e6ad6468a5e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/MapUIScripts/RTSUIMapMenu.uss using Guid(700c1652f1a8343729c98e6ad6468a5e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8a319a097b0077e934ef58287d4ab930') in 0.000916 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 7.550679 seconds.
+  path: Assets/Scripts/MapUIScripts/RTSUIMapMenu.uss
+  artifactKey: Guid(700c1652f1a8343729c98e6ad6468a5e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/MapUIScripts/RTSUIMapMenu.uss using Guid(700c1652f1a8343729c98e6ad6468a5e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd4d2d11ffc9572e65d9fb886715e73f8') in 0.000933 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 7.010859 seconds.
+  path: Assets/Scripts/MapUIScripts/RTSUIMapMenu.uss
+  artifactKey: Guid(700c1652f1a8343729c98e6ad6468a5e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/MapUIScripts/RTSUIMapMenu.uss using Guid(700c1652f1a8343729c98e6ad6468a5e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'aaa977a22670e37716349ecf38b9e777') in 0.001031 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 32.242847 seconds.
+  path: Assets/Scripts/MapUIScripts/RTSUIMapMenu.uss
+  artifactKey: Guid(700c1652f1a8343729c98e6ad6468a5e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/MapUIScripts/RTSUIMapMenu.uss using Guid(700c1652f1a8343729c98e6ad6468a5e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '85ee404e87b1e001b1b2471d74671b1d') in 0.002934 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 6.354848 seconds.
+  path: Assets/Scripts/MapUIScripts/RTSUIMapMenu.uss
+  artifactKey: Guid(700c1652f1a8343729c98e6ad6468a5e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/MapUIScripts/RTSUIMapMenu.uss using Guid(700c1652f1a8343729c98e6ad6468a5e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '122eebe774ba333fcdd3a8ae0a655806') in 0.000867 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 5.570577 seconds.
+  path: Assets/Scripts/MapUIScripts/RTSUIMapMenu.uss
+  artifactKey: Guid(700c1652f1a8343729c98e6ad6468a5e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/MapUIScripts/RTSUIMapMenu.uss using Guid(700c1652f1a8343729c98e6ad6468a5e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '69e35230a8ff4727445f8342aaf302a9') in 0.000964 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 7.752020 seconds.
+  path: Assets/Scripts/MapUIScripts/RTSUIMapMenu.uss
+  artifactKey: Guid(700c1652f1a8343729c98e6ad6468a5e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/MapUIScripts/RTSUIMapMenu.uss using Guid(700c1652f1a8343729c98e6ad6468a5e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6db31b99a3bfc774b5d0efc1caa042b5') in 0.000879 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 10.058018 seconds.
+  path: Assets/Scripts/MapUIScripts/RTSUIMapMenu.uss
+  artifactKey: Guid(700c1652f1a8343729c98e6ad6468a5e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/MapUIScripts/RTSUIMapMenu.uss using Guid(700c1652f1a8343729c98e6ad6468a5e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a1b2fa0b4f971779fbedb1d61833b91e') in 0.001073 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 6.473660 seconds.
+  path: Assets/Scripts/MapUIScripts/RTSUIMapMenu.uss
+  artifactKey: Guid(700c1652f1a8343729c98e6ad6468a5e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/MapUIScripts/RTSUIMapMenu.uss using Guid(700c1652f1a8343729c98e6ad6468a5e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fb6ee8e2dd7177bac5206e7a9139298e') in 0.000930 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 10.202803 seconds.
+  path: Assets/Scripts/MapUIScripts/RTSUIMapMenu.uss
+  artifactKey: Guid(700c1652f1a8343729c98e6ad6468a5e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/MapUIScripts/RTSUIMapMenu.uss using Guid(700c1652f1a8343729c98e6ad6468a5e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ef6b417e90736e92680a51d11b345d67') in 0.000870 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 6.215733 seconds.
+  path: Assets/Scripts/MapUIScripts/RTSUIMapMenu.uss
+  artifactKey: Guid(700c1652f1a8343729c98e6ad6468a5e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/MapUIScripts/RTSUIMapMenu.uss using Guid(700c1652f1a8343729c98e6ad6468a5e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '66b5e6d67d00ca9d4fc7b342ae84771d') in 0.000931 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 13.153666 seconds.
+  path: Assets/Scripts/MapUIScripts/RTSUIMapMenu.uss
+  artifactKey: Guid(700c1652f1a8343729c98e6ad6468a5e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/MapUIScripts/RTSUIMapMenu.uss using Guid(700c1652f1a8343729c98e6ad6468a5e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a65fd260abd393254e765c1fc4affdff') in 0.000949 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 11.539779 seconds.
+  path: Assets/Scripts/MapUIScripts/RTSUIMapMenu.uss
+  artifactKey: Guid(700c1652f1a8343729c98e6ad6468a5e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/MapUIScripts/RTSUIMapMenu.uss using Guid(700c1652f1a8343729c98e6ad6468a5e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1e500430e0c2889bfe395b0be3f1697c') in 0.000916 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 5.135199 seconds.
+  path: Assets/Scripts/MapUIScripts/RTSUIMapMenu.uss
+  artifactKey: Guid(700c1652f1a8343729c98e6ad6468a5e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/MapUIScripts/RTSUIMapMenu.uss using Guid(700c1652f1a8343729c98e6ad6468a5e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2c41a31a5242530a282603fa47130c80') in 0.000857 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 18.420342 seconds.
+  path: Assets/Scripts/MapUIScripts/RTSUIMapMenu.uss
+  artifactKey: Guid(700c1652f1a8343729c98e6ad6468a5e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/MapUIScripts/RTSUIMapMenu.uss using Guid(700c1652f1a8343729c98e6ad6468a5e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '348adcab8b28b42d6f96dbe69851e484') in 0.000934 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 8.939044 seconds.
+  path: Assets/Scripts/MapUIScripts/RTSUIMapMenu.uss
+  artifactKey: Guid(700c1652f1a8343729c98e6ad6468a5e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/MapUIScripts/RTSUIMapMenu.uss using Guid(700c1652f1a8343729c98e6ad6468a5e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f48568da6d8d9f3e78e4846fb21f7e58') in 0.002218 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 8.115429 seconds.
+  path: Assets/Scripts/MapUIScripts/RTSUIMapMenu.uss
+  artifactKey: Guid(700c1652f1a8343729c98e6ad6468a5e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/MapUIScripts/RTSUIMapMenu.uss using Guid(700c1652f1a8343729c98e6ad6468a5e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '980608307a27c2a6fabf67c3fcad663f') in 0.000932 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 7.096928 seconds.
+  path: Assets/Scripts/MapUIScripts/RTSUIMapMenu.uss
+  artifactKey: Guid(700c1652f1a8343729c98e6ad6468a5e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/MapUIScripts/RTSUIMapMenu.uss using Guid(700c1652f1a8343729c98e6ad6468a5e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '097bc556c2ac4089c64cedbdac6621ea') in 0.000949 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 8.766540 seconds.
+  path: Assets/Scripts/MapUIScripts/RTSUIMapMenu.uss
+  artifactKey: Guid(700c1652f1a8343729c98e6ad6468a5e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/MapUIScripts/RTSUIMapMenu.uss using Guid(700c1652f1a8343729c98e6ad6468a5e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ac0fc3af7ebae07c6adfb583e983f0ca') in 0.001011 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 7.003386 seconds.
+  path: Assets/Scripts/MapUIScripts/RTSUIMapMenu.uss
+  artifactKey: Guid(700c1652f1a8343729c98e6ad6468a5e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/MapUIScripts/RTSUIMapMenu.uss using Guid(700c1652f1a8343729c98e6ad6468a5e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '344331e8359526d7d7d0da7cc2933605') in 0.004110 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 7.221830 seconds.
+  path: Assets/Scripts/MapUIScripts/RTSUIMapMenu.uss
+  artifactKey: Guid(700c1652f1a8343729c98e6ad6468a5e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/MapUIScripts/RTSUIMapMenu.uss using Guid(700c1652f1a8343729c98e6ad6468a5e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f62b5188260678a71fd5f7c1766eb3b2') in 0.002212 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 6.409797 seconds.
+  path: Assets/Scripts/MapUIScripts/RTSUIMapMenu.uss
+  artifactKey: Guid(700c1652f1a8343729c98e6ad6468a5e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/MapUIScripts/RTSUIMapMenu.uss using Guid(700c1652f1a8343729c98e6ad6468a5e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4ba0bd44d37b491be445dfe714f9be58') in 0.001015 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 23.824173 seconds.
+  path: Assets/Scripts/MapUIScripts/RTSUIMapMenu.uss
+  artifactKey: Guid(700c1652f1a8343729c98e6ad6468a5e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/MapUIScripts/RTSUIMapMenu.uss using Guid(700c1652f1a8343729c98e6ad6468a5e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2a2cd80c5e2e2460fda82c2a9ea23d44') in 0.000881 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 5.398032 seconds.
+  path: Assets/Scripts/MapUIScripts/RTSUIMapMenu.uss
+  artifactKey: Guid(700c1652f1a8343729c98e6ad6468a5e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/MapUIScripts/RTSUIMapMenu.uss using Guid(700c1652f1a8343729c98e6ad6468a5e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e95ddf9b7902927b55d232335831bfa5') in 0.001983 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 5.421991 seconds.
+  path: Assets/Scripts/MapUIScripts/RTSUIMapMenu.uss
+  artifactKey: Guid(700c1652f1a8343729c98e6ad6468a5e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/MapUIScripts/RTSUIMapMenu.uss using Guid(700c1652f1a8343729c98e6ad6468a5e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a775287974e99251cab5bf0bc51f7c3d') in 0.000827 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 5.667584 seconds.
+  path: Assets/Scripts/MapUIScripts/RTSUIMapMenu.uss
+  artifactKey: Guid(700c1652f1a8343729c98e6ad6468a5e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/MapUIScripts/RTSUIMapMenu.uss using Guid(700c1652f1a8343729c98e6ad6468a5e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '84d74f21945342aeb682094682a0854a') in 0.001254 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 7.593662 seconds.
+  path: Assets/Scripts/MapUIScripts/RTSUIMapMenu.uss
+  artifactKey: Guid(700c1652f1a8343729c98e6ad6468a5e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/MapUIScripts/RTSUIMapMenu.uss using Guid(700c1652f1a8343729c98e6ad6468a5e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '138702745582e7c8eece07f3198364e6') in 0.001021 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 6.763512 seconds.
+  path: Assets/Scripts/MapUIScripts/RTSUIMapMenu.uss
+  artifactKey: Guid(700c1652f1a8343729c98e6ad6468a5e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/MapUIScripts/RTSUIMapMenu.uss using Guid(700c1652f1a8343729c98e6ad6468a5e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bfb83aba57fbc8bdb241283cb9d2ef8f') in 0.000912 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 7.768099 seconds.
+  path: Assets/Scripts/MapUIScripts/RTSUIMapMenu.uss
+  artifactKey: Guid(700c1652f1a8343729c98e6ad6468a5e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/MapUIScripts/RTSUIMapMenu.uss using Guid(700c1652f1a8343729c98e6ad6468a5e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8970da5567fb241aae96be3217415472') in 0.000863 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 8.679975 seconds.
+  path: Assets/Scripts/MapUIScripts/RTSUIMapMenu.uss
+  artifactKey: Guid(700c1652f1a8343729c98e6ad6468a5e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/MapUIScripts/RTSUIMapMenu.uss using Guid(700c1652f1a8343729c98e6ad6468a5e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3276777f1e9da67f0682404e751acb04') in 0.001062 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 11.661903 seconds.
+  path: Assets/Scripts/MapUIScripts/RTSUIMapMenu.uss
+  artifactKey: Guid(700c1652f1a8343729c98e6ad6468a5e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/MapUIScripts/RTSUIMapMenu.uss using Guid(700c1652f1a8343729c98e6ad6468a5e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cc09ea7232c3e897c04ae26c87bd30dd') in 0.000861 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Prepare
+Refreshing native plugins compatible for Editor in 18.21 ms, found 5 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 14 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 14 unused Assets / (0.6 MB). Loaded Objects now: 8897.
+Memory consumption went from 277.6 MB to 277.0 MB.
+Total: 34.864375 ms (FindLiveObjects: 0.553167 ms CreateObjectMapping: 0.264416 ms MarkObjects: 33.480750 ms  DeleteObjects: 0.565542 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:framework-osx-AVFoundation: e770b220cccbd017edd2c1fefb359320 -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:AudioImporter_EditorPlatform: 3918e3fc78b5a79bad01e8451be0beb8 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:CustomObjectIndexerAttribute: 72b91833f83ae208fae7752999fa3104 -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 15.281004 seconds.
+  path: Assets/Scripts/MapUIScripts/RTSUIMapMenu.uss
+  artifactKey: Guid(700c1652f1a8343729c98e6ad6468a5e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/MapUIScripts/RTSUIMapMenu.uss using Guid(700c1652f1a8343729c98e6ad6468a5e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5aa2f15b048bba865c38f9005e12bf2e') in 0.002539 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 115.994055 seconds.
+  path: Assets/Scripts/MapUIScripts/RTSUIMapMenu.lua
+  artifactKey: Guid(e54e87a7edd514595a71c717e356e2f5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/MapUIScripts/RTSUIMapMenu.lua using Guid(e54e87a7edd514595a71c717e356e2f5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c0a9dc655a625325971b894b1ee08888') in 0.025250 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 33
+========================================================================
+Received Import Request.
+  Time since last request: 0.000187 seconds.
+  path: Assets/Scripts/MapUIScripts/RTSUIMapMenu.uxml
+  artifactKey: Guid(c805886bd604b44a5bbe27946ea15cba) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/MapUIScripts/RTSUIMapMenu.uxml using Guid(c805886bd604b44a5bbe27946ea15cba) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5c52721553f219f30e831018caadc6b1') in 0.002477 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Prepare
+Begin MonoManager ReloadAssembly
+Thread 0x16b61f000 may have been prematurely finalized
+Symbol file LoadedFromMemory is not a mono symbol file
+- Loaded All Assemblies, in  0.505 seconds
+Refreshing native plugins compatible for Editor in 4.88 ms, found 5 plugins.
+Native extension for OSXStandalone target not found
+[Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] UpmClient::Send -- Unable to send message (not connected to UPM process).
+[Package Manager] Cannot connect to Unity Package Manager local server
+[MODES] ModeService[none].Initialize
+[MODES] ModeService[none].LoadModes
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  1.439 seconds
+Domain Reload Profiling: 1943ms
+	BeginReloadAssembly (164ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (8ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (82ms)
+	RebuildCommonClasses (19ms)
+	RebuildNativeTypeToScriptingClass (9ms)
+	initialDomainReloadingComplete (19ms)
+	LoadAllAssembliesAndSetupDomain (294ms)
+		LoadAssemblies (255ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (78ms)
+			TypeCache.Refresh (31ms)
+				TypeCache.ScanAssembly (2ms)
+			ScanForSourceGeneratedMonoScriptInfo (36ms)
+			ResolveRequiredComponents (10ms)
+	FinalizeReload (1439ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (509ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (2ms)
+			SetLoadedEditorAssemblies (3ms)
+			RefreshPlugins (0ms)
+			BeforeProcessingInitializeOnLoad (49ms)
+			ProcessInitializeOnLoadAttributes (261ms)
+			ProcessInitializeOnLoadMethodAttributes (193ms)
+			AfterProcessingInitializeOnLoad (1ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (8ms)
+Refreshing native plugins compatible for Editor in 4.55 ms, found 5 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 7518 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 126 unused Assets / (0.7 MB). Loaded Objects now: 8905.
+Memory consumption went from 364.0 MB to 363.3 MB.
+Total: 9.664208 ms (FindLiveObjects: 0.313625 ms CreateObjectMapping: 0.163709 ms MarkObjects: 8.728125 ms  DeleteObjects: 0.458125 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:framework-osx-AVFoundation: e770b220cccbd017edd2c1fefb359320 -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:AudioImporter_EditorPlatform: 3918e3fc78b5a79bad01e8451be0beb8 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:CustomObjectIndexerAttribute: 72b91833f83ae208fae7752999fa3104 -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+========================================================================
+Received Prepare
+Begin MonoManager ReloadAssembly
+Thread 0x16b61f000 may have been prematurely finalized
+Symbol file LoadedFromMemory is not a mono symbol file
+- Loaded All Assemblies, in  0.347 seconds
+Refreshing native plugins compatible for Editor in 3.34 ms, found 5 plugins.
+Native extension for OSXStandalone target not found
+[Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] UpmClient::Send -- Unable to send message (not connected to UPM process).
+[Package Manager] Cannot connect to Unity Package Manager local server
+[MODES] ModeService[none].Initialize
+[MODES] ModeService[none].LoadModes
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  1.397 seconds
+Domain Reload Profiling: 1745ms
+	BeginReloadAssembly (136ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (4ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (75ms)
+	RebuildCommonClasses (18ms)
+	RebuildNativeTypeToScriptingClass (7ms)
+	initialDomainReloadingComplete (15ms)
+	LoadAllAssembliesAndSetupDomain (171ms)
+		LoadAssemblies (179ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (19ms)
+			TypeCache.Refresh (9ms)
+				TypeCache.ScanAssembly (0ms)
+			ScanForSourceGeneratedMonoScriptInfo (0ms)
+			ResolveRequiredComponents (10ms)
+	FinalizeReload (1398ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (526ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (2ms)
+			SetLoadedEditorAssemblies (3ms)
+			RefreshPlugins (0ms)
+			BeforeProcessingInitializeOnLoad (47ms)
+			ProcessInitializeOnLoadAttributes (342ms)
+			ProcessInitializeOnLoadMethodAttributes (132ms)
+			AfterProcessingInitializeOnLoad (1ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (8ms)
+Refreshing native plugins compatible for Editor in 12.29 ms, found 5 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 7518 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 126 unused Assets / (0.7 MB). Loaded Objects now: 8913.
+Memory consumption went from 369.5 MB to 368.8 MB.
+Total: 18.692500 ms (FindLiveObjects: 0.322000 ms CreateObjectMapping: 0.205250 ms MarkObjects: 17.734167 ms  DeleteObjects: 0.430500 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:framework-osx-AVFoundation: e770b220cccbd017edd2c1fefb359320 -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:AudioImporter_EditorPlatform: 3918e3fc78b5a79bad01e8451be0beb8 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:CustomObjectIndexerAttribute: 72b91833f83ae208fae7752999fa3104 -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+========================================================================
+Received Prepare
+Switching render pipeline 7b7fd9122c28c4d15b667c7040e3b3fd -> c5ca88e9b17b24976bac59625274883c
+Refreshing native plugins compatible for Editor in 5.87 ms, found 5 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 14 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 14 unused Assets / (0.7 MB). Loaded Objects now: 8913.
+Memory consumption went from 286.5 MB to 285.9 MB.
+Total: 36.103166 ms (FindLiveObjects: 1.124750 ms CreateObjectMapping: 0.250750 ms MarkObjects: 34.136875 ms  DeleteObjects: 0.589709 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:srp/default-pipeline: 5cac889e1bb74279b6ca9526254788c3 -> b7f79d21c2824c1db566c707043e3bdf
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:framework-osx-AVFoundation: e770b220cccbd017edd2c1fefb359320 -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:AudioImporter_EditorPlatform: 3918e3fc78b5a79bad01e8451be0beb8 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:CustomObjectIndexerAttribute: 72b91833f83ae208fae7752999fa3104 -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 55.774550 seconds.
+  path: Assets/Scripts/MapUIScripts/RTSUIMapMenu.uxml
+  artifactKey: Guid(c805886bd604b44a5bbe27946ea15cba) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/MapUIScripts/RTSUIMapMenu.uxml using Guid(c805886bd604b44a5bbe27946ea15cba) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c389ef75b67c004ecb407dd2d265f4fd') in 0.018064 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000029 seconds.
+  path: Assets/Scripts/MapUIScripts/RTSUIMapMenu.uss
+  artifactKey: Guid(700c1652f1a8343729c98e6ad6468a5e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/MapUIScripts/RTSUIMapMenu.uss using Guid(700c1652f1a8343729c98e6ad6468a5e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9476ab14e15a0f56f6cea31df2165698') in 0.001584 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 5.314853 seconds.
+  path: Assets/Scripts/MapUIScripts/RTSUIMapMenu.uss
+  artifactKey: Guid(700c1652f1a8343729c98e6ad6468a5e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/MapUIScripts/RTSUIMapMenu.uss using Guid(700c1652f1a8343729c98e6ad6468a5e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ece679fa3591d8d9536b8f197dbb9d32') in 0.000915 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 6.445439 seconds.
+  path: Assets/Scripts/MapUIScripts/RTSUIMapMenu.uss
+  artifactKey: Guid(700c1652f1a8343729c98e6ad6468a5e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/MapUIScripts/RTSUIMapMenu.uss using Guid(700c1652f1a8343729c98e6ad6468a5e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0d9590c15bed21e4f506b2fef23d5241') in 0.000822 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 5.458838 seconds.
+  path: Assets/Scripts/MapUIScripts/RTSUIMapMenu.uss
+  artifactKey: Guid(700c1652f1a8343729c98e6ad6468a5e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/MapUIScripts/RTSUIMapMenu.uss using Guid(700c1652f1a8343729c98e6ad6468a5e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5b9b8d374e13fd204f877116d074329e') in 0.001023 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 6.646335 seconds.
+  path: Assets/Scripts/MapUIScripts/RTSUIMapMenu.uss
+  artifactKey: Guid(700c1652f1a8343729c98e6ad6468a5e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/MapUIScripts/RTSUIMapMenu.uss using Guid(700c1652f1a8343729c98e6ad6468a5e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3a4c436acd3fca3ccfa826b37183c8e6') in 0.000849 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 9.373400 seconds.
+  path: Assets/Scripts/MapUIScripts/RTSUIMapMenu.uss
+  artifactKey: Guid(700c1652f1a8343729c98e6ad6468a5e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/MapUIScripts/RTSUIMapMenu.uss using Guid(700c1652f1a8343729c98e6ad6468a5e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4fd8d67ef832c2ad6c46d93c7a142285') in 0.001162 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 12.817932 seconds.
+  path: Assets/Scripts/MapUIScripts/RTSUIMapMenu.uss
+  artifactKey: Guid(700c1652f1a8343729c98e6ad6468a5e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/MapUIScripts/RTSUIMapMenu.uss using Guid(700c1652f1a8343729c98e6ad6468a5e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '27d69f951318f5c8d57e7ba5a7021064') in 0.001048 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 15.452239 seconds.
+  path: Assets/Scripts/MapUIScripts/RTSUIMapMenu.uss
+  artifactKey: Guid(700c1652f1a8343729c98e6ad6468a5e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/MapUIScripts/RTSUIMapMenu.uss using Guid(700c1652f1a8343729c98e6ad6468a5e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '02876faef9de2464f6cccb2ab625efd9') in 0.001825 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 6.825161 seconds.
+  path: Assets/Scripts/MapUIScripts/RTSUIMapMenu.uss
+  artifactKey: Guid(700c1652f1a8343729c98e6ad6468a5e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/MapUIScripts/RTSUIMapMenu.uss using Guid(700c1652f1a8343729c98e6ad6468a5e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cf84d609932ba4d90152744980db5faf') in 0.000961 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 4.660327 seconds.
+  path: Assets/Scripts/MapUIScripts/RTSUIMapMenu.uss
+  artifactKey: Guid(700c1652f1a8343729c98e6ad6468a5e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/MapUIScripts/RTSUIMapMenu.uss using Guid(700c1652f1a8343729c98e6ad6468a5e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '870f0facb5f22e3b66121076a205c434') in 0.001190 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 9.493341 seconds.
+  path: Assets/Scripts/MapUIScripts/RTSUIMapMenu.uss
+  artifactKey: Guid(700c1652f1a8343729c98e6ad6468a5e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/MapUIScripts/RTSUIMapMenu.uss using Guid(700c1652f1a8343729c98e6ad6468a5e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0daf8e4a1137f6778c378ca082653714') in 0.000889 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 5.538118 seconds.
+  path: Assets/Scripts/MapUIScripts/RTSUIMapMenu.uss
+  artifactKey: Guid(700c1652f1a8343729c98e6ad6468a5e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/MapUIScripts/RTSUIMapMenu.uss using Guid(700c1652f1a8343729c98e6ad6468a5e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cd46bd52ad0f0cf28c24a89bd602423d') in 0.000916 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 8.112161 seconds.
+  path: Assets/Scripts/MapUIScripts/RTSUIMapMenu.uss
+  artifactKey: Guid(700c1652f1a8343729c98e6ad6468a5e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/MapUIScripts/RTSUIMapMenu.uss using Guid(700c1652f1a8343729c98e6ad6468a5e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '27310b04a52b230bbef6dee58f554a99') in 0.001063 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 45.934760 seconds.
+  path: Assets/Scripts/MapUIScripts/RTSUIMapMenu.uss
+  artifactKey: Guid(700c1652f1a8343729c98e6ad6468a5e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/MapUIScripts/RTSUIMapMenu.uss using Guid(700c1652f1a8343729c98e6ad6468a5e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a9457b9ac60ae4bb23b348725a94b9f6') in 0.000859 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 10.319491 seconds.
+  path: Assets/Scripts/MapUIScripts/RTSUIMapMenu.uss
+  artifactKey: Guid(700c1652f1a8343729c98e6ad6468a5e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/MapUIScripts/RTSUIMapMenu.uss using Guid(700c1652f1a8343729c98e6ad6468a5e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0155f367ddf0bb78341db7c66f3b6fbb') in 0.000885 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 12.368473 seconds.
+  path: Assets/Scripts/MapUIScripts/RTSUIMapMenu.uss
+  artifactKey: Guid(700c1652f1a8343729c98e6ad6468a5e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/MapUIScripts/RTSUIMapMenu.uss using Guid(700c1652f1a8343729c98e6ad6468a5e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bc296fbe6944192f93e7e58391689cf7') in 0.001045 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 9.391385 seconds.
+  path: Assets/Scripts/MapUIScripts/RTSUIMapMenu.uss
+  artifactKey: Guid(700c1652f1a8343729c98e6ad6468a5e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/MapUIScripts/RTSUIMapMenu.uss using Guid(700c1652f1a8343729c98e6ad6468a5e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bf157313ce2ef8600dd24bc588e3d250') in 0.001023 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 4.936345 seconds.
+  path: Assets/Scripts/MapUIScripts/RTSUIMapMenu.uss
+  artifactKey: Guid(700c1652f1a8343729c98e6ad6468a5e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/MapUIScripts/RTSUIMapMenu.uss using Guid(700c1652f1a8343729c98e6ad6468a5e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b1f28dcab301541b99bd8585e6f04818') in 0.001004 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 7.801422 seconds.
+  path: Assets/Scripts/MapUIScripts/RTSUIMapMenu.uss
+  artifactKey: Guid(700c1652f1a8343729c98e6ad6468a5e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/MapUIScripts/RTSUIMapMenu.uss using Guid(700c1652f1a8343729c98e6ad6468a5e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1f2c6cdb7696bbe8c6d920f3186cf104') in 0.000858 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 5.990545 seconds.
+  path: Assets/Scripts/MapUIScripts/RTSUIMapMenu.uss
+  artifactKey: Guid(700c1652f1a8343729c98e6ad6468a5e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/MapUIScripts/RTSUIMapMenu.uss using Guid(700c1652f1a8343729c98e6ad6468a5e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3f4741e7d74a2ac6cb8150696484ec85') in 0.001233 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 11.889796 seconds.
+  path: Assets/Scripts/MapUIScripts/RTSUIMapMenu.uss
+  artifactKey: Guid(700c1652f1a8343729c98e6ad6468a5e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/MapUIScripts/RTSUIMapMenu.uss using Guid(700c1652f1a8343729c98e6ad6468a5e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3a05bf46752533d9e90456058ae8439f') in 0.000921 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 11.960605 seconds.
+  path: Assets/Scripts/MapUIScripts/RTSUIMapMenu.uss
+  artifactKey: Guid(700c1652f1a8343729c98e6ad6468a5e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/MapUIScripts/RTSUIMapMenu.uss using Guid(700c1652f1a8343729c98e6ad6468a5e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '987c181cc19b1fa1c971a62b00fc3cd6') in 0.002070 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 4.975626 seconds.
+  path: Assets/Scripts/MapUIScripts/RTSUIMapMenu.uss
+  artifactKey: Guid(700c1652f1a8343729c98e6ad6468a5e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/MapUIScripts/RTSUIMapMenu.uss using Guid(700c1652f1a8343729c98e6ad6468a5e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ea9f1104a87973d278334423df85d8ae') in 0.000941 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 12.420660 seconds.
+  path: Assets/Scripts/MapUIScripts/RTSUIMapMenu.uss
+  artifactKey: Guid(700c1652f1a8343729c98e6ad6468a5e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/MapUIScripts/RTSUIMapMenu.uss using Guid(700c1652f1a8343729c98e6ad6468a5e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cf14a59dfcbc303fd650e80f87680f0c') in 0.001631 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 50.476374 seconds.
+  path: Assets/Scripts/MapUIScripts/RTSUIMapMenu.uss
+  artifactKey: Guid(700c1652f1a8343729c98e6ad6468a5e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/MapUIScripts/RTSUIMapMenu.uss using Guid(700c1652f1a8343729c98e6ad6468a5e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5b6021817d7317afab10ef6c73912579') in 0.001121 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Prepare
+Refreshing native plugins compatible for Editor in 27.32 ms, found 5 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 14 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 14 unused Assets / (0.6 MB). Loaded Objects now: 8913.
+Memory consumption went from 282.8 MB to 282.2 MB.
+Total: 34.970459 ms (FindLiveObjects: 2.537541 ms CreateObjectMapping: 0.268375 ms MarkObjects: 31.602167 ms  DeleteObjects: 0.561875 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:framework-osx-AVFoundation: e770b220cccbd017edd2c1fefb359320 -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:AudioImporter_EditorPlatform: 3918e3fc78b5a79bad01e8451be0beb8 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:CustomObjectIndexerAttribute: 72b91833f83ae208fae7752999fa3104 -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 37.356101 seconds.
+  path: Assets/Scripts/MapUIScripts/RTSUIMapMenu.uss
+  artifactKey: Guid(700c1652f1a8343729c98e6ad6468a5e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/MapUIScripts/RTSUIMapMenu.uss using Guid(700c1652f1a8343729c98e6ad6468a5e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '938dbf333ce97eecbedb1f0af3d8e2a0') in 0.003486 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 36.437560 seconds.
+  path: Assets/Scripts/MapUIScripts/RTSUIMapMenu.lua
+  artifactKey: Guid(e54e87a7edd514595a71c717e356e2f5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/MapUIScripts/RTSUIMapMenu.lua using Guid(e54e87a7edd514595a71c717e356e2f5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd82b2ffb7fdf5f62bab2864fd609447c') in 0.019027 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 34
+========================================================================
+Received Prepare
+Begin MonoManager ReloadAssembly
+Thread 0x16b61f000 may have been prematurely finalized
+Symbol file LoadedFromMemory is not a mono symbol file
+- Loaded All Assemblies, in  0.425 seconds
+Refreshing native plugins compatible for Editor in 3.75 ms, found 5 plugins.
+Native extension for OSXStandalone target not found
+[Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] UpmClient::Send -- Unable to send message (not connected to UPM process).
+[Package Manager] Cannot connect to Unity Package Manager local server
+[MODES] ModeService[none].Initialize
+[MODES] ModeService[none].LoadModes
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  1.293 seconds
+Domain Reload Profiling: 1718ms
+	BeginReloadAssembly (134ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (2ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (68ms)
+	RebuildCommonClasses (20ms)
+	RebuildNativeTypeToScriptingClass (7ms)
+	initialDomainReloadingComplete (16ms)
+	LoadAllAssembliesAndSetupDomain (247ms)
+		LoadAssemblies (221ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (54ms)
+			TypeCache.Refresh (13ms)
+				TypeCache.ScanAssembly (1ms)
+			ScanForSourceGeneratedMonoScriptInfo (31ms)
+			ResolveRequiredComponents (9ms)
+	FinalizeReload (1293ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (421ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (2ms)
+			SetLoadedEditorAssemblies (3ms)
+			RefreshPlugins (0ms)
+			BeforeProcessingInitializeOnLoad (46ms)
+			ProcessInitializeOnLoadAttributes (248ms)
+			ProcessInitializeOnLoadMethodAttributes (121ms)
+			AfterProcessingInitializeOnLoad (1ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (7ms)
+Refreshing native plugins compatible for Editor in 3.80 ms, found 5 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 7518 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 126 unused Assets / (0.7 MB). Loaded Objects now: 8921.
+Memory consumption went from 369.2 MB to 368.5 MB.
+Total: 27.959000 ms (FindLiveObjects: 0.389375 ms CreateObjectMapping: 0.207792 ms MarkObjects: 26.537583 ms  DeleteObjects: 0.823458 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:framework-osx-AVFoundation: e770b220cccbd017edd2c1fefb359320 -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:AudioImporter_EditorPlatform: 3918e3fc78b5a79bad01e8451be0beb8 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:CustomObjectIndexerAttribute: 72b91833f83ae208fae7752999fa3104 -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+========================================================================
+Received Prepare
+Begin MonoManager ReloadAssembly
+Thread 0x16b61f000 may have been prematurely finalized
+Symbol file LoadedFromMemory is not a mono symbol file
+- Loaded All Assemblies, in  0.367 seconds
+Refreshing native plugins compatible for Editor in 3.69 ms, found 5 plugins.
+Native extension for OSXStandalone target not found
+[Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] UpmClient::Send -- Unable to send message (not connected to UPM process).
+[Package Manager] Cannot connect to Unity Package Manager local server
+[MODES] ModeService[none].Initialize
+[MODES] ModeService[none].LoadModes
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  1.416 seconds
+Domain Reload Profiling: 1783ms
+	BeginReloadAssembly (138ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (5ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (67ms)
+	RebuildCommonClasses (18ms)
+	RebuildNativeTypeToScriptingClass (7ms)
+	initialDomainReloadingComplete (16ms)
+	LoadAllAssembliesAndSetupDomain (187ms)
+		LoadAssemblies (196ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (19ms)
+			TypeCache.Refresh (9ms)
+				TypeCache.ScanAssembly (0ms)
+			ScanForSourceGeneratedMonoScriptInfo (0ms)
+			ResolveRequiredComponents (10ms)
+	FinalizeReload (1417ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (433ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (2ms)
+			SetLoadedEditorAssemblies (3ms)
+			RefreshPlugins (0ms)
+			BeforeProcessingInitializeOnLoad (51ms)
+			ProcessInitializeOnLoadAttributes (254ms)
+			ProcessInitializeOnLoadMethodAttributes (122ms)
+			AfterProcessingInitializeOnLoad (1ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (7ms)
+Refreshing native plugins compatible for Editor in 4.30 ms, found 5 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 7518 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 126 unused Assets / (0.7 MB). Loaded Objects now: 8929.
+Memory consumption went from 374.7 MB to 374.1 MB.
+Total: 11.722666 ms (FindLiveObjects: 0.321791 ms CreateObjectMapping: 0.206834 ms MarkObjects: 10.763834 ms  DeleteObjects: 0.429666 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:framework-osx-AVFoundation: e770b220cccbd017edd2c1fefb359320 -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:AudioImporter_EditorPlatform: 3918e3fc78b5a79bad01e8451be0beb8 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:CustomObjectIndexerAttribute: 72b91833f83ae208fae7752999fa3104 -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+========================================================================
+Received Prepare
+Begin MonoManager ReloadAssembly
+Thread 0x16b61f000 may have been prematurely finalized
+Symbol file LoadedFromMemory is not a mono symbol file
+- Loaded All Assemblies, in  0.372 seconds
+Refreshing native plugins compatible for Editor in 3.33 ms, found 5 plugins.
+Native extension for OSXStandalone target not found
+[Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] UpmClient::Send -- Unable to send message (not connected to UPM process).
+[Package Manager] Cannot connect to Unity Package Manager local server
+[MODES] ModeService[none].Initialize
+[MODES] ModeService[none].LoadModes
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  1.350 seconds
+Domain Reload Profiling: 1722ms
+	BeginReloadAssembly (137ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (2ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (79ms)
+	RebuildCommonClasses (21ms)
+	RebuildNativeTypeToScriptingClass (7ms)
+	initialDomainReloadingComplete (15ms)
+	LoadAllAssembliesAndSetupDomain (192ms)
+		LoadAssemblies (200ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (20ms)
+			TypeCache.Refresh (9ms)
+				TypeCache.ScanAssembly (0ms)
+			ScanForSourceGeneratedMonoScriptInfo (0ms)
+			ResolveRequiredComponents (10ms)
+	FinalizeReload (1350ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (410ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (2ms)
+			SetLoadedEditorAssemblies (3ms)
+			RefreshPlugins (0ms)
+			BeforeProcessingInitializeOnLoad (50ms)
+			ProcessInitializeOnLoadAttributes (242ms)
+			ProcessInitializeOnLoadMethodAttributes (111ms)
+			AfterProcessingInitializeOnLoad (1ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (7ms)
+Refreshing native plugins compatible for Editor in 4.53 ms, found 5 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 7518 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 126 unused Assets / (0.7 MB). Loaded Objects now: 8937.
+Memory consumption went from 380.2 MB to 379.5 MB.
+Total: 8.721042 ms (FindLiveObjects: 0.287833 ms CreateObjectMapping: 0.184292 ms MarkObjects: 7.793417 ms  DeleteObjects: 0.455042 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:framework-osx-AVFoundation: e770b220cccbd017edd2c1fefb359320 -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:AudioImporter_EditorPlatform: 3918e3fc78b5a79bad01e8451be0beb8 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:CustomObjectIndexerAttribute: 72b91833f83ae208fae7752999fa3104 -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 184.489656 seconds.
+  path: Assets/Scripts/MapUIScripts/RTSUIMapMenu.uss
+  artifactKey: Guid(700c1652f1a8343729c98e6ad6468a5e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/MapUIScripts/RTSUIMapMenu.uss using Guid(700c1652f1a8343729c98e6ad6468a5e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1ee5a06b3ea57abc570bb37cd77129a0') in 0.035857 seconds
+Number of updated asset objects reloaded before import = 1
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Prepare
+Begin MonoManager ReloadAssembly
+Thread 0x16b61f000 may have been prematurely finalized
+Symbol file LoadedFromMemory is not a mono symbol file
+- Loaded All Assemblies, in  0.343 seconds
+Refreshing native plugins compatible for Editor in 3.39 ms, found 5 plugins.
+Native extension for OSXStandalone target not found
+[Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] UpmClient::Send -- Unable to send message (not connected to UPM process).
+[Package Manager] Cannot connect to Unity Package Manager local server
+[MODES] ModeService[none].Initialize
+[MODES] ModeService[none].LoadModes
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  1.426 seconds
+Domain Reload Profiling: 1769ms
+	BeginReloadAssembly (120ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (2ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (62ms)
+	RebuildCommonClasses (19ms)
+	RebuildNativeTypeToScriptingClass (7ms)
+	initialDomainReloadingComplete (15ms)
+	LoadAllAssembliesAndSetupDomain (181ms)
+		LoadAssemblies (190ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (19ms)
+			TypeCache.Refresh (9ms)
+				TypeCache.ScanAssembly (0ms)
+			ScanForSourceGeneratedMonoScriptInfo (0ms)
+			ResolveRequiredComponents (10ms)
+	FinalizeReload (1426ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (435ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (2ms)
+			SetLoadedEditorAssemblies (3ms)
+			RefreshPlugins (0ms)
+			BeforeProcessingInitializeOnLoad (47ms)
+			ProcessInitializeOnLoadAttributes (262ms)
+			ProcessInitializeOnLoadMethodAttributes (120ms)
+			AfterProcessingInitializeOnLoad (1ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (7ms)
+Refreshing native plugins compatible for Editor in 4.37 ms, found 5 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 7518 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 126 unused Assets / (0.7 MB). Loaded Objects now: 8945.
+Memory consumption went from 386.1 MB to 385.4 MB.
+Total: 10.276625 ms (FindLiveObjects: 0.330875 ms CreateObjectMapping: 0.205833 ms MarkObjects: 9.116125 ms  DeleteObjects: 0.623417 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:framework-osx-AVFoundation: e770b220cccbd017edd2c1fefb359320 -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:AudioImporter_EditorPlatform: 3918e3fc78b5a79bad01e8451be0beb8 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:CustomObjectIndexerAttribute: 72b91833f83ae208fae7752999fa3104 -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+========================================================================
+Received Prepare
+Begin MonoManager ReloadAssembly
+Thread 0x16b61f000 may have been prematurely finalized
+Symbol file LoadedFromMemory is not a mono symbol file
+- Loaded All Assemblies, in  0.407 seconds
+Refreshing native plugins compatible for Editor in 8.62 ms, found 5 plugins.
+Native extension for OSXStandalone target not found
+[Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] UpmClient::Send -- Unable to send message (not connected to UPM process).
+[Package Manager] Cannot connect to Unity Package Manager local server
+[MODES] ModeService[none].Initialize
+[MODES] ModeService[none].LoadModes
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  1.574 seconds
+Domain Reload Profiling: 1982ms
+	BeginReloadAssembly (141ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (8ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (70ms)
+	RebuildCommonClasses (19ms)
+	RebuildNativeTypeToScriptingClass (7ms)
+	initialDomainReloadingComplete (15ms)
+	LoadAllAssembliesAndSetupDomain (224ms)
+		LoadAssemblies (215ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (41ms)
+			TypeCache.Refresh (16ms)
+				TypeCache.ScanAssembly (0ms)
+			ScanForSourceGeneratedMonoScriptInfo (1ms)
+			ResolveRequiredComponents (23ms)
+	FinalizeReload (1575ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (488ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (3ms)
+			SetLoadedEditorAssemblies (4ms)
+			RefreshPlugins (0ms)
+			BeforeProcessingInitializeOnLoad (52ms)
+			ProcessInitializeOnLoadAttributes (299ms)
+			ProcessInitializeOnLoadMethodAttributes (129ms)
+			AfterProcessingInitializeOnLoad (0ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (9ms)
+Refreshing native plugins compatible for Editor in 4.30 ms, found 5 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 7518 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 126 unused Assets / (0.7 MB). Loaded Objects now: 8953.
+Memory consumption went from 391.5 MB to 390.8 MB.
+Total: 14.161042 ms (FindLiveObjects: 0.431750 ms CreateObjectMapping: 0.337167 ms MarkObjects: 12.850166 ms  DeleteObjects: 0.541417 ms)
+
+Prepare: number of updated asset objects reloaded= 1
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:framework-osx-AVFoundation: e770b220cccbd017edd2c1fefb359320 -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:AudioImporter_EditorPlatform: 3918e3fc78b5a79bad01e8451be0beb8 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:CustomObjectIndexerAttribute: 72b91833f83ae208fae7752999fa3104 -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+========================================================================
+Received Prepare
+Switching render pipeline 7b7fd9122c28c4d15b667c7040e3b3fd -> c5ca88e9b17b24976bac59625274883c
+Refreshing native plugins compatible for Editor in 13.94 ms, found 5 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 14 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 14 unused Assets / (0.7 MB). Loaded Objects now: 8953.
+Memory consumption went from 308.5 MB to 307.9 MB.
+Total: 39.607375 ms (FindLiveObjects: 0.373000 ms CreateObjectMapping: 0.196625 ms MarkObjects: 38.437500 ms  DeleteObjects: 0.599917 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:srp/default-pipeline: 5cac889e1bb74279b6ca9526254788c3 -> b7f79d21c2824c1db566c707043e3bdf
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:framework-osx-AVFoundation: e770b220cccbd017edd2c1fefb359320 -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:AudioImporter_EditorPlatform: 3918e3fc78b5a79bad01e8451be0beb8 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:CustomObjectIndexerAttribute: 72b91833f83ae208fae7752999fa3104 -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+========================================================================
+Received Prepare
+Refreshing native plugins compatible for Editor in 23.81 ms, found 5 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 14 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 14 unused Assets / (0.7 MB). Loaded Objects now: 8953.
+Memory consumption went from 304.8 MB to 304.1 MB.
+Total: 77.428916 ms (FindLiveObjects: 0.810167 ms CreateObjectMapping: 0.346541 ms MarkObjects: 75.705375 ms  DeleteObjects: 0.566083 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:framework-osx-AVFoundation: e770b220cccbd017edd2c1fefb359320 -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:AudioImporter_EditorPlatform: 3918e3fc78b5a79bad01e8451be0beb8 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:CustomObjectIndexerAttribute: 72b91833f83ae208fae7752999fa3104 -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 1022.902892 seconds.
+  path: Assets/MillyPlazaIsoMedium.unity
+  artifactKey: Guid(8a28f9072fd655c4f839218ee54be4d4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/MillyPlazaIsoMedium.unity using Guid(8a28f9072fd655c4f839218ee54be4d4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e2979103bc6d13196c70fbcdc508e6ce') in 0.003544 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0

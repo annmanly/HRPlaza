@@ -22,6 +22,9 @@ local _artcenterButton : VisualElement = nil
 local _buildercenterButton : VisualElement = nil
 --!Bind
 local _transitstationButton : VisualElement = nil
+--!Bind
+local _hrliveButton : VisualElement = nil
+
 
 --!SerializeField
 local MapImage  : Texture    = nil   -- map background image
@@ -69,6 +72,9 @@ local BuilderCenterLookAtPosition  : Transform    = nil   -- map background imag
 local TrasitStationPosition  : Transform    = nil   -- map background image
 --!SerializeField
 local TransitLookAtPosition  : Transform    = nil   -- map background image
+
+--!SerializeField
+local HRLivePosition  : Transform    = nil   -- map background image
 
 
 
@@ -138,7 +144,10 @@ _transitstationButton:RegisterPressCallback(function()
   teleporterScript.Teleport(TrasitStationPosition.position, TransitLookAtPosition.position)
 end)
 
-
+_hrliveButton:RegisterPressCallback(function()
+  self.gameObject:SetActive(false)
+  teleporterScript.Teleport(HRLivePosition.position, TransitLookAtPosition.position)
+end)
 
 
 
