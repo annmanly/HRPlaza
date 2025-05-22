@@ -7,18 +7,12 @@ local countdownTimer: UILabel = nil
 --!Bind
 local imageDisplay: UIImage = nil
 --!Bind
-local marqueeBackground: UIImage = nil
---!Bind
 local marqueeContainer: VisualElement = nil
 
 
 --!SerializeField
 --!Tooltip("Assign a ScriptableObject of type MarqueeEventsSO (with a public Texture[] field named 'textures') here")
 local marqueeEventsSO : HRLive_ScriptableObject = nil
-
---!SerializeField
---!Tooltip("Assign the background image here")
-local marqueeBackgroundImage : Texture = nil
 
 --!SerializeField
 --!Tooltip("TextAsset containing ET start times, one per line ('YYYY-MM-DD HH:MM:SS')")
@@ -95,7 +89,6 @@ function self:Awake()
     -- Init UI
     countdownLabel:SetPrelocalizedText("")
     marqueeContainer:RemoveFromClassList("hidden")
-    marqueeBackground.image = marqueeBackgroundImage
 end
 
 function self:Update()
