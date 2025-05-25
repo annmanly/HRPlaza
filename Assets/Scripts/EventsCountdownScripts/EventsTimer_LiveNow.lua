@@ -1,25 +1,12 @@
 --!Type(UI)
 
 --!Bind
-local billboardContainer : VisualElement = nil
---!Bind
 local headerText        : VisualElement = nil
---!Bind
-local primaryText       : VisualElement = nil
---!Bind
-local countdownText     : UILabel        = nil
---!Bind
-local billboardDisplay  : UIImage        = nil
---!Bind
-local eventsSignBackground  : UIImage        = nil
 
 --!SerializeField
 --!Tooltip("Assign a ScriptableObject of type MarqueeEventsSO (with public fields GetEventStartDates() and GetEventImages()) here")
 local Events_ScriptableObject : Events_ScriptableObject = nil
 
---!SerializeField
---!Tooltip("Assign Events Sign Background Here")
-local SignImage : Texture = nil
 
 -- Parsed lists
 local _eventTextures     : table = {}
@@ -72,11 +59,7 @@ end
 function self:Start()
     -- clear initial texts and show container
     headerText:SetPrelocalizedText("")
-    primaryText:SetPrelocalizedText("")
-    countdownText:SetPrelocalizedText("")
-    billboardContainer:RemoveFromClassList("hidden")
-    eventsSignBackground.image = SignImage
-
+    headerText:RemoveFromClassList("hidden")
 end
 
 function self:Update()
@@ -93,54 +76,15 @@ function self:Update()
         local endEpoch   = _eventEndEpochs[i]
 
         if now >= startEpoch and now < endEpoch then
-            -- LIVE NOW state
-            local rem = endEpoch - now
-            local d   = math.floor(rem / 86400)
-            local h   = math.floor((rem % 86400) / 3600)
-            local m   = math.floor((rem % 3600) / 60)
-            local sec = rem % 60
-            local formatted
-            if d > 0 then
-                formatted = string.format("%02d:%02d:%02d:%02d", d, h, m, sec)
-            elseif h > 0 then
-                formatted = string.format("%02d:%02d:%02d", h, m, sec)
-            else
-                formatted = string.format("%02d:%02d", m, sec)
-            end
             headerText:SetPrelocalizedText("LIVE\nNOW:")
-            primaryText:SetPrelocalizedText("EVENT ENDING:")
-            countdownText:SetPrelocalizedText(formatted)
-            billboardDisplay.image = _eventTextures[i]
-
             return
-
         elseif now < startEpoch then
-            -- COMING SOON state
-            local rem = startEpoch - now
-            local d   = math.floor(rem / 86400)
-            local h   = math.floor((rem % 86400) / 3600)
-            local m   = math.floor((rem % 3600) / 60)
-            local sec = rem % 60
-            local formatted
-            if d > 0 then
-                formatted = string.format("%02d:%02d:%02d:%02d", d, h, m, sec)
-            elseif h > 0 then
-                formatted = string.format("%02d:%02d:%02d", h, m, sec)
-            else
-                formatted = string.format("%02d:%02d", m, sec)
-            end
             headerText:SetPrelocalizedText("COMING\nSOON:")
-            primaryText:SetPrelocalizedText("EVENT STARTING")
-            countdownText:SetPrelocalizedText(formatted)
-            billboardDisplay.image = _eventTextures[i]
-
             return
         end
     end
 
     -- No active or upcoming events
     headerText:SetPrelocalizedText("")
-    primaryText:SetPrelocalizedText("")
-    countdownText:SetPrelocalizedText("")
-    billboardContainer:AddToClassList("hidden")
+    headerText:AddToClassList("hidden")
 end

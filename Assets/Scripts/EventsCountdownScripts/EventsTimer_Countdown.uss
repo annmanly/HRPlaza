@@ -1,0 +1,30 @@
+.billboard {
+    width: 100%;
+    height: 100%;
+}
+
+
+.billboard-container {
+    align-self: center;
+    position: absolute;
+    -unity-font-style: bold; 
+    -unity-font-definition: var(--font-bold);
+    color: white;
+    -unity-text-align: middle-center;
+}
+
+
+.primary-text {
+    top: 20px;
+    font-size: 80px;
+}
+
+.timer-text {
+    top: -10px;
+    font-size: 155px;
+}
+
+.hidden {
+  display: none;
+}
+

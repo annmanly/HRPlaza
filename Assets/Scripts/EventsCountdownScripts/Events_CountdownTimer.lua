@@ -12,7 +12,7 @@ local countdownText     : UILabel        = nil
 local billboardDisplay  : UIImage        = nil
 
 --!SerializeField
---!Tooltip("Assign a ScriptableObject of type MarqueeEventsSO (with public fields GetEventStartDates() and GetEventImages()) here")
+--!Tooltip("Assign a ScriptableObject of type EventsScriptableObject (with public fields GetEventStartDates() and GetEventImages()) here")
 local Events_ScriptableObject : Events_ScriptableObject = nil
 
 -- Parsed lists
