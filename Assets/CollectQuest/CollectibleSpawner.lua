@@ -2,7 +2,7 @@
 --!SerializeField
 local collectibleObject:GameObject = nil
 local collectibleObj = nil
-local lifetime:number = 45 -- time before despawn
+local lifetime:number = 85 -- time before despawn
 local minRespawnTimer:number = 5 -- time after collected before spawning again but will add offset
 timerOffset = math.random(0, 5)
 
