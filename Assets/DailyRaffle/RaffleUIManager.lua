@@ -37,4 +37,10 @@ function self:ClientAwake()
     mainUI = mainRaffleUIObj.gameObject:GetComponent(RaffleUI)
     RaffleManager.TicketCountResponse:Connect(setMainUiTicketCount)
     RaffleManager.TicketCountRequest:FireServer()
+    Timer.After(10, function() RaffleManager.RewardCheckRequest:FireServer() end)
+    
+    RaffleManager.RewardEvent:Connect(function() 
+        print("CLIENT RECEIVED REWARD EVENT")
+        -- TO DO: add UI notification pop up
+    end)
 end

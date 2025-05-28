@@ -34,7 +34,6 @@ end
 local raffleTicketsPrefix = "RaffleTickets_"
 local currentDate = nil
 local tickets = {}
-local ticketCount = 0
 local GeneratingTicketsDone = Event.new("GeneratingTicketsDone")
 
 -- [ RAFFLE CONFIGURATION ]
@@ -65,49 +64,49 @@ function OnTicketCountRequest(player)
 end
 
 function InitiateDraw()
-    -- CHANGE TO -1 WHEN DONE TESTING
-    local yesterday = GetDateStringWithOffset(0)
-    local ticketsKey = raffleTicketsPrefix .. yesterday
-
-    winnerKey = "WINNERS" .. yesterday
+    date = GetDateStringWithOffset(-1)
+    winnerKey = "WINNERS" .. date
     Storage.GetValue(winnerKey, function(value, err) 
         if value ~= nil then
             print("WINNERS ALREADY DRAWN")
         else
             tickets = {}
-            ticketCount = 0
+
             -- temp set a value while generating tickets to prevent other
             -- servers from doing redundant draws but not sure if necessary
             Storage.SetValue(winnerKey, {"N/A"})
             
             -- INITIATE RAFFLE DRAW
-            GenerateTicketsForDraw(1, ticketsKey)
+            GenerateTicketsForDraw(1)
         end
     end)
 
 end
 
 
-function GenerateTicketsForDraw(i, key)
-
+function GenerateTicketsForDraw(i)
+    local yesterday = GetDateStringWithOffset(-1)
+    local ticketsKey = raffleTicketsPrefix .. yesterday
     -- INCREASE WHEN DONE TESTING
     local step = 1 
 
-    Leaderboard.GetEntries(key, i, step, function(entries, err) 
-        if entries == nil or #entries ==  0 then
-            GeneratingTicketsDone:Fire()
+    Leaderboard.GetEntries(ticketsKey, i, step, function(entries, err) 
+        if entries == {} then
+            -- no tickets, no winners selected
+            print(`[RAFFLE] NO TICKETS ON DAY: {yesterday}`)
             return
         else
-            for i,entry in pairs(entries) do
-                playerTicket = {id = entry.id, name = entry.name, score=entry.score}
-                ticketCount += entry.score
-                table.insert(tickets, playerTicket)
+            for i,entry in entries do
+                for i=1,entry.score do
+                    playerTicket = {id = entry.id, name = entry.name}
+                    table.insert(tickets, playerTicket)
+                end
             end
             if #entries < step then
-                
+                GeneratingTicketsDone:Fire()
                 return
             else
-                GenerateTicketsForDraw(i+step, key)
+                GenerateTicketsForDraw(i+step)
             end
         end
     end)
@@ -128,40 +127,30 @@ function AddWinnersToStorage(winners, date)
     Storage.SetValue(winnerKey, winners, function(err) end)
 end
 
-function SelectWinners()
-    -- CHANGE TO -1 WHEN DONE TESTING
-    local yesterday = GetDateStringWithOffset(0)
+function OnTicketListDone()
+    local yesterday = GetDateStringWithOffset(-1)
     winnerCount = numberOfWinners
-    print(`{ticketCount} TOTAL TICKETS.`)
-    if ticketCount <= numberOfWinners then winnerCount = ticketCount end
+    print(`{#tickets} TOTAL TICKETS.`)
+    if #tickets <= numberOfWinners then winnerCount = #tickets end
 
     winners = {}
     winnerNames = {}
     for i=1,winnerCount do
-        if ticketCount == 0 then
-            print("NO MORE TICKETS")
+        if #tickets == 0 then
             break
         end
 
-        choice = math.random(1, ticketCount)
-        for k,ticket in pairs(tickets) do
-            initchoice = choice
-            choice = choice - ticket.score
-            if choice <= 0 then
-                ticketCount -= ticket.score
-                winnerEntry = {
-                    id = ticket.id,
-                    name = ticket.name
-                }
-                table.insert(winners, winnerEntry)
-                table.insert(winnerNames, winnerEntry.name)
-                tickets[k].score = 0
-                print(`TICKET {initchoice} WINNER: {winnerEntry.name}`)
-                Storage.SetValue(winnerEntry.id .. "/RewardReady", true)
-            
-            break
-            end
-        end
+        choice = math.random(1, #tickets)
+        winnerEntry = {
+            id = tickets[choice].id,
+            name = tickets[choice].name
+        }
+        table.insert(winners, winnerEntry)
+        table.insert(winnerNames, winnerEntry.name)
+        tickets = removePlayerFromTickets(tickets, winnerEntry.id)
+        
+        Storage.SetValue(winnerEntry.id .. "/RewardReady", true)
+
     end
 
     print("WINNERS SELECTED: " .. table.concat(winnerNames, ", "))
@@ -170,7 +159,7 @@ end
 
 function CheckIfRewardReady(player)
     Storage.GetPlayerValue(player, "RewardReady", function(value, err) 
-        -- print("CHECKING PLAYER: " .. player.name)
+        print("CHECKING PLAYER: " .. player.name)
         if value == true then
             GivePrizeCurrency(player)
         end
@@ -199,7 +188,7 @@ function self:ServerStart()
     SubmitTicket:Connect(OnSubmitTicketRequest)
     TicketCountRequest:Connect(OnTicketCountRequest)
     RewardCheckRequest:Connect(CheckIfRewardReady)
-    GeneratingTicketsDone:Connect(SelectWinners)
+    GeneratingTicketsDone:Connect(OnTicketListDone)
 
     --- REMOVE AFTER DONE TESTING -- 
     InitiateDraw()

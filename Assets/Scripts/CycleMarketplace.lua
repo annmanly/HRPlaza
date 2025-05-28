@@ -21,7 +21,7 @@ local function CycleTexture()
             if Material and tex then
                 Material.mainTexture = tex
                 _currentLink = linkurls[idx]
-                print("link: " .. _currentLink)
+                -- print("link: " .. _currentLink)
             end
         end
         -- continue cycling
@@ -44,7 +44,7 @@ function self:ClientStart()
     local initialIdx = math.random(1, #Textures)
     Material.mainTexture = Textures[initialIdx]
     _currentLink = linkurls[initialIdx]
-    print("link: " .. _currentLink)
+    -- print("link: " .. _currentLink)
 
     -- begin the random cycle
     CycleTexture()

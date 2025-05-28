@@ -56,7 +56,7 @@ function self:Awake()
     _eventStartEpochs = {}
     _eventEndEpochs = {}
     local count = math.min(#eventStartTimes, #eventEndTimes, #objects)
-    print("Parsed event count:", count)
+    -- print("Parsed event count:", count)
     for i = 1, count do
         _eventStartEpochs[i] = parseETDateTime(eventStartTimes[i])
         _eventEndEpochs[i]   = parseETDateTime(eventEndTimes[i])
