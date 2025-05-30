@@ -4,7 +4,7 @@
 local Material : Material = nil
 
 --!SerializeField
---!Tooltip("Assign a ScriptableObject of type EventsScriptableObject (with public fields GetEventStartDates() and GetEventImages()) here")
+--!Tooltip("Assign a ScriptableObject of type EventsScriptableObject (with public fields GetEventStartDates() and GetEventHuds()) here")
 local Events_ScriptableObject : Events_ScriptableObject = nil
 
 local EventHuds     = {}
@@ -63,7 +63,7 @@ local function UpdateEventTexture()
 end
 
 function self:ClientStart()
-    EventHuds = Events_ScriptableObject.GetEventImages()
+    EventHuds = Events_ScriptableObject.GetEventHuds()
     eventStartTimes = Events_ScriptableObject.GetEventStartDates()
 
     if not Material or #EventHuds == 0 then

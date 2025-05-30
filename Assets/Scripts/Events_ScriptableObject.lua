@@ -1,7 +1,10 @@
 --!Type(ScriptableObject)
 
 --!SerializeField
-local eventImages: {Texture} = {}
+local grabBanners: {Texture} = {}
+
+--!SerializeField
+local eventHuds: {Texture} = {}
 
 --!SerializeField
 local eventStartDates: {string} = {}
@@ -12,8 +15,12 @@ local eventNames: {string} = {}
 --!SerializeField
 local grabLinkUrls : {string} = {}
 
-function GetEventImages() : {Texture}
-    return eventImages
+function GetGrabBanners() : {Texture}
+    return grabBanners
+end
+
+function GetEventHuds() : {Texture}
+    return eventHuds
 end
 
 function GetEventStartDates() : {String}

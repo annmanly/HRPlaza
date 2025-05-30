@@ -9,7 +9,6 @@ local Events_ScriptableObject : Events_ScriptableObject = nil
 
 
 -- Parsed lists
-local _eventTextures     : table = {}
 local _eventStartEpochs  : table = {}
 local _eventEndEpochs    : table = {}
 local eventNames        : {string}  = {}
@@ -40,7 +39,6 @@ end
 
 function self:Awake()
     -- grab textures and start-times
-    _eventTextures     = Events_ScriptableObject.GetEventImages()
     eventNames     = Events_ScriptableObject.GetEventNames()
     local eventStartTimes = Events_ScriptableObject.GetEventStartDates()
 
@@ -67,8 +65,7 @@ function self:Update()
     local maxCount = math.min(
         #_eventStartEpochs,
         #_eventEndEpochs,
-        #eventNames,
-        #_eventTextures
+        #eventNames
     )
 
     for i = 1, maxCount do
