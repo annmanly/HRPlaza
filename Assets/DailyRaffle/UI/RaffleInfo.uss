@@ -5,6 +5,10 @@
     --secondary-dark: #322F41;
     --plum-color: #9374FD;
     --blue-color: #67acdb;
+    --primary-bold-font: url(project://database/Assets/DailyRaffle/UI/fonts/GlacialIndifference-Bold.otf);
+    --primary-regular-font:url(project://database/Assets/DailyRaffle/UI/fonts/GlacialIndifference-Regular.otf);
+    --secondary-bold-font: url(project://database/Assets/DailyRaffle/UI/fonts/MuseoSansRounded-900.otf);
+    --secondary-regular-font:url(project://database/Assets/DailyRaffle/UI/fonts/MuseoSansRounded-700.otf);
 }
 
 .raffle-info {
@@ -27,7 +31,7 @@
     border-color:white;
     flex-direction:column;
     align-items:center;
-    padding:10px;
+    padding:30px;
 }
 
 .hidden {
@@ -55,6 +59,28 @@
     margin:0px;
 }
 
+.smallHeadingText {
+    font-size: 18px;
+    -unity-font-definition: var(--primary-bold-font);
+}
+
+.heading {
+    font-size:22px;
+    -unity-font-definition: var(--secondary-bold-font);
+}
+
+.body {
+    -unity-font-definition: var(--primary-regular-font);
+    font-size:16px;
+    margin-top:10px;
+}
+
+.bold-body {
+    -unity-font-definition: var(--primary-bold-font);
+    font-size:16px;
+    margin-top:10px;
+}
+
 #_closeButton {
     position:absolute;
     right:-10px;
@@ -79,15 +105,45 @@
 
 #_mainImage {
     width:90%;
-    height:100%;
+    height:50%;
 }
 
 .info-image-1 {
-    background-image: url(project://database/Assets/DailyRaffle/Sprites/info-page1.png);
+    background-image: url(project://database/Assets/DailyRaffle/Sprites/raffle-bird.png);
     -unity-background-scale-mode: scale-to-fit;
 }
 
 .info-image-2 {
-    background-image: url(project://database/Assets/DailyRaffle/Sprites/info-page2.png);
+    background-image: url(project://database/Assets/DailyRaffle/Sprites/redeem-photo.png);
     -unity-background-scale-mode: scale-to-fit;
+}
+
+.pips-container {
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+    height: 20px;
+    position: absolute;
+    bottom:0;
+    left:0;
+    right:0;
+}
+
+.pip {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: #1e5e8a;
+    color: #1e5e8a;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+.pip-selected {
+    background-color: #ffffff;
+}
+
+.pip-off{
+    background-color: #1e5e8a;
 }

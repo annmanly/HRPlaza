@@ -11,6 +11,11 @@ RewardEvent = Event.new("RewardEvent")
 
 -- [[ HELPERS ]]
 
+function GetNowDateStamp()
+    local now = os.date("!*t")
+    return string.format("%d-%02d-%02d %02d:%02d:%02d", now.year,now.month, now.day, now.hour, now.min, now.sec)
+end
+
 function GetTodayDateString() 
     local currentDate = os.date("!*t")
     return string.format("%d-%02d-%02d", currentDate.year,currentDate.month, currentDate.day)
@@ -32,6 +37,7 @@ end
 -- [[ SERVER ]]
 
 local raffleTicketsPrefix = "RaffleTickets_"
+local winnersPrefix = "WINNERS_"
 local currentDate = nil
 local tickets = {}
 local ticketCount = 0
@@ -69,20 +75,31 @@ function InitiateDraw()
     local yesterday = GetDateStringWithOffset(0)
     local ticketsKey = raffleTicketsPrefix .. yesterday
 
-    winnerKey = "WINNERS" .. yesterday
+    winnerKey = winnersPrefix .. yesterday
     Storage.GetValue(winnerKey, function(value, err) 
         if value ~= nil then
-            print("WINNERS ALREADY DRAWN")
-        else
-            tickets = {}
-            ticketCount = 0
-            -- temp set a value while generating tickets to prevent other
-            -- servers from doing redundant draws but not sure if necessary
-            Storage.SetValue(winnerKey, {"N/A"})
-            
-            -- INITIATE RAFFLE DRAW
-            GenerateTicketsForDraw(1, ticketsKey)
+            if value.status == "complete" then
+                print("WINNERS ALREADY DRAWN")
+                return
+            end
         end
+
+        local now = os.date("!*t")
+        local serverID = server.info.roomId
+        WinnerEntry = {
+            status = "drawing",
+            drawTime = GetNowDateStamp(),
+            finishTime = "00:00:00",
+            server = serverID,
+            winners = {}
+        }
+        Storage.SetValue(winnerKey, WinnerEntry)
+        
+        -- INITIATE RAFFLE DRAW
+        tickets = {}
+        ticketCount = 0
+        GenerateTicketsForDraw(1, ticketsKey)
+        
     end)
 
 end
@@ -124,8 +141,30 @@ function removePlayerFromTickets(tickets, playerId)
 end
 
 function AddWinnersToStorage(winners, date)
-    winnerKey = "WINNERS" .. date
-    Storage.SetValue(winnerKey, winners, function(err) end)
+    winnerKey = winnersPrefix .. date
+    
+    Storage.GetValue(winnerKey, function(value, err) 
+        if err ~= StorageError.None then
+            print(`[ERROR] Storage Error - {StorageError[err]} when reading winners entry {winnerKey}`)
+        else
+            winnerEntryUpdate = value
+            winnerEntryUpdate.winners = winners
+            winnerEntryUpdate.finishTime = GetNowDateStamp()
+            if winners == {} then 
+                print(`[ERROR] No winners selected.`)
+                winnerEntryUpdate.status = "error"
+            else
+                winnerEntryUpdate.status = "complete"
+            end
+
+            Storage.SetValue(winnerKey, winnerEntryUpdate, function(err) 
+                 if err ~= StorageError.None then
+                    print(`[ERROR] Storage Error - {StorageError[err]} when setting winners`)
+                 end
+            end)
+        end
+    end)
+    
 end
 
 function SelectWinners()
@@ -139,7 +178,7 @@ function SelectWinners()
     winnerNames = {}
     for i=1,winnerCount do
         if ticketCount == 0 then
-            print("NO MORE TICKETS")
+            -- print("NO MORE TICKETS")
             break
         end
 

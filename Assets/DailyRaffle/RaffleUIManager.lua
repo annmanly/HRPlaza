@@ -4,8 +4,6 @@
 local mainRaffleUIObj:GameObject=nil
 --!SerializeField
 local infoUIObj:GameObject=nil
---!SerializeField
-local codesUIObj:GameObject=nil
 
 local RaffleManager = require("RaffleManager")
 local mainUI = nil
@@ -15,10 +13,6 @@ function openInfo()
     infoUIObj.gameObject:SetActive(true)
 end
 
-function openCodes()
-    codesUIObj.gameObject:SetActive(true)
-    -- TO DO: add actual promo codes
-end
 
 function openMainUI()
     mainRaffleUIObj.gameObject:SetActive(true)

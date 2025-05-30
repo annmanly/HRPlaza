@@ -6437,7 +6437,7 @@ PrefabInstance:
     - target: {fileID: 2655789517267430023, guid: 58c657077dc71824ab0e6435a72e4c79,
         type: 3}
       propertyPath: m_LocalRotation.w
-      value: 0.948013
+      value: -0.7949995
       objectReference: {fileID: 0}
     - target: {fileID: 2655789517267430023, guid: 58c657077dc71824ab0e6435a72e4c79,
         type: 3}
@@ -6447,7 +6447,7 @@ PrefabInstance:
     - target: {fileID: 2655789517267430023, guid: 58c657077dc71824ab0e6435a72e4c79,
         type: 3}
       propertyPath: m_LocalRotation.y
-      value: 0.31823164
+      value: 0.60661024
       objectReference: {fileID: 0}
     - target: {fileID: 2655789517267430023, guid: 58c657077dc71824ab0e6435a72e4c79,
         type: 3}
@@ -6462,7 +6462,7 @@ PrefabInstance:
     - target: {fileID: 2655789517267430023, guid: 58c657077dc71824ab0e6435a72e4c79,
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.y
-      value: 37.112
+      value: 285.31
       objectReference: {fileID: 0}
     - target: {fileID: 2655789517267430023, guid: 58c657077dc71824ab0e6435a72e4c79,
         type: 3}
@@ -21971,7 +21971,7 @@ MonoBehaviour:
   m_OverrideVoxelSize: 0
   m_VoxelSize: 0.13333334
   m_MinRegionArea: 2
-  m_NavMeshData: {fileID: 23800000, guid: 2745a5f096403451da170d70729dd7e0, type: 2}
+  m_NavMeshData: {fileID: 23800000, guid: c7aa94631aeb59345bcd318717f755c6, type: 2}
   m_BuildHeightMesh: 0
 --- !u!4 &1332807718
 Transform:
@@ -41439,6 +41439,11 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1053215559031421524, guid: 4ce793475e09bec42829414201feb684,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 3831312188795633658, guid: 4ce793475e09bec42829414201feb684,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -41565,7 +41570,8 @@ PrefabInstance:
       value: 27.7
       objectReference: {fileID: 0}
     m_RemovedComponents: []
-    m_RemovedGameObjects: []
+    m_RemovedGameObjects:
+    - {fileID: 3398787827465470730, guid: 4ce793475e09bec42829414201feb684, type: 3}
     m_AddedGameObjects:
     - targetCorrespondingSourceObject: {fileID: 4996778676907373874, guid: 4ce793475e09bec42829414201feb684,
         type: 3}

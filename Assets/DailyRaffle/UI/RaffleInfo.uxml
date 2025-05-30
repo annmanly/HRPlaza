@@ -9,13 +9,21 @@
 
   <hr:UILuaView class="raffle-info">
   <VisualElement name="_closeOverlay" class="modal"/>
-  <VisualElement name="_contentWindow" class="windowContainer vertical-layout" picking-mode="Ignore">
+  <VisualElement name="_contentWindow" class="windowContainer vertical-layout">
     <VisualElement name="_closeButton">
       <VisualElement name="_closeImage"/>
     </VisualElement>
+
+    <hr:UILabel name="_smallHeadingText" class="smallHeading white-text centered"/>
+    <hr:UILabel name="_headingText" class="heading white-text centered"/>
     <VisualElement name="_mainImage" class="info-image-1">
     </VisualElement>
+    <hr:UILabel name="_descriptionText" class="body  white-text centered"/>
+    <VisualElement name="_pipsContainer" class="pips-container">
+        <VisualElement name="_pip1" class="pip" />
+        <VisualElement name="_pip2" class="pip" />
 
+    </VisualElement>
   </VisualElement>
 
   </hr:UILuaView>
