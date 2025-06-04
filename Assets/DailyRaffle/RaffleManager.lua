@@ -7,6 +7,8 @@ TicketCountRequest = Event.new("TicketCountRequest")
 TicketCountResponse = Event.new("TicketCountResponse")
 RewardCheckRequest = Event.new("RewardCheckRequest")
 RewardEvent = Event.new("RewardEvent")
+UIRaffleWinnerEvent = Event.new("RaffleWinnerEvent")
+UIRaffleDrawingEvent = Event.new("UIDrawingEvent")
 
 
 -- [[ HELPERS ]]
@@ -74,7 +76,7 @@ function InitiateDraw()
     -- CHANGE TO -1 WHEN DONE TESTING
     local yesterday = GetDateStringWithOffset(0)
     local ticketsKey = raffleTicketsPrefix .. yesterday
-
+    UIRaffleDrawingEvent:FireAllClients()
     winnerKey = winnersPrefix .. yesterday
     Storage.GetValue(winnerKey, function(value, err) 
         if value ~= nil then
@@ -229,6 +231,7 @@ function GivePrizeCurrency(player)
         print(`AWARD PRIZE CURRENCY TO {player.name}`)
         Storage.SetPlayerValue(player, "RewardReady", false)
         RewardEvent:FireClient(player)
+        UIRaffleWinnerEvent:FireClient(player) -- display notif
     end
 end
 

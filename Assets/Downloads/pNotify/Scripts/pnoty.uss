@@ -1,0 +1,119 @@
+:root {
+  /* Fonts */
+  --font-default: var(--font-regular);
+
+  /* Type Colors */
+  --color-success: #00B072;
+  --color-warning: #FFC107;
+  --color-error: #F44336;
+  --color-info: #2196F3;
+  --color-default: #607D8B;
+
+  /* Text Colors */
+  --color-white: #FFFFFF;
+  --color-gray: rgba(255, 255, 255, 0.9);
+}
+
+.pnoty {
+  display: flex;
+  position: absolute;
+  
+  flex-direction: column;
+  padding: 4px;
+  max-width: 300px;
+
+  width: 100%;
+}
+
+.pnoty > * {
+  margin-bottom: 8px;
+}
+
+.notification {
+  display: flex;
+  flex-grow: 1;
+  opacity: 1;
+  transition-property: opacity;
+  transition-duration: 0.5s;
+  opacity: 1;
+  border-top-right-radius: 8px;
+  border-bottom-right-radius: 8px;
+}
+
+.notification:hover {
+ opacity: 0.8;
+}
+
+.notification.fadeOut {
+  opacity: 0;
+}
+
+.pnotify_type__success {
+  background-color: var(--color-success);
+  color: var(--color-white)
+}
+
+.pnotify_type__warning {
+  background-color: var(--color-warning);
+  color: var(--color-white)
+}
+
+.pnotify_type__error {
+  background-color: var(--color-error);
+  color: var(--color-white)
+}
+
+.pnotify_type__info {
+  background-color: var(--color-info);
+  color: var(--color-white)
+}
+
+.pnotify_type__default {
+  background-color: var(--color-default);
+  color: var(--color-white)
+}
+
+.pnotify_layout {
+  display: flex;
+  margin-left: 8px;
+  background-color: rgba(0, 0, 0, 0.6);
+  border-top-right-radius: 8px;
+  border-bottom-right-radius: 8px;
+  flex-grow: 1;
+  flex-wrap: wrap;
+}
+
+.pnotify_content {
+  display: flex;
+  flex-direction: column;
+
+  padding: 10px;
+}
+
+.pnotify_title_container,
+.pnotify_text_container {
+  width: 100%; /* Full width */
+  height: auto;
+
+  -unity-text-align: middle-left;
+
+  flex-wrap: wrap; /* Wrap text */
+  white-space: normal; /* Allow text to wrap */
+}
+
+.pnotify_title_container {
+  margin-bottom: 4px;
+}
+
+.pnotify_title {
+  font-size: 16px;
+  -unity-font-definition: var(--font-default);
+  white-space: normal; /* Allow text to wrap */
+}
+
+.pnotify_text {
+  font-size: 14px;
+  -unity-font-definition: var(--font-regular);
+  color: var(--color-gray);
+  white-space: normal; /* Allow text to wrap */
+}

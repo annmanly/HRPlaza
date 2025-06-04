@@ -1,6 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!1001 &8672444387257149615
+--- !u!1001 &6452107463585421394
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
@@ -58,55 +58,13 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 3103006950472169455, guid: 4ea8fc71d0d33aa4794e860bd8a9318a,
-        type: 3}
-      propertyPath: m_characterPrefab
-      value: 
-      objectReference: {fileID: 8577116526274370363, guid: ec7bf6680c2f764459861ca082ca8503,
-        type: 3}
     - target: {fileID: 8457444051872364791, guid: 4ea8fc71d0d33aa4794e860bd8a9318a,
         type: 3}
       propertyPath: m_Name
-      value: WorldScene Variant
+      value: WorldScene Variant 2
       objectReference: {fileID: 0}
-    m_RemovedComponents:
-    - {fileID: 5860702928940739267, guid: 4ea8fc71d0d33aa4794e860bd8a9318a, type: 3}
+    m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 8457444051872364791, guid: 4ea8fc71d0d33aa4794e860bd8a9318a,
-        type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 6642538405301698677}
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4ea8fc71d0d33aa4794e860bd8a9318a, type: 3}
---- !u!1 &937969966368247896 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 8457444051872364791, guid: 4ea8fc71d0d33aa4794e860bd8a9318a,
-    type: 3}
-  m_PrefabInstance: {fileID: 8672444387257149615}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &6642538405301698677
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 937969966368247896}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2a2f50b67caf1851625b040a84f7bd1f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _networkId: 0
-  _script: {fileID: -974389366465450183, guid: 90f05063c6701884d88404df3e28bdca, type: 3}
-  _properties: []
-  _uiOutput: 0
-  _uiOutputSettings:
-    rid: -2
-  _characterPrefab: {fileID: 8806087195301612545, guid: 4fea7ad9f38b18b438afecd9c019d4e6,
-    type: 3}
-  references:
-    version: 2
-    RefIds:
-    - rid: -2
-      type: {class: , ns: , asm: }
