@@ -16,6 +16,8 @@ local eventStartTimes   = {}
 local eventEndTimes     = {}
 local _eventStartEpochs = {}
 local _eventEndEpochs   = {}
+local currentEventIndex = nil
+
 
 -- compute host timezone offset (local epoch minus UTC epoch)
 local function getTimezoneOffset()
@@ -70,36 +72,40 @@ function self:Awake()
     end
 end
 
-function self:Start()
-    -- initialize and hook tap handlers
-    for i, object in ipairs(objects) do
-        object:SetActive(false)
-        local handler = object and object:GetComponent(TapHandler)
-        if handler and linkurls[i] then
-            handler.Tapped:Connect(function()
-                UI:ExecuteDeepLink(linkurls[i])
-                print("link tapped: " .. linkurls[i])
-            end)
-        end
-    end
-end
-
 function self:Update()
     local now = os.time()
+    local activeIndex = nil
 
-    -- deactivate all objects
+    -- find active event
+    for i, startEpoch in ipairs(_eventStartEpochs) do
+        local endEpoch = _eventEndEpochs[i]
+        if now >= startEpoch and now < endEpoch then
+            activeIndex = i
+            break
+        end
+    end
+
+    -- reset all objects
     for _, obj in ipairs(objects) do
         obj:SetActive(false)
     end
 
-    -- activate objects for active events (fallback to first)  
-    for i, startEpoch in ipairs(_eventStartEpochs) do
-        local endEpoch = _eventEndEpochs[i]
-        if now >= startEpoch and now < endEpoch then
-            local obj = objects[i] or objects[1]
-            if obj then
-                obj:SetActive(true)
+    -- activate only if valid
+    if activeIndex then
+        local obj = objects[activeIndex] or objects[1]
+        if obj then
+            obj:SetActive(true)
+
+            if currentEventIndex ~= activeIndex then
+                currentEventIndex = activeIndex
+                local handler = obj:GetComponent(TapHandler)
+                handler.Tapped:Connect(function()
+                    UI:ExecuteDeepLink(linkurls[activeIndex])
+                    print("link tapped: " .. linkurls[activeIndex])
+                end)
             end
         end
+    else
+        currentEventIndex = nil
     end
 end
