@@ -1,61 +1,29 @@
 .map {
-
-  top: 10%;
-  height: 350px;
-  width: 350px;
+  height: 520px;
+  width: 375px;
 
   align-self: center;
-
-  color: #fff;
-  -unity-font-definition: var(--font-bold);
-
-  background-color: #1b1935;
-  border-radius: 10px;
 
   overflow: hidden;
 }
 
-.map__container {
-  width: 100%;
-  height: 100%;
-}
 
-.map__header {
-  align-self: center;
-
-  font-size: 30px;
-  text-shadow: 1px 5px 3px rgba(0, 0, 0, .3);
-}
-
-.map__close {
-  position: absolute;
-
-  right: 5px;
-  top: 5px;
-
-  width: 30px;
-  height: 30px;
-}
-
-.map__close Image {
-  --unity-image: var(--image-icon-close);
-}
 
 .map-background {
-  height: 100%;
-  width: 100%;
+  height: 520px;
+  width: 375px;
 
 }
 
 .market__button {
   position: absolute;
 
-  width: 62px;
+  width: 75px;
   height: 120px;
 
 
-  left: 95px; 
-  top: 220px;
+  left: 300px; 
+  top: 320px;
 
   background-color: #f50039;
   opacity: 0;
@@ -65,27 +33,52 @@
 .shop__button {
   position: absolute;
 
-  width: 60px;
-  height: 105px;
+  width: 95px;
+  height: 120px;
 
-
-  left: 235px; 
-  top: 80px;
+  left: 276px; 
+  top: 200px;
 
   background-color: #f50039;
   opacity: 0;
 
 }
 
+.shop__button2 {
+  position: absolute;
+
+  width: 60px;
+  height: 40px;
+
+  left: 240px; 
+  top: 320px;
+
+  background-color: #f50039;
+  opacity: 0;
+}
+
 .welcome__button {
   position: absolute;
 
-  width: 45px;
-  height: 75px;
+  width: 55px;
+  height: 100px;
 
+  left: 222px; 
+  top: 180px;
 
-  left: 190px; 
-  top: 80px;
+  background-color: #f50039;
+  opacity: 0;
+
+}
+
+.welcome__button2 {
+  position: absolute;
+
+  width: 40px;
+  height: 40px;
+
+  left: 227px; 
+  top: 280px;
 
   background-color: #f50039;
   opacity: 0;
@@ -95,12 +88,11 @@
 .townhall__button {
   position: absolute;
 
-  width: 45px;
-  height: 110px;
+  width: 65px;
+  height: 180px;
 
-
-  left: 145px; 
-  top: 45px;
+  left: 155px; 
+  top: 135px;
 
   background-color: #f50039;
   opacity: 0;
@@ -110,12 +102,11 @@
 .events__button {
   position: absolute;
 
-  width: 53px;
-  height: 120px;
+  width: 75px;
+  height: 180px;
 
-
-  left: 92px; 
-  top: 65px;
+  left: 75px; 
+  top: 160px;
 
   background-color: #f50039;
   opacity: 0;
@@ -124,13 +115,12 @@
 
 .park__button {
   position: absolute;
+ 
+  width: 70px;
+  height: 85px;
 
-  width: 60px;
-  height: 90px;
-
-
-  left: 157px; 
-  top: 165px;
+  left: 160px; 
+  top: 318px;
 
   background-color: #f50039;
   opacity: 0;
@@ -140,12 +130,25 @@
 .artcenter__button {
   position: absolute;
 
+  width: 70px;
+  height: 80px;
+
+  left: 70px; 
+  top: 420px;
+
+  background-color: #f50039;
+  opacity: 0;
+
+}
+
+.artcenter__button2 {
+  position: absolute;
+
   width: 50px;
-  height: 105px;
+  height: 65px;
 
-
-  left: 266px; 
-  top: 200px;
+  left: 110px; 
+  top: 375px;
 
   background-color: #f50039;
   opacity: 0;
@@ -155,12 +158,25 @@
 .buildercenter__button {
   position: absolute;
 
-  width: 45px;
-  height: 110px;
+  width: 70px;
+  height: 80px;
 
+  left: 0px; 
+  top: 375px;
 
-  left: 220px; 
-  top: 215px;
+  background-color: #f50039;
+  opacity: 0;
+
+}
+
+.buildercenter__button2 {
+  position: absolute;
+
+  width: 38;
+  height: 75;
+
+  left: 72px; 
+  top: 342;
 
   background-color: #f50039;
   opacity: 0;
@@ -170,35 +186,71 @@
 .transitstation__button {
   position: absolute;
 
-  width: 46px;
-  height: 90px;
+  width: 70px;
+  height: 120px;
 
-
-  left: 174px; 
-  top: 257px;
+  left: 232px; 
+  top: 380px;
 
   background-color: #f50039;
   opacity: 0;
-
 
 }
 
 .hrlive__button {
   position: absolute;
 
-  width: 56px;
-  height: 105;
+  width: 70px;
+  height: 150px;
 
-
-  left: 36px; 
-  top: 115px;
+  left: 3px; 
+  top: 215px;
 
   background-color: #f50039;
   opacity: 0;
 
+}
+
+.picnic__button {
+  position: absolute;
+
+  width: 55px;
+  height: 60px;
+
+  left: 165px; 
+  top: 402px;
+
+  background-color: #f50039;
+  opacity: 0;
 
 }
 
+.statue__button {
+  position: absolute;
 
+  width: 80px;
+  height: 53px;
+
+  left: 145px; 
+  top: 462px;
+
+  background-color: #f50039;
+  opacity: 0;
+
+}
+
+.map__close {
+  position: absolute;
+
+  right: 13px;
+  top: 13px;
+
+  width: 40px;
+  height: 40px;
+}
+
+.map__close Image {
+  --unity-image: var(--image-icon-close);
+}
 
 

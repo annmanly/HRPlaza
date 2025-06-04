@@ -8,11 +8,36 @@
 >
 
   <hr:UILuaView class="map">
-    <VisualElement class="map__container">
 
-      <VisualElement class="map__header">
-        <Label class="map__header__title" text="Map" />
-      </VisualElement>
+      <hr:UIImage class="map-background" name="_mapBackground" />
+
+      <VisualElement class="market__button" name="_marketButton"></VisualElement>
+
+      <VisualElement class="shop__button" name="_shopButton"></VisualElement>
+      <VisualElement class="shop__button2" name="_shopButton2"></VisualElement>
+
+      <VisualElement class="welcome__button" name="_welcomeButton"></VisualElement>
+      <VisualElement class="welcome__button2" name="_welcomeButton2"></VisualElement>
+
+      <VisualElement class="townhall__button" name="_townhallButton"></VisualElement>
+
+      <VisualElement class="events__button" name="_eventsButton"></VisualElement>
+
+      <VisualElement class="park__button" name="_parkButton"></VisualElement>
+
+      <VisualElement class="artcenter__button" name="_artcenterButton"></VisualElement>
+      <VisualElement class="artcenter__button2" name="_artcenterButton2"></VisualElement>
+
+      <VisualElement class="buildercenter__button" name="_buildercenterButton"></VisualElement>
+      <VisualElement class="buildercenter__button2" name="_buildercenterButton2"></VisualElement>
+
+      <VisualElement class="transitstation__button" name="_transitstationButton"></VisualElement>
+
+      <VisualElement class="hrlive__button" name="_hrliveButton"></VisualElement>
+
+      <VisualElement class="picnic__button" name="_picnicButton"></VisualElement>
+
+      <VisualElement class="statue__button" name="_statueButton"></VisualElement>
 
       <VisualElement class="map__close" name="_closeButton">
         <VisualElement class="button-content">
@@ -20,22 +45,6 @@
         </VisualElement>
       </VisualElement>
 
-      <hr:UIImage class="map-background" name="_mapBackground" />
-
-      <VisualElement class="market__button" name="_marketButton"></VisualElement>
-      <VisualElement class="shop__button" name="_shopButton"></VisualElement>
-      <VisualElement class="welcome__button" name="_welcomeButton"></VisualElement>
-      <VisualElement class="townhall__button" name="_townhallButton"></VisualElement>
-      <VisualElement class="events__button" name="_eventsButton"></VisualElement>
-      <VisualElement class="park__button" name="_parkButton"></VisualElement>
-      <VisualElement class="artcenter__button" name="_artcenterButton"></VisualElement>
-      <VisualElement class="buildercenter__button" name="_buildercenterButton"></VisualElement>
-      <VisualElement class="transitstation__button" name="_transitstationButton"></VisualElement>
-      <VisualElement class="hrlive__button" name="_hrliveButton"></VisualElement>
-
-
-
-    </VisualElement>
   </hr:UILuaView>
 
 </UXML>
