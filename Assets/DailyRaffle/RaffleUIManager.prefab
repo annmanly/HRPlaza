@@ -60,6 +60,7 @@ MonoBehaviour:
   m_infoUIObj: {fileID: 4739218972759299638}
   m_notificationObj: {fileID: 0}
   m_winnerNotifObj: {fileID: 545606471270275388}
+  m_winnerParticleObj: {fileID: 0}
   references:
     version: 2
     RefIds:
@@ -413,6 +414,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: WinnerNotif
+      objectReference: {fileID: 0}
+    - target: {fileID: 8733481559874841864, guid: 802808b153d76054ab8fa31ae61c3f73,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

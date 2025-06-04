@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<UXML
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns="UnityEngine.UIElements"
+    xmlns:hr="Highrise.UI"
+    xmlns:editor="UnityEditor.UIElements"
+    xsi:noNamespaceSchemaLocation="../../../UIElementsSchema/UIElements.xsd"
+>
+
+  <hr:UILuaView class="winnerNotif">
+  <VisualElement name="_closeOverlay" class="modal"/>
+  <VisualElement class="bannerImageContainer">
+    <VisualElement name="_bannerImage" class="banner-image">
+    </VisualElement>
+    </VisualElement>
+    <VisualElement name="_mainImage" class="currency-image">
+    </VisualElement>
+  <VisualElement name="_contentWindow" class="windowContainer vertical-layout">
+    <hr:UILabel name="_descriptionText" class=" heading  white-text centered"/>
+  </VisualElement>
+
+    <VisualElement class="buttonRow" >
+      <VisualElement class="button" name="_redeemButton">
+        <hr:UILabel name="_redeemButtonText" class="buttonText white-text centered"/>
+      </VisualElement>
+    </VisualElement>
+
+  </hr:UILuaView>
+
+</UXML>

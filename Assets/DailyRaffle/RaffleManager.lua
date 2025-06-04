@@ -152,10 +152,11 @@ function AddWinnersToStorage(winners, date)
             winnerEntryUpdate = value
             winnerEntryUpdate.winners = winners
             winnerEntryUpdate.finishTime = GetNowDateStamp()
-            if winners == {} then 
+            if winners == {} or winners == nil or #winners == 0 then 
                 print(`[ERROR] No winners selected.`)
-                winnerEntryUpdate.status = "error"
+                winnerEntryUpdate.status = "error-no-entries"
             else
+                print(winners)
                 winnerEntryUpdate.status = "complete"
             end
 
