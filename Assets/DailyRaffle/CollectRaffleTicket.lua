@@ -28,6 +28,7 @@ local plusTicketPopOut = Tween:new(
     end,
     function()
         self.gameObject:SetActive(false)
+        
     end
 )
 
@@ -55,13 +56,17 @@ function OnTapped()
     if ticketObj.activeInHierarchy then
         raffleManager.SubmitTicket:FireServer(ticketValue)
         print("TICKET COLLECTED")
-        ticketObj.gameObject:SetActive(false)
-        mainObj.gameObject:SetActive(false)
-        popUPObj.gameObject:SetActive(true)
-        particlesObj.gameObject:GetComponentInChildren(ParticleSystem, false):Stop()
+        despawn()
         plusTicketPopIn:start()
     end
     
+end
+
+function despawn()
+    ticketObj.gameObject:SetActive(false)
+    mainObj.gameObject:SetActive(false)
+    popUPObj.gameObject:SetActive(true)
+    particlesObj.gameObject:GetComponentInChildren(ParticleSystem, false):Stop()
 end
 
 

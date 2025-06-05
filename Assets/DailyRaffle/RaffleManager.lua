@@ -2,6 +2,7 @@
 --!SerializeField
 local raffleUI:RaffleUI = nil
 
+
 SubmitTicket = Event.new("SubmitTicket")
 TicketCountRequest = Event.new("TicketCountRequest")
 TicketCountResponse = Event.new("TicketCountResponse")
@@ -9,6 +10,7 @@ RewardCheckRequest = Event.new("RewardCheckRequest")
 RewardEvent = Event.new("RewardEvent")
 UIRaffleWinnerEvent = Event.new("RaffleWinnerEvent")
 UIRaffleDrawingEvent = Event.new("UIDrawingEvent")
+SpawnRaffleTicketEvent = Event.new("SpawnRaffleTicketEvent")
 
 
 -- [[ HELPERS ]]
@@ -30,11 +32,6 @@ function GetDateStringWithOffset(offsetDays)
     return string.format("%d-%02d-%02d", date.year,date.month, date.day)
 end
 
--- [[ CLIENT ]]
-
-function self:ClientStart()
-
-end
 
 -- [[ SERVER ]]
 
@@ -45,8 +42,11 @@ local tickets = {}
 local ticketCount = 0
 local GeneratingTicketsDone = Event.new("GeneratingTicketsDone")
 
+
 -- [ RAFFLE CONFIGURATION ]
 local numberOfWinners = 2
+local spawnInterval = 45
+local forcedDraw = true --- CHANGE TO FALSE WHEN DONE TESTING
 
 function OnSubmitTicketRequest(player, ticketCount)
     for i=1,ticketCount do 
@@ -76,12 +76,22 @@ function InitiateDraw()
     -- CHANGE TO -1 WHEN DONE TESTING
     local yesterday = GetDateStringWithOffset(0)
     local ticketsKey = raffleTicketsPrefix .. yesterday
-    UIRaffleDrawingEvent:FireAllClients()
     winnerKey = winnersPrefix .. yesterday
     Storage.GetValue(winnerKey, function(value, err) 
         if value ~= nil then
-            if value.status == "complete" then
+            if value.status == "complete" and forcedDraw ~= true then
                 print("WINNERS ALREADY DRAWN")
+                winners = value
+                winnerNames = {}
+                for i, winner in winners do
+                    table.insert(winnerNames, winner.name)
+                end
+                DisplayWinners(winnerNames)
+                CheckWinnersInRoom()
+                return
+            end
+            if value.status =="drawing" then
+                Timer.After(10, InitiateDraw())
                 return
             end
         end
@@ -156,7 +166,6 @@ function AddWinnersToStorage(winners, date)
                 print(`[ERROR] No winners selected.`)
                 winnerEntryUpdate.status = "error-no-entries"
             else
-                print(winners)
                 winnerEntryUpdate.status = "complete"
             end
 
@@ -200,7 +209,7 @@ function SelectWinners()
                 tickets[k].score = 0
                 print(`TICKET {initchoice} WINNER: {winnerEntry.name}`)
                 Storage.SetValue(winnerEntry.id .. "/RewardReady", true)
-            
+                
             break
             end
         end
@@ -208,6 +217,8 @@ function SelectWinners()
 
     print("WINNERS SELECTED: " .. table.concat(winnerNames, ", "))
     AddWinnersToStorage(winners, yesterday)
+    DisplayWinners(winnerNames)
+    CheckWinnersInRoom()
 end
 
 function CheckIfRewardReady(player)
@@ -219,17 +230,40 @@ function CheckIfRewardReady(player)
     end)
 end
 
+function DisplayWinners(winnerNames)
+    if #winnerNames > 0 then 
+        playersInRoom = server.players
+        for i, player in playersInRoom do
+            if not player.isDestroyed then
+                isWinner = false
+                for i, name in winnerNames do
+                    if player.name == name then
+                        isWinner = true
+                    end
+                end
+                if not isWinner then
+                    UIRaffleDrawingEvent:FireClient(player, winnerNames)
+                end
+            end
+        end
+    end
+end
 
 function CheckWinnersInRoom()
     playersInRoom = server.players
     for i, player in playersInRoom do
-        CheckIfRewardReady(player)
+        Storage.GetPlayerValue(player, "RewardReady", function(value, err) 
+            if value == true then
+                GivePrizeCurrency(player)
+            end
+        end)
+
     end
 end
 
 function GivePrizeCurrency(player)
     if not player.isDestroyed then
-        print(`AWARD PRIZE CURRENCY TO {player.name}`)
+        print(`PLACEHOLDER AWARD PRIZE CURRENCY TO {player.name}`)
         Storage.SetPlayerValue(player, "RewardReady", false)
         RewardEvent:FireClient(player)
         UIRaffleWinnerEvent:FireClient(player) -- display notif
@@ -246,7 +280,9 @@ function self:ServerStart()
 
     --- REMOVE AFTER DONE TESTING -- 
     InitiateDraw()
-    Timer.After(10, CheckWinnersInRoom)
+    Timer.Every(30, function() 
+        InitiateDraw()
+    end)
     --------------------------------
 
     currentDate = os.date("!*t")
@@ -256,9 +292,10 @@ function self:ServerStart()
             -- START RAFFLE DRAW ON UTC DAY RESET
             currentDate = os.date("!*t")
             InitiateDraw()
-            Timer.After(10, CheckWinnersInRoom)
         end
     end)
-    
 
+    Timer.Every(spawnInterval, function() SpawnRaffleTicketEvent:FireAllClients() end)
+    
+    SpawnRaffleTicketEvent:FireAllClients()
 end

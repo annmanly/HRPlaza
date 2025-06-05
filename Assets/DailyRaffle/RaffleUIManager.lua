@@ -5,18 +5,18 @@ local mainRaffleUIObj:GameObject=nil
 --!SerializeField
 local infoUIObj:GameObject=nil
 --!SerializeField
-local notificationObj:GameObject=nil
---!SerializeField
 local winnerNotifObj:GameObject=nil
 --!SerializeField
 local winnerParticleObj:GameObject=nil
+--!SerializeField
+local resultsObj:GameObject=nil
 
 local RaffleManager = require("RaffleManager")
 local mainUI = nil
 local codesUI = nil
 local mainCamera = scene.mainCamera
 
-local particleTransformPos = Vector3.new(-0.00700000022,0.00100000005,0.989000022)
+local particleTransformPos = Vector3.new(-0.00999999978,0.0700000003,0.959999979)
 
 function openInfo()
     infoUIObj.gameObject:SetActive(true)
@@ -35,19 +35,25 @@ function setMainUiTicketCount(count)
     end
 end
 
+function activateParticles()
+    winnerParticleObj.transform:SetParent(mainCamera.gameObject.transform)
+    winnerParticleObj.transform.localPosition = particleTransformPos
+    winnerParticleObj:SetActive(true)
+end
 function closeParticles() 
     winnerParticleObj:SetActive(false)
 end
 
 function displayWinner()
-    winnerParticleObj.transform:SetParent(mainCamera.gameObject.transform)
-    winnerParticleObj.transform.localPosition = particleTransformPos
+    activateParticles()
+
     winnerNotifObj:SetActive(true)
-    winnerParticleObj:SetActive(true)
 end
 
-function displayDrawingWinners()
-
+function displayDrawingWinners(winners)
+    activateParticles()
+    resultsObj:SetActive(true)
+    resultsUI = resultsObj.gameObject:GetComponent(Results).showWinners(winners)
 end
 
 function self:ClientAwake()
@@ -57,6 +63,7 @@ function self:ClientAwake()
     RaffleManager.UIRaffleWinnerEvent:Connect(displayWinner)
     RaffleManager.UIRaffleDrawingEvent:Connect(displayDrawingWinners)
     RaffleManager.TicketCountRequest:FireServer()
+
     Timer.After(10, function() RaffleManager.RewardCheckRequest:FireServer() end)
     RaffleManager.RewardEvent:Connect(function() 
         print("CLIENT RECEIVED REWARD EVENT")

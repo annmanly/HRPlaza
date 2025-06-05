@@ -7,13 +7,13 @@ local startSpawnPositions:{Transform} = {}
 --!SerializeField
 local endSpawnPositions:{Transform} = {}
 
-local lifetime:number = 25 -- time before despawn
+local lifetime:number = 60 -- time before despawn
 local minRespawnTimer:number = lifetime -- time after collected before spawning again but will add offset
-timerOffset = math.random(0, 5)
-
+timerOffsetMax = 5
+local raffleManager = require("RaffleManager")
 
 function spawnObject()
-    Timer.After(math.random(0, 1), 
+    Timer.After(math.random(0, timerOffsetMax), 
         function() 
             randomChoice = math.random(1, #startSpawnPositions)
             spawnPos = startSpawnPositions[randomChoice]
@@ -31,6 +31,5 @@ function despawnObject(obj)
 end
 
 function self:Start()
-    spawnObject()
-    Timer.Every(minRespawnTimer, spawnObject)
+    raffleManager.SpawnRaffleTicketEvent:Connect(spawnObject)
 end
