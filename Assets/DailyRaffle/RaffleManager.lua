@@ -89,11 +89,15 @@ function InitiateDraw()
                 DisplayWinners(winnerNames)
                 CheckWinnersInRoom()
                 return
-            end
-            if value.status =="drawing" then
+            
+            elseif value.status =="drawing" or value.status == "error" then
                 Timer.After(10, InitiateDraw())
                 return
+            elseif value.status =="error-no-entries" then
+                -- do not redraw if no entries
+                return
             end
+
         end
 
         local now = os.date("!*t")
