@@ -89,6 +89,11 @@ PrefabInstance:
       propertyPath: m_linkurl
       value: https://high.rs/web-open?login=true&path=highrise-concepts
       objectReference: {fileID: 0}
+    - target: {fileID: 3048951194632258888, guid: d8edc950d258b6d4db78a4575b57da38,
+        type: 3}
+      propertyPath: _checkDistance
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4882646114582503911, guid: d8edc950d258b6d4db78a4575b57da38,
         type: 3}
       propertyPath: m_Sprite
@@ -333,6 +338,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_linkurl
       value: https://high.rs/user?name=doodlekitchen
+      objectReference: {fileID: 0}
+    - target: {fileID: 3048951194632258888, guid: d8edc950d258b6d4db78a4575b57da38,
+        type: 3}
+      propertyPath: _checkDistance
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4882646114582503911, guid: d8edc950d258b6d4db78a4575b57da38,
         type: 3}
@@ -945,6 +955,11 @@ PrefabInstance:
       propertyPath: m_linkurl
       value: https://high.rs/web-open?login=true&path=highrise-ideas
       objectReference: {fileID: 0}
+    - target: {fileID: 3048951194632258888, guid: d8edc950d258b6d4db78a4575b57da38,
+        type: 3}
+      propertyPath: _checkDistance
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4882646114582503911, guid: d8edc950d258b6d4db78a4575b57da38,
         type: 3}
       propertyPath: m_Sprite
@@ -1475,7 +1490,7 @@ MonoBehaviour:
   _uiOutputSettings:
     rid: -2
   m_emote_ids:
-  - idle-posh
+  - idle-hero
   m_is_loop: 1
   references:
     version: 2
@@ -1610,7 +1625,7 @@ PrefabInstance:
     - target: {fileID: 119006177121057504, guid: d8edc950d258b6d4db78a4575b57da38,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0.54
+      value: 0.63
       objectReference: {fileID: 0}
     - target: {fileID: 119006177121057504, guid: d8edc950d258b6d4db78a4575b57da38,
         type: 3}
@@ -1620,19 +1635,24 @@ PrefabInstance:
     - target: {fileID: 119006177121057504, guid: d8edc950d258b6d4db78a4575b57da38,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: -0
+      value: 0.1
       objectReference: {fileID: 0}
     - target: {fileID: 2275543859428097043, guid: d8edc950d258b6d4db78a4575b57da38,
         type: 3}
       propertyPath: m_linkurl
       value: https://high.rs/shop?type=ic&id=65d8af914c87cd63f26c8535
       objectReference: {fileID: 0}
+    - target: {fileID: 3048951194632258888, guid: d8edc950d258b6d4db78a4575b57da38,
+        type: 3}
+      propertyPath: _checkDistance
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4882646114582503911, guid: d8edc950d258b6d4db78a4575b57da38,
         type: 3}
       propertyPath: m_Sprite
       value: 
-      objectReference: {fileID: 21300000, guid: 0498c7e9b8d484e25b9c4669e2fc6b2e,
-        type: 2}
+      objectReference: {fileID: 21300000, guid: ea30a6ae5619649d0a85ea032e7f3bdc,
+        type: 3}
     - target: {fileID: 5421611232124293289, guid: d8edc950d258b6d4db78a4575b57da38,
         type: 3}
       propertyPath: m_Height

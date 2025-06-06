@@ -806,7 +806,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 2147483647
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &5672563941851048403
 Transform:
@@ -1269,7 +1269,7 @@ PrefabInstance:
     - target: {fileID: 6404280263139324043, guid: 060a7132c1e104c85aca9db69c66618b,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -4.49
+      value: -5.3
       objectReference: {fileID: 0}
     - target: {fileID: 6404280263139324043, guid: 060a7132c1e104c85aca9db69c66618b,
         type: 3}
@@ -1279,12 +1279,12 @@ PrefabInstance:
     - target: {fileID: 6404280263139324043, guid: 060a7132c1e104c85aca9db69c66618b,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 19.74
+      value: 20.25
       objectReference: {fileID: 0}
     - target: {fileID: 6404280263139324043, guid: 060a7132c1e104c85aca9db69c66618b,
         type: 3}
       propertyPath: m_LocalRotation.w
-      value: 0.9933391
+      value: 0.99959075
       objectReference: {fileID: 0}
     - target: {fileID: 6404280263139324043, guid: 060a7132c1e104c85aca9db69c66618b,
         type: 3}
@@ -1294,7 +1294,7 @@ PrefabInstance:
     - target: {fileID: 6404280263139324043, guid: 060a7132c1e104c85aca9db69c66618b,
         type: 3}
       propertyPath: m_LocalRotation.y
-      value: 0.11522746
+      value: 0.028607484
       objectReference: {fileID: 0}
     - target: {fileID: 6404280263139324043, guid: 060a7132c1e104c85aca9db69c66618b,
         type: 3}
@@ -1309,7 +1309,7 @@ PrefabInstance:
     - target: {fileID: 6404280263139324043, guid: 060a7132c1e104c85aca9db69c66618b,
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.y
-      value: 13.234
+      value: 3.279
       objectReference: {fileID: 0}
     - target: {fileID: 6404280263139324043, guid: 060a7132c1e104c85aca9db69c66618b,
         type: 3}
@@ -1571,7 +1571,7 @@ PrefabInstance:
     - target: {fileID: 6912990752976572152, guid: ed5168b729463ed4194bd058430bd65c,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -0.78872406
+      value: -0.78
       objectReference: {fileID: 0}
     - target: {fileID: 6912990752976572152, guid: ed5168b729463ed4194bd058430bd65c,
         type: 3}
@@ -1581,7 +1581,7 @@ PrefabInstance:
     - target: {fileID: 6912990752976572152, guid: ed5168b729463ed4194bd058430bd65c,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 28.212343
+      value: 28.52
       objectReference: {fileID: 0}
     - target: {fileID: 6912990752976572152, guid: ed5168b729463ed4194bd058430bd65c,
         type: 3}
@@ -1685,6 +1685,11 @@ PrefabInstance:
     - target: {fileID: 89470880891620590, guid: 37e962bd433cf4334b9d487379b71c3f,
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1116948764264556712, guid: 37e962bd433cf4334b9d487379b71c3f,
+        type: 3}
+      propertyPath: _checkDistance
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1949614044729239758, guid: 37e962bd433cf4334b9d487379b71c3f,
@@ -2025,7 +2030,7 @@ MonoBehaviour:
   _uiOutputSettings:
     rid: -2
   m_emote_ids:
-  - emote-wave
+  - idle-enthusiastic
   m_is_loop: 1
   references:
     version: 2
@@ -2162,7 +2167,7 @@ MonoBehaviour:
   _uiOutputSettings:
     rid: -2
   m_emote_ids:
-  - emote-wave
+  - idle-enthusiastic
   m_is_loop: 1
   references:
     version: 2
@@ -2419,6 +2424,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_linkurl
       value: https://high.rs/event-info
+      objectReference: {fileID: 0}
+    - target: {fileID: 3048951194632258888, guid: d8edc950d258b6d4db78a4575b57da38,
+        type: 3}
+      propertyPath: _checkDistance
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4882646114582503911, guid: d8edc950d258b6d4db78a4575b57da38,
         type: 3}
