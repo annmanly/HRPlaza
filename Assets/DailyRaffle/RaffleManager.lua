@@ -284,7 +284,7 @@ function self:ServerStart()
 
     --- REMOVE AFTER DONE TESTING -- 
     InitiateDraw()
-    Timer.Every(30, function() 
+    Timer.Every(60*5, function() 
         InitiateDraw()
     end)
     --------------------------------
