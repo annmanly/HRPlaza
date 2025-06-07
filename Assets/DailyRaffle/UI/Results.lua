@@ -8,6 +8,8 @@ local _nameText:UILabel = nil
 local _bannerImage:VisualElement = nil
 --!Bind
 local _bannerImageContainer:VisualElement = nil
+--!Bind
+local _closeOverlay:VisualElement = nil
 
 local TweenModule = require("TweenModule")
 local Tween = TweenModule.Tween
@@ -133,4 +135,6 @@ function self:Awake()
     -- TestNames = {"Test1", "Test2", "Test3", "Test4"}
     -- Timer.After(5, function()  showWinners(TestNames) end)
     _bannerImageContainer:RegisterPressCallback(close)
+    _closeOverlay:RegisterPressCallback(close)
+
 end

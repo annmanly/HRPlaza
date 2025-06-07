@@ -78,8 +78,8 @@ function InitiateDraw()
     local ticketsKey = raffleTicketsPrefix .. yesterday
     winnerKey = winnersPrefix .. yesterday
     Storage.GetValue(winnerKey, function(value, err) 
-        if value ~= nil then
-            if value.status == "complete" and forcedDraw ~= true then
+        if value ~= nil and forcedDraw ~= true  then
+            if value.status == "complete" then
                 print("WINNERS ALREADY DRAWN")
                 winners = value
                 winnerNames = {}
@@ -283,7 +283,7 @@ function self:ServerStart()
     GeneratingTicketsDone:Connect(SelectWinners)
 
     --- REMOVE AFTER DONE TESTING -- 
-    InitiateDraw()
+
     Timer.Every(60*5, function() 
         InitiateDraw()
     end)

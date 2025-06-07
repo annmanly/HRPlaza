@@ -146,15 +146,17 @@ function RemoveFromRange(player)
 end
 
 function EmitReward(winningPlayer)
-    print("EMITTING GOLD")
+
     for name, player in playersInRange do
 
         if player ~= nil then
             if not player.isDestroyed then
                 if player == winningPlayer then
+                    
                     TransferGold(player, winnerGoldAmount)
                 else
                 TransferGold(player, 1)
+
                 GiveSingleCoinEvent:FireAllClients(player)
                 end
             end
@@ -173,7 +175,7 @@ function TransferGold(player, amount)
               return
           end
   
-      print(string.format("Sent %d Gold to %s, Gold remaining: %d", amount, player.name, response.gold))
+      print(string.format("[GOLD SENT] Sent %d Gold to %s, Gold remaining: %d", amount, player.name, response.gold))
     end)
   end
 

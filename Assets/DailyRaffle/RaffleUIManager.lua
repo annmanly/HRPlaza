@@ -57,7 +57,6 @@ function displayDrawingWinners(winners)
 end
 
 function self:ClientAwake()
-    self.gameObject:GetComponent(TapHandler).Tapped:Connect(openMainUI)
     mainUI = mainRaffleUIObj.gameObject:GetComponent(RaffleUI)
     RaffleManager.TicketCountResponse:Connect(setMainUiTicketCount)
     RaffleManager.UIRaffleWinnerEvent:Connect(displayWinner)
