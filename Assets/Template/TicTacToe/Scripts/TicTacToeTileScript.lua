@@ -3,6 +3,10 @@
 local X : GameObject = nil
 --!SerializeField
 local O : GameObject = nil
+--!SerializeField
+local anchor1:Anchor = nil
+--!SerializeField
+local anchor2:Anchor = nil
 
 -- Create an event called 'tapRequest' which will be used to handle tap actions from the client.
 local tapRequest = Event.new("TapRequest")
@@ -43,7 +47,13 @@ function self:ClientStart()
     -- Connect a function to handle 'Tapped' events from the TapHandler component of this GameObject.
     -- When the GameObject is tapped, it will fire the 'tapRequest' event to the server, passing the Manager as an argument.
     self.gameObject:GetComponent(TapHandler).Tapped:Connect(function()
-        tapRequest:FireServer(Manager)
+        char = client.localPlayer.character
+        if char.isAnchored then
+            if char.anchor == anchor1 or char.anchor == anchor2 then
+                tapRequest:FireServer(Manager)
+            end
+        end
+
     end)
 end
 
