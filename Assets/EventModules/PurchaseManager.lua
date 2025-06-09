@@ -1,6 +1,6 @@
 --!Type(Module)
 
-local gameManager = require("GameManager")
+--local gameManager = require("GameManager")
 
 productIDMAP = {
   spawnRateBuff_short = "spawnrate_short",
@@ -33,7 +33,7 @@ function ServerHandlePurchase(purchase, player: Player)
     -- 1) Try to apply the appropriate buff and capture its return value in `success`.
     local success = false
     if productId == "spawnrate_short" then
-        success = gameManager.StartbuffForPlayer(player, "spawnRateBuff_short")
+        --success = gameManager.StartbuffForPlayer(player, "spawnRateBuff_short")
     else
         success = false
     end

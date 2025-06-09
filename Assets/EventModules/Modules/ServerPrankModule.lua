@@ -34,7 +34,6 @@ local apiEndpoint: string = "http://hangout-private-lb-liveops-614010634fd20aaa.
 local PrankModule = require("PrankModule")
 local TicketAPI = require("TicketAPI")
 local PersistentKey = "event_state"
-local utils = require("Utils")
 
 local currentXPbyPlayerID = {}
 
@@ -733,12 +732,13 @@ function GiveItemsToPlayer(player: Player, items)
 	0,
 	0,
 	nil,
-	{},
-	instance.eventData.id,
 	final_rewards,
+	instance.eventData.id,
+	nil,
 	function(response: StateModifiedResponse, err: string | nil)
+		print("GiveItemsToPlayer called for player: " .. player.name)
 		if err ~= nil then
-			return print("Error giving item to player: " .. err .. " for player: " .. player.name)
+			return print("Error giving item to player: " .. err .. " for player: " .. player.name, err)
 		end
 	end)
 end

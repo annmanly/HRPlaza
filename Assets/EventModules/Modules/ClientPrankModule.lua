@@ -442,12 +442,12 @@ end
 function self:ClientAwake()
 
 	PrankModule.EVENTS.InitialEventData:Connect(function(eventData: PrankModule.Event)
-		-- On receiving initial event data, store it and sync the UI to the latest state.
-		UIModule.SetEventData(eventData)
-		print("Got event data")
-		--for k, v in eventData do print (tostring(k), tostring(v)) end
-		SyncUItoState()
-		UIModule.SetEnergyShopLink(eventData.item_collection_id)
+		---- On receiving initial event data, store it and sync the UI to the latest state.
+		--UIModule.SetEventData(eventData)
+		--print("Got event data")
+		----for k, v in eventData do print (tostring(k), tostring(v)) end
+		--SyncUItoState()
+		--UIModule.SetEnergyShopLink(eventData.item_collection_id)
 	end)
 
 	PrankModule.EVENTS.ClaimedTiersEvent:Connect(function()
