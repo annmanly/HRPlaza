@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<UXML
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns="UnityEngine.UIElements"
+    xmlns:hr="Highrise.UI"
+    xmlns:editor="UnityEditor.UIElements"
+    xsi:noNamespaceSchemaLocation="../../UIElementsSchema/UIElements.xsd"
+>
+
+  <hr:UILuaView class="hud-main">
+
+    <!-- Ticket Progress HUD -->
+    <VisualElement name="ticket_progress" class="ticket-progress-hud">
+      <VisualElement name="progress_bar_container" class="progress-bar-container">
+        <VisualElement name="progress_bar_root" class="progress-bar-outline">
+          <VisualElement name="progress_bar" class="progress-bar">
+            <VisualElement name="progress_bar_fill" class="progress-bar-fill"> <Image name="progress_fill_particle" class="progress-fill-particle" /> </VisualElement>
+            <Label name="progress_label" class="progress-label" text="100K/200K"/>
+          </VisualElement>
+        </VisualElement>
+        <VisualElement name="ticket_ring" class="particle_ring" />
+        <VisualElement name="ticket_icon" />
+
+        <VisualElement name="progress_reward_glow" />
+        <VisualElement name="progress_reward_outline" class="progress-reward-outline">
+          <VisualElement name="progress_reward_container" class="progress-reward-container">
+            <hr:UIImage name="progress_reward_icon" class="progress-reward-icon" />
+          </VisualElement>
+        
+        <VisualElement name="timer_container" >
+          <Label name="timer_label" class="timer-label" text="8hr36m" />
+        </VisualElement>
+
+        </VisualElement>
+
+      </VisualElement>
+
+      <!-- Super Boost Indicator -->
+      <VisualElement name="super_boost_indicator" class="super-boost-indicator">
+        <Label name="super_boost_label" class="super-boost-label" text="x140"> <VisualElement name="shine_image" /> </Label>
+        <VisualElement name="super_boost_icon" class="super-boost-icon" />
+      </VisualElement>
+
+
+    </VisualElement>
+
+  </hr:UILuaView>
+
+</UXML>

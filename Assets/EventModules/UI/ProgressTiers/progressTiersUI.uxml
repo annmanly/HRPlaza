@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<UXML
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns="UnityEngine.UIElements"
+    xmlns:hr="Highrise.UI"
+    xmlns:editor="UnityEditor.UIElements"
+    xsi:noNamespaceSchemaLocation="../../../../UIElementsSchema/UIElements.xsd"
+>
+
+  <hr:UILuaView name="progress_root" class="progress-tiers-u-i">
+    <VisualElement name="click_off" />
+    <VisualElement name="progress_tiers_panel" class="progress_tiers-panel">
+      <!-- <VisualElement name="bg_overlay" /> -->
+
+
+      <!-- Scroll Rewards Container -->
+      <VisualElement name="rewards_container" class="rewards-container">
+
+        <hr:UICollection name="rewards_collection" class="rewards-content">
+          <hr:UICollectionSection>
+          
+            <VisualElement name="grand_prize_container" class="grand_price-container">
+              
+              <VisualElement name="cost_container">
+                <Label name="cost_icon"/>
+                <Label name="cost_label"/>
+              </VisualElement>
+
+              <Label class="grand_prize-tag" text="GRAND PRIZE" />
+              <VisualElement class="grand_prize-bg" />
+              <hr:UIImage name="grand_prize_image" class="grand_prize-image" />
+              <Label name="grand_title" class="reward-name" />
+            </VisualElement>           
+
+            <hr:UICollectionCells name="rewards_cells" />
+          </hr:UICollectionSection>
+        </hr:UICollection>
+      </VisualElement>
+
+    </VisualElement>
+  </hr:UILuaView>
+
+</UXML>

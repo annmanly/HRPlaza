@@ -16877,6 +16877,86 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 4168390150001380391}
   m_PrefabAsset: {fileID: 0}
+--- !u!1001 &1562053845
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 689496194347304810, guid: 05fc2104be5fa9349a33b4e123343326,
+        type: 3}
+      propertyPath: m_WorldID
+      value: 6807d0e55f0f274df11326bc
+      objectReference: {fileID: 0}
+    - target: {fileID: 4531139258735718910, guid: 05fc2104be5fa9349a33b4e123343326,
+        type: 3}
+      propertyPath: m_Name
+      value: EventObjs
+      objectReference: {fileID: 0}
+    - target: {fileID: 7580407204357284307, guid: 05fc2104be5fa9349a33b4e123343326,
+        type: 3}
+      propertyPath: m_apiEndpoint
+      value: http://hangout-private-lb-production-8aa74c0c4ba3cd65.elb.us-east-1.amazonaws.com
+      objectReference: {fileID: 0}
+    - target: {fileID: 7866223419173165928, guid: 05fc2104be5fa9349a33b4e123343326,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7866223419173165928, guid: 05fc2104be5fa9349a33b4e123343326,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7866223419173165928, guid: 05fc2104be5fa9349a33b4e123343326,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7866223419173165928, guid: 05fc2104be5fa9349a33b4e123343326,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7866223419173165928, guid: 05fc2104be5fa9349a33b4e123343326,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7866223419173165928, guid: 05fc2104be5fa9349a33b4e123343326,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7866223419173165928, guid: 05fc2104be5fa9349a33b4e123343326,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7866223419173165928, guid: 05fc2104be5fa9349a33b4e123343326,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7866223419173165928, guid: 05fc2104be5fa9349a33b4e123343326,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7866223419173165928, guid: 05fc2104be5fa9349a33b4e123343326,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects:
+    - {fileID: 664999908667158270, guid: 05fc2104be5fa9349a33b4e123343326, type: 3}
+    - {fileID: 2369661108663987963, guid: 05fc2104be5fa9349a33b4e123343326, type: 3}
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 05fc2104be5fa9349a33b4e123343326, type: 3}
 --- !u!1001 &1562719110
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -29688,3 +29768,4 @@ SceneRoots:
   - {fileID: 888429540}
   - {fileID: 2131953553}
   - {fileID: 557883072}
+  - {fileID: 1562053845}

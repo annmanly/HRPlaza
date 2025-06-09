@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<UXML
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns="UnityEngine.UIElements"
+    xmlns:hr="Highrise.UI"
+    xmlns:editor="UnityEditor.UIElements"
+    xsi:noNamespaceSchemaLocation="../../../../UIElementsSchema/UIElements.xsd"
+>
+
+  <hr:UILuaView class="energy-timer" picking-mode="Ignore">
+
+    <!-- Event Widget Container -->
+    <VisualElement name="event_widgetContainer" class="event_widgetContainer" picking-mode="Ignore">
+
+      <!-- Energy Column-->
+      <VisualElement name="energy_column" class="energy_column">
+
+        <!-- Progress Bar Container -->
+        <VisualElement name="progress_bar_outline">
+          <VisualElement name="progress_bar_container" class="progress-bar-container">
+            <!-- Fill element, width controlled via USS -->
+            <VisualElement name="progress_bar_fill" class="progress-bar-fill"/>
+            <!-- Label in the center of the progress bar -->
+            <VisualElement name="energy_label">
+              <Label name="energy_amount" class="energy-label" text="00"/>
+              <Label name="energy_max" class="energy-amount" text="/00"/>
+            </VisualElement>
+          </VisualElement>
+        </VisualElement>
+        <VisualElement name="energy_icon"/>
+
+
+        <VisualElement name="timer_row" class="timer_row">
+          <Label name="timer_label" class="timer-label" text="0m 00s"/>
+        </VisualElement>
+      </VisualElement>
+      
+    </VisualElement>
+  </hr:UILuaView>
+</UXML>

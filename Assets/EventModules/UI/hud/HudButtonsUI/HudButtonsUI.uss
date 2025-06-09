@@ -1,0 +1,107 @@
+:root {
+  --font-muesou-1000: url("project://database/Assets/EventModules/UI/Fonts/MuseoSansRounded1000 SDF.asset");
+  --color-dark: #2c293c;
+  --color-light: #9888d8;
+}
+
+.hud-buttons-u-i {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+
+    padding-top: 100px;
+    bottom: 0;
+
+    flex-direction: row;
+}
+
+#root_left {
+    width: 50%;
+    height: 100%;
+}
+
+#root_right {
+    width: 50%;
+    height: 100%;
+}
+
+.hud-button-outline {
+    align-items: center;
+    justify-content: center;
+
+    width: 48px;
+    height: 48px;
+   /* background-color: var(--color-dark);
+
+    border-radius: 50%;*/
+}
+
+.hud-button {
+    align-items: center;
+    justify-content: center;
+
+    width: 45px;
+    height: 45px;
+
+    /*background-color: var(--color-dark);
+    border-color: var(--color-light);
+    border-width: 3px;
+
+    border-radius: 50%;*/
+}
+
+.hud-button-icon {
+    position: absolute;
+    width: 48px;
+    height: 48px;
+}
+
+.hud-button-label-container{
+    position: absolute;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+
+    bottom: -12px;
+    height: 14px;
+
+    background-color: var(--color-dark);
+    border-color: var(--color-light);
+    border-width: 1.5px;
+    border-radius: 6px;
+}
+
+.hud-button-label {
+    font-size: 9px;
+    color: white;
+    letter-spacing: -2%;
+    -unity-font-definition: var(--font-muesou-1000);
+    -unity-text-align: middle-center;
+    -unity-font-style: bold;
+    -unity-text-outline-color: var(--color-dark);
+    -unity-text-outline-width: 4px;
+    text-shadow: 0 3 0 rgba(0,0,0,0.5);
+    margin: 0;
+    padding: 0px 4px;
+}
+
+.hud-button-gold-icon {
+    width:  9px;
+    height: 9px;
+
+    translate: 2px 0px;
+
+    background-image: url("project://database/Assets/EventModules/UI/Icons/bb03333577c37601.png");
+}
+
+.right {
+    margin-left: auto;
+    margin-top: 15px;
+    margin-right: 15px;
+}
+
+.left {
+    margin-right: auto;
+    margin-top: 15px;
+    margin-left: 15px;
+}

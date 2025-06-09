@@ -1,0 +1,63 @@
+:root{
+    --font-muesou-1000: url("project://database/Assets/EventModules/UI/Fonts/MuseoSansRounded1000 SDF.asset");
+    --color-dark: #2c293c;
+    --color-light: #9888d8;
+}
+
+.buffhud-display {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+#buffhud_container {
+    position: absolute;
+    width: 100%;
+    height: 42px;
+    bottom: 82px;
+
+    justify-content: center;
+    align-items: center;
+
+    flex-direction: row;
+}
+
+.buffhud_item{
+    width:  42px;
+    height: 42px;
+
+    top: -12px;
+    margin: 0 8px;
+}
+
+.buffhud_icon{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+}
+
+.buffhud_timerlabel{
+    position: absolute;
+
+    width: 100%;
+    height: 14px;
+
+    bottom: -12px;
+
+    font-size: 11px;
+    color: white;
+    letter-spacing: -2%;
+    -unity-font-definition: var(--font-muesou-1000);
+    -unity-text-align: middle-center;
+    -unity-font-style: bold-and-italic;
+    -unity-text-outline-color: var(--color-dark);
+    -unity-text-outline-width: 4px;
+    text-shadow: 0 3 0 rgba(0,0,0,0.5);
+
+    background-color: var(--color-dark);
+    border-color: var(--color-light);
+    border-width: 1.5px;
+    border-radius: 4px;
+    margin: 0;
+}

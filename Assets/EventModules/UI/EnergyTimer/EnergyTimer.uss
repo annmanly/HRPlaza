@@ -1,0 +1,147 @@
+:root {
+    --font-muesou-900: url('project://database/Assets/EventModules/UI/Fonts/MuseoSansRounded1000 SDF.asset');
+
+    --color-progress-bar-bg: #272e3d; /* Dark background */
+    --color-progress-bar-fill:rgb(0, 157, 255); /* Blue fill color */
+    --color-progress-label: #ffffff; /* Label text color */
+
+    --color-blue:rgb(0, 157, 255);
+    --color-blue-dark:rgb(0, 143, 245);
+    --color-bWhite: #eeeeff;
+
+    --image-gradient-blue: url('project://database/Assets/EventModules/UI/Icons/energy_gradient.png');
+    --image-gradient-golden: url('project://database/Assets/EventModules/UI/Icons/gold_gradient.png');
+    --image-gradient-purple: url('project://database/Assets/EventModules/UI/Icons/purple_gradient.png');
+    --image-gradient-like: url('project://database/Assets/EventModules/UI/Icons/like_bg.png');
+
+    --energy_icon: url('project://database/Assets/EventModules/UI/Icons/energy_bolt_m.png');
+}
+
+.energy-timer {
+    position: absolute;
+    /* font size */
+    font-size: 10px;
+    width: 100%;
+    height: auto;
+
+    top: 50px;
+
+    -unity-font-definition: var(--font-muesou-900);
+}
+
+.event_widgetContainer {
+    align-items: center;
+    padding: 0px;
+    margin: auto auto;
+
+    flex-direction: column;
+}
+
+
+/* Energy Indicator */
+.energy_column {
+    
+    width: auto;
+    height: auto;
+    margin-top: 6px;
+    margin-bottom: 0px;
+    flex-direction: column;
+    /*
+    padding: 4px;
+    background-color: var(--color-gray-light);
+    border-color: var(--color-gray-dark);
+    border-width: 0px;
+    border-bottom-width: 4px;
+    border-radius: 10px;
+    */
+}
+
+.energy_row {
+    width: auto;
+    height: auto;
+    flex-direction: row;
+    padding: 5px;
+}
+
+#energy_icon {
+    position: absolute;
+    width:  42px;
+    height: 42px;
+    background-image: var(--energy_icon);
+    margin: 0;
+    padding: 0;
+
+    translate: -20px -10px;
+}
+
+#energy_label {
+    position: relative;
+    width: auto;
+    height: auto;
+    flex-direction: row;
+    padding: 0;
+    margin: auto;
+}
+
+.energy-label {
+    margin: auto;
+    margin-right: 0;
+
+    color:rgb(0, 77, 150);
+    padding: 0;
+}
+
+.energy-amount {
+    margin: auto;
+    margin-left: 0;
+
+    color: rgba(0, 77, 150, 0.9);
+    padding: 0;
+}
+
+.timer_row {
+    font-size: 10px;
+    width: auto;
+    height: auto;
+    flex-direction: row;
+    padding: 0px;
+}
+
+.timer-label {
+    margin: auto;
+    color: #004d96;
+    padding: 0;
+}
+
+#progress_bar_outline{
+    width: 100px; /* Width of the progress bar */
+    height: 20px; /* Height of the progress bar */
+    background-color: var(--color-blue-dark); /* Background color */
+    border-radius: 10px; /* Rounded corners */
+    border-width: 1px; /* Border width */
+    border-color: white; /* Border color */
+    position: relative; /* So the label can be centered inside */
+}
+
+.progress-bar-container {
+    overflow: hidden;
+    width: 100%; /* Width of the progress bar */
+    height: 100%; /* Height of the progress bar */
+    background-color: var(--color-blue-dark); /* Background color */
+    border-radius: 10px; /* Rounded corners */
+    border-width: 1px; /* Border width */
+    border-color: var(--color-blue-dark); /* Border color */
+    position: relative; /* So the label can be centered inside */
+}
+
+.progress-bar-fill {
+    position: absolute; /* Position the fill inside the container */
+    height: 100%; /* Full height of the container */
+    width: 53%; /* Example width for 53% progress (change dynamically) */
+    background-image: var(--image-gradient-blue); /* Gradient fill color */
+    border-radius: 1px; /* Rounded corners */
+}
+
+.hidden {
+    display: none;
+}
