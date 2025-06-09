@@ -15,6 +15,7 @@ using UnityEngine;
 using Highrise.Client;
 using Highrise.Studio;
 using Highrise.Lua;
+using UnityEditor;
 
 namespace Highrise.Lua.Generated
 {
@@ -27,6 +28,8 @@ namespace Highrise.Lua.Generated
 
         [SerializeField] public UnityEngine.GameObject m_X = default;
         [SerializeField] public UnityEngine.GameObject m_O = default;
+        [SerializeField] public Highrise.Client.Anchor m_anchor1 = default;
+        [SerializeField] public Highrise.Client.Anchor m_anchor2 = default;
 
         protected override SerializedPropertyValue[] SerializeProperties()
         {
@@ -37,8 +40,18 @@ namespace Highrise.Lua.Generated
             {
                 CreateSerializedProperty(_script.GetPropertyAt(0), m_X),
                 CreateSerializedProperty(_script.GetPropertyAt(1), m_O),
+                CreateSerializedProperty(_script.GetPropertyAt(2), m_anchor1),
+                CreateSerializedProperty(_script.GetPropertyAt(3), m_anchor2),
             };
         }
+        
+#if HR_STUDIO
+        [MenuItem("CONTEXT/TicTacToeTileScript/Edit Script")]
+        private static void EditScript()
+        {
+            VisualStudioCodeOpener.OpenPath(AssetDatabase.GUIDToAssetPath(s_scriptGUID));
+        }
+#endif
     }
 }
 
