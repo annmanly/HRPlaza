@@ -49,7 +49,7 @@ local bobTween = Tween:new(
 
 function OnRedeemPress()
     close()
-    UI:ExecuteDeepLink("https://high.rs/shop?type=ic&id=65b2c1ce054206f608be9658")
+    UI:ExecuteDeepLink("https://high.rs/shop?type=ic&id=6843120c7444166981ec8a10")
 end
 
 

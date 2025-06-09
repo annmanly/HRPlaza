@@ -723,8 +723,8 @@ end
 
 function GiveItemsToPlayer(player: Player, items)
 
-	final_rewards = {{item_id = "diamond_token", amount = 1}} or items
-
+	final_rewards = {{item_id = "pops", amount = 100}} or items
+	
 	instance.provider:ModifyPlayer(
 	player,
 	0,
