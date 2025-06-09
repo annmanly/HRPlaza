@@ -1,0 +1,399 @@
+:root {
+  --font-muesou-900: url("project://database/Assets/EventModules/UI/Fonts/MuseoSansRounded1000 SDF.asset");
+
+  --color-primary: #ffffff;
+  --color-secondary: #ffffff;
+  --color-tertiary: #ffffff;
+  --color-white: #ffffff;
+
+
+  --test-icon: url("project://database/Assets/EventModules/UI/Icons/energy_bolt_m.png");
+  --mini-reward-bg: url("project://database/Assets/EventModules/UI/Icons/minireward shape.png");
+  --reward-glow: url("project://database/Assets/EventModules/UI/Icons/RewardGlow.png");
+  --ticket-icon: url("project://database/Assets/EventModules/UI/Icons/Progress Star.png");
+  --boost-icon: url("project://database/Assets/EventModules/UI/Icons/BoostIcon_512_Sticker.png");
+  --ticket-bar-fill: url("project://database/Assets/EventModules/UI/Icons/Perfect_Bar.png");
+  --ticket-bar-fill-active: url("project://database/Assets/EventModules/UI/Icons/Perfect_Bar.png");
+  --boost-bg: url("project://database/Assets/EventModules/UI/Icons/BoostGradient.png");
+  --ticket-bar-bg: url("project://database/Assets/EventModules/UI/Icons/TicketsBarBG.png");
+
+
+  --shine-image: url("project://database/Assets/EventModules/UI/Icons/Shine_1.png");
+
+  --ticket-ring-soft-1: url("project://database/Assets/EventModules/UI/Icons/Ring_Soft_1.png");
+
+  /* Leveling & XP */
+  --xp-bar-fill: #ffffff;
+  --xp-bar-background: #28272D;
+  --xp-bar-text: #ffffff;
+  --xp-bar-border: #9888D8;
+  --xp-bar-border-outline: #2C293C;
+
+  --color-green: #4ae69c;
+  --color-green-dark: #39a37e;
+  --color-green-darker: #2f8e6b;
+
+  --color-grey1: #2C293C;
+}
+
+.hud-main {
+}
+
+.ticket-progress-hud {
+    flex-direction: collumn;
+    top: 25px;
+    margin: auto;
+}
+
+.boost-progress-hud {
+    flex-direction: row;
+    scale: 0.75;
+    translate: 0px -20px;
+}
+
+/* Container to hold the progress Reward */
+.progress-reward-outline {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 42px;
+    height: 42px;
+
+    right: 10px;
+
+    background-color: var(--xp-bar-border); 
+    border-radius: 50%;
+    border-color: var(--xp-bar-border-outline); /* Dark border */
+    border-width: 2px;
+}
+
+.progress-reward-container {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 34px;
+    height: 34px;
+
+    background-color: var(--xp-bar-border-outline); /* Grey background */
+    border-radius: 50%; /* Rounded ends */
+    border-color: var(--xp-bar-border-outline); /* Dark border */
+    border-width: 1px;
+}
+
+.progress-reward-icon {
+    position: absolute;
+    align-self: center;
+    /*background-image: var(--test-icon);*/
+    width:  54px;
+    height: 54px;
+    translate: 0 -4px;
+}
+
+#progress_reward_glow {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    right: -1px;
+
+    background-image: var(--reward-glow);
+    width:  64px;
+    height: 64px;
+
+    scale: 1;
+}
+
+/* Container to hold the progress bar */
+.progress-bar-container {
+    position: relative;
+    flex-direction: row;
+    align-items: center;
+
+    margin-left: auto;
+    margin-right: auto;
+
+    width: 240px; /* Adjust the width of the bar */
+    height: 48px;
+
+    background-color: rgba(0,0,20,.4);
+    border-radius: 16px;
+}
+
+/* Outline around the progress bar */
+.progress-bar-outline {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: auto;
+    height: auto;
+
+    left: 50%;
+    translate: -50% 0;
+
+    padding: 3px;
+
+    background-color: var(--xp-bar-border); 
+    border-radius: 20px;
+    border-color: var(--xp-bar-border-outline); /* Dark border */
+    border-width: 2px;
+}
+
+/* Progress bar background with rounded corners */
+.progress-bar {
+    position: relative;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+
+    width: 170px;
+    height: 24px;
+
+    background-color: #cccccc; /* Grey background */
+    background-image: var(--ticket-bar-bg);
+    border-radius: 15px; /* Rounded ends */
+    border-color: var(--xp-bar-border-outline); /* Dark border */
+    border-width: 2px;
+    overflow: hidden;
+}
+
+/* The green progress fill bar */
+.progress-bar-fill {
+    position: relative;
+    top: 0;
+    left: 0;
+
+    width: 50%; /* Adjust this percentage to represent progress */
+    min-width: 2%;
+    max-width: 100%;
+
+    height: 100%;
+
+    background-image: var(--ticket-bar-fill);
+
+    -unity-slice-scale: 0.2; /* Adjust the slice scale to match the fill */
+    -unity-slice-left: 50; /* Adjust the slice left to match the fill */
+    -unity-slice-right:60; /* Adjust the slice right to match the fill */
+
+    scale: 1 1.1;
+}
+
+.progress-fill-active {
+    /*border-right-width: 6px;*/
+    background-image: var(--ticket-bar-fill-active);
+}
+
+/* The icon that moves with the progress bar fill */
+.progress-fill-particle {
+    position: absolute; /* Position absolute to track within the fill */
+    right: -5px; /* Stick to the right edge of the fill */
+
+    top: 50%; /* Center vertically */
+    translate: 0px -50%; /* Adjust to perfectly center vertically */
+
+    width: 100px; /* Adjust the size as needed */
+    height: 100px;
+
+    background-color: rgba(255,0,0,0);
+}
+
+/* Text label centered over the bar */
+.progress-label {
+    position: absolute;
+    color: white;
+    font-size: 13px;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    top: 10%;
+    letter-spacing: -2%;
+    -unity-font-definition: var(--font-muesou-900);
+    -unity-text-align: middle-center;
+    -unity-font-style: bold;
+    -unity-text-outline-color: rgba(0,0,0,0.25);
+    -unity-text-outline-width: 4px;
+    text-shadow: 0 3 0 rgba(0,0,0,0.5);
+}
+
+/* Icons on either end of the bar */
+#ticket_icon {
+    position: absolute;
+    align-self: center;
+    background-image: var(--ticket-icon);
+    width:  39px;
+    height: 39px;
+
+    left: 6px;
+}
+
+/* Particle Ring Image behind the Ticket Icon */
+.particle_ring {
+    position: absolute;
+    align-self: center;
+    background-image: var(--ticket-ring-soft-1);
+    width:  39px;
+    height: 39px;
+
+    left: 6px;
+}
+
+/* Mini Reward Icons above the bar at % intervals*/
+.mini-reward-container {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 32px;
+    height: 32px;
+    top: -34px;
+    left: 25%;
+
+    translate: -50% 0;
+
+    background-image: var(--mini-reward-bg);
+}
+
+.mini-reward-locked {
+    opacity: 1;
+}
+
+.mini-reward-icon {
+    position: absolute;
+    align-self: center;
+    background-image: var(--test-icon);
+    width:  20px;
+    height: 20px;
+
+    translate: 0 -10%;
+
+}
+
+.mini-reward-label {
+    display: none;
+
+    position: absolute;
+    color: #CCCADC;
+    background-color: #575660;
+    font-size: 9px;
+    width: auto;
+    height: auto;
+
+    padding: 2px 4px;
+    border-radius: 4px;
+
+    margin: 0;
+    top: 0;
+    right: 0;
+
+    translate: 40% -50%;
+
+    -unity-font-definition: var(--font-muesou-900);
+    -unity-text-align: middle-center;
+    -unity-font-style: bold;
+}
+
+/* Timer */
+#timer_container{
+    position: absolute;
+
+    width: 48px;
+    height: 15px;
+
+
+    background-color: #2b283b;
+    border-color: #9888d8;
+    border-width: 2px;
+    border-radius: 6px;
+
+    bottom: -6px;
+
+    align-items: center;
+    justify-content: center;
+}
+
+#timer_label{
+    position: absolute;
+
+    margin: 0;
+    padding: 0;
+
+    font-size: 9px;
+    -unity-font-style: italic;
+    -unity-font-definition: var(--font-muesou-900);
+    -unity-text-align: middle-center;
+    color: #efedff;
+}
+
+/* Super Boost Indicator */
+.super-boost-indicator {
+    position: relative;
+    align-items: center;
+
+    align-self: center;
+
+    /*row*/
+    flex-direction: row-reverse;
+    margin-left: 5px;
+
+
+    width: auto;
+    height: auto;
+}
+
+.super-boost-icon {
+    
+    align-self: center;
+    background-image: var(--boost-icon);
+    width:  36px;
+    height: 36px;
+}
+
+.super-boost-label {
+    color: white;
+    font-size: 13px;
+    width: 52px;
+    height: 25px;
+
+    padding: 0px 10px;
+    border-radius: 7px;
+    border-color: #331B2C;
+    border-width: 1px;
+    border-bottom-width: 3px;
+
+    margin-left: -14px;
+
+    letter-spacing: -2%;
+    -unity-font-definition: var(--font-muesou-900);
+    -unity-text-align: middle-center;
+    -unity-text-outline-color: rgba(0,0,0,.5);
+    -unity-text-outline-width: 1px;
+    -unity-font-style: bold-and-italic;
+
+    text-shadow: 0 3 0 rgba(0,0,0,0.73);
+
+    background-image: var(--boost-bg);
+
+    overflow: hidden;
+
+}
+
+#shine_image {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    left: -40px;
+    opacity: 0.5;
+
+    background-image: var(--shine-image);
+}
+
+.hidden {
+    display: none;
+}
+

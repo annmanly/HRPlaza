@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<UXML
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns="UnityEngine.UIElements"
+    xmlns:hr="Highrise.UI"
+    xmlns:editor="UnityEditor.UIElements"
+    xsi:noNamespaceSchemaLocation="../../../../UIElementsSchema/UIElements.xsd"
+>
+
+  <hr:UILuaView name="event_info" class="event-info">
+    <VisualElement name="click_off"/>
+    <VisualElement name="event_info_panel" class="event-info-panel">
+
+      <VisualElement name="event_title" class="event-title"/>
+
+      <!-- Scroll Leaderboard Container -->
+      <VisualElement name="leaderboard_container" class="leaderboard-container">
+        <hr:UICollection name="leaderboard_collection" class="leaderboard-content">
+          <hr:UICollectionSection>
+            <hr:UICollectionCells name="leaderboard_cells" />
+          </hr:UICollectionSection>
+        </hr:UICollection>
+
+        <VisualElement class="leaderboard-tabs-container">
+
+          <VisualElement name="leaderboard_tab_1" class="leaderboard-tab-active">
+            <Label name="leaderboard_tab_1_label" class="tab-label" text="INDIVIDUAL" />
+          </VisualElement>
+          <VisualElement name="leaderboard_tab_3" class="leaderboard-tab-inactive">
+            <Label name="leaderboard_tab_3_label" class="tab-label" text="LEAGUE" />
+          </VisualElement>
+
+        </VisualElement>
+      </VisualElement>
+
+    </VisualElement>
+
+  </hr:UILuaView>
+
+</UXML>

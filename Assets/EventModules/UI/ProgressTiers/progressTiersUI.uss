@@ -1,0 +1,495 @@
+:root {
+  --font-muesou-900: url("project://database/Assets/EventModules/UI/Fonts/MuseoSansRounded1000 SDF.asset");
+
+  --color-primary: #ffffff;
+  --color-secondary: #ffffff;
+  --color-tertiary: #ffffff;
+  --color-white: #ffffff;
+
+  --color-event-accent: #362343;
+
+  --gradient-fill: url("project://database/Assets/EventModules/UI/Icons/starsGradient.png");
+  --gradient-golden: url("project://database/Assets/EventModules/UI/Icons/gold_gradient.png");
+ 
+  --ticket-icon: url("project://database/Assets/EventModules/UI/Icons/Left Icon.png");
+  --ticket-icon2: url("project://database/Assets/EventModules/UI/Icons/Left Icon.png");
+  --image-reward-card-bg: url("project://database/Assets/EventModules/UI/Icons/rewards_card_grad.png");
+  --image-event-card-overlay: url("project://database/Assets/EventModules/UI/Icons/RewardsCard_Overlay.png");
+  --reward-glow: url("project://database/Assets/EventModules/UI/Icons/RewardGlow.png");
+  --collected-bg: url("project://database/Assets/EventModules/UI/Icons/collected_grad.png");
+  --current-bg: url("project://database/Assets/EventModules/UI/Icons/current_grad.png");
+  --upcoming-bg: url("project://database/Assets/EventModules/UI/Icons/upcoming_grad.png");
+  --image-lock-closed: url("project://database/Assets/EventModules/UI/Icons/lock_closed.png");
+  --image-lock-open: url("project://database/Assets/EventModules/UI/Icons/lock_open.png");
+
+  
+  --color-green: #39DF86;
+  --color-green-dark: #246c52;
+  --color-green-darker: #2f8e6b;
+
+  --color-pink: #39DF86; /*#f762ff*/
+  --image-star-bg: url("project://database/Assets/EventModules/UI/Icons/StarbgGradient.png");
+}
+
+.progress-tiers-u-i {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    scale: .95;
+}
+
+#click_off {
+    position: absolute;
+    width: 200%;
+    height: 200%;
+
+    translate: -25% -25%;
+
+    background-color: rgba(0, 0, 0, 0.25);
+}
+
+.progress_tiers-panel {
+    background-image: var(--image-reward-card-bg);
+
+    width: 320px;
+    height: 500px;
+
+    border-radius: 20px;
+
+    margin: auto;
+    bottom: 10px;
+    padding: 0px;
+
+    overflow: hidden;
+}
+#bg_overlay {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-image: var(--image-event-card-overlay);
+}
+
+
+/* Rewards Scroll View */
+.rewards-container {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    align-self: center;
+
+    width: 100%;
+    height: 100%;
+    margin-top: auto;
+    
+}
+
+.rewards-content {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    flex-grow: 1;
+
+    overflow: scroll;
+    align-self: center;
+
+    width: 100%;
+}
+
+
+.scroll-bar {
+  display: flex;
+  
+  width: 5px;
+  border-radius: 2px;
+}
+
+.scroll-bar__thumb {
+  border-radius: 2px;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.scroll-bar__thumb:active {
+  background-color: var(--color-secondary);
+}
+
+.scroll-bar__thumb:hover {
+  background-color: var(--color-secondary);
+}
+
+.grand_prize-tag {
+  position: absolute;
+
+  left: 50%;
+  translate: -50% -75%;
+
+  padding: 4px 8px;
+  border-radius: 8px;
+  border-color: #7c2b16;
+  border-bottom-width: 2px;
+
+  color: #7c2b16;
+  font-size: 10px;
+  letter-spacing: -2%;
+  -unity-font-definition: var(--font-muesou-900);
+  -unity-text-align: middle-center;
+  -unity-font-style: bold-and-italic;
+  text-shadow: 0 1 0 #f3c670;
+  background-image: var(--gradient-golden);
+
+}
+
+#cost_container {
+  position: absolute;
+  width: 20px;
+  height: auto;
+
+  border-radius: 10px;
+
+  align-self: center;
+  align-items: center;
+  justify-content: center;
+
+  left: 50%;
+  translate: -50% -70px;
+}
+
+#cost_icon {
+  width: 32px;
+  height: 32px;
+
+  margin: 0;
+  padding: 0;
+  background-image: var(--ticket-icon2);
+}
+
+#cost_label {
+  margin: 0;
+  padding: 0;
+
+  letter-spacing: -8%;
+  -unity-font-definition: var(--font-muesou-900);
+  font-size: 16px;
+  color: var(--color-pink); /*1f511e*/
+  -unity-text-align: middle-center;
+  -unity-font-style: bold;
+  -unity-text-outline-color: #0e0814;
+  -unity-text-outline-width: 4px;
+  text-shadow: 0 3 0 #0b0612;
+}
+
+.grand_price-container {
+  width: 280px;
+  height: 80px;
+
+  left: 50%;
+  translate: -50% 8px;
+  background-image: var(--upcoming-bg);
+
+  margin-top:70px;
+  flex-shrink: 0;
+  flex-grow: 1;
+}
+.grand_prize-bg {
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  background-image: var(--reward-glow);
+
+  left: 50%;
+  translate: -50% -15%;
+}
+.grand_prize-image {
+  position: absolute;
+  width: 60px;
+  height: 60px;
+  /*background-image: var(--image-lock-open);*/
+
+  left: 50%;
+  translate: -50% 15%;
+}
+
+.main_rewards-container {
+  display: flex;
+  flex-direction: column;
+
+
+  width: auto;
+  height: auto;
+  padding: 0px;
+  padding-left: 33%;
+  padding-bottom: 35px;
+  margin: 0px;
+  /*margin-left: 25%;*/
+}
+
+.main_rewards-progress_bar-bg {
+    position: absolute;
+    width: 20px;
+    height: 100%;
+    background-color: #2c293c;
+    border-color: #9285ce;
+    border-right-width: 2px;
+    border-left-width: 2px;
+
+    bottom: 0px;
+    left: 17%;
+}
+.main_rewards-progress_bar-filled {
+  width: 100%;
+  height: 100%;
+  margin-top: auto;
+
+  border-color: #c867b9;
+  border-left-width: 1px;
+  border-right-width: 1px;
+  bottom: 0px;
+
+  background-image: var(--gradient-fill);
+}
+.main_rewards-progress_bar-top {
+  width: 100%;
+  height: 100%;
+  margin-top: auto;
+
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+  
+  border-color: #c867b9;
+  border-left-width: 1px;
+  border-right-width: 1px;
+  border-top-width: 1px;
+  bottom: 0px;
+
+  background-image: var(--gradient-fill);
+}
+
+.lock_icon-locked {
+    position: absolute;
+    width:  32px;
+    height: 35px;
+    background-image: var(--image-lock-closed);
+
+    bottom: 50%;
+    left: 20%;
+    translate: -50% 50%;
+}
+.lock_icon-unlocked {
+    position: absolute;
+    width:  32px;
+    height: 35px;
+    background-image: var(--image-lock-open);
+
+    bottom: 50%;
+    left: 20%;
+    translate: -50% 50%;
+}
+
+/* Timer */
+.time_gate_container{
+  position: absolute;
+  width: 46px;
+  height: 16px;
+
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  display: flex;
+
+  background-image: url("project://database/Assets/EventModules/UI/Icons/light_blue_gradient.png");
+  border-radius: 6px;
+  border-color: #0b558b;
+  border-width: 2px;
+
+  left: 50%;
+  translate: -50% 0;
+  bottom: -3px;
+}
+.time_gate_text{
+
+  margin: 0;  
+  padding: 0;
+
+  color:#0b558b;
+  font-size: 9px;
+  letter-spacing: -2%;
+  -unity-font-definition: var(--font-muesou-900);
+  -unity-text-align: middle-center;
+  -unity-font-style: bold-and-italic;
+  text-shadow: 0 5 0 rgba(255,255,255,.50);
+}
+
+.reward-entry {
+    width: 160px;
+    height: 60px;
+    margin: 10px;
+    left: 30%;
+
+    /*margin-top: 25px;*/
+}
+.entry__collected {
+    background-image: var(--collected-bg);
+}
+.entry__current {
+    background-image: var(--current-bg);
+}
+.entry__upcoming {
+    background-image: var(--upcoming-bg);
+}
+
+.reward-bg {
+    position: absolute;
+    width: 72px;
+    height: 72px;
+    
+    top: -18%;
+    left: 50%;
+
+    translate: -50% 0;
+
+    background-image: var(--reward-glow);
+}
+
+.reward-item {
+    position: absolute;
+    width:  60px;
+    height: 60px;
+    
+    top: 50%;
+    left: 50%;
+
+    translate: -50% -50%;
+}
+
+.reward-name {
+  position: absolute;
+  width: 140px;
+  height: auto;
+  bottom: 10px;
+  left: 50%;
+  translate: -50% 0;
+
+  margin: 0;
+  padding: 0;
+
+  color: white;
+  font-size: 9px;
+  letter-spacing: -2%;
+  -unity-font-definition: var(--font-muesou-900);
+  -unity-text-align: upper-center;
+  -unity-font-style: bold;
+  -unity-text-outline-color: rgba(0,0,0,1);
+  -unity-text-outline-width: 1px;
+  text-shadow: 0 5 0 rgba(0,0,0,1);
+
+  white-space: wrap;
+}
+
+.reward-amount {
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  top: 0;
+  right: 0;
+  translate: 100% 10%;
+
+  margin: 0;
+  padding: 0;
+
+  color: white;
+  font-size: 14px;
+  letter-spacing: -2%;
+  -unity-font-definition: var(--font-muesou-900);
+  -unity-text-align: middle-left;
+  -unity-font-style: bold;
+  -unity-text-outline-color: rgba(0,0,0,1);
+  -unity-text-outline-width: 2px;
+  text-shadow: 0 5 0 rgba(0,0,0,1);
+}
+
+.current-bg {
+  width: 122px;
+  height: 122px;
+  left: 50%;
+  top: -50%;
+  translate: -50% 0%;
+}
+
+.collected-item {
+  opacity: 0.6;
+}
+
+.hidden {
+  display: none;
+}
+
+.common{
+  color: white;
+}
+
+.uncommon{
+  color: #08845d;
+}
+
+.rare{
+  color: #1489dd;
+}
+
+.epic{
+  color: #7252e1;
+}
+
+.legendary{
+  color: #f8b430;
+}
+
+.mythical{
+  color: #e9bcf5;
+}
+
+.cost-container{
+  position: absolute;
+  width:  28px;
+  min-height: 28px;
+  height: auto;
+
+  border-radius: 10px;
+
+  align-self: center;
+  align-items: center;
+  justify-content: center;
+
+  top: 50%;
+  left: 8px;
+  translate: 0 -50%;
+  /*background-image: var(--image-star-bg);*/
+  align-items: center;
+  justify-content: center;
+}
+
+.cost-icon {
+  width: 20px;
+  height: 20px;
+  background-image: var(--ticket-icon2);
+}
+
+.cost-amount {
+  margin: 0;
+  padding: 0;
+
+  letter-spacing: -8%;
+  -unity-font-definition: var(--font-muesou-900);
+  font-size: 13px;
+  color: var(--color-pink); /*1f511e*/
+  -unity-text-align: middle-center;
+  -unity-font-style: bold;
+  -unity-text-outline-color: #0e0814;
+  -unity-text-outline-width: 4px;
+  text-shadow: 0 3 0 #0b0612;
+}
+
+#reward_cells {
+  flex-shrink: 1;
+  flex-grow: 0;
+}

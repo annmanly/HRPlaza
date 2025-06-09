@@ -12,6 +12,8 @@ UIRaffleWinnerEvent = Event.new("RaffleWinnerEvent")
 UIRaffleDrawingEvent = Event.new("UIDrawingEvent")
 SpawnRaffleTicketEvent = Event.new("SpawnRaffleTicketEvent")
 
+local ServerPrankModule = require("ServerPrankModule")
+
 
 -- [[ HELPERS ]]
 
@@ -267,10 +269,11 @@ end
 
 function GivePrizeCurrency(player)
     if not player.isDestroyed then
-        print(`PLACEHOLDER AWARD PRIZE CURRENCY TO {player.name}`)
         Storage.SetPlayerValue(player, "RewardReady", false)
         RewardEvent:FireClient(player)
         UIRaffleWinnerEvent:FireClient(player) -- display notif
+        print(`PLACEHOLDER AWARD PRIZE CURRENCY TO {player.name}`)
+        ServerPrankModule.GiveItemsToPlayer(player)
     end
 end
 

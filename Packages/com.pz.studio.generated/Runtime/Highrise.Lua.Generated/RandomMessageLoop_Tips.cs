@@ -20,7 +20,7 @@ using UnityEditor;
 namespace Highrise.Lua.Generated
 {
     [AddComponentMenu("Lua/RandomMessageLoop_Tips")]
-    [LuaRegisterType(0x4134a447a4fb9139, typeof(LuaBehaviour))]
+    [LuaRegisterType(0xa7b5829b235215b2, typeof(LuaBehaviour))]
     public class RandomMessageLoop_Tips : LuaBehaviourThunk
     {
         private const string s_scriptGUID = "1bb9879b7cbd7477dbccddec0e6cc901";

@@ -1,0 +1,217 @@
+:root {
+    --color-red: #fd4f4b;
+    --color-yellow: #f1d800;
+    --color-blue: #00b9f1;
+    --color-green: #00d345;
+    --color-purple: #834bc2;
+    --color-white: #ffffff;
+    --color-pink: #ff8c8c;
+    --color-pink-dark: #e07574;
+
+    --font-muesou-900: url("project://database/Assets/EventModules/UI/Fonts/MuseoSansRounded-900 SDF.asset");
+    --font-muesou-1000: url("project://database/Assets/EventModules/UI/Fonts/MuseoSansRounded1000 SDF.asset");
+    
+    --image-event-card: url('project://database/Assets/EventModules/UI/Icons/EventCard.png');
+    --image-buff-card-title: url('project://database/Assets/EventModules/UI/Icons/Buffs_Title.png');
+    --color-event-accent: #362343;
+}
+
+.buffs-shop {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+
+
+    letter-spacing: -6%;
+    -unity-font-definition: var(--font-muesou-900);
+    -unity-text-align: middle-center;
+    -unity-font-style: bold;
+    -unity-text-outline-color:  #362343;
+
+    color: #362343;
+    scale: .95;
+}
+
+#click_off {
+    position: absolute;
+    width: 200%;
+    height: 200%;
+
+    translate: -25% -25%;
+
+    background-color: rgba(0, 0, 0, 0.25);
+}
+
+.shop-panel {
+    background-color: var(--color-white);
+    background-image: var(--image-event-card);
+
+
+    width: 320px;
+    height: 500px;
+
+    border-radius: 20px;
+
+    margin: auto;
+    bottom: 10px;
+    padding: 10px;
+
+}
+
+#header {
+    width: 205px;
+    height: 205px;
+
+    align-self: center;
+    
+    margin-top: -115px;
+    margin-bottom: 0px;
+
+    background-image: var(--image-buff-card-title);
+    border-radius: 20px;
+
+    translate: 0 30px;
+}
+
+
+.scroll-view{
+    width: 100%;
+    height: 340px;
+
+    flex-grow: 0;
+    margin-top: auto;
+}
+
+#_scrollView .scroll-view__content-viewport {
+    border-radius: 12px;
+    height: 340px;
+}
+
+#_scrollView .scroll-view__content-container {
+    padding: 2px 4px;
+    align-items: center;
+
+    border-radius: 12px;  
+    background-color: #362343;
+}
+
+.scroll-bar{
+
+}
+.scroll-bar__thumb{
+    background-color: var(--color-white);
+    border-radius: 10px;
+    display: flex;  
+}
+
+.item-entry {
+    width: 100%;
+    height: 93px;
+
+    border-radius: 8px;
+    border-color: #ffffff;
+    border-width: 4px;
+
+    margin: 2px;
+
+
+    background-color: #ffffff;
+    flex-direction: row;
+
+    align-items: center;
+    justify-content: center;
+
+    flex-shrink: 0;
+}
+
+.item-icon {
+    position: absolute;
+    left: 8px;
+    width: 64px;
+    height: 64px;
+}
+
+.item-time-label{
+    font-size: 9px;
+    position: absolute;
+    right: 0px;
+    bottom: 0;
+
+    margin: 0;
+    padding: 1px 3px;
+
+    border-radius: 8px;
+    border-color: #362343;
+    border-width: 2px;
+
+    background-color: var(--color-white);
+}
+
+.item-info-container{
+    align-self: center;
+
+    align-items: center;
+    justify-content: space-around;
+
+    left: 126px;
+    translate: -50% 0;
+
+    height: 90px;
+    width: 180px;
+}
+
+.item-title {
+    margin: 0;
+    padding: 0;
+}
+
+.item-description{
+    margin: 0;
+    padding: 0;
+
+    white-space: normal;
+    font-size: 11px;
+
+}
+
+.item-purchase-button{
+
+    flex-shrink: 0;
+
+    width: 64px;
+    height: 32px;
+
+    background-color: var(--color-green);
+    border-radius: 8px;
+    border-bottom-width: 4px;
+    border-color:rgb(0, 182, 55);
+
+    padding: 2px;
+    margin-bottom: 0px;
+
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.item-gold-icon {
+    flex-shrink: 0;
+    width:  16px;
+    height: 16px;
+    background-image: url("project://database/Assets/EventModules/UI/Icons/bb03333577c37601.png");
+}
+
+.item-gold-label{
+    -unity-text-align: middle-center;
+    color:  #ffd925;
+    text-shadow: 0 2 0 rgb(192, 59, 6);
+    -unity-text-outline-color: rgb(192, 59, 6);
+    -unity-text-outline-width: 1px;
+
+    margin: 0;
+    padding: 0;
+}
+
+.locked{
+    opacity: 0.8;
+}
