@@ -11,10 +11,12 @@ local countdownText     : UILabel  = nil
 --!Tooltip("Assign a ScriptableObject of type MarqueeEventsSO (with public fields GetEventStartDates() and GetEventImages()) here")
 local Events_ScriptableObject : Events_ScriptableObject = nil
 
-
 -- Parsed lists
 local _eventStartEpochs  : table = {}
 local _eventEndEpochs    : table = {}
+
+local countdownTimer = nil
+local reevaluateTimer = nil
 
 -- Calculate host timezone offset (local epoch minus UTC epoch)
 local function getTimezoneOffset()
@@ -40,76 +42,76 @@ local function parseETDateTime(str)
     return utcEpoch + ET_OFFSET
 end
 
-function self:Awake()
-    -- grab textures and start-times
-    local eventStartTimes = Events_ScriptableObject.GetEventStartDates()
-
-
-    -- build start and end epochs
-    _eventStartEpochs = {}
-    _eventEndEpochs   = {}
-    for i, startStr in ipairs(eventStartTimes) do
-        local startEpoch = parseETDateTime(startStr)
-        _eventStartEpochs[i] = startEpoch
-        -- add exactly 5 days to compute end time
-        _eventEndEpochs[i]   = startEpoch + (5 * 86400)
+local function formatRemainingTime(seconds)
+    local d   = math.floor(seconds / 86400)
+    local h   = math.floor((seconds % 86400) / 3600)
+    local m   = math.floor((seconds % 3600) / 60)
+    local sec = seconds % 60
+    if d > 0 then
+        return string.format("%02d:%02d:%02d:%02d", d, h, m, sec)
+    elseif h > 0 then
+        return string.format("%02d:%02d:%02d", h, m, sec)
+    else
+        return string.format("%02d:%02d", m, sec)
     end
 end
 
-function self:Start()
-    -- clear initial texts and show container
-    primaryText:SetPrelocalizedText("")
-    countdownText:SetPrelocalizedText("")
+local function startCountdown(targetTime, isLive)
+    if countdownTimer then countdownTimer:Stop() end
+    if reevaluateTimer then reevaluateTimer:Stop() end
+
+    local now = os.time()
+    local remaining = targetTime - now
+
+    if remaining <= 0 then
+        primaryText:SetPrelocalizedText("")
+        countdownText:SetPrelocalizedText("")
+        billboardContainer:AddToClassList("hidden")
+        return
+    end
+
     billboardContainer:RemoveFromClassList("hidden")
+
+    if isLive then
+        primaryText:SetPrelocalizedText("EVENT ENDING:")
+    else
+        primaryText:SetPrelocalizedText("EVENT STARTING")
+    end
+
+    countdownText:SetPrelocalizedText(formatRemainingTime(remaining))
+
+    countdownTimer = Timer.Every(1, function()
+        local now = os.time()
+        local remaining = targetTime - now
+        if remaining <= 0 then
+            primaryText:SetPrelocalizedText("")
+            countdownText:SetPrelocalizedText("")
+            billboardContainer:AddToClassList("hidden")
+            if countdownTimer then countdownTimer:Stop() end
+            if reevaluateTimer then reevaluateTimer:Stop() end
+            return
+        end
+        countdownText:SetPrelocalizedText(formatRemainingTime(remaining))
+    end)
+
+    reevaluateTimer = Timer.After(remaining, function()
+        evaluateCountdownState()
+    end)
 end
 
-function self:Update()
+function evaluateCountdownState()
     local now = os.time()
-    local maxCount = math.min(
-        #_eventStartEpochs,
-        #_eventEndEpochs
-    )
+    local maxCount = math.min(#_eventStartEpochs, #_eventEndEpochs)
 
     for i = 1, maxCount do
         local startEpoch = _eventStartEpochs[i]
         local endEpoch   = _eventEndEpochs[i]
 
         if now >= startEpoch and now < endEpoch then
-            -- LIVE NOW state
-            local rem = endEpoch - now
-            local d   = math.floor(rem / 86400)
-            local h   = math.floor((rem % 86400) / 3600)
-            local m   = math.floor((rem % 3600) / 60)
-            local sec = rem % 60
-            local formatted
-            if d > 0 then
-                formatted = string.format("%02d:%02d:%02d:%02d", d, h, m, sec)
-            elseif h > 0 then
-                formatted = string.format("%02d:%02d:%02d", h, m, sec)
-            else
-                formatted = string.format("%02d:%02d", m, sec)
-            end
-            primaryText:SetPrelocalizedText("EVENT ENDING:")
-            countdownText:SetPrelocalizedText(formatted)
+            startCountdown(endEpoch, true)
             return
-
         elseif now < startEpoch then
-            -- COMING SOON state
-            local rem = startEpoch - now
-            local d   = math.floor(rem / 86400)
-            local h   = math.floor((rem % 86400) / 3600)
-            local m   = math.floor((rem % 3600) / 60)
-            local sec = rem % 60
-            local formatted
-            if d > 0 then
-                formatted = string.format("%02d:%02d:%02d:%02d", d, h, m, sec)
-            elseif h > 0 then
-                formatted = string.format("%02d:%02d:%02d", h, m, sec)
-            else
-                formatted = string.format("%02d:%02d", m, sec)
-            end
-            primaryText:SetPrelocalizedText("EVENT STARTING")
-            countdownText:SetPrelocalizedText(formatted)
+            startCountdown(startEpoch, false)
             return
         end
     end
@@ -118,4 +120,23 @@ function self:Update()
     primaryText:SetPrelocalizedText("")
     countdownText:SetPrelocalizedText("")
     billboardContainer:AddToClassList("hidden")
+end
+
+function self:Awake()
+    local eventStartTimes = Events_ScriptableObject.GetEventStartDates()
+
+    _eventStartEpochs = {}
+    _eventEndEpochs   = {}
+    for i, startStr in ipairs(eventStartTimes) do
+        local startEpoch = parseETDateTime(startStr)
+        _eventStartEpochs[i] = startEpoch
+        _eventEndEpochs[i]   = startEpoch + (5 * 86400) -- 5 days duration
+    end
+end
+
+function self:Start()
+    primaryText:SetPrelocalizedText("")
+    countdownText:SetPrelocalizedText("")
+    billboardContainer:RemoveFromClassList("hidden")
+    evaluateCountdownState()
 end

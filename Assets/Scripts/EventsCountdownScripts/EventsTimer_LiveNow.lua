@@ -7,11 +7,13 @@ local headerText        : VisualElement = nil
 --!Tooltip("Assign a ScriptableObject of type MarqueeEventsSO (with public fields GetEventStartDates() and GetEventImages()) here")
 local Events_ScriptableObject : Events_ScriptableObject = nil
 
-
 -- Parsed lists
 local _eventStartEpochs  : table = {}
 local _eventEndEpochs    : table = {}
 local eventNames        : {string}  = {}
+
+-- Timer handle
+local updateTimer = nil
 
 -- Calculate host timezone offset (local epoch minus UTC epoch)
 local function getTimezoneOffset()
@@ -37,11 +39,43 @@ local function parseETDateTime(str)
     return utcEpoch + ET_OFFSET
 end
 
+local function updateHeader()
+    local now = os.time()
+    local nextUpdateIn = nil
+    local maxCount = math.min(#_eventStartEpochs, #_eventEndEpochs, #eventNames)
+
+    for i = 1, maxCount do
+        local startEpoch = _eventStartEpochs[i]
+        local endEpoch = _eventEndEpochs[i]
+
+        if now >= startEpoch and now < endEpoch then
+            headerText:SetPrelocalizedText("LIVE\nNOW:")
+            nextUpdateIn = endEpoch - now
+            break
+        elseif now < startEpoch then
+            headerText:SetPrelocalizedText("COMING\nSOON:")
+            nextUpdateIn = startEpoch - now
+            break
+        end
+    end
+
+    if not nextUpdateIn then
+        headerText:SetPrelocalizedText("")
+        headerText:AddToClassList("hidden")
+        return
+    else
+        headerText:RemoveFromClassList("hidden")
+    end
+
+    updateTimer = Timer.After(nextUpdateIn, function()
+        updateHeader()
+    end)
+end
+
 function self:Awake()
     -- grab textures and start-times
     eventNames     = Events_ScriptableObject.GetEventNames()
     local eventStartTimes = Events_ScriptableObject.GetEventStartDates()
-
 
     -- build start and end epochs
     _eventStartEpochs = {}
@@ -49,39 +83,12 @@ function self:Awake()
     for i, startStr in ipairs(eventStartTimes) do
         local startEpoch = parseETDateTime(startStr)
         _eventStartEpochs[i] = startEpoch
-        -- add exactly 5 days to compute end time
-        _eventEndEpochs[i]   = startEpoch + (5 * 86400)
+        _eventEndEpochs[i]   = startEpoch + (5 * 86400) -- 5 days duration
     end
 end
 
 function self:Start()
-    -- clear initial texts and show container
     headerText:SetPrelocalizedText("")
     headerText:RemoveFromClassList("hidden")
-end
-
-function self:Update()
-    local now = os.time()
-    local maxCount = math.min(
-        #_eventStartEpochs,
-        #_eventEndEpochs,
-        #eventNames
-    )
-
-    for i = 1, maxCount do
-        local startEpoch = _eventStartEpochs[i]
-        local endEpoch   = _eventEndEpochs[i]
-
-        if now >= startEpoch and now < endEpoch then
-            headerText:SetPrelocalizedText("LIVE\nNOW:")
-            return
-        elseif now < startEpoch then
-            headerText:SetPrelocalizedText("COMING\nSOON:")
-            return
-        end
-    end
-
-    -- No active or upcoming events
-    headerText:SetPrelocalizedText("")
-    headerText:AddToClassList("hidden")
+    updateHeader()
 end
