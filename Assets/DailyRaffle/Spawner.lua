@@ -7,7 +7,7 @@ local startSpawnPositions:{Transform} = {}
 --!SerializeField
 local endSpawnPositions:{Transform} = {}
 
-local lifetime:number = 60 -- time before despawn
+local lifetime:number = 60*3 -- time before despawn
 local minRespawnTimer:number = lifetime -- time after collected before spawning again but will add offset
 timerOffsetMax = 5
 local raffleManager = require("RaffleManager")
