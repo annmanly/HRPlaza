@@ -7,14 +7,13 @@
     xsi:noNamespaceSchemaLocation="../../../UIElementsSchema/UIElements.xsd"
 >
 
-  <hr:UILuaView class="results">
-  <VisualElement name="_closeOverlay" class="modal"/>
+  <hr:UILuaView class="results" picking-mode="ignore">
   <VisualElement name="_bannerImageContainer" class="bannerImageContainer">
     <VisualElement name="_bannerImage" class="banner-image">
       <VisualElement class="textContaner">
         <hr:UILabel name="_smallHeadingText" class="smallHeading white-text centered"/>
         <VisualElement name="_nameContainer" >
-          <hr:UILabel name="_nameText" class="heading white-text centered"/>
+          <hr:UILabel name="_headingText" class="heading white-text centered"/>
         </VisualElement>
       </VisualElement>
     </VisualElement>

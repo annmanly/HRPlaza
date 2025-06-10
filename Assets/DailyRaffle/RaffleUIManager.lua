@@ -9,8 +9,11 @@ local winnerNotifObj:GameObject=nil
 --!SerializeField
 local winnerParticleObj:GameObject=nil
 --!SerializeField
+local sparklesOneshotObj:GameObject=nil
+--!SerializeField
 local resultsObj:GameObject=nil
 
+ClaimBoxRequest = Event.new("ClaimBoxRequest")
 local RaffleManager = require("RaffleManager")
 local mainUI = nil
 local codesUI = nil
@@ -36,10 +39,23 @@ function setMainUiTicketCount(count)
 end
 
 function activateParticles()
-    winnerParticleObj.transform:SetParent(mainCamera.gameObject.transform)
-    winnerParticleObj.transform.localPosition = particleTransformPos
-    winnerParticleObj:SetActive(true)
+    if winnerParticleObj then
+        winnerParticleObj.transform:SetParent(mainCamera.gameObject.transform)
+        winnerParticleObj.transform.localPosition = particleTransformPos
+        winnerParticleObj:SetActive(true)
+    end
 end
+
+function sparklesOneshot()
+    if sparklesOneshotObj then
+        pos = Vector3.new(0,0.211999997,0.894999981)
+        sparklesOneshotObj.transform:SetParent(mainCamera.gameObject.transform)
+        sparklesOneshotObj.transform.localPosition = pos
+        sparklesOneshotObj:SetActive(true)
+        Timer.After(20, function() sparklesOneshotObj:SetActive(false) end)
+    end
+end
+
 function closeParticles() 
     winnerParticleObj:SetActive(false)
 end
@@ -51,7 +67,6 @@ function displayWinner()
 end
 
 function displayDrawingWinners(winners)
-    activateParticles()
     resultsObj:SetActive(true)
     resultsUI = resultsObj.gameObject:GetComponent(Results).showWinners(winners)
 end
@@ -63,7 +78,8 @@ function self:ClientAwake()
     RaffleManager.UIRaffleDrawingEvent:Connect(displayDrawingWinners)
     RaffleManager.TicketCountRequest:FireServer()
 
-    Timer.After(10, function() RaffleManager.RewardCheckRequest:FireServer() end)
+    ClaimBoxRequest:Connect(function() RaffleManager.ClaimBlindBoxRequest:FireServer() end)
+    Timer.After(2, function() RaffleManager.RewardCheckRequest:FireServer() end)
     RaffleManager.RewardEvent:Connect(function() 
         print("CLIENT RECEIVED REWARD EVENT")
         -- TO DO: add UI notification pop up

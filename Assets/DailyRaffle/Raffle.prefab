@@ -724,6 +724,12 @@ GameObject:
     type: 3}
   m_PrefabInstance: {fileID: 185017214479825245}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &185017214479691115 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 136246, guid: 7bc56f0c92a9cc547a1178c6657aa95e,
+    type: 3}
+  m_PrefabInstance: {fileID: 185017214479825245}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &4274836956541246221
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -871,6 +877,11 @@ PrefabInstance:
       propertyPath: m_winnerParticleObj
       value: 
       objectReference: {fileID: 185017214479646399}
+    - target: {fileID: 2814194789298033311, guid: 501b1f892ce7df14bb3c10e72080d415,
+        type: 3}
+      propertyPath: m_sparklesOneshotObj
+      value: 
+      objectReference: {fileID: 185017214479691115}
     - target: {fileID: 9031579239987945677, guid: 501b1f892ce7df14bb3c10e72080d415,
         type: 3}
       propertyPath: m_Name

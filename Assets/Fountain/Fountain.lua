@@ -23,7 +23,7 @@ local bubbleRewardAmount = 10
 local winnerGoldAmount = 69 -- live would be ~69
 local inRangeGoldAmount = 1
 local maxRangePlayers = 30
-local minimumRequiredBalance = 50
+local minimumRequiredBalance = 200
 local currentRangeCount = 0
 local oddsNumber = 100 -- will win 1 in 2, live would be 100
 local wishitemID = "wish"
@@ -171,17 +171,18 @@ end
 function TransferGold(player, amount)
     Wallet.TransferGoldToPlayer(player, amount, function(response, err)
       if err ~= WalletError.None then
-              error("Something went wrong while transferring gold: " .. WalletError[err])
+              error(`Something went wrong while transferring gold to {player.name}: {WalletError[err]}`)
               return
-          end
+        end
   
-      print(string.format("[GOLD SENT] Sent %d Gold to %s, Gold remaining: %d", amount, player.name, response.gold))
+      print(string.format("[FOUNTAIN] [GOLD SENT] Sent %d Gold to %s, Gold remaining: %d", amount, player.name, response.gold))
     end)
   end
 
 
 function OnWishSubmitRequest(player, wishData)
-    print("RECEIVED WISH: " .. player.name .. "WISH: " .. wishData.wishMessage)
+    print(`[FOUNTAIN] {player.name} SUBMITTED WISH: {wishData.wishMessage}`)
+
     Wallet.GetWallet(function(response, err)
         if err ~= WalletError.None then
             error("Something went wrong while retrieving wallet: " .. WalletError[err])
@@ -189,7 +190,7 @@ function OnWishSubmitRequest(player, wishData)
             return
         end
 
-        print("Current Gold: " .. response.gold .. " EARNED GOLD: " .. response.earnedGold) 
+        -- print("[FOUNTAIN] Current Gold: " .. response.gold .. " EARNED GOLD: " .. response.earnedGold) 
         
 
         currentGold = response.gold + response.earnedGold

@@ -56,7 +56,7 @@ function submitWish()
     }
     -- fountainManager.WishSubmitRequest:FireServer(wish)
     fountainManager.BuyWish(wish)
-    print("SUBMIT WISH WITH TEXT" .. _wishInput.text .. " AUTHOR: " .. client.localPlayer.name)
+    -- print(`[FOUNTAIN] {client.localPlayer.name} SUBMITTED WISH: {_wishInput.text}`)
 
     closeWindow()
 end

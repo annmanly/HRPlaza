@@ -8,7 +8,7 @@
 >
 
   <hr:UILuaView class="winnerNotif">
-  <VisualElement name="_closeOverlay" class="modal"/>
+  <!-- <VisualElement name="_closeOverlay" class="modal"/> -->
   <VisualElement name="_bannerImageContainer" class="bannerImageContainer">
     <VisualElement name="_bannerImage" class="banner-image">
       <VisualElement class="textContaner">
@@ -23,6 +23,7 @@
     </VisualElement>
   <VisualElement name="_contentWindow" class="windowContainer vertical-layout">
     <hr:UILabel name="_descriptionText" class=" heading  white-text centered"/>
+    <hr:UILabel name="_smallDescriptionText" class=" body  white-text centered"/>
   </VisualElement>
 
     <VisualElement class="buttonRow" >

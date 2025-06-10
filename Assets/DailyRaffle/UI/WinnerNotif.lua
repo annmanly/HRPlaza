@@ -1,11 +1,11 @@
 --!Type(UI)
---!Bind
-local _closeOverlay:VisualElement = nil
 
 --!Bind
 local _contentWindow:VisualElement = nil
 --!Bind 
 local _descriptionText: UILabel = nil
+--!Bind 
+local _smallDescriptionText: UILabel = nil
 --!Bind
 local _redeemButton:VisualElement = nil
 --!Bind 
@@ -24,8 +24,9 @@ UIRaffleManager = require("RaffleUIManager")
 
 _smallHeadingText:SetPrelocalizedText("DAILY RAFFLE")
 _nameText:SetPrelocalizedText("YOU WON!")
-_descriptionText:SetPrelocalizedText("YOU RECEIVED:\n 1x Townie Token")
-_redeemButtonText:SetEmojiPrelocalizedText("REDEEM PRIZE")
+_descriptionText:SetPrelocalizedText("1x Townie Trove")
+_smallDescriptionText:SetPrelocalizedText("Open the box from <b>My Items > Consumables</b> to receive your prize.")
+_redeemButtonText:SetEmojiPrelocalizedText("CLAIM BOX")
 
 function close()
     self.gameObject:SetActive(false)
@@ -49,12 +50,13 @@ local bobTween = Tween:new(
 
 function OnRedeemPress()
     close()
-    UI:ExecuteDeepLink("https://high.rs/shop?type=ic&id=6843120c7444166981ec8a10")
+    -- UI:ExecuteDeepLink("https://high.rs/shop?type=ic&id=6843120c7444166981ec8a10")
+    UIRaffleManager.ClaimBoxRequest:Fire()
 end
 
 
 function self:Awake()
-    _closeOverlay:RegisterPressCallback(close)
+    -- _closeOverlay:RegisterPressCallback(close)
     _redeemButton:RegisterPressCallback(OnRedeemPress)
     bobTween:start()
 end

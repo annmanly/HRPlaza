@@ -23,7 +23,7 @@ local _playerTicketCount:Label = nil
 local raffleUIManager = require("RaffleUIManager")
 
 _infoButtonText:SetPrelocalizedText("HOW TO PLAY")
-_redeemButtonText:SetPrelocalizedText("REDEEM A PRIZE")
+_redeemButtonText:SetPrelocalizedText("VIEW PRIZES")
 
 function setTicketCount(number)
     _playerTicketCount.text = `You have {number} tickets.`

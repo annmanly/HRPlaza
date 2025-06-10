@@ -11,6 +11,7 @@ RewardEvent = Event.new("RewardEvent")
 UIRaffleWinnerEvent = Event.new("RaffleWinnerEvent")
 UIRaffleDrawingEvent = Event.new("UIDrawingEvent")
 SpawnRaffleTicketEvent = Event.new("SpawnRaffleTicketEvent")
+ClaimBlindBoxRequest = Event.new("ClaimBlindBoxRequest")
 
 local ServerPrankModule = require("ServerPrankModule")
 
@@ -46,9 +47,9 @@ local GeneratingTicketsDone = Event.new("GeneratingTicketsDone")
 
 
 -- [ RAFFLE CONFIGURATION ]
-local numberOfWinners = 0
+local numberOfWinners = 100
 local spawnInterval = 45
-local forcedDraw = false --- CHANGE TO FALSE WHEN DONE TESTING
+local forcedDraw = true --- CHANGE TO FALSE WHEN DONE TESTING
 
 function OnSubmitTicketRequest(player, ticketCount)
     for i=1,ticketCount do 
@@ -163,13 +164,13 @@ function AddWinnersToStorage(winners, date)
     
     Storage.GetValue(winnerKey, function(value, err) 
         if err ~= StorageError.None then
-            print(`[ERROR] Storage Error - {StorageError[err]} when reading winners entry {winnerKey}`)
+            error(`Storage Error - {StorageError[err]} when reading winners entry {winnerKey}`)
         else
             winnerEntryUpdate = value
             winnerEntryUpdate.winners = winners
             winnerEntryUpdate.finishTime = GetNowDateStamp()
             if winners == {} or winners == nil or #winners == 0 then 
-                print(`[ERROR] No winners selected.`)
+                error(`No winners selected.`)
                 winnerEntryUpdate.status = "error-no-entries"
             else
                 winnerEntryUpdate.status = "complete"
@@ -177,7 +178,7 @@ function AddWinnersToStorage(winners, date)
 
             Storage.SetValue(winnerKey, winnerEntryUpdate, function(err) 
                  if err ~= StorageError.None then
-                    print(`[ERROR] Storage Error - {StorageError[err]} when setting winners`)
+                    error(`Storage Error - {StorageError[err]} when setting winners`)
                  end
             end)
         end
@@ -191,17 +192,17 @@ function SelectWinners()
     winnerCount = numberOfWinners
     print(`{ticketCount} TOTAL TICKETS.`)
     if ticketCount <= numberOfWinners then winnerCount = ticketCount end
-
+    print(`[RAFFLE] Selecting winners, Winner count: {winnerCount}`)
     winners = {}
     winnerNames = {}
     for i=1,winnerCount do
         if ticketCount == 0 then
-            -- print("NO MORE TICKETS")
             break
         end
 
         choice = math.random(1, ticketCount)
-        for k,ticket in pairs(tickets) do
+        for k,ticket in ipairs(tickets) do
+            
             initchoice = choice
             choice = choice - ticket.score
             if choice <= 0 then
@@ -213,15 +214,15 @@ function SelectWinners()
                 table.insert(winners, winnerEntry)
                 table.insert(winnerNames, winnerEntry.name)
                 tickets[k].score = 0
-                print(`TICKET {initchoice} WINNER: {winnerEntry.name}`)
+                -- print(`[RAFFLE] TICKET {initchoice} WINNER: {winnerEntry.name}`)
                 Storage.SetValue(winnerEntry.id .. "/RewardReady", true)
                 
-            break
+                break
             end
         end
     end
 
-    print("WINNERS SELECTED: " .. table.concat(winnerNames, ", "))
+    print("[RAFFLE] WINNERS SELECTED: " .. table.concat(winnerNames, ", "))
     AddWinnersToStorage(winners, yesterday)
     DisplayWinners(winnerNames)
     CheckWinnersInRoom()
@@ -229,9 +230,8 @@ end
 
 function CheckIfRewardReady(player)
     Storage.GetPlayerValue(player, "RewardReady", function(value, err) 
-        -- print("CHECKING PLAYER: " .. player.name)
         if value == true then
-            GivePrizeCurrency(player)
+            DisplayWinnerPopUp(player)
         end
     end)
 end
@@ -241,6 +241,7 @@ function DisplayWinners(winnerNames)
         playersInRoom = server.players
         for i, player in playersInRoom do
             if not player.isDestroyed then
+
                 isWinner = false
                 for i, name in winnerNames do
                     if player.name == name then
@@ -260,18 +261,32 @@ function CheckWinnersInRoom()
     for i, player in playersInRoom do
         Storage.GetPlayerValue(player, "RewardReady", function(value, err) 
             if value == true then
-                GivePrizeCurrency(player)
+                DisplayWinnerPopUp(player)
             end
         end)
 
     end
 end
 
+function OnClaimBoxRequest(player)
+    if not player.isDestroyed then
+         Storage.GetPlayerValue(player, "RewardReady", function(value, err) 
+            if value == true then
+                GivePrizeCurrency(player)
+            end
+        end)
+    end
+end
+
+function DisplayWinnerPopUp(player)
+    if not player.isDestroyed then
+        UIRaffleWinnerEvent:FireClient(player) -- display notif
+    end
+end
 function GivePrizeCurrency(player)
     if not player.isDestroyed then
         Storage.SetPlayerValue(player, "RewardReady", false)
         RewardEvent:FireClient(player)
-        UIRaffleWinnerEvent:FireClient(player) -- display notif
         print(`PLACEHOLDER AWARD PRIZE CURRENCY TO {player.name}`)
         ServerPrankModule.GiveItemsToPlayer(player)
     end
@@ -284,6 +299,7 @@ function self:ServerStart()
     TicketCountRequest:Connect(OnTicketCountRequest)
     RewardCheckRequest:Connect(CheckIfRewardReady)
     GeneratingTicketsDone:Connect(SelectWinners)
+    ClaimBlindBoxRequest:Connect(OnClaimBoxRequest)
 
     --- REMOVE AFTER DONE TESTING -- 
 
