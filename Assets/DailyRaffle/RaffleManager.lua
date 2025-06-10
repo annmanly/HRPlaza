@@ -46,9 +46,9 @@ local GeneratingTicketsDone = Event.new("GeneratingTicketsDone")
 
 
 -- [ RAFFLE CONFIGURATION ]
-local numberOfWinners = 10
+local numberOfWinners = 0
 local spawnInterval = 45
-local forcedDraw = true --- CHANGE TO FALSE WHEN DONE TESTING
+local forcedDraw = false --- CHANGE TO FALSE WHEN DONE TESTING
 
 function OnSubmitTicketRequest(player, ticketCount)
     for i=1,ticketCount do 
