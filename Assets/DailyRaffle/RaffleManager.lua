@@ -43,13 +43,14 @@ local winnersPrefix = "WINNERS_"
 local currentDate = nil
 local tickets = {}
 local ticketCount = 0
+local uniquePlayerCount = 0
 local GeneratingTicketsDone = Event.new("GeneratingTicketsDone")
 
 
 -- [ RAFFLE CONFIGURATION ]
 local numberOfWinners = 100
 local spawnInterval = 45
-local forcedDraw = true --- CHANGE TO FALSE WHEN DONE TESTING
+local forcedDraw = false --- CHANGE TO FALSE WHEN DONE TESTING
 
 function OnSubmitTicketRequest(player, ticketCount)
     for i=1,ticketCount do 
@@ -60,7 +61,7 @@ end
 function AddTicketToLeaderboard(player)
     todaysTickets = raffleTicketsPrefix .. GetTodayDateString()
     Leaderboard.IncrementScoreForPlayer(todaysTickets, player, 1, function(entry, error)  
-        print(`TICKET ADDED FOR: {player.name} TOTAL TICKETS: {entry.score}`)
+        -- print(`[RAFFLE] TICKET ADDED FOR: {player.name} TOTAL TICKETS: {entry.score}`)
     end)
 end
 
@@ -77,24 +78,41 @@ end
 
 function InitiateDraw()
     -- CHANGE TO -1 WHEN DONE TESTING
-    local yesterday = GetDateStringWithOffset(0)
+    local yesterday = GetDateStringWithOffset(-1)
     local ticketsKey = raffleTicketsPrefix .. yesterday
     winnerKey = winnersPrefix .. yesterday
     Storage.GetValue(winnerKey, function(value, err) 
-        if value ~= nil and forcedDraw ~= true  then
+        if value == nil or forcedDraw == true then
+            local now = os.date("!*t")
+            local serverID = server.info.roomId
+            WinnerEntry = {
+                status = "drawing",
+                drawTime = GetNowDateStamp(),
+                finishTime = "00:00:00",
+                server = serverID,
+                winners = {}
+            }
+            Storage.SetValue(winnerKey, WinnerEntry)
+            print(`[RAFFLE] SERVER INIATING RAFFLE DRAW.`)
+            -- INITIATE RAFFLE DRAW
+            tickets = {}
+            ticketCount = 0
+            GenerateTicketsForDraw(1, ticketsKey)
+        else
             if value.status == "complete" then
-                print("WINNERS ALREADY DRAWN")
-                winners = value
+                
+                winners = value.winners
                 winnerNames = {}
                 for i, winner in winners do
                     table.insert(winnerNames, winner.name)
                 end
+                print("[RAFFLE] WINNERS ALREADY DRAWN: " .. table.concat(winnerNames, ", "))
                 DisplayWinners(winnerNames)
                 CheckWinnersInRoom()
                 return
             
             elseif value.status =="drawing" or value.status == "error" then
-                Timer.After(10, InitiateDraw())
+                Timer.After(10, InitiateDraw)
                 return
             elseif value.status =="error-no-entries" then
                 -- do not redraw if no entries
@@ -103,21 +121,7 @@ function InitiateDraw()
 
         end
 
-        local now = os.date("!*t")
-        local serverID = server.info.roomId
-        WinnerEntry = {
-            status = "drawing",
-            drawTime = GetNowDateStamp(),
-            finishTime = "00:00:00",
-            server = serverID,
-            winners = {}
-        }
-        Storage.SetValue(winnerKey, WinnerEntry)
-        
-        -- INITIATE RAFFLE DRAW
-        tickets = {}
-        ticketCount = 0
-        GenerateTicketsForDraw(1, ticketsKey)
+
         
     end)
 
@@ -127,7 +131,7 @@ end
 function GenerateTicketsForDraw(i, key)
 
     -- INCREASE WHEN DONE TESTING
-    local step = 1 
+    local step = 10
 
     Leaderboard.GetEntries(key, i, step, function(entries, err) 
         if entries == nil or #entries ==  0 then
@@ -135,12 +139,14 @@ function GenerateTicketsForDraw(i, key)
             return
         else
             for i,entry in pairs(entries) do
+
+                uniquePlayerCount += 1
                 playerTicket = {id = entry.id, name = entry.name, score=entry.score}
                 ticketCount += entry.score
                 table.insert(tickets, playerTicket)
             end
             if #entries < step then
-                
+                GeneratingTicketsDone:Fire()
                 return
             else
                 GenerateTicketsForDraw(i+step, key)
@@ -188,11 +194,10 @@ end
 
 function SelectWinners()
     -- CHANGE TO -1 WHEN DONE TESTING
-    local yesterday = GetDateStringWithOffset(0)
+    local yesterday = GetDateStringWithOffset(-1)
     winnerCount = numberOfWinners
-    print(`{ticketCount} TOTAL TICKETS.`)
-    if ticketCount <= numberOfWinners then winnerCount = ticketCount end
-    print(`[RAFFLE] Selecting winners, Winner count: {winnerCount}`)
+    if uniquePlayerCount <= numberOfWinners then winnerCount = uniquePlayerCount end
+    print(`[RAFFLE] SELECTING WINNNERS. {ticketCount} TOTAL TICKETS |  {uniquePlayerCount} UNIQUE PLAYERS | {winnerCount} WINNERS`)
     winners = {}
     winnerNames = {}
     for i=1,winnerCount do
@@ -216,7 +221,7 @@ function SelectWinners()
                 tickets[k].score = 0
                 -- print(`[RAFFLE] TICKET {initchoice} WINNER: {winnerEntry.name}`)
                 Storage.SetValue(winnerEntry.id .. "/RewardReady", true)
-                
+                Leaderboard.IncrementScore("RaffleWinners", winnerEntry.id, winnerEntry.name, 1, function() end)
                 break
             end
         end
@@ -287,7 +292,7 @@ function GivePrizeCurrency(player)
     if not player.isDestroyed then
         Storage.SetPlayerValue(player, "RewardReady", false)
         RewardEvent:FireClient(player)
-        print(`PLACEHOLDER AWARD PRIZE CURRENCY TO {player.name}`)
+        print(`[RAFFLE] PLACEHOLDER AWARD PRIZE CURRENCY TO {player.name}`)
         ServerPrankModule.GiveItemsToPlayer(player)
     end
 end
@@ -303,9 +308,9 @@ function self:ServerStart()
 
     --- REMOVE AFTER DONE TESTING -- 
 
-    Timer.Every(60*5, function() 
-        InitiateDraw()
-    end)
+    -- Timer.Every(2*5, function() 
+    --     InitiateDraw()
+    -- end)
     --------------------------------
 
     currentDate = os.date("!*t")
