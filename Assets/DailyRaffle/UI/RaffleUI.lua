@@ -87,7 +87,7 @@ end
 
 function OnRedeemPress()
     close()
-    UI:ExecuteDeepLink("http://high.rs/item?id=" .. "cn-6848a790f8ff0ff1cf481399" .. "&type=Container")
+    UI:ExecuteDeepLink("http://high.rs/item?id=cn-6848a790f8ff0ff1cf481399&type=Container")
 end
 
 

@@ -58,8 +58,8 @@ end
 
 function SetPage2()
     _smallHeadingText:SetPrelocalizedText("AXL'S RAFFLE")
-    _headingText:SetPrelocalizedText("Redeeming Prizes")
-    _descriptionText:SetPrelocalizedText("Winners will receive {currency} which they can exchange for their favorite prizes from the collection!\n\n<b>Players must be in the world to receive {currency}, so check back in to see if you won!</b>")
+    _headingText:SetPrelocalizedText("PRIZE")
+    _descriptionText:SetPrelocalizedText("Winners will receive a Town Square Raffle Blind Box!\n\n<b>Players must be in the world to receive their blind box, so check back in to see if you won!</b>")
     _mainImage:RemoveFromClassList("info-image-1")
     _mainImage:AddToClassList("info-image-2")
 
