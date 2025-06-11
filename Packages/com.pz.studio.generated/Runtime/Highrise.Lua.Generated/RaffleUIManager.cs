@@ -30,6 +30,7 @@ namespace Highrise.Lua.Generated
         [SerializeField] public UnityEngine.GameObject m_infoUIObj = default;
         [SerializeField] public UnityEngine.GameObject m_winnerNotifObj = default;
         [SerializeField] public UnityEngine.GameObject m_winnerParticleObj = default;
+        [SerializeField] public UnityEngine.GameObject m_sparklesOneshotObj = default;
         [SerializeField] public UnityEngine.GameObject m_resultsObj = default;
 
         protected override SerializedPropertyValue[] SerializeProperties()
@@ -43,7 +44,8 @@ namespace Highrise.Lua.Generated
                 CreateSerializedProperty(_script.GetPropertyAt(1), m_infoUIObj),
                 CreateSerializedProperty(_script.GetPropertyAt(2), m_winnerNotifObj),
                 CreateSerializedProperty(_script.GetPropertyAt(3), m_winnerParticleObj),
-                CreateSerializedProperty(_script.GetPropertyAt(4), m_resultsObj),
+                CreateSerializedProperty(_script.GetPropertyAt(4), m_sparklesOneshotObj),
+                CreateSerializedProperty(_script.GetPropertyAt(5), m_resultsObj),
             };
         }
         
