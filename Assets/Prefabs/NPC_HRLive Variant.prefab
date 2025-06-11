@@ -29,6 +29,11 @@ PrefabInstance:
       propertyPath: m_Center.y
       value: -2.57532
       objectReference: {fileID: 0}
+    - target: {fileID: 5529422813322307975, guid: d8edc950d258b6d4db78a4575b57da38,
+        type: 3}
+      propertyPath: m_linkurl
+      value: https://high.rs/user?name=hrlive
+      objectReference: {fileID: 0}
     - target: {fileID: 6508414848146083782, guid: d8edc950d258b6d4db78a4575b57da38,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -84,8 +89,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: DeepLink_HRLiveProfile
       objectReference: {fileID: 0}
+    - target: {fileID: 7625777042018197595, guid: d8edc950d258b6d4db78a4575b57da38,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
-    m_RemovedGameObjects: []
+    m_RemovedGameObjects:
+    - {fileID: 6787488791472827175, guid: d8edc950d258b6d4db78a4575b57da38, type: 3}
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d8edc950d258b6d4db78a4575b57da38, type: 3}
@@ -114,40 +125,45 @@ PrefabInstance:
       propertyPath: m_Name
       value: NPC_HRLive Variant
       objectReference: {fileID: 0}
+    - target: {fileID: 4120352708776957908, guid: 8b599258acf1d144f8f8808bc65d4505,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     - target: {fileID: 4990922477737629571, guid: 8b599258acf1d144f8f8808bc65d4505,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 16.29
+      value: 5.58
       objectReference: {fileID: 0}
     - target: {fileID: 4990922477737629571, guid: 8b599258acf1d144f8f8808bc65d4505,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: -2.4324996
+      value: 0.23
       objectReference: {fileID: 0}
     - target: {fileID: 4990922477737629571, guid: 8b599258acf1d144f8f8808bc65d4505,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: -49.37
+      value: 14.3
       objectReference: {fileID: 0}
     - target: {fileID: 4990922477737629571, guid: 8b599258acf1d144f8f8808bc65d4505,
         type: 3}
       propertyPath: m_LocalRotation.w
-      value: 1
+      value: 0.99470365
       objectReference: {fileID: 0}
     - target: {fileID: 4990922477737629571, guid: 8b599258acf1d144f8f8808bc65d4505,
         type: 3}
       propertyPath: m_LocalRotation.x
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 4990922477737629571, guid: 8b599258acf1d144f8f8808bc65d4505,
         type: 3}
       propertyPath: m_LocalRotation.y
-      value: 0
+      value: 0.10278456
       objectReference: {fileID: 0}
     - target: {fileID: 4990922477737629571, guid: 8b599258acf1d144f8f8808bc65d4505,
         type: 3}
       propertyPath: m_LocalRotation.z
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 4990922477737629571, guid: 8b599258acf1d144f8f8808bc65d4505,
         type: 3}
@@ -157,14 +173,21 @@ PrefabInstance:
     - target: {fileID: 4990922477737629571, guid: 8b599258acf1d144f8f8808bc65d4505,
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
+      value: 371.799
       objectReference: {fileID: 0}
     - target: {fileID: 4990922477737629571, guid: 8b599258acf1d144f8f8808bc65d4505,
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    - target: {fileID: 6145539432721951817, guid: 8b599258acf1d144f8f8808bc65d4505,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
+    m_RemovedComponents:
+    - {fileID: 7202951966715139314, guid: 8b599258acf1d144f8f8808bc65d4505, type: 3}
+    - {fileID: 3078244327395960198, guid: 8b599258acf1d144f8f8808bc65d4505, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects:
     - targetCorrespondingSourceObject: {fileID: 4990922477737629571, guid: 8b599258acf1d144f8f8808bc65d4505,
@@ -208,9 +231,8 @@ MonoBehaviour:
   _uiOutputSettings:
     rid: -2
   m_emote_ids:
-  - dance-tiktok2
   - dance-sexy
-  m_is_loop: 1
+  m_is_loop: 0
   references:
     version: 2
     RefIds:

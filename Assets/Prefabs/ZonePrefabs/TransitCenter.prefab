@@ -212,7 +212,7 @@ Animator:
   m_Enabled: 1
   m_Avatar: {fileID: 0}
   m_Controller: {fileID: 9100000, guid: 9fb70d91644d44ecba78f82f4ad5bfb8, type: 2}
-  m_CullingMode: 0
+  m_CullingMode: 2
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
   m_LinearVelocityBlending: 0
@@ -322,6 +322,16 @@ PrefabInstance:
       propertyPath: m_Center.y
       value: -4.0090528
       objectReference: {fileID: 0}
+    - target: {fileID: 5529422813322307975, guid: d8edc950d258b6d4db78a4575b57da38,
+        type: 3}
+      propertyPath: m_linkurl
+      value: https://high.rs/travel
+      objectReference: {fileID: 0}
+    - target: {fileID: 5842011560030976697, guid: d8edc950d258b6d4db78a4575b57da38,
+        type: 3}
+      propertyPath: _material
+      value: 
+      objectReference: {fileID: 2100000, guid: ee05fb7e63a014f4fb15aa62c705be78, type: 2}
     - target: {fileID: 6508414848146083782, guid: d8edc950d258b6d4db78a4575b57da38,
         type: 3}
       propertyPath: m_LocalScale.x
@@ -408,7 +418,8 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 0}
     m_RemovedComponents: []
-    m_RemovedGameObjects: []
+    m_RemovedGameObjects:
+    - {fileID: 6787488791472827175, guid: d8edc950d258b6d4db78a4575b57da38, type: 3}
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d8edc950d258b6d4db78a4575b57da38, type: 3}
