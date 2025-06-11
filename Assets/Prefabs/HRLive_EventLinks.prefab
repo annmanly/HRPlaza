@@ -9,8 +9,10 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5051842805256387867}
+  - component: {fileID: 259206364411259936}
+  - component: {fileID: 8917729230267231713}
   m_Layer: 0
-  m_Name: HRLive_EventIndicator
+  m_Name: HRLive_EventEntrance
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -35,6 +37,45 @@ Transform:
   - {fileID: 5597360726753721196}
   m_Father: {fileID: 6568848896677826179}
   m_LocalEulerAnglesHint: {x: 90, y: 180, z: 0}
+--- !u!114 &259206364411259936
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 208436322905985970}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 881728705, guid: 5e99434f214126023bd8db55a8296c39, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _checkDistance: 1
+  _distance: 4
+  _moveTo: 1
+  _moveTarget: {fileID: 0}
+--- !u!136 &8917729230267231713
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 208436322905985970}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 1.3331031
+  m_Height: 6.059764
+  m_Direction: 2
+  m_Center: {x: -0.0000000064950827, y: 1.2259101, z: -0.5320043}
 --- !u!1 &1457521277385041037
 GameObject:
   m_ObjectHideFlags: 0
@@ -313,35 +354,40 @@ PrefabInstance:
       propertyPath: m_WasSpriteAssigned
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 5842011560030976697, guid: d8edc950d258b6d4db78a4575b57da38,
+        type: 3}
+      propertyPath: _material
+      value: 
+      objectReference: {fileID: 2100000, guid: 6d965472a9529884f9d446f52360a3db, type: 2}
     - target: {fileID: 6508414848146083782, guid: d8edc950d258b6d4db78a4575b57da38,
         type: 3}
       propertyPath: m_LocalScale.x
-      value: 1.2862562
+      value: 1.0588717
       objectReference: {fileID: 0}
     - target: {fileID: 6508414848146083782, guid: d8edc950d258b6d4db78a4575b57da38,
         type: 3}
       propertyPath: m_LocalScale.y
-      value: 1.2862562
+      value: 1.0588719
       objectReference: {fileID: 0}
     - target: {fileID: 6508414848146083782, guid: d8edc950d258b6d4db78a4575b57da38,
         type: 3}
       propertyPath: m_LocalScale.z
-      value: 1.2862562
+      value: 1.0588717
       objectReference: {fileID: 0}
     - target: {fileID: 6508414848146083782, guid: d8edc950d258b6d4db78a4575b57da38,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -0.01
+      value: -0.043330513
       objectReference: {fileID: 0}
     - target: {fileID: 6508414848146083782, guid: d8edc950d258b6d4db78a4575b57da38,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.23
+      value: -0.5200593
       objectReference: {fileID: 0}
     - target: {fileID: 6508414848146083782, guid: d8edc950d258b6d4db78a4575b57da38,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: -2.41
+      value: -2.1114335
       objectReference: {fileID: 0}
     - target: {fileID: 6508414848146083782, guid: d8edc950d258b6d4db78a4575b57da38,
         type: 3}
@@ -386,24 +432,24 @@ PrefabInstance:
     - target: {fileID: 7625777042018197595, guid: d8edc950d258b6d4db78a4575b57da38,
         type: 3}
       propertyPath: m_Name
-      value: DeepLink
+      value: HRLive_EventIndicator
       objectReference: {fileID: 0}
     - target: {fileID: 7625777042018197595, guid: d8edc950d258b6d4db78a4575b57da38,
         type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 5421611232124293289, guid: d8edc950d258b6d4db78a4575b57da38, type: 3}
     - {fileID: 3048951194632258888, guid: d8edc950d258b6d4db78a4575b57da38, type: 3}
     - {fileID: 2275543859428097043, guid: d8edc950d258b6d4db78a4575b57da38, type: 3}
-    m_RemovedGameObjects: []
+    - {fileID: 5529422813322307975, guid: d8edc950d258b6d4db78a4575b57da38, type: 3}
+    - {fileID: 2120026394391753691, guid: d8edc950d258b6d4db78a4575b57da38, type: 3}
+    - {fileID: 4462464843326163301, guid: d8edc950d258b6d4db78a4575b57da38, type: 3}
+    m_RemovedGameObjects:
+    - {fileID: 6787488791472827175, guid: d8edc950d258b6d4db78a4575b57da38, type: 3}
     m_AddedGameObjects: []
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 7625777042018197595, guid: d8edc950d258b6d4db78a4575b57da38,
-        type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 7091616205145197659}
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d8edc950d258b6d4db78a4575b57da38, type: 3}
 --- !u!4 &5597360726753721196 stripped
 Transform:
@@ -411,33 +457,6 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 1729198907025568938}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &9091477849832051953 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 7625777042018197595, guid: d8edc950d258b6d4db78a4575b57da38,
-    type: 3}
-  m_PrefabInstance: {fileID: 1729198907025568938}
-  m_PrefabAsset: {fileID: 0}
---- !u!95 &7091616205145197659
-Animator:
-  serializedVersion: 5
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 9091477849832051953}
-  m_Enabled: 1
-  m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 51eb502d3140b884e85630c7c277704d, type: 2}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_StabilizeFeet: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorStateOnDisable: 0
-  m_WriteDefaultValuesOnDisable: 0
 --- !u!1001 &4406059354723945690
 PrefabInstance:
   m_ObjectHideFlags: 0

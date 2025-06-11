@@ -305,6 +305,21 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4791637588539629130, guid: a6c0799bbc0d3446a8ec2d0d1ecaedc6,
+        type: 3}
+      propertyPath: m_is_loop
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4791637588539629130, guid: a6c0799bbc0d3446a8ec2d0d1ecaedc6,
+        type: 3}
+      propertyPath: m_emote_ids.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4791637588539629130, guid: a6c0799bbc0d3446a8ec2d0d1ecaedc6,
+        type: 3}
+      propertyPath: m_emote_ids.Array.data[1]
+      value: dance-tiktok2
+      objectReference: {fileID: 0}
     - target: {fileID: 6789710101313816514, guid: a6c0799bbc0d3446a8ec2d0d1ecaedc6,
         type: 3}
       propertyPath: m_Name
@@ -615,6 +630,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5702831566887624514, guid: 26b67033a08d9403085063cc5a7647d0,
+        type: 3}
+      propertyPath: _distance
+      value: 5
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

@@ -18,7 +18,7 @@ function self:Awake()
     end)
 
     image02URL = storageManager.Event02BannerURL.value
-    image02Display:LoadFromCdnUrl(imag02URL)
+    image02Display:LoadFromCdnUrl(image02URL)
 
     storageManager.Event02BannerURL.Changed:Connect(function(newURL)
         if newURL and newURL ~= "" then
