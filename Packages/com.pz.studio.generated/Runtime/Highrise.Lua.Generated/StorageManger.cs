@@ -19,11 +19,11 @@ using UnityEditor;
 
 namespace Highrise.Lua.Generated
 {
-    [AddComponentMenu("Lua/StorageManager")]
-    [LuaRegisterType(0x508909bc43dd2a85, typeof(LuaBehaviour))]
-    public class StorageManager : LuaBehaviourThunk
+    [AddComponentMenu("Lua/StorageManger")]
+    [LuaRegisterType(0xb13bedbf263e141c, typeof(LuaBehaviour))]
+    public class StorageManger : LuaBehaviourThunk
     {
-        private const string s_scriptGUID = "9181b161f2f2347dca36c2e7fa0f209d";
+        private const string s_scriptGUID = "ddfb2072706f245749caf3d3c7d1e949";
         public override string ScriptGUID => s_scriptGUID;
 
         [SerializeField] public System.String m_defaultBannerURL = "https://cdn.highrisegame.com/trivia_venice.png";
@@ -40,7 +40,7 @@ namespace Highrise.Lua.Generated
         }
         
 #if HR_STUDIO
-        [MenuItem("CONTEXT/StorageManager/Edit Script")]
+        [MenuItem("CONTEXT/StorageManger/Edit Script")]
         private static void EditScript()
         {
             VisualStudioCodeOpener.OpenPath(AssetDatabase.GUIDToAssetPath(s_scriptGUID));
