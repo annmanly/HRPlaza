@@ -4,6 +4,8 @@
 --!SerializeField
 local objects           : { GameObject }         = nil
 --!SerializeField
+local indicator:GameObject = nil
+--!SerializeField
 local startTimesFile    : TextAsset = nil
 --!SerializeField
 local endTimesFile      : TextAsset = nil
@@ -88,11 +90,13 @@ function self:Update()
     -- reset all objects
     for _, obj in ipairs(objects) do
         obj:SetActive(false)
+        if indicator then indicator:SetActive(true) end
     end
 
     -- activate only if valid
     if activeIndex then
         local obj = objects[activeIndex] or objects[1]
+        if indicator then indicator:SetActive(true) end
         if obj then
             obj:SetActive(true)
 
