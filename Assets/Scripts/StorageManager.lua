@@ -3,25 +3,30 @@
 --!SerializeField
 local defaultBannerURL : string = "https://cdn.highrisegame.com/trivia_venice.png"
 
-EventBannerURL = StringValue.new("EventBannerURL", defaultBannerURL)
-Event02BannerURL = StringValue.new("Event02BannerURL", defaultBannerURL)
+bannerKeys = {
+    "EventBannerURL",
+    "Event02BannerURL",
+    "Event03BannerURL",
+    "Event04BannerURL",
+    "Event05BannerURL"
+}
+
+bannerURLs = {}
+
+for i, key in ipairs(bannerKeys) do
+    bannerURLs[i] = StringValue.new(key, defaultBannerURL)
+end
 
 function self:ServerAwake()
-    Storage.GetValue("EventBannerURL", function(storageValue)
-        if storageValue then
-            EventBannerURL.value = storageValue
-        else
-            print("WARNING: No event banner URL found in storage, storing default.")
-            Storage.SetValue("EventBannerURL", defaultBannerURL)
-        end
-    end)
-
-    Storage.GetValue("Event02BannerURL", function(storageValue)
-        if storageValue then
-            Event02BannerURL.value = storageValue
-        else
-            print("WARNING: No event banner URL found in storage, storing default.")
-            Storage.SetValue("Event02BannerURL", defaultBannerURL)
-        end
-    end)
+    for i, key in ipairs(bannerKeys) do
+        local banner = bannerURLs[i]
+        Storage.GetValue(key, function(storageValue)
+            if storageValue then
+                banner.value = storageValue
+            else
+                print("WARNING: No event banner URL found in storage for " .. key .. ", storing default.")
+                Storage.SetValue(key, defaultBannerURL)
+            end
+        end)
+    end
 end

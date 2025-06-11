@@ -1,5 +1,7 @@
 --!Type(UI)
 
+local storageManager = require("StorageManager")
+
 --!Bind
 local billboardContainer : VisualElement = nil
 --!Bind
@@ -8,17 +10,16 @@ local primaryText       : VisualElement = nil
 local billboardDisplay  : UIImage = nil
 
 --!SerializeField
---!Tooltip("Assign a ScriptableObject of type MarqueeEventsSO (with public fields GetEventStartDates() and GetEventImages()) here")
+--!Tooltip("Assign a ScriptableObject of type MarqueeEventsSO (with public fields GetEventStartDates() and GetEventNames()) here")
 local Events_ScriptableObject : Events_ScriptableObject = nil
 
 -- Parsed lists
-local _eventTextures     : table = {}
-local _eventStartEpochs  : table = {}
-local _eventEndEpochs    : table = {}
-local eventNames         : {string} = {}
+local _eventStartEpochs  = {}
+local _eventEndEpochs    = {}
+local eventNames         = {}
 
 -- Cycling state for active events
-local _activeIndices     : table = {}
+local _activeIndices     = {}
 local _activeIndexPointer = 1
 local cycleTimer = nil
 
@@ -57,7 +58,20 @@ local function cycleActiveEvents()
     local idx = _activeIndices[_activeIndexPointer]
 
     primaryText:SetPrelocalizedText(eventNames[idx] .. " Grab")
-    billboardDisplay.image = _eventTextures[idx]
+
+    local banner = storageManager.bannerURLs[idx]
+    if banner and banner.value and banner.value ~= "" then
+        billboardDisplay:LoadFromCdnUrl(banner.value)
+
+        banner.Changed:Connect(function(newURL)
+            if newURL and newURL ~= "" then
+                billboardDisplay:LoadFromCdnUrl(newURL)
+            end
+        end)
+    else
+        print("WARNING: No banner found for index " .. idx)
+    end
+
     billboardContainer:RemoveFromClassList("hidden")
 
     cycleTimer = Timer.After(10, function()
@@ -66,7 +80,6 @@ local function cycleActiveEvents()
 end
 
 function self:Awake()
-    _eventTextures = Events_ScriptableObject.GetGrabBanners()
     local eventStartTimes = Events_ScriptableObject.GetEventStartDates()
     eventNames = Events_ScriptableObject.GetEventNames()
 
@@ -84,7 +97,7 @@ function self:Start()
     billboardContainer:RemoveFromClassList("hidden")
 
     local now = os.time()
-    local maxCount = math.min(#_eventStartEpochs, #_eventEndEpochs, #eventNames, #_eventTextures)
+    local maxCount = math.min(#_eventStartEpochs, #_eventEndEpochs, #eventNames, #storageManager.bannerURLs)
     _activeIndices = {}
     for i = 1, maxCount do
         if now >= _eventStartEpochs[i] and now < _eventEndEpochs[i] then

@@ -26,7 +26,7 @@ namespace Highrise.Lua.Generated
         private const string s_scriptGUID = "da3ef83963bb04222849735a8416df91";
         public override string ScriptGUID => s_scriptGUID;
 
-        [Tooltip("Assign a ScriptableObject of type MarqueeEventsSO (with public fields GetEventStartDates() and GetEventImages()) here")]
+        [Tooltip("Assign a ScriptableObject of type MarqueeEventsSO (with public fields GetEventStartDates() and GetEventNames()) here")]
         [LuaScriptPropertyAttribute("a93c703b1c5df4993a31682ed7594753")]
         [SerializeField] public UnityEngine.Object m_Events_ScriptableObject = default;
 

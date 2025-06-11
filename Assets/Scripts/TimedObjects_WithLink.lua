@@ -90,8 +90,10 @@ function self:Update()
     -- reset all objects
     for _, obj in ipairs(objects) do
         obj:SetActive(false)
-        if indicator then indicator:SetActive(true) end
+        
     end
+    
+    if indicator then indicator:SetActive(false) end
 
     -- activate only if valid
     if activeIndex then
