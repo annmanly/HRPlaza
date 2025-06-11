@@ -20,7 +20,7 @@ using UnityEditor;
 namespace Highrise.Lua.Generated
 {
     [AddComponentMenu("Lua/StorageManager")]
-    [LuaRegisterType(0xb13bedbf263e141c, typeof(LuaBehaviour))]
+    [LuaRegisterType(0x508909bc43dd2a85, typeof(LuaBehaviour))]
     public class StorageManager : LuaBehaviourThunk
     {
         private const string s_scriptGUID = "9181b161f2f2347dca36c2e7fa0f209d";
