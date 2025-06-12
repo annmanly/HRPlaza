@@ -158,7 +158,7 @@ function self:Update()
         end
     end
 
-    if newIndex ~= currentEventIndex then
+    if newIndex ~= currentEventIndex or newIndex ~= nil then  -- Force update even if index didn't change
         currentEventIndex = newIndex
         if newIndex then
             imageDisplay.image = _eventTextures[newIndex]

@@ -1,4 +1,5 @@
---!Type(ClientAndServer)
+-- optional debug flag
+local ENABLE_LOGGING = false
 
 -- serialized fields
 --!SerializeField
@@ -17,7 +18,6 @@ local eventEndTimes     = {}
 local _eventStartEpochs = {}
 local _eventEndEpochs   = {}
 local currentEventIndex = nil
-
 
 -- compute host timezone offset (local epoch minus UTC epoch)
 local function getTimezoneOffset()
@@ -62,7 +62,6 @@ function self:Awake()
     eventEndTimes   = readLines(endTimesFile)
     linkurls        = readLines(linkUrlsFile)
 
-    -- parse only as many events as matched across all three files
     _eventStartEpochs = {}
     _eventEndEpochs   = {}
     local count = math.min(#eventStartTimes, #eventEndTimes, #linkurls)
@@ -71,14 +70,15 @@ function self:Awake()
         _eventEndEpochs[i]   = parseETDateTime(eventEndTimes[i])
     end
 
- 
+    if ENABLE_LOGGING then print("Loaded " .. count .. " events.") end
+
+    updateActiveObject()
 end
 
-function self:Update()
+function updateActiveObject()
     local now = os.time()
     local activeIndex = nil
 
-    -- find active event
     for i, startEpoch in ipairs(_eventStartEpochs) do
         local endEpoch = _eventEndEpochs[i]
         if now >= startEpoch and now < endEpoch then
@@ -90,16 +90,12 @@ function self:Update()
     -- reset all objects
     for _, obj in ipairs(objects) do
         obj:SetActive(false)
-        
     end
-    
-    -- activate only if valid
+
     if activeIndex then
         local obj = objects[activeIndex] or objects[1]
-
         if obj then
             obj:SetActive(true)
-
             if currentEventIndex ~= activeIndex then
                 currentEventIndex = activeIndex
                 local handler = obj:GetComponent(TapHandler)
@@ -108,8 +104,44 @@ function self:Update()
                     print("link tapped: " .. linkurls[activeIndex])
                 end)
             end
+            if ENABLE_LOGGING then
+                print("Event " .. activeIndex .. " is now active.")
+            end
         end
     else
         currentEventIndex = nil
+        if ENABLE_LOGGING then
+            print("No active event at this time.")
+        end
+    end
+
+    scheduleNextEventCheck()
+end
+
+function scheduleNextEventCheck()
+    local now = os.time()
+    local nextChangeTime = nil
+
+    for i, startEpoch in ipairs(_eventStartEpochs) do
+        local endEpoch = _eventEndEpochs[i]
+        if now < startEpoch then
+            nextChangeTime = math.min(nextChangeTime or startEpoch, startEpoch)
+        elseif now < endEpoch then
+            nextChangeTime = math.min(nextChangeTime or endEpoch, endEpoch)
+        end
+    end
+
+    if nextChangeTime then
+        local delay = math.max(1, nextChangeTime - now)
+        if ENABLE_LOGGING then
+            print("Next check scheduled in " .. delay .. " seconds.")
+        end
+        Timer.After(delay, function()
+            updateActiveObject()
+        end)
+    else
+        if ENABLE_LOGGING then
+            print("No future events scheduled. Timer stopped.")
+        end
     end
 end
