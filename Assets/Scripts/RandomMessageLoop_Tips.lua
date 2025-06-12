@@ -34,7 +34,7 @@ local HelpMessages = {
     "Did you know? You can pin your favorite conversations in your inbox!",
     "SAFETY TIP: Don't share your password with anybody!",
     "Want to earn gold? List items for sale on the marketplace! Go go Shop > Market > My Listings",
-	"New user tip: chat in rooms to make get help from other users, and make friends along the way!",
+	"New user tip: Chat in rooms to get help from other users, and make friends along the way!",
 	"Looking for help? Join the Highrise Discord. Check out the poster in front of the Town Hall.",
 	"Trading basics: Lock -> Accept -> Complete!",
 	"How to join a crew: Go to your profile and tap '+ Join A Crew'. Crew group chat is a great way to get support!",
