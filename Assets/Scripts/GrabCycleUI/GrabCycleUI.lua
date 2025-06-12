@@ -9,10 +9,6 @@ local primaryText       : VisualElement = nil
 --!Bind
 local billboardDisplay  : UIImage = nil
 
---!SerializeField
---!Tooltip("Assign a ScriptableObject of type MarqueeEventsSO (with public fields GetEventStartDates() and GetEventNames()) here")
-local Events_ScriptableObject : Events_ScriptableObject = nil
-
 -- Parsed lists
 local _eventStartEpochs  = {}
 local _eventEndEpochs    = {}
@@ -59,7 +55,7 @@ local function cycleActiveEvents()
 
     primaryText:SetPrelocalizedText(eventNames[idx] .. " Grab")
 
-    local banner = storageManager.bannerURLs[idx]
+    local banner = storageManager.EventBannerURLs[idx]
     if banner and banner.value and banner.value ~= "" then
         billboardDisplay:LoadFromCdnUrl(banner.value)
 
@@ -80,36 +76,45 @@ local function cycleActiveEvents()
 end
 
 function self:Awake()
-    local eventStartTimes = Events_ScriptableObject.GetEventStartDates()
-    eventNames = Events_ScriptableObject.GetEventNames()
+    -- Wait for storage to initialize the arrays
+    Timer.After(0.1, function()
+        _eventStartEpochs = {}
+        _eventEndEpochs = {}
+        eventNames = {}
 
-    _eventStartEpochs = {}
-    _eventEndEpochs = {}
-    for i, startStr in ipairs(eventStartTimes) do
-        local startEpoch = parseETDateTime(startStr)
-        _eventStartEpochs[i] = startEpoch
-        _eventEndEpochs[i] = startEpoch + (28 * 86400)
-    end
+        for i = 1, #storageManager.EventStartDates do
+            local startStr = storageManager.EventStartDates[i].value or "1970-01-01 00:00:00"
+            local name = storageManager.EventNames[i].value or "Unnamed Event"
+
+            local startEpoch = parseETDateTime(startStr)
+            _eventStartEpochs[i] = startEpoch
+            _eventEndEpochs[i] = startEpoch + (30 * 86400)
+            eventNames[i] = name
+        end
+    end)
 end
 
 function self:Start()
     primaryText:SetPrelocalizedText("")
     billboardContainer:RemoveFromClassList("hidden")
 
-    local now = os.time()
-    local maxCount = math.min(#_eventStartEpochs, #_eventEndEpochs, #eventNames, #storageManager.bannerURLs)
-    _activeIndices = {}
-    for i = 1, maxCount do
-        if now >= _eventStartEpochs[i] and now < _eventEndEpochs[i] then
-            table.insert(_activeIndices, i)
-        end
-    end
+    Timer.After(0.2, function()
+        local now = os.time()
+        local maxCount = math.min(#_eventStartEpochs, #_eventEndEpochs, #eventNames, #storageManager.EventBannerURLs)
+        _activeIndices = {}
 
-    if #_activeIndices > 0 then
-        _activeIndexPointer = 0 -- So first increment points to 1
-        cycleActiveEvents()
-    else
-        primaryText:SetPrelocalizedText("")
-        billboardContainer:AddToClassList("hidden")
-    end
+        for i = 1, maxCount do
+            if now >= _eventStartEpochs[i] and now < _eventEndEpochs[i] then
+                table.insert(_activeIndices, i)
+            end
+        end
+
+        if #_activeIndices > 0 then
+            _activeIndexPointer = 0
+            cycleActiveEvents()
+        else
+            primaryText:SetPrelocalizedText("")
+            billboardContainer:AddToClassList("hidden")
+        end
+    end)
 end
