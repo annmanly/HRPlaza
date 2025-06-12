@@ -32,6 +32,8 @@ namespace Highrise.Lua.Generated
         [SerializeField] public UnityEngine.GameObject m_winnerParticleObj = default;
         [SerializeField] public UnityEngine.GameObject m_sparklesOneshotObj = default;
         [SerializeField] public UnityEngine.GameObject m_resultsObj = default;
+        [SerializeField] public UnityEngine.AudioSource m_raffleDrawSound = default;
+        [SerializeField] public UnityEngine.AudioSource m_winnerSound = default;
 
         protected override SerializedPropertyValue[] SerializeProperties()
         {
@@ -46,6 +48,8 @@ namespace Highrise.Lua.Generated
                 CreateSerializedProperty(_script.GetPropertyAt(3), m_winnerParticleObj),
                 CreateSerializedProperty(_script.GetPropertyAt(4), m_sparklesOneshotObj),
                 CreateSerializedProperty(_script.GetPropertyAt(5), m_resultsObj),
+                CreateSerializedProperty(_script.GetPropertyAt(6), m_raffleDrawSound),
+                CreateSerializedProperty(_script.GetPropertyAt(7), m_winnerSound),
             };
         }
         
