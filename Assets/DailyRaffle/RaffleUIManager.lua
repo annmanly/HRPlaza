@@ -13,6 +13,12 @@ local sparklesOneshotObj:GameObject=nil
 --!SerializeField
 local resultsObj:GameObject=nil
 
+
+--!SerializeField
+local raffleDrawSound:AudioSource = nil
+--!SerializeField
+local winnerSound:AudioSource = nil
+
 ClaimBoxRequest = Event.new("ClaimBoxRequest")
 local RaffleManager = require("RaffleManager")
 local mainUI = nil
@@ -62,12 +68,13 @@ end
 
 function displayWinner()
     activateParticles()
-
+    if winnerSound then winnerSound:Play() end
     winnerNotifObj:SetActive(true)
 end
 
 function displayDrawingWinners(winners)
     resultsObj:SetActive(true)
+    if raffleDrawSound then raffleDrawSound:Play() end
     resultsUI = resultsObj.gameObject:GetComponent(Results).showWinners(winners)
 end
 

@@ -115,14 +115,14 @@ end
 
 -- Function to prompt the purchase
 function BuyWish(wishData)
-    print("[SendTip]: Prompting purchase for wish ")
+
     -- Prompt the purchase
     local itemId = wishitemID
     Payments:PromptPurchase(itemId, function(paid)
         if paid then
-            WishSubmitRequest:FireServer(wishData)
+            print("[PURCHASE PAID - CLIENT]")
         else
-            print("[SendTip]: Purchase failed!")
+            print("[PURCHASE FAILED - CLIENT]")
         end
     end)
 end
@@ -180,8 +180,8 @@ function TransferGold(player, amount)
   end
 
 
-function OnWishSubmitRequest(player, wishData)
-    print(`[FOUNTAIN] {player.name} SUBMITTED WISH: {wishData.wishMessage}`)
+function CompleteWish(player)
+    print(`[FOUNTAIN] {player.name} SUBMITTED A WISH.`)
 
     Wallet.GetWallet(function(response, err)
         if err ~= WalletError.None then
@@ -208,25 +208,26 @@ function OnWishSubmitRequest(player, wishData)
 
 end
 
-function ServerHandlePurchase(purchase, player: Player)
+function ServerHandleWishPurchase(purchase, player: Player)
     local productId = purchase.product_id
-    print("[ServerHandlePurchase]: Purchase made by player " .. tostring(player) .. " for product " .. tostring(productId))
+    print("[FOUNTAIN ServerHandleWishPurchase]: Purchase made by player " .. tostring(player) .. " for product " .. tostring(productId))
 
     local itemToGive = "wish"
-    if not itemToGive then
+    if productId ~= itemToGive then
         Payments.AcknowledgePurchase(purchase, false)
-        error("[ServerHandlePurchase]: Item not found!" .. tostring(productId))
+        error("[FOUNTAIN ServerHandleWishPurchase]: Item not found!" .. tostring(productId))
         return
     end
 
 
     Payments.AcknowledgePurchase(purchase, true, function(ackErr: PaymentsError)
         if ackErr ~= PaymentsError.None then
-            error("[ServerHandlePurchase]: Acknowledge purchase failed!" .. tostring(ackErr))
+            error("[FOUNTAIN ServerHandleWishPurchase]: Acknowledge purchase failed!" .. tostring(ackErr))
             return
         end
 
-        
+        CompleteWish(player)
+
         Storage.GetPlayerValue(player, "Wishes", function(value)
             if value then
                 value = value + 1
@@ -237,15 +238,14 @@ function ServerHandlePurchase(purchase, player: Player)
             Storage.SetPlayerValue(player, "Wishes", value)
         end)
 
-        print("[ServerHandlePurchase]: Tip received from " .. player.name)
+        print("[FOUNTAIN ServerHandleWishPurchase]: Gold received from " .. player.name)
     end) 
 end
 
 function self:ServerAwake()
-    Payments.PurchaseHandler = ServerHandlePurchase
-    WishSubmitRequest:Connect(OnWishSubmitRequest)
+    Payments.PurchaseHandler = ServerHandleWishPurchase
     AddInRangeRequest:Connect(AddToRange)
     RemoveInRangeRequest:Connect(RemoveFromRange)
-
+    
     
 end

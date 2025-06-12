@@ -4,8 +4,6 @@
 --!SerializeField
 local objects           : { GameObject }         = nil
 --!SerializeField
-local indicator:GameObject = nil
---!SerializeField
 local startTimesFile    : TextAsset = nil
 --!SerializeField
 local endTimesFile      : TextAsset = nil
@@ -72,6 +70,8 @@ function self:Awake()
         _eventStartEpochs[i] = parseETDateTime(eventStartTimes[i])
         _eventEndEpochs[i]   = parseETDateTime(eventEndTimes[i])
     end
+
+ 
 end
 
 function self:Update()
@@ -93,12 +93,10 @@ function self:Update()
         
     end
     
-    if indicator then indicator:SetActive(false) end
-
     -- activate only if valid
     if activeIndex then
         local obj = objects[activeIndex] or objects[1]
-        if indicator then indicator:SetActive(true) end
+
         if obj then
             obj:SetActive(true)
 

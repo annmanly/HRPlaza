@@ -12,6 +12,8 @@ local minRespawnTimer:number = lifetime -- time after collected before spawning 
 timerOffsetMax = 5
 local raffleManager = require("RaffleManager")
 
+local spawnSound = nil
+
 function spawnObject()
     Timer.After(math.random(0, timerOffsetMax), 
         function() 
@@ -20,6 +22,7 @@ function spawnObject()
             newObj = GameObject.Instantiate(collectibleObject, spawnPos.position)
             newObj.gameObject.transform:LookAt(endSpawnPositions[randomChoice])
             Timer.After(lifetime, function() despawnObject(newObj) end)
+            if spawnSound then spawnSound:Play() end
     end)
 
 end
@@ -32,4 +35,5 @@ end
 
 function self:Start()
     raffleManager.SpawnRaffleTicketEvent:Connect(spawnObject)
+    spawnSound = self.gameObject:GetComponent(AudioSource)
 end

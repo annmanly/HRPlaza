@@ -24,7 +24,7 @@ UIRaffleManager = require("RaffleUIManager")
 
 _smallHeadingText:SetPrelocalizedText("DAILY RAFFLE")
 _nameText:SetPrelocalizedText("YOU WON!")
-_descriptionText:SetPrelocalizedText("1x Townie Trove")
+_descriptionText:SetPrelocalizedText("1x Town Square Raffle Blind Box")
 _smallDescriptionText:SetPrelocalizedText("Open the box from <b>My Items > Consumables</b> to receive your prize.")
 _redeemButtonText:SetEmojiPrelocalizedText("CLAIM BOX")
 
@@ -59,4 +59,5 @@ function self:Awake()
     -- _closeOverlay:RegisterPressCallback(close)
     _redeemButton:RegisterPressCallback(OnRedeemPress)
     bobTween:start()
+
 end

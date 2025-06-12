@@ -16,6 +16,7 @@ ClaimBlindBoxRequest = Event.new("ClaimBlindBoxRequest")
 local ServerPrankModule = require("ServerPrankModule")
 
 
+
 -- [[ HELPERS ]]
 
 function GetNowDateStamp()
@@ -45,17 +46,30 @@ local tickets = {}
 local ticketCount = 0
 local uniquePlayerCount = 0
 local GeneratingTicketsDone = Event.new("GeneratingTicketsDone")
-
+local playerCooldowns = {}
 
 -- [ RAFFLE CONFIGURATION ]
 local numberOfWinners = 100
-local spawnInterval = 45
-local forcedDraw = false --- CHANGE TO FALSE WHEN DONE TESTING
+local spawnInterval = 120 
+local forcedDraw = false 
 
 function OnSubmitTicketRequest(player, ticketCount)
-    for i=1,ticketCount do 
-        AddTicketToLeaderboard(player)
+    if playerCooldowns[player] then 
+        if playerCooldowns[player] <= 0 then 
+            for i=1,ticketCount do 
+                playerCooldowns[player] = spawnInterval
+                AddTicketToLeaderboard(player)
+            end
+        else
+            -- print(`[RAFFLE] PLAYER COLLECTED TICKET BEFORE COOLDOWN: {player.name}`)
+        end
+    else
+        playerCooldowns[player] = spawnInterval
+        for i=1,ticketCount do 
+            AddTicketToLeaderboard(player)
+        end
     end
+
 end
 
 function AddTicketToLeaderboard(player)
@@ -77,7 +91,7 @@ function OnTicketCountRequest(player)
 end
 
 function InitiateDraw()
-    -- CHANGE TO -1 WHEN DONE TESTING
+
     local yesterday = GetDateStringWithOffset(-1)
     local ticketsKey = raffleTicketsPrefix .. yesterday
     winnerKey = winnersPrefix .. yesterday
@@ -115,7 +129,7 @@ function InitiateDraw()
                 Timer.After(10, InitiateDraw)
                 return
             elseif value.status =="error-no-entries" then
-                -- do not redraw if no entries
+                print("[RAFFLE] [ERROR] NO WINNERS / NO ENTRIES " .. yesterday)
                 return
             end
 
@@ -130,9 +144,9 @@ end
 
 function GenerateTicketsForDraw(i, key)
 
-    -- INCREASE WHEN DONE TESTING
     local step = 10
-
+    local maxTicketsPerPlayer = math.ceil((24*60*60) / spawnInterval)
+    
     Leaderboard.GetEntries(key, i, step, function(entries, err) 
         if entries == nil or #entries ==  0 then
             GeneratingTicketsDone:Fire()
@@ -140,10 +154,12 @@ function GenerateTicketsForDraw(i, key)
         else
             for i,entry in pairs(entries) do
 
-                uniquePlayerCount += 1
-                playerTicket = {id = entry.id, name = entry.name, score=entry.score}
-                ticketCount += entry.score
-                table.insert(tickets, playerTicket)
+                if entry.score <= maxTicketsPerPlayer then
+                    playerTicket = {id = entry.id, name = entry.name, score=entry.score}
+                    uniquePlayerCount += 1
+                    ticketCount += entry.score
+                    table.insert(tickets, playerTicket)
+                end
             end
             if #entries < step then
                 GeneratingTicketsDone:Fire()
@@ -193,7 +209,7 @@ function AddWinnersToStorage(winners, date)
 end
 
 function SelectWinners()
-    -- CHANGE TO -1 WHEN DONE TESTING
+
     local yesterday = GetDateStringWithOffset(-1)
     winnerCount = numberOfWinners
     if uniquePlayerCount <= numberOfWinners then winnerCount = uniquePlayerCount end
@@ -307,11 +323,8 @@ function self:ServerStart()
     ClaimBlindBoxRequest:Connect(OnClaimBoxRequest)
 
     --- REMOVE AFTER DONE TESTING -- 
-
-    -- Timer.Every(2*5, function() 
-    --     InitiateDraw()
-    -- end)
-    --------------------------------
+    -- Timer.After(5, function() InitiateDraw() end)
+    ------------------------------
 
     currentDate = os.date("!*t")
     Timer.Every(1, function() 
@@ -321,9 +334,24 @@ function self:ServerStart()
             currentDate = os.date("!*t")
             InitiateDraw()
         end
+
+        for player in playerCooldowns do
+            playerCooldowns[player] -= 1
+        end
     end)
 
-    Timer.Every(spawnInterval, function() SpawnRaffleTicketEvent:FireAllClients() end)
+    Timer.Every(spawnInterval, function() 
+        SpawnRaffleTicketEvent:FireAllClients() 
+        
+        for player, cooldown in playerCooldowns do
+            playerCooldowns[player] = 0
+        end
+    end)
     
     SpawnRaffleTicketEvent:FireAllClients()
+
+    server.PlayerDisconnected:Connect(function(player) 
+        playerCooldowns[player] = nil
+    end)
+
 end

@@ -57,5 +57,5 @@ end
 
 -- Initialize the module
 function self:ServerAwake()
-  Payments.PurchaseHandler = ServerHandlePurchase
+  -- Payments.PurchaseHandler = ServerHandlePurchase
 end
