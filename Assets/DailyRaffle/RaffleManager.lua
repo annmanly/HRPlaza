@@ -104,6 +104,7 @@ function InitiateDraw()
                 drawTime = GetNowDateStamp(),
                 finishTime = "00:00:00",
                 server = serverID,
+                uniqueplayercount = 0,
                 winners = {}
             }
             Storage.SetValue(winnerKey, WinnerEntry)
@@ -181,7 +182,7 @@ function removePlayerFromTickets(tickets, playerId)
     return newTickets
 end
 
-function AddWinnersToStorage(winners, date)
+function AddWinnersToStorage(winners, date, uniqueCount)
     winnerKey = winnersPrefix .. date
     
     Storage.GetValue(winnerKey, function(value, err) 
@@ -190,6 +191,7 @@ function AddWinnersToStorage(winners, date)
         else
             winnerEntryUpdate = value
             winnerEntryUpdate.winners = winners
+            winnerEntryUpdate.uniqueplayercount = uniqueCount
             winnerEntryUpdate.finishTime = GetNowDateStamp()
             if winners == {} or winners == nil or #winners == 0 then 
                 error(`No winners selected.`)
@@ -244,7 +246,7 @@ function SelectWinners()
     end
 
     print("[RAFFLE] WINNERS SELECTED: " .. table.concat(winnerNames, ", "))
-    AddWinnersToStorage(winners, yesterday)
+    AddWinnersToStorage(winners, yesterday, uniquePlayerCount)
     DisplayWinners(winnerNames)
     CheckWinnersInRoom()
 end
@@ -323,7 +325,7 @@ function self:ServerStart()
     ClaimBlindBoxRequest:Connect(OnClaimBoxRequest)
 
     --- REMOVE AFTER DONE TESTING -- 
-    -- Timer.After(5, function() InitiateDraw() end)
+    -- Timer.After(10, function() InitiateDraw() end)
     ------------------------------
 
     currentDate = os.date("!*t")
