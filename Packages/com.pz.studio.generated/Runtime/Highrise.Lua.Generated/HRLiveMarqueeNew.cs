@@ -26,13 +26,6 @@ namespace Highrise.Lua.Generated
         private const string s_scriptGUID = "70985b3efbe1649fe81e536c83a90719";
         public override string ScriptGUID => s_scriptGUID;
 
-        [Tooltip("Assign a ScriptableObject of type MarqueeEventsSO (with a public Texture[] field named 'textures') here")]
-        [LuaScriptPropertyAttribute("af13bcdc730f242c0a6701194b971b13")]
-        [SerializeField] public UnityEngine.Object m_marqueeEventsSO = default;
-        [Tooltip("TextAsset containing ET start times, one per line ('YYYY-MM-DD HH:MM:SS')")]
-        [SerializeField] public UnityEngine.TextAsset m_startDatesTextAsset = default;
-        [Tooltip("TextAsset containing ET end times, one per line ('YYYY-MM-DD HH:MM:SS')")]
-        [SerializeField] public UnityEngine.TextAsset m_endDatesTextAsset = default;
 
         protected override SerializedPropertyValue[] SerializeProperties()
         {
@@ -45,9 +38,6 @@ namespace Highrise.Lua.Generated
                 CreateSerializedProperty(_script.GetPropertyAt(1), null),
                 CreateSerializedProperty(_script.GetPropertyAt(2), null),
                 CreateSerializedProperty(_script.GetPropertyAt(3), null),
-                CreateSerializedProperty(_script.GetPropertyAt(4), m_marqueeEventsSO),
-                CreateSerializedProperty(_script.GetPropertyAt(5), m_startDatesTextAsset),
-                CreateSerializedProperty(_script.GetPropertyAt(6), m_endDatesTextAsset),
             };
         }
         

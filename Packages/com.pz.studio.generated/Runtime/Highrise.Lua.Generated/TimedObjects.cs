@@ -27,9 +27,7 @@ namespace Highrise.Lua.Generated
         public override string ScriptGUID => s_scriptGUID;
 
         [SerializeField] public System.Collections.Generic.List<UnityEngine.GameObject> m_objects = default;
-        [Tooltip("List of ET start times for each event in 'YYYY-MM-DD HH:MM:SS'")]
         [SerializeField] public System.Collections.Generic.List<System.String> m_eventStartTimes = default;
-        [Tooltip("List of ET end times for each event in 'YYYY-MM-DD HH:MM:SS'")]
         [SerializeField] public System.Collections.Generic.List<System.String> m_eventEndTimes = default;
 
         protected override SerializedPropertyValue[] SerializeProperties()

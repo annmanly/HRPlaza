@@ -27,6 +27,9 @@ namespace Highrise.Lua.Generated
         public override string ScriptGUID => s_scriptGUID;
 
         [SerializeField] public System.String m_defaultBannerURL = "https://cdn.highrisegame.com/trivia_venice.png";
+        [SerializeField] public System.String m_defaultStartDateBase = "2025-05-15 12:00:00";
+        [SerializeField] public System.String m_defaultEventName = "Default Event";
+        [SerializeField] public System.Double m_defaultEventCount = 5;
 
         protected override SerializedPropertyValue[] SerializeProperties()
         {
@@ -36,6 +39,9 @@ namespace Highrise.Lua.Generated
             return new SerializedPropertyValue[]
             {
                 CreateSerializedProperty(_script.GetPropertyAt(0), m_defaultBannerURL),
+                CreateSerializedProperty(_script.GetPropertyAt(1), m_defaultStartDateBase),
+                CreateSerializedProperty(_script.GetPropertyAt(2), m_defaultEventName),
+                CreateSerializedProperty(_script.GetPropertyAt(3), m_defaultEventCount),
             };
         }
         
