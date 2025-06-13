@@ -293,8 +293,10 @@ end
 
 function OnClaimBoxRequest(player)
     if not player.isDestroyed then
+        
          Storage.GetPlayerValue(player, "RewardReady", function(value, err) 
             if value == true then
+                print(`AWARDING BOX`)
                 GivePrizeCurrency(player)
             end
         end)

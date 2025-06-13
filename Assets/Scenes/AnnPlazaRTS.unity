@@ -2509,6 +2509,11 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 276156637}
     m_Modifications:
+    - target: {fileID: 2636769509422203203, guid: 2f8e88f64f5fb4bc29a6de8aaa1f4b1a,
+        type: 3}
+      propertyPath: managedReferences[1614514524561604616].ClearColorValue.a
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 3375224097292669756, guid: 2f8e88f64f5fb4bc29a6de8aaa1f4b1a,
         type: 3}
       propertyPath: m_Name
@@ -2654,17 +2659,28 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 5250252386435541767, guid: 2f8e88f64f5fb4bc29a6de8aaa1f4b1a, type: 3}
     m_RemovedGameObjects:
     - {fileID: 345398707057530454, guid: 2f8e88f64f5fb4bc29a6de8aaa1f4b1a, type: 3}
     - {fileID: 3980123527054492610, guid: 2f8e88f64f5fb4bc29a6de8aaa1f4b1a, type: 3}
     m_AddedGameObjects:
+    - targetCorrespondingSourceObject: {fileID: 8675784408587449533, guid: 2f8e88f64f5fb4bc29a6de8aaa1f4b1a,
+        type: 3}
+      insertIndex: 4
+      addedObject: {fileID: 1986237789}
     - targetCorrespondingSourceObject: {fileID: 4394300368670048188, guid: 2f8e88f64f5fb4bc29a6de8aaa1f4b1a,
         type: 3}
       insertIndex: 1
       addedObject: {fileID: 1230353580}
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2f8e88f64f5fb4bc29a6de8aaa1f4b1a, type: 3}
+--- !u!1 &222904844 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8648304503147254037, guid: 2f8e88f64f5fb4bc29a6de8aaa1f4b1a,
+    type: 3}
+  m_PrefabInstance: {fileID: 222904843}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &226195516 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4646021355748555954, guid: 869f6b734c717d0409158527356cd147,
@@ -3765,13 +3781,7 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 58c657077dc71824ab0e6435a72e4c79, type: 3}
---- !u!4 &395192209 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 6673cef475ec1964fb5d08229edce4b3,
-    type: 3}
-  m_PrefabInstance: {fileID: 180426026}
-  m_PrefabAsset: {fileID: 0}
---- !u!1 &395492516
+--- !u!1 &387301106
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -3779,110 +3789,63 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 395492517}
-  - component: {fileID: 395492520}
-  - component: {fileID: 395492519}
-  - component: {fileID: 395492518}
+  - component: {fileID: 387301108}
+  - component: {fileID: 387301107}
   m_Layer: 0
-  m_Name: UITest
+  m_Name: StorageManager
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &395492517
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 395492516}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0.38268343, z: 0, w: 0.92387956}
-  m_LocalPosition: {x: 0.49498576, y: 3.9, z: 4.272003}
-  m_LocalScale: {x: 7.24, y: 7.24, z: 7.24}
-  m_ConstrainProportionsScale: 1
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: 45, z: 0}
---- !u!23 &395492518
-MeshRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 395492516}
-  m_Enabled: 1
-  m_CastShadows: 1
-  m_ReceiveShadows: 1
-  m_DynamicOccludee: 1
-  m_StaticShadowCaster: 0
-  m_MotionVectors: 1
-  m_LightProbeUsage: 1
-  m_ReflectionProbeUsage: 1
-  m_RayTracingMode: 2
-  m_RayTraceProcedural: 0
-  m_RenderingLayerMask: 1
-  m_RendererPriority: 0
-  m_Materials:
-  - {fileID: 2100000, guid: 4712b79b4b1d2a945bb7a2797e17cd5f, type: 2}
-  m_StaticBatchInfo:
-    firstSubMesh: 0
-    subMeshCount: 0
-  m_StaticBatchRoot: {fileID: 0}
-  m_ProbeAnchor: {fileID: 0}
-  m_LightProbeVolumeOverride: {fileID: 0}
-  m_ScaleInLightmap: 1
-  m_ReceiveGI: 1
-  m_PreserveUVs: 0
-  m_IgnoreNormalsForChartDetection: 0
-  m_ImportantGI: 0
-  m_StitchLightmapSeams: 1
-  m_SelectedEditorRenderState: 3
-  m_MinimumChartSize: 4
-  m_AutoUVMaxDistance: 0.5
-  m_AutoUVMaxAngle: 89
-  m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
-  m_SortingOrder: 0
-  m_AdditionalVertexStreams: {fileID: 0}
---- !u!33 &395492519
-MeshFilter:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 395492516}
-  m_Mesh: {fileID: 10210, guid: 0000000000000000e000000000000000, type: 0}
---- !u!114 &395492520
+--- !u!114 &387301107
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 395492516}
+  m_GameObject: {fileID: 387301106}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 128e8c10d2215408b2da7a8f2db0ee82, type: 3}
+  m_Script: {fileID: 11500000, guid: 2b5eb1b4482d34a870e9c23240d02048, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   _networkId: 0
-  _script: {fileID: -974389366465450183, guid: a8518cc568fe54dd08057a5a976fee57, type: 3}
+  _script: {fileID: -974389366465450183, guid: 9181b161f2f2347dca36c2e7fa0f209d, type: 3}
   _properties: []
-  _uiOutput: 1
+  _uiOutput: 0
   _uiOutputSettings:
-    rid: 2351856742554664961
+    rid: -2
+  m_defaultBannerURL: https://cdn.highrisegame.com/trivia_venice.png
+  m_defaultStartDateBase: 2025-05-15 12:00:00
+  m_defaultEventName: Default Event
+  m_defaultEventCount: 5
   references:
     version: 2
     RefIds:
-    - rid: 2351856742554664961
-      type: {class: UIWorldOutputSettings, ns: Highrise.Client, asm: com.pz.highrise.game.client}
-      data:
-        Renderer: {fileID: 395492518}
-        Size: {x: 1024, y: 1024}
-        ClearColor: 1
-        ClearColorValue: {r: 1, g: 1, b: 1, a: 1}
+    - rid: -2
+      type: {class: , ns: , asm: }
+--- !u!4 &387301108
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 387301106}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -9.55301, y: 16.173388, z: -9.807318}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!4 &395192209 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 6673cef475ec1964fb5d08229edce4b3,
+    type: 3}
+  m_PrefabInstance: {fileID: 180426026}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &404623706
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -4727,62 +4690,6 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 485450393}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &490771388
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 490771389}
-  - component: {fileID: 490771390}
-  m_Layer: 0
-  m_Name: StorageManager
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &490771389
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 490771388}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.49498576, y: -16.532818, z: 4.272003}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &490771390
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 490771388}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2b5eb1b4482d34a870e9c23240d02048, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _networkId: 0
-  _script: {fileID: -974389366465450183, guid: 9181b161f2f2347dca36c2e7fa0f209d, type: 3}
-  _properties: []
-  _uiOutput: 0
-  _uiOutputSettings:
-    rid: -2
-  m_defaultBannerURL: https://cdn.highrisegame.com/trivia_venice.png
-  references:
-    version: 2
-    RefIds:
-    - rid: -2
-      type: {class: , ns: , asm: }
 --- !u!1001 &492437828
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -28885,6 +28792,66 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 1983780619}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1986237788
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1986237789}
+  - component: {fileID: 1986237790}
+  m_Layer: 0
+  m_Name: HRLiveBannerManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1986237789
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1986237788}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0.99880886, z: -0, w: 0.048794273}
+  m_LocalPosition: {x: -3.0462317, y: 7.198105, z: 47.865368}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1894254543}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1986237790
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1986237788}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a901a112c819e0918092f515da044878, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _networkId: 0
+  _script: {fileID: -974389366465450183, guid: 13dea1c772c6e0443a4df5c060db48ad, type: 3}
+  _properties: []
+  _uiOutput: 0
+  _uiOutputSettings:
+    rid: -2
+  m_LiveEventLinkObj: {fileID: 222904844}
+  m_defaultStartDate: 2025-06-09 13:00:00
+  m_defaultEndDate: 2025-06-09 15:00:00
+  m_defaultBannerURL: https://cdn.highrisegame.com/HRLiveEventBanners/WO_06_09_2025/01.png
+  m_defaultRoomLink: https://high.rs/room?id=6476fe22eeafcd5d47b38298
+  references:
+    version: 2
+    RefIds:
+    - rid: -2
+      type: {class: , ns: , asm: }
 --- !u!1001 &1995032341
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -31841,5 +31808,4 @@ SceneRoots:
   - {fileID: 1562053845}
   - {fileID: 1926149709}
   - {fileID: 196506552}
-  - {fileID: 490771389}
-  - {fileID: 395492517}
+  - {fileID: 387301108}

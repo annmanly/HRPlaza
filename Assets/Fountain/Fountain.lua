@@ -181,7 +181,7 @@ function TransferGold(player, amount)
 
 
 function CompleteWish(player)
-    print(`[FOUNTAIN] {player.name} SUBMITTED A WISH.`)
+    -- print(`[FOUNTAIN] {player.name} SUBMITTED A WISH.`)
 
     Wallet.GetWallet(function(response, err)
         if err ~= WalletError.None then
@@ -210,19 +210,19 @@ end
 
 function ServerHandleWishPurchase(purchase, player: Player)
     local productId = purchase.product_id
-    print("[FOUNTAIN ServerHandleWishPurchase]: Purchase made by player " .. tostring(player) .. " for product " .. tostring(productId))
+    -- print("[FOUNTAIN]: Purchase made by player " .. tostring(player) .. " for product " .. tostring(productId))
 
     local itemToGive = "wish"
     if productId ~= itemToGive then
         Payments.AcknowledgePurchase(purchase, false)
-        error("[FOUNTAIN ServerHandleWishPurchase]: Item not found!" .. tostring(productId))
+        error("[FOUNTAIN]: Item not found!" .. tostring(productId))
         return
     end
 
 
     Payments.AcknowledgePurchase(purchase, true, function(ackErr: PaymentsError)
         if ackErr ~= PaymentsError.None then
-            error("[FOUNTAIN ServerHandleWishPurchase]: Acknowledge purchase failed!" .. tostring(ackErr))
+            error("[FOUNTAIN]: Acknowledge purchase failed!" .. tostring(ackErr))
             return
         end
 
@@ -238,7 +238,7 @@ function ServerHandleWishPurchase(purchase, player: Player)
             Storage.SetPlayerValue(player, "Wishes", value)
         end)
 
-        print("[FOUNTAIN ServerHandleWishPurchase]: Gold received from " .. player.name)
+        print(`[FOUNTAIN]: {player.name} Submitted Wish. Gold received.`)
     end) 
 end
 
