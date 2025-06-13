@@ -154,18 +154,25 @@ function GetHRLiveDataFromStorage()
 
 end
 
+local currentRoomLink = nil
 function self:ClientAwake()
     if LiveEventLinkObj then 
         LiveEventLinkObj.gameObject:SetActive(false)
     end
+
+    tapHandler = LiveEventLinkObj:GetComponent(TapHandler)
+    if tapHandler then 
+        tapHandler.Tapped:Connect(function() 
+            print(`TAPPED {currentRoomLink}`)
+            UI:ExecuteDeepLink(currentRoomLink) 
+        end) 
+    end
     SetLiveObjects:Connect(function(setActive, link) 
+        
     if LiveEventLinkObj then 
         LiveEventLinkObj.gameObject:SetActive(setActive)
         if setActive then
-            tapHandler = LiveEventLinkObj:GetComponent(TapHandler)
-            if tapHandler then 
-                tapHandler.Tapped:Connect(function() UI:ExecuteDeepLink(HRLiveRoomLinks[currentEventIndex]) end) 
-            end
+            currentRoomLink = link
         end
     end
     
@@ -192,9 +199,9 @@ function checkActiveEvent()
     end
 
     currentEventIndex = newIndex
-    if oldLive ~= isLive then 
-        SetLiveObjects:FireAllClients(isLive, HRLiveRoomLinks[currentEventIndex])
-    end
+
+    SetLiveObjects:FireAllClients(isLive, HRLiveRoomLinks[currentEventIndex])
+
     UpdateHRLiveUIDataResponse:FireAllClients(HRLiveBannerURLS[currentEventIndex],HRLiveEndTimes[currentEventIndex], isLive)
 
 
@@ -215,6 +222,5 @@ function self:ServerAwake()
     Timer.Every(1, checkActiveEvent)
 
     UpdateHRLiveUIDataRequest:Connect(OnHRLiveDataRequest)
-    
 
 end
