@@ -149,12 +149,15 @@ function GenerateTicketsForDraw(i, key)
     local maxTicketsPerPlayer = math.ceil((24*60*60) / spawnInterval)
     
     Leaderboard.GetEntries(key, i, step, function(entries, err) 
+        if err ~= LeaderboardError.None then
+            error(`RAFFLE LEADERBOARD ERROR {LeaderboardError[err]}`)
+        end
         if entries == nil or #entries ==  0 then
             GeneratingTicketsDone:Fire()
             return
         else
             for i,entry in pairs(entries) do
-
+                -- print(`[RAFFLE] REGISTERING TICKET(S): {entry.name} {entry.score}`)
                 if entry.score <= maxTicketsPerPlayer then
                     playerTicket = {id = entry.id, name = entry.name, score=entry.score}
                     uniquePlayerCount += 1
@@ -194,7 +197,7 @@ function AddWinnersToStorage(winners, date, uniqueCount)
             winnerEntryUpdate.uniqueplayercount = uniqueCount
             winnerEntryUpdate.finishTime = GetNowDateStamp()
             if winners == {} or winners == nil or #winners == 0 then 
-                error(`No winners selected.`)
+                print(`[ERROR] No winners selected.`)
                 winnerEntryUpdate.status = "error-no-entries"
             else
                 winnerEntryUpdate.status = "complete"
@@ -329,7 +332,9 @@ function self:ServerStart()
     --- REMOVE AFTER DONE TESTING -- 
     -- Timer.After(10, function() InitiateDraw() end)
     ------------------------------
-
+    Storage.SetValue("589802ad0b911bb89a71a1fe".. "/RewardReady", true)
+    Storage.SetValue("62fb30c5132e425314f6758f".. "/RewardReady", true)
+    
     currentDate = os.date("!*t")
     Timer.Every(1, function() 
         date =  os.date("!*t")
