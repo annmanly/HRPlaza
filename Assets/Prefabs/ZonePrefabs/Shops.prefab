@@ -9,7 +9,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4496000092431335491}
-  - component: {fileID: 8336456447539408665}
+  - component: {fileID: 1997408735907343356}
   m_Layer: 0
   m_Name: TimedObject_Emotes
   m_TagString: Untagged
@@ -34,7 +34,7 @@ Transform:
   - {fileID: 7508627818935027998}
   m_Father: {fileID: 3168774783065022692}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &8336456447539408665
+--- !u!114 &1997408735907343356
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -43,24 +43,18 @@ MonoBehaviour:
   m_GameObject: {fileID: 2004508437918558542}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6492a83a12d934e421581ec88c30caf9, type: 3}
+  m_Script: {fileID: 11500000, guid: 872c1e0dc4a21409b1ee1c8e0981b4e2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   _networkId: 0
-  _script: {fileID: -974389366465450183, guid: de4da8efa80634319b871e1d36efca2c, type: 3}
+  _script: {fileID: -974389366465450183, guid: 3df31ed87e7d14dc0b311c5bb35eb437, type: 3}
   _properties: []
   _uiOutput: 0
   _uiOutputSettings:
     rid: -2
-  m_objects:
-  - {fileID: 6607548367034640003}
-  - {fileID: 1251396574693872769}
-  m_eventStartTimes:
-  - 2025-06-10 12:00:00
-  - 2025-06-17 12:00:00
-  m_eventEndTimes:
-  - 2025-06-17 12:00:00
-  - '2025-06-24 12:00:00   '
+  m_objectA: {fileID: 6607548367034640003}
+  m_objectB: {fileID: 1251396574693872769}
+  m_baseStartTime: 2025-06-10 12:00:00
   references:
     version: 2
     RefIds:
@@ -1518,7 +1512,8 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 0}
     m_RemovedComponents: []
-    m_RemovedGameObjects: []
+    m_RemovedGameObjects:
+    - {fileID: 6787488791472827175, guid: d8edc950d258b6d4db78a4575b57da38, type: 3}
     m_AddedGameObjects:
     - targetCorrespondingSourceObject: {fileID: 6508414848146083782, guid: d8edc950d258b6d4db78a4575b57da38,
         type: 3}
@@ -3046,7 +3041,8 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 0}
     m_RemovedComponents: []
-    m_RemovedGameObjects: []
+    m_RemovedGameObjects:
+    - {fileID: 6787488791472827175, guid: d8edc950d258b6d4db78a4575b57da38, type: 3}
     m_AddedGameObjects:
     - targetCorrespondingSourceObject: {fileID: 6508414848146083782, guid: d8edc950d258b6d4db78a4575b57da38,
         type: 3}
