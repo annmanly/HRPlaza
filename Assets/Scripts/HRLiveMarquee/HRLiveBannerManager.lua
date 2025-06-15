@@ -202,7 +202,7 @@ function checkActiveEvent()
 
     SetLiveObjects:FireAllClients(isLive, HRLiveRoomLinks[currentEventIndex])
 
-    UpdateHRLiveUIDataResponse:FireAllClients(HRLiveBannerURLS[currentEventIndex],HRLiveEndTimes[currentEventIndex], isLive)
+    UpdateHRLiveUIDataResponse:FireAllClients(HRLiveBannerURLS[currentEventIndex],HRLiveStartTimes[currentEventIndex], isLive)
 
 
 end

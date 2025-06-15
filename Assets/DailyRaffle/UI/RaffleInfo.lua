@@ -47,7 +47,7 @@ end
 function SetPage1()
     _smallHeadingText:SetPrelocalizedText("AXL'S RAFFLE")
     _headingText:SetPrelocalizedText("HOW TO ENTER")
-    _descriptionText:SetPrelocalizedText("<b>Tap on birds</b> to enter in the daily raffle and win prizes!\n\nEach ticket counts as one entry, and multiple winners are selected each day!")
+    _descriptionText:SetPrelocalizedText("<b>Tap on birds</b> to enter in the daily raffle and win prizes!\n\nEach ticket counts as one entry, and 100 winners are selected each day!")
     _mainImage:RemoveFromClassList("info-image-2")
     _mainImage:AddToClassList("info-image-1")
     
@@ -59,7 +59,7 @@ end
 function SetPage2()
     _smallHeadingText:SetPrelocalizedText("AXL'S RAFFLE")
     _headingText:SetPrelocalizedText("PRIZE")
-    _descriptionText:SetPrelocalizedText("Winners will receive a Town Square Raffle Blind Box!\n\n<b>Players must be in the world to receive their blind box, so check back in to see if you won!</b>")
+    _descriptionText:SetPrelocalizedText("Winners will receive a \n<b>Town Square Raffle Blind Box!</b>\n\nIf you are currently in the world at the time of the draw, you'll recieve your box immediately when you win. Otherwise, we'll hold on to it until you return to the world and collect your prize!")
     _mainImage:RemoveFromClassList("info-image-1")
     _mainImage:AddToClassList("info-image-2")
 

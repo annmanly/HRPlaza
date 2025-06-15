@@ -237,6 +237,12 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 9139129495891723739}
     m_Modifications:
+    - target: {fileID: 205658916121975140, guid: a93dc3a3cb9666142b779c9cb5d2e951,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: -1669226891171443964, guid: 91b06515d98b49049910776e910e7adf,
+        type: 3}
     - target: {fileID: 471193254943406550, guid: a93dc3a3cb9666142b779c9cb5d2e951,
         type: 3}
       propertyPath: m_CullingMode
@@ -342,6 +348,17 @@ PrefabInstance:
       propertyPath: m_LocalPosition.z
       value: 14.8
       objectReference: {fileID: 0}
+    - target: {fileID: 5146766850150865486, guid: a93dc3a3cb9666142b779c9cb5d2e951,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: -1669226891171443964, guid: 91b06515d98b49049910776e910e7adf,
+        type: 3}
+    - target: {fileID: 5916309497456938302, guid: a93dc3a3cb9666142b779c9cb5d2e951,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 6231431495697705439, guid: a93dc3a3cb9666142b779c9cb5d2e951,
         type: 3}
       propertyPath: m_LocalScale.x
@@ -377,11 +394,19 @@ PrefabInstance:
       propertyPath: m_Name
       value: HelpCenterTent (1)
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 1243888472737060290, guid: a93dc3a3cb9666142b779c9cb5d2e951, type: 3}
+    - {fileID: 6717694659830815904, guid: a93dc3a3cb9666142b779c9cb5d2e951, type: 3}
+    - {fileID: 4653487238281842590, guid: a93dc3a3cb9666142b779c9cb5d2e951, type: 3}
+    - {fileID: 3586317885028315004, guid: a93dc3a3cb9666142b779c9cb5d2e951, type: 3}
     m_RemovedGameObjects:
     - {fileID: 3554759381346146446, guid: a93dc3a3cb9666142b779c9cb5d2e951, type: 3}
     m_AddedGameObjects: []
     m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 7348967414384346690, guid: a93dc3a3cb9666142b779c9cb5d2e951,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 2705614868446252644}
     - targetCorrespondingSourceObject: {fileID: 1730847902395401046, guid: a93dc3a3cb9666142b779c9cb5d2e951,
         type: 3}
       insertIndex: -1
@@ -505,6 +530,33 @@ MonoBehaviour:
   m_IgnoreFromBuild: 1
   m_ApplyToChildren: 1
   m_AffectedAgents: ffffffff
+--- !u!1 &7532748769839263541 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7348967414384346690, guid: a93dc3a3cb9666142b779c9cb5d2e951,
+    type: 3}
+  m_PrefabInstance: {fileID: 969810993532856695}
+  m_PrefabAsset: {fileID: 0}
+--- !u!95 &2705614868446252644
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7532748769839263541}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 51eb502d3140b884e85630c7c277704d, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1001 &3497352167423480028
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -756,6 +808,16 @@ PrefabInstance:
       propertyPath: m_StaticEditorFlags
       value: 2147483647
       objectReference: {fileID: 0}
+    - target: {fileID: 652852521713885444, guid: a66ed6031089241fa954d312b6718132,
+        type: 3}
+      propertyPath: _material
+      value: 
+      objectReference: {fileID: 2100000, guid: 03f65102f6e8e7749b47f6ef6f4579ba, type: 2}
+    - target: {fileID: 1486732855754240570, guid: a66ed6031089241fa954d312b6718132,
+        type: 3}
+      propertyPath: m_linkurl
+      value: https://high.rs/shop?type=ic&id=65b2c1ce054206f608be9658
+      objectReference: {fileID: 0}
     - target: {fileID: 1579138289849837645, guid: a66ed6031089241fa954d312b6718132,
         type: 3}
       propertyPath: m_StaticEditorFlags
@@ -897,9 +959,12 @@ PrefabInstance:
       propertyPath: m_StaticEditorFlags
       value: 2147483647
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 5706713544319200107, guid: a66ed6031089241fa954d312b6718132, type: 3}
+    - {fileID: 467329778492611103, guid: a66ed6031089241fa954d312b6718132, type: 3}
     m_RemovedGameObjects:
     - {fileID: 1753196421813230495, guid: a66ed6031089241fa954d312b6718132, type: 3}
+    - {fileID: 445744758561222810, guid: a66ed6031089241fa954d312b6718132, type: 3}
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a66ed6031089241fa954d312b6718132, type: 3}
@@ -1122,6 +1187,11 @@ PrefabInstance:
       propertyPath: m_StaticEditorFlags
       value: 2147483647
       objectReference: {fileID: 0}
+    - target: {fileID: 4808177587964045536, guid: dee2d880c7801431887285e780d6142d,
+        type: 3}
+      propertyPath: m_linkurl
+      value: https://high.rs/shop?type=gacha&id=677c74f1f15d3dbe996c0eff
+      objectReference: {fileID: 0}
     - target: {fileID: 4934824693654437998, guid: dee2d880c7801431887285e780d6142d,
         type: 3}
       propertyPath: m_StaticEditorFlags
@@ -1132,6 +1202,11 @@ PrefabInstance:
       propertyPath: m_StaticEditorFlags
       value: 2147483647
       objectReference: {fileID: 0}
+    - target: {fileID: 5430491770962612720, guid: dee2d880c7801431887285e780d6142d,
+        type: 3}
+      propertyPath: _material
+      value: 
+      objectReference: {fileID: 2100000, guid: 03f65102f6e8e7749b47f6ef6f4579ba, type: 2}
     - target: {fileID: 5431472074588700475, guid: dee2d880c7801431887285e780d6142d,
         type: 3}
       propertyPath: m_LocalScale.x
@@ -1223,12 +1298,22 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.y
       value: 298.885
       objectReference: {fileID: 0}
+    - target: {fileID: 6265194487089447630, guid: dee2d880c7801431887285e780d6142d,
+        type: 3}
+      propertyPath: m_linkurl
+      value: https://high.rs/shop?type=gacha&id=677ece94ee497b80c839fabe
+      objectReference: {fileID: 0}
     - target: {fileID: 6452709611716086446, guid: dee2d880c7801431887285e780d6142d,
         type: 3}
       propertyPath: m_Sprite
       value: 
       objectReference: {fileID: 21300000, guid: 95575455053864ace8ed0e4799510ea8,
         type: 3}
+    - target: {fileID: 6851274956417547230, guid: dee2d880c7801431887285e780d6142d,
+        type: 3}
+      propertyPath: _material
+      value: 
+      objectReference: {fileID: 2100000, guid: 03f65102f6e8e7749b47f6ef6f4579ba, type: 2}
     - target: {fileID: 6954324662355865626, guid: dee2d880c7801431887285e780d6142d,
         type: 3}
       propertyPath: m_emote_ids.Array.data[0]
@@ -1244,10 +1329,20 @@ PrefabInstance:
       propertyPath: m_StaticEditorFlags
       value: 2147483647
       objectReference: {fileID: 0}
+    - target: {fileID: 7729685588520611380, guid: dee2d880c7801431887285e780d6142d,
+        type: 3}
+      propertyPath: _material
+      value: 
+      objectReference: {fileID: 2100000, guid: 03f65102f6e8e7749b47f6ef6f4579ba, type: 2}
     - target: {fileID: 8330029974784658194, guid: dee2d880c7801431887285e780d6142d,
         type: 3}
       propertyPath: m_StaticEditorFlags
       value: 2147483647
+      objectReference: {fileID: 0}
+    - target: {fileID: 8569178396853107978, guid: dee2d880c7801431887285e780d6142d,
+        type: 3}
+      propertyPath: m_linkurl
+      value: https://high.rs/shop?type=gacha&id=677d4f946f728850868ed580
       objectReference: {fileID: 0}
     - target: {fileID: 8577479800467368055, guid: dee2d880c7801431887285e780d6142d,
         type: 3}
@@ -1260,8 +1355,17 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 21300000, guid: 95575455053864ace8ed0e4799510ea8,
         type: 3}
-    m_RemovedComponents: []
-    m_RemovedGameObjects: []
+    m_RemovedComponents:
+    - {fileID: 3301486234585262929, guid: dee2d880c7801431887285e780d6142d, type: 3}
+    - {fileID: 8246062384530802284, guid: dee2d880c7801431887285e780d6142d, type: 3}
+    - {fileID: 1940278447893664224, guid: dee2d880c7801431887285e780d6142d, type: 3}
+    - {fileID: 7250554003833362981, guid: dee2d880c7801431887285e780d6142d, type: 3}
+    - {fileID: 4260966282253743896, guid: dee2d880c7801431887285e780d6142d, type: 3}
+    - {fileID: 6026758279688986772, guid: dee2d880c7801431887285e780d6142d, type: 3}
+    m_RemovedGameObjects:
+    - {fileID: 4934824693654437998, guid: dee2d880c7801431887285e780d6142d, type: 3}
+    - {fileID: 7234368151101374378, guid: dee2d880c7801431887285e780d6142d, type: 3}
+    - {fileID: 5779351777170025024, guid: dee2d880c7801431887285e780d6142d, type: 3}
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: dee2d880c7801431887285e780d6142d, type: 3}

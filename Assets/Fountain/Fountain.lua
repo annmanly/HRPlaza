@@ -174,7 +174,15 @@ function TransferGold(player, amount)
               error(`Something went wrong while transferring gold to {player.name}: {WalletError[err]}`)
               return
         end
-  
+        Storage.GetPlayerValue(player, "FountainGoldReceived", function(value)
+            if value then
+                value = value + amount
+            else
+                value = amount
+            end
+
+            Storage.SetPlayerValue(player, "FountainGoldReceived", value)
+        end)  
       print(string.format("[FOUNTAIN] [GOLD SENT] Sent %d Gold to %s, Gold remaining: %d", amount, player.name, response.gold))
     end)
   end
