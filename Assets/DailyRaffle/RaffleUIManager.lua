@@ -68,14 +68,15 @@ end
 
 function displayWinner()
     activateParticles()
+    resultsObj:SetActive(false)
     if winnerSound then winnerSound:Play() end
     winnerNotifObj:SetActive(true)
 end
 
-function displayDrawingWinners(winners)
+function displayDrawingWinners()
     resultsObj:SetActive(true)
     if raffleDrawSound then raffleDrawSound:Play() end
-    resultsUI = resultsObj.gameObject:GetComponent(Results).showWinners(winners)
+    resultsUI = resultsObj.gameObject:GetComponent(Results).showWinners()
 end
 
 function self:ClientAwake()

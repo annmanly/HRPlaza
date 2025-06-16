@@ -7,7 +7,7 @@ local defaultStartDate:string = "2025-06-09 13:00:00"
 --!SerializeField
 local defaultEndDate:string = "2025-06-09 15:00:00"
 --!SerializeField
-local defaultBannerURL:string = "https://cdn.highrisegame.com/HRLiveEventBanners/WO_06_09_2025/01.png"
+local defaultBannerURL:string = "https://cdn.highrisegame.com/HRLiveEventBanners/WO_06_09_2025/16.png"
 --!SerializeField
 local defaultRoomLink:string = "https://high.rs/room?id=6476fe22eeafcd5d47b38298"
 
@@ -182,29 +182,37 @@ end
 function checkActiveEvent()
     local now = os.time()
     local newIndex = 1
-    oldLive = isLive
-    for i = 1, #HRLiveStartTimes do
-        local s, e = parseETDateTime(HRLiveStartTimes[i]), parseETDateTime(HRLiveEndTimes[i])
-        if now < s then
-            newIndex = i
-            targetTime = s
-            isLive = false
-            break
-        elseif now < e then
-            newIndex = i
-            targetTime = e
-            isLive = true
-            break
+
+    if HRLiveStartTimes[1] and HRLiveEndTimes[1] then
+
+        for i = 1, #HRLiveStartTimes do
+            local s, e = parseETDateTime(HRLiveStartTimes[i]), parseETDateTime(HRLiveEndTimes[i])
+            if now < s then
+                newIndex = i
+                targetTime = s
+                isLive = false
+                break
+            elseif now < e then
+                newIndex = i
+                targetTime = e
+                isLive = true
+                break
+            end
         end
+
+        currentEventIndex = newIndex
+
+        local nowdate = os.date("*t", now)
+        local nowsting =   string.format("%d-%02d-%02d %02d:%02d:%02d", nowdate.year,nowdate.month, nowdate.day, nowdate.hour, nowdate.min, nowdate.sec)
+        local startDate = os.date("*t",  parseETDateTime(HRLiveStartTimes[currentEventIndex]))
+        local startString = string.format("%d-%02d-%02d %02d:%02d:%02d", startDate.year,startDate.month, startDate.day, startDate.hour, startDate.min, startDate.sec)
+
+        SetLiveObjects:FireAllClients(isLive, HRLiveRoomLinks[currentEventIndex])
+
+        UpdateHRLiveUIDataResponse:FireAllClients(HRLiveBannerURLS[currentEventIndex],HRLiveStartTimes[currentEventIndex], isLive)
+        -- print(`{tostring(nowsting)}  {startString} current i = {currentEventIndex} isLive {tostring(isLive)}`)
+        -- print(`url:{HRLiveBannerURLS[currentEventIndex]} `)
     end
-
-    currentEventIndex = newIndex
-
-    SetLiveObjects:FireAllClients(isLive, HRLiveRoomLinks[currentEventIndex])
-
-    UpdateHRLiveUIDataResponse:FireAllClients(HRLiveBannerURLS[currentEventIndex],HRLiveStartTimes[currentEventIndex], isLive)
-
-
 end
 
 function OnHRLiveDataRequest(player)

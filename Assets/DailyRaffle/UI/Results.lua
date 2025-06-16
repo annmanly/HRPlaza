@@ -72,7 +72,7 @@ local slideInTween = Tween:new(
     end
 )
 
-function showWinners(winnerNames)
+function showWinners()
     local delay = 10
     slideInTween:stop()
     bannerSlideOutTween:stop()

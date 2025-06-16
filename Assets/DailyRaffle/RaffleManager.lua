@@ -122,7 +122,7 @@ function InitiateDraw()
                     table.insert(winnerNames, winner.name)
                 end
                 print("[RAFFLE] WINNERS ALREADY DRAWN: " .. table.concat(winnerNames, ", "))
-                DisplayWinners(winnerNames)
+                -- DisplayWinners(winnerNames)
                 CheckWinnersInRoom()
                 return
             
@@ -250,7 +250,7 @@ function SelectWinners()
 
     print("[RAFFLE] WINNERS SELECTED: " .. table.concat(winnerNames, ", "))
     AddWinnersToStorage(winners, yesterday, uniquePlayerCount)
-    DisplayWinners(winnerNames)
+    -- DisplayWinners(winnerNames)
     CheckWinnersInRoom()
 end
 
@@ -275,7 +275,7 @@ function DisplayWinners(winnerNames)
                     end
                 end
                 if not isWinner then
-                    UIRaffleDrawingEvent:FireClient(player, winnerNames)
+                    UIRaffleDrawingEvent:FireClient(player)
                 end
             end
         end
@@ -332,15 +332,16 @@ function self:ServerStart()
     --- REMOVE AFTER DONE TESTING -- 
     -- Timer.After(10, function() InitiateDraw() end)
     ------------------------------
-    Storage.SetValue("589802ad0b911bb89a71a1fe".. "/RewardReady", true)
-    Storage.SetValue("62fb30c5132e425314f6758f".. "/RewardReady", true)
-    
+    -- Storage.SetValue("589802ad0b911bb89a71a1fe".. "/RewardReady", true)
+    -- Storage.SetValue("62fb30c5132e425314f6758f".. "/RewardReady", true)
+
     currentDate = os.date("!*t")
     Timer.Every(1, function() 
         date =  os.date("!*t")
         if date.day ~= currentDate.day then
             -- START RAFFLE DRAW ON UTC DAY RESET
             currentDate = os.date("!*t")
+            UIRaffleDrawingEvent:FireAllClients()
             InitiateDraw()
         end
 

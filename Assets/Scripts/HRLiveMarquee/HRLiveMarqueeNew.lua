@@ -62,6 +62,7 @@ end
 
 
 function self:Awake()
+
     HRLiveDataManager.UpdateHRLiveUIDataResponse:Connect(updateUI)
     HRLiveDataManager.UpdateHRLiveUIDataRequest:FireServer()
     Timer.Every(1, function()
