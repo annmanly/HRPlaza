@@ -14,18 +14,14 @@ local defaultEventName : string = "Default Event"
 local defaultEventCount : number = 5
 
 EventBannerURLs = {}
-HRLiveEventBannerURLs = {}
 EventStartDates = {}
 EventNames = {}
 
 -- Key generators
 local function getBannerKey(i)
-    return i == 1 and "EventBannerURL" or string.format("Event%02dBannerURL", i)
+    return string.format("Event%02dBannerURL", i)
 end
 
-local function getHRLiveBannerKey(i)
-    return i == 1 and "HRLiveEventBannerURL" or string.format("HRLiveEvent%02dBannerURL", i)
-end
 
 -- Offset utility, to fill default start dates with consective dates
 local function offsetDate(baseDateStr, offsetWeeks)
@@ -46,7 +42,6 @@ end
 if #EventBannerURLs == 0 then
     for i = 1, defaultEventCount do
         EventBannerURLs[i] = StringValue.new(getBannerKey(i), defaultBannerURL)
-        HRLiveEventBannerURLs[i] = StringValue.new(getHRLiveBannerKey(i), defaultBannerURL)
         EventStartDates[i] = StringValue.new("EventStartDate" .. i, offsetDate(defaultStartDateBase, i - 1))
         EventNames[i] = StringValue.new("EventName" .. i, defaultEventName)
     end
@@ -111,33 +106,11 @@ function GetEventDataFromStorage()
     end)
 end
 
-function GetHRLiveDataFromStorage()
-    -- HR Live Event banner URLs
-    Storage.GetValue("HRLiveEventBannerURLs", function(storageValue)
-        local storedTable = storageValue or {}
-        local updated = false
-
-        for i = 1, #HRLiveEventBannerURLs do
-            local key = getHRLiveBannerKey(i)
-            if not storedTable[key] then
-                storedTable[key] = defaultBannerURL
-                updated = true
-            end
-            HRLiveEventBannerURLs[i].value = storedTable[key]
-        end
-
-        if updated then
-            Storage.SetValue("HRLiveEventBannerURLs", storedTable)
-        end
-    end)
-end
 
 function self:ServerAwake()
-    GetHRLiveDataFromStorage()
     GetEventDataFromStorage()
 
     Timer.Every(60*5, function() 
-        GetHRLiveDataFromStorage()
         GetEventDataFromStorage()
     end)
 end

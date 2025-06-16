@@ -13,7 +13,7 @@ local _currentLink = ""
 
 -- Waits 5 seconds then picks a random texture, applies it, and recurses
 local function CycleTexture()
-    Timer.After(5, function()
+    Timer.After(15, function()
         if #Textures > 0 then
             -- pick a random index
             local idx = math.random(1, #Textures)

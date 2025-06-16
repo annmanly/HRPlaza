@@ -14,7 +14,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!4 &1563280101362169692
 Transform:
@@ -24,7 +24,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4923978945120975941}
   serializedVersion: 2
-  m_LocalRotation: {x: -0, y: 0.116226904, z: -0, w: 0.9932227}
+  m_LocalRotation: {x: 0, y: 0.11622871, z: 0, w: 0.9932225}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -44,6 +44,17 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1563280101362169692}
     m_Modifications:
+    - target: {fileID: 1130598014150007400, guid: c92c956e96bfbd34183a1425bfc0c451,
+        type: 3}
+      propertyPath: m_ReceiveGI
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1130598014150007400, guid: c92c956e96bfbd34183a1425bfc0c451,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: -1669226891171443964, guid: 91b06515d98b49049910776e910e7adf,
+        type: 3}
     - target: {fileID: 1490775689954327485, guid: c92c956e96bfbd34183a1425bfc0c451,
         type: 3}
       propertyPath: m_Name
@@ -52,37 +63,37 @@ PrefabInstance:
     - target: {fileID: 2304607415660945671, guid: c92c956e96bfbd34183a1425bfc0c451,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 1.7
+      value: -3.38
       objectReference: {fileID: 0}
     - target: {fileID: 2304607415660945671, guid: c92c956e96bfbd34183a1425bfc0c451,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: -1.4650002
+      value: -1.62
       objectReference: {fileID: 0}
     - target: {fileID: 2304607415660945671, guid: c92c956e96bfbd34183a1425bfc0c451,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 1.5
+      value: -12.05
       objectReference: {fileID: 0}
     - target: {fileID: 2304607415660945671, guid: c92c956e96bfbd34183a1425bfc0c451,
         type: 3}
       propertyPath: m_LocalRotation.w
-      value: 0.18646488
+      value: -0.011913747
       objectReference: {fileID: 0}
     - target: {fileID: 2304607415660945671, guid: c92c956e96bfbd34183a1425bfc0c451,
         type: 3}
       propertyPath: m_LocalRotation.x
-      value: -0.0000000020839073
+      value: 1.3315571e-10
       objectReference: {fileID: 0}
     - target: {fileID: 2304607415660945671, guid: c92c956e96bfbd34183a1425bfc0c451,
         type: 3}
       propertyPath: m_LocalRotation.y
-      value: 0.98246163
+      value: 0.9999291
       objectReference: {fileID: 0}
     - target: {fileID: 2304607415660945671, guid: c92c956e96bfbd34183a1425bfc0c451,
         type: 3}
       propertyPath: m_LocalRotation.z
-      value: -0.000000010979865
+      value: -0.0000000111750795
       objectReference: {fileID: 0}
     - target: {fileID: 2304607415660945671, guid: c92c956e96bfbd34183a1425bfc0c451,
         type: 3}
@@ -92,14 +103,15 @@ PrefabInstance:
     - target: {fileID: 2304607415660945671, guid: c92c956e96bfbd34183a1425bfc0c451,
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.y
-      value: 158.507
+      value: 181.365
       objectReference: {fileID: 0}
     - target: {fileID: 2304607415660945671, guid: c92c956e96bfbd34183a1425bfc0c451,
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 4005371915803029732, guid: c92c956e96bfbd34183a1425bfc0c451, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
@@ -125,11 +137,6 @@ PrefabInstance:
       objectReference: {fileID: 2100000, guid: a8e085a6f7f2244c9854254fb7d3f217, type: 2}
     - target: {fileID: 573257481194849046, guid: 04adb2445b1bf4a1ba650aafd0a8e8c4,
         type: 3}
-      propertyPath: m_Textures.Array.size
-      value: 4
-      objectReference: {fileID: 0}
-    - target: {fileID: 573257481194849046, guid: 04adb2445b1bf4a1ba650aafd0a8e8c4,
-        type: 3}
       propertyPath: m_linkurls.Array.size
       value: 4
       objectReference: {fileID: 0}
@@ -137,52 +144,42 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Textures.Array.data[0]
       value: 
-      objectReference: {fileID: 2800000, guid: 733ecf1b2368c4439abf9174e642d235, type: 3}
+      objectReference: {fileID: 2800000, guid: 01e7fc1b965ed433daca66c5eda6f048, type: 3}
     - target: {fileID: 573257481194849046, guid: 04adb2445b1bf4a1ba650aafd0a8e8c4,
         type: 3}
       propertyPath: m_Textures.Array.data[1]
       value: 
-      objectReference: {fileID: 2800000, guid: 5855f37f6e9314a029b33fc8f9105e18, type: 3}
+      objectReference: {fileID: 2800000, guid: 48ebd09a803794906a995cec9e68ec10, type: 3}
     - target: {fileID: 573257481194849046, guid: 04adb2445b1bf4a1ba650aafd0a8e8c4,
         type: 3}
       propertyPath: m_Textures.Array.data[2]
       value: 
-      objectReference: {fileID: 2800000, guid: fa6c0286279b14abebe55f64e5d10e6d, type: 3}
+      objectReference: {fileID: 2800000, guid: 3b9b9fdc567494be9a38e0d7b03ae3fd, type: 3}
     - target: {fileID: 573257481194849046, guid: 04adb2445b1bf4a1ba650aafd0a8e8c4,
         type: 3}
       propertyPath: m_Textures.Array.data[3]
       value: 
-      objectReference: {fileID: 2800000, guid: 1a39065990ca44787b7d3fb7220283ae, type: 3}
+      objectReference: {fileID: 2800000, guid: 24e4be28392084f46bbf53ab8b3169b5, type: 3}
     - target: {fileID: 573257481194849046, guid: 04adb2445b1bf4a1ba650aafd0a8e8c4,
         type: 3}
       propertyPath: m_Textures.Array.data[4]
       value: 
-      objectReference: {fileID: 2800000, guid: 4dcff87fe2a184616a28cd869a116751, type: 3}
+      objectReference: {fileID: 2800000, guid: 3cb5aee8842284f388d3294c6479611c, type: 3}
     - target: {fileID: 573257481194849046, guid: 04adb2445b1bf4a1ba650aafd0a8e8c4,
         type: 3}
       propertyPath: m_Textures.Array.data[5]
       value: 
-      objectReference: {fileID: 2800000, guid: 70286aae9d8834ebc9a8b6fd6ffad69b, type: 3}
+      objectReference: {fileID: 2800000, guid: 74cc117151838497d848b71a24ce0e6b, type: 3}
     - target: {fileID: 573257481194849046, guid: 04adb2445b1bf4a1ba650aafd0a8e8c4,
         type: 3}
       propertyPath: m_Textures.Array.data[6]
       value: 
-      objectReference: {fileID: 2800000, guid: c11a6e32a8279432d855376d5d3c8c1e, type: 3}
+      objectReference: {fileID: 2800000, guid: a0073d10f863247348946b218df302fa, type: 3}
     - target: {fileID: 573257481194849046, guid: 04adb2445b1bf4a1ba650aafd0a8e8c4,
         type: 3}
       propertyPath: m_Textures.Array.data[7]
       value: 
-      objectReference: {fileID: 2800000, guid: cd14c4bc958e743edb88a40b5baf5c9a, type: 3}
-    - target: {fileID: 573257481194849046, guid: 04adb2445b1bf4a1ba650aafd0a8e8c4,
-        type: 3}
-      propertyPath: m_Textures.Array.data[8]
-      value: 
-      objectReference: {fileID: 2800000, guid: 22699562d63ad4382a536c4c5ccfb629, type: 3}
-    - target: {fileID: 573257481194849046, guid: 04adb2445b1bf4a1ba650aafd0a8e8c4,
-        type: 3}
-      propertyPath: m_Textures.Array.data[9]
-      value: 
-      objectReference: {fileID: 2800000, guid: b2fb062b2e6d7451f9471f5d42f94b9e, type: 3}
+      objectReference: {fileID: 2800000, guid: d553e8aa3a60249b7a5bc3865c354801, type: 3}
     - target: {fileID: 573257481194849046, guid: 04adb2445b1bf4a1ba650aafd0a8e8c4,
         type: 3}
       propertyPath: m_linkurls.Array.data[0]
@@ -191,172 +188,62 @@ PrefabInstance:
     - target: {fileID: 573257481194849046, guid: 04adb2445b1bf4a1ba650aafd0a8e8c4,
         type: 3}
       propertyPath: m_linkurls.Array.data[1]
-      value: https://high.rs/marketplace?id=shirt-n_wildinstincts2025set2leopardsexyshortdress&type=clothing
-      objectReference: {fileID: 0}
-    - target: {fileID: 573257481194849046, guid: 04adb2445b1bf4a1ba650aafd0a8e8c4,
-        type: 3}
-      propertyPath: m_linkurls.Array.data[2]
-      value: https://high.rs/marketplace?id=shirt-n_blushbloom2025set4renaissdress&type=clothing
-      objectReference: {fileID: 0}
-    - target: {fileID: 573257481194849046, guid: 04adb2445b1bf4a1ba650aafd0a8e8c4,
-        type: 3}
-      propertyPath: m_linkurls.Array.data[3]
       value: https://high.rs/marketplace?id=dress-n_blushbloom2025set5sheerdress&type=clothing
       objectReference: {fileID: 0}
     - target: {fileID: 573257481194849046, guid: 04adb2445b1bf4a1ba650aafd0a8e8c4,
         type: 3}
-      propertyPath: m_linkurls.Array.data[4]
-      value: https://high.rs/marketplace?id=shirt-n_farfromshore2025set4spaghettistrap&type=clothing
+      propertyPath: m_linkurls.Array.data[2]
+      value: https://high.rs/marketplace?id=shirt-n_wildinstincts2025set2leopardsexyshortdress&type=clothing
       objectReference: {fileID: 0}
     - target: {fileID: 573257481194849046, guid: 04adb2445b1bf4a1ba650aafd0a8e8c4,
         type: 3}
-      propertyPath: m_linkurls.Array.data[5]
-      value: https://high.rs/marketplace?id=shirt-n_blushbloom2025set2rosesshirt&type=clothing
+      propertyPath: m_linkurls.Array.data[3]
+      value: https://high.rs/marketplace?id=shirt-n_blushbloom2025set4renaissdress&type=clothing
       objectReference: {fileID: 0}
-    - target: {fileID: 573257481194849046, guid: 04adb2445b1bf4a1ba650aafd0a8e8c4,
+    - target: {fileID: 3560753704121071282, guid: 04adb2445b1bf4a1ba650aafd0a8e8c4,
         type: 3}
-      propertyPath: m_linkurls.Array.data[6]
-      value: https://high.rs/marketplace?id=pants-n_gymbrat2025set4graypants&type=clothing
-      objectReference: {fileID: 0}
-    - target: {fileID: 573257481194849046, guid: 04adb2445b1bf4a1ba650aafd0a8e8c4,
-        type: 3}
-      propertyPath: m_linkurls.Array.data[7]
-      value: https://high.rs/marketplace?id=pants-n_hrfashionweek2025set5patternshorts&type=clothing
-      objectReference: {fileID: 0}
-    - target: {fileID: 573257481194849046, guid: 04adb2445b1bf4a1ba650aafd0a8e8c4,
-        type: 3}
-      propertyPath: m_linkurls.Array.data[8]
-      value: https://high.rs/marketplace?id=skirt-n_blushbloom2025set3skirtwhite&type=clothing
-      objectReference: {fileID: 0}
-    - target: {fileID: 573257481194849046, guid: 04adb2445b1bf4a1ba650aafd0a8e8c4,
-        type: 3}
-      propertyPath: m_linkurls.Array.data[9]
-      value: https://high.rs/marketplace?id=hat-n_farfromshore2025set6snakeglasses&type=clothing
-      objectReference: {fileID: 0}
-    - target: {fileID: 573257481194849046, guid: 04adb2445b1bf4a1ba650aafd0a8e8c4,
-        type: 3}
-      propertyPath: m_Textures.Array.data[10]
+      propertyPath: m_Materials.Array.data[0]
       value: 
-      objectReference: {fileID: 2800000, guid: f2d9ba13769fe4a159647ae60fc63707, type: 3}
-    - target: {fileID: 573257481194849046, guid: 04adb2445b1bf4a1ba650aafd0a8e8c4,
-        type: 3}
-      propertyPath: m_Textures.Array.data[11]
-      value: 
-      objectReference: {fileID: 2800000, guid: cfdf1660e9b2c41a4afd8916cb9a820c, type: 3}
-    - target: {fileID: 573257481194849046, guid: 04adb2445b1bf4a1ba650aafd0a8e8c4,
-        type: 3}
-      propertyPath: m_Textures.Array.data[12]
-      value: 
-      objectReference: {fileID: 2800000, guid: 4937c96b9324a4721b278efd6bbfc7c4, type: 3}
-    - target: {fileID: 573257481194849046, guid: 04adb2445b1bf4a1ba650aafd0a8e8c4,
-        type: 3}
-      propertyPath: m_Textures.Array.data[13]
-      value: 
-      objectReference: {fileID: 2800000, guid: e6721cf84dc684587ad703b395d6768d, type: 3}
-    - target: {fileID: 573257481194849046, guid: 04adb2445b1bf4a1ba650aafd0a8e8c4,
-        type: 3}
-      propertyPath: m_Textures.Array.data[14]
-      value: 
-      objectReference: {fileID: 2800000, guid: a8945824020264a7191588b42e87c647, type: 3}
-    - target: {fileID: 573257481194849046, guid: 04adb2445b1bf4a1ba650aafd0a8e8c4,
-        type: 3}
-      propertyPath: m_linkurls.Array.data[10]
-      value: https://high.rs/marketplace?id=hat-n_guyrisetwoudceveparticreward2024achluophobiaalleyes&type=clothing
-      objectReference: {fileID: 0}
-    - target: {fileID: 573257481194849046, guid: 04adb2445b1bf4a1ba650aafd0a8e8c4,
-        type: 3}
-      propertyPath: m_linkurls.Array.data[11]
-      value: https://high.rs/marketplace?id=shoes-n_nekocats2025set1redmooncatheels&type=clothing
-      objectReference: {fileID: 0}
-    - target: {fileID: 573257481194849046, guid: 04adb2445b1bf4a1ba650aafd0a8e8c4,
-        type: 3}
-      propertyPath: m_linkurls.Array.data[12]
-      value: https://high.rs/marketplace?id=shoes-n_wildinstincts2025set1jaguarshoes&type=clothing
-      objectReference: {fileID: 0}
-    - target: {fileID: 573257481194849046, guid: 04adb2445b1bf4a1ba650aafd0a8e8c4,
-        type: 3}
-      propertyPath: m_linkurls.Array.data[13]
-      value: https://high.rs/marketplace?id=shoes-n_wildinstincts2025set2snakeprintheels&type=clothing
-      objectReference: {fileID: 0}
-    - target: {fileID: 573257481194849046, guid: 04adb2445b1bf4a1ba650aafd0a8e8c4,
-        type: 3}
-      propertyPath: m_linkurls.Array.data[14]
-      value: https://high.rs/marketplace?id=eye-n_artistsloungexvudcgrab2024papaprawnpleadingeyes&type=clothing
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 2100000, guid: a8e085a6f7f2244c9854254fb7d3f217, type: 2}
     - target: {fileID: 5966015026851350765, guid: 04adb2445b1bf4a1ba650aafd0a8e8c4,
         type: 3}
       propertyPath: m_Name
       value: MarketplaceItem3
       objectReference: {fileID: 0}
-    - target: {fileID: 7347715180391326677, guid: 04adb2445b1bf4a1ba650aafd0a8e8c4,
-        type: 3}
-      propertyPath: m_LocalScale.x
-      value: 0.40526494
-      objectReference: {fileID: 0}
-    - target: {fileID: 7347715180391326677, guid: 04adb2445b1bf4a1ba650aafd0a8e8c4,
-        type: 3}
-      propertyPath: m_LocalScale.y
-      value: 0.40526494
-      objectReference: {fileID: 0}
-    - target: {fileID: 7347715180391326677, guid: 04adb2445b1bf4a1ba650aafd0a8e8c4,
-        type: 3}
-      propertyPath: m_LocalScale.z
-      value: 0.40526494
-      objectReference: {fileID: 0}
-    - target: {fileID: 7347715180391326677, guid: 04adb2445b1bf4a1ba650aafd0a8e8c4,
-        type: 3}
-      propertyPath: m_LocalPosition.y
-      value: -3.34
-      objectReference: {fileID: 0}
-    - target: {fileID: 7683140171347857638, guid: 04adb2445b1bf4a1ba650aafd0a8e8c4,
-        type: 3}
-      propertyPath: m_LocalScale.x
-      value: 0.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 7683140171347857638, guid: 04adb2445b1bf4a1ba650aafd0a8e8c4,
-        type: 3}
-      propertyPath: m_LocalScale.y
-      value: 0.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 7683140171347857638, guid: 04adb2445b1bf4a1ba650aafd0a8e8c4,
-        type: 3}
-      propertyPath: m_LocalScale.z
-      value: 0.5
-      objectReference: {fileID: 0}
     - target: {fileID: 7683140171347857638, guid: 04adb2445b1bf4a1ba650aafd0a8e8c4,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0
+      value: -6.76
       objectReference: {fileID: 0}
     - target: {fileID: 7683140171347857638, guid: 04adb2445b1bf4a1ba650aafd0a8e8c4,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 1.81
+      value: 0.45
       objectReference: {fileID: 0}
     - target: {fileID: 7683140171347857638, guid: 04adb2445b1bf4a1ba650aafd0a8e8c4,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0
+      value: -10.93
       objectReference: {fileID: 0}
     - target: {fileID: 7683140171347857638, guid: 04adb2445b1bf4a1ba650aafd0a8e8c4,
         type: 3}
       propertyPath: m_LocalRotation.w
-      value: 1
+      value: 0.9914338
       objectReference: {fileID: 0}
     - target: {fileID: 7683140171347857638, guid: 04adb2445b1bf4a1ba650aafd0a8e8c4,
         type: 3}
       propertyPath: m_LocalRotation.x
-      value: -0
+      value: -0.000000012580805
       objectReference: {fileID: 0}
     - target: {fileID: 7683140171347857638, guid: 04adb2445b1bf4a1ba650aafd0a8e8c4,
         type: 3}
       propertyPath: m_LocalRotation.y
-      value: -0
+      value: 0.13061015
       objectReference: {fileID: 0}
     - target: {fileID: 7683140171347857638, guid: 04adb2445b1bf4a1ba650aafd0a8e8c4,
         type: 3}
       propertyPath: m_LocalRotation.z
-      value: -0
+      value: -0.000000009178114
       objectReference: {fileID: 0}
     - target: {fileID: 7683140171347857638, guid: 04adb2445b1bf4a1ba650aafd0a8e8c4,
         type: 3}
@@ -366,18 +253,13 @@ PrefabInstance:
     - target: {fileID: 7683140171347857638, guid: 04adb2445b1bf4a1ba650aafd0a8e8c4,
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
+      value: 15.01
       objectReference: {fileID: 0}
     - target: {fileID: 7683140171347857638, guid: 04adb2445b1bf4a1ba650aafd0a8e8c4,
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 8822646446734992482, guid: 04adb2445b1bf4a1ba650aafd0a8e8c4,
-        type: 3}
-      propertyPath: m_Materials.Array.data[0]
-      value: 
-      objectReference: {fileID: 2100000, guid: a8e085a6f7f2244c9854254fb7d3f217, type: 2}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -397,235 +279,45 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1563280101362169692}
     m_Modifications:
-    - target: {fileID: 573257481194849046, guid: 04adb2445b1bf4a1ba650aafd0a8e8c4,
-        type: 3}
-      propertyPath: m_Textures.Array.size
-      value: 14
-      objectReference: {fileID: 0}
-    - target: {fileID: 573257481194849046, guid: 04adb2445b1bf4a1ba650aafd0a8e8c4,
-        type: 3}
-      propertyPath: m_linkurls.Array.size
-      value: 14
-      objectReference: {fileID: 0}
-    - target: {fileID: 573257481194849046, guid: 04adb2445b1bf4a1ba650aafd0a8e8c4,
-        type: 3}
-      propertyPath: m_Textures.Array.data[0]
-      value: 
-      objectReference: {fileID: 2800000, guid: bc0b36cd513284979af75f849815bee8, type: 3}
-    - target: {fileID: 573257481194849046, guid: 04adb2445b1bf4a1ba650aafd0a8e8c4,
-        type: 3}
-      propertyPath: m_Textures.Array.data[1]
-      value: 
-      objectReference: {fileID: 2800000, guid: 514382a4c2cc842f9ba2c1ca0280c1b8, type: 3}
-    - target: {fileID: 573257481194849046, guid: 04adb2445b1bf4a1ba650aafd0a8e8c4,
-        type: 3}
-      propertyPath: m_Textures.Array.data[2]
-      value: 
-      objectReference: {fileID: 2800000, guid: 2cad07916b9b646b09d9c0a5894a1462, type: 3}
-    - target: {fileID: 573257481194849046, guid: 04adb2445b1bf4a1ba650aafd0a8e8c4,
-        type: 3}
-      propertyPath: m_Textures.Array.data[3]
-      value: 
-      objectReference: {fileID: 2800000, guid: ffb8afa98f8cc4b3792042a57611ce39, type: 3}
-    - target: {fileID: 573257481194849046, guid: 04adb2445b1bf4a1ba650aafd0a8e8c4,
-        type: 3}
-      propertyPath: m_Textures.Array.data[4]
-      value: 
-      objectReference: {fileID: 2800000, guid: fb54971e586434fe2bb900473d0dac28, type: 3}
-    - target: {fileID: 573257481194849046, guid: 04adb2445b1bf4a1ba650aafd0a8e8c4,
-        type: 3}
-      propertyPath: m_Textures.Array.data[5]
-      value: 
-      objectReference: {fileID: 2800000, guid: b8f2fb7431a61410084509d550061bca, type: 3}
-    - target: {fileID: 573257481194849046, guid: 04adb2445b1bf4a1ba650aafd0a8e8c4,
-        type: 3}
-      propertyPath: m_Textures.Array.data[6]
-      value: 
-      objectReference: {fileID: 2800000, guid: 3fc9d97369fdb47e096b884254621065, type: 3}
-    - target: {fileID: 573257481194849046, guid: 04adb2445b1bf4a1ba650aafd0a8e8c4,
-        type: 3}
-      propertyPath: m_Textures.Array.data[7]
-      value: 
-      objectReference: {fileID: 2800000, guid: 612f97608c14a43808fd0c361d2eaf22, type: 3}
-    - target: {fileID: 573257481194849046, guid: 04adb2445b1bf4a1ba650aafd0a8e8c4,
-        type: 3}
-      propertyPath: m_Textures.Array.data[8]
-      value: 
-      objectReference: {fileID: 2800000, guid: 763bb9169b9e0400a9e73c407a8fcefb, type: 3}
-    - target: {fileID: 573257481194849046, guid: 04adb2445b1bf4a1ba650aafd0a8e8c4,
-        type: 3}
-      propertyPath: m_Textures.Array.data[9]
-      value: 
-      objectReference: {fileID: 2800000, guid: b2fb062b2e6d7451f9471f5d42f94b9e, type: 3}
-    - target: {fileID: 573257481194849046, guid: 04adb2445b1bf4a1ba650aafd0a8e8c4,
-        type: 3}
-      propertyPath: m_linkurls.Array.data[0]
-      value: https://high.rs/marketplace?id=shoes-n_animalandsnoopsgrabpt12025leopardsnoops&type=clothing
-      objectReference: {fileID: 0}
-    - target: {fileID: 573257481194849046, guid: 04adb2445b1bf4a1ba650aafd0a8e8c4,
-        type: 3}
-      propertyPath: m_linkurls.Array.data[1]
-      value: https://high.rs/marketplace?id=hat-n_nekocats2025set2mask&type=clothing
-      objectReference: {fileID: 0}
-    - target: {fileID: 573257481194849046, guid: 04adb2445b1bf4a1ba650aafd0a8e8c4,
-        type: 3}
-      propertyPath: m_linkurls.Array.data[2]
-      value: https://high.rs/marketplace?id=shoes-n_hccankletswhiteonblack&type=clothing
-      objectReference: {fileID: 0}
-    - target: {fileID: 573257481194849046, guid: 04adb2445b1bf4a1ba650aafd0a8e8c4,
-        type: 3}
-      propertyPath: m_linkurls.Array.data[3]
-      value: https://high.rs/marketplace?id=bag-n_blushbloom2025set4smallwings&type=clothing
-      objectReference: {fileID: 0}
-    - target: {fileID: 573257481194849046, guid: 04adb2445b1bf4a1ba650aafd0a8e8c4,
-        type: 3}
-      propertyPath: m_linkurls.Array.data[4]
-      value: https://high.rs/marketplace?id=bag-n_farfromshore2025set6fishbag&type=clothing
-      objectReference: {fileID: 0}
-    - target: {fileID: 573257481194849046, guid: 04adb2445b1bf4a1ba650aafd0a8e8c4,
-        type: 3}
-      propertyPath: m_linkurls.Array.data[5]
-      value: https://high.rs/marketplace?id=bag-n_farfromshore2025set7strawbag&type=clothing
-      objectReference: {fileID: 0}
-    - target: {fileID: 573257481194849046, guid: 04adb2445b1bf4a1ba650aafd0a8e8c4,
-        type: 3}
-      propertyPath: m_linkurls.Array.data[6]
-      value: https://high.rs/marketplace?id=handbag-n_blushbloom2025set1blueflowersbag&type=clothing
-      objectReference: {fileID: 0}
-    - target: {fileID: 573257481194849046, guid: 04adb2445b1bf4a1ba650aafd0a8e8c4,
-        type: 3}
-      propertyPath: m_linkurls.Array.data[7]
-      value: https://high.rs/marketplace?id=handbag-n_blushbloom2025set1bowarrow&type=clothing
-      objectReference: {fileID: 0}
-    - target: {fileID: 573257481194849046, guid: 04adb2445b1bf4a1ba650aafd0a8e8c4,
-        type: 3}
-      propertyPath: m_linkurls.Array.data[8]
-      value: https://high.rs/marketplace?id=hat-n_blushbloom2025set3clipbow&type=clothing
-      objectReference: {fileID: 0}
-    - target: {fileID: 573257481194849046, guid: 04adb2445b1bf4a1ba650aafd0a8e8c4,
-        type: 3}
-      propertyPath: m_linkurls.Array.data[9]
-      value: https://high.rs/marketplace?id=hat-n_farfromshore2025set6snakeglasses&type=clothing
-      objectReference: {fileID: 0}
-    - target: {fileID: 573257481194849046, guid: 04adb2445b1bf4a1ba650aafd0a8e8c4,
-        type: 3}
-      propertyPath: m_Textures.Array.data[10]
-      value: 
-      objectReference: {fileID: 2800000, guid: f2d9ba13769fe4a159647ae60fc63707, type: 3}
-    - target: {fileID: 573257481194849046, guid: 04adb2445b1bf4a1ba650aafd0a8e8c4,
-        type: 3}
-      propertyPath: m_Textures.Array.data[11]
-      value: 
-      objectReference: {fileID: 2800000, guid: cfdf1660e9b2c41a4afd8916cb9a820c, type: 3}
-    - target: {fileID: 573257481194849046, guid: 04adb2445b1bf4a1ba650aafd0a8e8c4,
-        type: 3}
-      propertyPath: m_Textures.Array.data[12]
-      value: 
-      objectReference: {fileID: 2800000, guid: 4937c96b9324a4721b278efd6bbfc7c4, type: 3}
-    - target: {fileID: 573257481194849046, guid: 04adb2445b1bf4a1ba650aafd0a8e8c4,
-        type: 3}
-      propertyPath: m_Textures.Array.data[13]
-      value: 
-      objectReference: {fileID: 2800000, guid: e6721cf84dc684587ad703b395d6768d, type: 3}
-    - target: {fileID: 573257481194849046, guid: 04adb2445b1bf4a1ba650aafd0a8e8c4,
-        type: 3}
-      propertyPath: m_Textures.Array.data[14]
-      value: 
-      objectReference: {fileID: 2800000, guid: a8945824020264a7191588b42e87c647, type: 3}
-    - target: {fileID: 573257481194849046, guid: 04adb2445b1bf4a1ba650aafd0a8e8c4,
-        type: 3}
-      propertyPath: m_linkurls.Array.data[10]
-      value: https://high.rs/marketplace?id=hat-n_guyrisetwoudceveparticreward2024achluophobiaalleyes&type=clothing
-      objectReference: {fileID: 0}
-    - target: {fileID: 573257481194849046, guid: 04adb2445b1bf4a1ba650aafd0a8e8c4,
-        type: 3}
-      propertyPath: m_linkurls.Array.data[11]
-      value: https://high.rs/marketplace?id=shoes-n_nekocats2025set1redmooncatheels&type=clothing
-      objectReference: {fileID: 0}
-    - target: {fileID: 573257481194849046, guid: 04adb2445b1bf4a1ba650aafd0a8e8c4,
-        type: 3}
-      propertyPath: m_linkurls.Array.data[12]
-      value: https://high.rs/marketplace?id=shoes-n_wildinstincts2025set1jaguarshoes&type=clothing
-      objectReference: {fileID: 0}
-    - target: {fileID: 573257481194849046, guid: 04adb2445b1bf4a1ba650aafd0a8e8c4,
-        type: 3}
-      propertyPath: m_linkurls.Array.data[13]
-      value: https://high.rs/marketplace?id=shoes-n_wildinstincts2025set2snakeprintheels&type=clothing
-      objectReference: {fileID: 0}
-    - target: {fileID: 573257481194849046, guid: 04adb2445b1bf4a1ba650aafd0a8e8c4,
-        type: 3}
-      propertyPath: m_linkurls.Array.data[14]
-      value: https://high.rs/marketplace?id=eye-n_artistsloungexvudcgrab2024papaprawnpleadingeyes&type=clothing
-      objectReference: {fileID: 0}
     - target: {fileID: 5966015026851350765, guid: 04adb2445b1bf4a1ba650aafd0a8e8c4,
         type: 3}
       propertyPath: m_Name
       value: MarketplaceItem
       objectReference: {fileID: 0}
-    - target: {fileID: 7347715180391326677, guid: 04adb2445b1bf4a1ba650aafd0a8e8c4,
-        type: 3}
-      propertyPath: m_LocalScale.x
-      value: 0.38574505
-      objectReference: {fileID: 0}
-    - target: {fileID: 7347715180391326677, guid: 04adb2445b1bf4a1ba650aafd0a8e8c4,
-        type: 3}
-      propertyPath: m_LocalScale.y
-      value: 0.38574505
-      objectReference: {fileID: 0}
-    - target: {fileID: 7347715180391326677, guid: 04adb2445b1bf4a1ba650aafd0a8e8c4,
-        type: 3}
-      propertyPath: m_LocalScale.z
-      value: 0.38574505
-      objectReference: {fileID: 0}
-    - target: {fileID: 7683140171347857638, guid: 04adb2445b1bf4a1ba650aafd0a8e8c4,
-        type: 3}
-      propertyPath: m_LocalScale.x
-      value: 0.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 7683140171347857638, guid: 04adb2445b1bf4a1ba650aafd0a8e8c4,
-        type: 3}
-      propertyPath: m_LocalScale.y
-      value: 0.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 7683140171347857638, guid: 04adb2445b1bf4a1ba650aafd0a8e8c4,
-        type: 3}
-      propertyPath: m_LocalScale.z
-      value: 0.5
-      objectReference: {fileID: 0}
     - target: {fileID: 7683140171347857638, guid: 04adb2445b1bf4a1ba650aafd0a8e8c4,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 1.8
+      value: -3.48
       objectReference: {fileID: 0}
     - target: {fileID: 7683140171347857638, guid: 04adb2445b1bf4a1ba650aafd0a8e8c4,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 1.72
+      value: 1.196
       objectReference: {fileID: 0}
     - target: {fileID: 7683140171347857638, guid: 04adb2445b1bf4a1ba650aafd0a8e8c4,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 1.4
+      value: -12.16
       objectReference: {fileID: 0}
     - target: {fileID: 7683140171347857638, guid: 04adb2445b1bf4a1ba650aafd0a8e8c4,
         type: 3}
       propertyPath: m_LocalRotation.w
-      value: 1
+      value: 0.9801705
       objectReference: {fileID: 0}
     - target: {fileID: 7683140171347857638, guid: 04adb2445b1bf4a1ba650aafd0a8e8c4,
         type: 3}
       propertyPath: m_LocalRotation.x
-      value: -0
+      value: -0.00000000842115
       objectReference: {fileID: 0}
     - target: {fileID: 7683140171347857638, guid: 04adb2445b1bf4a1ba650aafd0a8e8c4,
         type: 3}
       propertyPath: m_LocalRotation.y
-      value: -0
+      value: 0.19815627
       objectReference: {fileID: 0}
     - target: {fileID: 7683140171347857638, guid: 04adb2445b1bf4a1ba650aafd0a8e8c4,
         type: 3}
       propertyPath: m_LocalRotation.z
-      value: -0
+      value: -0.000000013099587
       objectReference: {fileID: 0}
     - target: {fileID: 7683140171347857638, guid: 04adb2445b1bf4a1ba650aafd0a8e8c4,
         type: 3}
@@ -635,7 +327,7 @@ PrefabInstance:
     - target: {fileID: 7683140171347857638, guid: 04adb2445b1bf4a1ba650aafd0a8e8c4,
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
+      value: 22.858
       objectReference: {fileID: 0}
     - target: {fileID: 7683140171347857638, guid: 04adb2445b1bf4a1ba650aafd0a8e8c4,
         type: 3}
@@ -668,64 +360,44 @@ PrefabInstance:
       objectReference: {fileID: 2100000, guid: 96caeca5f25fe457da7a6dd38dfd2fb0, type: 2}
     - target: {fileID: 573257481194849046, guid: 04adb2445b1bf4a1ba650aafd0a8e8c4,
         type: 3}
-      propertyPath: m_Textures.Array.size
-      value: 9
-      objectReference: {fileID: 0}
-    - target: {fileID: 573257481194849046, guid: 04adb2445b1bf4a1ba650aafd0a8e8c4,
-        type: 3}
-      propertyPath: m_linkurls.Array.size
-      value: 9
-      objectReference: {fileID: 0}
-    - target: {fileID: 573257481194849046, guid: 04adb2445b1bf4a1ba650aafd0a8e8c4,
-        type: 3}
       propertyPath: m_Textures.Array.data[0]
       value: 
-      objectReference: {fileID: 2800000, guid: 1264fe7ef201240a0a043da909ee2ba3, type: 3}
+      objectReference: {fileID: 2800000, guid: a77416c3a49574f149ad5f14acac8585, type: 3}
     - target: {fileID: 573257481194849046, guid: 04adb2445b1bf4a1ba650aafd0a8e8c4,
         type: 3}
       propertyPath: m_Textures.Array.data[1]
       value: 
-      objectReference: {fileID: 2800000, guid: 76dd4fb6d52de44f5ab0fee83cbfd72b, type: 3}
+      objectReference: {fileID: 2800000, guid: 87bbb98a78d5a4f598e6b93679ffe689, type: 3}
     - target: {fileID: 573257481194849046, guid: 04adb2445b1bf4a1ba650aafd0a8e8c4,
         type: 3}
       propertyPath: m_Textures.Array.data[2]
       value: 
-      objectReference: {fileID: 2800000, guid: eec1614ec78aa43328dd00a41fdc097e, type: 3}
+      objectReference: {fileID: 2800000, guid: 6e7af5ebcb3b44c6fbcd0919442bc3cd, type: 3}
     - target: {fileID: 573257481194849046, guid: 04adb2445b1bf4a1ba650aafd0a8e8c4,
         type: 3}
       propertyPath: m_Textures.Array.data[3]
       value: 
-      objectReference: {fileID: 2800000, guid: 13fa298ef57e346808237ce5508f2cea, type: 3}
+      objectReference: {fileID: 2800000, guid: ee774a67b70e848d484b391714d441c3, type: 3}
     - target: {fileID: 573257481194849046, guid: 04adb2445b1bf4a1ba650aafd0a8e8c4,
         type: 3}
       propertyPath: m_Textures.Array.data[4]
       value: 
-      objectReference: {fileID: 2800000, guid: 4dcff87fe2a184616a28cd869a116751, type: 3}
+      objectReference: {fileID: 2800000, guid: bd3d97911d8cb46d9b1d43da45c77200, type: 3}
     - target: {fileID: 573257481194849046, guid: 04adb2445b1bf4a1ba650aafd0a8e8c4,
         type: 3}
       propertyPath: m_Textures.Array.data[5]
       value: 
-      objectReference: {fileID: 2800000, guid: 70286aae9d8834ebc9a8b6fd6ffad69b, type: 3}
+      objectReference: {fileID: 2800000, guid: f975e0bfd008c4952a74b2dd24834ad8, type: 3}
     - target: {fileID: 573257481194849046, guid: 04adb2445b1bf4a1ba650aafd0a8e8c4,
         type: 3}
       propertyPath: m_Textures.Array.data[6]
       value: 
-      objectReference: {fileID: 2800000, guid: c11a6e32a8279432d855376d5d3c8c1e, type: 3}
+      objectReference: {fileID: 2800000, guid: 73b8fa5fbf9304bb49ddf2648a82c7ad, type: 3}
     - target: {fileID: 573257481194849046, guid: 04adb2445b1bf4a1ba650aafd0a8e8c4,
         type: 3}
       propertyPath: m_Textures.Array.data[7]
       value: 
-      objectReference: {fileID: 2800000, guid: cd14c4bc958e743edb88a40b5baf5c9a, type: 3}
-    - target: {fileID: 573257481194849046, guid: 04adb2445b1bf4a1ba650aafd0a8e8c4,
-        type: 3}
-      propertyPath: m_Textures.Array.data[8]
-      value: 
-      objectReference: {fileID: 2800000, guid: 22699562d63ad4382a536c4c5ccfb629, type: 3}
-    - target: {fileID: 573257481194849046, guid: 04adb2445b1bf4a1ba650aafd0a8e8c4,
-        type: 3}
-      propertyPath: m_Textures.Array.data[9]
-      value: 
-      objectReference: {fileID: 2800000, guid: b2fb062b2e6d7451f9471f5d42f94b9e, type: 3}
+      objectReference: {fileID: 2800000, guid: 80140f6ca05fb4490bd58ef5fca1a040, type: 3}
     - target: {fileID: 573257481194849046, guid: 04adb2445b1bf4a1ba650aafd0a8e8c4,
         type: 3}
       propertyPath: m_linkurls.Array.data[0]
@@ -749,142 +421,52 @@ PrefabInstance:
     - target: {fileID: 573257481194849046, guid: 04adb2445b1bf4a1ba650aafd0a8e8c4,
         type: 3}
       propertyPath: m_linkurls.Array.data[4]
-      value: https://high.rs/marketplace?id=shirt-n_farfromshore2025set4spaghettistrap&type=clothing
-      objectReference: {fileID: 0}
-    - target: {fileID: 573257481194849046, guid: 04adb2445b1bf4a1ba650aafd0a8e8c4,
-        type: 3}
-      propertyPath: m_linkurls.Array.data[5]
       value: https://high.rs/marketplace?id=shirt-n_blushbloom2025set2rosesshirt&type=clothing
       objectReference: {fileID: 0}
     - target: {fileID: 573257481194849046, guid: 04adb2445b1bf4a1ba650aafd0a8e8c4,
         type: 3}
+      propertyPath: m_linkurls.Array.data[5]
+      value: https://high.rs/marketplace?id=shirt-n_farfromshore2025set4spaghettistrap&type=clothing
+      objectReference: {fileID: 0}
+    - target: {fileID: 573257481194849046, guid: 04adb2445b1bf4a1ba650aafd0a8e8c4,
+        type: 3}
       propertyPath: m_linkurls.Array.data[6]
-      value: https://high.rs/marketplace?id=pants-n_gymbrat2025set4graypants&type=clothing
+      value: https://high.rs/marketplace?id=skirt-n_blushbloom2025set3skirtwhite&type=clothing
       objectReference: {fileID: 0}
     - target: {fileID: 573257481194849046, guid: 04adb2445b1bf4a1ba650aafd0a8e8c4,
         type: 3}
       propertyPath: m_linkurls.Array.data[7]
       value: https://high.rs/marketplace?id=pants-n_hrfashionweek2025set5patternshorts&type=clothing
       objectReference: {fileID: 0}
-    - target: {fileID: 573257481194849046, guid: 04adb2445b1bf4a1ba650aafd0a8e8c4,
+    - target: {fileID: 3560753704121071282, guid: 04adb2445b1bf4a1ba650aafd0a8e8c4,
         type: 3}
-      propertyPath: m_linkurls.Array.data[8]
-      value: https://high.rs/marketplace?id=skirt-n_blushbloom2025set3skirtwhite&type=clothing
-      objectReference: {fileID: 0}
-    - target: {fileID: 573257481194849046, guid: 04adb2445b1bf4a1ba650aafd0a8e8c4,
-        type: 3}
-      propertyPath: m_linkurls.Array.data[9]
-      value: https://high.rs/marketplace?id=hat-n_farfromshore2025set6snakeglasses&type=clothing
-      objectReference: {fileID: 0}
-    - target: {fileID: 573257481194849046, guid: 04adb2445b1bf4a1ba650aafd0a8e8c4,
-        type: 3}
-      propertyPath: m_Textures.Array.data[10]
+      propertyPath: m_Materials.Array.data[0]
       value: 
-      objectReference: {fileID: 2800000, guid: f2d9ba13769fe4a159647ae60fc63707, type: 3}
-    - target: {fileID: 573257481194849046, guid: 04adb2445b1bf4a1ba650aafd0a8e8c4,
-        type: 3}
-      propertyPath: m_Textures.Array.data[11]
-      value: 
-      objectReference: {fileID: 2800000, guid: cfdf1660e9b2c41a4afd8916cb9a820c, type: 3}
-    - target: {fileID: 573257481194849046, guid: 04adb2445b1bf4a1ba650aafd0a8e8c4,
-        type: 3}
-      propertyPath: m_Textures.Array.data[12]
-      value: 
-      objectReference: {fileID: 2800000, guid: 4937c96b9324a4721b278efd6bbfc7c4, type: 3}
-    - target: {fileID: 573257481194849046, guid: 04adb2445b1bf4a1ba650aafd0a8e8c4,
-        type: 3}
-      propertyPath: m_Textures.Array.data[13]
-      value: 
-      objectReference: {fileID: 2800000, guid: e6721cf84dc684587ad703b395d6768d, type: 3}
-    - target: {fileID: 573257481194849046, guid: 04adb2445b1bf4a1ba650aafd0a8e8c4,
-        type: 3}
-      propertyPath: m_Textures.Array.data[14]
-      value: 
-      objectReference: {fileID: 2800000, guid: a8945824020264a7191588b42e87c647, type: 3}
-    - target: {fileID: 573257481194849046, guid: 04adb2445b1bf4a1ba650aafd0a8e8c4,
-        type: 3}
-      propertyPath: m_linkurls.Array.data[10]
-      value: https://high.rs/marketplace?id=hat-n_guyrisetwoudceveparticreward2024achluophobiaalleyes&type=clothing
-      objectReference: {fileID: 0}
-    - target: {fileID: 573257481194849046, guid: 04adb2445b1bf4a1ba650aafd0a8e8c4,
-        type: 3}
-      propertyPath: m_linkurls.Array.data[11]
-      value: https://high.rs/marketplace?id=shoes-n_nekocats2025set1redmooncatheels&type=clothing
-      objectReference: {fileID: 0}
-    - target: {fileID: 573257481194849046, guid: 04adb2445b1bf4a1ba650aafd0a8e8c4,
-        type: 3}
-      propertyPath: m_linkurls.Array.data[12]
-      value: https://high.rs/marketplace?id=shoes-n_wildinstincts2025set1jaguarshoes&type=clothing
-      objectReference: {fileID: 0}
-    - target: {fileID: 573257481194849046, guid: 04adb2445b1bf4a1ba650aafd0a8e8c4,
-        type: 3}
-      propertyPath: m_linkurls.Array.data[13]
-      value: https://high.rs/marketplace?id=shoes-n_wildinstincts2025set2snakeprintheels&type=clothing
-      objectReference: {fileID: 0}
-    - target: {fileID: 573257481194849046, guid: 04adb2445b1bf4a1ba650aafd0a8e8c4,
-        type: 3}
-      propertyPath: m_linkurls.Array.data[14]
-      value: https://high.rs/marketplace?id=eye-n_artistsloungexvudcgrab2024papaprawnpleadingeyes&type=clothing
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 2100000, guid: 96caeca5f25fe457da7a6dd38dfd2fb0, type: 2}
     - target: {fileID: 5966015026851350765, guid: 04adb2445b1bf4a1ba650aafd0a8e8c4,
         type: 3}
       propertyPath: m_Name
       value: MarketplaceItem2
       objectReference: {fileID: 0}
-    - target: {fileID: 7347715180391326677, guid: 04adb2445b1bf4a1ba650aafd0a8e8c4,
-        type: 3}
-      propertyPath: m_LocalScale.x
-      value: 0.33191234
-      objectReference: {fileID: 0}
-    - target: {fileID: 7347715180391326677, guid: 04adb2445b1bf4a1ba650aafd0a8e8c4,
-        type: 3}
-      propertyPath: m_LocalScale.y
-      value: 0.33191234
-      objectReference: {fileID: 0}
-    - target: {fileID: 7347715180391326677, guid: 04adb2445b1bf4a1ba650aafd0a8e8c4,
-        type: 3}
-      propertyPath: m_LocalScale.z
-      value: 0.33191234
-      objectReference: {fileID: 0}
-    - target: {fileID: 7347715180391326677, guid: 04adb2445b1bf4a1ba650aafd0a8e8c4,
-        type: 3}
-      propertyPath: m_LocalPosition.y
-      value: -3.03
-      objectReference: {fileID: 0}
-    - target: {fileID: 7683140171347857638, guid: 04adb2445b1bf4a1ba650aafd0a8e8c4,
-        type: 3}
-      propertyPath: m_LocalScale.x
-      value: 0.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 7683140171347857638, guid: 04adb2445b1bf4a1ba650aafd0a8e8c4,
-        type: 3}
-      propertyPath: m_LocalScale.y
-      value: 0.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 7683140171347857638, guid: 04adb2445b1bf4a1ba650aafd0a8e8c4,
-        type: 3}
-      propertyPath: m_LocalScale.z
-      value: 0.5
-      objectReference: {fileID: 0}
     - target: {fileID: 7683140171347857638, guid: 04adb2445b1bf4a1ba650aafd0a8e8c4,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0.9
+      value: -10.84
       objectReference: {fileID: 0}
     - target: {fileID: 7683140171347857638, guid: 04adb2445b1bf4a1ba650aafd0a8e8c4,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 1.62
+      value: 1.28
       objectReference: {fileID: 0}
     - target: {fileID: 7683140171347857638, guid: 04adb2445b1bf4a1ba650aafd0a8e8c4,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: -2.2
+      value: -5.11
       objectReference: {fileID: 0}
     - target: {fileID: 7683140171347857638, guid: 04adb2445b1bf4a1ba650aafd0a8e8c4,
         type: 3}
       propertyPath: m_LocalRotation.w
-      value: 1
+      value: 0.9992185
       objectReference: {fileID: 0}
     - target: {fileID: 7683140171347857638, guid: 04adb2445b1bf4a1ba650aafd0a8e8c4,
         type: 3}
@@ -894,7 +476,7 @@ PrefabInstance:
     - target: {fileID: 7683140171347857638, guid: 04adb2445b1bf4a1ba650aafd0a8e8c4,
         type: 3}
       propertyPath: m_LocalRotation.y
-      value: -0
+      value: 0.039526943
       objectReference: {fileID: 0}
     - target: {fileID: 7683140171347857638, guid: 04adb2445b1bf4a1ba650aafd0a8e8c4,
         type: 3}
@@ -909,18 +491,13 @@ PrefabInstance:
     - target: {fileID: 7683140171347857638, guid: 04adb2445b1bf4a1ba650aafd0a8e8c4,
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
+      value: 4.531
       objectReference: {fileID: 0}
     - target: {fileID: 7683140171347857638, guid: 04adb2445b1bf4a1ba650aafd0a8e8c4,
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 8822646446734992482, guid: 04adb2445b1bf4a1ba650aafd0a8e8c4,
-        type: 3}
-      propertyPath: m_Materials.Array.data[0]
-      value: 
-      objectReference: {fileID: 2100000, guid: 96caeca5f25fe457da7a6dd38dfd2fb0, type: 2}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -940,6 +517,17 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1563280101362169692}
     m_Modifications:
+    - target: {fileID: 1130598014150007400, guid: c92c956e96bfbd34183a1425bfc0c451,
+        type: 3}
+      propertyPath: m_ReceiveGI
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1130598014150007400, guid: c92c956e96bfbd34183a1425bfc0c451,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: -1669226891171443964, guid: 91b06515d98b49049910776e910e7adf,
+        type: 3}
     - target: {fileID: 1490775689954327485, guid: c92c956e96bfbd34183a1425bfc0c451,
         type: 3}
       propertyPath: m_Name
@@ -948,37 +536,37 @@ PrefabInstance:
     - target: {fileID: 2304607415660945671, guid: c92c956e96bfbd34183a1425bfc0c451,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 1
+      value: -10.85
       objectReference: {fileID: 0}
     - target: {fileID: 2304607415660945671, guid: c92c956e96bfbd34183a1425bfc0c451,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: -1.5183476
+      value: -1.62
       objectReference: {fileID: 0}
     - target: {fileID: 2304607415660945671, guid: c92c956e96bfbd34183a1425bfc0c451,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: -2.2
+      value: -5.21
       objectReference: {fileID: 0}
     - target: {fileID: 2304607415660945671, guid: c92c956e96bfbd34183a1425bfc0c451,
         type: 3}
       propertyPath: m_LocalRotation.w
-      value: -1.8521535e-16
+      value: -0.73650014
       objectReference: {fileID: 0}
     - target: {fileID: 2304607415660945671, guid: c92c956e96bfbd34183a1425bfc0c451,
         type: 3}
       propertyPath: m_LocalRotation.x
-      value: 0.0000000024543114
+      value: 0.00000005724039
       objectReference: {fileID: 0}
     - target: {fileID: 2304607415660945671, guid: c92c956e96bfbd34183a1425bfc0c451,
         type: 3}
       propertyPath: m_LocalRotation.y
-      value: 1
+      value: 0.67643744
       objectReference: {fileID: 0}
     - target: {fileID: 2304607415660945671, guid: c92c956e96bfbd34183a1425bfc0c451,
         type: 3}
       propertyPath: m_LocalRotation.z
-      value: 0.0000000754653
+      value: 0.000000049240022
       objectReference: {fileID: 0}
     - target: {fileID: 2304607415660945671, guid: c92c956e96bfbd34183a1425bfc0c451,
         type: 3}
@@ -988,14 +576,15 @@ PrefabInstance:
     - target: {fileID: 2304607415660945671, guid: c92c956e96bfbd34183a1425bfc0c451,
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
+      value: 274.86798
       objectReference: {fileID: 0}
     - target: {fileID: 2304607415660945671, guid: c92c956e96bfbd34183a1425bfc0c451,
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 4005371915803029732, guid: c92c956e96bfbd34183a1425bfc0c451, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
