@@ -125,6 +125,7 @@ end
 function self:Awake()
     local eventStartTimes = Events_ScriptableObject.GetEventStartDates()
 
+    -- build start and end epochs
     _eventStartEpochs = {}
     _eventEndEpochs   = {}
     for i, startStr in ipairs(eventStartTimes) do

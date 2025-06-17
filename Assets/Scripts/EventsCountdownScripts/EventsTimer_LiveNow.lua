@@ -10,7 +10,6 @@ local Events_ScriptableObject : Events_ScriptableObject = nil
 -- Parsed lists
 local _eventStartEpochs  : table = {}
 local _eventEndEpochs    : table = {}
-local eventNames        : {string}  = {}
 
 -- Timer handle
 local updateTimer = nil
@@ -42,7 +41,7 @@ end
 local function updateHeader()
     local now = os.time()
     local nextUpdateIn = nil
-    local maxCount = math.min(#_eventStartEpochs, #_eventEndEpochs, #eventNames)
+    local maxCount = math.min(#_eventStartEpochs, #_eventEndEpochs)
 
     for i = 1, maxCount do
         local startEpoch = _eventStartEpochs[i]
@@ -73,8 +72,6 @@ local function updateHeader()
 end
 
 function self:Awake()
-    -- grab textures and start-times
-    eventNames     = Events_ScriptableObject.GetEventNames()
     local eventStartTimes = Events_ScriptableObject.GetEventStartDates()
 
     -- build start and end epochs

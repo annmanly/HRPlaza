@@ -63,6 +63,14 @@ local function UpdateEventTextureAndScheduleNext()
         end
     end
 
+    -- Fallback: Show first upcoming event HUD if we're in between events
+    if not foundEvent and now < eventStartEpochs[maxCount] then
+        Material.mainTexture = EventHuds[maxCount] -- Next upcoming
+        nextWait = eventStartEpochs[maxCount] - now
+        foundEvent = true
+    end
+
+    -- Optional: If absolutely nothing is valid, clear it
     if not foundEvent then
         Material.mainTexture = nil
     end
