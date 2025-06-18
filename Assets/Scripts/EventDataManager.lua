@@ -152,39 +152,6 @@ function self:ServerStart()
 
     GetDataFromStorage(UpdateEvent)
 
-    Timer.Every(2*5, function()  GetDataFromStorage() end)
+    Timer.Every(60*5, function()  GetDataFromStorage() end)
 
-    Timer.After(15, function() 
-    
-        testData = {
-        {
-        ["start"] = "2025-06-12 12:00:00",		
-        ["url"] = "https://cdn.highrisegame.com/default_EventHUD.png",	
-        },	
-        {	
-        ["start"] = "2025-06-19 12:00:00",		
-        ["url"] = "https://cdn.highrisegame.com/default_EventHUD.png",	
-        },		
-        }
-        
-        Storage.SetValue(EventDataKey, testData)
-    
-    end)
-
-    Timer.After(30, function() 
-    
-        testData = {
-        {
-        ["start"] = "2025-06-12 12:00:00",		
-        ["url"] = "https://cdn.highrisegame.com/default_EventHUD.png",	
-        },	
-        {	
-        ["start"] = "2025-06-19 12:00:00",		
-        ["url"] = "https://cdn.highrisegame.com/default_EventHUD.png",	
-        },		
-        }
-        
-        Storage.SetValue(EventDataKey, testData)
-    
-    end)
 end
