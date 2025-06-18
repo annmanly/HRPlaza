@@ -152,6 +152,6 @@ function self:ServerStart()
 
     GetDataFromStorage(UpdateEvent)
 
-    Timer.Every(2*5, function()  GetDataFromStorage() end)
+    Timer.Every(60*5, function()  GetDataFromStorage() end)
 
 end
