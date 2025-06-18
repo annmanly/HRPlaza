@@ -6,7 +6,7 @@ local updateTimer = nil
 
 local EVENTDURATION = (5 * 86400) -- 5 days
 
-defaultURL = "https://cdn.highrisegame.com/HRLiveEventBanners/WO_06_09_2025/01.png"
+defaultURL = "https://cdn.highrisegame.com/default_EventHUD.png"
 
 local currentURL =  defaultURL 
 local targetTime = nil
@@ -158,12 +158,12 @@ function self:ServerStart()
     
         testData = {
         {
-        ["start"] = "2025-06-19 12:00:00",		
-        ["url"] = "https://cdn.highrisegame.com/HRLiveEventBanners/WO_06_09_2025/03.png",	
+        ["start"] = "2025-06-12 12:00:00",		
+        ["url"] = "https://cdn.highrisegame.com/default_EventHUD.png",	
         },	
         {	
-        ["start"] = "2025-06-26 12:00:00",		
-        ["url"] = "https://cdn.highrisegame.com/HRLiveEventBanners/WO_06_09_2025/06.png",	
+        ["start"] = "2025-06-19 12:00:00",		
+        ["url"] = "https://cdn.highrisegame.com/default_EventHUD.png",	
         },		
         }
         
@@ -174,15 +174,14 @@ function self:ServerStart()
     Timer.After(30, function() 
     
         testData = {
-                    {	
-        ["start"] = "2025-06-15 12:00:00",		
-        ["url"] = "https://cdn.highrisegame.com/HRLiveEventBanners/WO_06_09_2025/06.png",	
-        },
         {
-        ["start"] = "2025-06-19 12:00:00",		
-        ["url"] = "https://cdn.highrisegame.com/HRLiveEventBanners/WO_06_09_2025/03.png",	
+        ["start"] = "2025-06-12 12:00:00",		
+        ["url"] = "https://cdn.highrisegame.com/default_EventHUD.png",	
         },	
-		
+        {	
+        ["start"] = "2025-06-19 12:00:00",		
+        ["url"] = "https://cdn.highrisegame.com/default_EventHUD.png",	
+        },		
         }
         
         Storage.SetValue(EventDataKey, testData)
