@@ -13,23 +13,8 @@ export type ClothingData = {
     color: number
 }
 
-function DeserializeClothingDataToOutfit(clothingDataList : {ClothingData}) : CharacterOutfit
-    local outfitIds = {}
-    for _, clothingData in ipairs(clothingDataList) do
-        table.insert(outfitIds, clothingData.id)
-    end
-    local outfit = DeserializeDataToOutfit(outfitIds)
-    for i = 1 , #outfit.clothing do
-        outfit.clothing[i].color = clothingDataList[i].color
-    end
-    return outfit
-end
 
-function DeserializeDataToOutfit(outfitIds : {string}) : CharacterOutfit
-    return CharacterOutfit.CreateInstance(outfitIds, nil)
-end
-
-function SerializeOutfitToData(outfit : CharacterOutfit) : {ClothingData}
+function SerializeOutfitToOutfitSaveData(outfit : CharacterOutfit)  : {ClothingData}
     local clothingList = {}
     for _, clothing in ipairs(outfit.clothing) do
         table.insert(clothingList, {id = clothing.id, color = clothing.color})
@@ -37,29 +22,30 @@ function SerializeOutfitToData(outfit : CharacterOutfit) : {ClothingData}
     return clothingList
 end
 
-function SerializeOutfitToOutfitSaveData(outfit : CharacterOutfit)
-    local clothingDataList = SerializeOutfitToData(outfit)
-    local saveData = {
-        Ids = {},
-        Colors = {}
-    }
-    for _, clothingData in ipairs(clothingDataList) do
-        saveData.Ids[#saveData.Ids + 1] = clothingData.id
-        saveData.Colors[#saveData.Colors + 1] = clothingData.color
-    end
-    return saveData
-end
 
 function DeserializeOutfitSaveDataToOutfit(saveData) : CharacterOutfit
-    local clothingDataList = {}
-    for i = 1, #saveData.Ids do
-        table.insert(clothingDataList, {id = saveData.Ids[i], color = saveData.Colors[i]})
+    local outfitIds = {}
+    local colors = {}
+    for _, clothingData in ipairs(saveData) do
+        table.insert(outfitIds, clothingData.id)
+        table.insert(colors, clothingData.color)
     end
-    return DeserializeClothingDataToOutfit(clothingDataList)
+    return DeserializeDataToOutfit(outfitIds, colors)
 end
 
+
+
+function DeserializeDataToOutfit(outfitIds : {string}, colors) : CharacterOutfit
+    outfit = CharacterOutfit.CreateInstance(outfitIds, nil)
+    for i = 1 , #outfit.clothing do
+        outfit.clothing[i].color = colors[i]
+    end
+    return outfit
+end
+
+
 function equipOutfit(data)
-    print(`CLIENT RECEIVED OUTFIT {data.Ids[2]}`)
+    print(`CLIENT RECEIVED OUTFIT {data[2].id}`)
     character = self.gameObject:GetComponent(Character)
     if character then 
         newOutfit = DeserializeOutfitSaveDataToOutfit(data)
@@ -136,7 +122,7 @@ function GetDataFromStorage(callback)
         if data ~= nil then 
             if data ~= OutfitData and callback == nil then callback = GetCurrentOutfit end
             OutfitData = data
-            print(`[OUTFIT DATA] {npcName} LOADED {#OutfitData} GRABS`)
+            print(`[OUTFIT DATA] {npcName} LOADED {#OutfitData} OUTFITS`)
         else
             print("[OUTFIT DATA] No data in storage, setting default.")
         end
@@ -170,7 +156,7 @@ function GetCurrentOutfit()
             currentOutfit = OutfitData[i].outfit
             nextWait = endEpoch - now
             activeOutfit = true
-            print(`UPDATING OUTFIT {npcName} {tostring(activeOutfit)} {currentOutfit.Ids[2]}`)
+            print(`UPDATING OUTFIT {npcName} {tostring(activeOutfit)} {currentOutfit[2].id}`)
             OutfitDataResponse:FireAllClients(currentOutfit)
             break
         end
