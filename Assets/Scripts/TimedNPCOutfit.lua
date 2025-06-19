@@ -190,19 +190,19 @@ end
 
 function self:ServerAwake()
     GetDataFromStorage(GetCurrentOutfit)
+
+    Timer.Every(60*5, function()  GetDataFromStorage() end)
+
     RequestOutfitData:Connect(function(player) 
-        print(`Received outfit data request active: {activeOutfit}`)
         if #OutfitData == 0 then
-            print("Requesting default outfit data")
             GetDefaultOutfit:FireClient(player)
         end
         if activeOutfit then 
-            print("Sending current outfit")
             OutfitDataResponse:FireClient(player, currentOutfit)
         end
     end)
     SetDefaultOutfit:Connect(function(player, outfitdata)
-        print("setting new default data")
+        print(`{npcName} setting new default data in storage`)
         Storage.SetValue(npcName, outfitdata)
     end)
 end
