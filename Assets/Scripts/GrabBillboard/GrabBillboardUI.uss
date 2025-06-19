@@ -1,0 +1,25 @@
+.grab-billboard {
+    background-color:#787878;
+    width:500px;
+    height:800px;
+    flex-direction:row;
+    justify-content:middle;
+        flex-direction:column;
+    align-items:middle;
+
+}
+
+#grabImageContainer {
+    width:100%;
+    height:100%;
+    overflow:hidden;
+    align-items:center;
+
+
+}
+
+#imageDisplay {
+    align-self:center;
+    position:absolute;
+    width:500px;
+}
