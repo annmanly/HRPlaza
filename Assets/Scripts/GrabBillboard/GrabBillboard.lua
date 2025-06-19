@@ -142,6 +142,11 @@ function CheckActiveGrab()
         local startEpoch = parseETDateTime(datestring) 
 
         local endEpoch = startEpoch + GRABDURATION
+        if now < startEpoch then
+            nextWait = startEpoch - now
+            isActive = false
+            break
+        end
         if now >= startEpoch and now < endEpoch then
             currentImageURL = GrabData[i].image
             currentDeepLinkURL = GrabData[i].deeplink
