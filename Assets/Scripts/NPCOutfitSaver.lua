@@ -10,14 +10,15 @@ local outfits:{CharacterOutfit} = {}
 local RequestOutfitSave = Event.new(npcName .. "SaveOutfit")
 
 export type ClothingData = {
-    id: string,
-    color: number
+    Id: string,
+    Color: number
 }
+
 
 function SerializeOutfitToOutfitSaveData(outfit : CharacterOutfit)  : {ClothingData}
     local clothingList = {}
     for _, clothing in ipairs(outfit.clothing) do
-        table.insert(clothingList, {id = clothing.id, color = clothing.color})
+        table.insert(clothingList, {Id = clothing.id, Color = clothing.color})
     end
     return clothingList
 end
@@ -27,8 +28,8 @@ function DeserializeOutfitSaveDataToOutfit(saveData) : CharacterOutfit
     local outfitIds = {}
     local colors = {}
     for _, clothingData in ipairs(saveData) do
-        table.insert(outfitIds, clothingData.id)
-        table.insert(colors, clothingData.color)
+        table.insert(outfitIds, clothingData.Id)
+        table.insert(colors, clothingData.Color)
     end
     return DeserializeDataToOutfit(outfitIds, colors)
 end
@@ -67,7 +68,7 @@ end
 
 function self:ServerAwake()
     RequestOutfitSave:Connect(function(player, data) 
-        Storage.SetValue(npcName, data)
+        Storage.SetValue(npcName, data) 
     
     end)
 end

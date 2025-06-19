@@ -135,7 +135,7 @@ function CheckActiveGrab()
     local now = os.time()
     local maxCount = #GrabData
     local nextWait = nil
-    local isActive = false
+    isActive = false
 
     for i=1,#GrabData do
         local datestring = GrabData[i].start

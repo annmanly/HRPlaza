@@ -2,6 +2,8 @@
 --!SerializeField
 local npcName:string = "TestNPC"
 --!SerializeField
+local emoteId:string = "emote-wave"
+--!SerializeField
 local outfitDuration:number = 1209600 -- 14 days
 
 local RequestOutfitData = Event.new(npcName .. "RequestOutfitData")
@@ -9,15 +11,15 @@ local OutfitDataResponse = Event.new(npcName .. "OutfitDataResponse")
 local GetDefaultOutfit = Event.new(npcName .. "GetDefaultOutfit")
 local SetDefaultOutfit = Event.new(npcName .. "SetDefaultOutfit")
 export type ClothingData = {
-    id: string,
-    color: number
+    Id: string,
+    Color: number
 }
 
 
 function SerializeOutfitToOutfitSaveData(outfit : CharacterOutfit)  : {ClothingData}
     local clothingList = {}
     for _, clothing in ipairs(outfit.clothing) do
-        table.insert(clothingList, {id = clothing.id, color = clothing.color})
+        table.insert(clothingList, {Id = clothing.id, Color = clothing.color})
     end
     return clothingList
 end
@@ -27,8 +29,8 @@ function DeserializeOutfitSaveDataToOutfit(saveData) : CharacterOutfit
     local outfitIds = {}
     local colors = {}
     for _, clothingData in ipairs(saveData) do
-        table.insert(outfitIds, clothingData.id)
-        table.insert(colors, clothingData.color)
+        table.insert(outfitIds, clothingData.Id)
+        table.insert(colors, clothingData.Color)
     end
     return DeserializeDataToOutfit(outfitIds, colors)
 end
@@ -45,11 +47,12 @@ end
 
 
 function equipOutfit(data)
-    print(`CLIENT RECEIVED OUTFIT {data[2].id}`)
+    print(`CLIENT RECEIVED OUTFIT {data[2].Id}`)
     character = self.gameObject:GetComponent(Character)
     if character then 
         newOutfit = DeserializeOutfitSaveDataToOutfit(data)
         character:SetOutfit(newOutfit)
+        character:PlayEmote(emoteId, true)
     end
 end
 
@@ -69,7 +72,15 @@ function self:ClientAwake()
     RequestOutfitData:FireServer()
     OutfitDataResponse:Connect(equipOutfit)
     GetDefaultOutfit:Connect(SendDefaultFit)
+
+    character = self.gameObject:GetComponent(Character)
+    if not character then
+        print("No Character component found on " .. self.gameObject.name)
+        return
+    end
+   character:PlayEmote(emoteId, true)
 end
+
 -- [[ SERVER ]]
 local currentOutfit = {}
 local currentStartTime = ""
@@ -141,7 +152,7 @@ function GetCurrentOutfit()
     local now = os.time()
     local maxCount = #OutfitData
     local nextWait = nil
-
+    activeOutfit = false
     for i=1,#OutfitData do
         local datestring = OutfitData[i].start
         local startEpoch = parseETDateTime(datestring) 
@@ -149,14 +160,14 @@ function GetCurrentOutfit()
         local endEpoch = startEpoch + outfitDuration
         if now < startEpoch then
             nextWait = startEpoch - now
-            isActive = false
+            activeOutfit = false
             break
         end
         if now >= startEpoch and now < endEpoch then
             currentOutfit = OutfitData[i].outfit
             nextWait = endEpoch - now
             activeOutfit = true
-            print(`UPDATING OUTFIT {npcName} {tostring(activeOutfit)} {currentOutfit[2].id}`)
+            print(`UPDATING OUTFIT {npcName} {tostring(activeOutfit)} {currentOutfit[2].Id}`)
             OutfitDataResponse:FireAllClients(currentOutfit)
             break
         end
@@ -180,6 +191,7 @@ function self:ServerAwake()
     Timer.Every(60*5, function()  GetDataFromStorage() end)
 
     RequestOutfitData:Connect(function(player) 
+        print(`new client. current status: {activeOutfit}`)
         if #OutfitData == 0 then
             GetDefaultOutfit:FireClient(player)
         end
