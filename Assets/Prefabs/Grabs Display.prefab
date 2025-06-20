@@ -1,0 +1,613 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &7735859437238278372
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2232493197506246047}
+  m_Layer: 0
+  m_Name: Grabs Display
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2232493197506246047
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7735859437238278372}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 30.751959, y: 2.024931, z: -7.4627094}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 350866585270640951}
+  - {fileID: 212681265039182755}
+  - {fileID: 4042377580244731288}
+  - {fileID: 7492269531468644275}
+  - {fileID: 6267025261797318060}
+  - {fileID: 1765932743012124234}
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1001 &257997010219619979
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 2232493197506246047}
+    m_Modifications:
+    - target: {fileID: 716585044293014326, guid: 9b540d656cf3a8f4696704ddc5b77df2,
+        type: 3}
+      propertyPath: m_Name
+      value: CyclingGrab03
+      objectReference: {fileID: 0}
+    - target: {fileID: 860191111258970601, guid: 9b540d656cf3a8f4696704ddc5b77df2,
+        type: 3}
+      propertyPath: m_storageKey
+      value: Grab_03
+      objectReference: {fileID: 0}
+    - target: {fileID: 860191111258970601, guid: 9b540d656cf3a8f4696704ddc5b77df2,
+        type: 3}
+      propertyPath: m_defaultLinkURL
+      value: https://high.rs/shop?type=gacha&id=683332374b6b35ccdd4c02aa
+      objectReference: {fileID: 0}
+    - target: {fileID: 860191111258970601, guid: 9b540d656cf3a8f4696704ddc5b77df2,
+        type: 3}
+      propertyPath: m_defaultImageURL
+      value: https://cdn.highrisegame.com/Grab03Billboard.png
+      objectReference: {fileID: 0}
+    - target: {fileID: 860191111258970601, guid: 9b540d656cf3a8f4696704ddc5b77df2,
+        type: 3}
+      propertyPath: m_defaultStartDate
+      value: 2025-06-03 12:00:00
+      objectReference: {fileID: 0}
+    - target: {fileID: 6155405482964339495, guid: 9b540d656cf3a8f4696704ddc5b77df2,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 1.6229553
+      objectReference: {fileID: 0}
+    - target: {fileID: 6155405482964339495, guid: 9b540d656cf3a8f4696704ddc5b77df2,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.50548935
+      objectReference: {fileID: 0}
+    - target: {fileID: 6155405482964339495, guid: 9b540d656cf3a8f4696704ddc5b77df2,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 1.7514992
+      objectReference: {fileID: 0}
+    - target: {fileID: 6155405482964339495, guid: 9b540d656cf3a8f4696704ddc5b77df2,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.7631073
+      objectReference: {fileID: 0}
+    - target: {fileID: 6155405482964339495, guid: 9b540d656cf3a8f4696704ddc5b77df2,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6155405482964339495, guid: 9b540d656cf3a8f4696704ddc5b77df2,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0.6462718
+      objectReference: {fileID: 0}
+    - target: {fileID: 6155405482964339495, guid: 9b540d656cf3a8f4696704ddc5b77df2,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6155405482964339495, guid: 9b540d656cf3a8f4696704ddc5b77df2,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6155405482964339495, guid: 9b540d656cf3a8f4696704ddc5b77df2,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6155405482964339495, guid: 9b540d656cf3a8f4696704ddc5b77df2,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 9b540d656cf3a8f4696704ddc5b77df2, type: 3}
+--- !u!4 &6267025261797318060 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 6155405482964339495, guid: 9b540d656cf3a8f4696704ddc5b77df2,
+    type: 3}
+  m_PrefabInstance: {fileID: 257997010219619979}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &1809823919802812862
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 2232493197506246047}
+    m_Modifications:
+    - target: {fileID: 2144643647168473225, guid: 9427d51bb87876d439407e22424062b4,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -0.40000153
+      objectReference: {fileID: 0}
+    - target: {fileID: 2144643647168473225, guid: 9427d51bb87876d439407e22424062b4,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -1.973124
+      objectReference: {fileID: 0}
+    - target: {fileID: 2144643647168473225, guid: 9427d51bb87876d439407e22424062b4,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 2.4400008
+      objectReference: {fileID: 0}
+    - target: {fileID: 2144643647168473225, guid: 9427d51bb87876d439407e22424062b4,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.70026743
+      objectReference: {fileID: 0}
+    - target: {fileID: 2144643647168473225, guid: 9427d51bb87876d439407e22424062b4,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2144643647168473225, guid: 9427d51bb87876d439407e22424062b4,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0.7138807
+      objectReference: {fileID: 0}
+    - target: {fileID: 2144643647168473225, guid: 9427d51bb87876d439407e22424062b4,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2144643647168473225, guid: 9427d51bb87876d439407e22424062b4,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2144643647168473225, guid: 9427d51bb87876d439407e22424062b4,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 180
+      objectReference: {fileID: 0}
+    - target: {fileID: 2144643647168473225, guid: 9427d51bb87876d439407e22424062b4,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5563940243870499900, guid: 9427d51bb87876d439407e22424062b4,
+        type: 3}
+      propertyPath: m_emoteId
+      value: idle-posh
+      objectReference: {fileID: 0}
+    - target: {fileID: 5563940243870499900, guid: 9427d51bb87876d439407e22424062b4,
+        type: 3}
+      propertyPath: m_npcName
+      value: GrabNPCLeft
+      objectReference: {fileID: 0}
+    - target: {fileID: 7038687999645591774, guid: 9427d51bb87876d439407e22424062b4,
+        type: 3}
+      propertyPath: m_Name
+      value: Grab NPC Left
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 9427d51bb87876d439407e22424062b4, type: 3}
+--- !u!4 &350866585270640951 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 2144643647168473225, guid: 9427d51bb87876d439407e22424062b4,
+    type: 3}
+  m_PrefabInstance: {fileID: 1809823919802812862}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &2247532003774489386
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 2232493197506246047}
+    m_Modifications:
+    - target: {fileID: 2144643647168473225, guid: 9427d51bb87876d439407e22424062b4,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 2144643647168473225, guid: 9427d51bb87876d439407e22424062b4,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -2.3804202
+      objectReference: {fileID: 0}
+    - target: {fileID: 2144643647168473225, guid: 9427d51bb87876d439407e22424062b4,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -3.03
+      objectReference: {fileID: 0}
+    - target: {fileID: 2144643647168473225, guid: 9427d51bb87876d439407e22424062b4,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.700267
+      objectReference: {fileID: 0}
+    - target: {fileID: 2144643647168473225, guid: 9427d51bb87876d439407e22424062b4,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2144643647168473225, guid: 9427d51bb87876d439407e22424062b4,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0.7138811
+      objectReference: {fileID: 0}
+    - target: {fileID: 2144643647168473225, guid: 9427d51bb87876d439407e22424062b4,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2144643647168473225, guid: 9427d51bb87876d439407e22424062b4,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2144643647168473225, guid: 9427d51bb87876d439407e22424062b4,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 180
+      objectReference: {fileID: 0}
+    - target: {fileID: 2144643647168473225, guid: 9427d51bb87876d439407e22424062b4,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5563940243870499900, guid: 9427d51bb87876d439407e22424062b4,
+        type: 3}
+      propertyPath: m_emoteId
+      value: idle-hero
+      objectReference: {fileID: 0}
+    - target: {fileID: 5563940243870499900, guid: 9427d51bb87876d439407e22424062b4,
+        type: 3}
+      propertyPath: m_npcName
+      value: GrabNPCRight
+      objectReference: {fileID: 0}
+    - target: {fileID: 7038687999645591774, guid: 9427d51bb87876d439407e22424062b4,
+        type: 3}
+      propertyPath: m_Name
+      value: Grab NPC Right
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 9427d51bb87876d439407e22424062b4, type: 3}
+--- !u!4 &212681265039182755 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 2144643647168473225, guid: 9427d51bb87876d439407e22424062b4,
+    type: 3}
+  m_PrefabInstance: {fileID: 2247532003774489386}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &3644968860915823764
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 2232493197506246047}
+    m_Modifications:
+    - target: {fileID: 716585044293014326, guid: 9b540d656cf3a8f4696704ddc5b77df2,
+        type: 3}
+      propertyPath: m_Name
+      value: CyclingGrab02
+      objectReference: {fileID: 0}
+    - target: {fileID: 860191111258970601, guid: 9b540d656cf3a8f4696704ddc5b77df2,
+        type: 3}
+      propertyPath: m_storageKey
+      value: Grab_02
+      objectReference: {fileID: 0}
+    - target: {fileID: 860191111258970601, guid: 9b540d656cf3a8f4696704ddc5b77df2,
+        type: 3}
+      propertyPath: m_defaultLinkURL
+      value: https://high.rs/shop?type=gacha&id=6825b2cefb9501e985755209
+      objectReference: {fileID: 0}
+    - target: {fileID: 860191111258970601, guid: 9b540d656cf3a8f4696704ddc5b77df2,
+        type: 3}
+      propertyPath: m_defaultImageURL
+      value: https://cdn.highrisegame.com/Grab02Billboard.png
+      objectReference: {fileID: 0}
+    - target: {fileID: 860191111258970601, guid: 9b540d656cf3a8f4696704ddc5b77df2,
+        type: 3}
+      propertyPath: m_defaultStartDate
+      value: 2025-06-24 12:00:00
+      objectReference: {fileID: 0}
+    - target: {fileID: 6155405482964339495, guid: 9b540d656cf3a8f4696704ddc5b77df2,
+        type: 3}
+      propertyPath: m_LocalScale.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6155405482964339495, guid: 9b540d656cf3a8f4696704ddc5b77df2,
+        type: 3}
+      propertyPath: m_LocalScale.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6155405482964339495, guid: 9b540d656cf3a8f4696704ddc5b77df2,
+        type: 3}
+      propertyPath: m_LocalScale.z
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6155405482964339495, guid: 9b540d656cf3a8f4696704ddc5b77df2,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 1.7118301
+      objectReference: {fileID: 0}
+    - target: {fileID: 6155405482964339495, guid: 9b540d656cf3a8f4696704ddc5b77df2,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.50548935
+      objectReference: {fileID: 0}
+    - target: {fileID: 6155405482964339495, guid: 9b540d656cf3a8f4696704ddc5b77df2,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -1.0278435
+      objectReference: {fileID: 0}
+    - target: {fileID: 6155405482964339495, guid: 9b540d656cf3a8f4696704ddc5b77df2,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.7263566
+      objectReference: {fileID: 0}
+    - target: {fileID: 6155405482964339495, guid: 9b540d656cf3a8f4696704ddc5b77df2,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6155405482964339495, guid: 9b540d656cf3a8f4696704ddc5b77df2,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0.6873181
+      objectReference: {fileID: 0}
+    - target: {fileID: 6155405482964339495, guid: 9b540d656cf3a8f4696704ddc5b77df2,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6155405482964339495, guid: 9b540d656cf3a8f4696704ddc5b77df2,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6155405482964339495, guid: 9b540d656cf3a8f4696704ddc5b77df2,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6155405482964339495, guid: 9b540d656cf3a8f4696704ddc5b77df2,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 9b540d656cf3a8f4696704ddc5b77df2, type: 3}
+--- !u!4 &7492269531468644275 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 6155405482964339495, guid: 9b540d656cf3a8f4696704ddc5b77df2,
+    type: 3}
+  m_PrefabInstance: {fileID: 3644968860915823764}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &5615354135540714861
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 2232493197506246047}
+    m_Modifications:
+    - target: {fileID: 716585044293014326, guid: 9b540d656cf3a8f4696704ddc5b77df2,
+        type: 3}
+      propertyPath: m_Name
+      value: CyclingGrab04
+      objectReference: {fileID: 0}
+    - target: {fileID: 860191111258970601, guid: 9b540d656cf3a8f4696704ddc5b77df2,
+        type: 3}
+      propertyPath: m_storageKey
+      value: Grab_04
+      objectReference: {fileID: 0}
+    - target: {fileID: 860191111258970601, guid: 9b540d656cf3a8f4696704ddc5b77df2,
+        type: 3}
+      propertyPath: m_defaultLinkURL
+      value: https://high.rs/shop?type=gacha&id=683bf88307a9951fb1c6dd6b
+      objectReference: {fileID: 0}
+    - target: {fileID: 860191111258970601, guid: 9b540d656cf3a8f4696704ddc5b77df2,
+        type: 3}
+      propertyPath: m_defaultImageURL
+      value: https://cdn.highrisegame.com/Grab04Billboard.png
+      objectReference: {fileID: 0}
+    - target: {fileID: 860191111258970601, guid: 9b540d656cf3a8f4696704ddc5b77df2,
+        type: 3}
+      propertyPath: m_defaultStartDate
+      value: 2025-06-10 12:00:00
+      objectReference: {fileID: 0}
+    - target: {fileID: 6155405482964339495, guid: 9b540d656cf3a8f4696704ddc5b77df2,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 1.7118301
+      objectReference: {fileID: 0}
+    - target: {fileID: 6155405482964339495, guid: 9b540d656cf3a8f4696704ddc5b77df2,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.50548935
+      objectReference: {fileID: 0}
+    - target: {fileID: 6155405482964339495, guid: 9b540d656cf3a8f4696704ddc5b77df2,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -1.0278435
+      objectReference: {fileID: 0}
+    - target: {fileID: 6155405482964339495, guid: 9b540d656cf3a8f4696704ddc5b77df2,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.7263566
+      objectReference: {fileID: 0}
+    - target: {fileID: 6155405482964339495, guid: 9b540d656cf3a8f4696704ddc5b77df2,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6155405482964339495, guid: 9b540d656cf3a8f4696704ddc5b77df2,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0.6873181
+      objectReference: {fileID: 0}
+    - target: {fileID: 6155405482964339495, guid: 9b540d656cf3a8f4696704ddc5b77df2,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6155405482964339495, guid: 9b540d656cf3a8f4696704ddc5b77df2,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6155405482964339495, guid: 9b540d656cf3a8f4696704ddc5b77df2,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6155405482964339495, guid: 9b540d656cf3a8f4696704ddc5b77df2,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 9b540d656cf3a8f4696704ddc5b77df2, type: 3}
+--- !u!4 &1765932743012124234 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 6155405482964339495, guid: 9b540d656cf3a8f4696704ddc5b77df2,
+    type: 3}
+  m_PrefabInstance: {fileID: 5615354135540714861}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &7887223866234851007
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 2232493197506246047}
+    m_Modifications:
+    - target: {fileID: 716585044293014326, guid: 9b540d656cf3a8f4696704ddc5b77df2,
+        type: 3}
+      propertyPath: m_Name
+      value: CyclingGrab01
+      objectReference: {fileID: 0}
+    - target: {fileID: 860191111258970601, guid: 9b540d656cf3a8f4696704ddc5b77df2,
+        type: 3}
+      propertyPath: m_storageKey
+      value: Grab_01
+      objectReference: {fileID: 0}
+    - target: {fileID: 860191111258970601, guid: 9b540d656cf3a8f4696704ddc5b77df2,
+        type: 3}
+      propertyPath: m_defaultLinkURL
+      value: https://high.rs/shop?type=gacha&id=6845b9137444166981f0be1f
+      objectReference: {fileID: 0}
+    - target: {fileID: 860191111258970601, guid: 9b540d656cf3a8f4696704ddc5b77df2,
+        type: 3}
+      propertyPath: m_defaultImageURL
+      value: https://cdn.highrisegame.com/Grab01Billboard.png
+      objectReference: {fileID: 0}
+    - target: {fileID: 860191111258970601, guid: 9b540d656cf3a8f4696704ddc5b77df2,
+        type: 3}
+      propertyPath: m_defaultStartDate
+      value: 2025-06-17 12:00:00
+      objectReference: {fileID: 0}
+    - target: {fileID: 6155405482964339495, guid: 9b540d656cf3a8f4696704ddc5b77df2,
+        type: 3}
+      propertyPath: m_LocalScale.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6155405482964339495, guid: 9b540d656cf3a8f4696704ddc5b77df2,
+        type: 3}
+      propertyPath: m_LocalScale.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6155405482964339495, guid: 9b540d656cf3a8f4696704ddc5b77df2,
+        type: 3}
+      propertyPath: m_LocalScale.z
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6155405482964339495, guid: 9b540d656cf3a8f4696704ddc5b77df2,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 1.6229553
+      objectReference: {fileID: 0}
+    - target: {fileID: 6155405482964339495, guid: 9b540d656cf3a8f4696704ddc5b77df2,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.50548935
+      objectReference: {fileID: 0}
+    - target: {fileID: 6155405482964339495, guid: 9b540d656cf3a8f4696704ddc5b77df2,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 1.7514992
+      objectReference: {fileID: 0}
+    - target: {fileID: 6155405482964339495, guid: 9b540d656cf3a8f4696704ddc5b77df2,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.7631073
+      objectReference: {fileID: 0}
+    - target: {fileID: 6155405482964339495, guid: 9b540d656cf3a8f4696704ddc5b77df2,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6155405482964339495, guid: 9b540d656cf3a8f4696704ddc5b77df2,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0.6462718
+      objectReference: {fileID: 0}
+    - target: {fileID: 6155405482964339495, guid: 9b540d656cf3a8f4696704ddc5b77df2,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6155405482964339495, guid: 9b540d656cf3a8f4696704ddc5b77df2,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6155405482964339495, guid: 9b540d656cf3a8f4696704ddc5b77df2,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6155405482964339495, guid: 9b540d656cf3a8f4696704ddc5b77df2,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 9b540d656cf3a8f4696704ddc5b77df2, type: 3}
+--- !u!4 &4042377580244731288 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 6155405482964339495, guid: 9b540d656cf3a8f4696704ddc5b77df2,
+    type: 3}
+  m_PrefabInstance: {fileID: 7887223866234851007}
+  m_PrefabAsset: {fileID: 0}
