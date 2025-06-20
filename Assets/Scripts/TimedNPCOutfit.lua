@@ -47,7 +47,7 @@ end
 
 
 function equipOutfit(data)
-    print(`CLIENT RECEIVED OUTFIT {data[2].Id}`)
+    -- print(`CLIENT RECEIVED OUTFIT {data[2].Id}`)
     character = self.gameObject:GetComponent(Character)
     if character then 
         newOutfit = DeserializeOutfitSaveDataToOutfit(data)
@@ -191,7 +191,7 @@ function self:ServerAwake()
     Timer.Every(60*5, function()  GetDataFromStorage() end)
 
     RequestOutfitData:Connect(function(player) 
-        print(`new client. current status: {activeOutfit}`)
+        -- print(`new client. current status: {activeOutfit}`)
         if #OutfitData == 0 then
             GetDefaultOutfit:FireClient(player)
         end
