@@ -250,7 +250,6 @@ function SelectWinners()
 
     print("[RAFFLE] WINNERS SELECTED: " .. table.concat(winnerNames, ", "))
     AddWinnersToStorage(winners, yesterday, uniquePlayerCount)
-    -- DisplayWinners(winnerNames)
     CheckWinnersInRoom()
 end
 
@@ -262,25 +261,6 @@ function CheckIfRewardReady(player)
     end)
 end
 
-function DisplayWinners(winnerNames)
-    if #winnerNames > 0 then 
-        playersInRoom = server.players
-        for i, player in playersInRoom do
-            if not player.isDestroyed then
-
-                isWinner = false
-                for i, name in winnerNames do
-                    if player.name == name then
-                        isWinner = true
-                    end
-                end
-                if not isWinner then
-                    UIRaffleDrawingEvent:FireClient(player)
-                end
-            end
-        end
-    end
-end
 
 function CheckWinnersInRoom()
     playersInRoom = server.players
@@ -295,29 +275,28 @@ function CheckWinnersInRoom()
 end
 
 function OnClaimBoxRequest(player)
-    if not player.isDestroyed then
-        
-         Storage.GetPlayerValue(player, "RewardReady", function(value, err) 
-            if value == true then
-                print(`AWARDING BOX`)
-                GivePrizeCurrency(player)
-            end
-        end)
-    end
+    Storage.GetPlayerValue(player, "RewardReady", function(value, err) 
+        if value == true then
+            print(`AWARDING BOX`)
+            GivePrizeCurrency(player)
+        end
+    end)
 end
 
 function DisplayWinnerPopUp(player)
-    if not player.isDestroyed then
+    -- if not player.isDisconnected then 
         UIRaffleWinnerEvent:FireClient(player) -- display notif
-    end
+    -- end
+
 end
+
 function GivePrizeCurrency(player)
-    if not player.isDestroyed then
-        Storage.SetPlayerValue(player, "RewardReady", false)
-        RewardEvent:FireClient(player)
-        print(`[RAFFLE] PLACEHOLDER AWARD PRIZE CURRENCY TO {player.name}`)
-        ServerPrankModule.GiveItemsToPlayer(player)
-    end
+    -- if not player.isDisconnected then 
+    Storage.SetPlayerValue(player, "RewardReady", false)
+    RewardEvent:FireClient(player)
+    print(`[RAFFLE] PLACEHOLDER AWARD PRIZE CURRENCY TO {player.name}`)
+    ServerPrankModule.GiveItemsToPlayer(player)
+    -- end
 end
 
 

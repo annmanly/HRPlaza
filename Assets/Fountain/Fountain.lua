@@ -148,17 +148,17 @@ end
 function EmitReward(winningPlayer)
 
     for name, player in playersInRange do
-
         if player ~= nil then
-            if not player.isDestroyed then
-                if player == winningPlayer then
-                    
-                    TransferGold(player, winnerGoldAmount)
-                else
-                TransferGold(player, 1)
+            -- print(`{name}: DISCONNECTED {tostring(player.isDisconnected)} | Is {winningPlayer.name} - {tostring(player == winningPlayer)}`)
 
-                GiveSingleCoinEvent:FireAllClients(player)
-                end
+            if player == winningPlayer then
+                
+                TransferGold(player, winnerGoldAmount)
+            else
+            TransferGold(player, 1)
+
+            
+            
             end
         end
     end
@@ -171,9 +171,12 @@ end
 function TransferGold(player, amount)
     Wallet.TransferGoldToPlayer(player, amount, function(response, err)
       if err ~= WalletError.None then
-              error(`Something went wrong while transferring gold to {player.name}: {WalletError[err]}`)
-              return
+            if amount > 1 then WishEvent:FireAllClients(player, false) end
+            error(`Something went wrong while transferring gold to {player.name}: {WalletError[err]}`)
+            return
         end
+        if amount > 1 then WishEvent:FireAllClients(player, true) end
+        if amount == 1 then GiveSingleCoinEvent:FireAllClients(player) end
         Storage.GetPlayerValue(player, "FountainGoldReceived", function(value)
             if value then
                 value = value + amount
@@ -183,6 +186,8 @@ function TransferGold(player, amount)
 
             Storage.SetPlayerValue(player, "FountainGoldReceived", value)
         end)  
+        Storage.IncrementValue("Fountain_TotalGoldSent", amount)
+
       print(string.format("[FOUNTAIN] [GOLD SENT] Sent %d Gold to %s, Gold remaining: %d", amount, player.name, response.gold))
     end)
   end
@@ -203,9 +208,11 @@ function CompleteWish(player)
 
         currentGold = response.gold + response.earnedGold
         rollNumber = math.random(1,oddsNumber)
-        if rollNumber == 1 and currentGold >= minimumRequiredBalance then
-
-            WishEvent:FireAllClients(player, true)
+        print(`[FOUNTAIN] {player.name} rolled: {rollNumber} Balance high enough: {tostring(currentGold>=minimumRequiredBalance)}`) 
+        if rollNumber == oddsNumber and currentGold >= minimumRequiredBalance then
+            Storage.IncrementValue("Fountain_TotalSuccessfulWishes", 1)
+            
+            
             EmitReward(player)
         else
             WishEvent:FireAllClients(player, false)
@@ -235,7 +242,7 @@ function ServerHandleWishPurchase(purchase, player: Player)
         end
 
         CompleteWish(player)
-
+        Storage.IncrementValue("Fountain_TotalWishesPlaced", 1)
         Storage.GetPlayerValue(player, "Wishes", function(value)
             if value then
                 value = value + 1
