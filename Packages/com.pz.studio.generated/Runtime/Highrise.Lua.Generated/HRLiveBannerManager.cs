@@ -29,7 +29,7 @@ namespace Highrise.Lua.Generated
         [SerializeField] public UnityEngine.GameObject m_LiveEventLinkObj = default;
         [SerializeField] public System.String m_defaultStartDate = "2025-06-09 13:00:00";
         [SerializeField] public System.String m_defaultEndDate = "2025-06-09 15:00:00";
-        [SerializeField] public System.String m_defaultBannerURL = "https://cdn.highrisegame.com/HRLiveEventBanners/WO_06_09_2025/01.png";
+        [SerializeField] public System.String m_defaultBannerURL = "https://cdn.highrisegame.com/HRLiveEventBanners/WO_06_09_2025/16.png";
         [SerializeField] public System.String m_defaultRoomLink = "https://high.rs/room?id=6476fe22eeafcd5d47b38298";
 
         protected override SerializedPropertyValue[] SerializeProperties()
