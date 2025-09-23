@@ -20,12 +20,12 @@ local playersInRange = {}
 local bubbleRewardAmount = 10
 
 -- GOLD PRIZE --
-local winnerGoldAmount = 69 -- live would be ~69
+local winnerGoldAmount = 5 -- live would be ~69
 local inRangeGoldAmount = 1
-local maxRangePlayers = 30
+local maxRangePlayers = 4
 local minimumRequiredBalance = 200 -- live would be 200
 local currentRangeCount = 0
-local oddsNumber = 100 -- live would be 100
+local oddsNumber = 10 -- live would be 100
 local wishitemID = "wish"
 
 local AddInRangeRequest = Event.new("AddToRange")
