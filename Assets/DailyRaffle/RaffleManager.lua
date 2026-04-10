@@ -13,7 +13,9 @@ UIRaffleDrawingEvent = Event.new("UIDrawingEvent")
 SpawnRaffleTicketEvent = Event.new("SpawnRaffleTicketEvent")
 ClaimBlindBoxRequest = Event.new("ClaimBlindBoxRequest")
 
+print("[RAFFLE] MODULE LOADING...")
 local ServerPrankModule = require("ServerPrankModule")
+print("[RAFFLE] MODULE LOADED SUCCESSFULLY")
 
 
 
@@ -91,11 +93,13 @@ function OnTicketCountRequest(player)
 end
 
 function InitiateDraw()
-
+    print("[RAFFLE] InitiateDraw() called")
     local yesterday = GetDateStringWithOffset(-1)
     local ticketsKey = raffleTicketsPrefix .. yesterday
     winnerKey = winnersPrefix .. yesterday
-    Storage.GetValue(winnerKey, function(value, err) 
+    print("[RAFFLE] Looking up winners for: " .. winnerKey)
+    Storage.GetValue(winnerKey, function(value, err)
+        print("[RAFFLE] Storage.GetValue callback - value: " .. tostring(value) .. " err: " .. tostring(err))
         if value == nil or forcedDraw == true then
             local now = os.date("!*t")
             local serverID = server.info.roomId
@@ -301,15 +305,22 @@ end
 
 
 function self:ServerStart()
-
+    print("[RAFFLE] SERVER START CALLED")
     SubmitTicket:Connect(OnSubmitTicketRequest)
     TicketCountRequest:Connect(OnTicketCountRequest)
     RewardCheckRequest:Connect(CheckIfRewardReady)
     GeneratingTicketsDone:Connect(SelectWinners)
     ClaimBlindBoxRequest:Connect(OnClaimBoxRequest)
 
-    --- REMOVE AFTER DONE TESTING -- 
-    -- Timer.After(10, function() InitiateDraw() end)
+    --- REMOVE AFTER DONE TESTING --
+    print("[RAFFLE] Setting up Timer.After(5)...")
+    Timer.After(5, function() print("[RAFFLE] Timer.After(5) FIRED!") end)
+    print("[RAFFLE] Setting up Timer.After(10) for InitiateDraw...")
+    Timer.After(10, function()
+        print("[RAFFLE] Timer.After(10) FIRED - calling InitiateDraw")
+        InitiateDraw()
+    end)
+    print("[RAFFLE] Timers registered, continuing ServerStart")
     ------------------------------
     -- Storage.SetValue("589802ad0b911bb89a71a1fe".. "/RewardReady", true)
     -- Storage.SetValue("62fb30c5132e425314f6758f".. "/RewardReady", true)
